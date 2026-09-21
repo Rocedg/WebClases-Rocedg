@@ -8,6 +8,7 @@ from sqlalchemy import inspect, text
 from flask import Flask, jsonify, redirect, render_template, request, send_file, session, url_for
 
 from database import db, init_app as init_database
+from services.exercise_presentation import render_exercise_source, response_format_notes, response_placeholder
 from services.activity_service import (
     get_user_activity_snapshot,
     mark_topic_opened,
@@ -37,6 +38,8 @@ from services.exercise_attempt_service import (
 
 
 app = Flask(__name__)
+app.jinja_env.filters['exercise_source'] = render_exercise_source
+app.jinja_env.globals.update(response_format_notes=response_format_notes, response_placeholder=response_placeholder)
 app.secret_key = os.environ.get('SECRET_KEY', 'dev-secret-key')
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 init_database(app)
@@ -144,18 +147,32 @@ def load_exercise_index():
     return load_json_file(content_path('exercises/index.json'), {'exercises': []})
 
 
-def load_exercise_catalogue():
-    exercises_root = os.path.join(CONTENT_DIR, 'exercises')
-    exercises = []
+EXERCISE_BANK_FILENAMES = (
+    'exercises_t0.json',
+    'exercises_t1.json',
+    'exercises_t2.json',
+    'exercises.json',
+)
 
+
+def exercise_bank_paths():
+    exercises_root = os.path.join(CONTENT_DIR, 'exercises')
+    paths = []
     for root, dirs, files in os.walk(exercises_root):
         dirs.sort()
-        files.sort()
-        if 'exercises.json' not in files:
-            continue
-        data = load_json_file(os.path.join(root, 'exercises.json'), {'exercises': []})
+        for filename in EXERCISE_BANK_FILENAMES:
+            if filename in files:
+                paths.append(os.path.join(root, filename))
+    return paths
+
+
+def load_exercise_catalogue():
+    exercises = []
+
+    for bank_path in exercise_bank_paths():
+        data = load_json_file(bank_path, {'exercises': []})
         for exercise in data.get('exercises', []):
-            if isinstance(exercise, dict) and exercise.get('id'):
+            if isinstance(exercise, dict) and exercise.get('id') and exercise.get('status') != 'retired':
                 exercise.setdefault('version', 1)
                 exercises.append(exercise)
 
@@ -285,13 +302,11 @@ def exercise_titles_by_id():
         str(exercise.get('id')): exercise.get('title')
         for exercise in load_exercise_catalogue().get('exercises', [])
     }
-    exercises_root = os.path.join(CONTENT_DIR, 'exercises')
-    for root, dirs, files in os.walk(exercises_root):
-        dirs.sort()
-        files.sort()
-        if 'exercises.json' not in files:
-            continue
-        data = load_json_file(os.path.join(root, 'exercises.json'), {})
+    for bank_path in exercise_bank_paths():
+        data = load_json_file(bank_path, {})
+        for exercise in data.get('exercises', []):
+            if isinstance(exercise, dict) and exercise.get('id'):
+                titles.setdefault(str(exercise.get('id')), exercise.get('title'))
         for exercise in data.get('retired_exercises', []):
             if isinstance(exercise, dict) and exercise.get('id'):
                 titles.setdefault(str(exercise.get('id')), exercise.get('title'))

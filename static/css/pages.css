@@ -979,7 +979,15 @@
 .exercise-response-panel {
     display: grid;
     gap: 1rem;
+    min-width: 0;
 }
+
+.exercise-parts { padding-left: 1.6rem; margin: 1.25rem 0 0; }
+.exercise-parts li { padding-left: 0.35rem; margin-bottom: 1rem; }
+.exercise-parts li::marker { font-weight: 700; color: var(--ink); }
+.exercise-format-notes { color: var(--muted); font-size: 0.9rem; line-height: 1.6; }
+.exercise-format-notes ul { padding-left: 1.25rem; }
+.exercise-source mjx-container { max-width: 100%; overflow-x: auto; overflow-y: hidden; }
 
 .exercise-statement {
     color: var(--ink);
@@ -1022,6 +1030,8 @@
     max-height: 300px;
     object-fit: contain;
 }
+
+.exercise-pilot .exercise-figure img { width: 100%; }
 
 .exercise-figure figcaption {
     max-width: 34rem;

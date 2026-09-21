@@ -362,7 +362,7 @@ content/
     2bach/
       electromagnetismo/
         induccion/
-          exercises.json
+          exercises_<tema>.json
           statements/
             faraday_area_motional_001.tex
             faraday_b_variable_001.tex
@@ -389,7 +389,7 @@ static/
           thumbs/
 
 data/
-  exercises.json
+  exercises_<tema>.json
 
 scripts/
   build_exercises.py
@@ -414,7 +414,7 @@ Explicacion de carpetas:
 Contiene los archivos editables de trabajo:
 
 - Fuentes LaTeX.
-- `exercises.json` por tema.
+- `exercises_<tema>.json` por tema.
 - Assets internos.
 - Referencias de fuente.
 - Recortes originales usados para revisar o adaptar material.
@@ -506,7 +506,7 @@ El PDF de solucion puede ser mas detallado que el enunciado, pero tambien debe e
 ### Proceso futuro de construccion
 
 1. El mantenedor edita:
-   - `content/.../exercises.json`
+  - `content/.../exercises_<tema>.json`
    - `content/.../statements/*.tex`
    - `content/.../solutions/*.tex`
    - `content/.../assets/*`

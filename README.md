@@ -83,7 +83,7 @@ La autenticación sigue usando los usuarios de prueba definidos en app.py.
 
 ## Contenido y validación
 
-El banco completo se edita en content/exercises/<curso>/<tema>/exercises.json.
+Cada banco se edita en content/exercises/<curso>/<tema>/exercises_<tema>.json.
 El índice content/exercises/index.json es generado; no se edita a mano.
 
 ```powershell

@@ -5,6 +5,8 @@ import sys
 from pathlib import Path
 from types import ModuleType
 
+from app import load_exercise_catalogue
+
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -68,3 +70,14 @@ def test_build_exercise_index_preview_contains_practice_fields():
         assert required_fields.issubset(exercise)
         if exercise["id"] in expected_ids:
             assert exercise["workflow"]["status"] == "planned"
+
+
+def test_exercise_catalogue_loads_t0_t1_and_t2_as_separate_banks():
+    exercises = load_exercise_catalogue()["exercises"]
+
+    topics = {exercise["topic"] for exercise in exercises}
+    assert {"t0", "t1", "t2"}.issubset(topics)
+    for topic in ("t0", "t1", "t2"):
+        topic_exercises = [exercise for exercise in exercises if exercise["topic"] == topic]
+        assert topic_exercises
+        assert all(exercise["id"].startswith(f"{topic}_") for exercise in topic_exercises)

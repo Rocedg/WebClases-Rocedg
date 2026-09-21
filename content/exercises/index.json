@@ -1,7 +1,7 @@
 {
   "version": 1,
   "generated": true,
-  "generated_at": "2026-09-13T10:57:56Z",
+  "generated_at": "2026-09-17T21:59:08Z",
   "source": "content/exercises",
   "exercises": [
     {
@@ -1063,29 +1063,6 @@
       }
     },
     {
-      "id": "t0_m_007",
-      "version": 4,
-      "title": "Precisión y exactitud no son sinónimos",
-      "course": "1bach",
-      "block": "Medida, error, incertidumbre y cifras significativas",
-      "topic": "t0",
-      "concept": "Tema 0",
-      "exercise_type": "measurement",
-      "subtype": "classification_multi",
-      "difficulty": 4,
-      "estimated_time_min": 11,
-      "statement_pdf": null,
-      "solution_pdf": null,
-      "tags": [
-        "t0",
-        "measurement",
-        "version_4"
-      ],
-      "workflow": {
-        "status": "active"
-      }
-    },
-    {
       "id": "t0_m_008",
       "version": 4,
       "title": "Corrección de error de cero",
@@ -1523,29 +1500,6 @@
       }
     },
     {
-      "id": "t0_c_007",
-      "version": 4,
-      "title": "Misma velocidad, distinta posición",
-      "course": "1bach",
-      "block": "Funciones, gráficas, derivadas e integrales",
-      "topic": "t0",
-      "concept": "Tema 0",
-      "exercise_type": "calculus_graphs",
-      "subtype": "short_text_multi",
-      "difficulty": 3,
-      "estimated_time_min": 9,
-      "statement_pdf": null,
-      "solution_pdf": null,
-      "tags": [
-        "t0",
-        "calculus_graphs",
-        "version_4"
-      ],
-      "workflow": {
-        "status": "active"
-      }
-    },
-    {
       "id": "t0_c_008",
       "version": 4,
       "title": "De aceleración a velocidad con condición inicial",
@@ -1776,29 +1730,6 @@
       }
     },
     {
-      "id": "t0_c_018",
-      "version": 4,
-      "title": "Construcción con valor y pendiente",
-      "course": "1bach",
-      "block": "Funciones, gráficas, derivadas e integrales",
-      "topic": "t0",
-      "concept": "Tema 0",
-      "exercise_type": "calculus_graphs",
-      "subtype": "written_solution",
-      "difficulty": 5,
-      "estimated_time_min": 14,
-      "statement_pdf": null,
-      "solution_pdf": null,
-      "tags": [
-        "t0",
-        "calculus_graphs",
-        "version_4"
-      ],
-      "workflow": {
-        "status": "active"
-      }
-    },
-    {
       "id": "t0_c_019",
       "version": 4,
       "title": "Leer crecimiento y pendientes de una gráfica",
@@ -1842,6 +1773,2766 @@
       ],
       "workflow": {
         "status": "active"
+      }
+    },
+    {
+      "id": "t1_r_001",
+      "version": 1,
+      "title": "La estación como origen",
+      "course": "1bach",
+      "block": "Referencia y posición",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "r",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_time_min": 7,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "r",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_r_002",
+      "version": 1,
+      "title": "Ida, vuelta y avance neto",
+      "course": "1bach",
+      "block": "Referencia y posición",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "r",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_time_min": 8,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "r",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_r_003",
+      "version": 1,
+      "title": "De tabla a ley de posición",
+      "course": "1bach",
+      "block": "Referencia y posición",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "r",
+      "subtype": "written_upload",
+      "difficulty": 3,
+      "estimated_time_min": 10,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "r",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_r_004",
+      "version": 1,
+      "title": "Una función también se puede leer al revés",
+      "course": "1bach",
+      "block": "Referencia y posición",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "r",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_time_min": 7,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "r",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_r_005",
+      "version": 1,
+      "title": "Trasladar e invertir un eje",
+      "course": "1bach",
+      "block": "Referencia y posición",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "r",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 12,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "r",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_r_006",
+      "version": 1,
+      "title": "Tres signos, tres informaciones",
+      "course": "1bach",
+      "block": "Referencia y posición",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "r",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 9,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "r",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_r_007",
+      "version": 1,
+      "title": "Completar la representación que falta",
+      "course": "1bach",
+      "block": "Referencia y posición",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "r",
+      "subtype": "written_upload",
+      "difficulty": 3,
+      "estimated_time_min": 10,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "r",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_r_008",
+      "version": 1,
+      "title": "Auditoría de una gráfica",
+      "course": "1bach",
+      "block": "Referencia y posición",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "r",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 9,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "r",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_u_001",
+      "version": 1,
+      "title": "Paso por una baliza",
+      "course": "1bach",
+      "block": "MRU y movimiento relativo",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "u",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 9,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "u",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_u_002",
+      "version": 1,
+      "title": "Pendiente desde dos registros",
+      "course": "1bach",
+      "block": "MRU y movimiento relativo",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "u",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 9,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "u",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_u_003",
+      "version": 1,
+      "title": "Encuentro desde dos extremos",
+      "course": "1bach",
+      "block": "MRU y movimiento relativo",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "u",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 10,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "u",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_u_004",
+      "version": 1,
+      "title": "Salida retardada y alcance",
+      "course": "1bach",
+      "block": "MRU y movimiento relativo",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "u",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 14,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "u",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_u_005",
+      "version": 1,
+      "title": "Ciclistas con unidades distintas",
+      "course": "1bach",
+      "block": "MRU y movimiento relativo",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "u",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 10,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "u",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_u_006",
+      "version": 1,
+      "title": "Lo que observa un pasajero",
+      "course": "1bach",
+      "block": "MRU y movimiento relativo",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "u",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 10,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "u",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_u_007",
+      "version": 1,
+      "title": "Programar una llegada",
+      "course": "1bach",
+      "block": "MRU y movimiento relativo",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "u",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 10,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "u",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_u_008",
+      "version": 1,
+      "title": "Datos en kilómetros y minutos",
+      "course": "1bach",
+      "block": "MRU y movimiento relativo",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "u",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_time_min": 8,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "u",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_u_009",
+      "version": 1,
+      "title": "Cuándo sale el último vagón",
+      "course": "1bach",
+      "block": "MRU y movimiento relativo",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "u",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 13,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "u",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_u_010",
+      "version": 1,
+      "title": "Paseo, parada y regreso",
+      "course": "1bach",
+      "block": "MRU y movimiento relativo",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "u",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 13,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "u",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_u_011",
+      "version": 1,
+      "title": "Una raíz que no anuncia un encuentro",
+      "course": "1bach",
+      "block": "MRU y movimiento relativo",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "u",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 9,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "u",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_u_012",
+      "version": 1,
+      "title": "Diseñar la velocidad de un alcance",
+      "course": "1bach",
+      "block": "MRU y movimiento relativo",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "u",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 12,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "u",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_a_001",
+      "version": 1,
+      "title": "MRUA que empieza hacia atrás",
+      "course": "1bach",
+      "block": "MRUA y movimiento vertical",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "a",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 9,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "a",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_a_002",
+      "version": 1,
+      "title": "Frenar viajando hacia el oeste",
+      "course": "1bach",
+      "block": "MRUA y movimiento vertical",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "a",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_time_min": 8,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "a",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_a_003",
+      "version": 1,
+      "title": "Hasta detenerse, y no más allá",
+      "course": "1bach",
+      "block": "MRUA y movimiento vertical",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "a",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 10,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "a",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_a_004",
+      "version": 1,
+      "title": "Los segundos no aportan igual distancia",
+      "course": "1bach",
+      "block": "MRUA y movimiento vertical",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "a",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_time_min": 8,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "a",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_a_005",
+      "version": 1,
+      "title": "Desplazamiento tras dar la vuelta",
+      "course": "1bach",
+      "block": "MRUA y movimiento vertical",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "a",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 13,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "a",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_a_006",
+      "version": 1,
+      "title": "Reconstruir la velocidad inicial",
+      "course": "1bach",
+      "block": "MRUA y movimiento vertical",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "a",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 10,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "a",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_a_007",
+      "version": 1,
+      "title": "Caída desde una plataforma",
+      "course": "1bach",
+      "block": "MRUA y movimiento vertical",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "a",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 10,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "a",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_a_008",
+      "version": 1,
+      "title": "Subir y regresar al nivel de salida",
+      "course": "1bach",
+      "block": "MRUA y movimiento vertical",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "a",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 11,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "a",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_a_009",
+      "version": 1,
+      "title": "Dos lanzamientos y un único reloj",
+      "course": "1bach",
+      "block": "MRUA y movimiento vertical",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "a",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_time_min": 18,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "a",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_a_010",
+      "version": 1,
+      "title": "Ascensor que deja de acelerar",
+      "course": "1bach",
+      "block": "MRUA y movimiento vertical",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "a",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 14,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "a",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_a_011",
+      "version": 1,
+      "title": "Leer los coeficientes con sus unidades",
+      "course": "1bach",
+      "block": "MRUA y movimiento vertical",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "a",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 9,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "a",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_a_012",
+      "version": 1,
+      "title": "Elegir un modelo con condiciones iniciales",
+      "course": "1bach",
+      "block": "MRUA y movimiento vertical",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "a",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 10,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "a",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_a_013",
+      "version": 1,
+      "title": "Reacción y frenada son dos modelos",
+      "course": "1bach",
+      "block": "MRUA y movimiento vertical",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "a",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 14,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "a",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_a_014",
+      "version": 1,
+      "title": "Velocidad máxima compatible con una parada",
+      "course": "1bach",
+      "block": "MRUA y movimiento vertical",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "a",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_time_min": 17,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "a",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_g_001",
+      "version": 1,
+      "title": "Tres pendientes, tres velocidades",
+      "course": "1bach",
+      "block": "Funciones y gráficas",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "g",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 10,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "g",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_g_002",
+      "version": 1,
+      "title": "Rectángulo y triángulo bajo la velocidad",
+      "course": "1bach",
+      "block": "Funciones y gráficas",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "g",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 10,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "g",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_g_003",
+      "version": 1,
+      "title": "Áreas que se cancelan parcialmente",
+      "course": "1bach",
+      "block": "Funciones y gráficas",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "g",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 12,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "g",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_g_004",
+      "version": 1,
+      "title": "El área de aceleración no da posición",
+      "course": "1bach",
+      "block": "Funciones y gráficas",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "g",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 10,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "g",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_g_005",
+      "version": 1,
+      "title": "Dibujar la velocidad desde la posición",
+      "course": "1bach",
+      "block": "Funciones y gráficas",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "g",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 13,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "g",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_g_006",
+      "version": 1,
+      "title": "Dibujar aceleración desde velocidad",
+      "course": "1bach",
+      "block": "Funciones y gráficas",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "g",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 13,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "g",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_g_007",
+      "version": 1,
+      "title": "Tres representaciones compatibles",
+      "course": "1bach",
+      "block": "Funciones y gráficas",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "g",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 11,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "g",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_g_008",
+      "version": 1,
+      "title": "Reposo, retroceso y regreso",
+      "course": "1bach",
+      "block": "Funciones y gráficas",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "g",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 10,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "g",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_g_009",
+      "version": 1,
+      "title": "Ajuste lineal con un dato de control",
+      "course": "1bach",
+      "block": "Funciones y gráficas",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "g",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 10,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "g",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_g_010",
+      "version": 1,
+      "title": "Una parábola determinada por condiciones",
+      "course": "1bach",
+      "block": "Funciones y gráficas",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "g",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 13,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "g",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_g_011",
+      "version": 1,
+      "title": "Dos gráficas que no pueden pertenecer al mismo móvil",
+      "course": "1bach",
+      "block": "Funciones y gráficas",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "g",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 12,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "g",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_g_012",
+      "version": 1,
+      "title": "Aceleración negativa antes y después del giro",
+      "course": "1bach",
+      "block": "Funciones y gráficas",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "g",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 10,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "g",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_g_013",
+      "version": 1,
+      "title": "Cuatro etapas y tres gráficas",
+      "course": "1bach",
+      "block": "Funciones y gráficas",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "g",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_time_min": 18,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "g",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_g_014",
+      "version": 1,
+      "title": "Reconstrucción desde velocidad y posición tardía",
+      "course": "1bach",
+      "block": "Funciones y gráficas",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "g",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 12,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "g",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_g_015",
+      "version": 1,
+      "title": "Intersección frente a cruce del origen",
+      "course": "1bach",
+      "block": "Funciones y gráficas",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "g",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 10,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "g",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_g_016",
+      "version": 1,
+      "title": "Traducir velocidad a una historia precisa",
+      "course": "1bach",
+      "block": "Funciones y gráficas",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "g",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 14,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "g",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_i_001",
+      "version": 1,
+      "title": "Viaje de tren con horario completo",
+      "course": "1bach",
+      "block": "Problemas integradores",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "i",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_time_min": 20,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "i",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_i_002",
+      "version": 1,
+      "title": "Un mensajero alcanza al peatón",
+      "course": "1bach",
+      "block": "Problemas integradores",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "i",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 16,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "i",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_i_003",
+      "version": 1,
+      "title": "¿Detención o impacto antes de parar?",
+      "course": "1bach",
+      "block": "Problemas integradores",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "i",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_time_min": 18,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "i",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_i_004",
+      "version": 1,
+      "title": "Lanzamiento desde una azotea",
+      "course": "1bach",
+      "block": "Problemas integradores",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "i",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_time_min": 18,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "i",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_i_005",
+      "version": 1,
+      "title": "Ascensor con destino fijado por áreas",
+      "course": "1bach",
+      "block": "Problemas integradores",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "i",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_time_min": 18,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "i",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_i_006",
+      "version": 1,
+      "title": "Informe de un sensor con una medida incoherente",
+      "course": "1bach",
+      "block": "Problemas integradores",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "i",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_time_min": 20,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "i",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_i_007",
+      "version": 1,
+      "title": "Diseñar una gráfica para comparar recorridos",
+      "course": "1bach",
+      "block": "Problemas integradores",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "i",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_time_min": 18,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "i",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_i_008",
+      "version": 1,
+      "title": "Alcance durante una frenada",
+      "course": "1bach",
+      "block": "Problemas integradores",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "i",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_time_min": 20,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "i",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_i_009",
+      "version": 1,
+      "title": "Comparación argumentada de dos frenadas",
+      "course": "1bach",
+      "block": "Problemas integradores",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "i",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 16,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "i",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_i_010",
+      "version": 1,
+      "title": "Simulacro: un reparto de ida y vuelta",
+      "course": "1bach",
+      "block": "Problemas integradores",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "i",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_time_min": 20,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "i",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_v_001",
+      "version": 1,
+      "title": "Una posición en el segundo cuadrante",
+      "course": "1bach",
+      "block": "Vectores y composición",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "v",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_time_min": 8,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "v",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_v_002",
+      "version": 1,
+      "title": "Desplazarse no es medir desde el origen",
+      "course": "1bach",
+      "block": "Vectores y composición",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "v",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_time_min": 9,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "v",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_v_003",
+      "version": 1,
+      "title": "Velocidad media y datos insuficientes para rapidez",
+      "course": "1bach",
+      "block": "Vectores y composición",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "v",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 10,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "v",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_v_004",
+      "version": 1,
+      "title": "Aceleración media de un giro",
+      "course": "1bach",
+      "block": "Vectores y composición",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "v",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 10,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "v",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_v_005",
+      "version": 1,
+      "title": "Camino quebrado y cuerda entre extremos",
+      "course": "1bach",
+      "block": "Vectores y composición",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "v",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 10,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "v",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_v_006",
+      "version": 1,
+      "title": "Componentes de una velocidad oblicua",
+      "course": "1bach",
+      "block": "Vectores y composición",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "v",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_time_min": 8,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "v",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_v_007",
+      "version": 1,
+      "title": "Tangente y aceleración en un vuelo",
+      "course": "1bach",
+      "block": "Vectores y composición",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "v",
+      "subtype": "written_upload",
+      "difficulty": 3,
+      "estimated_time_min": 11,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "v",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_v_008",
+      "version": 1,
+      "title": "Barca que apunta a la otra orilla",
+      "course": "1bach",
+      "block": "Vectores y composición",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "v",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 11,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "v",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_v_009",
+      "version": 1,
+      "title": "Elegir ejes sin cambiar la física",
+      "course": "1bach",
+      "block": "Vectores y composición",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "v",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 13,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "v",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_v_010",
+      "version": 1,
+      "title": "Reconstruir el viento",
+      "course": "1bach",
+      "block": "Vectores y composición",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "v",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 11,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "v",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_f_001",
+      "version": 1,
+      "title": "Dos funciones y un punto del plano",
+      "course": "1bach",
+      "block": "Funciones paramétricas",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "f",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 10,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "f",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_f_002",
+      "version": 1,
+      "title": "Derivar una posición vectorial",
+      "course": "1bach",
+      "block": "Funciones paramétricas",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "f",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 11,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "f",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_f_003",
+      "version": 1,
+      "title": "De coordenadas a trayectoria",
+      "course": "1bach",
+      "block": "Funciones paramétricas",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "f",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 10,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "f",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_f_004",
+      "version": 1,
+      "title": "Trayectoria recta con rapidez variable",
+      "course": "1bach",
+      "block": "Funciones paramétricas",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "f",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 11,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "f",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_f_005",
+      "version": 1,
+      "title": "Eliminar tiempo sin perder el dominio físico",
+      "course": "1bach",
+      "block": "Funciones paramétricas",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "f",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 13,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "f",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_f_006",
+      "version": 1,
+      "title": "Una parábola espacial y cuatro gráficas",
+      "course": "1bach",
+      "block": "Funciones paramétricas",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "f",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 14,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "f",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_f_007",
+      "version": 1,
+      "title": "Misma curva, distinto ritmo",
+      "course": "1bach",
+      "block": "Funciones paramétricas",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "f",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 14,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "f",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_f_008",
+      "version": 1,
+      "title": "Integrar dos componentes de velocidad",
+      "course": "1bach",
+      "block": "Funciones paramétricas",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "f",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 11,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "f",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_f_009",
+      "version": 1,
+      "title": "Cruzar una altura no es acertar en un punto",
+      "course": "1bach",
+      "block": "Funciones paramétricas",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "f",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 13,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "f",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_f_010",
+      "version": 1,
+      "title": "Auditoría de una parametrización",
+      "course": "1bach",
+      "block": "Funciones paramétricas",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "f",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 11,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "f",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_h_001",
+      "version": 1,
+      "title": "Salida horizontal y dirección de impacto",
+      "course": "1bach",
+      "block": "Tiro horizontal",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "h",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 11,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "h",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_h_002",
+      "version": 1,
+      "title": "Velocidad necesaria para una marca",
+      "course": "1bach",
+      "block": "Tiro horizontal",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "h",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 11,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "h",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_h_003",
+      "version": 1,
+      "title": "Altura inferida desde el alcance",
+      "course": "1bach",
+      "block": "Tiro horizontal",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "h",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 11,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "h",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_h_004",
+      "version": 1,
+      "title": "Dos velocidades desde la misma plataforma",
+      "course": "1bach",
+      "block": "Tiro horizontal",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "h",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 11,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "h",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_h_005",
+      "version": 1,
+      "title": "Cambiar la altura: una ley de raíz cuadrada",
+      "course": "1bach",
+      "block": "Tiro horizontal",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "h",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 11,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "h",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_h_006",
+      "version": 1,
+      "title": "Cuatro gráficas de una salida horizontal",
+      "course": "1bach",
+      "block": "Tiro horizontal",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "h",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 14,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "h",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_h_007",
+      "version": 1,
+      "title": "Elegir trayectoria y componentes compatibles",
+      "course": "1bach",
+      "block": "Tiro horizontal",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "h",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 11,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "h",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_h_008",
+      "version": 1,
+      "title": "Contacto con una rampa ascendente",
+      "course": "1bach",
+      "block": "Tiro horizontal",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "h",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 15,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "h",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_h_009",
+      "version": 1,
+      "title": "Lanzamiento desde una plataforma móvil",
+      "course": "1bach",
+      "block": "Tiro horizontal",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "h",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 14,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "h",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_h_010",
+      "version": 1,
+      "title": "Laboratorio: estimar la velocidad de salida",
+      "course": "1bach",
+      "block": "Tiro horizontal",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "h",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_time_min": 20,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "h",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_p_001",
+      "version": 1,
+      "title": "Un lanzamiento hacia la izquierda",
+      "course": "1bach",
+      "block": "Tiro parabólico",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "p",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_time_min": 9,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "p",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_p_002",
+      "version": 1,
+      "title": "Ecuaciones con origen no situado en la salida",
+      "course": "1bach",
+      "block": "Tiro parabólico",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "p",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 11,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "p",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_p_003",
+      "version": 1,
+      "title": "Raíces de regreso al mismo nivel",
+      "course": "1bach",
+      "block": "Tiro parabólico",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "p",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 11,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "p",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_p_004",
+      "version": 1,
+      "title": "Alcance y condición de igual altura",
+      "course": "1bach",
+      "block": "Tiro parabólico",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "p",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 11,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "p",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_p_005",
+      "version": 1,
+      "title": "Altura máxima sin reposo total",
+      "course": "1bach",
+      "block": "Tiro parabólico",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "p",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 11,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "p",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_p_006",
+      "version": 1,
+      "title": "Velocidad de impacto con ángulo y sentido",
+      "course": "1bach",
+      "block": "Tiro parabólico",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "p",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 13,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "p",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_p_007",
+      "version": 1,
+      "title": "Vuelo desde un balcón y cambio de origen",
+      "course": "1bach",
+      "block": "Tiro parabólico",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "p",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 14,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "p",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_p_008",
+      "version": 1,
+      "title": "Dos ángulos para una diana elevada",
+      "course": "1bach",
+      "block": "Tiro parabólico",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "p",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_time_min": 20,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "p",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_p_009",
+      "version": 1,
+      "title": "Ángulos complementarios: mismo alcance",
+      "course": "1bach",
+      "block": "Tiro parabólico",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "p",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 14,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "p",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_p_010",
+      "version": 1,
+      "title": "Velocidad mínima para una condición de ángulo fijo",
+      "course": "1bach",
+      "block": "Tiro parabólico",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "p",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 14,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "p",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_p_011",
+      "version": 1,
+      "title": "Qué cambia al duplicar la componente horizontal",
+      "course": "1bach",
+      "block": "Tiro parabólico",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "p",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 11,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "p",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_p_012",
+      "version": 1,
+      "title": "Proyecto de cuatro gráficas desde una trayectoria",
+      "course": "1bach",
+      "block": "Tiro parabólico",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "p",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_time_min": 18,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "p",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_p_013",
+      "version": 1,
+      "title": "Tiro sobre un plano inclinado",
+      "course": "1bach",
+      "block": "Tiro parabólico",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "p",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_time_min": 18,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "p",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_p_014",
+      "version": 1,
+      "title": "Auditar signos, raíces y unidades",
+      "course": "1bach",
+      "block": "Tiro parabólico",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "p",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 15,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "p",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_c_001",
+      "version": 1,
+      "title": "De revoluciones por minuto a periodo",
+      "course": "1bach",
+      "block": "Movimiento circular",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "c",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_time_min": 9,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "c",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_c_002",
+      "version": 1,
+      "title": "La rapidez del borde y el arco recorrido",
+      "course": "1bach",
+      "block": "Movimiento circular",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "c",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 10,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "c",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_c_003",
+      "version": 1,
+      "title": "Cuatro tangentes de un mismo MCU",
+      "course": "1bach",
+      "block": "Movimiento circular",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "c",
+      "subtype": "written_upload",
+      "difficulty": 3,
+      "estimated_time_min": 11,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "c",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_c_004",
+      "version": 1,
+      "title": "Aceleración al centro en dos puntos",
+      "course": "1bach",
+      "block": "Movimiento circular",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "c",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 11,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "c",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_c_005",
+      "version": 1,
+      "title": "Parametrizar un giro horario",
+      "course": "1bach",
+      "block": "Movimiento circular",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "c",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 14,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "c",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_c_006",
+      "version": 1,
+      "title": "Las componentes oscilan aunque la rapidez sea fija",
+      "course": "1bach",
+      "block": "Movimiento circular",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "c",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 14,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "c",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_c_007",
+      "version": 1,
+      "title": "Comparar radios exige decir qué permanece fijo",
+      "course": "1bach",
+      "block": "Movimiento circular",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "c",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 13,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "c",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_c_008",
+      "version": 1,
+      "title": "Rueda frenada: aceleración total variable",
+      "course": "1bach",
+      "block": "Movimiento circular",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "c",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_time_min": 20,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "c",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_i_001",
+      "version": 1,
+      "title": "Rumbo de un dron para llegar exactamente al norte",
+      "course": "1bach",
+      "block": "Problemas integradores",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "i",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_time_min": 18,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "i",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_i_002",
+      "version": 1,
+      "title": "Pelota desde una grada",
+      "course": "1bach",
+      "block": "Problemas integradores",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "i",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_time_min": 20,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "i",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_i_003",
+      "version": 1,
+      "title": "Diana elevada y techo limitante",
+      "course": "1bach",
+      "block": "Problemas integradores",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "i",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_time_min": 20,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "i",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_i_004",
+      "version": 1,
+      "title": "Lanzamiento horizontal hacia una rampa descendente",
+      "course": "1bach",
+      "block": "Problemas integradores",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "i",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_time_min": 20,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "i",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_i_005",
+      "version": 1,
+      "title": "Movimiento paramétrico con instante de rapidez mínima",
+      "course": "1bach",
+      "block": "Problemas integradores",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "i",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_time_min": 20,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "i",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_i_006",
+      "version": 1,
+      "title": "Reconstruir un tiro desde el impacto",
+      "course": "1bach",
+      "block": "Problemas integradores",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "i",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_time_min": 20,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "i",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_i_007",
+      "version": 1,
+      "title": "De una gráfica angular al vector aceleración",
+      "course": "1bach",
+      "block": "Problemas integradores",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "i",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_time_min": 20,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "i",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t2_i_008",
+      "version": 1,
+      "title": "Simulacro: salida tangente desde una rueda",
+      "course": "1bach",
+      "block": "Problemas integradores",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "exercise_type": "i",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_time_min": 20,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t2",
+        "i",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
       }
     },
     {

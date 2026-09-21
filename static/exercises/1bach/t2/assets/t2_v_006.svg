@@ -1,0 +1,17 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 290" role="img" aria-labelledby="title desc" style="max-width:100%;height:auto">
+  <title id="title">Vector velocidad con rumbo de 150 grados</title>
+  <desc id="desc">Ejes cartesianos y un vector velocidad en el segundo cuadrante que forma 150 grados con el eje x positivo.</desc>
+  <defs><marker id="arrow-v" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="context-stroke"/></marker></defs>
+  <rect width="520" height="290" fill="white"/>
+  <g font-family="Arial, sans-serif" fill="#203148">
+    <path d="M55 218H468M280 248V42" fill="none" stroke="#536579" stroke-width="1.6" marker-end="url(#arrow-v)"/>
+    <text x="470" y="238" font-size="14">x</text><text x="293" y="48" font-size="14">y</text>
+    <path d="M280 218L118 124" fill="none" stroke="#ba513c" stroke-width="3" marker-end="url(#arrow-v)"/>
+    <text x="127" y="111" font-size="15" font-weight="700" fill="#ba513c">v</text>
+    <path d="M326 218A46 46 0 0 0 240 195" fill="none" stroke="#245b99" stroke-width="2"/>
+    <text x="247" y="182" font-size="14" fill="#245b99">150°</text>
+    <path d="M118 124V218M118 218H280" fill="none" stroke="#8090a3" stroke-width="1.5" stroke-dasharray="6 5"/>
+    <text x="182" y="238" font-size="13" fill="#516276">componente x</text>
+    <text x="72" y="170" font-size="13" fill="#516276" transform="rotate(-90 72 170)">componente y</text>
+  </g>
+</svg>

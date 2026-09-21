@@ -2,8 +2,11 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from decimal import Decimal, InvalidOperation
+import ast
 import json
+import math
 import re
+import unicodedata
 
 from database import db
 from models import ExerciseAttempt, ExerciseResponse, utc_now
@@ -148,7 +151,7 @@ def response_map(attempt):
 def human_field_label(field):
     field_id = str(field.get("id", "")).strip()
     label = str(field.get("label") or field.get("prompt") or "").strip()
-    if label and label.casefold() != field_id.replace("_", " ").casefold() and "_" not in label:
+    if label and "_" not in label:
         return label
     fallback_labels = {
         "unit_derived": "Unidad usando N",
@@ -691,6 +694,39 @@ def _save_response_values(attempt, exercise, submitted_values, grade):
 def _grade_response(response, field):
     response_type = response.response_type
 
+    if response_type == "vector" and field.get("expected_components"):
+        raw = (response.raw_value or "").strip()
+        components = raw[1:-1].split(';') if raw.startswith('(') and raw.endswith(')') else []
+        values = [normalize_numeric_value(item) for item in components]
+        expected = field['expected_components']
+        tolerance = Decimal(str(field.get('tolerance', 0)))
+        correct = len(values) == len(expected) and all(
+            value is not None and abs(Decimal(value) - Decimal(str(target))) <= tolerance
+            for value, target in zip(values, expected)
+        )
+        response.grading_status = GRADE_CORRECT if correct else GRADE_INCORRECT
+        response.auto_score = 1.0 if correct else 0.0
+        response.feedback = 'Componentes correctas.' if correct else 'Revisa las componentes y el formato (x; y).'
+        return
+
+    if response_type == "function" and (field.get("canonical_expression") or field.get("accepted_forms")):
+        accepted = [field.get("canonical_expression"), *(field.get("accepted_forms") or [])]
+        accepted = [str(value) for value in accepted if value]
+        correct = any(_functions_equivalent(response.raw_value or "", expected) for expected in accepted)
+        response.grading_status = GRADE_CORRECT if correct else GRADE_INCORRECT
+        response.auto_score = 1.0 if correct else 0.0
+        response.feedback = "Función equivalente aceptada." if correct else "Revisa la expresión y la variable indicada."
+        return
+
+    if response_type == "short_text" and field.get("accepted_forms"):
+        given = _normalize_short_text(response.raw_value)
+        accepted = {_normalize_short_text(value) for value in field.get("accepted_forms", [])}
+        correct = bool(given) and given in accepted
+        response.grading_status = GRADE_CORRECT if correct else GRADE_INCORRECT
+        response.auto_score = 1.0 if correct else 0.0
+        response.feedback = "Respuesta aceptada." if correct else "Revisa el término solicitado."
+        return
+
     if response_type == "single_choice" and field.get("correct_option_id"):
         expected = str(field.get("correct_option_id"))
         is_correct = response.normalized_value == expected
@@ -754,6 +790,104 @@ def _grade_response(response, field):
     response.grading_status = GRADE_PENDING_REVIEW
     response.auto_score = None
     response.feedback = None
+
+
+def _normalize_short_text(value):
+    text = unicodedata.normalize("NFKD", str(value or "").casefold())
+    text = "".join(char for char in text if not unicodedata.combining(char))
+    return re.sub(r"[^a-z0-9+<>=:-]+", " ", text).strip()
+
+
+def _functions_equivalent(given, expected):
+    if _normalize_function_text(given) == _normalize_function_text(expected):
+        return True
+    given_tree = _safe_function_tree(given)
+    expected_tree = _safe_function_tree(expected)
+    if given_tree is None or expected_tree is None:
+        return False
+    variables = sorted(
+        ({node.id for node in ast.walk(given_tree) if isinstance(node, ast.Name)} |
+         {node.id for node in ast.walk(expected_tree) if isinstance(node, ast.Name)})
+        - set(_FUNCTION_NAMES)
+    )
+    if len(variables) > 2:
+        return False
+    valid_points = 0
+    for sample in (-3.25, -1.5, -0.4, 0.75, 2.0, 4.5):
+        values = {name: sample + index * 0.37 for index, name in enumerate(variables)}
+        try:
+            left = _eval_function_tree(given_tree, values)
+            right = _eval_function_tree(expected_tree, values)
+        except (ArithmeticError, ValueError, TypeError):
+            continue
+        if not math.isfinite(left) or not math.isfinite(right):
+            continue
+        valid_points += 1
+        if not math.isclose(left, right, rel_tol=1e-8, abs_tol=1e-8):
+            return False
+    return valid_points >= 3
+
+
+_FUNCTION_NAMES = {
+    "sin": math.sin, "sen": math.sin, "cos": math.cos, "tan": math.tan,
+    "sqrt": math.sqrt, "exp": math.exp, "pi": math.pi,
+}
+_FUNCTION_NODES = (
+    ast.Expression, ast.BinOp, ast.UnaryOp, ast.Add, ast.Sub, ast.Mult, ast.Div,
+    ast.Pow, ast.USub, ast.UAdd, ast.Constant, ast.Name, ast.Call, ast.Load,
+)
+
+
+def _normalize_function_text(value):
+    return re.sub(r"\s+", "", str(value or "").casefold().replace("−", "-").replace("^", "**"))
+
+
+def _safe_function_tree(value):
+    text = _normalize_function_text(value).replace(",", ".")
+    if not text or any(token in text for token in (";", "=", "<", ">")):
+        return None
+    try:
+        tree = ast.parse(text, mode="eval")
+    except SyntaxError:
+        return None
+    if any(not isinstance(node, _FUNCTION_NODES) for node in ast.walk(tree)):
+        return None
+    for node in ast.walk(tree):
+        if isinstance(node, ast.Call) and (not isinstance(node.func, ast.Name) or node.func.id not in _FUNCTION_NAMES):
+            return None
+        if isinstance(node, ast.Name) and node.id.startswith("_"):
+            return None
+    return tree
+
+
+def _eval_function_tree(tree, variables):
+    def evaluate(node):
+        if isinstance(node, ast.Expression):
+            return evaluate(node.body)
+        if isinstance(node, ast.Constant) and isinstance(node.value, (int, float)):
+            return float(node.value)
+        if isinstance(node, ast.Name):
+            value = _FUNCTION_NAMES.get(node.id, variables.get(node.id))
+            if callable(value) or value is None:
+                raise ValueError("invalid bare name")
+            return float(value)
+        if isinstance(node, ast.UnaryOp):
+            value = evaluate(node.operand)
+            return -value if isinstance(node.op, ast.USub) else value
+        if isinstance(node, ast.BinOp):
+            left, right = evaluate(node.left), evaluate(node.right)
+            operations = {ast.Add: lambda: left + right, ast.Sub: lambda: left - right,
+                          ast.Mult: lambda: left * right, ast.Div: lambda: left / right,
+                          ast.Pow: lambda: left ** right}
+            operation = operations.get(type(node.op))
+            if operation is None:
+                raise ValueError("invalid operation")
+            return operation()
+        if isinstance(node, ast.Call):
+            return float(_FUNCTION_NAMES[node.func.id](*[evaluate(arg) for arg in node.args]))
+        raise ValueError("invalid expression")
+
+    return float(evaluate(tree))
 
 
 def _unit_equivalent(given, expected, field):

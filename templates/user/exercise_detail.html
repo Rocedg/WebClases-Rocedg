@@ -3,7 +3,7 @@
 {% block title %}{{ exercise.title }}{% endblock %}
 
 {% block content %}
-<section class="section-shell exercise-detail-page">
+<section class="section-shell exercise-detail-page{% if exercise.statement_source is defined %} exercise-pilot{% endif %}"{% if exercise.statement_source is not defined %} data-legacy-math{% endif %}>
     <div class="panel-card exercise-workspace">
         <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 mb-4">
             <div>
@@ -35,8 +35,12 @@
                     <h2 id="exercise-statement-title">Enunciado</h2>
                 </div>
 
-                {% if exercise.statement %}
-                <div class="exercise-statement">
+                {% if exercise.statement_source is defined %}
+                <div class="exercise-statement exercise-source">
+                    {{ exercise.statement_source|exercise_source }}
+                </div>
+                {% elif exercise.statement %}
+                <div class="exercise-statement" data-legacy-math>
                     {{ exercise.statement|safe }}
                 </div>
                 {% else %}
@@ -111,7 +115,7 @@
                     </div>
 
                     {% if exercise.hints %}
-                    <details class="exercise-disclosure">
+                    <details class="exercise-disclosure" data-legacy-math>
                         <summary><i class="fas fa-lightbulb me-1" aria-hidden="true"></i>Ver pista</summary>
                         <ul>
                             {% for hint in exercise.hints %}
@@ -124,12 +128,9 @@
                     {% for field in fields %}
                     {% set response = responses.get(field.id) %}
                     <div class="quiz-question exercise-field">
-                        <label class="form-label fw-semibold" for="response_{{ field.id }}">{{ field.label }}</label>
+                        <label class="form-label fw-semibold" for="response_{{ field.id }}">{% if field.part %}({{ field.part }}) {% endif %}{{ field.label }}</label>
                         {% if field.prompt %}
                         <p class="resource-card-copy">{{ field.prompt }}</p>
-                        {% endif %}
-                        {% if field.input_help %}
-                        <p class="exercise-input-help" id="help_{{ field.id }}">{{ field.input_help }}</p>
                         {% endif %}
 
                         {% if field.type == 'single_choice' and field.options %}
@@ -148,7 +149,7 @@
                             </div>
                             {% endfor %}
                         </div>
-                        {% elif field.type == 'numeric' or field.type == 'unit_expression' %}
+                        {% elif field.type in ['numeric', 'unit_expression', 'vector', 'function', 'short_text'] %}
                         <div class="input-group">
                             <input
                                 type="text"
@@ -156,9 +157,10 @@
                                 id="response_{{ field.id }}"
                                 name="response_{{ field.id }}"
                                 value="{{ response.raw_value if response else '' }}"
-                                aria-describedby="{% if field.input_help %}help_{{ field.id }}{% endif %}"
+                                placeholder="{{ response_placeholder(field) }}"
+                                aria-describedby="exercise-format-notes{% if field.unit %} unit_{{ field.id }}{% endif %}"
                             >
-                            {% if field.unit %}<span class="input-group-text">{{ field.unit }}</span>{% endif %}
+                            {% if field.unit %}<span class="input-group-text" id="unit_{{ field.id }}">{{ field.unit }}</span>{% endif %}
                         </div>
                         {% else %}
                         <textarea
@@ -166,11 +168,20 @@
                             id="response_{{ field.id }}"
                             name="response_{{ field.id }}"
                             rows="5"
-                            aria-describedby="{% if field.input_help %}help_{{ field.id }}{% endif %}"
+                            placeholder="{{ response_placeholder(field) }}"
+                            aria-describedby="exercise-format-notes"
                         >{{ response.raw_value if response else '' }}</textarea>
                         {% endif %}
                     </div>
                     {% endfor %}
+
+                    {% set format_notes = response_format_notes(fields) %}
+                    {% if format_notes %}
+                    <section class="exercise-format-notes" id="exercise-format-notes" aria-labelledby="format-title">
+                        <h3 id="format-title" class="fs-6">Indicaciones de formato</h3>
+                        <ul>{% for note in format_notes %}<li>{{ note }}</li>{% endfor %}</ul>
+                    </section>
+                    {% endif %}
 
                     <div class="action-row justify-content-between mt-4">
                         <a href="{{ url_for('homework') }}" class="btn btn-outline-primary">
@@ -225,7 +236,7 @@
                 <article class="quiz-question exercise-field">
                     <div class="d-flex flex-column flex-md-row justify-content-between gap-2">
                         <div>
-                            <h3 class="resource-card-title fs-5">{{ field.label }}</h3>
+                            <h3 class="resource-card-title fs-5">{% if field.part %}({{ field.part }}) {% endif %}{{ field.label }}</h3>
                             {% if field.prompt %}<p class="resource-card-copy">{{ field.prompt }}</p>{% endif %}
                         </div>
                         {% if response %}
@@ -244,8 +255,13 @@
                 </article>
                 {% endfor %}
 
-                {% if exercise.solution and exercise.solution.summary_steps %}
-                <details class="exercise-disclosure exercise-solution mt-4">
+                {% if exercise.solution_source is defined %}
+                <details class="exercise-disclosure exercise-solution exercise-source mt-4">
+                    <summary><i class="fas fa-route me-1" aria-hidden="true"></i>Ver solucion guiada</summary>
+                    {{ exercise.solution_source|exercise_source }}
+                </details>
+                {% elif exercise.solution and exercise.solution.summary_steps %}
+                <details class="exercise-disclosure exercise-solution mt-4" data-legacy-math>
                     <summary><i class="fas fa-route me-1" aria-hidden="true"></i>Ver solucion guiada</summary>
                     <ol>
                         {% for step in exercise.solution.summary_steps %}

@@ -29,6 +29,13 @@ SUMMARY_FIELDS = [
     "tags",
 ]
 
+EXERCISE_BANK_FILENAMES = (
+    "exercises_t0.json",
+    "exercises_t1.json",
+    "exercises_t2.json",
+    "exercises.json",
+)
+
 
 def repo_root() -> Path:
     return Path(__file__).resolve().parents[1]
@@ -43,7 +50,11 @@ def topic_files(root: Path) -> list[Path]:
     content_root = root / "content" / "exercises"
     if not content_root.exists():
         return []
-    return sorted(content_root.rglob("exercises.json"))
+    return sorted(
+        path
+        for filename in EXERCISE_BANK_FILENAMES
+        for path in content_root.rglob(filename)
+    )
 
 
 def summarize_exercise(exercise: dict[str, Any]) -> dict[str, Any]:
@@ -64,7 +75,7 @@ def collect_exercises(root: Path) -> list[dict[str, Any]]:
     for path in topic_files(root):
         data = load_json(path)
         for exercise in data.get("exercises", []):
-            if isinstance(exercise, dict):
+            if isinstance(exercise, dict) and exercise.get("status") != "retired":
                 exercises.append(summarize_exercise(exercise))
     return exercises
 

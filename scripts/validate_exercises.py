@@ -181,7 +181,7 @@ def validate_assets_list(exercise: dict[str, Any], exercise_id: str, root: Path,
 
 
 def is_lightweight_exercise(exercise: dict[str, Any]) -> bool:
-    return "response_mode" in exercise and "statement" in exercise
+    return "response_mode" in exercise and ("statement" in exercise or "statement_source" in exercise)
 
 
 def validate_lightweight_exercise(
@@ -191,6 +191,8 @@ def validate_lightweight_exercise(
     result: ValidationResult,
 ) -> None:
     for field_name in LIGHTWEIGHT_EXERCISE_FIELDS:
+        if field_name in {'statement', 'solution'} and is_non_empty_string(exercise.get(field_name + '_source')):
+            continue
         if field_name not in exercise:
             result.errors.append(f"{exercise_id}: missing required field {field_name}.")
 
@@ -285,7 +287,21 @@ def validate_exercise(
 
 def load_topic_exercises(root: Path, result: ValidationResult) -> tuple[list[dict[str, Any]], set[str]]:
     content_root = root / "content" / "exercises"
-    topic_files = sorted(content_root.rglob("exercises.json")) if content_root.exists() else []
+    bank_filenames = (
+        "exercises_t0.json",
+        "exercises_t1.json",
+        "exercises_t2.json",
+        "exercises.json",
+    )
+    topic_files = (
+        sorted(
+            path
+            for filename in bank_filenames
+            for path in content_root.rglob(filename)
+        )
+        if content_root.exists()
+        else []
+    )
     result.topic_file_count = len(topic_files)
 
     if not topic_files:

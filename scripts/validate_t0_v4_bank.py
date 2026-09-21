@@ -9,16 +9,16 @@ from typing import Any
 
 
 ROOT = Path(__file__).resolve().parents[1]
-BANK_PATH = ROOT / "content" / "exercises" / "1bach" / "t0" / "exercises.json"
+BANK_PATH = ROOT / "content" / "exercises" / "1bach" / "t0" / "exercises_t0.json"
 
 EXPECTED_DISTRIBUTION = {
     "units": 16,
     "vectors": 24,
-    "measurement": 20,
-    "calculus_graphs": 20,
+    "measurement": 19,
+    "calculus_graphs": 18,
 }
 
-RETIRED_IDS = {
+LEGACY_RETIRED_IDS = {
     "t0_u_017",
     "t0_u_018",
     *{f"t0_v_{number:03d}" for number in range(25, 37)},
@@ -26,6 +26,7 @@ RETIRED_IDS = {
     "t0_e_002",
     *{f"t0_c_{number:03d}" for number in range(21, 25)},
 }
+RETIRED_IDS = LEGACY_RETIRED_IDS | {"t0_m_007", "t0_c_007", "t0_c_018"}
 
 MANDATORY_ASSET_IDS = {
     "t0_v_012",
@@ -50,13 +51,16 @@ def validate_bank(root: Path | None = None) -> list[str]:
     exercises = bank.get("exercises", [])
     ids = [exercise.get("id") for exercise in exercises]
 
+    published = [exercise for exercise in exercises if exercise.get("status") != "retired"]
     if len(exercises) != 80:
-        errors.append(f"Expected 80 active T0 exercises, found {len(exercises)}.")
+        errors.append(f"Expected 80 ordered T0 records, found {len(exercises)}.")
+    if len(published) != 77:
+        errors.append(f"Expected 77 published T0 exercises, found {len(published)}.")
     duplicates = [exercise_id for exercise_id, count in Counter(ids).items() if count > 1]
     if duplicates:
         errors.append(f"Duplicated IDs: {', '.join(sorted(duplicates))}.")
-    if Counter(exercise.get("family") for exercise in exercises) != EXPECTED_DISTRIBUTION:
-        errors.append(f"Unexpected family distribution: {Counter(exercise.get('family') for exercise in exercises)}.")
+    if Counter(exercise.get("family") for exercise in published) != EXPECTED_DISTRIBUTION:
+        errors.append(f"Unexpected published family distribution: {Counter(exercise.get('family') for exercise in published)}.")
 
     for exercise in exercises:
         exercise_id = str(exercise.get("id"))
@@ -64,11 +68,15 @@ def validate_bank(root: Path | None = None) -> list[str]:
             errors.append(f"{exercise_id}: version must be 4.")
         if exercise.get("difficulty") == 1:
             errors.append(f"{exercise_id}: difficulty 1 is not allowed in active v4.")
-        if exercise_id in RETIRED_IDS:
-            errors.append(f"{exercise_id}: retired ID appears in active catalogue.")
-        if "hints" not in exercise or not isinstance(exercise.get("hints"), list):
+        if exercise_id in LEGACY_RETIRED_IDS:
+            errors.append(f"{exercise_id}: legacy retired ID appears in the ordered v4 records.")
+        if exercise.get("status") == "retired":
+            if exercise_id not in RETIRED_IDS or not exercise.get("retired_reason"):
+                errors.append(f"{exercise_id}: retired record needs a known ID and reason.")
+            continue
+        if "statement_source" not in exercise and not isinstance(exercise.get("hints"), list):
             errors.append(f"{exercise_id}: hints must be present as a list.")
-        if not isinstance(exercise.get("solution"), dict) or not exercise["solution"].get("summary_steps"):
+        if not exercise.get("solution_source") and (not isinstance(exercise.get("solution"), dict) or not exercise["solution"].get("summary_steps")):
             errors.append(f"{exercise_id}: guided solution summary_steps are required.")
 
         fields = exercise.get("interactions") or exercise.get("response_fields") or []
@@ -112,7 +120,7 @@ def validate_bank(root: Path | None = None) -> list[str]:
                 errors.append(f"{exercise_id}: SVG must include title and desc.")
 
     retired_metadata_ids = {item.get("id") for item in bank.get("retired_exercises", [])}
-    missing_retired = RETIRED_IDS - retired_metadata_ids
+    missing_retired = LEGACY_RETIRED_IDS - retired_metadata_ids
     if missing_retired:
         errors.append(f"Missing retired metadata IDs: {', '.join(sorted(missing_retired))}.")
 

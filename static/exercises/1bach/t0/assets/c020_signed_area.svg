@@ -1,25 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 270" role="img" aria-labelledby="title desc">
-  <title id="title">Área con signo en una gráfica velocidad-tiempo</title>
-  <desc id="desc">Gráfica v-t que une los puntos cero cero, dos cuatro, cuatro cuatro y seis menos tres, con regiones positiva y negativa diferenciadas.</desc>
-  <rect width="450" height="270" fill="#fff"/>
-  <g transform="translate(62 188)">
-    <path d="M0 0 H340" stroke="#475569" stroke-width="2"/>
-    <path d="M0 58 V-150" stroke="#475569" stroke-width="2"/>
-    <path d="M0 0 L110 -112 L220 -112 L340 84" fill="none" stroke="#2563eb" stroke-width="3"/>
-    <path d="M0 0 L110 -112 L220 -112 L289 0 Z" fill="#34d399" opacity="0.22"/>
-    <path d="M289 0 L340 84 L340 0 Z" fill="#f97316" opacity="0.24"/>
-    <path d="M289 -8 V8" stroke="#111827" stroke-width="2"/>
-    <g stroke="#e2e8f0" stroke-width="1">
-      <path d="M110 -140 V58 M220 -140 V58 M340 -140 V58"/>
-      <path d="M0 -112 H340 M0 84 H340"/>
-    </g>
-    <g fill="#111827" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="14">
-      <text x="334" y="20">t (s)</text><text x="-42" y="-142">v (m/s)</text>
-      <text x="-8" y="20">0</text><text x="104" y="20">2</text><text x="214" y="20">4</text><text x="334" y="20">6</text>
-      <text x="-26" y="-108">4</text><text x="-32" y="88">-3</text>
-      <text x="278" y="28">v = 0</text>
-      <text x="118" y="-64" fill="#047857">área positiva</text>
-      <text x="302" y="52" fill="#c2410c">área negativa</text>
-    </g>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-labelledby="title desc">
+<title id="title">Velocidad y áreas con signo</title><desc id="desc">Gráfica exacta: (0,0), (2,4), (4,4), (6,-3). Verde sobre el eje y naranja bajo el eje.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#475569"/></marker></defs>
+<rect width="480" height="300" fill="#f8fafc"/>
+<g font-family="Arial, sans-serif" fill="#334155"><path d="M60 264 L420 264" fill="none" stroke="#e2e8f0" stroke-width="2"/><text x="48" y="269" font-size="18" text-anchor="end">-3</text><path d="M60 180 L420 180" fill="none" stroke="#e2e8f0" stroke-width="2"/><text x="48" y="185" font-size="18" text-anchor="end">0</text><path d="M60 68 L420 68" fill="none" stroke="#e2e8f0" stroke-width="2"/><text x="48" y="73" font-size="18" text-anchor="end">4</text><path d="M60 68 L60 264" fill="none" stroke="#e2e8f0" stroke-width="2"/><text x="60" y="285" font-size="18" text-anchor="middle">0</text><path d="M180 68 L180 264" fill="none" stroke="#e2e8f0" stroke-width="2"/><text x="180" y="285" font-size="18" text-anchor="middle">2</text><path d="M300 68 L300 264" fill="none" stroke="#e2e8f0" stroke-width="2"/><text x="300" y="285" font-size="18" text-anchor="middle">4</text><path d="M420 68 L420 264" fill="none" stroke="#e2e8f0" stroke-width="2"/><text x="420" y="285" font-size="18" text-anchor="middle">6</text><polyline points="60.00,180.00 180.00,68.00 300.00,68.00 368.57,180.00 60.00,180.00" fill="#d1fae5" stroke="none" stroke-width="3"/><polyline points="368.57,180.00 420.00,264.00 420.00,180.00" fill="#ffedd5" stroke="none" stroke-width="3"/><path d="M60 270 L60 35" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/><path d="M50 180 L445 180" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/><polyline points="60.00,180.00 180.00,68.00 300.00,68.00 420.00,264.00" fill="none" stroke="#2563eb" stroke-width="3"/><text x="60" y="23" font-size="18" text-anchor="start">v (m/s)</text><text x="435" y="210" font-size="18" text-anchor="start">t (s)</text></g></svg>

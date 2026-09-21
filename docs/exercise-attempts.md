@@ -6,7 +6,7 @@ This MVP stores student work for JSON-backed exercises without moving the exerci
 
 The exercise catalogue remains file based:
 
-- `content/exercises/**/exercises.json` keeps the full exercise definition.
+- `content/exercises/**/exercises_<topic>.json` keeps the full exercise definition for the renamed 1bach banks.
 - `content/exercises/index.json` keeps the public practice index.
 - SQL stores only user attempts and responses.
 

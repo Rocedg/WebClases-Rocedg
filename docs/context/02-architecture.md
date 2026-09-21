@@ -20,16 +20,19 @@ contains activity and exercise logic. Local persistence remains
 | Lesson preparation | `content/lessons/intake/` (processing/unchecked stages) | Sources are not served |
 | Reference topics | `content/lessons/topics.json` | Existing `static/pdfs/topics_y1/`, `topics_y2/` |
 | Summaries and formula sheet | `content/lessons/summaries.json` | Existing `static/pdfs/resumenes/`, `formulario.pdf` |
-| Guided exercises | `content/exercises/<course>/<topic>/exercises.json` | `static/exercises/<course>/<topic>/` |
+| Guided exercises | `content/exercises/<course>/<topic>/exercises_<topic>.json` | `static/exercises/<course>/<topic>/` |
 | Exercise LaTeX templates | `content/exercises/latex/` | Generated PDFs under `static/exercises/` |
 | Exercise summary index | `content/exercises/index.json` (generated) | Loaded by Flask, not served statically |
 | Quizzes | `content/exercises/quizzes.json` | Existing `static/pdfs/quizzes/` |
 | Exams | `content/exams/exams.json` | Existing `static/pdfs/examenes/` |
 
 The full exercise catalogue is loaded from topic JSON, with the generated index
-as a fallback. The index filename deliberately differs from `exercises.json`,
-so recursive catalogue discovery does not load it twice. SQL stores student work
-keyed by exercise ID and version; it does not replace JSON educational content.
+as a fallback. The current 1bach banks are separate files:
+`exercises_t0.json`, `exercises_t1.json`, and `exercises_t2.json`. The loader
+reads each bank independently. The existing 2bach editorial fixture still uses
+its own legacy `exercises.json` path and remains supported separately. SQL stores
+student work keyed by exercise ID and version; it does not replace JSON
+educational content.
 
 Keep source/reference material and public assets separate. Existing public URLs
 are stable because bookmarks and activity rows may contain those paths. Intake

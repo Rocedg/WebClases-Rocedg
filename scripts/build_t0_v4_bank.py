@@ -10,7 +10,7 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 SPEC_PATH = ROOT / "content" / "exercises" / "1bach" / "t0" / "exercise-bank-t0-v4-spec.md"
-OUTPUT_PATH = ROOT / "content" / "exercises" / "1bach" / "t0" / "exercises.json"
+OUTPUT_PATH = ROOT / "content" / "exercises" / "1bach" / "t0" / "exercises_t0.json"
 
 FAMILY_BY_LETTER = {
     "U": ("units", "Lenguaje físico, unidades y análisis dimensional"),

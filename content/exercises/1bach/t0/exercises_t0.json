@@ -1,0 +1,5645 @@
+{
+  "version": 4,
+  "course": "1bach",
+  "block": "Herramientas para empezar Física",
+  "topic": "t0",
+  "topic_slug": "t0",
+  "description": "Banco editorial T0 versión 4 convertido desde exercise-bank-t0-v4-spec.md.",
+  "retired_ids": [
+    "t0_u_017",
+    "t0_u_018",
+    "t0_v_025",
+    "t0_v_026",
+    "t0_v_027",
+    "t0_v_028",
+    "t0_v_029",
+    "t0_v_030",
+    "t0_v_031",
+    "t0_v_032",
+    "t0_v_033",
+    "t0_v_034",
+    "t0_v_035",
+    "t0_v_036",
+    "t0_e_001",
+    "t0_e_002",
+    "t0_c_021",
+    "t0_c_022",
+    "t0_c_023",
+    "t0_c_024"
+  ],
+  "retired_exercises": [
+    {
+      "id": "t0_u_017",
+      "title": "t0_u_017 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_u_018",
+      "title": "t0_u_018 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_v_025",
+      "title": "t0_v_025 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_v_026",
+      "title": "t0_v_026 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_v_027",
+      "title": "t0_v_027 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_v_028",
+      "title": "t0_v_028 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_v_029",
+      "title": "t0_v_029 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_v_030",
+      "title": "t0_v_030 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_v_031",
+      "title": "t0_v_031 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_v_032",
+      "title": "t0_v_032 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_v_033",
+      "title": "t0_v_033 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_v_034",
+      "title": "t0_v_034 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_v_035",
+      "title": "t0_v_035 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_v_036",
+      "title": "t0_v_036 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_e_001",
+      "title": "t0_e_001 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_e_002",
+      "title": "t0_e_002 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_c_021",
+      "title": "t0_c_021 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_c_022",
+      "title": "t0_c_022 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_c_023",
+      "title": "t0_c_023 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_c_024",
+      "title": "t0_c_024 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "t0_u_001",
+      "title": "Rapidez media con conversión doble",
+      "course": "1bach",
+      "block": "Lenguaje físico, unidades y análisis dimensional",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "units",
+      "subtype": "numeric_multi",
+      "difficulty": 2,
+      "estimated_minutes": 7,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "distance_m",
+          "label": "Distance m",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 12600.0,
+          "tolerance": 1.0,
+          "unit": "m",
+          "part": "b"
+        },
+        {
+          "id": "time_s",
+          "label": "Time s",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1080.0,
+          "tolerance": 0.5,
+          "unit": "s",
+          "part": "b"
+        },
+        {
+          "id": "speed",
+          "label": "Speed",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 11.7,
+          "tolerance": 0.05,
+          "significant_figures": 3,
+          "prompt": "Da el resultado con 3 cifras significativas.",
+          "unit": "m·s⁻¹",
+          "part": "c"
+        },
+        {
+          "id": "dimension",
+          "label": "Dimension",
+          "required": true,
+          "type": "unit_expression",
+          "expected_value": "L T^-1",
+          "accepted_forms": [
+            "L·T^-1",
+            "[L T^-1]"
+          ],
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "units",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Lenguaje físico, unidades y análisis dimensional",
+      "common_mistakes": [
+        "dividir antes de convertir",
+        "convertir min multiplicando por 60 dos veces",
+        "responder 11,666… sin el redondeo pedido",
+        "confundir unidad con dimensión"
+      ],
+      "statement_source": "Una ciclista recorre 12,6 km en 18,0 min. \n(b) Calcula la rapidez media en m·s⁻¹.\n(c) Escribe la dimensión física de la rapidez.",
+      "solution_source": "\\(12,6\\,\\mathrm{km}=12600\\,\\mathrm{m}\\) y \\(18,0\\,\\mathrm{min}=1080\\,\\mathrm{s}\\).\n\nEntonces \\(v=12600/1080=11,666\\ldots\\,\\mathrm{m\\,s^{-1}}\\), que a 3 cifras significativas es \\(11,7\\,\\mathrm{m\\,s^{-1}}\\).\n\nSu dimensión es \\(LT^{-1}\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_u_002",
+      "title": "Densidad y cambio de sistema de unidades",
+      "course": "1bach",
+      "block": "Lenguaje físico, unidades y análisis dimensional",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "units",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 8,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "density_cgs",
+          "label": "Density cgs",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 2.7,
+          "tolerance": 0.005,
+          "significant_figures": 3,
+          "prompt": "Da el resultado con 3 cifras significativas.",
+          "unit": "g·cm⁻³",
+          "part": "a"
+        },
+        {
+          "id": "density_si",
+          "label": "Density si",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 2700.0,
+          "tolerance": 5.0,
+          "unit": "kg·m⁻³",
+          "part": "b"
+        },
+        {
+          "id": "material",
+          "label": "Material",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "aluminium",
+              "label": "aluminium"
+            },
+            {
+              "id": "iron`)",
+              "label": "iron`)"
+            }
+          ],
+          "correct_option_id": "aluminium",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "units",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Lenguaje físico, unidades y análisis dimensional",
+      "common_mistakes": [
+        "convertir solo gramos pero no cm³",
+        "usar $1\\,\\mathrm{cm^3}=10^{-2}\\,\\mathrm{m^3}$",
+        "elegir por cercanía sin mostrar la conversión"
+      ],
+      "statement_source": "Una pieza de metal tiene una masa de 270 g y ocupa 100 cm³. \n(a) Calcula su densidad en g·cm⁻³.\n(b) Conviértela a kg·m⁻³.\n(c) Entre aluminio (2700 kg·m⁻³) y hierro (7870 kg·m⁻³), indica con cuál es compatible.",
+      "solution_source": "\\(\\rho=270/100=2,70\\,\\mathrm{g\\,cm^{-3}}=2700\\,\\mathrm{kg\\,m^{-3}}\\).\n\nEs compatible con el aluminio.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_u_003",
+      "title": "Constante de una ley de acumulación",
+      "course": "1bach",
+      "block": "Lenguaje físico, unidades y análisis dimensional",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "units",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 8,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "unit_k",
+          "label": "Unidad de k",
+          "required": true,
+          "type": "unit_expression",
+          "expected_value": "J m^-2 s^-1",
+          "part": "a"
+        },
+        {
+          "id": "k",
+          "label": "Constante k",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 10.0,
+          "tolerance": 0.05,
+          "significant_figures": 3,
+          "prompt": "Da el resultado con 3 cifras significativas.",
+          "unit": "J·m⁻²·s⁻¹",
+          "part": "b"
+        },
+        {
+          "id": "predicted_energy",
+          "label": "Energía predicha",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1440.0,
+          "tolerance": 2.0,
+          "significant_figures": 3,
+          "prompt": "Da el resultado con 3 cifras significativas.",
+          "unit": "J",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "units",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Lenguaje físico, unidades y análisis dimensional",
+      "common_mistakes": [
+        "dejar kJ/min",
+        "invertir la fórmula",
+        "aplicar el cambio de área o tiempo dos veces"
+      ],
+      "statement_source": "Una superficie de 0,800 m² recibe 2,40 kJ de energía en 5,00 min y se modela mediante \\(Q=kAt\\). \n(a) Deduce la unidad SI de \\(k\\).\n(b) Calcula \\(k\\).\n(c) Predice la energía recibida por 1,20 m² durante 2,00 min si \\(k\\) no cambia.",
+      "solution_source": "\\([k]=\\mathrm{J\\,m^{-2}\\,s^{-1}}\\).\n\nCon \\(Q=2400\\) J y \\(t=300\\) s, \\(k=2400/(0,80\\cdot300)=10,0\\).\n\nDespués, \\(Q=10,0\\cdot1,20\\cdot120=1440\\) J.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_u_004",
+      "title": "Constante elástica desde energía",
+      "course": "1bach",
+      "block": "Lenguaje físico, unidades y análisis dimensional",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "units",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "unit_k",
+          "label": "Unidad de k",
+          "required": true,
+          "type": "unit_expression",
+          "expected_value": "N m^-1",
+          "accepted_forms": [
+            "J m^-2"
+          ],
+          "part": "a"
+        },
+        {
+          "id": "k",
+          "label": "Constante k",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 200.0,
+          "tolerance": 1.0,
+          "significant_figures": 3,
+          "prompt": "Da el resultado con 3 cifras significativas.",
+          "unit": "N·m⁻¹",
+          "part": "b"
+        },
+        {
+          "id": "energy_9cm",
+          "label": "Energy 9cm",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.81,
+          "tolerance": 0.002,
+          "significant_figures": 3,
+          "prompt": "Da el resultado con 3 cifras significativas.",
+          "unit": "J",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "units",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Lenguaje físico, unidades y análisis dimensional",
+      "common_mistakes": [
+        "omitir el factor $1/2$",
+        "usar 6 y 9 como metros",
+        "suponer que la energía crece linealmente con $x$"
+      ],
+      "statement_source": "La energía almacenada por un muelle se modela como \\(E=\\tfrac12kx^2\\). Al deformarlo 6,00 cm almacena 0,360 J. \n(a) Deduce la unidad SI de \\(k\\).\n(b) Calcula \\(k\\).\n(c) Calcula la energía para una deformación de 9,00 cm.",
+      "solution_source": "\\([k]=\\mathrm{J\\,m^{-2}}=\\mathrm{N\\,m^{-1}}\\).\n\n\\(k=2(0,360)/(0,060)^2=200\\,\\mathrm{N\\,m^{-1}}\\).\n\nPara \\(x=0,090\\) m, \\(E=\\tfrac12(200)(0,090)^2=0,810\\) J.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_u_005",
+      "title": "Elegir una ley dimensionalmente posible",
+      "course": "1bach",
+      "block": "Lenguaje físico, unidades y análisis dimensional",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "units",
+      "subtype": "single_choice_plus_text",
+      "difficulty": 3,
+      "estimated_minutes": 8,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "choice",
+          "label": "Choice",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "B",
+              "label": "B"
+            }
+          ],
+          "correct_option_id": "B",
+          "part": "a"
+        },
+        {
+          "id": "period",
+          "label": "Period",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.9,
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "prompt": "Da el resultado con 3 cifras significativas.",
+          "unit": "s",
+          "part": "a"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "units",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Lenguaje físico, unidades y análisis dimensional",
+      "common_mistakes": [
+        "elegir por recordar la fórmula sin justificar",
+        "tratar $2\\pi$ como dimensional",
+        "invertir $L/g$"
+      ],
+      "statement_source": "Se propone modelar el periodo \\(T\\) de un péndulo usando su longitud \\(L\\) y la aceleración gravitatoria \\(g\\). ¿Cuál de estas expresiones puede ser correcta por dimensiones? A) \\(T=2\\pi L/g\\); B) \\(T=2\\pi\\sqrt{L/g}\\); C) \\(T=2\\pi\\sqrt{g/L}\\); D) \\(T=2\\pi Lg\\).\n\n(a) Completa: Choice, Period.",
+      "solution_source": "Solo B produce tiempo: \\([\\sqrt{L/g}]=\\sqrt{L/(LT^{-2})}=T\\).\n\n\\(T=2\\pi\\sqrt{0,90/9,8}=1,90\\) s.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_u_006",
+      "title": "Parámetros de un decaimiento exponencial",
+      "course": "1bach",
+      "block": "Lenguaje físico, unidades y análisis dimensional",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "units",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "unit_A",
+          "label": "Unit A",
+          "required": true,
+          "type": "unit_expression",
+          "expected_value": "cm",
+          "part": "a"
+        },
+        {
+          "id": "unit_lambda",
+          "label": "Unit lambda",
+          "required": true,
+          "type": "unit_expression",
+          "expected_value": "m^-1",
+          "part": "a"
+        },
+        {
+          "id": "A",
+          "label": "Aceleración",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 12.0,
+          "tolerance": 0.01,
+          "unit": "cm",
+          "part": "b"
+        },
+        {
+          "id": "lambda",
+          "label": "Lambda",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.25,
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "prompt": "Da el resultado con 3 cifras significativas.",
+          "unit": "m⁻¹",
+          "part": "a"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "units",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Lenguaje físico, unidades y análisis dimensional",
+      "common_mistakes": [
+        "asignar a $A$ unidades SI forzosamente aunque $y$ se da en cm",
+        "olvidar el signo menos",
+        "escribir $\\lambda$ en m"
+      ],
+      "statement_source": "Una amplitud espacial sigue \\(y(x)=Ae^{-\\lambda x}\\). Se mide \\(y(0)=12,0\\) cm y \\(y(0,800\\,\\mathrm{m})=4,40\\) cm. \n(a) Deduce las unidades de \\(A\\) y \\(\\lambda\\).\n(b) Obtén sus valores.",
+      "solution_source": "\\(A=12,0\\) cm.\n\nEl exponente \\(\\lambda x\\) debe ser adimensional, así que \\([\\lambda]=\\mathrm{m^{-1}}\\).\n\n\\(\\lambda=-\\ln(4,40/12,0)/0,80=1,25\\,\\mathrm{m^{-1}}\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_u_007",
+      "title": "Fase inicial y periodo",
+      "course": "1bach",
+      "block": "Lenguaje físico, unidades y análisis dimensional",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "units",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "unit_omega",
+          "label": "Unit omega",
+          "required": true,
+          "type": "unit_expression",
+          "expected_value": "s^-1",
+          "accepted_forms": [
+            "rad s^-1"
+          ],
+          "part": "a"
+        },
+        {
+          "id": "unit_phi",
+          "label": "Unit phi",
+          "required": true,
+          "type": "unit_expression",
+          "expected_value": "dimensionless",
+          "accepted_forms": [
+            "rad"
+          ],
+          "part": "b"
+        },
+        {
+          "id": "phi",
+          "label": "Phi",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.524,
+          "tolerance": 0.005,
+          "accepted_forms": [
+            "pi/6"
+          ],
+          "unit": "rad",
+          "part": "c"
+        },
+        {
+          "id": "period",
+          "label": "Period",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 2.09,
+          "tolerance": 0.01,
+          "unit": "s",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "units",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Lenguaje físico, unidades y análisis dimensional",
+      "common_mistakes": [
+        "aceptar ambas fases ignorando el sentido",
+        "dar grados sin indicarlo",
+        "calcular $T=1/3$"
+      ],
+      "statement_source": "Una oscilación se describe por \\(y(t)=4,00\\sin(3,00t+\\phi)\\) cm, con \\(t\\) en segundos. En \\(t=0\\), \\(y=2,00\\) cm y la partícula se mueve en el sentido positivo de \\(y\\). \n(a) Indica las unidades de \\(3,00\\) y de \\(\\phi\\).\n(b) Determina \\(\\phi\\) en el intervalo \\([0,2\\pi)\\).\n(c) Calcula el periodo.",
+      "solution_source": "\\(3,0\\) tiene unidad s⁻¹ y \\(\\phi\\) es adimensional (se expresa en rad).\n\n\\(\\sin\\phi=0,5\\) da \\(\\phi=\\pi/6\\) o \\(5\\pi/6\\), pero solo \\(\\pi/6\\) tiene \\(\\cos\\phi>0\\).\n\n\\(T=2\\pi/3,0=2,09\\) s.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_u_008",
+      "title": "Exponentes desconocidos por análisis dimensional",
+      "course": "1bach",
+      "block": "Lenguaje físico, unidades y análisis dimensional",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "units",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "a",
+          "label": "Aceleración",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.5,
+          "tolerance": 0.001,
+          "part": "a"
+        },
+        {
+          "id": "b",
+          "label": "B",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -0.5,
+          "tolerance": 0.001,
+          "part": "a"
+        },
+        {
+          "id": "factor",
+          "label": "Factor",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 2.0,
+          "tolerance": 0.001,
+          "part": "a"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "units",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Lenguaje físico, unidades y análisis dimensional",
+      "common_mistakes": [
+        "igualar los exponentes sin separar magnitudes",
+        "obtener $b=+1/2$",
+        "afirmar que el periodo se cuadruplica"
+      ],
+      "statement_source": "Sin conocer la fórmula del péndulo, se supone \\(T=C L^a g^b\\), donde \\(C\\) es adimensional. Determina \\(a\\) y \\(b\\) imponiendo compatibilidad dimensional. Después indica cómo cambia \\(T\\) si la longitud se cuadruplica.\n\n(a) Completa: Aceleración, B, Factor.",
+      "solution_source": "\\(T=L^{a+b}T^{-2b}\\).\n\nPor tanto \\(a+b=0\\) y \\(-2b=1\\), de donde \\(b=-1/2\\) y \\(a=1/2\\).\n\nComo \\(T\\propto\\sqrt L\\), al cuadruplicar \\(L\\) el periodo se duplica.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_u_009",
+      "title": "Constante gravitatoria en unidades básicas",
+      "course": "1bach",
+      "block": "Lenguaje físico, unidades y análisis dimensional",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "units",
+      "subtype": "short_text_plus_numeric",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "unit_derived",
+          "label": "Unidad usando N",
+          "required": true,
+          "type": "unit_expression",
+          "expected_value": "N m^2 kg^-2",
+          "part": "a"
+        },
+        {
+          "id": "unit_base",
+          "label": "Unidad en unidades basicas",
+          "required": true,
+          "type": "unit_expression",
+          "unit_system": "base_si",
+          "expected_value": "m^3 kg^-1 s^-2",
+          "part": "b"
+        },
+        {
+          "id": "force_factor",
+          "label": "Factor de cambio de la fuerza",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.4444444444444444,
+          "tolerance": 0.002,
+          "accepted_forms": [
+            "4/9"
+          ],
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "units",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Lenguaje físico, unidades y análisis dimensional",
+      "common_mistakes": [
+        "conservar kg² en la unidad básica",
+        "cambiar $G$ al modificar el sistema",
+        "olvidar que la distancia está al cuadrado"
+      ],
+      "statement_source": "La ley \\(F=Gm_1m_2/r^2\\) usa \\(F\\) en N, masas en kg y distancia en m. \n(a) Deduce \\([G]\\) usando N.\n(b) Exprésala solo con kg, m y s.\n(c) Completa: Factor de cambio de la fuerza.",
+      "solution_source": "\\([G]=\\mathrm{N\\,m^2\\,kg^{-2}}=\\mathrm{m^3\\,kg^{-1}\\,s^{-2}}\\).\n\nEl numerador aumenta por 4 y \\(r^2\\) por 9, de modo que \\(F'/F=4/9\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_u_010",
+      "title": "Exponente radial en una ley de Coulomb",
+      "course": "1bach",
+      "block": "Lenguaje físico, unidades y análisis dimensional",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "units",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "n",
+          "label": "N",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 2.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "a"
+        },
+        {
+          "id": "ratio",
+          "label": "Ratio",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.1111,
+          "tolerance": 0.0005,
+          "accepted_forms": [
+            "1/9"
+          ],
+          "part": "b"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "units",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Lenguaje físico, unidades y análisis dimensional",
+      "common_mistakes": [
+        "deducir $n=1$",
+        "decir que la fuerza se divide entre 3",
+        "afirmar que las unidades determinan el valor de $k$"
+      ],
+      "statement_source": "Una ley se escribe \\(F=kq_1q_2/r^n\\). La constante tiene unidades N·m²·C⁻². \n(a) Determina \\(n\\) por dimensiones.\n(b) Si la distancia pasa de \\(r\\) a \\(3r\\) sin cambiar las cargas, calcula \\(F'/F\\).",
+      "solution_source": "Para cancelar m² debe cumplirse \\(n=2\\).\n\nAsí, \\(F'/F=(r/3r)^2=1/9\\).\n\nLas dimensiones no contienen información sobre factores adimensionales ni sobre el valor experimental de una constante.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_u_011",
+      "title": "Resistividad de un hilo real",
+      "course": "1bach",
+      "block": "Lenguaje físico, unidades y análisis dimensional",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "units",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "unit_rho",
+          "label": "Unidad de la resistividad",
+          "required": true,
+          "type": "unit_expression",
+          "expected_value": "ohm m",
+          "part": "a"
+        },
+        {
+          "id": "area",
+          "label": "Area",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 2.83e-07,
+          "tolerance": 1e-09,
+          "significant_figures": 3,
+          "prompt": "Da el resultado con 3 cifras significativas.",
+          "unit": "m²",
+          "part": "b"
+        },
+        {
+          "id": "rho",
+          "label": "Rho",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1e-07,
+          "tolerance": 3e-09,
+          "significant_figures": 2,
+          "prompt": "Da el resultado con 2 cifras significativas.",
+          "unit": "Ω·m",
+          "part": "a"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "units",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Lenguaje físico, unidades y análisis dimensional",
+      "common_mistakes": [
+        "usar el diámetro como radio",
+        "convertir mm a m con $10^{-2}$",
+        "redondear a `1×10^-7` perdiendo las 2 cifras pedidas"
+      ],
+      "statement_source": "Un hilo cilíndrico de longitud 2,40 m, diámetro 0,60 mm y resistencia 0,85 Ω cumple \\(R=\\rho L/A\\). \n(a) Deduce la unidad SI de \\(\\rho\\).\n(b) Calcula el área de la sección.",
+      "solution_source": "\\([\\rho]=\\Omega\\,\\mathrm m\\).\n\n\\(r=3,0\\times10^{-4}\\) m y \\(A=\\pi r^2=2,83\\times10^{-7}\\) m².\n\n\\(\\rho=0,85A/2,40=1,001\\times10^{-7}\\,\\Omega\\,\\mathrm m\\approx1,0\\times10^{-7}\\,\\Omega\\,\\mathrm m\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_u_012",
+      "title": "Ley cúbica y sensibilidad a la velocidad",
+      "course": "1bach",
+      "block": "Lenguaje físico, unidades y análisis dimensional",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "units",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "unit_k",
+          "label": "Unidad de k",
+          "required": true,
+          "type": "unit_expression",
+          "expected_value": "kg m^-3",
+          "part": "a"
+        },
+        {
+          "id": "k",
+          "label": "Constante k",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 2.4,
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "prompt": "Da el resultado con 3 cifras significativas.",
+          "unit": "kg·m⁻³",
+          "part": "b"
+        },
+        {
+          "id": "power_factor",
+          "label": "Power factor",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 8.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "units",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Lenguaje físico, unidades y análisis dimensional",
+      "common_mistakes": [
+        "no convertir kW",
+        "tratar la ley como lineal",
+        "perder potencias de m o s al reducir unidades"
+      ],
+      "statement_source": "La potencia necesaria para vencer cierto arrastre se aproxima por \\(P=kAv^3\\). Para \\(P=1,20\\) kW, \\(A=0,500\\) m² y \\(v=10,0\\) m·s⁻¹: \n(a) deduce la unidad de \\(k\\);\n(b) calcula \\(k\\);\n(c) Completa: Power factor.",
+      "solution_source": "\\([k]=\\mathrm{W}/[\\mathrm{m^2(m\\,s^{-1})^3}]=\\mathrm{kg\\,m^{-3}}\\).\n\n\\(k=1200/(0,500\\cdot10,0^3)=2,40\\,\\mathrm{kg\\,m^{-3}}\\).\n\nAl duplicar \\(v\\), la potencia se multiplica por 8.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_u_013",
+      "title": "Coherencia dimensional de van der Waals",
+      "course": "1bach",
+      "block": "Lenguaje físico, unidades y análisis dimensional",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "units",
+      "subtype": "short_text_multi",
+      "difficulty": 5,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "unit_a",
+          "label": "Unit a",
+          "required": true,
+          "type": "unit_expression",
+          "expected_value": "Pa m^6 mol^-2",
+          "part": "a"
+        },
+        {
+          "id": "unit_b",
+          "label": "Unit b",
+          "required": true,
+          "type": "unit_expression",
+          "expected_value": "m^3 mol^-1",
+          "part": "a"
+        },
+        {
+          "id": "unit_R",
+          "label": "Unit R",
+          "required": true,
+          "type": "unit_expression",
+          "expected_value": "J mol^-1 K^-1",
+          "part": "a"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "units",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Lenguaje físico, unidades y análisis dimensional",
+      "common_mistakes": [
+        "multiplicar unidades dentro de una suma",
+        "asignar a $b$ unidad de volumen sin dividir por mol",
+        "no comprobar el miembro derecho"
+      ],
+      "statement_source": "En \\((P+a n^2/V^2)(V-nb)=nRT\\), \\(P\\) está en Pa, \\(V\\) en m³, \\(n\\) en mol y \\(T\\) en K. \n(a) Deduce las unidades de \\(a\\), \\(b\\) y \\(R\\).",
+      "solution_source": "\\([a]=\\mathrm{Pa\\,m^6\\,mol^{-2}}\\) para que \\(an^2/V^2\\) sea presión. \\([b]=\\mathrm{m^3\\,mol^{-1}}\\) para que \\(nb\\) sea volumen.\n\nEl primer paréntesis es presión y el segundo volumen, por lo que su producto es Pa·m³ = J.\n\nEntonces \\([R]=\\mathrm{J\\,mol^{-1}\\,K^{-1}}\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_u_014",
+      "title": "Bernoulli: unidades y orden de magnitud",
+      "course": "1bach",
+      "block": "Lenguaje físico, unidades y análisis dimensional",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "units",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "pressure_term",
+          "label": "Pressure term",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 120000.0,
+          "tolerance": 50.0,
+          "unit": "Pa",
+          "part": "a"
+        },
+        {
+          "id": "height_term",
+          "label": "Height term",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 24500.0,
+          "tolerance": 30.0,
+          "unit": "Pa",
+          "part": "b"
+        },
+        {
+          "id": "kinetic_term",
+          "label": "Kinetic term",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 4500.0,
+          "tolerance": 10.0,
+          "unit": "Pa",
+          "part": "b"
+        },
+        {
+          "id": "C",
+          "label": "C",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 149000.0,
+          "tolerance": 100.0,
+          "significant_figures": 3,
+          "prompt": "Da el resultado con 3 cifras significativas.",
+          "unit": "Pa",
+          "part": "b"
+        },
+        {
+          "id": "dominant",
+          "label": "Dominant",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "pressure",
+              "label": "pressure"
+            },
+            {
+              "id": "height",
+              "label": "height"
+            },
+            {
+              "id": "kinetic",
+              "label": "kinetic"
+            }
+          ],
+          "correct_option_id": "pressure",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "units",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Lenguaje físico, unidades y análisis dimensional",
+      "common_mistakes": [
+        "sumar 120 como si fueran Pa",
+        "omitir $1/2$",
+        "afirmar compatibilidad sin reducir unidades"
+      ],
+      "statement_source": "En un punto de una corriente de agua, \\(P=120,0\\) kPa, \\(\\rho=1000\\) kg·m⁻³, \\(h=2,50\\) m y \\(v=3,00\\) m·s⁻¹. Con \\(g=9,80\\) m·s⁻², usa \\(C=P+\\rho gh+\\tfrac12\\rho v^2\\). \n(a) Completa: Pressure term.\n(b) Calcula cada contribución y \\(C\\).\n(c) Indica cuál domina numéricamente.",
+      "solution_source": "\\(P=120000\\) Pa, \\(\\rho gh=24500\\) Pa y \\(\\tfrac12\\rho v^2=4500\\) Pa. Los dos últimos reducen a kg·m⁻¹·s⁻² = Pa.\n\n\\(C=149000\\) \\(Pa = 149\\) kPa.\n\nDomina el término de presión estática.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_u_015",
+      "title": "Oscilación amortiguada y tiempo característico",
+      "course": "1bach",
+      "block": "Lenguaje físico, unidades y análisis dimensional",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "units",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "unit_gamma",
+          "label": "Unit gamma",
+          "required": true,
+          "type": "unit_expression",
+          "expected_value": "s^-1",
+          "part": "a"
+        },
+        {
+          "id": "unit_omega",
+          "label": "Unit omega",
+          "required": true,
+          "type": "unit_expression",
+          "expected_value": "s^-1",
+          "accepted_forms": [
+            "rad·s⁻¹"
+          ],
+          "part": "b"
+        },
+        {
+          "id": "unit_phase",
+          "label": "Unit phase",
+          "required": true,
+          "type": "unit_expression",
+          "expected_value": "dimensionless",
+          "accepted_forms": [
+            "rad"
+          ],
+          "part": "b"
+        },
+        {
+          "id": "half_time",
+          "label": "Half time",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.98,
+          "tolerance": 0.01,
+          "unit": "s",
+          "part": "c"
+        },
+        {
+          "id": "period",
+          "label": "Period",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.5,
+          "tolerance": 0.01,
+          "unit": "s",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "units",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Lenguaje físico, unidades y análisis dimensional",
+      "common_mistakes": [
+        "confundir periodo con tiempo de semiamplitud",
+        "asignar segundos a la fase",
+        "olvidar el logaritmo"
+      ],
+      "statement_source": "\\(x(t)=A e^{-0,350t}\\cos(4,20t+0,400)\\) describe una posición en metros con \\(t\\) en segundos. \n(a) Da las unidades de los números 0,350; 4,20 y 0,400.\n(b) Calcula el tiempo en que la amplitud se reduce a la mitad.\n(c) Calcula el periodo de la oscilación.",
+      "solution_source": "0,35 y 4,2 tienen unidad s⁻¹; 0,40 es una fase adimensional.\n\n\\(t_{1/2}=\\ln2/0,35=1,98\\) s.\n\n\\(T=2\\pi/4,2=1,50\\) s.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_u_016",
+      "title": "Suma bajo una raíz",
+      "course": "1bach",
+      "block": "Lenguaje físico, unidades y análisis dimensional",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "units",
+      "subtype": "numeric_multi",
+      "difficulty": 5,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "unit_alpha",
+          "label": "Unit alpha",
+          "required": true,
+          "type": "unit_expression",
+          "expected_value": "dimensionless",
+          "part": "a"
+        },
+        {
+          "id": "unit_beta",
+          "label": "Unit beta",
+          "required": true,
+          "type": "unit_expression",
+          "expected_value": "m",
+          "part": "b"
+        },
+        {
+          "id": "calculator_S",
+          "label": "Calculator S",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.768,
+          "tolerance": 0.002,
+          "unit": "m·s⁻¹",
+          "part": "c"
+        },
+        {
+          "id": "reported_S",
+          "label": "Reported S",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.8,
+          "tolerance": 0.05,
+          "significant_figures": 2,
+          "prompt": "Da el resultado con 2 cifras significativas.",
+          "unit": "m·s⁻¹",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "units",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Lenguaje físico, unidades y análisis dimensional",
+      "common_mistakes": [
+        "sumar términos de dimensiones distintas",
+        "sacar la raíz por separado de una suma",
+        "olvidar dividir entre $t$"
+      ],
+      "statement_source": "Una magnitud se define como \\(S=\\sqrt{\\alpha x^2+\\beta y}/t\\), con \\(S\\) en m·s⁻¹, \\(x\\) e \\(y\\) en m y \\(t\\) en s. \n(a) Deduce las unidades de \\(\\alpha\\) y \\(\\beta\\).\n(b) Completa: Unit beta.\n(c) Calcula \\(S\\) para \\(\\alpha=0,50\\), \\(\\beta=4,0\\) m, \\(x=3,0\\) m, \\(y=2,0\\) m y \\(t=2,0\\) s.",
+      "solution_source": "\\(\\alpha x^2\\) exige \\([\\alpha]=1\\) y \\(\\beta y\\) exige \\([\\beta]=\\mathrm m\\); ambos términos son m² y se pueden sumar.\n\nEl valor de calculadora es \\(S=\\sqrt{4,5+8,0}/2,0=1,768\\ldots\\,\\mathrm{m\\,s^{-1}}\\) y se informa \\(1,8\\,\\mathrm{m\\,s^{-1}}\\) por los datos de 2 cifras significativas.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_001",
+      "title": "Escalar y vector en un trayecto",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "single_choice_multi",
+      "difficulty": 2,
+      "estimated_minutes": 7,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "escalares",
+          "label": "Escalares",
+          "required": true,
+          "type": "short_text",
+          "accepted_forms": [
+            "tiempo, distancia, rapidez"
+          ],
+          "part": "a"
+        },
+        {
+          "id": "displacement_magnitude",
+          "label": "Displacement magnitude",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 500.0,
+          "tolerance": 0.5,
+          "unit": "m",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "clasificar rapidez como vector",
+        "responder 700 m como desplazamiento",
+        "definir vector solo como «algo con flecha» sin referirse a módulo, dirección y sentido"
+      ],
+      "statement_source": "Una alumna camina 300 m al este y después 400 m al norte en 10 min. \n(a) Clasifica como escalares o vectoriales: tiempo, distancia recorrida, rapidez media, desplazamiento y velocidad media.\n(c) Completa: Displacement magnitude.",
+      "solution_source": "recorre 700 m, pero se desplaza \\((300,400)\\) m, cuyo módulo es 500 m.\n\nLa distancia no tiene dirección; el desplazamiento sí.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_002",
+      "title": "Módulo, unitario y dirección",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "magnitude",
+          "label": "Magnitude",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 5.0,
+          "tolerance": 0.01,
+          "unit": "m",
+          "part": "a"
+        },
+        {
+          "id": "ux",
+          "label": "Ux",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.8,
+          "tolerance": 0.002,
+          "part": "b"
+        },
+        {
+          "id": "angle",
+          "label": "Angle",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 323.1,
+          "tolerance": 0.2,
+          "unit": "°",
+          "part": "c"
+        },
+        {
+          "id": "unit_check",
+          "label": "Unit check",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.0,
+          "tolerance": 0.002,
+          "part": "d"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "dar $-36,9^\\circ$ sin ajustarse al intervalo",
+        "dividir por una componente",
+        "perder el signo de $y$"
+      ],
+      "statement_source": "Para \\(\\vec a=(4,-3)\\) m: \n(a) calcula su módulo;\n(b) Completa: Ux.\n(c) da su ángulo en \\([0,360^\\circ)\\);\n(d) Completa: Unit check.",
+      "solution_source": "\\(|a|=5\\), \\(\\hat a=(0,8,-0,6)\\) y \\(\\theta=360^\\circ-\\arctan(3/4)=323,1^\\circ\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_003",
+      "title": "Fuerza con dirección prescrita",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 8,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "Fx",
+          "label": "Fx",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 9.0,
+          "tolerance": 0.02,
+          "unit": "N",
+          "part": "a"
+        },
+        {
+          "id": "magnitude",
+          "label": "Magnitude",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 15.0,
+          "tolerance": 0.02,
+          "unit": "N",
+          "part": "a"
+        },
+        {
+          "id": "opposite_x",
+          "label": "Opposite x",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -9.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "N",
+          "part": "a"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "multiplicar directamente $(6,8)$ por 15",
+        "construir un perpendicular",
+        "cambiar solo un signo"
+      ],
+      "statement_source": "Datos: \\((6,8)\\).\n\n(a) Completa: Fx, Magnitude, Opposite x.",
+      "solution_source": "el unitario es \\((0,6,0,8)\\); por tanto \\(\\vec F=(9,12)\\) N, \\(|F|=15\\) N y \\(-\\vec F=(-9,-12)\\) N.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_004",
+      "title": "Tres representaciones del mismo vector",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "x",
+          "label": "X",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -17.3,
+          "tolerance": 0.05,
+          "significant_figures": 3,
+          "prompt": "Da el resultado con 3 cifras significativas.",
+          "unit": "m",
+          "part": "a"
+        },
+        {
+          "id": "quadrant",
+          "label": "Cuadrante",
+          "required": true,
+          "type": "short_text",
+          "accepted_forms": [
+            "II"
+          ],
+          "part": "c"
+        },
+        {
+          "id": "reconstrucci_n_magnitude",
+          "label": "Reconstrucción `magnitude",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 20.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "m",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "usar seno para $x$ sin justificar otra convención",
+        "devolver ambas componentes positivas",
+        "confundir vector con su módulo"
+      ],
+      "statement_source": "Un desplazamiento tiene módulo 20,0 m y dirección \\(150^\\circ\\). \n(a) Escríbelo en componentes cartesianas.\n(c) Indica su cuadrante y reconstruye módulo y ángulo desde las componentes.",
+      "solution_source": "\\(\\vec R=(-17,3\\,\\vec i+10,0\\,\\vec j)\\) m.\n\nEstá en el segundo cuadrante y las componentes recuperan 20,0 m y \\(150^\\circ\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_005",
+      "title": "Componente desconocida y dos direcciones posibles",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "a_positive",
+          "label": "A positive",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 5.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "a"
+        },
+        {
+          "id": "angle_positive",
+          "label": "Angle positive",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 67.4,
+          "tolerance": 0.2,
+          "unit": "°",
+          "part": "b"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "quedarse solo con $a=5$",
+        "usar el mismo ángulo para ambos",
+        "resolver $a+12=13$"
+      ],
+      "statement_source": "\\(\\vec u=(a,12)\\) tiene módulo 13. \n(a) Calcula todos los valores posibles de \\(a\\).\n(b) Da el ángulo de cada vector desde \\(+x\\).",
+      "solution_source": "\\(a^2=25\\), luego \\(a=\\pm5\\).\n\nLos vectores están en los cuadrantes I y II, con \\(67,4^\\circ\\) y \\(112,6^\\circ\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_006",
+      "title": "Relaciones entre pares de vectores",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "short_text_multi",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "C_D_paralelos_de_sentido_opuesto_y_D",
+          "label": "Factor de proporcionalidad D/C",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -2.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "a"
+        },
+        {
+          "id": "E_F_perpendiculares_porque_E_cdot_F",
+          "label": "Producto escalar E·F",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "a"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "llamar iguales a C y D",
+        "afirmar que longitudes distintas impiden paralelismo",
+        "decidir perpendicularidad por apariencia"
+      ],
+      "statement_source": "Para cada par indica si son iguales, paralelos, opuestos o perpendiculares.\n\n(a) Completa: Factor de proporcionalidad D/C, Producto escalar E·F.",
+      "solution_source": "A–B iguales; C–D paralelos de sentido opuesto y \\(D=-2C\\) (no son vectores opuestos en sentido estricto si se reserva “opuesto” para \\(-C\\)); E–F perpendiculares porque \\(E\\cdot F=0\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_007",
+      "title": "Suma, resta y significado geométrico",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "response_1",
+          "label": "Suma",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            4.0,
+            5.0
+          ],
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "tolerance": 0.02,
+          "part": "a"
+        },
+        {
+          "id": "response_2",
+          "label": "Resta",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            6.0,
+            -9.0
+          ],
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "tolerance": 0.02,
+          "part": "a"
+        },
+        {
+          "id": "sum_magnitude",
+          "label": "Sum magnitude",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 6.4,
+          "tolerance": 0.02,
+          "unit": "m",
+          "part": "c"
+        },
+        {
+          "id": "sum_angle",
+          "label": "Sum angle",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 51.3,
+          "tolerance": 0.2,
+          "unit": "°",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "sumar módulos",
+        "calcular $B-A$",
+        "obtener un ángulo del cuadrante incorrecto"
+      ],
+      "statement_source": "Sean \\(A=(5,-2)\\) m y \\(B=(-1,7)\\) m. \n(a) Calcula \\(A+B\\) y \\(A-B\\).\n(c) Completa: Sum magnitude, Sum angle.",
+      "solution_source": "\\(A+B=(4,5)\\) m, \\(A-B=(6,-9)\\) m, \\(|A+B|=\\sqrt{41}=6,40\\) m y \\(\\theta=51,3^\\circ\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_008",
+      "title": "Combinación lineal y vector equilibrante",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "Rx",
+          "label": "Rx",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 8.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "N",
+          "part": "a"
+        },
+        {
+          "id": "Cx",
+          "label": "Cx",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -8.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "N",
+          "part": "b"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "interpretar $-3B$ como $(-3,-3)+B$",
+        "olvidar cambiar ambos signos en $C$",
+        "sumar módulos"
+      ],
+      "statement_source": "Con \\(A=(1,-4)\\) N y \\(B=(-2,3)\\) N: \n(a) calcula \\(R=2A-3B\\);\n(b) encuentra \\(C\\) para que \\(2A-3B+C=0\\);",
+      "solution_source": "\\(2A=(2,-8)\\) y \\(3B=(-6,9)\\), así que \\(R=(8,-17)\\) N.\n\nDebe ser \\(C=(-8,17)\\) N.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_009",
+      "title": "Tres desplazamientos y dirección final",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "Rx",
+          "label": "Rx",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -9.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "cm",
+          "part": "a"
+        },
+        {
+          "id": "magnitude",
+          "label": "Magnitude",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 14.2,
+          "tolerance": 0.05,
+          "unit": "cm",
+          "part": "a"
+        },
+        {
+          "id": "angle",
+          "label": "Angle",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 129.3,
+          "tolerance": 0.2,
+          "unit": "°",
+          "part": "a"
+        },
+        {
+          "id": "quadrant",
+          "label": "Cuadrante",
+          "required": true,
+          "type": "short_text",
+          "accepted_forms": [
+            "II"
+          ],
+          "part": "a"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "restar solo el módulo de C",
+        "aceptar $-50,7^\\circ$ sin corregir el cuadrante"
+      ],
+      "statement_source": "\\(A=(2,1)\\) cm, \\(B=(-3,4)\\) cm y \\(C=(5,-2)\\) cm. Calcula \\(R=A+2B-C\\), su módulo y su dirección desde \\(+x\\). Sitúa el resultado en el cuadrante correcto antes de usar la calculadora.\n\n(a) Completa: Rx, Magnitude, Angle, Cuadrante.",
+      "solution_source": "\\(R=(-9,11)\\) cm, \\(|R|=\\sqrt{202}=14,2\\) cm y \\(\\theta=129,3^\\circ\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_010",
+      "title": "Combinación en tres dimensiones",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "Rx",
+          "label": "Rx",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 5.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "a"
+        },
+        {
+          "id": "magnitude",
+          "label": "Magnitude",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 11.92,
+          "tolerance": 0.02,
+          "part": "b"
+        },
+        {
+          "id": "cos_z",
+          "label": "Cos z",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.503,
+          "tolerance": 0.003,
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "perder el signo al calcular $-2B$",
+        "aplicar Pitágoras solo a dos componentes",
+        "dar grados en el campo del coseno"
+      ],
+      "statement_source": "\\(A=(1,0,3)\\), \\(B=(-2,4,1)\\) y \\(C=(0,-1,5)\\). \n(a) Calcula \\(R=A-2B+C\\).\n(b) Obtén \\(|R|\\).\n(c) Calcula el coseno director respecto a \\(+z\\), \\(R_z/|R|\\).",
+      "solution_source": "\\(R=(5,-9,6)\\), \\(|R|=\\sqrt{142}=11,92\\) y \\(R_z/|R|=0,503\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_011",
+      "title": "Ecuación vectorial con comprobación",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "Xx",
+          "label": "Xx",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -3.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "a"
+        },
+        {
+          "id": "magnitude",
+          "label": "Magnitude",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 7.62,
+          "tolerance": 0.02,
+          "part": "a"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "usar $(A-B)/2$",
+        "dividir solo una componente",
+        "no comprobar"
+      ],
+      "statement_source": "Resuelve \\(2X+A=B\\) para \\(A=(4,-6)\\) y \\(B=(-2,8)\\). Después sustituye tu resultado en la ecuación y calcula el módulo de X.\n\n(a) Completa: Xx, Magnitude.",
+      "solution_source": "\\(B-A=(-6,14)\\), por tanto \\(X=(-3,7)\\) y \\(|X|=\\sqrt{58}=7,62\\).\n\nLa sustitución recupera B.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_012",
+      "title": "Construcción punta-cola",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "written_upload_plus_numeric",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "response_2",
+          "label": "Suma",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            4.0,
+            5.0
+          ],
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "tolerance": 0.02,
+          "part": "a"
+        },
+        {
+          "id": "response_3",
+          "label": "Resta",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            2.0,
+            -3.0
+          ],
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "tolerance": 0.02,
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t0/assets/v012_punta_cola.svg",
+          "alt": "Diagrama obligatorio para t0_v_012."
+        }
+      ],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "dibujar B desde el origen en vez de desde la punta de A",
+        "usar B en lugar de $-B$ en la resta",
+        "evaluar solo estética sin comprobar componentes"
+      ],
+      "statement_source": "Datos: \\(A=(3,1)\\); \\(B=(1,4)\\); \\(A+B\\); \\(A-B\\).\n\n(a) Completa: Suma, Resta.",
+      "solution_source": "\\(A+B=(4,5)\\) y \\(A-B=(2,-3)\\).\n\nEl SVG de solución mostrará ambas construcciones en paneles separados.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_013",
+      "title": "Componentes y proyección horizontal",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "Fx",
+          "label": "Fx",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 8.66,
+          "tolerance": 0.02,
+          "significant_figures": 3,
+          "prompt": "Da el resultado con 3 cifras significativas.",
+          "unit": "N",
+          "part": "a"
+        },
+        {
+          "id": "horizontal_fraction",
+          "label": "Horizontal fraction",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.866,
+          "tolerance": 0.002,
+          "part": "b"
+        },
+        {
+          "id": "reconstructed",
+          "label": "Reconstructed",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 10.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "N",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "intercambiar seno y coseno",
+        "dar porcentajes sin aclararlo",
+        "redondear tan pronto que falle la comprobación"
+      ],
+      "statement_source": "Una fuerza de 10,0 N forma \\(30,0^\\circ\\) sobre \\(+x\\). \n(a) Calcula sus componentes.\n(b) Completa: Horizontal fraction.\n(c) Reconstruye el módulo desde las componentes.",
+      "solution_source": "\\((F_x,F_y)=(10\\cos30^\\circ,10\\sin30^\\circ)=(8,66,5,00)\\) N; \\(F_x/F=0,866\\) y Pitágoras devuelve 10,0 N.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_014",
+      "title": "Dos cuadrantes y una resultante",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "Ax",
+          "label": "Ax",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -10.39,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "a"
+        },
+        {
+          "id": "Rx",
+          "label": "Rx",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -4.74,
+          "tolerance": 0.03,
+          "part": "b"
+        },
+        {
+          "id": "Rmag",
+          "label": "Rmag",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 12.58,
+          "tolerance": 0.03,
+          "part": "c"
+        },
+        {
+          "id": "Rangle",
+          "label": "Rangle",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 247.9,
+          "tolerance": 0.3,
+          "unit": "°",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "introducir grados como radianes",
+        "ignorar signos",
+        "usar el ángulo principal de la arctangente sin cuadrante"
+      ],
+      "statement_source": "\\(A\\) tiene módulo 12,0 y ángulo \\(210^\\circ\\); \\(B\\) tiene módulo 8,00 y ángulo \\(315^\\circ\\). \n(a) Calcula sus componentes.\n(b) Calcula \\(R=A+B\\).\n(c) Da módulo y dirección de R.",
+      "solution_source": "\\(A=(-10,39,-6,00)\\), \\(B=(5,66,-5,66)\\) y \\(R=(-4,74,-11,66)\\).\n\n\\(|R|=12,58\\) y \\(\\theta=247,9^\\circ\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_015",
+      "title": "Ángulo medido desde el eje y",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "Fx",
+          "label": "Fx",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 32.1,
+          "tolerance": 0.1,
+          "significant_figures": 3,
+          "prompt": "Da el resultado con 3 cifras significativas.",
+          "unit": "N",
+          "part": "b"
+        },
+        {
+          "id": "angle_from_x",
+          "label": "Angle from x",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 50.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "°",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "tratar los 40° como medidos desde x",
+        "intercambiar componentes",
+        "poner un signo negativo sin razón"
+      ],
+      "statement_source": "Una fuerza de 50,0 N forma \\(40,0^\\circ\\) con \\(+y\\) hacia \\(+x\\). \n(b) Calcula sus componentes.\n(c) Expresa el ángulo equivalente medido desde \\(+x\\).",
+      "solution_source": "\\(\\theta_x=90^\\circ-40^\\circ=50^\\circ\\).\n\n\\(F_x=50\\sin40^\\circ=32,1\\) N y \\(F_y=50\\cos40^\\circ=38,3\\) N.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_016",
+      "title": "La ambigüedad de la arctangente",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "magnitude",
+          "label": "Magnitude",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 10.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "a"
+        },
+        {
+          "id": "angle",
+          "label": "Angle",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 233.1,
+          "tolerance": 0.2,
+          "unit": "°",
+          "part": "b"
+        },
+        {
+          "id": "equivalent",
+          "label": "Equivalent",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -126.9,
+          "tolerance": 0.2,
+          "unit": "°",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "aceptar 53,1°",
+        "sumar 360° al ángulo agudo",
+        "creer que ángulos negativos son siempre inválidos"
+      ],
+      "statement_source": "Un vector tiene componentes \\((-6,-8)\\). Una calculadora muestra \\(\\arctan(y/x)=53,1^\\circ\\). \n(a) Calcula el módulo.\n(b) Completa: Angle.\n(c) Da el ángulo correcto en \\([0,360^\\circ)\\) y otro ángulo equivalente.",
+      "solution_source": "el vector está en el tercer cuadrante.\n\n\\(|v|=10\\) y la dirección es \\(53,1^\\circ+180^\\circ=233,1^\\circ\\), equivalente a \\(-126,9^\\circ\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_017",
+      "title": "Cambio a ejes girados",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "written_upload_plus_numeric",
+      "difficulty": 5,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "Ax_prime",
+          "label": "Ax prime",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 8.66,
+          "tolerance": 0.02,
+          "unit": "N",
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t0/assets/v017_ejes_girados.svg",
+          "alt": "Diagrama obligatorio para t0_v_017."
+        }
+      ],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "girar el vector junto con los ejes",
+        "poner $A_{y'}>0$",
+        "confundir transformación activa y cambio de base"
+      ],
+      "statement_source": "El vector \\(A=(10,0)\\) N se describe en unos ejes \\(x',y'\\) girados \\(30^\\circ\\) antihorario respecto a \\(x,y\\). \n(b) Calcula \\(A_{x'}\\) y \\(A_{y'}\\).",
+      "solution_source": "\\(A_{x'}=10\\cos30^\\circ=8,66\\) N y \\(A_{y'}=-10\\sin30^\\circ=-5,00\\) N.\n\nAl proyectar de vuelta se obtiene \\((10,0)\\) N.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_018",
+      "title": "Peso en un plano inclinado",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "written_upload_plus_numeric",
+      "difficulty": 4,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "response_1",
+          "label": "Dirección del peso",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "vertical",
+              "label": "Vertical hacia abajo"
+            },
+            {
+              "id": "normal",
+              "label": "Perpendicular al plano hacia dentro"
+            },
+            {
+              "id": "parallel",
+              "label": "Paralela a la rampa hacia abajo"
+            }
+          ],
+          "correct_option_id": "vertical",
+          "part": "a"
+        },
+        {
+          "id": "Px",
+          "label": "Componente \\(P_x\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -24.8,
+          "tolerance": 0.1,
+          "significant_figures": 3,
+          "prompt": "Da el resultado con 3 cifras significativas.",
+          "unit": "N",
+          "part": "b"
+        },
+        {
+          "id": "normal",
+          "label": "Módulo de la normal",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 53.3,
+          "tolerance": 0.1,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "N",
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t0/assets/v018_plano_inclinado.svg",
+          "alt": "Plano inclinado con ejes locales y peso vertical."
+        }
+      ],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "poner una componente positiva",
+        "intercambiar seno/coseno",
+        "dibujar el peso perpendicular a la rampa"
+      ],
+      "statement_source": "Un bloque de \\(6,00\\,\\mathrm{kg}\\) reposa sobre un plano inclinado \\(25,0^\\circ\\). Toma \\(+x\\) hacia arriba por la rampa y \\(+y\\) normal hacia fuera. Usa \\(g=9,80\\,\\mathrm{m/s^2}\\).\n\n(a) Selecciona la dirección del peso en estos ejes.\n\n(b) Calcula la componente \\(P_x\\) del peso.\n\n(c) Calcula el módulo de la normal si no hay otras fuerzas perpendiculares al plano.",
+      "solution_source": "El peso es vertical hacia abajo, con ambas componentes negativas en los ejes locales.\n\n\\[P_x=-mg\\sin25^\\circ=-24,8\\,\\mathrm{N}\\]\n\nComo \\(P_y=-mg\\cos25^\\circ\\), el equilibrio perpendicular da \\(N=-P_y=53,3\\,\\mathrm{N}\\)."
+    },
+    {
+      "id": "t0_v_019",
+      "title": "Distancia recorrida y desplazamiento",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "distance",
+          "label": "Distancia",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 10.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "km",
+          "part": "a"
+        },
+        {
+          "id": "Rx",
+          "label": "Rx",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -2.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "km",
+          "part": "a"
+        },
+        {
+          "id": "Rmag",
+          "label": "Rmag",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 2.83,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "km",
+          "part": "b"
+        },
+        {
+          "id": "Rangle",
+          "label": "Rangle",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 135.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "°",
+          "part": "b"
+        },
+        {
+          "id": "average_speed",
+          "label": "Average speed",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 5.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "km/h",
+          "part": "c"
+        },
+        {
+          "id": "average_velocity_magnitude",
+          "label": "Average velocity magnitude",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.41,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "km/h",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "dividir el mismo numerador en ambos promedios",
+        "dar solo el módulo del desplazamiento",
+        "omitir dirección"
+      ],
+      "statement_source": "Una persona camina 3,0 km al este, 2,0 km al norte y 5,0 km al oeste. \n(a) Calcula la distancia total.\n(b) Obtén las componentes, módulo y dirección del desplazamiento.\n(c) Calcula la rapidez media y el módulo de la velocidad media si tarda 2,0 h.",
+      "solution_source": "distancia 10,0 km; \\(R=(-2,2)\\) km, \\(|R|=2,83\\) km a 135°.\n\nRapidez media 5,00 km/h y módulo de velocidad media 1,41 km/h.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_020",
+      "title": "Resultante y fuerza equilibrante",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "Rx",
+          "label": "Rx",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 12.5,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "N",
+          "part": "a"
+        },
+        {
+          "id": "Rmag",
+          "label": "Rmag",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 13.23,
+          "tolerance": 0.03,
+          "unit": "N",
+          "part": "b"
+        },
+        {
+          "id": "Rangle",
+          "label": "Rangle",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 19.1,
+          "tolerance": 0.2,
+          "unit": "°",
+          "part": "c"
+        },
+        {
+          "id": "response_4",
+          "label": "Equilibrante",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            -12.5,
+            -4.33
+          ],
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "tolerance": 0.02,
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "sumar módulos",
+        "confundir equilibrante con una fuerza perpendicular",
+        "cambiar el módulo al invertir el sentido"
+      ],
+      "statement_source": "Tres personas tiran de una anilla: 40,0 N a \\(0^\\circ\\), 30,0 N a \\(120^\\circ\\) y 25,0 N a \\(240^\\circ\\). \n(a) Calcula la resultante.\n(b) Da módulo y dirección.\n(c) Determina la cuarta fuerza que produciría equilibrio.",
+      "solution_source": "\\(R=(12,50,4,33)\\) N, \\(|R|=13,23\\) N, \\(\\theta=19,1^\\circ\\).\n\nLa cuarta fuerza es \\((-12,50,-4,33)\\) N, a \\(199,1^\\circ\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_021",
+      "title": "Barca que quiere cruzar sin deriva",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 5,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "heading",
+          "label": "Heading",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 22.0,
+          "tolerance": 0.2,
+          "unit": "° west of north",
+          "part": "a"
+        },
+        {
+          "id": "response_2",
+          "label": "Velocidad orilla",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            0.0,
+            3.71
+          ],
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "tolerance": 0.02,
+          "part": "b"
+        },
+        {
+          "id": "crossing_time",
+          "label": "Crossing time",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 48.5,
+          "tolerance": 0.2,
+          "unit": "s",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "sumar 4 y 1,5 como escalares",
+        "usar la resultante de deriva libre",
+        "dividir el ancho entre 4,00"
+      ],
+      "statement_source": "Una barca puede navegar a 4,00 m·s⁻¹ respecto al agua. El río fluye a 1,50 m·s⁻¹ hacia el este y tiene 180 m de ancho. La barca quiere llegar justo enfrente. \n(a) Determina el ángulo al oeste del norte con que debe apuntar.\n(b) Calcula su velocidad respecto a la orilla.\n(c) Calcula el tiempo de cruce.",
+      "solution_source": "\\(4\\sin\\alpha=1,5\\), luego \\(\\alpha=22,0^\\circ\\).\n\nLa componente norte es \\(\\sqrt{4^2-1,5^2}=3,71\\) m/s y \\(t=180/3,71=48,5\\) s.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_022",
+      "title": "Desplazamiento de un dron",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "third_angle",
+          "label": "Third angle",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 120.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "°",
+          "part": "a"
+        },
+        {
+          "id": "Rx",
+          "label": "Rx",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 9.5,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "m",
+          "part": "b"
+        },
+        {
+          "id": "Rmag",
+          "label": "Rmag",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 9.87,
+          "tolerance": 0.03,
+          "unit": "m",
+          "part": "c"
+        },
+        {
+          "id": "path_length",
+          "label": "Path length",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 24.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "m",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "usar 60° desde +x",
+        "sumar 5 al componente x",
+        "responder 24 m como desplazamiento"
+      ],
+      "statement_source": "Un dron se desplaza 12,0 m al este, 7,0 m al sur y después 5,0 m a \\(60^\\circ\\) sobre el eje oeste. \n(a) Traduce el tercer tramo a un ángulo desde \\(+x\\).\n(b) Calcula el desplazamiento total y su módulo.\n(c) Compara con la distancia recorrida.",
+      "solution_source": "tercer tramo \\(=(-2,50,4,33)\\) m.\n\nEl total es \\((9,50,-2,67)\\) m, módulo 9,87 m.\n\nLa distancia recorrida es 24,0 m.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_023",
+      "title": "Producto escalar y proyección",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 5,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "dot",
+          "label": "Dot",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -3.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "a"
+        },
+        {
+          "id": "angle",
+          "label": "Angle",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 96.9,
+          "tolerance": 0.2,
+          "unit": "°",
+          "part": "b"
+        },
+        {
+          "id": "scalar_projection",
+          "label": "Scalar projection",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 5.2,
+          "tolerance": 0.02,
+          "unit": "m",
+          "part": "c"
+        },
+        {
+          "id": "projection_x",
+          "label": "Projection x",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 3.12,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "m",
+          "part": "d"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "multiplicar módulos en lugar de componentes",
+        "proyectar sobre u sin normalizar",
+        "no interpretar el producto negativo como ángulo obtuso"
+      ],
+      "statement_source": "Sean \\(A=(2,-1,3)\\) y \\(B=(4,5,-2)\\). \n(a) Calcula \\(A\\cdot B\\).\n(b) Obtén el ángulo entre ellos. Además, para \\(d=(6,2)\\) m y la dirección \\(u=(3,4)\\),\n(c) calcula la proyección escalar de d sobre u y\n(d) el vector proyectado.",
+      "solution_source": "\\(A\\cdot B=-3\\), de donde \\(\\theta=96,9^\\circ\\).\n\n\\(\\hat u=(0,6,0,8)\\), \\(d\\cdot\\hat u=5,20\\) m y \\(\\operatorname{proj}_u d=5,20\\hat u=(3,12,4,16)\\) m.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_024",
+      "title": "Producto vectorial y carga negativa",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "short_text_plus_numeric",
+      "difficulty": 5,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "A_cross_B",
+          "label": "A cross B",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 12.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "k",
+          "part": "a"
+        },
+        {
+          "id": "B_cross_A",
+          "label": "B cross A",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -12.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "k",
+          "part": "b"
+        },
+        {
+          "id": "area",
+          "label": "Area",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 12.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "b"
+        },
+        {
+          "id": "v_cross_B",
+          "label": "V cross B",
+          "required": true,
+          "type": "short_text",
+          "accepted_forms": [
+            "out_of_page"
+          ],
+          "part": "c"
+        },
+        {
+          "id": "force",
+          "label": "Force",
+          "required": true,
+          "type": "short_text",
+          "accepted_forms": [
+            "into_page"
+          ],
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t0/assets/v024_entra_sale.svg",
+          "alt": "Diagrama obligatorio para t0_v_024."
+        }
+      ],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "considerar conmutativo el producto vectorial",
+        "volver a multiplicar por el módulo de q cuando solo se pide sentido",
+        "olvidar invertir por carga negativa"
+      ],
+      "statement_source": "\\(A=3\\,\\vec i\\) y \\(B=4\\,\\vec j\\). \n(a) Calcula \\(A\\times B\\) y \\(B\\times A\\), indicando módulo y sentido.\n(b) Completa: B cross A, Area.\n(c) Una carga negativa se mueve hacia \\(+x\\) en un campo hacia \\(+y\\): determina el sentido de \\(\\vec v\\times\\vec B\\) y de \\(q\\vec v\\times\\vec B\\).",
+      "solution_source": "\\(A\\times B=12\\vec k\\) sale del papel y \\(B\\times A=-12\\vec k\\) entra.\n\nEl paralelogramo tiene área 12.\n\nPara la carga, \\(v\\times B\\) sale, pero la fuerza entra.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_001",
+      "title": "Error absoluto, relativo y signo",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "numeric_multi",
+      "difficulty": 2,
+      "estimated_minutes": 7,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "signed_error",
+          "label": "Signed error",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -1.4,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "cm",
+          "part": "a"
+        },
+        {
+          "id": "absolute_error",
+          "label": "Absolute error",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.4,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "cm",
+          "part": "b"
+        },
+        {
+          "id": "relative_error",
+          "label": "Relative error",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.17,
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "prompt": "Da el resultado con 3 cifras significativas.",
+          "unit": "%",
+          "part": "c"
+        },
+        {
+          "id": "direction",
+          "label": "Direction",
+          "required": true,
+          "type": "short_text",
+          "accepted_forms": [
+            "underestimate"
+          ],
+          "part": "d"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "dividir por la medida obtenida",
+        "dar error absoluto negativo",
+        "confundir 0,0117 con 1,17 %"
+      ],
+      "statement_source": "La longitud de referencia de una mesa es 120,0 cm y una alumna mide 118,6 cm. Calcula: \n(a) error firmado \\(x_m-x_r\\);\n(b) error absoluto;\n(c) error relativo porcentual;\n(d) indica si sobreestima o subestima.",
+      "solution_source": "error firmado \\(-1,4\\) cm; absoluto \\(1,4\\) cm; relativo \\(1,4/120,0\\times100=1,17\\%\\); la medida subestima.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_002",
+      "title": "Mismo porcentaje, distinto error absoluto",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 8,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "abs_A",
+          "label": "Abs A",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "g",
+          "part": "a"
+        },
+        {
+          "id": "abs_B",
+          "label": "Abs B",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 20.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "g",
+          "part": "a"
+        },
+        {
+          "id": "relative_comparison",
+          "label": "Relative comparison",
+          "required": true,
+          "type": "short_text",
+          "accepted_forms": [
+            "equal"
+          ],
+          "part": "a"
+        },
+        {
+          "id": "larger_absolute",
+          "label": "Larger absolute",
+          "required": true,
+          "type": "short_text",
+          "accepted_forms": [
+            "B"
+          ],
+          "part": "a"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "declarar A mejor sin especificar criterio",
+        "usar 49 o 980 como denominador de referencia",
+        "olvidar el porcentaje"
+      ],
+      "statement_source": "Medición A: 49 g frente a 50 g. Medición B: 980 g frente a 1000 g. Calcula los errores absolutos y relativos porcentuales. Decide cuál es mejor en términos relativos y cuál se desvía más en gramos.\n\n(a) Completa: Abs A, Abs B, Relative comparison, Larger absolute.",
+      "solution_source": "A se desvía 1 g y B 20 g, pero ambas tienen error relativo del 2,00 %.\n\nSon igualmente buenas en términos relativos; B tiene mayor error absoluto.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_003",
+      "title": "Multiplicación y cifras significativas",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "numeric_with_format",
+      "difficulty": 3,
+      "estimated_minutes": 8,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "calculator",
+          "label": "Calculator",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 50.375,
+          "tolerance": 0.001,
+          "part": "a"
+        },
+        {
+          "id": "reported",
+          "label": "Reported",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 50.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "significant_figures": 2,
+          "prompt": "Da el resultado con 2 cifras significativas.",
+          "part": "b"
+        },
+        {
+          "id": "limiting",
+          "label": "Limiting",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.8,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "redondear a 50,4 por decimales",
+        "escribir 50 sin marcar dos cifras",
+        "tomar 12,4 como limitante"
+      ],
+      "statement_source": "Evalúa \\(R=(12,4\\times3,25)/0,80\\). \n(a) Da el valor de calculadora.\n(b) Da el resultado que debe publicarse aplicando la regla de cifras significativas.\n(c) Indica qué dato limita la precisión.",
+      "solution_source": "el valor bruto es 50,375.\n\nComo 0,80 tiene 2 cifras, se informa \\(5,0\\times10^1\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_004",
+      "title": "Suma y posición decimal",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "numeric_with_format",
+      "difficulty": 2,
+      "estimated_minutes": 7,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "calculator",
+          "label": "Calculator",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 16.312,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "cm",
+          "part": "a"
+        },
+        {
+          "id": "reported",
+          "label": "Reported",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 16.3,
+          "tolerance": 0.001,
+          "unit": "cm",
+          "part": "b"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "responder 16 cm por tener 1 cifra significativa en 0,8",
+        "conservar todas las cifras",
+        "redondear cada sumando antes de sumar"
+      ],
+      "statement_source": "Suma \\(12,37 cm + 0,8 cm + 3,142 cm\\). \n(a) Conserva el resultado de calculadora.\n(b) Informa el resultado correctamente.",
+      "solution_source": "\\(16,312\\) cm se redondea a \\(16,3\\) cm porque 0,8 solo llega a décimas.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_005",
+      "title": "Serie de medidas y semidispersión",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "mean",
+          "label": "Mean",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 10.3,
+          "tolerance": 0.01,
+          "unit": "cm",
+          "part": "a"
+        },
+        {
+          "id": "uncertainty",
+          "label": "Uncertainty",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.2,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "cm",
+          "part": "a"
+        },
+        {
+          "id": "relative",
+          "label": "Relative",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.9,
+          "tolerance": 0.05,
+          "significant_figures": 2,
+          "prompt": "Da el resultado con 2 cifras significativas.",
+          "unit": "%",
+          "part": "a"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "usar el rango completo 0,4",
+        "escribir más decimales en la media que en la incertidumbre",
+        "dividir la incertidumbre entre 100"
+      ],
+      "statement_source": "Se mide cinco veces una longitud: 10,2; 10,4; 10,3; 10,5; 10,1 cm. Calcula media, incertidumbre, resultado final y incertidumbre relativa.\n\n(a) Completa: Mean, Uncertainty, Relative.",
+      "solution_source": "\\(\\bar x=10,3\\) cm, \\(u=(10,5-10,1)/2=0,2\\) cm y \\(u_r=0,2/10,3\\times100=1,94\\%\\approx1,9\\%\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_006",
+      "title": "Resolución de dos instrumentos",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "single_choice_plus_numeric",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "u_ruler",
+          "label": "U ruler",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.5,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "mm",
+          "part": "a"
+        },
+        {
+          "id": "u_caliper",
+          "label": "U caliper",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.05,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "mm",
+          "part": "b"
+        },
+        {
+          "id": "better",
+          "label": "Better",
+          "required": true,
+          "type": "short_text",
+          "accepted_forms": [
+            "caliper"
+          ],
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "convertir 0,01 cm en 1 mm",
+        "comparar pantallas y no escalas",
+        "usar la división completa pese al convenio dado"
+      ],
+      "statement_source": "Una regla analógica tiene divisiones de 1 mm y un calibre digital muestra centésimas de cm. Adoptando media división como incertidumbre instrumental: \n(a) calcula la incertidumbre de cada uno en mm;\n(b) decide cuál tiene mejor resolución;\n(c) indica si “digital” basta por sí solo para justificar la elección.",
+      "solution_source": "regla ±0,5 mm; calibre ±0,05 mm.\n\nEl calibre resuelve diez veces mejor, pero no por ser digital, sino por su incremento de 0,1 mm.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_007",
+      "title": "Precisión y exactitud no son sinónimos",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "classification_multi",
+      "difficulty": 4,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "retired",
+      "version": 4,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "llamar exacta a B por ser consistente",
+        "llamar precisa a C porque contiene un dato exacto",
+        "valorar datos aislados y no la serie"
+      ],
+      "statement_source": "El valor de referencia es 10,00 cm. Tres grupos obtienen: \\(A = 9,99\\); 10,00; 10,01. \\(B = 10,48\\); 10,50; 10,49. \\(C = 9,70\\); 10,30; 10,00. Clasifica cada serie en precisión alta/baja y exactitud de su promedio alta/baja. Justifica con dispersión y cercanía al valor de referencia.",
+      "solution_source": "A está agrupada y centrada; B agrupada pero desplazada ≈0,49 cm; C muy dispersa aunque su media coincide con 10,00 cm.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md",
+      "retired_reason": "El ejercicio dependía por completo de respuestas abiertas sin corrección automática fiable."
+    },
+    {
+      "id": "t0_m_008",
+      "title": "Corrección de error de cero",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 8,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "error_type",
+          "label": "Error type",
+          "required": true,
+          "type": "short_text",
+          "accepted_forms": [
+            "systematic_zero"
+          ],
+          "part": "a"
+        },
+        {
+          "id": "corrected_mass",
+          "label": "Corrected mass",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 124.8,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "g",
+          "part": "b"
+        },
+        {
+          "id": "uncertainty",
+          "label": "Uncertainty",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.05,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "g",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "sumar la corrección",
+        "llamarlo aleatorio",
+        "informar 124,8 ± 0,05 mezclando posiciones decimales"
+      ],
+      "statement_source": "Una balanza marca +0,6 g cuando está vacía. Al colocar una muestra indica 125,4 g. \n(a) Completa: Error type.\n(b) Corrige la masa.\n(c) Si la resolución es 0,1 g, informa el resultado con incertidumbre instrumental de media división.",
+      "solution_source": "es un error sistemático de cero.\n\n\\(m=125,4-0,6=124,8\\) g; con el convenio, \\((124,80\\pm0,05)\\) g.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_009",
+      "title": "Diferencia de longitudes con incertidumbre",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "D",
+          "label": "D",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 3.7,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "cm",
+          "part": "a"
+        },
+        {
+          "id": "u_D",
+          "label": "U D",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.2,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "cm",
+          "part": "a"
+        },
+        {
+          "id": "min",
+          "label": "Min",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 3.5,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "cm",
+          "part": "a"
+        },
+        {
+          "id": "max",
+          "label": "Max",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 3.9,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "cm",
+          "part": "a"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "restar incertidumbres",
+        "confundir extremos al restar intervalos",
+        "conservar centésimas inexistentes"
+      ],
+      "statement_source": "\\(L_1=(12,4\\pm0,1)\\) cm y \\(L_2=(8,7\\pm0,1)\\) cm. Usando suma lineal de incertidumbres máximas para suma/resta, calcula \\(D=L_1-L_2\\) e informa el resultado. Indica los extremos mínimo y máximo compatibles.\n\n(a) Completa: D, U D, Min, Max.",
+      "solution_source": "\\(D=3,7\\) cm y \\(u_D=0,1+0,1=0,2\\) cm.\n\nIntervalo \\([3,5,3,9]\\) cm.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_010",
+      "title": "Área e incertidumbre relativa",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "area",
+          "label": "Area",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 60.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "cm^2",
+          "part": "a"
+        },
+        {
+          "id": "relative",
+          "label": "Relative",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 2.83,
+          "tolerance": 0.02,
+          "unit": "%",
+          "part": "b"
+        },
+        {
+          "id": "absolute",
+          "label": "Absolute",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.7,
+          "tolerance": 0.05,
+          "unit": "cm^2",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "sumar 0,1+0,1 directamente al área",
+        "expresar 0,0283 como 0,0283 %",
+        "cuadrar la incertidumbre"
+      ],
+      "statement_source": "Un rectángulo mide \\((12,0\\pm0,1)\\) cm por \\((5,0\\pm0,1)\\) cm. Usando para productos la suma de incertidumbres relativas: \n(a) calcula el área;\n(b) su incertidumbre relativa;\n(c) su incertidumbre absoluta;",
+      "solution_source": "\\(A=60,0\\) cm².\n\n\\(u_A/A=0,1/12,0+0,1/5,0=0,0283\\); \\(u_A=1,7\\) cm².\n\nResultado \\((60,0\\pm1,7)\\) cm².",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_011",
+      "title": "Densidad con incertidumbre",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "rho",
+          "label": "Rho",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 8.42,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "g cm^-3",
+          "part": "a"
+        },
+        {
+          "id": "relative",
+          "label": "Relative",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 2.12,
+          "tolerance": 0.02,
+          "unit": "%",
+          "part": "a"
+        },
+        {
+          "id": "absolute",
+          "label": "Absolute",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.18,
+          "tolerance": 0.01,
+          "unit": "g cm^-3",
+          "part": "a"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "restar errores relativos por tratarse de un cociente",
+        "usar porcentajes como factores sin dividir entre 100",
+        "sobre-redondear el valor central"
+      ],
+      "statement_source": "Una muestra tiene \\(m=(84,2\\pm0,1)\\) g y \\(V=(10,0\\pm0,2)\\) cm³. Para \\(\\rho=m/V\\), suma las incertidumbres relativas máximas. Calcula densidad, incertidumbre relativa, absoluta y resultado final.\n\n(a) Completa: Rho, Relative, Absolute.",
+      "solution_source": "\\(\\rho=8,42\\).\n\n\\(u_r=0,1/84,2+0,2/10,0=0,0212\\); \\(u_\\rho=8,42(0,0212)=0,178\\approx0,18\\).\n\nResultado \\((8,42\\pm0,18)\\) g·cm⁻³.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_012",
+      "title": "Elegir el instrumento adecuado",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "single_choice_multi",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "p_1mm",
+          "label": "P 1mm",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 62.5,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "%",
+          "part": "a"
+        },
+        {
+          "id": "p_0_1mm",
+          "label": "P 0 1mm",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 6.25,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "%",
+          "part": "a"
+        },
+        {
+          "id": "p_0_01mm",
+          "label": "P 0 01mm",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.625,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "%",
+          "part": "a"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "comparar resolución absoluta con 5 sin porcentaje",
+        "escoger 0,1 mm por parecer “una décima”",
+        "usar la resolución completa"
+      ],
+      "statement_source": "Se quiere medir el grosor aproximado de una lámina de 0,80 mm con error relativo instrumental menor del 5 %. Hay tres instrumentos con resolución 1 mm, 0,1 mm y 0,01 mm. Suponiendo incertidumbre de media división, calcula el porcentaje esperado para cada uno y elige todos los que cumplen.\n\n(a) Completa: P 1mm, P 0 1mm, P 0 01mm.",
+      "solution_source": "porcentajes 62,5 %, 6,25 % y 0,625 %.\n\nSolo el instrumento de 0,01 mm cumple <5 %.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_013",
+      "title": "Dato atípico en una serie",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "numeric_plus_text",
+      "difficulty": 4,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "suspect",
+          "label": "Suspect",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 2.46,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "s",
+          "part": "a"
+        },
+        {
+          "id": "mean",
+          "label": "Mean",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.805,
+          "tolerance": 0.001,
+          "unit": "s",
+          "part": "b"
+        },
+        {
+          "id": "half_range",
+          "label": "Half range",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.015,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "s",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "borrar el dato solo porque molesta",
+        "incluirlo después de declararlo fallo confirmado",
+        "escribir 1,805 ± 0,015 como resultado final sin criterio de redondeo"
+      ],
+      "statement_source": "Los tiempos de una oscilación son 1,82; 1,79; 1,81; 2,46; 1,80 s. \n(a) Completa: Suspect.\n(b) Completa: Mean.\n(c) Si se confirma un fallo de cronometraje y se excluye, calcula media y semidispersión de los cuatro restantes e informa el resultado.",
+      "solution_source": "2,46 s es claramente discordante, pero primero se revisa la causa.\n\nSin él, media 1,805 s y semidispersión 0,015 s; al informar, \\((1,81\\pm0,02)\\) s.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_014",
+      "title": "Pendiente experimental y unidades",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "slope",
+          "label": "Slope",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 2.0,
+          "tolerance": 0.02,
+          "unit": "N m^-1",
+          "part": "a"
+        },
+        {
+          "id": "intercept",
+          "label": "Intercept",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.0,
+          "tolerance": 0.02,
+          "unit": "N",
+          "part": "b"
+        },
+        {
+          "id": "prediction",
+          "label": "Prediction",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 7.0,
+          "tolerance": 0.05,
+          "unit": "N",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "omitir unidades de pendiente",
+        "forzar paso por origen",
+        "intercambiar x e y"
+      ],
+      "statement_source": "Una gráfica \\(y\\) frente a \\(x\\) contiene los puntos (0,0 m; 1,0 N), (2,0 m; 5,1 N) y (4,0 m; 9,0 N). \n(a) Estima pendiente e intercepto usando los extremos.\n(b) Escribe la ley lineal aproximada con unidades.\n(c) Predice y para \\(x=3,0\\) m.",
+      "solution_source": "\\(m=(9,0-1,0)/(4,0-0)=2,00\\) N·m⁻¹; \\(b=1,00\\) N; \\(y(3,0)\\approx7,00\\) N.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_015",
+      "title": "Incertidumbre de una potencia",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "volume",
+          "label": "Volume",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 65.45,
+          "tolerance": 0.02,
+          "unit": "cm^3",
+          "part": "a"
+        },
+        {
+          "id": "relative",
+          "label": "Relative",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 2.4,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "%",
+          "part": "a"
+        },
+        {
+          "id": "absolute",
+          "label": "Absolute",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.6,
+          "tolerance": 0.05,
+          "unit": "cm^3",
+          "part": "a"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "usar $3u_r$ sin dividir por r",
+        "cubicar la incertidumbre",
+        "informar más decimales en V que en u"
+      ],
+      "statement_source": "Se calcula el volumen de una esfera con \\(V=\\tfrac43\\pi r^3\\) y \\(r=(2,50\\pm0,02)\\) cm. Calcula volumen, incertidumbre relativa, incertidumbre absoluta y resultado final.\n\n(a) Completa: Volume, Relative, Absolute.",
+      "solution_source": "\\(V=65,45\\) cm³, \\(u_V/V=3(0,02/2,50)=0,0240\\), \\(u_V=1,57\\approx1,6\\) cm³.\n\nSe informa \\((65,4\\pm1,6)\\) cm³.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_016",
+      "title": "Escritura correcta de un resultado",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "single_choice_plus_text",
+      "difficulty": 3,
+      "estimated_minutes": 8,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "choice",
+          "label": "Choice",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "C",
+              "label": "C"
+            }
+          ],
+          "correct_option_id": "C",
+          "part": "a"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "elegir A por “más precisión”",
+        "elegir B redondeando x a décimas",
+        "redondear x antes de u"
+      ],
+      "statement_source": "Un cálculo produce \\(x=2,3764\\) m y \\(u=0,083\\) m.\n\n(a) Completa: Choice.",
+      "solution_source": "C, \\((2,38\\pm0,08)\\) m.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_017",
+      "title": "Conversión de una medida con incertidumbre",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "numeric_with_format",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "value",
+          "label": "Value",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 20.0,
+          "tolerance": 0.005,
+          "unit": "m s^-1",
+          "part": "a"
+        },
+        {
+          "id": "uncertainty",
+          "label": "Uncertainty",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.14,
+          "tolerance": 0.005,
+          "unit": "m s^-1",
+          "part": "a"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "convertir solo el valor central",
+        "multiplicar por 3,6",
+        "informar 20 ± 0,14"
+      ],
+      "statement_source": "Convierte \\((72,0\\pm0,5)\\) km·h⁻¹ a m·s⁻¹. Aplica el mismo factor tanto al valor como a la incertidumbre e informa ambos con posiciones decimales coherentes.\n\n(a) Completa: Value, Uncertainty.",
+      "solution_source": "\\(72,0/3,6=20,00\\) y \\(0,5/3,6=0,1389\\approx0,14\\).\n\nResultado \\((20,00\\pm0,14)\\) m·s⁻¹.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_018",
+      "title": "Calibración lineal de un termómetro",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "numeric_multi",
+      "difficulty": 5,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "a",
+          "label": "Aceleración",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.008,
+          "tolerance": 0.0005,
+          "part": "a"
+        },
+        {
+          "id": "b",
+          "label": "B",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.4,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "°C",
+          "part": "a"
+        },
+        {
+          "id": "corrected",
+          "label": "Corrected",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 36.3,
+          "tolerance": 0.05,
+          "unit": "°C",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "corregir solo el cero",
+        "invertir a",
+        "usar grados Celsius como factor multiplicativo con unidades en a"
+      ],
+      "statement_source": "Un termómetro marca 0,4 °C en el punto real 0,0 °C y 101,2 °C en el punto real 100,0 °C. Supón una relación lineal \\(T_{lec}=aT_{real}+b\\). \n(a) Halla a y b.\n(c) Completa: Corrected.",
+      "solution_source": "\\(b=0,4\\) y \\(a=(101,2-0,4)/100=1,008\\).\n\nPara 37,0 °C, \\(T_{real}=(37,0-0,4)/1,008=36,31\\approx36,3\\) °C.\n\nHay error de cero y de escala.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_019",
+      "title": "Compatibilidad de dos medidas",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "short_text_plus_numeric",
+      "difficulty": 4,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "compatible",
+          "label": "Compatible",
+          "required": true,
+          "type": "short_text",
+          "accepted_forms": [
+            "yes_at_boundary"
+          ],
+          "part": "c"
+        },
+        {
+          "id": "difference",
+          "label": "Difference",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.3,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "comparar solo centros",
+        "exigir solapamiento de anchura positiva pese al criterio",
+        "sumar incertidumbres al centro incorrecto"
+      ],
+      "statement_source": "Dos métodos dan \\(A=(9,8\\pm0,2)\\) y \\(B=(10,1\\pm0,1)\\) en la misma unidad. \n(c) Calcula la diferencia entre valores centrales.",
+      "solution_source": "A admite [9,6;10,0] y B [10,0;10,2].\n\nTocan en 10,0, así que son compatibles justo en el límite del criterio dado.\n\nLos centros difieren 0,3.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_020",
+      "title": "Medir varias oscilaciones",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "numeric_multi_plus_text",
+      "difficulty": 5,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "m_todo_10_T",
+          "label": "Método 10 `T",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.86,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "s",
+          "part": "b"
+        },
+        {
+          "id": "improvement_factor",
+          "label": "Improvement factor",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 10.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "mantener ±0,2 después de dividir",
+        "dividir la incertidumbre entre $\\sqrt{10}$ pese al modelo explícito",
+        "decir que el valor 1,86 es más exacto solo por tener más decimales"
+      ],
+      "statement_source": "Un cronómetro tiene una incertidumbre de reacción de ±0,2 s por medida. \n(b) Si 10 oscilaciones duran 18,6 s, calcula T y su incertidumbre suponiendo que ±0,2 s afecta al tiempo total.\n(c) Completa: Improvement factor.",
+      "solution_source": "una oscilación da \\((1,9\\pm0,2)\\) s.\n\nDiez dan \\(T=18,6/10=1,86\\) s y \\(u_T=0,2/10=0,02\\) s.\n\nLa incertidumbre absoluta se reduce por un factor 10.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_c_001",
+      "title": "De posición a velocidad y aceleración",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "short_text_plus_numeric",
+      "difficulty": 3,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "v_expression",
+          "label": "V expression",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -3.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "a"
+        },
+        {
+          "id": "a_expression",
+          "label": "A expression",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 24.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "b"
+        },
+        {
+          "id": "v_1",
+          "label": "V 1",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 5.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "m s^-1",
+          "part": "b"
+        },
+        {
+          "id": "a_1",
+          "label": "A 1",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 24.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "m s^-2",
+          "part": "b"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "olvidar derivar la constante",
+        "escribir unidades de posición en v/a",
+        "decir que velocidad positiva implica necesariamente aceleración positiva en todo instante"
+      ],
+      "statement_source": "La posición de una partícula es \\(x(t)=7-3t+2t^4\\) m, con t en s. \n(a) Obtén \\(v(t)\\) y \\(a(t)\\) con unidades.\n(b) Calcula ambas en \\(t=1,00\\) s.",
+      "solution_source": "\\(v=-3+8t^3\\) y \\(a=24t^2\\).\n\nEn 1,00 s, \\(v=5,00\\) m·s⁻¹ y \\(a=24,0\\) m·s⁻²; el movimiento instantáneo es hacia \\(+x\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_c_002",
+      "title": "Potencias negativas y tasa local",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "short_text_plus_numeric",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "derivative",
+          "label": "Derivative",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -5.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "x^-2+6x^-4",
+          "part": "a"
+        },
+        {
+          "id": "value",
+          "label": "Value",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -0.875,
+          "tolerance": 0.002,
+          "part": "b"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "convertir $x^{-1}$ en $-x$",
+        "perder el signo de la segunda derivada",
+        "incluir cero"
+      ],
+      "statement_source": "Para \\(g(x)=5x^{-1}-2x^{-3}\\), \\(x\\ne0\\): \n(a) calcula \\(g'(x)\\);\n(b) evalúa \\(g'(2)\\);",
+      "solution_source": "\\(g'=-5x^{-2}+6x^{-4}\\) y \\(g'(2)=-5/4+6/16=-0,875\\).\n\nEl dominio excluye \\(x=0\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_c_003",
+      "title": "Raíces como potencias",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "short_text_plus_numeric",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "slope",
+          "label": "Slope",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.0,
+          "tolerance": 0.005,
+          "part": "a"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "derivar la raíz como $x^{-1/2}$ sin factor 1/2",
+        "mantener signo negativo en el segundo término",
+        "evaluar antes de derivar"
+      ],
+      "statement_source": "Reescribe \\(h(x)=3\\sqrt{x}-4/\\sqrt{x}\\) como potencias, deriva para \\(x>0\\) y calcula la pendiente en \\(x=4\\).\n\n(a) Completa: Slope.",
+      "solution_source": "\\(h'=\\tfrac32x^{-1/2}+2x^{-3/2}\\).\n\nEn \\(x=4\\): \\(3/4+1/4=1\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_c_004",
+      "title": "Parámetros y unidades en una función física",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "short_text_multi",
+      "difficulty": 4,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "v",
+          "label": "Vector velocidad",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 3.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "b"
+        },
+        {
+          "id": "a_x",
+          "label": "A x",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 6.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "confundir el parámetro a con aceleración",
+        "dar las mismas unidades a los tres coeficientes",
+        "comprobar solo la fórmula original"
+      ],
+      "statement_source": "\\(x(t)=at^3-bt+c\\) representa una posición en m y t se mide en s. \n(b) Obtén velocidad y aceleración.\n(c) Completa: A x.",
+      "solution_source": "`\\([a]=m s\\)^-3`, `\\([b]=m s\\)^-1`, `\\([c]=m`\\); \\(v=3at^2-b\\) en m·s⁻¹; \\(a_x=6at\\) en m·s⁻²; comprobación escrita.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_c_005",
+      "title": "Cambio medio e instantáneo",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "average_velocity",
+          "label": "Average velocity",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 3.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "m s^-1",
+          "part": "a"
+        },
+        {
+          "id": "instant_velocity",
+          "label": "Instant velocity",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 8.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "m s^-1",
+          "part": "b"
+        },
+        {
+          "id": "acceleration",
+          "label": "Acceleration",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 12.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "m s^-2",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "promediar $v(1)$ y $v(2)$ sin justificar",
+        "dividir posición final por tiempo final",
+        "confundir v con a"
+      ],
+      "statement_source": "Una posición viene dada por \\(x(t)=t^3-4t\\) m. \n(a) Calcula la velocidad media entre 1,0 s y 2,0 s.\n(b) Calcula la velocidad instantánea y la aceleración en 2,0 s.\n(c) Completa: Acceleration.",
+      "solution_source": "\\(v_{med}=[0-(-3)]/(2-1)=3\\) m/s.\n\n\\(v=3t^2-4\\), luego \\(v(2)=8\\) m/s; \\(a=6t\\), luego \\(a(2)=12\\) m/s².",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_c_006",
+      "title": "Puntos estacionarios y clasificación",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "numeric_multi_plus_text",
+      "difficulty": 4,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "x1",
+          "label": "X1",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "a"
+        },
+        {
+          "id": "x2",
+          "label": "X2",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 2.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "b"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "resolver solo x=2",
+        "llamar extremos a las raíces de f",
+        "clasificar sin comprobar cambio o segunda derivada"
+      ],
+      "statement_source": "Para \\(f(x)=x^3-3x^2\\): \n(a) localiza los puntos donde \\(f'=0\\);\n(b) calcula sus coordenadas;",
+      "solution_source": "en \\(x=0,\\) \\(f''=-6<0\\), máximo local \\((0,0)\\).\n\nEn \\(x=2,\\) \\(f''=6>0\\), mínimo local \\((2,-4)\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_c_007",
+      "title": "Misma velocidad, distinta posición",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "short_text_multi",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [],
+      "assets": [],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "retired",
+      "version": 4,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "concluir que ocupan el mismo lugar porque tienen la misma derivada",
+        "decir que la constante “no importa”",
+        "restar 3−5"
+      ],
+      "statement_source": "Dos móviles tienen \\(x_1(t)=2t^2+3\\) m y \\(x_2(t)=2t^2-5\\) m. \n(a) Compara sus velocidades y aceleraciones. \n(b) Calcula su separación con signo \\(x_1-x_2\\). \n(c) Explica físicamente qué representa la constante que desaparece al derivar.",
+      "solution_source": "ambas velocidades \\(4t\\) m/s y aceleraciones \\(4\\) m/s²; separación constante 8 m; constantes representan posiciones iniciales.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md",
+      "retired_reason": "El ejercicio dependía por completo de respuestas abiertas sin corrección automática fiable."
+    },
+    {
+      "id": "t0_c_008",
+      "title": "De aceleración a velocidad con condición inicial",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "short_text_plus_numeric",
+      "difficulty": 3,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "v_expression",
+          "label": "V expression",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 4.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "a"
+        },
+        {
+          "id": "v_2",
+          "label": "V 2",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 14.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "m s^-1",
+          "part": "b"
+        },
+        {
+          "id": "conceptual_no_la_condici_n_fija_C",
+          "label": "Conceptual: no, la condición fija C",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -2.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "olvidar C",
+        "usar C=0 automáticamente",
+        "derivar en lugar de integrar"
+      ],
+      "statement_source": "Una partícula tiene \\(a(t)=4+3t^2\\) m·s⁻² y \\(v(0)=-2\\) m·s⁻¹. \n(a) Obtén \\(v(t)\\).\n(b) Calcula v(2,0 s).\n(c) Indica si basta con una primitiva sin constante.",
+      "solution_source": "una primitiva es \\(4t+t^3+C\\); \\(v(0)=-2\\) da \\(C=-2\\).\n\nAsí \\(v(2)=8+8-2=14 m/s\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_c_009",
+      "title": "Cambio de velocidad acumulado",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "short_text_plus_numeric",
+      "difficulty": 4,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "v_expression",
+          "label": "V expression",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 2.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "t^3-2t^2+t+3",
+          "part": "a"
+        },
+        {
+          "id": "delta_v",
+          "label": "Delta v",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 10.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "m s^-1",
+          "part": "b"
+        },
+        {
+          "id": "v_2",
+          "label": "V 2",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 13.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "m s^-1",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "sumar v(0) dentro de $\\Delta v$",
+        "omitir límites",
+        "perder el término lineal"
+      ],
+      "statement_source": "\\(a(t)=6t^2-4t+1\\) m·s⁻² y \\(v(0)=3\\) m·s⁻¹. \n(a) Halla \\(v(t)\\).\n(b) Calcula el cambio de velocidad entre 0 y 2 s mediante una integral definida.\n(c) Completa: V 2.",
+      "solution_source": "\\(v=2t^3-2t^2+t+3\\).\n\nLa integral vale \\([2t^3-2t^2+t]_0^2=10\\) m/s y \\(13−3\\)=10.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_c_010",
+      "title": "Área bajo v(t)",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "displacement",
+          "label": "Desplazamiento",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 10.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "m",
+          "part": "a"
+        },
+        {
+          "id": "average_velocity",
+          "label": "Average velocity",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 5.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "m s^-1",
+          "part": "b"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "calcular el área desde t=0",
+        "confundir área con velocidad",
+        "dividir entre 3 s y no entre 2 s"
+      ],
+      "statement_source": "La velocidad es \\(v(t)=2t+1\\) m·s⁻¹. Entre \\(t=1 s\\) y \\(t=3 s\\): \n(a) calcula el desplazamiento por integración;\n(b) calcula la velocidad media;",
+      "solution_source": "\\(\\int_1^3(2t+1)dt=10\\) m.\n\n\\(v_{med}=10/2=5\\) m/s.\n\nTrapecio: \\((3+7)2/2=10\\) m.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_c_011",
+      "title": "Desplazamiento cero, distancia no nula",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "numeric_multi_plus_text",
+      "difficulty": 4,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "displacement",
+          "label": "Desplazamiento",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "m",
+          "part": "a"
+        },
+        {
+          "id": "distance",
+          "label": "Distancia",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 8.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "m",
+          "part": "b"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "concluir que no se mueve",
+        "usar la integral con signo como distancia",
+        "tomar valor absoluto solo al final"
+      ],
+      "statement_source": "Un móvil tiene \\(v(t)=t^3\\) m·s⁻¹ entre −2 s y 2 s. \n(a) Calcula el desplazamiento.\n(b) Calcula la distancia recorrida.",
+      "solution_source": "la función impar integra 0 en límites simétricos.\n\nDistancia \\(=\\int_{-2}^0(-t^3)dt+\\int_0^2t^3dt=4+4=8\\) m.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_c_012",
+      "title": "Signo antes de calcular",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "single_choice_plus_numeric",
+      "difficulty": 2,
+      "estimated_minutes": 7,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "sign",
+          "label": "Sign",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "negative",
+              "label": "negative"
+            },
+            {
+              "id": "positive",
+              "label": "positive"
+            },
+            {
+              "id": "zero",
+              "label": "zero"
+            }
+          ],
+          "correct_option_id": "negative",
+          "part": "a"
+        },
+        {
+          "id": "I",
+          "label": "I",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -4.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "a"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "predecir positivo porque el área geométrica es positiva",
+        "cambiar límites",
+        "omitir el signo exterior"
+      ],
+      "statement_source": "Después calcula I exactamente.\n\n(a) Completa: Sign, I.",
+      "solution_source": "el integrando es siempre negativo, por lo que I<0.\n\n\\(I=-[x^2/2+x]_0^2=-4\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_c_013",
+      "title": "Movimiento a velocidad constante por tramos",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "displacement",
+          "label": "Desplazamiento",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 2.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "m",
+          "part": "a"
+        },
+        {
+          "id": "distance",
+          "label": "Distancia",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 10.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "m",
+          "part": "b"
+        },
+        {
+          "id": "final_position",
+          "label": "Final position",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 7.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "m",
+          "part": "c"
+        },
+        {
+          "id": "return_within_interval",
+          "label": "Return within interval",
+          "required": true,
+          "type": "short_text",
+          "accepted_forms": [
+            "no"
+          ],
+          "part": "d"
+        },
+        {
+          "id": "hypothetical_return_time",
+          "label": "Hypothetical return time",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 9.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "d"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "afirmar t=6 s contando desde cero en el segundo tramo",
+        "sumar velocidades",
+        "confundir posición final y desplazamiento"
+      ],
+      "statement_source": "\\(v=2,0\\) m/s entre 0 y 3 s y \\(v=-1,0\\) m/s entre 3 y 7 s. Si \\(x(0)=5,0\\) m: \n(a) calcula desplazamiento;\n(b) distancia;\n(c) posición final;\n(d) instante en que vuelve a \\(x=5,0 m\\), si ocurre.",
+      "solution_source": "\\(\\Delta x=6-4=2\\) m; distancia \\(6+4=10\\) m; \\(x_f=7\\) m.\n\nDesde \\(x=11 m\\) en \\(t=3\\) necesita retroceder 6 m, por lo que vuelve a \\(x=5\\) en \\(t=9 s\\), **fuera del intervalo descrito**.\n\nPor tanto, dentro de [0,7] no vuelve.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_c_014",
+      "title": "Recta experimental por dos puntos",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "short_text_multi",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "slope",
+          "label": "Slope",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 2.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "mA V^-1",
+          "part": "a"
+        },
+        {
+          "id": "intercept",
+          "label": "Intercept",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "mA",
+          "part": "a"
+        },
+        {
+          "id": "prediction",
+          "label": "Prediction",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 7.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "mA",
+          "part": "a"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "hallar pendiente 1/2",
+        "escribir y=2x sin aclarar unidades",
+        "suponer b=0 sin comprobar"
+      ],
+      "statement_source": "Una calibración lineal relaciona entrada x (V) y salida y (mA) y pasa por (1,0 V; 2,0 mA) y (5,0 V; 10,0 mA). Obtén la ecuación, las unidades de pendiente e intercepto y predice y para 3,5 V.\n\n(a) Completa: Slope, Intercept, Prediction.",
+      "solution_source": "pendiente \\((10-2)/(5-1)=2\\) mA/V y \\(b=0\\); para 3,5 V, \\(y=7,0\\) mA.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_c_015",
+      "title": "Recta, cortes e interpretación",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "ecuaci_n_y",
+          "label": "Ecuación `y",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -3.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "x+11",
+          "part": "a"
+        },
+        {
+          "id": "y_intercept",
+          "label": "Y intercept",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 11.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "b"
+        },
+        {
+          "id": "x_intercept",
+          "label": "X intercept",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 3.6666666666666665,
+          "tolerance": 0.002,
+          "accepted_forms": [
+            "11/3"
+          ],
+          "part": "c"
+        },
+        {
+          "id": "comprobaci_n_y_2",
+          "label": "Comprobación `y(2)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 5.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "usar b=5",
+        "cambiar el signo al desarrollar",
+        "redondear 11/3 demasiado pronto"
+      ],
+      "statement_source": "Construye la recta de pendiente −3 que pasa por \\((2,5)\\). \n(a) Escríbela como \\(y=mx+b\\).\n(b) Calcula sus cortes con ambos ejes.\n(c) Completa: X intercept, Comprobación `y(2).",
+      "solution_source": "\\(y=-3x+11\\); cortes \\((0,11)\\) y (11/3,0).\n\nAl sustituir \\(x=2\\) se obtiene 5.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_c_016",
+      "title": "Función por tramos y continuidad",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "written_upload_plus_text",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "f",
+          "label": "F",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "b"
+        },
+        {
+          "id": "f",
+          "label": "F",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 2.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t0/assets/c016_piecewise.svg",
+          "alt": "Diagrama obligatorio para t0_c_016."
+        }
+      ],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "usar pendiente 4/2 en lugar de (5−1)/(4−2) aunque aquí coincidan sin justificar",
+        "generar saltos por intervalos mal definidos",
+        "omitir puntos extremos"
+      ],
+      "statement_source": "Construye y dibuja \\(f(x)\\): vale 1 de \\(x=0\\) a 2; crece linealmente hasta valer 5 en \\(x=4\\); permanece en 5 hasta \\(x=6\\). \n(b) Completa: F.\n(c) Da la pendiente de cada tramo.",
+      "solution_source": "\\(f=1\\) en [0,2]; \\(f=2x-3\\) en (2,4]; \\(f=5\\) en (4,6]; pendientes 0,2,0; continua en uniones.\n\nDibujo `pending_review`.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_c_017",
+      "title": "Recuperar una función desde su derivada",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "short_text_multi",
+      "difficulty": 4,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "C",
+          "label": "C",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 4.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "b"
+        },
+        {
+          "id": "f",
+          "label": "F",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 3.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "x^2-4x+4",
+          "part": "b"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "omitir C",
+        "imponer f(0)=3",
+        "comprobar solo una de las dos condiciones"
+      ],
+      "statement_source": "Se sabe que \\(f'(x)=6x-4\\) y \\(f(1)=3\\). \n(b) Usa la condición para obtener f.",
+      "solution_source": "\\(f=3x^2-4x+C\\).\n\nComo \\(f(1)=3\\), \\(3-4+C=3\\), así que \\(C=4\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_c_018",
+      "title": "Construcción con valor y pendiente",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "written_solution",
+      "difficulty": 5,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [],
+      "assets": [],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "retired",
+      "version": 4,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "dar una solución válida de grado mayor sin atender «grado mínimo»",
+        "afirmar unicidad entre todas las funciones",
+        "no verificar"
+      ],
+      "statement_source": "Busca el polinomio de grado mínimo que cumple \\(f(0)=2\\), \\(f(1)=3\\) y \\(f'(1)=0\\). \n(a) Justifica por qué una recta no basta. \n(b) Determina el polinomio. \n(c) Explica si las tres condiciones harían única una función sin restringir el grado.",
+      "solution_source": "grado mínimo 2; \\(f(x)=-x^2+2x+2\\); una recta no puede tener pendiente 0 y cambiar de 2 a 3; sin limitar grado no es única.\n\nCorrección manual/parcial por pasos.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md",
+      "retired_reason": "El ejercicio dependía por completo de respuestas abiertas sin corrección automática fiable."
+    },
+    {
+      "id": "t0_c_019",
+      "title": "Leer crecimiento y pendientes de una gráfica",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "numeric_multi_plus_text",
+      "difficulty": 4,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "no_derivable_en_x",
+          "label": "Punto no derivable (x)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 2.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "s",
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t0/assets/c019_growth.svg",
+          "alt": "Diagrama obligatorio para t0_c_019."
+        }
+      ],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "incluir las esquinas en intervalos de derivada constante",
+        "confundir decrecer con valores negativos",
+        "decir que pendiente cero implica y=0"
+      ],
+      "statement_source": "Una gráfica lineal por tramos une \\((0,0)\\), \\((2,4)\\), \\((4,4)\\) y \\((6,1)\\). \n(c) Completa: Punto no derivable (x).",
+      "solution_source": "Respuestas indicadas por campos: intervalos `\\((0,2)\\)`, `\\((2,4)\\)`, `\\((4,6)\\)`; pendientes `2`, `0`, `-1.5`; no derivable en \\(x=2\\) y \\(x=4\\) por cambio brusco de pendiente.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_c_020",
+      "title": "Área con signo y movimiento en una gráfica v–t",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "numeric_multi_plus_text",
+      "difficulty": 5,
+      "estimated_minutes": 16,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "zero_time",
+          "label": "Instante de cambio de sentido",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 5.142857142857143,
+          "tolerance": 0.003,
+          "accepted_forms": [
+            "36/7"
+          ],
+          "unit": "s",
+          "part": "a"
+        },
+        {
+          "id": "positive_area",
+          "label": "Área positiva",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 14.285714285714286,
+          "tolerance": 0.01,
+          "accepted_forms": [
+            "100/7"
+          ],
+          "unit": "m",
+          "part": "b"
+        },
+        {
+          "id": "negative_signed",
+          "label": "Área negativa con signo",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -1.2857142857142858,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "accepted_forms": [
+            "-9/7"
+          ],
+          "unit": "m",
+          "part": "b"
+        },
+        {
+          "id": "displacement",
+          "label": "Desplazamiento",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 13.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "m",
+          "part": "c"
+        },
+        {
+          "id": "distance",
+          "label": "Distancia total",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 15.571428571428571,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "accepted_forms": [
+            "109/7"
+          ],
+          "unit": "m",
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t0/assets/c020_signed_area.svg",
+          "alt": "Velocidad por tramos entre cero y seis segundos, con áreas de distinto signo."
+        }
+      ],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "tratar todo el último trapecio como positivo o negativo",
+        "usar `12` como área positiva ignorando la parte sobre el eje después de t=4",
+        "sumar área negativa con signo para la distancia. **Nota:** la respuesta del banco v3 para este gráfico era incorrecta",
+        "no reutilizar `12, −3, 9`"
+      ],
+      "statement_source": "La gráfica velocidad-tiempo une linealmente los puntos \\((0\\,\\mathrm{s},0\\,\\mathrm{m/s})\\), \\((2\\,\\mathrm{s},4\\,\\mathrm{m/s})\\), \\((4\\,\\mathrm{s},4\\,\\mathrm{m/s})\\) y \\((6\\,\\mathrm{s},-3\\,\\mathrm{m/s})\\).\n\n(a) Halla el instante en que cambia de sentido en el último tramo.\n\n(b) Calcula el área positiva y el área negativa con signo entre \\(0\\) y \\(6\\,\\mathrm{s}\\).\n\n(c) Calcula el desplazamiento y la distancia total en ese intervalo.",
+      "solution_source": "En el último tramo, \\(v=4-\\frac72(t-4)\\). Al imponer \\(v=0\\), resulta \\(t=36/7\\,\\mathrm{s}\\).\n\nEl área positiva es \\(4+8+16/7=100/7\\,\\mathrm{m}\\) y la negativa es \\(-9/7\\,\\mathrm{m}\\).\n\nEl desplazamiento suma las áreas con signo: \\(\\Delta x=13\\,\\mathrm{m}\\). La distancia suma sus módulos: \\(d=109/7\\,\\mathrm{m}\\)."
+    }
+  ]
+}

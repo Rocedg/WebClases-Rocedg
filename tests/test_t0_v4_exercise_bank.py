@@ -19,7 +19,7 @@ from services.exercise_attempt_service import (
 
 
 ROOT = Path(__file__).resolve().parents[1]
-BANK_PATH = ROOT / "content" / "exercises" / "1bach" / "t0" / "exercises.json"
+BANK_PATH = ROOT / "content" / "exercises" / "1bach" / "t0" / "exercises_t0.json"
 
 
 def load_script(relative_path: str, module_name: str):

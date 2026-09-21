@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-BANK_PATH = ROOT / "content" / "exercises" / "1bach" / "t0" / "exercises.json"
+BANK_PATH = ROOT / "content" / "exercises" / "1bach" / "t0" / "exercises_t0.json"
 
 
 def field(exercises, exercise_id: str, field_id: str) -> float:
