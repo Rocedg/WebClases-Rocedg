@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc" style="max-width:100%;height:auto">
+  <title id="title">Cuerpo con</title><desc id="desc">Plano cartesiano de aceleración/resultante.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="context-stroke"/></marker></defs>
+  <rect width="640" height="360" fill="#fff"/>
+  <g font-family="Arial,sans-serif" fill="#203148" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="255" y="145" width="130" height="80" rx="8" fill="#edf4ff" stroke="#245b99" stroke-width="2"/><path d="M320 145L320 70" stroke="#2766d8" stroke-width="3" marker-end="url(#arrow)"/><text x="328" y="70" font-size="15" fill="#2766d8">N</text><path d="M320 225L320 305" stroke="#ba513c" stroke-width="3" marker-end="url(#arrow)"/><text x="328" y="305" font-size="15" fill="#ba513c">P</text><path d="M385 185L505 185" stroke="#2766d8" stroke-width="3" marker-end="url(#arrow)"/><text x="513" y="185" font-size="15" fill="#2766d8">F</text><path d="M255 185L175 185" stroke="#7b5ab5" stroke-width="3" marker-end="url(#arrow)"/><text x="183" y="185" font-size="15" fill="#7b5ab5">f</text><text x="270" y="190" font-size="16">sistema</text>
+  </g>
+</svg>

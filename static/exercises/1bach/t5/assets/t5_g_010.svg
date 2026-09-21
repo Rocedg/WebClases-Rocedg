@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc" style="max-width:100%;height:auto">
+  <title id="title">Auditar afirmación “la energía potencial pertenece al objeto”</title><desc id="desc">Fronteras objeto/Tierra.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="context-stroke"/></marker></defs>
+  <rect width="640" height="360" fill="#fff"/>
+  <g font-family="Arial,sans-serif" fill="#203148" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M65 285C160 280 205 95 320 105S470 260 580 165" fill="none" stroke="#68788b" stroke-width="5"/><circle cx="205" cy="135" r="13" fill="#ba513c"/><circle cx="520" cy="205" r="13" fill="#245b99"/><path d="M80 135H205M80 205H520" stroke="#b8c3d0" stroke-dasharray="7 6"/><text x="90" y="125">hᵢ</text><text x="90" y="195">h_f</text>
+  </g>
+</svg>

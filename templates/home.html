@@ -5,174 +5,47 @@
 <section class="dashboard-shell">
     <header class="dashboard-hero">
         <div class="dashboard-hero-content">
-            <span class="eyebrow dashboard-eyebrow">
-                <i class="fas fa-circle" aria-hidden="true"></i>
-                PLAN DE ESTUDIO
-            </span>
-            <h1 class="dashboard-title">
-                {% if session.username %}
-                    Hola, {{ session.username }}
-                {% else %}
-                    Bienvenido a Web Clases Rocedg
-                {% endif %}
-            </h1>
-            <p class="dashboard-copy">
-                Repasa teoría, practica ejercicios y prepara la PAU con una ruta clara.
-            </p>
-            <p class="dashboard-note">
-                <i class="fas fa-check-circle" aria-hidden="true"></i>
-                Objetivo diario sugerido: 3 de 4 problemas de consolidación resueltos hoy.
-            </p>
+            <span class="eyebrow dashboard-eyebrow"><i class="fas fa-circle" aria-hidden="true"></i> 1.º BACHILLERATO</span>
+            <h1 class="dashboard-title">{% if session.username %}Hola, {{ session.username }}{% else %}Bienvenido a Web Clases Rocedg{% endif %}</h1>
+            <p class="dashboard-copy">Repasa cada tema con su lección y practica después con ejercicios guiados y autocorregibles.</p>
         </div>
         <div class="dashboard-hero-actions">
-            <a href="{{ url_for('topics') }}" class="btn btn-primary btn-lg">
-                Continuar estudiando
-                <i class="fas fa-arrow-right" aria-hidden="true"></i>
-            </a>
-            <a href="{{ url_for('homework') }}" class="btn btn-soft btn-lg">
-                Ver práctica recomendada
-            </a>
+            <a href="{{ url_for('topics') }}" class="btn btn-primary btn-lg">Continuar estudiando <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            <a href="{{ url_for('homework') }}" class="btn btn-soft btn-lg">Elegir práctica</a>
         </div>
     </header>
 
     <div class="metric-grid">
-        <article class="metric-card">
-            <div>
-                <span class="metric-card-label">Temas disponibles</span>
-                <strong>{{ stats.topics }}</strong>
-                <span class="metric-card-note">Apuntes y teoría</span>
-            </div>
-            <span class="metric-icon"><i class="fas fa-book-open" aria-hidden="true"></i></span>
-        </article>
-        <article class="metric-card">
-            <div>
-                <span class="metric-card-label">Ejercicios disponibles</span>
-                <strong>{{ stats.quizzes }}</strong>
-                <span class="metric-card-note">Cuestionarios activos</span>
-            </div>
-            <span class="metric-icon"><i class="fas fa-list-check" aria-hidden="true"></i></span>
-        </article>
-        <article class="metric-card">
-            <div>
-                <span class="metric-card-label">Exámenes PAU</span>
-                <strong>{{ stats.exams }}</strong>
-                <span class="metric-card-note">Simulacros y correcciones</span>
-            </div>
-            <span class="metric-icon"><i class="fas fa-file-circle-check" aria-hidden="true"></i></span>
-        </article>
-        <article class="metric-card">
-            <div>
-                <span class="metric-card-label">Progreso actual</span>
-                <strong>65%</strong>
-                <span class="metric-card-note">Ruta recomendada</span>
-            </div>
-            <span class="metric-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></span>
-        </article>
+        <article class="metric-card"><div><span class="metric-card-label">Lecciones disponibles</span><strong>{{ stats.lessons }}</strong><span class="metric-card-note">Temario de 1.º</span></div><span class="metric-icon"><i class="fas fa-book-open" aria-hidden="true"></i></span></article>
+        <article class="metric-card"><div><span class="metric-card-label">Ejercicios disponibles</span><strong>{{ stats.exercises }}</strong><span class="metric-card-note">Práctica estructurada</span></div><span class="metric-icon"><i class="fas fa-pen-ruler" aria-hidden="true"></i></span></article>
+        <article class="metric-card"><div><span class="metric-card-label">Materiales de apoyo</span><strong>{{ stats.summaries }}</strong><span class="metric-card-note">Resúmenes y fórmulas</span></div><span class="metric-icon"><i class="fas fa-file-lines" aria-hidden="true"></i></span></article>
+        <article class="metric-card"><div><span class="metric-card-label">Seguimiento</span><strong>Real</strong><span class="metric-card-note">Visitas, intentos y tiempo activo</span></div><span class="metric-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></span></article>
     </div>
 
-    <section class="panel-card focus-card">
-        <div class="focus-card-main">
-            <span class="badge-soft focus-badge">RUTA RECOMENDADA</span>
-            <h2>Continúa con Inducción electromagnética</h2>
-            <p>
-                Flujo magnético, ley de Faraday y sentido de la corriente inducida.
-            </p>
-            <div class="focus-progress" aria-label="Ruta recomendada al 65%">
-                <div class="focus-progress-heading">
-                    <span>Ruta recomendada</span>
-                    <strong>65%</strong>
-                </div>
-                <div class="progress-track">
-                    <span class="progress-fill"></span>
-                </div>
-            </div>
-            <div class="next-step">
-                <span class="next-step-icon"><i class="fas fa-clipboard-list" aria-hidden="true"></i></span>
-                <div>
-                    <span>Siguiente</span>
-                    <strong>Ejercicio #402 · Espira circular en campo B(t) variable</strong>
-                </div>
-            </div>
-        </div>
-        <div class="focus-actions">
-            <a href="{{ url_for('homework') }}" class="btn btn-primary">
-                Continuar ahora
-                <i class="fas fa-arrow-right" aria-hidden="true"></i>
-            </a>
-            <a href="{{ url_for('topics') }}" class="btn btn-outline-primary">
-                Explorar temario
-            </a>
-        </div>
-    </section>
-
     <section class="dashboard-section">
-        <div class="section-heading">
-            <h2>Accesos directos</h2>
-        </div>
+        <div class="section-heading"><h2>Accesos directos</h2></div>
         <div class="access-grid">
-            <a href="{{ url_for('topics') }}" class="action-card">
-                <span class="resource-icon"><i class="fas fa-book-open" aria-hidden="true"></i></span>
-                <h3>Estudiar teoría</h3>
-                <p>Apuntes y fórmulas organizados por curso.</p>
-                <span>Consultar apuntes</span>
-            </a>
-            <a href="{{ url_for('homework') }}" class="action-card">
-                <span class="resource-icon"><i class="fas fa-pen-ruler" aria-hidden="true"></i></span>
-                <h3>Practicar ejercicios</h3>
-                <p>Cuestionarios guiados con corrección.</p>
-                <span>Abrir ejercicios</span>
-            </a>
-            <a href="{{ url_for('exams') }}" class="action-card">
-                <span class="resource-icon"><i class="fas fa-file-circle-check" aria-hidden="true"></i></span>
-                <h3>Hacer exámenes PAU</h3>
-                <p>Simulacros y correcciones disponibles.</p>
-                <span>Ver exámenes</span>
-            </a>
-            <a href="{{ url_for('progress') }}" class="action-card">
-                <span class="resource-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></span>
-                <h3>Mi progreso</h3>
-                <p>Consulta tu ruta recomendada, puntos fuertes y temas a reforzar.</p>
-                <span>Ver progreso</span>
-            </a>
+            <a href="{{ url_for('topics') }}" class="action-card"><span class="resource-icon"><i class="fas fa-book-open" aria-hidden="true"></i></span><h3>Estudiar teoría</h3><p>Apuntes propios organizados por tema.</p><span>Consultar apuntes</span></a>
+            <a href="{{ url_for('homework') }}" class="action-card"><span class="resource-icon"><i class="fas fa-pen-ruler" aria-hidden="true"></i></span><h3>Practicar ejercicios</h3><p>Problemas guiados por tipos y dificultad.</p><span>Abrir ejercicios</span></a>
+            <a href="{{ url_for('progress') }}" class="action-card"><span class="resource-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></span><h3>Mi progreso</h3><p>Consulta tu actividad y retoma el último tema trabajado.</p><span>Ver progreso</span></a>
+            <a href="{{ url_for('miscellaneous') }}" class="action-card"><span class="resource-icon"><i class="fas fa-folder-open" aria-hidden="true"></i></span><h3>Material de apoyo</h3><p>Resúmenes y formularios disponibles.</p><span>Ver materiales</span></a>
         </div>
     </section>
 
+    {% if recent_lessons %}
     <section class="dashboard-section">
-        <div class="section-heading">
-            <div>
-                <h2>Práctica recomendada para ti</h2>
-            </div>
-            <span class="section-heading-note">Física PAU · 2º Bachillerato</span>
-        </div>
+        <div class="section-heading"><h2>Empieza por una lección</h2><span class="section-heading-note">Teoría y práctica conectadas</span></div>
         <div class="recommended-grid">
+            {% for lesson in recent_lessons %}
             <article class="recommended-card">
-                <div class="recommended-meta">
-                    <span class="badge-soft">Electromagnetismo</span>
-                    <span><i class="fas fa-clock" aria-hidden="true"></i>15 min</span>
-                </div>
-                <h3>Variación de flujo en espira rectangular</h3>
-                <p>Dificultad media · práctica de inducción</p>
-                <a href="{{ url_for('homework') }}" class="btn btn-soft">Practicar</a>
+                <div class="recommended-meta"><span class="badge-soft">{{ lesson.category }}</span><span><i class="fas fa-file-pdf" aria-hidden="true"></i>{{ lesson.pages }} páginas</span></div>
+                <h3>{{ lesson.title }}</h3>
+                <p>{{ lesson.description }}</p>
+                <a href="{{ url_for('lesson_viewer', lesson_id=lesson.id) }}" class="btn btn-soft">Abrir lección</a>
             </article>
-            <article class="recommended-card">
-                <div class="recommended-meta">
-                    <span class="badge-soft">Campo gravitatorio</span>
-                    <span><i class="fas fa-clock" aria-hidden="true"></i>12 min</span>
-                </div>
-                <h3>Cálculo del potencial gravitatorio en satélites</h3>
-                <p>Dificultad media · repaso aplicado</p>
-                <a href="{{ url_for('homework') }}" class="btn btn-soft">Practicar</a>
-            </article>
-            <article class="recommended-card">
-                <div class="recommended-meta">
-                    <span class="badge-soft">Óptica</span>
-                    <span><i class="fas fa-clock" aria-hidden="true"></i>18 min</span>
-                </div>
-                <h3>Lentes delgadas convergentes y trazado de rayos</h3>
-                <p>Dificultad alta · razonamiento gráfico</p>
-                <a href="{{ url_for('homework') }}" class="btn btn-soft">Practicar</a>
-            </article>
+            {% endfor %}
         </div>
     </section>
+    {% endif %}
 </section>
 {% endblock %}

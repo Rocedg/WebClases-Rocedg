@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc" style="max-width:100%;height:auto">
+  <title id="title">Círculo vertical, punto inferior</title><desc id="desc">DCL inferior con T y P opuestos.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="context-stroke"/></marker></defs>
+  <rect width="640" height="360" fill="#fff"/>
+  <g font-family="Arial,sans-serif" fill="#203148" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="320" cy="190" r="105" fill="#f7faff" stroke="#245b99" stroke-width="2"/><circle cx="320" cy="190" r="5"/><path d="M425 190L330 190" stroke="#ba513c" stroke-width="3" marker-end="url(#arrow)"/><text x="338" y="190" font-size="15" fill="#ba513c">radial</text><path d="M425 190L425 85" stroke="#2766d8" stroke-width="3" marker-end="url(#arrow)"/><text x="433" y="85" font-size="15" fill="#2766d8">tangente</text><path d="M388 112A105 105 0 0 1 423 166" fill="none" stroke="#7b5ab5" stroke-width="3" marker-end="url(#arrow)"/>
+  </g>
+</svg>

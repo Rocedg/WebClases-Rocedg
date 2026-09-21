@@ -1,128 +1,58 @@
 {% extends "base.html" %}
-{% from "components/_macros.html" import page_header with context %}
 
 {% block title %}Mi progreso{% endblock %}
-
 {% block content %}
-<section class="section-shell progress-page">
-    {{ page_header(
-        'Actividad guardada',
-        'Mi progreso',
-        'Datos reales registrados por la plataforma: materiales abiertos, cuestionarios enviados y actividad reciente.',
-        'fa-chart-line'
-    ) }}
+<section class="section-shell progress-page progress-dashboard">
+    <header class="progress-dashboard-header">
+        <div><span class="eyebrow">Actividad guardada</span><h1>Mi progreso</h1><p>Tu actividad real en apuntes, ejercicios y cuestionarios.</p></div>
+        <div class="progress-user-badge"><span>{{ session.username[:1]|upper }}</span><div><strong>{{ session.username }}</strong><small>1.º Bachillerato</small></div></div>
+    </header>
 
     <div class="metric-grid progress-metrics">
-        <article class="metric-card">
-            <div>
-                <span class="metric-card-label">Último material</span>
-                <strong>
-                    {% if snapshot.latest_topic %}
-                    {{ snapshot.latest_topic.topic_title }}
-                    {% else %}
-                    Sin datos
-                    {% endif %}
-                </strong>
-                <span class="metric-card-note">Apunte consultado</span>
-            </div>
-            <span class="metric-icon"><i class="fas fa-book-open" aria-hidden="true"></i></span>
-        </article>
-        <article class="metric-card">
-            <div>
-                <span class="metric-card-label">Intentos de quiz</span>
-                <strong>{{ snapshot.quiz_attempt_count }}</strong>
-                <span class="metric-card-note">Intentos guardados</span>
-            </div>
-            <span class="metric-icon"><i class="fas fa-list-check" aria-hidden="true"></i></span>
-        </article>
-        <article class="metric-card">
-            <div>
-                <span class="metric-card-label">Último resultado</span>
-                <strong>
-                    {% if snapshot.last_quiz_attempt and snapshot.last_quiz_attempt.percentage is not none %}
-                    {{ snapshot.last_quiz_attempt.percentage|round|int }}%
-                    {% else %}
-                    Sin datos
-                    {% endif %}
-                </strong>
-                <span class="metric-card-note">Puntuación real</span>
-            </div>
-            <span class="metric-icon"><i class="fas fa-bullseye" aria-hidden="true"></i></span>
-        </article>
+        <article class="metric-card"><div><span class="metric-card-label">Ejercicios completados</span><strong>{{ snapshot.completed_exercise_count }}</strong><span class="metric-card-note">{{ snapshot.exercise_attempt_count }} intentos guardados</span></div><span class="metric-icon"><i class="fas fa-circle-check" aria-hidden="true"></i></span></article>
+        <article class="metric-card"><div><span class="metric-card-label">Acierto corregido</span><strong>{% if snapshot.exercise_accuracy is not none %}{{ snapshot.exercise_accuracy }}%{% else %}Sin datos{% endif %}</strong><span class="metric-card-note">Solo respuestas autocorregidas</span></div><span class="metric-icon"><i class="fas fa-bullseye" aria-hidden="true"></i></span></article>
+        <article class="metric-card"><div><span class="metric-card-label">Tiempo activo</span><strong>{{ format_duration(snapshot.total_active_seconds) }}</strong><span class="metric-card-note">Medido dentro de ejercicios</span></div><span class="metric-icon"><i class="fas fa-stopwatch" aria-hidden="true"></i></span></article>
     </div>
+
+    {% set state = snapshot.study_state %}
+    <section class="panel-card progress-panel continue-panel">
+        <div class="section-heading"><h2>Continúa donde lo dejaste</h2><span class="section-heading-note">Última actividad guardada</span></div>
+        <div class="continue-grid">
+            <article class="continue-card">
+                <span class="resource-icon"><i class="fas fa-book-open" aria-hidden="true"></i></span>
+                <div><span class="metric-card-label">Último apunte</span><h3>{% if state and state.last_lesson_id %}{{ state.last_lesson_title }}{% else %}Aún no has abierto un apunte{% endif %}</h3>{% if state and state.last_lesson_at %}<small>{{ state.last_lesson_at.strftime('%d/%m/%Y · %H:%M') }}</small>{% endif %}</div>
+                {% if state and state.last_lesson_id %}<a href="{{ url_for('lesson_viewer', lesson_id=state.last_lesson_id) }}" class="btn btn-outline-primary">Abrir apunte</a>{% else %}<a href="{{ url_for('topics') }}" class="btn btn-outline-primary">Ver apuntes</a>{% endif %}
+            </article>
+            <article class="continue-card">
+                <span class="resource-icon"><i class="fas fa-pen-ruler" aria-hidden="true"></i></span>
+                <div><span class="metric-card-label">Último tema de ejercicios</span><h3>{% if state and state.last_exercise_id %}{{ state.last_exercise_topic_title }}</h3><p>{{ state.last_exercise_type_title }} · {{ state.last_exercise_title }}</p>{% else %}Aún no has empezado ejercicios</h3>{% endif %}</div>
+                {% if state and state.last_exercise_id %}<a href="{{ url_for('exercise_detail', exercise_id=state.last_exercise_id) }}" class="btn btn-primary">Continuar</a>{% else %}<a href="{{ url_for('homework') }}" class="btn btn-primary">Elegir práctica</a>{% endif %}
+            </article>
+        </div>
+    </section>
 
     <div class="progress-layout">
         <section class="panel-card progress-panel">
-            <div class="section-heading">
-                <h2>Actividad reciente</h2>
-                <span class="section-heading-note">Eventos guardados</span>
-            </div>
-
-            {% if snapshot.recent_events %}
-            <div class="progress-block-list">
-                {% for event in snapshot.recent_events %}
-                <article class="progress-block-row">
-                    <div class="progress-block-heading">
-                        <h3>{{ event.object_title or event.object_type }}</h3>
-                        <strong>{{ event.created_at.strftime('%d/%m %H:%M') }}</strong>
-                    </div>
-                    <p class="resource-card-copy mb-0">
-                        {{ event.event_type }}{% if event.duration_seconds %} · {{ event.duration_seconds }} s{% endif %}
-                    </p>
-                </article>
+            <div class="section-heading"><h2>Actividad por temas</h2><span class="section-heading-note">Completados sobre disponibles</span></div>
+            <div class="topic-progress-list">
+                {% for item in snapshot.topic_progress %}
+                <a class="topic-progress-row" href="{{ url_for('homework', topic=item.key) }}">
+                    <div class="progress-block-heading"><h3>{{ item.title }}</h3><strong>{{ item.completed }}/{{ item.total }}</strong></div>
+                    <div class="progress-track" aria-label="{{ item.completion_percentage }}% completado"><span class="progress-fill" style="width: {{ item.completion_percentage }}%"></span></div>
+                    <p>{{ item.attempted }} ejercicios intentados{% if item.accuracy is not none %} · {{ item.accuracy }}% de acierto corregido{% endif %}</p>
+                </a>
                 {% endfor %}
             </div>
-            {% else %}
-            <div class="empty-state">
-                <span class="resource-icon">
-                    <i class="fas fa-clock-rotate-left" aria-hidden="true"></i>
-                </span>
-                <h2>Sin actividad guardada</h2>
-                <p>Abre un apunte o envía un cuestionario para empezar a ver registros reales aquí.</p>
-            </div>
-            {% endif %}
         </section>
 
         <aside class="progress-sidebar">
             <section class="panel-card progress-panel">
-                <div class="section-heading">
-                    <h2>Último cuestionario</h2>
-                </div>
-
-                {% if snapshot.last_quiz_attempt %}
-                <article class="resource-card">
-                    <span class="badge-soft mb-3">{{ snapshot.last_quiz_attempt.total_questions }} preguntas</span>
-                    <h2 class="resource-card-title">{{ snapshot.last_quiz_attempt.quiz_title }}</h2>
-                    <p class="resource-card-copy mt-2 mb-1">
-                        {{ snapshot.last_quiz_attempt.correct_answers }} correctas de
-                        {{ snapshot.last_quiz_attempt.total_questions }}.
-                    </p>
-                    <p class="resource-card-copy mb-0">
-                        Resultado: <strong>{{ snapshot.last_quiz_attempt.percentage|round|int }}%</strong>
-                        {% if snapshot.last_quiz_attempt.duration_seconds %}
-                        · Tiempo aproximado: {{ snapshot.last_quiz_attempt.duration_seconds }} s
-                        {% endif %}
-                    </p>
-                </article>
-                {% else %}
-                <div class="empty-state">
-                    <span class="resource-icon">
-                        <i class="fas fa-list-check" aria-hidden="true"></i>
-                    </span>
-                    <h2>Sin cuestionarios enviados</h2>
-                    <p>Cuando termines un quiz, el resultado aparecerá aquí.</p>
-                </div>
-                {% endif %}
+                <div class="section-heading"><h2>Apuntes visitados</h2><span class="section-heading-note">{{ snapshot.visited_lessons|length }}</span></div>
+                {% if snapshot.visited_lessons %}<div class="visited-material-list">{% for lesson in snapshot.visited_lessons[:5] %}<a href="{{ url_for('lesson_viewer', lesson_id=lesson.id) }}"><span><strong>{{ lesson.title }}</strong><small>{{ lesson.visits }} visita{% if lesson.visits != 1 %}s{% endif %}</small></span><time>{{ lesson.last_at.strftime('%d/%m') }}</time></a>{% endfor %}</div>{% else %}<p class="resource-card-copy mb-0">Los apuntes que abras aparecerán aquí.</p>{% endif %}
             </section>
-
-            <section class="panel-card recommendation-card">
-                <span class="badge-soft">Seguimiento</span>
-                <h2>Datos en fase inicial</h2>
-                <p>Esta vista muestra registros reales guardados por el backend. Las recomendaciones automáticas vendrán más adelante.</p>
-                <a href="{{ url_for('homework') }}" class="btn btn-primary">
-                    Practicar ahora
-                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
-                </a>
+            <section class="panel-card progress-panel">
+                <div class="section-heading"><h2>Actividad reciente</h2><span class="section-heading-note">Eventos útiles</span></div>
+                {% if snapshot.recent_events %}<div class="activity-timeline">{% for event in snapshot.recent_events %}<article><span class="activity-icon"><i class="fas {{ event.icon }}" aria-hidden="true"></i></span><div><strong>{{ event.label }}</strong><p>{{ event.title }}</p><time>{{ event.created_at.strftime('%d/%m/%Y · %H:%M') }}</time></div></article>{% endfor %}</div>{% else %}<p class="resource-card-copy mb-0">Empieza un ejercicio o abre un apunte para registrar actividad.</p>{% endif %}
             </section>
         </aside>
     </div>

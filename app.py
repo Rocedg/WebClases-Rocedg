@@ -11,6 +11,8 @@ from database import db, init_app as init_database
 from services.exercise_presentation import render_exercise_source, response_format_notes, response_placeholder
 from services.activity_service import (
     get_user_activity_snapshot,
+    mark_exercise_worked,
+    mark_lesson_opened,
     mark_topic_opened,
     record_activity_event,
     record_quiz_attempt,
@@ -47,6 +49,7 @@ init_database(app)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CONTENT_DIR = os.path.join(BASE_DIR, 'content')
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
+QUIZZES_WEB_ENABLED = False
 
 USERS = {
     'Paul': ['fisica2026', 'student'],
@@ -63,7 +66,7 @@ NAV_ITEMS = [
     {
         'endpoint': 'homework',
         'label': 'Ejercicios',
-        'description': 'Cuestionarios autocorregibles',
+        'description': 'Práctica guiada por tipos',
         'icon': 'fa-pen-ruler'
     },
     {
@@ -88,6 +91,12 @@ def login_required(f):
             return redirect(url_for('login'))
         return f(*args, **kwargs)
     return decorated_function
+
+
+@app.before_request
+def block_reserved_quiz_pdfs():
+    if not QUIZZES_WEB_ENABLED and request.path.startswith('/static/pdfs/quizzes/'):
+        return render_template('errors/404.html'), 404
 
 
 def load_json_file(path, fallback):
@@ -151,7 +160,17 @@ EXERCISE_BANK_FILENAMES = (
     'exercises_t0.json',
     'exercises_t1.json',
     'exercises_t2.json',
+    'exercises_t3.json',
+    'exercises_t4.json',
+    'exercises_t5.json',
+    'exercises_t6.json',
     'exercises.json',
+)
+from services.exercise_taxonomy import (
+    build_exercise_type_summaries,
+    exercise_topic_title,
+    exercise_type_key,
+    exercise_type_title,
 )
 
 
@@ -172,7 +191,12 @@ def load_exercise_catalogue():
     for bank_path in exercise_bank_paths():
         data = load_json_file(bank_path, {'exercises': []})
         for exercise in data.get('exercises', []):
-            if isinstance(exercise, dict) and exercise.get('id') and exercise.get('status') != 'retired':
+            if (
+                isinstance(exercise, dict)
+                and exercise.get('id')
+                and exercise.get('status') != 'retired'
+                and exercise.get('course') == '1bach'
+            ):
                 exercise.setdefault('version', 1)
                 exercises.append(exercise)
 
@@ -180,6 +204,10 @@ def load_exercise_catalogue():
         return {'exercises': exercises}
 
     data = load_exercise_index()
+    data['exercises'] = [
+        exercise for exercise in data.get('exercises', [])
+        if isinstance(exercise, dict) and exercise.get('course') == '1bach'
+    ]
     for exercise in data.get('exercises', []):
         if isinstance(exercise, dict):
             exercise.setdefault('version', 1)
@@ -273,6 +301,11 @@ def current_username():
     return session.get('username')
 
 
+def lesson_topic_key(lesson):
+    prefix = str(lesson.get('id') or '').split('-', 1)[0].lower()
+    return prefix if prefix in {'t0', 't1', 't2', 't3', 't4', 't5', 't6'} else None
+
+
 def find_by_id(items, item_id):
     item_id = str(item_id)
     return next((item for item in items if str(item.get('id')) == item_id), None)
@@ -326,14 +359,7 @@ def exercise_time(exercise):
 
 
 def exercise_type(exercise):
-    value = exercise.get('exercise_type') or exercise.get('family')
-    labels = {
-        'units': 'Analisis dimensional',
-        'vectors': 'Vectores',
-        'measurement': 'Medida y error',
-        'calculus_graphs': 'Calculo y graficas',
-    }
-    return labels.get(value, value or exercise.get('concept') or exercise.get('topic'))
+    return exercise_type_title(exercise)
 
 
 def exercise_status_filter(summary):
@@ -341,10 +367,15 @@ def exercise_status_filter(summary):
 
 
 def exercise_filter_options(exercises):
+    types = {}
+    topics = {}
+    for exercise in exercises:
+        types.setdefault(exercise_type_key(exercise), exercise_type(exercise))
+        topics.setdefault(str(exercise.get('topic')), exercise_topic_title(exercise))
     return {
         'courses': sorted({exercise.get('course') for exercise in exercises if exercise.get('course')}),
-        'topics': sorted({exercise.get('topic') for exercise in exercises if exercise.get('topic')}),
-        'types': sorted({exercise_type(exercise) for exercise in exercises if exercise_type(exercise)}),
+        'topics': sorted(topics.items(), key=lambda item: item[0]),
+        'types': sorted(types.items(), key=lambda item: (item[1], item[0])),
         'difficulties': sorted({str(exercise.get('difficulty')) for exercise in exercises if exercise.get('difficulty')}),
         'statuses': [
             ('new', 'Nuevo'),
@@ -377,7 +408,7 @@ def filter_exercises(exercises, attempt_summaries, filters):
             continue
         if filters.get('topic') and exercise.get('topic') != filters['topic']:
             continue
-        if filters.get('type') and exercise_type(exercise) != filters['type']:
+        if filters.get('type') and filters['type'] not in {exercise_type_key(exercise), exercise_type(exercise)}:
             continue
         if filters.get('difficulty') and str(exercise.get('difficulty')) != filters['difficulty']:
             continue
@@ -439,11 +470,10 @@ def find_tracked_resource(resource_type, resource_id):
     elif resource_type == 'exam_pdf':
         item = find_by_id(load_exams().get('exams', []), resource_id)
         object_type = 'exam'
-    elif resource_type in {'quiz_question_pdf', 'solution_pdf'}:
+    elif QUIZZES_WEB_ENABLED and resource_type in {'quiz_question_pdf', 'solution_pdf'}:
         quiz = find_by_id(load_quizzes().get('quizzes', []), resource_id)
         if not quiz:
             return None
-
         pdf_key = 'solutions' if resource_type == 'solution_pdf' else 'questions'
         item = {
             'id': quiz.get('id'),
@@ -548,20 +578,21 @@ def regrade_exercise_attempts_command(apply_changes):
 @app.route('/')
 def home():
     topics_data = load_topics()
-    quiz_data = load_quizzes()
+    lessons_data = load_lessons()
+    exercise_data = load_exercise_catalogue()
     exams_data = load_exams()
     summaries_data = load_summaries()
     stats = {
         'topics': len(topics_data['topics']),
-        'quizzes': len(quiz_data['quizzes']),
+        'lessons': len([lesson for lesson in lessons_data['lessons'] if lesson.get('year') == 'y1']),
+        'exercises': len(exercise_data['exercises']),
         'exams': len(exams_data['exams']),
         'summaries': len(summaries_data['summaries'])
     }
 
     return render_template(
         'home.html',
-        featured_quizzes=quiz_data['quizzes'][:3],
-        recent_topics=topics_data['topics'][-3:],
+        recent_lessons=[lesson for lesson in lessons_data['lessons'] if lesson.get('year') == 'y1'][:3],
         stats=stats
     )
 
@@ -613,6 +644,7 @@ def lesson_viewer(lesson_id):
         return render_template('errors/404.html'), 404
 
     lesson_id = str(lesson.get('id')) if lesson.get('id') is not None else str(lesson_id)
+    mark_lesson_opened(current_username(), lesson)
     record_activity_event(
         current_username(),
         'lesson_viewed',
@@ -639,6 +671,11 @@ def lesson_viewer(lesson_id):
             resource_id=lesson_id,
             action='download',
         ),
+        practice_url=(
+            url_for('homework', topic=lesson_topic_key(lesson))
+            if lesson_topic_key(lesson)
+            else url_for('homework')
+        ),
     )
 
 
@@ -655,20 +692,22 @@ def lesson_pdf_source(lesson_id):
 @app.route('/homework')
 @login_required
 def homework():
-    quiz_data = load_quizzes()
     exercises = load_exercise_catalogue().get('exercises', [])
     attempt_summaries = get_catalogue_attempt_summaries(current_username(), exercises)
     filters = selected_exercise_filters(request.args)
     filtered_exercises = filter_exercises(exercises, attempt_summaries, filters)
+    type_summaries = build_exercise_type_summaries(exercises, attempt_summaries)
+    selected_type = next((item for item in type_summaries if item['key'] == filters['type']), None)
     return render_template(
         'user/homework.html',
-        quizzes=quiz_data['quizzes'],
         exercises=filtered_exercises,
         exercise_count=len(exercises),
         attempt_summaries=attempt_summaries,
         filter_options=exercise_filter_options(exercises),
         selected_filters=filters,
         has_active_filters=any(filters.values()),
+        type_summaries=type_summaries,
+        selected_type=selected_type,
         exercise_time=exercise_time,
         exercise_type=exercise_type,
     )
@@ -728,6 +767,8 @@ def exercise_attempt_detail(exercise_id, attempt_id):
 
     if attempt.exercise_id != str(exercise.get('id')):
         return render_template('errors/404.html'), 404
+
+    mark_exercise_worked(current_username(), exercise)
 
     next_exercise = next_exercise_after(exercise, exercises) if attempt.status != 'started' else None
     next_summary = None
@@ -838,6 +879,8 @@ def exercise_attempt_history():
 @app.route('/quiz/<quiz_id>')
 @login_required
 def take_quiz(quiz_id):
+    if not QUIZZES_WEB_ENABLED:
+        return render_template('errors/404.html'), 404
     try:
         quiz_id_str = str(quiz_id)
         quiz_data = load_quizzes()
@@ -882,6 +925,8 @@ def take_quiz(quiz_id):
 @app.route('/submit-quiz/<quiz_id>', methods=['POST'])
 @login_required
 def submit_quiz(quiz_id):
+    if not QUIZZES_WEB_ENABLED:
+        return render_template('errors/404.html'), 404
     quiz_id_str = str(quiz_id)
     quiz_data = load_quizzes()
     quiz = next((q for q in quiz_data['quizzes'] if str(q.get('id')) == quiz_id_str), None)
@@ -953,6 +998,8 @@ def submit_quiz(quiz_id):
 @app.route('/quiz-results')
 @login_required
 def quiz_results():
+    if not QUIZZES_WEB_ENABLED:
+        return render_template('errors/404.html'), 404
     if 'quiz_results' not in session:
         return redirect(url_for('homework'))
 
@@ -1005,7 +1052,10 @@ def tracked_resource(resource_type, resource_id, action):
 @app.route('/progress')
 @login_required
 def progress():
-    snapshot = get_user_activity_snapshot(current_username())
+    snapshot = get_user_activity_snapshot(
+        current_username(),
+        exercises=load_exercise_catalogue().get('exercises', []),
+    )
     return render_template('user/progress.html', snapshot=snapshot)
 
 

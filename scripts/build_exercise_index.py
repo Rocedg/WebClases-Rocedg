@@ -33,6 +33,10 @@ EXERCISE_BANK_FILENAMES = (
     "exercises_t0.json",
     "exercises_t1.json",
     "exercises_t2.json",
+    "exercises_t3.json",
+    "exercises_t4.json",
+    "exercises_t5.json",
+    "exercises_t6.json",
     "exercises.json",
 )
 
@@ -61,7 +65,12 @@ def summarize_exercise(exercise: dict[str, Any]) -> dict[str, Any]:
     summary = {field: exercise.get(field) for field in SUMMARY_FIELDS}
     summary["version"] = exercise.get("version", 1)
     summary["concept"] = exercise.get("concept") or exercise.get("topic")
-    summary["exercise_type"] = exercise.get("exercise_type") or exercise.get("family") or exercise.get("response_mode")
+    explicit_type = str(exercise.get("exercise_type") or "").strip()
+    summary["exercise_type"] = (
+        explicit_type
+        if len(explicit_type) > 1
+        else exercise.get("block") or exercise.get("concept") or exercise.get("response_mode")
+    )
     summary["estimated_time_min"] = exercise.get("estimated_time_min") or exercise.get("estimated_minutes")
     workflow = exercise.get("workflow") if isinstance(exercise.get("workflow"), dict) else {}
     summary["workflow"] = {

@@ -9,7 +9,10 @@ from services.exercise_attempt_service import start_or_resume_attempt, submit_at
 
 
 ROOT = Path(__file__).resolve().parents[1]
-BANKS = tuple(sorted(ROOT.glob("content/exercises/1bach/t?/exercises_t?.json")))
+BANKS = tuple(
+    ROOT / "content" / "exercises" / "1bach" / topic / f"exercises_{topic}.json"
+    for topic in ("t0", "t1", "t2")
+)
 ALLOWED_TYPES = {"numeric", "unit_expression", "single_choice", "vector", "function", "short_text"}
 RETIRED = {"t0_m_007", "t0_c_007", "t0_c_018"}
 

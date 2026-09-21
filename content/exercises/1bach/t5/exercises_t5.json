@@ -1,0 +1,4154 @@
+{
+  "version": 1,
+  "course": "1bach",
+  "topic": "t5",
+  "topic_slug": "energía-y-trabajo",
+  "block": "Energía y trabajo",
+  "description": "Trabajo, potencia y balances de energía con gravedad, muelles y disipación.",
+  "exercises": [
+    {
+      "id": "t5_w_001",
+      "version": 1,
+      "title": "Fuerza 20 N paralela durante 5 m",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Trabajo y fuerzas variables",
+      "family": "w",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "trabajo",
+          "label": "Trabajo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 100.0,
+          "unit": "J",
+          "tolerance": 0.5,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_w_001.svg",
+          "alt": "Fuerza y desplazamiento."
+        }
+      ],
+      "tags": [
+        "t5",
+        "w",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Trabajo y fuerzas variables: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Trabajo y fuerzas variables"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia w"
+      ],
+      "parts_count": 1,
+      "statement_source": "Fuerza \\(20 N\\) paralela durante \\(5 m\\).\n\n(a) Calcula: Trabajo.",
+      "solution_source": "\\(W=100 J\\); selección signo positivo.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_w_002",
+      "version": 1,
+      "title": "Fuerza 30 N a 60°, desplazamiento 4 m",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Trabajo y fuerzas variables",
+      "family": "w",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "trabajo",
+          "label": "Trabajo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 60.0,
+          "unit": "J",
+          "tolerance": 0.3,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_w_002.svg",
+          "alt": "Triángulo y proyección útil."
+        }
+      ],
+      "tags": [
+        "t5",
+        "w",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Trabajo y fuerzas variables: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Trabajo y fuerzas variables"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia w"
+      ],
+      "parts_count": 1,
+      "statement_source": "Fuerza \\(30 N\\) a \\(60°\\), desplazamiento \\(4 m\\).\n\n(a) Calcula: Trabajo.",
+      "solution_source": "\\(W=60 J\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_w_003",
+      "version": 1,
+      "title": "Rozamiento 12 N opuesto durante 7 m",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Trabajo y fuerzas variables",
+      "family": "w",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "trabajo",
+          "label": "Trabajo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -84.0,
+          "unit": "J",
+          "tolerance": 0.42,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_w_003.svg",
+          "alt": "Flechas opuestas y barra de transferencia."
+        }
+      ],
+      "tags": [
+        "t5",
+        "w",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Trabajo y fuerzas variables: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Trabajo y fuerzas variables"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia w"
+      ],
+      "parts_count": 1,
+      "statement_source": "Rozamiento \\(12 N\\) opuesto durante \\(7 m\\).\n\n(a) Calcula: Trabajo.",
+      "solution_source": "\\(W=-84 J\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_w_004",
+      "version": 1,
+      "title": "Peso en desplazamiento horizontal",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Trabajo y fuerzas variables",
+      "family": "w",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "w_p",
+          "label": "W P",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.0,
+          "unit": "J",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_w_004.svg",
+          "alt": "Ángulo 90°."
+        }
+      ],
+      "tags": [
+        "t5",
+        "w",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Trabajo y fuerzas variables: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Trabajo y fuerzas variables"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia w"
+      ],
+      "parts_count": 1,
+      "statement_source": "Peso en desplazamiento horizontal.\n\n(a) Calcula: W P.",
+      "solution_source": "\\(W_P=0 J\\); selección por perpendicularidad.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_w_005",
+      "version": 1,
+      "title": "Elevar 3 kg verticalmente 2 m a velocidad constante",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Trabajo y fuerzas variables",
+      "family": "w",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "w_p",
+          "label": "W P",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -58.8,
+          "unit": "J",
+          "tolerance": 0.294,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "w_ap",
+          "label": "W ap",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 58.8,
+          "unit": "J",
+          "tolerance": 0.294,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "neto",
+          "label": "Neto",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.0,
+          "unit": "J",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "c",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_w_005.svg",
+          "alt": "Estados inicial/final."
+        }
+      ],
+      "tags": [
+        "t5",
+        "w",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Trabajo y fuerzas variables: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Trabajo y fuerzas variables"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia w"
+      ],
+      "parts_count": 3,
+      "statement_source": "Elevar \\(3 kg\\) verticalmente \\(2 m\\) a velocidad constante.\n\n(a) Calcula: W P.\n(b) Calcula: W ap.\n(c) Calcula: Neto.",
+      "solution_source": "\\(W_P=-58,8 J\\); \\(W_ap=+58,8 J\\); neto \\(0\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_w_006",
+      "version": 1,
+      "title": "Fuerza constante vectorial (4",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Trabajo y fuerzas variables",
+      "family": "w",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "producto_escalar",
+          "label": "Producto escalar",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 14.0,
+          "unit": "J",
+          "tolerance": 0.07,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_w_006.svg",
+          "alt": "Vectores en plano."
+        }
+      ],
+      "tags": [
+        "t5",
+        "w",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Trabajo y fuerzas variables: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Trabajo y fuerzas variables"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia w"
+      ],
+      "parts_count": 1,
+      "statement_source": "Fuerza constante vectorial \\((4;3) N\\), desplazamiento \\((5;-2) m\\).\n\n(a) Calcula: Producto escalar.",
+      "solution_source": "Producto escalar \\(14 J\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_w_007",
+      "version": 1,
+      "title": "Gráfica rectangular , 0–3 m",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Trabajo y fuerzas variables",
+      "family": "w",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "area_trabajo",
+          "label": "Área/trabajo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 30.0,
+          "unit": "J",
+          "tolerance": 0.15,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_w_007.svg",
+          "alt": "F-x sombreada."
+        }
+      ],
+      "tags": [
+        "t5",
+        "w",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Trabajo y fuerzas variables: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Trabajo y fuerzas variables"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia w"
+      ],
+      "parts_count": 1,
+      "statement_source": "Gráfica rectangular \\(F=10 N\\), \\(0–3 m\\).\n\n(a) Calcula: Área/trabajo.",
+      "solution_source": "Área/trabajo \\(30 J\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_w_008",
+      "version": 1,
+      "title": "Fuerza crece linealmente 0→12 N en 4 m",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Trabajo y fuerzas variables",
+      "family": "w",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "trabajo",
+          "label": "Trabajo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 24.0,
+          "unit": "J",
+          "tolerance": 0.12,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "fuerza_media",
+          "label": "Fuerza media",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 6.0,
+          "unit": "N",
+          "tolerance": 0.03,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_w_008.svg",
+          "alt": "Triángulo bajo F-x."
+        }
+      ],
+      "tags": [
+        "t5",
+        "w",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Trabajo y fuerzas variables: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Trabajo y fuerzas variables"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia w"
+      ],
+      "parts_count": 2,
+      "statement_source": "Fuerza crece linealmente \\(0\\to 12 N\\) en \\(4 m\\).\n\n(a) Calcula: Trabajo.\n(b) Calcula: Fuerza media.",
+      "solution_source": "Trabajo \\(24 J\\); fuerza media \\(6 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_w_009",
+      "version": 1,
+      "title": "F-x cruza eje",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Trabajo y fuerzas variables",
+      "family": "w",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "trabajo_1",
+          "label": "Trabajo 1",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 16.0,
+          "unit": "J",
+          "tolerance": 0.08,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "trabajo_2",
+          "label": "Trabajo 2",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -12.0,
+          "unit": "J",
+          "tolerance": 0.06,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "neto",
+          "label": "Neto",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 4.0,
+          "unit": "J",
+          "tolerance": 0.02,
+          "significant_figures": 3,
+          "part": "c",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_w_009.svg",
+          "alt": "Áreas con colores de signo."
+        }
+      ],
+      "tags": [
+        "t5",
+        "w",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Trabajo y fuerzas variables: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Trabajo y fuerzas variables"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia w"
+      ],
+      "parts_count": 3,
+      "statement_source": "\\(F-x\\) cruza eje: \\(+8 N\\) dos metros y \\(-4 N\\) tres metros.\n\n(a) Calcula: Trabajo 1.\n(b) Calcula: Trabajo 2.\n(c) Calcula: Neto.",
+      "solution_source": "Trabajos \\(16\\), \\(-12\\); neto \\(4 J\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_w_010",
+      "version": 1,
+      "title": "Función , 0≤x≤2",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Trabajo y fuerzas variables",
+      "family": "w",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "trabajo",
+          "label": "Trabajo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 8.0,
+          "unit": "J",
+          "tolerance": 0.04,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_w_010.svg",
+          "alt": "Curva y área."
+        }
+      ],
+      "tags": [
+        "t5",
+        "w",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Trabajo y fuerzas variables: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Trabajo y fuerzas variables"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia w"
+      ],
+      "parts_count": 1,
+      "statement_source": "Función \\(F(x)=3x²\\), \\(0≤x≤2\\).\n\n(a) Calcula: Trabajo.",
+      "solution_source": "\\(W=8 J\\); unidad del coeficiente \\(N/m²\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_w_011",
+      "version": 1,
+      "title": "Fuerza por tramos triangular-trapezoidal",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Trabajo y fuerzas variables",
+      "family": "w",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Tres áreas y suma numérica"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_w_011.svg",
+          "alt": "Panel con vértices etiquetados."
+        }
+      ],
+      "tags": [
+        "t5",
+        "w",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Trabajo y fuerzas variables: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Trabajo y fuerzas variables"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia w"
+      ],
+      "parts_count": 1,
+      "statement_source": "Fuerza por tramos triangular-trapezoidal.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Tres áreas y suma numérica.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_w_012",
+      "version": 1,
+      "title": "Comparar dos caminos bajo fuerza uniforme gravitatoria entre mismas alturas",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Trabajo y fuerzas variables",
+      "family": "w",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Selección: mismo trabajo; valor -mgΔh"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_w_012.svg",
+          "alt": "Dos trayectorias."
+        }
+      ],
+      "tags": [
+        "t5",
+        "w",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Trabajo y fuerzas variables: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Trabajo y fuerzas variables"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia w"
+      ],
+      "parts_count": 1,
+      "statement_source": "Comparar dos caminos bajo fuerza uniforme gravitatoria entre mismas alturas.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Selección: mismo trabajo; valor \\(-mg\\Delta h\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_w_013",
+      "version": 1,
+      "title": "Fuerza radial en movimiento circular uniforme",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Trabajo y fuerzas variables",
+      "family": "w",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "trabajo_instantaneo_total",
+          "label": "Trabajo instantáneo/total",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.0,
+          "unit": "J",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_w_013.svg",
+          "alt": "Tangente y radio perpendiculares."
+        }
+      ],
+      "tags": [
+        "t5",
+        "w",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Trabajo y fuerzas variables: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Trabajo y fuerzas variables"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia w"
+      ],
+      "parts_count": 1,
+      "statement_source": "Fuerza radial en movimiento circular uniforme.\n\n(a) Calcula: Trabajo instantáneo/total.",
+      "solution_source": "Trabajo instantáneo/total \\(0 J\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_w_014",
+      "version": 1,
+      "title": "Auditar  para ,  y 60° entre ambos",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Trabajo y fuerzas variables",
+      "family": "w",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "resultado",
+          "label": "Resultado",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 75.0,
+          "unit": "J",
+          "tolerance": 0.375,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_w_014.svg",
+          "alt": "Resolución ficticia y proyección."
+        }
+      ],
+      "tags": [
+        "t5",
+        "w",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Trabajo y fuerzas variables: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Trabajo y fuerzas variables"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia w"
+      ],
+      "parts_count": 1,
+      "statement_source": "Auditar \\(W=Fd\\) para \\(F=50 N\\), \\(d=3 m\\) y \\(60°\\) entre ambos.\n\n(a) Calcula: Resultado.",
+      "solution_source": "Seleccionar \\(W=Fd cosθ\\); resultado \\(75 J\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_k_001",
+      "version": 1,
+      "title": "Rapidez 3 m/s",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía cinética y potencia",
+      "family": "k",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "energia_cinetica",
+          "label": "Energía cinética",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 9.0,
+          "unit": "J",
+          "tolerance": 0.045,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_k_001.svg",
+          "alt": "Barra de energía cinética."
+        }
+      ],
+      "tags": [
+        "t5",
+        "k",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía cinética y potencia: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía cinética y potencia"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia k"
+      ],
+      "parts_count": 1,
+      "statement_source": "\\(m=2 kg\\), rapidez \\(3 m/s\\).\n\n(a) Calcula: Energía cinética.",
+      "solution_source": "\\(K=9 J\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_k_002",
+      "version": 1,
+      "title": "Duplicar rapidez con masa fija",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía cinética y potencia",
+      "family": "k",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "k_2_k_1",
+          "label": "K 2/K 1",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 4.0,
+          "unit": "",
+          "tolerance": 0.02,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_k_002.svg",
+          "alt": "Barras comparativas."
+        }
+      ],
+      "tags": [
+        "t5",
+        "k",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía cinética y potencia: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía cinética y potencia"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia k"
+      ],
+      "parts_count": 1,
+      "statement_source": "Duplicar rapidez con masa fija.\n\n(a) Calcula: K 2/K 1.",
+      "solution_source": "Razón \\(K_2/K_1=4\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_k_003",
+      "version": 1,
+      "title": "Trabajo neto 50 J desde reposo",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía cinética y potencia",
+      "family": "k",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "rapidez",
+          "label": "Rapidez",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 5.0,
+          "unit": "m/s",
+          "tolerance": 0.025,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_k_003.svg",
+          "alt": "Flujo trabajo→cinética."
+        }
+      ],
+      "tags": [
+        "t5",
+        "k",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía cinética y potencia: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía cinética y potencia"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia k"
+      ],
+      "parts_count": 1,
+      "statement_source": "Trabajo neto \\(50 J\\) desde reposo, \\(m=4 kg\\).\n\n(a) Calcula: Rapidez.",
+      "solution_source": "\\(v=5 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_k_004",
+      "version": 1,
+      "title": "Problema estructurado",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía cinética y potencia",
+      "family": "k",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "trabajo_neto",
+          "label": "Trabajo neto",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -150.0,
+          "unit": "kJ",
+          "tolerance": 0.75,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_k_004.svg",
+          "alt": "Estados y barras K."
+        }
+      ],
+      "tags": [
+        "t5",
+        "k",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía cinética y potencia: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía cinética y potencia"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia k"
+      ],
+      "parts_count": 1,
+      "statement_source": "\\(m=1000 kg\\), \\(v_i=20\\), \\(v_f=10 m/s\\).\n\n(a) Calcula: Trabajo neto.",
+      "solution_source": "Trabajo neto \\(-150 kJ\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_k_005",
+      "version": 1,
+      "title": "Frenada con fuerza constante 6000 N del coche anterior",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía cinética y potencia",
+      "family": "k",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "distancia",
+          "label": "Distancia",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 25.0,
+          "unit": "m",
+          "tolerance": 0.125,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_k_005.svg",
+          "alt": "Trayectoria de frenada."
+        }
+      ],
+      "tags": [
+        "t5",
+        "k",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía cinética y potencia: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía cinética y potencia"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia k"
+      ],
+      "parts_count": 1,
+      "statement_source": "Frenada con fuerza constante \\(6000 N\\) del coche anterior.\n\n(a) Calcula: Distancia.",
+      "solution_source": "Distancia \\(25 m\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_k_006",
+      "version": 1,
+      "title": "Fuerza neta variable dada por F-x",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía cinética y potencia",
+      "family": "k",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Trabajo por área y rapidez final"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_k_006.svg",
+          "alt": "Gráfica más estados."
+        }
+      ],
+      "tags": [
+        "t5",
+        "k",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía cinética y potencia: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía cinética y potencia"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia k"
+      ],
+      "parts_count": 1,
+      "statement_source": "Fuerza neta variable dada por \\(F-x\\); partir con \\(v_0=2\\).\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Trabajo por área y rapidez final.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_k_007",
+      "version": 1,
+      "title": "Máquina hace 12 kJ en 8 s",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía cinética y potencia",
+      "family": "k",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "potencia_media",
+          "label": "Potencia media",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.5,
+          "unit": "kW",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_k_007.svg",
+          "alt": "Línea temporal."
+        }
+      ],
+      "tags": [
+        "t5",
+        "k",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía cinética y potencia: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía cinética y potencia"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia k"
+      ],
+      "parts_count": 1,
+      "statement_source": "Máquina hace \\(12 kJ\\) en \\(8 s\\).\n\n(a) Calcula: Potencia media.",
+      "solution_source": "Potencia media \\(1,5 kW\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_k_008",
+      "version": 1,
+      "title": "Elevador 500 kg sube a 2 m/s constante",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía cinética y potencia",
+      "family": "k",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "potencia",
+          "label": "Potencia",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 9.8,
+          "unit": "kW",
+          "tolerance": 0.049,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_k_008.svg",
+          "alt": "Ascensor y flujo energético."
+        }
+      ],
+      "tags": [
+        "t5",
+        "k",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía cinética y potencia: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía cinética y potencia"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia k"
+      ],
+      "parts_count": 1,
+      "statement_source": "Elevador \\(500 kg\\) sube a \\(2 m/s\\) constante.\n\n(a) Calcula: Potencia.",
+      "solution_source": "Potencia \\(9,8 kW\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_k_009",
+      "version": 1,
+      "title": "Vehículo  a",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía cinética y potencia",
+      "family": "k",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "potencia_instantanea",
+          "label": "Potencia instantánea",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 12.0,
+          "unit": "kW",
+          "tolerance": 0.06,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_k_009.svg",
+          "alt": "Vectores paralelos."
+        }
+      ],
+      "tags": [
+        "t5",
+        "k",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía cinética y potencia: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía cinética y potencia"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia k"
+      ],
+      "parts_count": 1,
+      "statement_source": "Vehículo \\(F=800 N\\) a \\(v=15 m/s\\).\n\n(a) Calcula: Potencia instantánea.",
+      "solution_source": "Potencia instantánea \\(12 kW\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_k_010",
+      "version": 1,
+      "title": "Fuerza a 60° respecto de v",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía cinética y potencia",
+      "family": "k",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "p",
+          "label": "P",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 200.0,
+          "unit": "W",
+          "tolerance": 1.0,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_k_010.svg",
+          "alt": "Ángulo fuerza-velocidad."
+        }
+      ],
+      "tags": [
+        "t5",
+        "k",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía cinética y potencia: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía cinética y potencia"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia k"
+      ],
+      "parts_count": 1,
+      "statement_source": "Fuerza a \\(60°\\) respecto de \\(v\\), \\(F=100\\), \\(v=4\\).\n\n(a) Calcula: P.",
+      "solution_source": "\\(P=200 W\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_k_011",
+      "version": 1,
+      "title": "Gráfica P(t) escalonada",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía cinética y potencia",
+      "family": "k",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Energía transferida por áreas; resultado en J"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_k_011.svg",
+          "alt": "P-t con áreas."
+        }
+      ],
+      "tags": [
+        "t5",
+        "k",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía cinética y potencia: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía cinética y potencia"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia k"
+      ],
+      "parts_count": 1,
+      "statement_source": "Gráfica \\(P(t)\\) escalonada.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Energía transferida por áreas; resultado en J.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_k_012",
+      "version": 1,
+      "title": "Elegir gráfica K(v) y P(v) para fuerza constante",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía cinética y potencia",
+      "family": "k",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Opciones correctas: cuadrática y lineal"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_k_012.svg",
+          "alt": "Cuatro pares de curvas."
+        }
+      ],
+      "tags": [
+        "t5",
+        "k",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía cinética y potencia: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía cinética y potencia"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia k"
+      ],
+      "parts_count": 1,
+      "statement_source": "Elegir gráfica \\(K(v)\\) y \\(P(v)\\) para fuerza constante.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Opciones correctas: cuadrática y lineal.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_g_001",
+      "version": 1,
+      "title": "Subir 5 m",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía potencial gravitatoria",
+      "family": "g",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "u_g",
+          "label": "ΔU g",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 147.0,
+          "unit": "J",
+          "tolerance": 0.735,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "trabajo_del_peso",
+          "label": "Trabajo del peso",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -147.0,
+          "unit": "J",
+          "tolerance": 0.735,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_g_001.svg",
+          "alt": "Dos niveles."
+        }
+      ],
+      "tags": [
+        "t5",
+        "g",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía potencial gravitatoria: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía potencial gravitatoria"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia g"
+      ],
+      "parts_count": 2,
+      "statement_source": "\\(m=3 kg\\), subir \\(5 m\\).\n\n(a) Calcula: ΔU g.\n(b) Calcula: Trabajo del peso.",
+      "solution_source": "\\(\\Delta U_g=147 J\\); trabajo del peso \\(-147 J\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_g_002",
+      "version": 1,
+      "title": "Cambiar referencia de suelo a mesa",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía potencial gravitatoria",
+      "family": "g",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Dos valores absolutos, misma ΔU"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_g_002.svg",
+          "alt": "Ejes de energía con ceros distintos."
+        }
+      ],
+      "tags": [
+        "t5",
+        "g",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía potencial gravitatoria: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía potencial gravitatoria"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia g"
+      ],
+      "parts_count": 1,
+      "statement_source": "Cambiar referencia de suelo a mesa.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Dos valores absolutos, misma \\(\\Delta U\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_g_003",
+      "version": 1,
+      "title": "Caída desde 20 m, sin aire",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía potencial gravitatoria",
+      "family": "g",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "rapidez",
+          "label": "Rapidez",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 19.8,
+          "unit": "m/s",
+          "tolerance": 0.099,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_g_003.svg",
+          "alt": "Torre y energía."
+        }
+      ],
+      "tags": [
+        "t5",
+        "g",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía potencial gravitatoria: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía potencial gravitatoria"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia g"
+      ],
+      "parts_count": 1,
+      "statement_source": "Caída desde \\(20 m\\), sin aire.\n\n(a) Calcula: Rapidez.",
+      "solution_source": "Rapidez \\(19,8 m/s\\); barras inicial/final.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_g_004",
+      "version": 1,
+      "title": "Rampa sin rozamiento con desnivel 3 m",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía potencial gravitatoria",
+      "family": "g",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "rapidez_final",
+          "label": "Rapidez final",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 7.67,
+          "unit": "m/s",
+          "tolerance": 0.03835,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_g_004.svg",
+          "alt": "Dos rampas."
+        }
+      ],
+      "tags": [
+        "t5",
+        "g",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía potencial gravitatoria: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía potencial gravitatoria"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia g"
+      ],
+      "parts_count": 1,
+      "statement_source": "Rampa sin rozamiento con desnivel \\(3 m\\).\n\n(a) Calcula: Rapidez final.",
+      "solution_source": "Rapidez final \\(7,67 m/s\\), independiente de forma.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_g_005",
+      "version": 1,
+      "title": "Lanzamiento vertical",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía potencial gravitatoria",
+      "family": "g",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "altura_adicional",
+          "label": "Altura adicional",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 10.0,
+          "unit": "m",
+          "tolerance": 0.05,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_g_005.svg",
+          "alt": "Estados salida/cima."
+        }
+      ],
+      "tags": [
+        "t5",
+        "g",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía potencial gravitatoria: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía potencial gravitatoria"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia g"
+      ],
+      "parts_count": 1,
+      "statement_source": "Lanzamiento vertical \\(v_0=14 m/s\\).\n\n(a) Calcula: Altura adicional.",
+      "solution_source": "Altura adicional \\(10 m\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_g_006",
+      "version": 1,
+      "title": "Montaña rusa",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía potencial gravitatoria",
+      "family": "g",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "rapidez",
+          "label": "Rapidez",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 17.1,
+          "unit": "m/s",
+          "tolerance": 0.0855,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_g_006.svg",
+          "alt": "Perfil con niveles."
+        }
+      ],
+      "tags": [
+        "t5",
+        "g",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía potencial gravitatoria: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía potencial gravitatoria"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia g"
+      ],
+      "parts_count": 1,
+      "statement_source": "Montaña rusa: alturas \\(20\\to 5 m\\), parte del reposo.\n\n(a) Calcula: Rapidez.",
+      "solution_source": "\\(v=17,1 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_g_007",
+      "version": 1,
+      "title": "Velocidad mínima para superar colina de 8 m",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía potencial gravitatoria",
+      "family": "g",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "v_min",
+          "label": "v min",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 12.5,
+          "unit": "m/s",
+          "tolerance": 0.0625,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_g_007.svg",
+          "alt": "Perfil y punto de retorno."
+        }
+      ],
+      "tags": [
+        "t5",
+        "g",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía potencial gravitatoria: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía potencial gravitatoria"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia g"
+      ],
+      "parts_count": 1,
+      "statement_source": "Velocidad mínima para superar colina de \\(8 m\\).\n\n(a) Calcula: v min.",
+      "solution_source": "\\(v_min=12,5 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_g_008",
+      "version": 1,
+      "title": "Elegir gráfico U_g(h) para varios ceros",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía potencial gravitatoria",
+      "family": "g",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "concepto_1",
+          "label": "Conclusión",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "se_conserva",
+              "label": "Se conserva"
+            },
+            {
+              "id": "aumenta_necesariamente",
+              "label": "Aumenta necesariamente"
+            },
+            {
+              "id": "disminuye_necesariamente",
+              "label": "Disminuye necesariamente"
+            }
+          ],
+          "correct_option_id": "se_conserva",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_g_008.svg",
+          "alt": "Tres rectas paralelas."
+        }
+      ],
+      "tags": [
+        "t5",
+        "g",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía potencial gravitatoria: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía potencial gravitatoria"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia g"
+      ],
+      "parts_count": 1,
+      "statement_source": "Elegir gráfico \\(U_g(h)\\) para varios ceros.\n\n(a) Selecciona: Conclusión.",
+      "solution_source": "Pendiente \\(mg\\); opciones equivalentes por constante.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_g_009",
+      "version": 1,
+      "title": "Plano inclinado",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía potencial gravitatoria",
+      "family": "g",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Función U(s)=mg s sinθ+C"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_g_009.svg",
+          "alt": "Geometría de rampa."
+        }
+      ],
+      "tags": [
+        "t5",
+        "g",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía potencial gravitatoria: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía potencial gravitatoria"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia g"
+      ],
+      "parts_count": 1,
+      "statement_source": "Plano inclinado: relacionar recorrido \\(s\\) y altura \\(s sinθ\\).\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Función \\(U(s)=mg s sinθ+C\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_g_010",
+      "version": 1,
+      "title": "Auditar afirmación “la energía potencial pertenece al objeto”",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía potencial gravitatoria",
+      "family": "g",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Selección: pertenece al sistema de interacción; ΔU numérico"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_g_010.svg",
+          "alt": "Fronteras objeto/Tierra."
+        }
+      ],
+      "tags": [
+        "t5",
+        "g",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía potencial gravitatoria: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía potencial gravitatoria"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia g"
+      ],
+      "parts_count": 1,
+      "statement_source": "Auditar afirmación “la energía potencial pertenece al objeto”.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Selección: pertenece al sistema de interacción; \\(\\Delta U\\) numérico.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_e_001",
+      "version": 1,
+      "title": "Muelle , deformación 0,10 m",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía elástica",
+      "family": "e",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "u_e",
+          "label": "U e",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.0,
+          "unit": "J",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_e_001.svg",
+          "alt": "Longitud natural/deformada."
+        }
+      ],
+      "tags": [
+        "t5",
+        "e",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía elástica: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía elástica"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia e"
+      ],
+      "parts_count": 1,
+      "statement_source": "Muelle \\(k=200\\), deformación \\(0,10 m\\).\n\n(a) Calcula: U e.",
+      "solution_source": "\\(U_e=1 J\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_e_002",
+      "version": 1,
+      "title": "Duplicar deformación",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía elástica",
+      "family": "e",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "razon_de_energias",
+          "label": "Razón de energías",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 4.0,
+          "unit": "",
+          "tolerance": 0.02,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_e_002.svg",
+          "alt": "Parábola U(x)."
+        }
+      ],
+      "tags": [
+        "t5",
+        "e",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía elástica: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía elástica"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia e"
+      ],
+      "parts_count": 1,
+      "statement_source": "Duplicar deformación.\n\n(a) Calcula: Razón de energías.",
+      "solution_source": "Razón de energías \\(4\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_e_003",
+      "version": 1,
+      "title": "Trabajo del muelle de  a 0",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía elástica",
+      "family": "e",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "resultado_1",
+          "label": "Resultado 1",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.72,
+          "unit": "J",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_e_003.svg",
+          "alt": "Área triangular F-x."
+        }
+      ],
+      "tags": [
+        "t5",
+        "e",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía elástica: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía elástica"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia e"
+      ],
+      "parts_count": 1,
+      "statement_source": "Trabajo del muelle de \\(x=0,12\\) a \\(0\\). \\(k=100\\).\n\n(a) Calcula: Resultado 1.",
+      "solution_source": "\\(+0,72 J\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_e_004",
+      "version": 1,
+      "title": "Trabajo externo cuasiestático al comprimir 0→0,08",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía elástica",
+      "family": "e",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "resultado_1",
+          "label": "Resultado 1",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.8,
+          "unit": "J",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_e_004.svg",
+          "alt": "Fuerza aplicada creciente."
+        }
+      ],
+      "tags": [
+        "t5",
+        "e",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía elástica: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía elástica"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia e"
+      ],
+      "parts_count": 1,
+      "statement_source": "Trabajo externo cuasiestático al comprimir \\(0\\to 0,08\\), \\(k=250\\).\n\n(a) Calcula: Resultado 1.",
+      "solution_source": "\\(0,8 J\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_e_005",
+      "version": 1,
+      "title": "Muelle lanza bloque 0,5 kg, , , sin rozamiento",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía elástica",
+      "family": "e",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "rapidez",
+          "label": "Rapidez",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2.0,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_e_005.svg",
+          "alt": "Estado comprimido/salida."
+        }
+      ],
+      "tags": [
+        "t5",
+        "e",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía elástica: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía elástica"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia e"
+      ],
+      "parts_count": 1,
+      "statement_source": "Muelle lanza bloque \\(0,5 kg\\), \\(k=200\\), \\(x=0,10\\), sin rozamiento.\n\n(a) Calcula: Rapidez.",
+      "solution_source": "\\(v=2 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_e_006",
+      "version": 1,
+      "title": "Muelle vertical",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía elástica",
+      "family": "e",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "x_eq=mg/k; energía total con ambas referencias"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_e_006.svg",
+          "alt": "Dos ceros geométricos."
+        }
+      ],
+      "tags": [
+        "t5",
+        "e",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía elástica: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía elástica"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia e"
+      ],
+      "parts_count": 1,
+      "statement_source": "Muelle vertical: comparar referencia natural y equilibrio.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "\\(x_eq=mg/k\\); energía total con ambas referencias.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_e_007",
+      "version": 1,
+      "title": "Dos muelles en paralelo almacenan energía",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía elástica",
+      "family": "e",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "U=½(k_1+k_2)x²"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_e_007.svg",
+          "alt": "Montaje paralelo y barras."
+        }
+      ],
+      "tags": [
+        "t5",
+        "e",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía elástica: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía elástica"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia e"
+      ],
+      "parts_count": 1,
+      "statement_source": "Dos muelles en paralelo almacenan energía.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "\\(U=½(k_1+k_2)x²\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_e_008",
+      "version": 1,
+      "title": "Muelles en serie ,  sometidos a",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía elástica",
+      "family": "e",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 17,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "deformaciones",
+          "label": "Deformaciones 1",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.1,
+          "unit": "",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "deformaciones_2",
+          "label": "Deformaciones 2",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.05,
+          "unit": "m",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "energia_3",
+          "label": "Energía 3",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.5,
+          "unit": "",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "c",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "energia_4",
+          "label": "Energía 4",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.25,
+          "unit": "J",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "d",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "total",
+          "label": "Total",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.75,
+          "unit": "J",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "e",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_e_008.svg",
+          "alt": "Deformaciones separadas."
+        }
+      ],
+      "tags": [
+        "t5",
+        "e",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía elástica: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía elástica"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia e"
+      ],
+      "parts_count": 5,
+      "statement_source": "Muelles en serie \\(k_1=100\\), \\(k_2=200 N/m\\) sometidos a \\(F=10 N\\).\n\n(a) Calcula: Deformaciones 1.\n(b) Calcula: Deformaciones 2.\n(c) Calcula: Energía 3.\n(d) Calcula: Energía 4.\n(e) Calcula: Total.",
+      "solution_source": "Deformaciones \\(0,10\\), \\(0,05 m\\); energías \\(0,50\\), \\(0,25 J\\); total \\(0,75 J\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_e_009",
+      "version": 1,
+      "title": "La curva da  cuando",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía elástica",
+      "family": "e",
+      "subtype": "multi_step",
+      "difficulty": 5,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "k",
+          "label": "k",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 80.0,
+          "unit": "N/m",
+          "tolerance": 0.4,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_e_009.svg",
+          "alt": "Datos U-x."
+        }
+      ],
+      "tags": [
+        "t5",
+        "e",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía elástica: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía elástica"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia e"
+      ],
+      "parts_count": 1,
+      "statement_source": "La curva da \\(U=0,90 J\\) cuando \\(x=0,15 m\\).\n\n(a) Calcula: k.",
+      "solution_source": "\\(k=2U/x²=80 N/m\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_e_010",
+      "version": 1,
+      "title": "Auditar  para",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía elástica",
+      "family": "e",
+      "subtype": "multi_step",
+      "difficulty": 5,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "resultado",
+          "label": "Resultado",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.6,
+          "unit": "J",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_e_010.svg",
+          "alt": "Tarjetas de fórmulas dimensionales."
+        }
+      ],
+      "tags": [
+        "t5",
+        "e",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía elástica: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía elástica"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia e"
+      ],
+      "parts_count": 1,
+      "statement_source": "Auditar \\(U=kx\\) para \\(k=120 N/m\\), \\(x=0,10 m\\).\n\n(a) Calcula: Resultado.",
+      "solution_source": "Seleccionar \\(U=½kx²\\); unidad \\(J\\); resultado \\(0,60 J\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_b_001",
+      "version": 1,
+      "title": "Bloque baja 4 m de altura con rozamiento que hace -30 J",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Balances, disipación e integración",
+      "family": "b",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "k_f",
+          "label": "K f",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 48.4,
+          "unit": "J",
+          "tolerance": 0.242,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "rapidez",
+          "label": "Rapidez",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 6.96,
+          "unit": "m/s",
+          "tolerance": 0.0348,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_b_001.svg",
+          "alt": "Barras U, térmica y K."
+        }
+      ],
+      "tags": [
+        "t5",
+        "b",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Balances, disipación e integración: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Balances, disipación e integración"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia b"
+      ],
+      "parts_count": 2,
+      "statement_source": "Bloque baja \\(4 m\\) de altura con rozamiento que hace \\(-30 J\\), \\(m=2\\).\n\n(a) Calcula: K f.\n(b) Calcula: Rapidez.",
+      "solution_source": "\\(K_f=48,4 J\\); \\(v=6,96 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_b_002",
+      "version": 1,
+      "title": "Rampa rugosa, hallar μ_k desde rapidez final",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Balances, disipación e integración",
+      "family": "b",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Balance cerrado y μ_k numérico"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_b_002.svg",
+          "alt": "Perfil y frontera del sistema."
+        }
+      ],
+      "tags": [
+        "t5",
+        "b",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Balances, disipación e integración: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Balances, disipación e integración"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia b"
+      ],
+      "parts_count": 1,
+      "statement_source": "Rampa rugosa, hallar \\(μ_k\\) desde rapidez final.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Balance cerrado y \\(μ_k\\) numérico.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_b_003",
+      "version": 1,
+      "title": "Muelle impulsa bloque por zona rugosa hasta detenerse",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Balances, disipación e integración",
+      "family": "b",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Distancia d=kx²/(2μmg)"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_b_003.svg",
+          "alt": "Muelle-zona rugosa."
+        }
+      ],
+      "tags": [
+        "t5",
+        "b",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Balances, disipación e integración: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Balances, disipación e integración"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia b"
+      ],
+      "parts_count": 1,
+      "statement_source": "Muelle impulsa bloque por zona rugosa hasta detenerse.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Distancia \\(d=kx²/(2μmg)\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_b_004",
+      "version": 1,
+      "title": "Bloque cae sobre muelle vertical",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Balances, disipación e integración",
+      "family": "b",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Ecuación cuadrática y raíz física seleccionada"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_b_004.svg",
+          "alt": "Tres estados verticales."
+        }
+      ],
+      "tags": [
+        "t5",
+        "b",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Balances, disipación e integración: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Balances, disipación e integración"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia b"
+      ],
+      "parts_count": 1,
+      "statement_source": "Bloque cae sobre muelle vertical: compresión máxima.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Ecuación cuadrática y raíz física seleccionada.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_b_005",
+      "version": 1,
+      "title": "Montaña rusa con bucle",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Balances, disipación e integración",
+      "family": "b",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "v_top=√(gr) y altura inicial 2,5r"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_b_005.svg",
+          "alt": "Bucle y barras por estado."
+        }
+      ],
+      "tags": [
+        "t5",
+        "b",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Balances, disipación e integración: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Balances, disipación e integración"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia b"
+      ],
+      "parts_count": 1,
+      "statement_source": "Montaña rusa con bucle: energía + condición dinámica mínima arriba.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "\\(v_top=√(gr)\\) y altura inicial \\(2,5r\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_b_006",
+      "version": 1,
+      "title": "Péndulo soltado desde ángulo 60°, longitud 1 m",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Balances, disipación e integración",
+      "family": "b",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "rapidez_abajo",
+          "label": "Rapidez abajo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3.13,
+          "unit": "m/s",
+          "tolerance": 0.01565,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "concepto_2",
+          "label": "Sentido",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "hacia_arriba",
+              "label": "Hacia arriba"
+            },
+            {
+              "id": "hacia_abajo",
+              "label": "Hacia abajo"
+            },
+            {
+              "id": "sin_direccion_preferente",
+              "label": "Sin dirección preferente"
+            }
+          ],
+          "correct_option_id": "hacia_abajo",
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_b_006.svg",
+          "alt": "Arco y niveles."
+        }
+      ],
+      "tags": [
+        "t5",
+        "b",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Balances, disipación e integración: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Balances, disipación e integración"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia b"
+      ],
+      "parts_count": 2,
+      "statement_source": "Péndulo soltado desde ángulo \\(60°\\), longitud \\(1 m\\).\n\n(a) Calcula: Rapidez abajo.\n(b) Selecciona: Sentido.",
+      "solution_source": "Rapidez abajo \\(3,13 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_b_007",
+      "version": 1,
+      "title": "Columpio pierde 15% de energía por oscilación",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Balances, disipación e integración",
+      "family": "b",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "factor_de_altura",
+          "label": "Factor de altura",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.85,
+          "unit": "",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_b_007.svg",
+          "alt": "Barras decrecientes."
+        }
+      ],
+      "tags": [
+        "t5",
+        "b",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Balances, disipación e integración: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Balances, disipación e integración"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia b"
+      ],
+      "parts_count": 1,
+      "statement_source": "Columpio pierde \\(15%\\) de energía por oscilación.\n\n(a) Calcula: Factor de altura.",
+      "solution_source": "Factor de altura \\(0,85\\); tras 3, \\(0,85³\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_b_008",
+      "version": 1,
+      "title": "Motor sube carga con rendimiento 80%",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Balances, disipación e integración",
+      "family": "b",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Potencia de entrada P_útil/0,8"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_b_008.svg",
+          "alt": "Diagrama de Sankey simple."
+        }
+      ],
+      "tags": [
+        "t5",
+        "b",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Balances, disipación e integración: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Balances, disipación e integración"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia b"
+      ],
+      "parts_count": 1,
+      "statement_source": "Motor sube carga con rendimiento \\(80%\\).\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Potencia de entrada \\(P_útil/0,8\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_b_009",
+      "version": 1,
+      "title": "Comparar tres sistemas para el mismo descenso con rozamiento",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Balances, disipación e integración",
+      "family": "b",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Selección de términos internos/externos"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_b_009.svg",
+          "alt": "Fronteras superpuestas."
+        }
+      ],
+      "tags": [
+        "t5",
+        "b",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Balances, disipación e integración: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Balances, disipación e integración"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia b"
+      ],
+      "parts_count": 1,
+      "statement_source": "Comparar tres sistemas para el mismo descenso con rozamiento.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Selección de términos internos/externos.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_b_010",
+      "version": 1,
+      "title": "Gráfica de energía potencial U(x) con mínimos y máximos",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Balances, disipación e integración",
+      "family": "b",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Equilibrios, estabilidad y fuerza por pendiente seleccionados"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_b_010.svg",
+          "alt": "Paisaje energético."
+        }
+      ],
+      "tags": [
+        "t5",
+        "b",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Balances, disipación e integración: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Balances, disipación e integración"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia b"
+      ],
+      "parts_count": 1,
+      "statement_source": "Gráfica de energía potencial \\(U(x)\\) con mínimos y máximos.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Equilibrios, estabilidad y fuerza por pendiente seleccionados.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_b_011",
+      "version": 1,
+      "title": "Dada energía total horizontal, hallar regiones permitidas",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Balances, disipación e integración",
+      "family": "b",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Intervalo de x donde E≥U(x)"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_b_011.svg",
+          "alt": "U(x) y línea E."
+        }
+      ],
+      "tags": [
+        "t5",
+        "b",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Balances, disipación e integración: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Balances, disipación e integración"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia b"
+      ],
+      "parts_count": 1,
+      "statement_source": "Dada energía total horizontal, hallar regiones permitidas.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Intervalo de \\(x\\) donde \\(E≥U(x)\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_b_012",
+      "version": 1,
+      "title": "Fuerza conservativa desde",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Balances, disipación e integración",
+      "family": "b",
+      "subtype": "multi_step",
+      "difficulty": 5,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "x",
+          "label": "x",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.0,
+          "unit": "",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_b_012.svg",
+          "alt": "Panel U/F."
+        }
+      ],
+      "tags": [
+        "t5",
+        "b",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Balances, disipación e integración: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Balances, disipación e integración"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia b"
+      ],
+      "parts_count": 1,
+      "statement_source": "Fuerza conservativa desde \\(U(x)=2x²-4x\\).\n\n(a) Calcula: x.",
+      "solution_source": "\\(F(x)=-4x+4\\); equilibrio \\(x=1\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_b_013",
+      "version": 1,
+      "title": "Auditoría de balance que suma simultáneamente trabajo del peso y ΔU_g",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Balances, disipación e integración",
+      "family": "b",
+      "subtype": "multi_step",
+      "difficulty": 5,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Seleccionar doble conteo; ecuación corregida"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_b_013.svg",
+          "alt": "Libro mayor de energía."
+        }
+      ],
+      "tags": [
+        "t5",
+        "b",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Balances, disipación e integración: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Balances, disipación e integración"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia b"
+      ],
+      "parts_count": 1,
+      "statement_source": "Auditoría de balance que suma simultáneamente trabajo del peso y \\(\\Delta U_g\\).\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Seleccionar doble conteo; ecuación corregida.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_b_014",
+      "version": 1,
+      "title": "Investigación cerrada de carrito",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Balances, disipación e integración",
+      "family": "b",
+      "subtype": "multi_step",
+      "difficulty": 5,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "E_i, E_f, pérdida y porcentaje"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_b_014.svg",
+          "alt": "Datos, perfil y barras."
+        }
+      ],
+      "tags": [
+        "t5",
+        "b",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Balances, disipación e integración: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Balances, disipación e integración"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia b"
+      ],
+      "parts_count": 1,
+      "statement_source": "Investigación cerrada de carrito: datos de altura/rapidez estiman pérdida y eficiencia.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "\\(E_i\\), \\(E_f\\), pérdida y porcentaje.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    }
+  ]
+}

@@ -71,6 +71,26 @@ class UserQuizAttempt(db.Model):
     metadata_json = db.Column(db.Text, nullable=True)
 
 
+class UserStudyState(db.Model):
+    """The student's latest concrete study context for reliable continuation links."""
+
+    __tablename__ = "user_study_state"
+
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(120), nullable=False, unique=True, index=True)
+    last_lesson_id = db.Column(db.String(120), nullable=True)
+    last_lesson_title = db.Column(db.String(255), nullable=True)
+    last_lesson_at = db.Column(db.DateTime, nullable=True)
+    last_exercise_id = db.Column(db.String(120), nullable=True)
+    last_exercise_title = db.Column(db.String(255), nullable=True)
+    last_exercise_topic = db.Column(db.String(120), nullable=True)
+    last_exercise_topic_title = db.Column(db.String(255), nullable=True)
+    last_exercise_type_key = db.Column(db.String(255), nullable=True)
+    last_exercise_type_title = db.Column(db.String(255), nullable=True)
+    last_exercise_at = db.Column(db.DateTime, nullable=True)
+    updated_at = db.Column(db.DateTime, nullable=False, default=utc_now, onupdate=utc_now)
+
+
 class ExerciseAttempt(db.Model):
     __tablename__ = "exercise_attempts"
 

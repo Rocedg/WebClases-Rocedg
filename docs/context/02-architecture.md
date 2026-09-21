@@ -8,7 +8,7 @@ remain at Flask's conventional locations. There are no new blueprints, frontend
 build tools or application packages.
 
 `database.py` configures the existing Flask-SQLAlchemy extension. `models.py`
-defines activity, quiz attempt, exercise attempt and response tables. `services/`
+defines activity, quiz attempt, exercise attempt, response and latest-study-state tables. `services/`
 contains activity and exercise logic. Local persistence remains
 `instance/web_clases_rocedg.sqlite`; production can use `DATABASE_URL`.
 
@@ -28,9 +28,12 @@ contains activity and exercise logic. Local persistence remains
 
 The full exercise catalogue is loaded from topic JSON, with the generated index
 as a fallback. The current 1bach banks are separate files:
-`exercises_t0.json`, `exercises_t1.json`, and `exercises_t2.json`. The loader
+`exercises_t0.json` through `exercises_t6.json`. The loader
 reads each bank independently. The existing 2bach editorial fixture still uses
-its own legacy `exercises.json` path and remains supported separately. SQL stores
+its own legacy `exercises.json` path and remains stored for future work, but is
+excluded from the public catalogue. The legacy quiz PDFs are likewise retained
+under `static/pdfs/quizzes/` while their UI, quiz routes and direct static delivery
+are disabled. SQL stores
 student work keyed by exercise ID and version; it does not replace JSON
 educational content.
 

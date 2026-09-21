@@ -291,6 +291,10 @@ def load_topic_exercises(root: Path, result: ValidationResult) -> tuple[list[dic
         "exercises_t0.json",
         "exercises_t1.json",
         "exercises_t2.json",
+        "exercises_t3.json",
+        "exercises_t4.json",
+        "exercises_t5.json",
+        "exercises_t6.json",
         "exercises.json",
     )
     topic_files = (
@@ -330,7 +334,14 @@ def load_topic_exercises(root: Path, result: ValidationResult) -> tuple[list[dic
                 exercises.append(exercise)
 
     result.exercise_count = len(exercises)
-    return exercises, seen_ids
+    indexable_ids = {
+        exercise["id"]
+        for exercise in exercises
+        if isinstance(exercise, dict)
+        and is_non_empty_string(exercise.get("id"))
+        and exercise.get("status") != "retired"
+    }
+    return exercises, indexable_ids
 
 
 def validate_data_index(root: Path, topic_ids: set[str], result: ValidationResult) -> None:

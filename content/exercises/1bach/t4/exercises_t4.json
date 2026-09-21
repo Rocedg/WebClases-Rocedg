@@ -1,0 +1,4494 @@
+{
+  "version": 1,
+  "course": "1bach",
+  "topic": "t4",
+  "topic_slug": "rozamiento-y-aplicaciones-de-las-fuerzas",
+  "block": "Rozamiento y aplicaciones de las fuerzas",
+  "description": "Rozamiento estático y cinético, curvas, muelles y selección razonada del modelo dinámico.",
+  "exercises": [
+    {
+      "id": "t4_r_001",
+      "version": 1,
+      "title": "Caja 10 kg, , empuje 20 N",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Rozamiento estático y cinético",
+      "family": "r",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "rozamiento_estatico",
+          "label": "Rozamiento estático",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 20.0,
+          "unit": "N",
+          "tolerance": 0.1,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "rozamiento_estatico_maximo",
+          "label": "Rozamiento estático máximo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 39.2,
+          "unit": "N",
+          "tolerance": 0.196,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "concepto_3",
+          "label": "Estado",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "reposo",
+              "label": "Reposo"
+            },
+            {
+              "id": "desliza",
+              "label": "Desliza"
+            },
+            {
+              "id": "no_desliza",
+              "label": "No desliza"
+            }
+          ],
+          "correct_option_id": "reposo",
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_r_001.svg",
+          "alt": "DCL y barra de margen estático."
+        }
+      ],
+      "tags": [
+        "t4",
+        "r",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Rozamiento estático y cinético: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Rozamiento estático y cinético"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia r"
+      ],
+      "parts_count": 3,
+      "statement_source": "Caja \\(10 kg\\), \\(μ_s=0,4\\), empuje \\(20 N\\).\n\n(a) Calcula: Rozamiento estático.\n(b) Calcula: Rozamiento estático máximo.\n(c) Selecciona: Estado.",
+      "solution_source": "Reposo; \\(f_s=20 N\\); \\(f_s,max=39,2 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_r_002",
+      "version": 1,
+      "title": "Misma caja con empuje 45 N",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Rozamiento estático y cinético",
+      "family": "r",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "rozamiento_cinetico",
+          "label": "Rozamiento cinético",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 29.4,
+          "unit": "N",
+          "tolerance": 0.147,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "aceleracion",
+          "label": "Aceleración",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.56,
+          "unit": "m/s²",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "concepto_3",
+          "label": "Estado",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "reposo",
+              "label": "Reposo"
+            },
+            {
+              "id": "desliza",
+              "label": "Desliza"
+            },
+            {
+              "id": "no_desliza",
+              "label": "No desliza"
+            }
+          ],
+          "correct_option_id": "desliza",
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_r_002.svg",
+          "alt": "Gráfica fuerza aplicada/rozamiento."
+        }
+      ],
+      "tags": [
+        "t4",
+        "r",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Rozamiento estático y cinético: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Rozamiento estático y cinético"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia r"
+      ],
+      "parts_count": 3,
+      "statement_source": "Misma caja con empuje \\(45 N\\), \\(μ_k=0,3\\).\n\n(a) Calcula: Rozamiento cinético.\n(b) Calcula: Aceleración.\n(c) Selecciona: Estado.",
+      "solution_source": "Desliza; \\(f_k=29,4 N\\); \\(a=1,56 m/s²\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_r_003",
+      "version": 1,
+      "title": "Barrido F de 0 a 60 N en caja anterior",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Rozamiento estático y cinético",
+      "family": "r",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "tramos_de_y_umbral",
+          "label": "Tramos de y umbral",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 39.2,
+          "unit": "N",
+          "tolerance": 0.196,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_r_003.svg",
+          "alt": "Panel f frente a F."
+        }
+      ],
+      "tags": [
+        "t4",
+        "r",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Rozamiento estático y cinético: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Rozamiento estático y cinético"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia r"
+      ],
+      "parts_count": 1,
+      "statement_source": "Barrido \\(F\\) de \\(0\\) a \\(60 N\\) en caja anterior.\n\n(a) Calcula: Tramos de y umbral.",
+      "solution_source": "Función por tramos de \\(f(F)\\) y umbral \\(39,2 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_r_004",
+      "version": 1,
+      "title": "Bloque 5 kg, tirón 30 N a 25°",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Rozamiento estático y cinético",
+      "family": "r",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "normal",
+          "label": "Normal",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 36.3,
+          "unit": "N",
+          "tolerance": 0.1815,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "rozamiento_cinetico",
+          "label": "Rozamiento cinético",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 7.26,
+          "unit": "N",
+          "tolerance": 0.0363,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "aceleracion",
+          "label": "Aceleración",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 4.0,
+          "unit": "m/s²",
+          "tolerance": 0.02,
+          "significant_figures": 3,
+          "part": "c",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_r_004.svg",
+          "alt": "Fuerza oblicua hacia arriba."
+        }
+      ],
+      "tags": [
+        "t4",
+        "r",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Rozamiento estático y cinético: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Rozamiento estático y cinético"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia r"
+      ],
+      "parts_count": 3,
+      "statement_source": "Bloque \\(5 kg\\), tirón \\(30 N\\) a \\(25°\\), \\(μ_k=0,2\\).\n\n(a) Calcula: Normal.\n(b) Calcula: Rozamiento cinético.\n(c) Calcula: Aceleración.",
+      "solution_source": "\\(N=36,3 N\\); \\(f_k=7,26 N\\); \\(a=4,00 m/s²\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_r_005",
+      "version": 1,
+      "title": "Mismos datos empujando 25° hacia abajo",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Rozamiento estático y cinético",
+      "family": "r",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "normal",
+          "label": "Normal",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 61.7,
+          "unit": "N",
+          "tolerance": 0.3085,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "rozamiento_cinetico",
+          "label": "Rozamiento cinético",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 12.3,
+          "unit": "N",
+          "tolerance": 0.061500000000000006,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "aceleracion",
+          "label": "Aceleración",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3.0,
+          "unit": "m/s²",
+          "tolerance": 0.015,
+          "significant_figures": 3,
+          "part": "c",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_r_005.svg",
+          "alt": "Comparación tirar/empujar."
+        }
+      ],
+      "tags": [
+        "t4",
+        "r",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Rozamiento estático y cinético: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Rozamiento estático y cinético"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia r"
+      ],
+      "parts_count": 3,
+      "statement_source": "Mismos datos empujando \\(25°\\) hacia abajo.\n\n(a) Calcula: Normal.\n(b) Calcula: Rozamiento cinético.\n(c) Calcula: Aceleración.",
+      "solution_source": "\\(N=61,7 N\\); \\(f_k=12,3 N\\); \\(a=3,00 m/s²\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_r_006",
+      "version": 1,
+      "title": "Hallar fuerza horizontal mínima para mover",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Rozamiento estático y cinético",
+      "family": "r",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "f_min",
+          "label": "F min",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 41.2,
+          "unit": "N",
+          "tolerance": 0.20600000000000002,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_r_006.svg",
+          "alt": "Umbral con bloque aún en reposo."
+        }
+      ],
+      "tags": [
+        "t4",
+        "r",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Rozamiento estático y cinético: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Rozamiento estático y cinético"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia r"
+      ],
+      "parts_count": 1,
+      "statement_source": "Hallar fuerza horizontal mínima para mover \\(m=12 kg\\), \\(μ_s=0,35\\).\n\n(a) Calcula: F min.",
+      "solution_source": "\\(F_min=41,2 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_r_007",
+      "version": 1,
+      "title": "Dos superficies con mismo μ, masas 4 y 8 kg",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Rozamiento estático y cinético",
+      "family": "r",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "f_k2_f_k1",
+          "label": "f k2/f k1",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2.0,
+          "unit": "",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_r_007.svg",
+          "alt": "Dos bloques y gráfica v(t)."
+        }
+      ],
+      "tags": [
+        "t4",
+        "r",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Rozamiento estático y cinético: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Rozamiento estático y cinético"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia r"
+      ],
+      "parts_count": 1,
+      "statement_source": "Dos superficies con mismo \\(μ\\), masas \\(4\\) y \\(8 kg\\).\n\n(a) Calcula: f k2/f k1.",
+      "solution_source": "Razón \\(f_k2/f_k1=2\\); misma desaceleración \\(μg\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_r_008",
+      "version": 1,
+      "title": "Bloque lanzado a 6 m/s",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Rozamiento estático y cinético",
+      "family": "r",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "aceleracion",
+          "label": "Aceleración",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -2.45,
+          "unit": "m/s²",
+          "tolerance": 0.01225,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "parada",
+          "label": "Parada",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2.45,
+          "unit": "s",
+          "tolerance": 0.01225,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "distancia",
+          "label": "Distancia",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 7.35,
+          "unit": "m",
+          "tolerance": 0.03675,
+          "significant_figures": 3,
+          "part": "c",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_r_008.svg",
+          "alt": "Trayectoria y panel v(t)."
+        }
+      ],
+      "tags": [
+        "t4",
+        "r",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Rozamiento estático y cinético: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Rozamiento estático y cinético"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia r"
+      ],
+      "parts_count": 3,
+      "statement_source": "Bloque lanzado a \\(6 m/s\\), \\(μ_k=0,25\\).\n\n(a) Calcula: Aceleración.\n(b) Calcula: Parada.\n(c) Calcula: Distancia.",
+      "solution_source": "\\(a=-2,45 m/s²\\); parada \\(2,45 s\\); distancia \\(7,35 m\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_r_009",
+      "version": 1,
+      "title": "Determinar μ_k desde parada",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Rozamiento estático y cinético",
+      "family": "r",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "k",
+          "label": "μ k",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.327,
+          "unit": "",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_r_009.svg",
+          "alt": "Gráfica v² frente a distancia."
+        }
+      ],
+      "tags": [
+        "t4",
+        "r",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Rozamiento estático y cinético: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Rozamiento estático y cinético"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia r"
+      ],
+      "parts_count": 1,
+      "statement_source": "Determinar \\(μ_k\\) desde parada: \\(v_0=8 m/s\\), \\(d=10 m\\).\n\n(a) Calcula: μ k.",
+      "solution_source": "\\(μ_k=0,327\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_r_010",
+      "version": 1,
+      "title": "Caja sobre camión acelera 2 m/s²",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Rozamiento estático y cinético",
+      "family": "r",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "limite_de_aceleracion",
+          "label": "Límite de aceleración",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2.45,
+          "unit": "m/s²",
+          "tolerance": 0.01225,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "concepto_2",
+          "label": "Estado",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "reposo",
+              "label": "Reposo"
+            },
+            {
+              "id": "desliza",
+              "label": "Desliza"
+            },
+            {
+              "id": "no_desliza",
+              "label": "No desliza"
+            }
+          ],
+          "correct_option_id": "no_desliza",
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_r_010.svg",
+          "alt": "Caja/camión y tendencia relativa."
+        }
+      ],
+      "tags": [
+        "t4",
+        "r",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Rozamiento estático y cinético: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Rozamiento estático y cinético"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia r"
+      ],
+      "parts_count": 2,
+      "statement_source": "Caja sobre camión acelera \\(2 m/s²\\), \\(μ_s=0,25\\).\n\n(a) Calcula: Límite de aceleración.\n(b) Selecciona: Estado.",
+      "solution_source": "No desliza; \\(f_s=ma\\); límite de aceleración \\(2,45 m/s²\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_r_011",
+      "version": 1,
+      "title": "Camión frena a 4 m/s²",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Rozamiento estático y cinético",
+      "family": "r",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "maximo",
+          "label": "Máximo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2.94,
+          "unit": "m/s²",
+          "tolerance": 0.0147,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "concepto_2",
+          "label": "Estado",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "reposo",
+              "label": "Reposo"
+            },
+            {
+              "id": "desliza",
+              "label": "Desliza"
+            },
+            {
+              "id": "no_desliza",
+              "label": "No desliza"
+            }
+          ],
+          "correct_option_id": "desliza",
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_r_011.svg",
+          "alt": "Dos marcos temporales."
+        }
+      ],
+      "tags": [
+        "t4",
+        "r",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Rozamiento estático y cinético: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Rozamiento estático y cinético"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia r"
+      ],
+      "parts_count": 2,
+      "statement_source": "Camión frena a \\(4 m/s²\\), \\(μ_s=0,3\\).\n\n(a) Calcula: Máximo.\n(b) Selecciona: Estado.",
+      "solution_source": "Desliza; dirección del rozamiento sobre caja hacia atrás; máximo \\(2,94 m/s²\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_r_012",
+      "version": 1,
+      "title": "Dos bloques apilados, superior 2 kg, inferior acelerado a 3 m/s²",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Rozamiento estático y cinético",
+      "family": "r",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "rozamiento_estatico",
+          "label": "Rozamiento estático",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 6.0,
+          "unit": "N",
+          "tolerance": 0.03,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "umbral",
+          "label": "Umbral",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3.92,
+          "unit": "m/s²",
+          "tolerance": 0.0196,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "concepto_3",
+          "label": "Estado",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "reposo",
+              "label": "Reposo"
+            },
+            {
+              "id": "desliza",
+              "label": "Desliza"
+            },
+            {
+              "id": "no_desliza",
+              "label": "No desliza"
+            }
+          ],
+          "correct_option_id": "no_desliza",
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_r_012.svg",
+          "alt": "DCL separados de ambos bloques."
+        }
+      ],
+      "tags": [
+        "t4",
+        "r",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Rozamiento estático y cinético: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Rozamiento estático y cinético"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia r"
+      ],
+      "parts_count": 3,
+      "statement_source": "Dos bloques apilados, superior \\(2 kg\\), inferior acelerado a \\(3 m/s²\\), \\(μ_s=0,4\\).\n\n(a) Calcula: Rozamiento estático.\n(b) Calcula: Umbral.\n(c) Selecciona: Estado.",
+      "solution_source": "\\(f_s=6 N\\); no desliza; umbral \\(3,92 m/s²\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_r_013",
+      "version": 1,
+      "title": "Empuje horizontal sobre pared mantiene bloque 1 kg",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Rozamiento estático y cinético",
+      "family": "r",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "empuje_minimo",
+          "label": "Empuje mínimo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 19.6,
+          "unit": "N",
+          "tolerance": 0.098,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "rozamiento_vertical",
+          "label": "Rozamiento vertical",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 9.8,
+          "unit": "N",
+          "tolerance": 0.049,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_r_013.svg",
+          "alt": "Pared y fuerzas perpendiculares."
+        }
+      ],
+      "tags": [
+        "t4",
+        "r",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Rozamiento estático y cinético: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Rozamiento estático y cinético"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia r"
+      ],
+      "parts_count": 2,
+      "statement_source": "Empuje horizontal sobre pared mantiene bloque \\(1 kg\\), \\(μ_s=0,5\\).\n\n(a) Calcula: Empuje mínimo.\n(b) Calcula: Rozamiento vertical.",
+      "solution_source": "Empuje mínimo \\(19,6 N\\); rozamiento vertical \\(9,8 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_r_014",
+      "version": 1,
+      "title": "Comparar área de contacto doble con misma masa/material",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Rozamiento estático y cinético",
+      "family": "r",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Selección: modelo seco ideal da mismo rozamiento"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_r_014.svg",
+          "alt": "Dos bases y fuerzas iguales."
+        }
+      ],
+      "tags": [
+        "t4",
+        "r",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Rozamiento estático y cinético: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Rozamiento estático y cinético"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia r"
+      ],
+      "parts_count": 1,
+      "statement_source": "Comparar área de contacto doble con misma masa/material.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Selección: modelo seco ideal da mismo rozamiento.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_r_015",
+      "version": 1,
+      "title": "Tabla experimental N-f_k lineal",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Rozamiento estático y cinético",
+      "family": "r",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "k",
+          "label": "μ k",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.3,
+          "unit": "",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_r_015.svg",
+          "alt": "Dispersión por el origen."
+        }
+      ],
+      "tags": [
+        "t4",
+        "r",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Rozamiento estático y cinético: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Rozamiento estático y cinético"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia r"
+      ],
+      "parts_count": 1,
+      "statement_source": "Tabla experimental \\(N-f_k\\) lineal.\n\n(a) Calcula: μ k.",
+      "solution_source": "Pendiente \\(μ_k\\); con datos \\((20,6),(40,12),(60,18)\\), \\(μ_k=0,30\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_r_016",
+      "version": 1,
+      "title": "Auditar solución que usa μ_sN aunque el cuerpo está en reposo con fuerza peq",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Rozamiento estático y cinético",
+      "family": "r",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Error seleccionado; valor correcto de f_s igual a fuerza aplicada"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_r_016.svg",
+          "alt": "Dos curvas y paso erróneo resaltado."
+        }
+      ],
+      "tags": [
+        "t4",
+        "r",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Rozamiento estático y cinético: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Rozamiento estático y cinético"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia r"
+      ],
+      "parts_count": 1,
+      "statement_source": "Auditar solución que usa \\(μ_sN\\) aunque el cuerpo está en reposo con fuerza pequeña.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Error seleccionado; valor correcto de \\(f_s\\) igual a fuerza aplicada.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_p_001",
+      "version": 1,
+      "title": "Bloque 5 kg, plano 20°",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Planos con rozamiento",
+      "family": "p",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "rozamiento_estatico",
+          "label": "Rozamiento estático",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 16.8,
+          "unit": "N",
+          "tolerance": 0.084,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "maximo",
+          "label": "Máximo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 18.4,
+          "unit": "N",
+          "tolerance": 0.092,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "concepto_3",
+          "label": "Estado",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "reposo",
+              "label": "Reposo"
+            },
+            {
+              "id": "desliza",
+              "label": "Desliza"
+            },
+            {
+              "id": "no_desliza",
+              "label": "No desliza"
+            }
+          ],
+          "correct_option_id": "reposo",
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_p_001.svg",
+          "alt": "DCL con tendencia cuesta abajo."
+        }
+      ],
+      "tags": [
+        "t4",
+        "p",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Planos con rozamiento: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Planos con rozamiento"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia p"
+      ],
+      "parts_count": 3,
+      "statement_source": "Bloque \\(5 kg\\), plano \\(20°\\), \\(μ_s=0,4\\).\n\n(a) Calcula: Rozamiento estático.\n(b) Calcula: Máximo.\n(c) Selecciona: Estado.",
+      "solution_source": "Reposo; \\(f_s=16,8 N\\); máximo \\(18,4 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_p_002",
+      "version": 1,
+      "title": "Aumentar ángulo hasta inicio de deslizamiento",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Planos con rozamiento",
+      "family": "p",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "c",
+          "label": "θ c",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 21.8,
+          "unit": "°",
+          "tolerance": 0.2,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_p_002.svg",
+          "alt": "Plano de inclinación variable."
+        }
+      ],
+      "tags": [
+        "t4",
+        "p",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Planos con rozamiento: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Planos con rozamiento"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia p"
+      ],
+      "parts_count": 1,
+      "statement_source": "Aumentar ángulo hasta inicio de deslizamiento, \\(μ_s=0,4\\).\n\n(a) Calcula: θ c.",
+      "solution_source": "\\(θ_c=21,8°\\); relación \\(tanθ_c=μ_s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_p_003",
+      "version": 1,
+      "title": "Plano 30°, , bloque desliza abajo",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Planos con rozamiento",
+      "family": "p",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "aceleracion",
+          "label": "Aceleración",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3.2,
+          "unit": "m/s²",
+          "tolerance": 0.016,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_p_003.svg",
+          "alt": "Fuerzas paralelas opuestas."
+        }
+      ],
+      "tags": [
+        "t4",
+        "p",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Planos con rozamiento: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Planos con rozamiento"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia p"
+      ],
+      "parts_count": 1,
+      "statement_source": "Plano \\(30°\\), \\(μ_k=0,2\\), bloque desliza abajo.\n\n(a) Calcula: Aceleración.",
+      "solution_source": "\\(a=3,20 m/s²\\); \\(N=mg cos30°\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_p_004",
+      "version": 1,
+      "title": "Bloque sube inicialmente por plano anterior",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Planos con rozamiento",
+      "family": "p",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "aceleracion",
+          "label": "Aceleración",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -6.6,
+          "unit": "m/s²",
+          "tolerance": 0.033,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "parada_desde",
+          "label": "Parada desde",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.758,
+          "unit": "s",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "concepto_3",
+          "label": "Sentido",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "hacia_arriba",
+              "label": "Hacia arriba"
+            },
+            {
+              "id": "hacia_abajo",
+              "label": "Hacia abajo"
+            },
+            {
+              "id": "sin_direccion_preferente",
+              "label": "Sin dirección preferente"
+            }
+          ],
+          "correct_option_id": "hacia_arriba",
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_p_004.svg",
+          "alt": "Vectores velocidad/rozamiento."
+        }
+      ],
+      "tags": [
+        "t4",
+        "p",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Planos con rozamiento: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Planos con rozamiento"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia p"
+      ],
+      "parts_count": 3,
+      "statement_source": "Bloque sube inicialmente por plano anterior.\n\n(a) Calcula: Aceleración.\n(b) Calcula: Parada desde.\n(c) Selecciona: Sentido.",
+      "solution_source": "\\(a=-6,60 m/s²\\) con eje arriba; parada desde \\(v_0=5\\): \\(0,758 s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_p_005",
+      "version": 1,
+      "title": "Tras pararse, decidir si vuelve a bajar con",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Planos con rozamiento",
+      "family": "p",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Sí, porque tan30°>0,4; selección de régimen posterior"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_p_005.svg",
+          "alt": "Línea temporal de dos fases."
+        }
+      ],
+      "tags": [
+        "t4",
+        "p",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Planos con rozamiento: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Planos con rozamiento"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia p"
+      ],
+      "parts_count": 1,
+      "statement_source": "Tras pararse, decidir si vuelve a bajar con \\(μ_s=0,4\\).\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Sí, porque \\(tan30°>0,4\\); selección de régimen posterior.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_p_006",
+      "version": 1,
+      "title": "Fuerza paralela mantiene velocidad constante cuesta arriba",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Planos con rozamiento",
+      "family": "p",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "f",
+          "label": "F",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 44.1,
+          "unit": "N",
+          "tolerance": 0.2205,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_p_006.svg",
+          "alt": "DCL y eje local."
+        }
+      ],
+      "tags": [
+        "t4",
+        "p",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Planos con rozamiento: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Planos con rozamiento"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia p"
+      ],
+      "parts_count": 1,
+      "statement_source": "Fuerza paralela mantiene velocidad constante cuesta arriba, \\(m=8\\), \\(θ=25°\\), \\(μ_k=0,15\\).\n\n(a) Calcula: F.",
+      "solution_source": "\\(F=44,1 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_p_007",
+      "version": 1,
+      "title": "Fuerza horizontal 60 N sobre , plano 30°",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Planos con rozamiento",
+      "family": "p",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 16,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "normal",
+          "label": "Normal",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 114.9,
+          "unit": "N",
+          "tolerance": 0.5745,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "componente_paralela",
+          "label": "Componente paralela",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 52.0,
+          "unit": "N",
+          "tolerance": 0.26,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "aceleracion",
+          "label": "Aceleración",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -1.9,
+          "unit": "m/s²",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "c",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "concepto_4",
+          "label": "Sentido",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "hacia_arriba",
+              "label": "Hacia arriba"
+            },
+            {
+              "id": "hacia_abajo",
+              "label": "Hacia abajo"
+            },
+            {
+              "id": "sin_direccion_preferente",
+              "label": "Sin dirección preferente"
+            }
+          ],
+          "correct_option_id": "hacia_arriba",
+          "part": "d"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_p_007.svg",
+          "alt": "Descomposición de fuerza horizontal."
+        }
+      ],
+      "tags": [
+        "t4",
+        "p",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Planos con rozamiento: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Planos con rozamiento"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia p"
+      ],
+      "parts_count": 4,
+      "statement_source": "Fuerza horizontal \\(60 N\\) sobre \\(m=10 kg\\), plano \\(30°\\), \\(μ_k=0,2\\).\n\n(a) Calcula: Normal.\n(b) Calcula: Componente paralela.\n(c) Calcula: Aceleración.\n(d) Selecciona: Sentido.",
+      "solution_source": "\\(N=114,9 N\\); componente paralela \\(52,0 N\\); aceleración \\(-1,90 m/s²\\) si arriba positivo.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_p_008",
+      "version": 1,
+      "title": "Bloque en plano unido a masa colgante",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Planos con rozamiento",
+      "family": "p",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "aceleracion",
+          "label": "Aceleración",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.915,
+          "unit": "m/s²",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "tension",
+          "label": "Tensión",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 26.7,
+          "unit": "N",
+          "tolerance": 0.1335,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_p_008.svg",
+          "alt": "Dos DCL y sentido comprobado."
+        }
+      ],
+      "tags": [
+        "t4",
+        "p",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Planos con rozamiento: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Planos con rozamiento"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia p"
+      ],
+      "parts_count": 2,
+      "statement_source": "Bloque en plano unido a masa colgante; incluir rozamiento. \\(m_1=4\\), \\(m_2=3\\), \\(θ=30°\\), \\(μ_k=0,1\\).\n\n(a) Calcula: Aceleración.\n(b) Calcula: Tensión.",
+      "solution_source": "Sentido hacia \\(m_2\\); \\(a=0,915 m/s²\\); \\(T=26,7 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_p_009",
+      "version": 1,
+      "title": "Hallar masa colgante para equilibrio en límite de subir, con",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Planos con rozamiento",
+      "family": "p",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "m_2",
+          "label": "m 2",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3.47,
+          "unit": "kg",
+          "tolerance": 0.01735,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_p_009.svg",
+          "alt": "Dos límites, subir/bajar."
+        }
+      ],
+      "tags": [
+        "t4",
+        "p",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Planos con rozamiento: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Planos con rozamiento"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia p"
+      ],
+      "parts_count": 1,
+      "statement_source": "Hallar masa colgante para equilibrio en límite de subir, con \\(m_1=5 kg\\), \\(θ=25°\\), \\(μ_s=0,30\\).\n\n(a) Calcula: m 2.",
+      "solution_source": "\\(m_2=m_1(sinθ+μ_s cosθ)=3,47 kg\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_p_010",
+      "version": 1,
+      "title": "Rango de masa colgante que permite reposo",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Planos con rozamiento",
+      "family": "p",
+      "subtype": "multi_step",
+      "difficulty": 5,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Intervalo estructurado [m_min;m_max]"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_p_010.svg",
+          "alt": "Banda de equilibrio visual."
+        }
+      ],
+      "tags": [
+        "t4",
+        "p",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Planos con rozamiento: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Planos con rozamiento"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia p"
+      ],
+      "parts_count": 1,
+      "statement_source": "Rango de masa colgante que permite reposo.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Intervalo estructurado \\([m_min;m_max]\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_p_011",
+      "version": 1,
+      "title": "Comparar un bloque que baja por  con  y con",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Planos con rozamiento",
+      "family": "p",
+      "subtype": "multi_step",
+      "difficulty": 5,
+      "estimated_minutes": 17,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "a_0",
+          "label": "a 0",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 4.9,
+          "unit": "m/s²",
+          "tolerance": 0.0245,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "a",
+          "label": "a μ",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3.2,
+          "unit": "m/s²",
+          "tolerance": 0.016,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "razon",
+          "label": "Razón",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.653,
+          "unit": "m/s²",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "c",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_p_011.svg",
+          "alt": "Gráfica lineal con corte."
+        }
+      ],
+      "tags": [
+        "t4",
+        "p",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Planos con rozamiento: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Planos con rozamiento"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia p"
+      ],
+      "parts_count": 3,
+      "statement_source": "Comparar un bloque que baja por \\(θ=30°\\) con \\(μ=0\\) y con \\(μ_k=0,20\\).\n\n(a) Calcula: a 0.\n(b) Calcula: a μ.\n(c) Calcula: Razón.",
+      "solution_source": "\\(a_0=4,90 m/s²\\); \\(a_μ=3,20 m/s²\\); razón \\(0,653\\); función \\(a(μ)=g(sinθ-μcosθ)\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_p_012",
+      "version": 1,
+      "title": "Diagnóstico de signo",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Planos con rozamiento",
+      "family": "p",
+      "subtype": "multi_step",
+      "difficulty": 5,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "concepto_1",
+          "label": "Sentido",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "hacia_arriba",
+              "label": "Hacia arriba"
+            },
+            {
+              "id": "hacia_abajo",
+              "label": "Hacia abajo"
+            },
+            {
+              "id": "sin_direccion_preferente",
+              "label": "Sin dirección preferente"
+            }
+          ],
+          "correct_option_id": "hacia_abajo",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_p_012.svg",
+          "alt": "Cuatro viñetas de tendencia."
+        }
+      ],
+      "tags": [
+        "t4",
+        "p",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Planos con rozamiento: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Planos con rozamiento"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia p"
+      ],
+      "parts_count": 1,
+      "statement_source": "Diagnóstico de signo: alumno pone rozamiento siempre cuesta arriba.\n\n(a) Selecciona: Sentido.",
+      "solution_source": "Seleccionar caso incorrecto: bloque que sube; dirección correcta cuesta abajo.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_c_001",
+      "version": 1,
+      "title": "Coche 1000 kg, curva plana",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Curvas planas y peraltadas",
+      "family": "c",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "rozamiento_requerido",
+          "label": "Rozamiento requerido",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2000.0,
+          "unit": "N",
+          "tolerance": 10.0,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "s_min",
+          "label": "μ s,min",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.204,
+          "unit": "m",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_c_001.svg",
+          "alt": "Vista superior y DCL lateral."
+        }
+      ],
+      "tags": [
+        "t4",
+        "c",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Curvas planas y peraltadas: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Curvas planas y peraltadas"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia c"
+      ],
+      "parts_count": 2,
+      "statement_source": "Coche \\(1000 kg\\), curva plana \\(r=50 m\\), \\(v=10 m/s\\).\n\n(a) Calcula: Rozamiento requerido.\n(b) Calcula: μ s,min.",
+      "solution_source": "Rozamiento requerido \\(2000 N\\); \\(μ_s,min=0,204\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_c_002",
+      "version": 1,
+      "title": "Velocidad máxima en curva plana",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Curvas planas y peraltadas",
+      "family": "c",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "v_max",
+          "label": "v max",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 19.8,
+          "unit": "m/s",
+          "tolerance": 0.099,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_c_002.svg",
+          "alt": "Curva y vector radial."
+        }
+      ],
+      "tags": [
+        "t4",
+        "c",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Curvas planas y peraltadas: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Curvas planas y peraltadas"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia c"
+      ],
+      "parts_count": 1,
+      "statement_source": "Velocidad máxima en curva plana \\(r=80 m\\), \\(μ_s=0,5\\).\n\n(a) Calcula: v max.",
+      "solution_source": "\\(v_max=19,8 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_c_003",
+      "version": 1,
+      "title": "Lluvia reduce μ_s de 0,6 a 0,3",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Curvas planas y peraltadas",
+      "family": "c",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "0_5",
+          "label": "√0,5",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.707,
+          "unit": "",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_c_003.svg",
+          "alt": "Dos arcos con zonas seca/mojada."
+        }
+      ],
+      "tags": [
+        "t4",
+        "c",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Curvas planas y peraltadas: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Curvas planas y peraltadas"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia c"
+      ],
+      "parts_count": 1,
+      "statement_source": "Lluvia reduce \\(μ_s\\) de \\(0,6\\) a \\(0,3\\).\n\n(a) Calcula: √0,5.",
+      "solution_source": "Razón de velocidades máximas \\(√0,5=0,707\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_c_004",
+      "version": 1,
+      "title": "Curva peraltada sin rozamiento",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Curvas planas y peraltadas",
+      "family": "c",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "rapidez",
+          "label": "Rapidez",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 14.4,
+          "unit": "m/s",
+          "tolerance": 0.07200000000000001,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_c_004.svg",
+          "alt": "Sección transversal y componentes de N."
+        }
+      ],
+      "tags": [
+        "t4",
+        "c",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Curvas planas y peraltadas: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Curvas planas y peraltadas"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia c"
+      ],
+      "parts_count": 1,
+      "statement_source": "Curva peraltada sin rozamiento \\(r=100 m\\), \\(θ=12°\\).\n\n(a) Calcula: Rapidez.",
+      "solution_source": "\\(v=14,4 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_c_005",
+      "version": 1,
+      "title": "Hallar peralte para",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Curvas planas y peraltadas",
+      "family": "c",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "respuesta",
+          "label": "θ",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 18.8,
+          "unit": "°",
+          "tolerance": 0.2,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_c_005.svg",
+          "alt": "Triángulo de la carretera."
+        }
+      ],
+      "tags": [
+        "t4",
+        "c",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Curvas planas y peraltadas: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Curvas planas y peraltadas"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia c"
+      ],
+      "parts_count": 1,
+      "statement_source": "Hallar peralte para \\(v=20 m/s\\), \\(r=120 m\\).\n\n(a) Calcula: θ.",
+      "solution_source": "\\(θ=18,8°\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_c_006",
+      "version": 1,
+      "title": "Elegir sentido del rozamiento si velocidad es menor que la de diseño",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Curvas planas y peraltadas",
+      "family": "c",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "concepto_1",
+          "label": "Sentido",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "hacia_arriba",
+              "label": "Hacia arriba"
+            },
+            {
+              "id": "hacia_abajo",
+              "label": "Hacia abajo"
+            },
+            {
+              "id": "sin_direccion_preferente",
+              "label": "Sin dirección preferente"
+            }
+          ],
+          "correct_option_id": "hacia_arriba",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_c_006.svg",
+          "alt": "Tres DCL candidatos."
+        }
+      ],
+      "tags": [
+        "t4",
+        "c",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Curvas planas y peraltadas: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Curvas planas y peraltadas"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia c"
+      ],
+      "parts_count": 1,
+      "statement_source": "Elegir sentido del rozamiento si velocidad es menor que la de diseño.\n\n(a) Selecciona: Sentido.",
+      "solution_source": "Selección: hacia arriba del peralte.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_c_007",
+      "version": 1,
+      "title": "Elegir sentido si velocidad es mayor que diseño",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Curvas planas y peraltadas",
+      "family": "c",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "concepto_1",
+          "label": "Sentido",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "hacia_arriba",
+              "label": "Hacia arriba"
+            },
+            {
+              "id": "hacia_abajo",
+              "label": "Hacia abajo"
+            },
+            {
+              "id": "sin_direccion_preferente",
+              "label": "Sin dirección preferente"
+            }
+          ],
+          "correct_option_id": "hacia_abajo",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_c_007.svg",
+          "alt": "Continuación del anterior."
+        }
+      ],
+      "tags": [
+        "t4",
+        "c",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Curvas planas y peraltadas: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Curvas planas y peraltadas"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia c"
+      ],
+      "parts_count": 1,
+      "statement_source": "Elegir sentido si velocidad es mayor que diseño.\n\n(a) Selecciona: Sentido.",
+      "solution_source": "Selección: hacia abajo del peralte.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_c_008",
+      "version": 1,
+      "title": "Ciclista inclinado en curva plana",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Curvas planas y peraltadas",
+      "family": "c",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "respuesta",
+          "label": "φ",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 18.1,
+          "unit": "°",
+          "tolerance": 0.2,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_c_008.svg",
+          "alt": "Bicicleta y resultante de contacto."
+        }
+      ],
+      "tags": [
+        "t4",
+        "c",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Curvas planas y peraltadas: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Curvas planas y peraltadas"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia c"
+      ],
+      "parts_count": 1,
+      "statement_source": "Ciclista inclinado en curva plana, \\(v=8\\), \\(r=20\\).\n\n(a) Calcula: φ.",
+      "solution_source": "\\(tanφ=v²/(rg)\\); \\(φ=18,1°\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_c_009",
+      "version": 1,
+      "title": "Curva con rapidez variable",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Curvas planas y peraltadas",
+      "family": "c",
+      "subtype": "multi_step",
+      "difficulty": 5,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "razon",
+          "label": "Razón",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 4.0,
+          "unit": "",
+          "tolerance": 0.02,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_c_009.svg",
+          "alt": "F_r(v) con distractores."
+        }
+      ],
+      "tags": [
+        "t4",
+        "c",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Curvas planas y peraltadas: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Curvas planas y peraltadas"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia c"
+      ],
+      "parts_count": 1,
+      "statement_source": "Curva con rapidez variable: comparar fuerza radial en \\(v\\) y \\(2v\\).\n\n(a) Calcula: Razón.",
+      "solution_source": "Razón \\(4\\); gráfica cuadrática seleccionada.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_c_010",
+      "version": 1,
+      "title": "Auditar “normal + peso + centrípeta = ma”",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Curvas planas y peraltadas",
+      "family": "c",
+      "subtype": "multi_step",
+      "difficulty": 5,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "concepto_1",
+          "label": "Dirección vectorial",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "radial_hacia_el_centro",
+              "label": "Radial hacia el centro"
+            },
+            {
+              "id": "tangente",
+              "label": "Tangente"
+            },
+            {
+              "id": "radial_hacia_fuera",
+              "label": "Radial hacia fuera"
+            }
+          ],
+          "correct_option_id": "radial_hacia_el_centro",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_c_010.svg",
+          "alt": "DCL erróneo en curva peraltada."
+        }
+      ],
+      "tags": [
+        "t4",
+        "c",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Curvas planas y peraltadas: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Curvas planas y peraltadas"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia c"
+      ],
+      "parts_count": 1,
+      "statement_source": "Auditar “normal + peso + centrípeta = ma”.\n\n(a) Selecciona: Dirección vectorial.",
+      "solution_source": "Eliminar centrípeta; elegir componentes que producen resultante radial.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_m_001",
+      "version": 1,
+      "title": "Muelle  estirado 3 cm",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Muelles y ley de Hooke",
+      "family": "m",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "fuerza",
+          "label": "Fuerza",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 6.0,
+          "unit": "N",
+          "tolerance": 0.03,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_m_001.svg",
+          "alt": "Escala longitud natural/deformada."
+        }
+      ],
+      "tags": [
+        "t4",
+        "m",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Muelles y ley de Hooke: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Muelles y ley de Hooke"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia m"
+      ],
+      "parts_count": 1,
+      "statement_source": "Muelle \\(k=200 N/m\\) estirado \\(3 cm\\).\n\n(a) Calcula: Fuerza.",
+      "solution_source": "Fuerza \\(6 N\\) hacia el equilibrio.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_m_002",
+      "version": 1,
+      "title": "Compresión 5 cm, eje positivo a la derecha",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Muelles y ley de Hooke",
+      "family": "m",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "x",
+          "label": "x",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -0.05,
+          "unit": "m",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "f",
+          "label": "F",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 10.0,
+          "unit": "N",
+          "tolerance": 0.05,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "k",
+          "label": "k",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 200.0,
+          "unit": "",
+          "tolerance": 1.0,
+          "significant_figures": 3,
+          "part": "c",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_m_002.svg",
+          "alt": "Eje y signos."
+        }
+      ],
+      "tags": [
+        "t4",
+        "m",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Muelles y ley de Hooke: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Muelles y ley de Hooke"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia m"
+      ],
+      "parts_count": 3,
+      "statement_source": "Compresión \\(5 cm\\), eje positivo a la derecha.\n\n(a) Calcula: x.\n(b) Calcula: F.\n(c) Calcula: k.",
+      "solution_source": "\\(x=-0,05 m\\); \\(F=+10 N\\) para \\(k=200\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_m_003",
+      "version": 1,
+      "title": "Masa colgada 0,5 kg",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Muelles y ley de Hooke",
+      "family": "m",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "alargamiento_de_equilibrio",
+          "label": "Alargamiento de equilibrio",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.049,
+          "unit": "m",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_m_003.svg",
+          "alt": "Dos referencias: natural y equilibrio."
+        }
+      ],
+      "tags": [
+        "t4",
+        "m",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Muelles y ley de Hooke: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Muelles y ley de Hooke"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia m"
+      ],
+      "parts_count": 1,
+      "statement_source": "Masa colgada \\(0,5 kg\\), \\(k=100 N/m\\).\n\n(a) Calcula: Alargamiento de equilibrio.",
+      "solution_source": "Alargamiento de equilibrio \\(0,049 m\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_m_004",
+      "version": 1,
+      "title": "Añadir 0,2 kg a la masa anterior",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Muelles y ley de Hooke",
+      "family": "m",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "incremento_de_alargamiento",
+          "label": "Incremento de alargamiento",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.0196,
+          "unit": "m",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "total",
+          "label": "Total",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.0686,
+          "unit": "m",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_m_004.svg",
+          "alt": "Regla vertical con dos posiciones."
+        }
+      ],
+      "tags": [
+        "t4",
+        "m",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Muelles y ley de Hooke: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Muelles y ley de Hooke"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia m"
+      ],
+      "parts_count": 2,
+      "statement_source": "Añadir \\(0,2 kg\\) a la masa anterior.\n\n(a) Calcula: Incremento de alargamiento.\n(b) Calcula: Total.",
+      "solution_source": "Incremento de alargamiento \\(0,0196 m\\); total \\(0,0686 m\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_m_005",
+      "version": 1,
+      "title": "Gráfica F-x experimental",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Muelles y ley de Hooke",
+      "family": "m",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "k",
+          "label": "k",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 150.0,
+          "unit": "N/m",
+          "tolerance": 0.75,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_m_005.svg",
+          "alt": "Puntos con signos y recta."
+        }
+      ],
+      "tags": [
+        "t4",
+        "m",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Muelles y ley de Hooke: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Muelles y ley de Hooke"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia m"
+      ],
+      "parts_count": 1,
+      "statement_source": "Gráfica \\(F-x\\) experimental.\n\n(a) Calcula: k.",
+      "solution_source": "Pendiente \\(k=150 N/m\\); función \\(F=-150x\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_m_006",
+      "version": 1,
+      "title": "Dos muelles en paralelo",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Muelles y ley de Hooke",
+      "family": "m",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "constante_equivalente",
+          "label": "Constante equivalente",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 250.0,
+          "unit": "N/m",
+          "tolerance": 1.25,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "reparto_para",
+          "label": "Reparto para 1",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 4.0,
+          "unit": "N",
+          "tolerance": 0.02,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "reparto_para_2",
+          "label": "Reparto para 2",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 6.0,
+          "unit": "N",
+          "tolerance": 0.03,
+          "significant_figures": 3,
+          "part": "c",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_m_006.svg",
+          "alt": "Dos muelles paralelos."
+        }
+      ],
+      "tags": [
+        "t4",
+        "m",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Muelles y ley de Hooke: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Muelles y ley de Hooke"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia m"
+      ],
+      "parts_count": 3,
+      "statement_source": "Dos muelles en paralelo \\(k_1=100\\), \\(k_2=150\\).\n\n(a) Calcula: Constante equivalente.\n(b) Calcula: Reparto para 1.\n(c) Calcula: Reparto para 2.",
+      "solution_source": "\\(k_eq=250 N/m\\); reparto para \\(x=0,04\\): \\(4 N\\), \\(6 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_m_007",
+      "version": 1,
+      "title": "Dos muelles en serie con mismos valores",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Muelles y ley de Hooke",
+      "family": "m",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "constante_equivalente",
+          "label": "Constante equivalente",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 60.0,
+          "unit": "N/m",
+          "tolerance": 0.3,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "alargamientos_con",
+          "label": "Alargamientos con 1",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.06,
+          "unit": "",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "alargamientos_con_2",
+          "label": "Alargamientos con 2",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.04,
+          "unit": "m",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "c",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_m_007.svg",
+          "alt": "Serie y tensión común."
+        }
+      ],
+      "tags": [
+        "t4",
+        "m",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Muelles y ley de Hooke: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Muelles y ley de Hooke"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia m"
+      ],
+      "parts_count": 3,
+      "statement_source": "Dos muelles en serie con mismos valores.\n\n(a) Calcula: Constante equivalente.\n(b) Calcula: Alargamientos con 1.\n(c) Calcula: Alargamientos con 2.",
+      "solution_source": "\\(k_eq=60 N/m\\); alargamientos con \\(F=6 N\\): \\(0,06\\), \\(0,04 m\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_m_008",
+      "version": 1,
+      "title": "Bloque horizontal unido a muelle, posición , , sin rozamiento",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Muelles y ley de Hooke",
+      "family": "m",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "fuerza",
+          "label": "Fuerza",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -6.0,
+          "unit": "N",
+          "tolerance": 0.03,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "aceleracion_para",
+          "label": "Aceleración para",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -3.0,
+          "unit": "m/s²",
+          "tolerance": 0.015,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_m_008.svg",
+          "alt": "Bloque, origen y vector restaurador."
+        }
+      ],
+      "tags": [
+        "t4",
+        "m",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Muelles y ley de Hooke: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Muelles y ley de Hooke"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia m"
+      ],
+      "parts_count": 2,
+      "statement_source": "Bloque horizontal unido a muelle, posición \\(x=0,08\\), \\(k=75\\), sin rozamiento.\n\n(a) Calcula: Fuerza.\n(b) Calcula: Aceleración para.",
+      "solution_source": "Fuerza \\(-6 N\\); aceleración para \\(m=2\\): \\(-3 m/s²\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_m_009",
+      "version": 1,
+      "title": "Muelle vertical",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Muelles y ley de Hooke",
+      "family": "m",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Selección de DCL por encima/debajo del equilibrio; fuerzas numéricas"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_m_009.svg",
+          "alt": "Tres alturas del bloque."
+        }
+      ],
+      "tags": [
+        "t4",
+        "m",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Muelles y ley de Hooke: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Muelles y ley de Hooke"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia m"
+      ],
+      "parts_count": 1,
+      "statement_source": "Muelle vertical: rapidez instantánea no determina equilibrio.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Selección de DCL por encima/debajo del equilibrio; fuerzas numéricas.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_m_010",
+      "version": 1,
+      "title": "Calibrar dinamómetro con masas 0,1–0,5 kg",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Muelles y ley de Hooke",
+      "family": "m",
+      "subtype": "multi_step",
+      "difficulty": 5,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Función x=(g/k)m; obtener k desde pendiente"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_m_010.svg",
+          "alt": "Tabla y ajuste lineal."
+        }
+      ],
+      "tags": [
+        "t4",
+        "m",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Muelles y ley de Hooke: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Muelles y ley de Hooke"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia m"
+      ],
+      "parts_count": 1,
+      "statement_source": "Calibrar dinamómetro con masas \\(0,1–0,5 kg\\).\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Función \\(x=(g/k)m\\); obtener \\(k\\) desde pendiente.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_m_011",
+      "version": 1,
+      "title": "Muelle real deja de ser lineal tras 8 cm",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Muelles y ley de Hooke",
+      "family": "m",
+      "subtype": "multi_step",
+      "difficulty": 5,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Seleccionar rango de Hooke y punto que debe excluirse del ajuste"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_m_011.svg",
+          "alt": "Curva experimental con cambio de pendiente."
+        }
+      ],
+      "tags": [
+        "t4",
+        "m",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Muelles y ley de Hooke: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Muelles y ley de Hooke"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia m"
+      ],
+      "parts_count": 1,
+      "statement_source": "Muelle real deja de ser lineal tras \\(8 cm\\).\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Seleccionar rango de Hooke y punto que debe excluirse del ajuste.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_m_012",
+      "version": 1,
+      "title": "Auditar confusión entre longitud L y deformación",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Muelles y ley de Hooke",
+      "family": "m",
+      "subtype": "multi_step",
+      "difficulty": 5,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "fuerza_correctas_con",
+          "label": "Fuerza correctas con",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 5.6,
+          "unit": "N",
+          "tolerance": 0.027999999999999997,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_m_012.svg",
+          "alt": "Dos medidas etiquetadas."
+        }
+      ],
+      "tags": [
+        "t4",
+        "m",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Muelles y ley de Hooke: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Muelles y ley de Hooke"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia m"
+      ],
+      "parts_count": 1,
+      "statement_source": "Auditar confusión entre longitud \\(L\\) y deformación \\(x=L-L_0\\).\n\n(a) Calcula: Fuerza correctas con.",
+      "solution_source": "\\(x\\) y fuerza correctas con \\(L_0=20 cm\\), \\(L=27 cm\\), \\(k=80\\): \\(5,6 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_i_001",
+      "version": 1,
+      "title": "Identificar μ_s y μ_k desde gráfica fuerza-tiempo al tirar de una caja",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Experimento, integración y auditoría",
+      "family": "i",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Pico/N y meseta/N; regímenes seleccionados"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_i_001.svg",
+          "alt": "F(t) con pico y meseta."
+        }
+      ],
+      "tags": [
+        "t4",
+        "i",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Experimento, integración y auditoría: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Experimento, integración y auditoría"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia i"
+      ],
+      "parts_count": 1,
+      "statement_source": "Identificar \\(μ_s\\) y \\(μ_k\\) desde gráfica fuerza-tiempo al tirar de una caja.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Pico/N y meseta/N; regímenes seleccionados.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_i_002",
+      "version": 1,
+      "title": "La recta experimental f_k(μ) tiene pendiente 49 N",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Experimento, integración y auditoría",
+      "family": "i",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "masa",
+          "label": "Masa",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 5.0,
+          "unit": "kg",
+          "tolerance": 0.025,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_i_002.svg",
+          "alt": "Familia de rectas."
+        }
+      ],
+      "tags": [
+        "t4",
+        "i",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Experimento, integración y auditoría: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Experimento, integración y auditoría"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia i"
+      ],
+      "parts_count": 1,
+      "statement_source": "La recta experimental \\(f_k(μ)\\) tiene pendiente \\(49 N\\).\n\n(a) Calcula: Masa.",
+      "solution_source": "Función \\(f_k=mgμ\\); masa \\(5,00 kg\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_i_003",
+      "version": 1,
+      "title": "Caja-muelle sobre mesa rugosa",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Experimento, integración y auditoría",
+      "family": "i",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "x_min=μ_smg/k"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_i_003.svg",
+          "alt": "Muelle, bloque y umbral."
+        }
+      ],
+      "tags": [
+        "t4",
+        "i",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Experimento, integración y auditoría: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Experimento, integración y auditoría"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia i"
+      ],
+      "parts_count": 1,
+      "statement_source": "Caja-muelle sobre mesa rugosa: hallar deformación mínima para iniciar movimiento.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "\\(x_min=μ_smg/k\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_i_004",
+      "version": 1,
+      "title": "Tras iniciarse el movimiento, un muelle  está deformado 0,08 m",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Experimento, integración y auditoría",
+      "family": "i",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "aceleracion",
+          "label": "Aceleración",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 4.44,
+          "unit": "m/s²",
+          "tolerance": 0.0222,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_i_004.svg",
+          "alt": "Cambio estático/cinético en una misma escena."
+        }
+      ],
+      "tags": [
+        "t4",
+        "i",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Experimento, integración y auditoría: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Experimento, integración y auditoría"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia i"
+      ],
+      "parts_count": 1,
+      "statement_source": "Tras iniciarse el movimiento, un muelle \\(k=120 N/m\\) está deformado \\(0,08 m\\); \\(m=1,5 kg\\), \\(μ_k=0,20\\).\n\n(a) Calcula: Aceleración.",
+      "solution_source": "\\(a=(kx-μ_kmg)/m=4,44 m/s²\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_i_005",
+      "version": 1,
+      "title": "Vehículo toma curva y frena a la vez",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Experimento, integración y auditoría",
+      "family": "i",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Composición vectorial; comprobar sqrt(a_t²+a_r²)≤μ_sg"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_i_005.svg",
+          "alt": "Círculo de adherencia."
+        }
+      ],
+      "tags": [
+        "t4",
+        "i",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Experimento, integración y auditoría: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Experimento, integración y auditoría"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia i"
+      ],
+      "parts_count": 1,
+      "statement_source": "Vehículo toma curva y frena a la vez: límite de adherencia.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Composición vectorial; comprobar \\(sqrt(a_t²+a_r²)≤μ_sg\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_i_006",
+      "version": 1,
+      "title": "Seleccionar modelo para cuatro escenas",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Experimento, integración y auditoría",
+      "family": "i",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Clasificación cerrada de sentido y régimen"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_i_006.svg",
+          "alt": "Cuadrícula de escenas."
+        }
+      ],
+      "tags": [
+        "t4",
+        "i",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Experimento, integración y auditoría: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Experimento, integración y auditoría"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia i"
+      ],
+      "parts_count": 1,
+      "statement_source": "Seleccionar modelo para cuatro escenas: cinta, pared, plano, curva.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Clasificación cerrada de sentido y régimen.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_i_007",
+      "version": 1,
+      "title": "Ajuste de muelle con intercepto no nulo por precarga",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Experimento, integración y auditoría",
+      "family": "i",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "F=kx+F_0; extraer k e F_0"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_i_007.svg",
+          "alt": "Dispersión con intercepto."
+        }
+      ],
+      "tags": [
+        "t4",
+        "i",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Experimento, integración y auditoría: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Experimento, integración y auditoría"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia i"
+      ],
+      "parts_count": 1,
+      "statement_source": "Ajuste de muelle con intercepto no nulo por precarga.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "\\(F=kx+F_0\\); extraer \\(k\\) e \\(F_0\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_i_008",
+      "version": 1,
+      "title": "Comparar trabajo posterior sin calcularlo aún",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Experimento, integración y auditoría",
+      "family": "i",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Orden cerrado de fuerzas y aceleraciones"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_i_008.svg",
+          "alt": "Dos superficies y barras de fuerza."
+        }
+      ],
+      "tags": [
+        "t4",
+        "i",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Experimento, integración y auditoría: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Experimento, integración y auditoría"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia i"
+      ],
+      "parts_count": 1,
+      "statement_source": "Comparar trabajo posterior sin calcularlo aún: misma distancia, rozamientos distintos.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Orden cerrado de fuerzas y aceleraciones.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_i_009",
+      "version": 1,
+      "title": "Auditoría completa de curva peraltada con rozamiento mal orientado",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Experimento, integración y auditoría",
+      "family": "i",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Elegir sentido, ecuaciones correctas y rango de velocidad"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_i_009.svg",
+          "alt": "DCL numerado y sección vial."
+        }
+      ],
+      "tags": [
+        "t4",
+        "i",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Experimento, integración y auditoría: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Experimento, integración y auditoría"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia i"
+      ],
+      "parts_count": 1,
+      "statement_source": "Auditoría completa de curva peraltada con rozamiento mal orientado.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Elegir sentido, ecuaciones correctas y rango de velocidad.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_i_010",
+      "version": 1,
+      "title": "Plano variable con",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Experimento, integración y auditoría",
+      "family": "i",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 16,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "c",
+          "label": "θ c",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 16.7,
+          "unit": "°",
+          "tolerance": 0.2,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "aceleracione_2",
+          "label": "Aceleracione 2",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.51,
+          "unit": "",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "aceleracione_3",
+          "label": "Aceleracione 3",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3.2,
+          "unit": "",
+          "tolerance": 0.016,
+          "significant_figures": 3,
+          "part": "c",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "aceleracione_4",
+          "label": "Aceleracione 4",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 5.54,
+          "unit": "m/s²",
+          "tolerance": 0.027700000000000002,
+          "significant_figures": 3,
+          "part": "d",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_i_010.svg",
+          "alt": "Plano articulado y gráfica."
+        }
+      ],
+      "tags": [
+        "t4",
+        "i",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Experimento, integración y auditoría: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Experimento, integración y auditoría"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia i"
+      ],
+      "parts_count": 4,
+      "statement_source": "Plano variable con \\(μ_s=0,30\\), \\(μ_k=0,20\\): predecir inicio y calcular al bajar para \\(20°\\), \\(30°\\), \\(45°\\).\n\n(a) Calcula: θ c.\n(b) Calcula: Aceleracione 2.\n(c) Calcula: Aceleracione 3.\n(d) Calcula: Aceleracione 4.",
+      "solution_source": "\\(θ_c=16,7°\\); aceleraciones \\(1,51\\), \\(3,20\\), \\(5,54 m/s²\\); seleccionar la curva creciente compatible.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    }
+  ]
+}

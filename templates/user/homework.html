@@ -1,197 +1,74 @@
 {% extends "base.html" %}
 {% from "components/_macros.html" import page_header, empty_state with context %}
 
-{% block title %}Practica guiada{% endblock %}
-
+{% block title %}Práctica guiada{% endblock %}
 {% block content %}
 <section class="section-shell exercise-catalogue-page">
-    {{ page_header(
-        'Ejercicios',
-        'Practica guiada',
-        'Entrena con cuestionarios y problemas guiados usando el material disponible.',
-        'fa-pen-ruler'
-    ) }}
+    {{ page_header('Ejercicios', 'Práctica guiada', 'Elige qué habilidad quieres entrenar y entra con ese filtro ya aplicado.', 'fa-pen-ruler') }}
 
     <div class="action-row mb-4">
-        <a href="{{ url_for('exercise_attempt_history') }}" class="btn btn-outline-primary">
-            <i class="fas fa-clock-rotate-left me-1" aria-hidden="true"></i>Historial de intentos
-        </a>
+        <a href="{{ url_for('exercise_attempt_history') }}" class="btn btn-outline-primary"><i class="fas fa-clock-rotate-left me-1" aria-hidden="true"></i>Historial de intentos</a>
+        {% if selected_type or has_active_filters %}<a href="{{ url_for('homework') }}" class="btn btn-outline-primary"><i class="fas fa-layer-group me-1" aria-hidden="true"></i>Ver todos los tipos</a>{% endif %}
     </div>
 
-    {% if exercise_count %}
+    {% if exercise_count and not has_active_filters %}
+        {% for topic_title, groups in type_summaries|groupby('topic_title') %}
+        <div class="section-heading exercise-type-heading">
+            <h2>{{ topic_title }}</h2>
+            <span class="section-heading-note">{{ groups|sum(attribute='count') }} ejercicios</span>
+        </div>
+        <div class="exercise-type-grid">
+            {% for item in groups %}
+            <a class="resource-card exercise-type-card" href="{{ url_for('homework', type=item.key) }}">
+                <div class="resource-meta"><span class="badge-soft badge-course">{{ item.course }}</span><span class="resource-icon"><i class="fas fa-shapes" aria-hidden="true"></i></span></div>
+                <div><h3 class="resource-card-title">{{ item.title }}</h3><p class="resource-card-copy">Una sesión guiada centrada en esta habilidad.</p></div>
+                <dl class="exercise-type-metrics">
+                    <div><dt>Ejercicios</dt><dd>{{ item.count }}</dd></div>
+                    <div><dt>Dificultad media</dt><dd>{{ item.average_difficulty }}/5</dd></div>
+                    <div><dt>Tiempo total</dt><dd>{{ item.estimated_minutes }} min</dd></div>
+                </dl>
+                {% if item.completed or item.started %}<p class="exercise-type-status">{{ item.completed }} completados{% if item.started %} · {{ item.started }} en curso{% endif %}</p>{% endif %}
+                <span class="exercise-type-link">Entrar en esta práctica <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+            </a>
+            {% endfor %}
+        </div>
+        {% endfor %}
+    {% elif exercise_count %}
     <form class="panel-card exercise-filter-panel" method="GET" action="{{ url_for('homework') }}">
         <div class="exercise-filter-grid">
-            <label>
-                <span>Curso</span>
-                <select class="form-select" name="course">
-                    <option value="">Todos</option>
-                    {% for course in filter_options.courses %}
-                    <option value="{{ course }}" {% if selected_filters.course == course %}selected{% endif %}>{{ course }}</option>
-                    {% endfor %}
-                </select>
-            </label>
-            <label>
-                <span>Tema</span>
-                <select class="form-select" name="topic">
-                    <option value="">Todos</option>
-                    {% for topic in filter_options.topics %}
-                    <option value="{{ topic }}" {% if selected_filters.topic == topic %}selected{% endif %}>{{ topic }}</option>
-                    {% endfor %}
-                </select>
-            </label>
-            <label>
-                <span>Tipo</span>
-                <select class="form-select" name="type">
-                    <option value="">Todos</option>
-                    {% for type_name in filter_options.types %}
-                    <option value="{{ type_name }}" {% if selected_filters.type == type_name %}selected{% endif %}>{{ type_name }}</option>
-                    {% endfor %}
-                </select>
-            </label>
-            <label>
-                <span>Dificultad</span>
-                <select class="form-select" name="difficulty">
-                    <option value="">Todas</option>
-                    {% for difficulty in filter_options.difficulties %}
-                    <option value="{{ difficulty }}" {% if selected_filters.difficulty == difficulty %}selected{% endif %}>{{ difficulty }}</option>
-                    {% endfor %}
-                </select>
-            </label>
-            <label>
-                <span>Estado</span>
-                <select class="form-select" name="status">
-                    <option value="">Todos</option>
-                    {% for status_value, status_label in filter_options.statuses %}
-                    <option value="{{ status_value }}" {% if selected_filters.status == status_value %}selected{% endif %}>{{ status_label }}</option>
-                    {% endfor %}
-                </select>
-            </label>
-            <label>
-                <span>Buscar</span>
-                <input class="form-control" type="search" name="q" value="{{ selected_filters.q }}" placeholder="Titulo, concepto...">
-            </label>
+            <label><span>Curso</span><select class="form-select" name="course"><option value="">Todos</option>{% for course in filter_options.courses %}<option value="{{ course }}" {% if selected_filters.course == course %}selected{% endif %}>{{ course }}</option>{% endfor %}</select></label>
+            <label><span>Tema</span><select class="form-select" name="topic"><option value="">Todos</option>{% for topic_key, topic_title in filter_options.topics %}<option value="{{ topic_key }}" {% if selected_filters.topic == topic_key %}selected{% endif %}>{{ topic_title }}</option>{% endfor %}</select></label>
+            <label><span>Tipo de ejercicio</span><select class="form-select" name="type"><option value="">Todos</option>{% for type_key, type_name in filter_options.types %}<option value="{{ type_key }}" {% if selected_filters.type == type_key %}selected{% endif %}>{{ type_name }}</option>{% endfor %}</select></label>
+            <label><span>Dificultad</span><select class="form-select" name="difficulty"><option value="">Todas</option>{% for difficulty in filter_options.difficulties %}<option value="{{ difficulty }}" {% if selected_filters.difficulty == difficulty %}selected{% endif %}>{{ difficulty }}</option>{% endfor %}</select></label>
+            <label><span>Estado</span><select class="form-select" name="status"><option value="">Todos</option>{% for status_value, status_label in filter_options.statuses %}<option value="{{ status_value }}" {% if selected_filters.status == status_value %}selected{% endif %}>{{ status_label }}</option>{% endfor %}</select></label>
+            <label><span>Buscar</span><input class="form-control" type="search" name="q" value="{{ selected_filters.q }}" placeholder="Título, concepto..."></label>
         </div>
         <div class="action-row justify-content-between mt-3">
-            <button type="submit" class="btn btn-primary">
-                <i class="fas fa-filter me-1" aria-hidden="true"></i>Aplicar filtros
-            </button>
-            {% if has_active_filters %}
-            <a href="{{ url_for('homework') }}" class="btn btn-outline-primary">
-                <i class="fas fa-xmark me-1" aria-hidden="true"></i>Limpiar filtros
-            </a>
-            {% endif %}
+            <button type="submit" class="btn btn-primary"><i class="fas fa-filter me-1" aria-hidden="true"></i>Aplicar filtros</button>
+            {% if selected_type %}<strong class="exercise-selected-type">{{ selected_type.title }}</strong>{% endif %}
         </div>
     </form>
-    {% endif %}
 
     {% if exercises %}
-    <div class="section-heading">
-        <h2>Problemas guiados</h2>
-        <span class="section-heading-note">{{ exercises|length }} de {{ exercise_count }}</span>
-    </div>
+    <div class="section-heading"><h2>{% if selected_type %}{{ selected_type.title }}{% else %}Problemas guiados{% endif %}</h2><span class="section-heading-note">{{ exercises|length }} de {{ exercise_count }}</span></div>
     <div class="exercise-card-grid mb-5">
         {% for exercise in exercises %}
         {% set summary = attempt_summaries.get(exercise.id, {'status': 'new', 'label': 'Nuevo'}) %}
         {% set started_attempt = summary.started_attempt %}
         <article class="resource-card exercise-card exercise-card-{{ summary.status }}">
-            <div class="resource-meta">
-                <div class="metadata-row exercise-badge-row">
-                    <span class="badge-soft badge-course">{{ exercise.course }}</span>
-                    <span class="badge-soft badge-topic">{{ exercise.topic }}</span>
-                    <span class="badge-soft badge-status-{{ summary.status }}">{{ summary.label }}</span>
-                </div>
-                <span class="resource-icon"><i class="fas fa-pen-to-square" aria-hidden="true"></i></span>
-            </div>
-            <div>
-                <h2 class="resource-card-title">{{ exercise.title }}</h2>
-                <p class="resource-card-copy">{{ exercise.concept }}</p>
-            </div>
-            <div class="metadata-row exercise-badge-row mt-auto">
-                <span class="badge-soft badge-type">{{ exercise_type(exercise) }}</span>
-                <span class="badge-soft badge-difficulty-{{ exercise.difficulty }}">Dificultad {{ exercise.difficulty }}/5</span>
-                {% if exercise_time(exercise) %}
-                <span class="badge-soft badge-time">Tiempo estimado {{ exercise_time(exercise) }} min</span>
-                {% endif %}
-                {% if started_attempt and summary.submitted_count %}
-                <span class="badge-soft badge-status-completed">Completado anteriormente</span>
-                {% elif summary.latest_submitted_attempt and summary.latest_submitted_attempt.active_duration_seconds is not none %}
-                <span class="badge-soft badge-time">Tiempo activo {{ format_duration(summary.latest_submitted_attempt.active_duration_seconds) }}</span>
-                {% endif %}
-            </div>
+            <div class="resource-meta"><div class="metadata-row exercise-badge-row"><span class="badge-soft badge-course">{{ exercise.course }}</span><span class="badge-soft badge-topic">{{ exercise.topic }}</span><span class="badge-soft badge-status-{{ summary.status }}">{{ summary.label }}</span></div><span class="resource-icon"><i class="fas fa-pen-to-square" aria-hidden="true"></i></span></div>
+            <div><h2 class="resource-card-title">{{ exercise.title }}</h2><p class="resource-card-copy">{{ exercise.concept }}</p></div>
+            <div class="metadata-row exercise-badge-row mt-auto"><span class="badge-soft badge-type">{{ exercise_type(exercise) }}</span><span class="badge-soft badge-difficulty-{{ exercise.difficulty }}">Dificultad {{ exercise.difficulty }}/5</span>{% if exercise_time(exercise) %}<span class="badge-soft badge-time">{{ exercise_time(exercise) }} min</span>{% endif %}</div>
             <div class="action-row pt-3">
-                {% if started_attempt %}
-                <a href="{{ url_for('exercise_attempt_detail', exercise_id=exercise.id, attempt_id=started_attempt.id) }}" class="btn btn-primary">
-                    <i class="fas fa-arrow-right me-1" aria-hidden="true"></i>Continuar ejercicio
-                </a>
-                {% else %}
-                <form action="{{ url_for('start_exercise_attempt', exercise_id=exercise.id) }}" method="POST">
-                    <button type="submit" class="btn btn-primary">
-                        <i class="fas fa-play me-1" aria-hidden="true"></i>
-                        {% if summary.submitted_count %}Practicar de nuevo{% else %}Empezar ejercicio{% endif %}
-                    </button>
-                </form>
-                {% if summary.latest_submitted_attempt %}
-                <a href="{{ url_for('exercise_attempt_detail', exercise_id=exercise.id, attempt_id=summary.latest_submitted_attempt.id) }}" class="btn btn-outline-primary">
-                    <i class="fas fa-eye me-1" aria-hidden="true"></i>Ver ultimo intento
-                </a>
-                {% endif %}
-                {% endif %}
+                {% if started_attempt %}<a href="{{ url_for('exercise_attempt_detail', exercise_id=exercise.id, attempt_id=started_attempt.id) }}" class="btn btn-primary">Continuar ejercicio</a>
+                {% else %}<form action="{{ url_for('start_exercise_attempt', exercise_id=exercise.id) }}" method="POST"><button type="submit" class="btn btn-primary">{% if summary.submitted_count %}Practicar de nuevo{% else %}Empezar ejercicio{% endif %}</button></form>{% if summary.latest_submitted_attempt %}<a href="{{ url_for('exercise_attempt_detail', exercise_id=exercise.id, attempt_id=summary.latest_submitted_attempt.id) }}" class="btn btn-outline-primary">Ver último intento</a>{% endif %}{% endif %}
             </div>
         </article>
         {% endfor %}
     </div>
-    {% elif exercise_count and has_active_filters %}
-    <div class="panel-card text-center">
-        <span class="resource-icon mx-auto mb-3"><i class="fas fa-filter-circle-xmark" aria-hidden="true"></i></span>
-        <h2 class="resource-card-title">No encontramos ejercicios con estos filtros.</h2>
-        <p class="resource-card-copy">Prueba con menos filtros o vuelve al catalogo completo.</p>
-        <a href="{{ url_for('homework') }}" class="btn btn-primary mx-auto">
-            <i class="fas fa-xmark me-1" aria-hidden="true"></i>Limpiar filtros
-        </a>
-    </div>
+    {% else %}<div class="panel-card text-center"><h2 class="resource-card-title">No encontramos ejercicios con estos filtros.</h2><a href="{{ url_for('homework') }}" class="btn btn-primary mx-auto">Ver tipos de ejercicio</a></div>{% endif %}
     {% endif %}
 
-    {% if quizzes %}
-    <div class="section-heading">
-        <h2>Cuestionarios PDF</h2>
-        <span class="section-heading-note">Correccion inmediata</span>
-    </div>
-    <div class="practice-list">
-        {% for quiz in quizzes %}
-        <article class="resource-card quiz-card">
-            <div class="resource-meta">
-                <div class="metadata-row">
-                    <span class="badge-soft">{{ quiz.question_count }} preguntas</span>
-                    <span class="badge-soft">{{ quiz.avg_time|default("N/A") }} min</span>
-                </div>
-                <span class="resource-icon"><i class="fas fa-list-check" aria-hidden="true"></i></span>
-            </div>
-            <div>
-                <h2 class="resource-card-title">{{ quiz.title }}</h2>
-                <p class="resource-card-copy">Cuestionario autocorregible con material PDF asociado.</p>
-            </div>
-            <div class="action-row mt-auto">
-                <a href="{{ url_for('take_quiz', quiz_id=quiz.id) }}" class="btn btn-primary">
-                    <i class="fas fa-play me-1" aria-hidden="true"></i>Comenzar
-                </a>
-                {% if quiz.pdfs.questions %}
-                <a href="{{ url_for('tracked_resource', resource_type='quiz_question_pdf', resource_id=quiz.id, action='open') }}"
-                   class="btn btn-outline-primary"
-                   target="_blank"
-                   rel="noopener">
-                    <i class="fas fa-file-pdf me-1" aria-hidden="true"></i>Abrir PDF
-                </a>
-                {% endif %}
-            </div>
-        </article>
-        {% endfor %}
-    </div>
-    {% elif not exercise_count %}
-    {{ empty_state(
-        'No hay ejercicios disponibles',
-        'Vuelve mas tarde para practicar nuevos cuestionarios.',
-        'fa-info-circle'
-    ) }}
-    {% endif %}
+    {% if not exercise_count %}{{ empty_state('No hay ejercicios disponibles', 'Vuelve más tarde para practicar nuevos problemas.', 'fa-info-circle') }}{% endif %}
 </section>
 {% endblock %}

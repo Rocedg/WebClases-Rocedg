@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc" style="max-width:100%;height:auto">
+  <title id="title">Auditoría completa de curva peraltada con rozamiento mal orientado</title><desc id="desc">DCL numerado y sección vial.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="context-stroke"/></marker></defs>
+  <rect width="640" height="360" fill="#fff"/>
+  <g font-family="Arial,sans-serif" fill="#203148" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M70 285H580M110 320V55" stroke="#68788b" stroke-width="1.6" marker-end="url(#arrow)"/><text x="585" y="305">x</text><text x="122" y="60">y</text><path d="M110 270C190 265 220 250 260 165S400 120 540 115" fill="none" stroke="#245b99" stroke-width="3"/><path d="M260 70V285" stroke="#ba513c" stroke-dasharray="7 6"/><text x="270" y="88" fill="#ba513c">cambio de régimen</text>
+  </g>
+</svg>

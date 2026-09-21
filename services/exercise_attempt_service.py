@@ -10,7 +10,7 @@ import unicodedata
 
 from database import db
 from models import ExerciseAttempt, ExerciseResponse, utc_now
-from services.activity_service import record_activity_event
+from services.activity_service import mark_exercise_worked, record_activity_event
 
 
 ATTEMPT_STARTED = "started"
@@ -380,6 +380,7 @@ def start_or_resume_attempt(username, exercise):
         .first()
     )
     if attempt:
+        mark_exercise_worked(username, exercise)
         return attempt, False
 
     attempt = ExerciseAttempt(
@@ -395,6 +396,7 @@ def start_or_resume_attempt(username, exercise):
     )
     db.session.add(attempt)
     db.session.commit()
+    mark_exercise_worked(username, exercise)
     record_activity_event(
         username,
         "exercise_started",
@@ -520,6 +522,7 @@ def save_draft(username, attempt_id, exercise, submitted_values):
     attempt.status = ATTEMPT_STARTED
     attempt.updated_at = utc_now()
     db.session.commit()
+    mark_exercise_worked(username, exercise)
     record_activity_event(
         username,
         "exercise_draft_saved",
@@ -549,6 +552,7 @@ def submit_attempt(username, attempt_id, exercise, submitted_values):
     attempt.submitted_at = utc_now()
     attempt.updated_at = attempt.submitted_at
     db.session.commit()
+    mark_exercise_worked(username, exercise)
     record_activity_event(
         username,
         "exercise_submitted",

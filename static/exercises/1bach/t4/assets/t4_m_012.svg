@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc" style="max-width:100%;height:auto">
+  <title id="title">Auditar confusión entre longitud L y deformación</title><desc id="desc">Dos medidas etiquetadas.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="context-stroke"/></marker></defs>
+  <rect width="640" height="360" fill="#fff"/>
+  <g font-family="Arial,sans-serif" fill="#203148" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M80 70V290" stroke="#68788b" stroke-width="8"/><path d="M80 180l25-20 25 40 25-40 25 40 25-40 25 20" fill="none" stroke="#245b99" stroke-width="3"/><rect x="230" y="135" width="115" height="90" rx="8" fill="#edf4ff" stroke="#245b99" stroke-width="2"/><path d="M345 180H540" stroke="#b8c3d0" stroke-dasharray="6 6"/><text x="365" y="170">x desde equilibrio</text>
+  </g>
+</svg>

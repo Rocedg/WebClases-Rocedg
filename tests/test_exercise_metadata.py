@@ -75,6 +75,9 @@ def test_build_exercise_index_preview_contains_practice_fields():
 def test_exercise_catalogue_loads_t0_t1_and_t2_as_separate_banks():
     exercises = load_exercise_catalogue()["exercises"]
 
+    assert exercises
+    assert all(exercise["course"] == "1bach" for exercise in exercises)
+    assert "faraday_area_motional_001" not in {exercise["id"] for exercise in exercises}
     topics = {exercise["topic"] for exercise in exercises}
     assert {"t0", "t1", "t2"}.issubset(topics)
     for topic in ("t0", "t1", "t2"):

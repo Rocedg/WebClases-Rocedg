@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc" style="max-width:100%;height:auto">
+  <title id="title">Bloque 5 kg, plano 20°</title><desc id="desc">DCL con tendencia cuesta abajo.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="context-stroke"/></marker></defs>
+  <rect width="640" height="360" fill="#fff"/>
+  <g font-family="Arial,sans-serif" fill="#203148" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M80 290H570L220 90Z" fill="#f5f7fa" stroke="#68788b" stroke-width="2"/><rect x="286" y="162" width="95" height="62" fill="#fff4e8" stroke="#ba513c" transform="rotate(29 333 193)"/><path d="M333 190L260 230" stroke="#7b5ab5" stroke-width="3" marker-end="url(#arrow)"/><text x="268" y="230" font-size="15" fill="#7b5ab5">f</text><path d="M333 190L395 83" stroke="#2766d8" stroke-width="3" marker-end="url(#arrow)"/><text x="403" y="83" font-size="15" fill="#2766d8">N</text>
+  </g>
+</svg>

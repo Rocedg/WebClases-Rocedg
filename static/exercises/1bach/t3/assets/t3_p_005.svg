@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc" style="max-width:100%;height:auto">
+  <title id="title">Nudo con cable horizontal y cable a 30°, carga 100 N</title><desc id="desc">Diagrama de nudo, no de la carga completa.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="context-stroke"/></marker></defs>
+  <rect width="640" height="360" fill="#fff"/>
+  <g font-family="Arial,sans-serif" fill="#203148" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M90 285H555L235 105Z" fill="#f3f6fa" stroke="#68788b" stroke-width="2"/><rect x="272" y="160" width="82" height="58" rx="6" fill="#edf4ff" stroke="#245b99" stroke-width="2" transform="rotate(29 313 189)"/><path d="M313 188L313 290" stroke="#ba513c" stroke-width="3" marker-end="url(#arrow)"/><text x="321" y="290" font-size="15" fill="#ba513c">P</text><path d="M313 188L374 82" stroke="#2766d8" stroke-width="3" marker-end="url(#arrow)"/><text x="382" y="82" font-size="15" fill="#2766d8">N</text><circle cx="530" cy="105" r="27" fill="none" stroke="#68788b" stroke-width="3"/><path d="M354 160L510 105V250" fill="none" stroke="#7b5ab5" stroke-width="2"/>
+  </g>
+</svg>

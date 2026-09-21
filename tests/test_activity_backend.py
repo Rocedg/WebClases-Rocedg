@@ -4,6 +4,7 @@ from models import (
     UserActivityEvent,
     UserQuizAttempt,
     UserResourceAccess,
+    UserStudyState,
     UserTopicProgress,
 )
 from services.activity_service import (
@@ -74,43 +75,30 @@ def test_record_quiz_attempt_creates_row():
         assert attempt.percentage == 80.0
 
 
-def test_existing_routes_and_quiz_submission_still_work():
+def test_reserved_quizzes_are_not_accessible_from_the_web():
     client = flask_app.test_client()
     assert login(client).status_code == 302
 
     assert client.get("/topics").status_code == 200
-    assert client.get("/homework").status_code == 200
-    assert client.get("/quiz/1").status_code == 200
+    homework = client.get("/homework")
+    assert homework.status_code == 200
+    assert "Cuestionarios PDF".encode("utf-8") not in homework.data
+    assert client.get("/quiz/1").status_code == 404
+    assert client.post("/submit-quiz/1", data={"answer_1": "C"}).status_code == 404
+    assert client.get("/quiz-results").status_code == 404
+    assert client.get("/resource/quiz_question_pdf/1/open").status_code == 404
+    assert client.get("/static/pdfs/quizzes/quiz1.questions.pdf").status_code == 404
 
-    answers = {
-        "answer_1": "C",
-        "answer_2": "C",
-        "answer_3": "A",
-        "answer_4": "A",
-        "answer_5": "A",
-        "answer_6": "B",
-        "answer_7": "A",
-        "answer_8": "B",
-        "answer_9": "A",
-        "answer_10": "A",
-        "answer_11": "A",
-        "answer_12": "C",
-        "answer_13": "B",
-        "answer_14": "A",
-        "answer_15": "B",
-    }
-    response = client.post("/submit-quiz/1", data=answers, follow_redirects=False)
-    assert response.status_code == 302
-    assert "/quiz-results" in response.headers["Location"]
 
-    results = client.get("/quiz-results")
-    assert results.status_code == 200
+def test_induction_exercises_are_not_in_the_public_catalogue():
+    client = flask_app.test_client()
+    assert login(client).status_code == 302
 
-    with flask_app.app_context():
-        attempt = UserQuizAttempt.query.filter_by(username="Guest", quiz_id="1").one()
-        assert attempt.correct_answers == 15
-        assert attempt.total_questions == 15
-        assert attempt.percentage == 100.0
+    homework = client.get("/homework")
+
+    assert homework.status_code == 200
+    assert "Inducción electromagnética".encode("utf-8") not in homework.data
+    assert client.get("/exercise/faraday_area_motional_001").status_code == 404
 
 
 def test_tracked_resource_route_records_logged_in_access():
@@ -145,6 +133,7 @@ def test_lesson_viewer_route_records_logged_in_lesson_view():
     assert b"<object" not in response.data
     assert b"/resource/lesson_pdf/T0-introduccion/open" in response.data
     assert b"/resource/lesson_pdf/T0-introduccion/download" in response.data
+    assert b"/homework?topic=t0" in response.data
 
     with flask_app.app_context():
         event = UserActivityEvent.query.filter_by(
@@ -155,7 +144,40 @@ def test_lesson_viewer_route_records_logged_in_lesson_view():
         ).one()
 
         assert event.object_title == "T0 - Herramientas para empezar Física"
+        state = UserStudyState.query.filter_by(username="Guest").one()
+        assert state.last_lesson_id == "T0-introduccion"
         assert UserResourceAccess.query.count() == 0
+
+
+def test_exercise_start_persists_last_exercise_topic_and_type():
+    client = flask_app.test_client()
+    assert login(client).status_code == 302
+
+    response = client.post("/exercise/t1_r_001/start")
+
+    assert response.status_code == 302
+    with flask_app.app_context():
+        state = UserStudyState.query.filter_by(username="Guest").one()
+        assert state.last_exercise_id == "t1_r_001"
+        assert state.last_exercise_topic == "t1"
+        assert state.last_exercise_topic_title.startswith("T1")
+        assert state.last_exercise_type_title == "Referencia y posición"
+
+
+def test_progress_uses_friendly_activity_labels_and_real_study_state():
+    client = flask_app.test_client()
+    assert login(client).status_code == 302
+    client.get("/lesson/T0-introduccion")
+    client.post("/exercise/t1_r_001/start")
+
+    response = client.get("/progress")
+
+    assert response.status_code == 200
+    assert "Último apunte".encode("utf-8") in response.data
+    assert "Último tema de ejercicios".encode("utf-8") in response.data
+    assert "Referencia y posición".encode("utf-8") in response.data
+    assert b"lesson_viewed" not in response.data
+    assert b"exercise_started" not in response.data
 
 
 def test_invalid_lesson_viewer_route_returns_404_for_logged_in_user():

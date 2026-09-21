@@ -1,0 +1,4317 @@
+{
+  "version": 1,
+  "course": "1bach",
+  "topic": "t6",
+  "topic_slug": "momento-lineal,-impulso-y-choques",
+  "block": "Momento lineal, impulso y choques",
+  "description": "Momento, impulso, sistemas, separaciones, choques y restitución.",
+  "exercises": [
+    {
+      "id": "t6_i_001",
+      "version": 1,
+      "title": "Pelota 0,4 kg a 5 m/s hacia +x",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Momento e impulso",
+      "family": "i",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "momento_lineal",
+          "label": "Momento lineal",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2.0,
+          "unit": "kg·m/s",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_i_001.svg",
+          "alt": "Vector sobre eje."
+        }
+      ],
+      "tags": [
+        "t6",
+        "i",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Momento e impulso: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Momento e impulso"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia i"
+      ],
+      "parts_count": 1,
+      "statement_source": "Pelota \\(0,4 kg\\) a \\(5 m/s\\) hacia \\(+x\\).\n\n(a) Calcula: Momento lineal.",
+      "solution_source": "\\(p=+2 kg·m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_i_002",
+      "version": 1,
+      "title": "Dos objetos",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Momento e impulso",
+      "family": "i",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "momento_1",
+          "label": "Momento 1",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 6.0,
+          "unit": "kg·m/s",
+          "tolerance": 0.03,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "momento_2",
+          "label": "Momento 2",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -4.0,
+          "unit": "kg·m/s",
+          "tolerance": 0.02,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "total",
+          "label": "Total",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2.0,
+          "unit": "kg·m/s",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "c",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_i_002.svg",
+          "alt": "Barras/vector suma."
+        }
+      ],
+      "tags": [
+        "t6",
+        "i",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Momento e impulso: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Momento e impulso"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia i"
+      ],
+      "parts_count": 3,
+      "statement_source": "Dos objetos: \\(2 kg\\) a \\(3 m/s\\), \\(1 kg\\) a \\(-4 m/s\\).\n\n(a) Calcula: Momento 1.\n(b) Calcula: Momento 2.\n(c) Calcula: Total.",
+      "solution_source": "Momentos \\(6\\), \\(-4\\); total \\(+2 kg·m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_i_003",
+      "version": 1,
+      "title": "Cambiar velocidad de -2 a +6 m/s",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Momento e impulso",
+      "family": "i",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "j",
+          "label": "J",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 4.0,
+          "unit": "N·s",
+          "tolerance": 0.02,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_i_003.svg",
+          "alt": "Antes/después."
+        }
+      ],
+      "tags": [
+        "t6",
+        "i",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Momento e impulso: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Momento e impulso"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia i"
+      ],
+      "parts_count": 1,
+      "statement_source": "Cambiar velocidad de \\(-2\\) a \\(+6 m/s\\), \\(m=0,5\\).\n\n(a) Calcula: J.",
+      "solution_source": "\\(J=+4 N·s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_i_004",
+      "version": 1,
+      "title": "Fuerza constante 20 N durante 0,3 s",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Momento e impulso",
+      "family": "i",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "impulso",
+          "label": "Impulso",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 6.0,
+          "unit": "N·s",
+          "tolerance": 0.03,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_i_004.svg",
+          "alt": "Rectángulo F-t."
+        }
+      ],
+      "tags": [
+        "t6",
+        "i",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Momento e impulso: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Momento e impulso"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia i"
+      ],
+      "parts_count": 1,
+      "statement_source": "Fuerza constante \\(20 N\\) durante \\(0,3 s\\).\n\n(a) Calcula: Impulso.",
+      "solution_source": "Impulso \\(6 N·s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_i_005",
+      "version": 1,
+      "title": "Pulso triangular, pico 100 N, duración 0,04 s",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Momento e impulso",
+      "family": "i",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "impulso",
+          "label": "Impulso",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2.0,
+          "unit": "N·s",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "fuerza_media",
+          "label": "Fuerza media",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 50.0,
+          "unit": "N",
+          "tolerance": 0.25,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_i_005.svg",
+          "alt": "Triángulo F-t."
+        }
+      ],
+      "tags": [
+        "t6",
+        "i",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Momento e impulso: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Momento e impulso"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia i"
+      ],
+      "parts_count": 2,
+      "statement_source": "Pulso triangular, pico \\(100 N\\), duración \\(0,04 s\\).\n\n(a) Calcula: Impulso.\n(b) Calcula: Fuerza media.",
+      "solution_source": "Impulso \\(2 N·s\\); fuerza media \\(50 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_i_006",
+      "version": 1,
+      "title": "Fuerza cambia de signo en dos tramos",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Momento e impulso",
+      "family": "i",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Áreas positiva/negativa y neta"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_i_006.svg",
+          "alt": "F-t bicolor."
+        }
+      ],
+      "tags": [
+        "t6",
+        "i",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Momento e impulso: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Momento e impulso"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia i"
+      ],
+      "parts_count": 1,
+      "statement_source": "Fuerza cambia de signo en dos tramos.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Áreas positiva/negativa y neta.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_i_007",
+      "version": 1,
+      "title": "Misma variación de momento con 0,02 y 0,10 s",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Momento e impulso",
+      "family": "i",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "razon_de_fuerzas_medias",
+          "label": "Razón de fuerzas medias",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 5.0,
+          "unit": "",
+          "tolerance": 0.025,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_i_007.svg",
+          "alt": "Dos pulsos con igual área."
+        }
+      ],
+      "tags": [
+        "t6",
+        "i",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Momento e impulso: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Momento e impulso"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia i"
+      ],
+      "parts_count": 1,
+      "statement_source": "Misma variación de momento con \\(0,02\\) y \\(0,10 s\\).\n\n(a) Calcula: Razón de fuerzas medias.",
+      "solution_source": "Razón de fuerzas medias \\(5\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_i_008",
+      "version": 1,
+      "title": "Airbag alarga impacto de 0,03 a 0,15 s",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Momento e impulso",
+      "family": "i",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "media_se_reduce_a",
+          "label": "Media se reduce a",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.0,
+          "unit": "",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_i_008.svg",
+          "alt": "Pulsos ancho/alto."
+        }
+      ],
+      "tags": [
+        "t6",
+        "i",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Momento e impulso: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Momento e impulso"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia i"
+      ],
+      "parts_count": 1,
+      "statement_source": "Airbag alarga impacto de \\(0,03\\) a \\(0,15 s\\).\n\n(a) Calcula: Media se reduce a.",
+      "solution_source": "Fuerza media se reduce a \\(1/5\\); impulso igual.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_i_009",
+      "version": 1,
+      "title": "Pelota llega a pared a +8 y sale a -6 m/s",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Momento e impulso",
+      "family": "i",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "p",
+          "label": "Δp",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -2.8,
+          "unit": "N·s",
+          "tolerance": 0.013999999999999999,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "impulso_sobre_pared",
+          "label": "Impulso sobre pared",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2.8,
+          "unit": "N·s",
+          "tolerance": 0.013999999999999999,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_i_009.svg",
+          "alt": "Pares de impulso."
+        }
+      ],
+      "tags": [
+        "t6",
+        "i",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Momento e impulso: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Momento e impulso"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia i"
+      ],
+      "parts_count": 2,
+      "statement_source": "Pelota llega a pared a \\(+8\\) y sale a \\(-6 m/s\\), \\(m=0,2\\).\n\n(a) Calcula: Δp.\n(b) Calcula: Impulso sobre pared.",
+      "solution_source": "\\(\\Delta p=-2,8\\); impulso sobre pared \\(+2,8 N·s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_i_010",
+      "version": 1,
+      "title": "Hallar velocidad final desde impulso -12 N·s",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Momento e impulso",
+      "family": "i",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "v_f",
+          "label": "v f",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.0,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_i_010.svg",
+          "alt": "Línea temporal."
+        }
+      ],
+      "tags": [
+        "t6",
+        "i",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Momento e impulso: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Momento e impulso"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia i"
+      ],
+      "parts_count": 1,
+      "statement_source": "Hallar velocidad final desde impulso \\(-12 N·s\\), \\(m=3\\), \\(v_i=5\\).\n\n(a) Calcula: v f.",
+      "solution_source": "\\(v_f=1 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_i_011",
+      "version": 1,
+      "title": "Fuerza , 0–2 s, cuerpo 2 kg desde reposo",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Momento e impulso",
+      "family": "i",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "j",
+          "label": "J",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 12.0,
+          "unit": "N·s",
+          "tolerance": 0.06,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "v_f",
+          "label": "v f",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 6.0,
+          "unit": "m/s",
+          "tolerance": 0.03,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_i_011.svg",
+          "alt": "Curva F-t y área."
+        }
+      ],
+      "tags": [
+        "t6",
+        "i",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Momento e impulso: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Momento e impulso"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia i"
+      ],
+      "parts_count": 2,
+      "statement_source": "Fuerza \\(F(t)=6t\\), \\(0–2 s\\), cuerpo \\(2 kg\\) desde reposo.\n\n(a) Calcula: J.\n(b) Calcula: v f.",
+      "solution_source": "\\(J=12 N·s\\); \\(v_f=6 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_i_012",
+      "version": 1,
+      "title": "Auditar,15 s",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Momento e impulso",
+      "family": "i",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "resultado",
+          "label": "Resultado",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 6.0,
+          "unit": "N·s",
+          "tolerance": 0.03,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_i_012.svg",
+          "alt": "Tarjetas dimensionales."
+        }
+      ],
+      "tags": [
+        "t6",
+        "i",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Momento e impulso: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Momento e impulso"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia i"
+      ],
+      "parts_count": 1,
+      "statement_source": "Auditar impulso=\\(F/t\\) para \\(F=40 N\\) durante \\(0,15 s\\).\n\n(a) Calcula: Resultado.",
+      "solution_source": "Seleccionar \\(J=F\\Delta t\\); unidad \\(N·s\\); resultado \\(6 N·s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_s_001",
+      "version": 1,
+      "title": "Dos patinadores se empujan desde reposo",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Sistemas y conservación",
+      "family": "s",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "momento_total_inicial_final",
+          "label": "Momento total inicial/final",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.0,
+          "unit": "",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_s_001.svg",
+          "alt": "Frontera conjunta."
+        }
+      ],
+      "tags": [
+        "t6",
+        "s",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Sistemas y conservación: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Sistemas y conservación"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia s"
+      ],
+      "parts_count": 1,
+      "statement_source": "Dos patinadores se empujan desde reposo.\n\n(a) Calcula: Momento total inicial/final.",
+      "solution_source": "Momento total inicial/final \\(0\\); relación \\(m_1v_1=-m_2v_2\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_s_002",
+      "version": 1,
+      "title": "Elegir sistema para choque de dos carros durante 0,05 s",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Sistemas y conservación",
+      "family": "s",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Selección conjunto de carros; impulso externo despreciable"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_s_002.svg",
+          "alt": "Fronteras candidatas."
+        }
+      ],
+      "tags": [
+        "t6",
+        "s",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Sistemas y conservación: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Sistemas y conservación"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia s"
+      ],
+      "parts_count": 1,
+      "statement_source": "Elegir sistema para choque de dos carros durante \\(0,05 s\\).\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Selección conjunto de carros; impulso externo despreciable.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_s_003",
+      "version": 1,
+      "title": "Persona camina dentro de barca inicialmente en reposo",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Sistemas y conservación",
+      "family": "s",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Centro de masas fijo; velocidades opuestas con relación de masas"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_s_003.svg",
+          "alt": "Persona/barca y orilla."
+        }
+      ],
+      "tags": [
+        "t6",
+        "s",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Sistemas y conservación: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Sistemas y conservación"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia s"
+      ],
+      "parts_count": 1,
+      "statement_source": "Persona camina dentro de barca inicialmente en reposo.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Centro de masas fijo; velocidades opuestas con relación de masas.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_s_004",
+      "version": 1,
+      "title": "Dos masas con fuerza interna variable",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Sistemas y conservación",
+      "family": "s",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "concepto_1",
+          "label": "Conclusión",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "se_conserva",
+              "label": "Se conserva"
+            },
+            {
+              "id": "aumenta_necesariamente",
+              "label": "Aumenta necesariamente"
+            },
+            {
+              "id": "disminuye_necesariamente",
+              "label": "Disminuye necesariamente"
+            }
+          ],
+          "correct_option_id": "se_conserva",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_s_004.svg",
+          "alt": "Gráficas p_1, p_2, p_total."
+        }
+      ],
+      "tags": [
+        "t6",
+        "s",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Sistemas y conservación: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Sistemas y conservación"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia s"
+      ],
+      "parts_count": 1,
+      "statement_source": "Dos masas con fuerza interna variable.\n\n(a) Selecciona: Conclusión.",
+      "solution_source": "Momento total constante; momentos individuales cambian.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_s_005",
+      "version": 1,
+      "title": "Carro de 2 kg tiene  y recibe",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Sistemas y conservación",
+      "family": "s",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "p_f",
+          "label": "p f",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2.5,
+          "unit": "kg·m/s",
+          "tolerance": 0.0125,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "v_f",
+          "label": "v f",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.25,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_s_005.svg",
+          "alt": "Frontera y flecha externa."
+        }
+      ],
+      "tags": [
+        "t6",
+        "s",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Sistemas y conservación: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Sistemas y conservación"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia s"
+      ],
+      "parts_count": 2,
+      "statement_source": "Carro de \\(2 kg\\) tiene \\(p_i=4 kg·m/s\\) y recibe \\(J_ext=-1,5 N·s\\).\n\n(a) Calcula: p f.\n(b) Calcula: v f.",
+      "solution_source": "\\(p_f=2,5 kg·m/s\\); \\(v_f=1,25 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_s_006",
+      "version": 1,
+      "title": "Explosión durante caída",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Sistemas y conservación",
+      "family": "s",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "concepto_1",
+          "label": "Conclusión",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "se_conserva",
+              "label": "Se conserva"
+            },
+            {
+              "id": "aumenta_necesariamente",
+              "label": "Aumenta necesariamente"
+            },
+            {
+              "id": "disminuye_necesariamente",
+              "label": "Disminuye necesariamente"
+            }
+          ],
+          "correct_option_id": "se_conserva",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_s_006.svg",
+          "alt": "Vectores 2D y gravedad."
+        }
+      ],
+      "tags": [
+        "t6",
+        "s",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Sistemas y conservación: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Sistemas y conservación"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia s"
+      ],
+      "parts_count": 1,
+      "statement_source": "Explosión durante caída: componente horizontal.\n\n(a) Selecciona: Conclusión.",
+      "solution_source": "\\(p_x\\) se conserva; \\(p_y\\) cambia por gravedad.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_s_007",
+      "version": 1,
+      "title": "Comparar intervalo muy corto y largo bajo el mismo peso",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Sistemas y conservación",
+      "family": "s",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Selección cuándo despreciar impulso externo; valores de mgΔt"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_s_007.svg",
+          "alt": "Dos escalas temporales."
+        }
+      ],
+      "tags": [
+        "t6",
+        "s",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Sistemas y conservación: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Sistemas y conservación"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia s"
+      ],
+      "parts_count": 1,
+      "statement_source": "Comparar intervalo muy corto y largo bajo el mismo peso.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Selección cuándo despreciar impulso externo; valores de \\(mg\\Delta t\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_s_008",
+      "version": 1,
+      "title": "Carros de 2 y 3 kg llevan velocidades 4 y -1 m/s antes de interactuar",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Sistemas y conservación",
+      "family": "s",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "p_total",
+          "label": "p total",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 5.0,
+          "unit": "kg·m/s",
+          "tolerance": 0.025,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "v_cm",
+          "label": "v CM",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.0,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_s_008.svg",
+          "alt": "Eje y marcador CM."
+        }
+      ],
+      "tags": [
+        "t6",
+        "s",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Sistemas y conservación: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Sistemas y conservación"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia s"
+      ],
+      "parts_count": 2,
+      "statement_source": "Carros de \\(2\\) y \\(3 kg\\) llevan velocidades \\(4\\) y \\(-1 m/s\\) antes de interactuar.\n\n(a) Calcula: p total.\n(b) Calcula: v CM.",
+      "solution_source": "\\(p_total=5 kg·m/s\\); \\(v_CM=1 m/s\\), igual antes y después.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_s_009",
+      "version": 1,
+      "title": "Sistema abierto expulsa masa de forma discreta",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Sistemas y conservación",
+      "family": "s",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Balance de momento para dos fragmentos, no fórmula continua"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_s_009.svg",
+          "alt": "Antes/después con frontera."
+        }
+      ],
+      "tags": [
+        "t6",
+        "s",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Sistemas y conservación: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Sistemas y conservación"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia s"
+      ],
+      "parts_count": 1,
+      "statement_source": "Sistema abierto expulsa masa de forma discreta.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Balance de momento para dos fragmentos, no fórmula continua.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_s_010",
+      "version": 1,
+      "title": "Auditar conservación aplicada a un solo objeto durante choque",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Sistemas y conservación",
+      "family": "s",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Sistema correcto seleccionado; fuerza interna identificada"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_s_010.svg",
+          "alt": "Dos soluciones paralelas."
+        }
+      ],
+      "tags": [
+        "t6",
+        "s",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Sistemas y conservación: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Sistemas y conservación"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia s"
+      ],
+      "parts_count": 1,
+      "statement_source": "Auditar conservación aplicada a un solo objeto durante choque.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Sistema correcto seleccionado; fuerza interna identificada.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_x_001",
+      "version": 1,
+      "title": "Patinadores 50 y 75 kg",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Separaciones y retroceso",
+      "family": "x",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "segundo",
+          "label": "Segundo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -2.0,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_x_001.svg",
+          "alt": "Antes/después."
+        }
+      ],
+      "tags": [
+        "t6",
+        "x",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Separaciones y retroceso: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Separaciones y retroceso"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia x"
+      ],
+      "parts_count": 1,
+      "statement_source": "Patinadores \\(50\\) y \\(75 kg\\); primero sale a \\(3 m/s\\).\n\n(a) Calcula: Segundo.",
+      "solution_source": "Segundo \\(-2 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_x_002",
+      "version": 1,
+      "title": "Cañón 500 kg, proyectil 5 kg a 100 m/s",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Separaciones y retroceso",
+      "family": "x",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "retroceso",
+          "label": "Retroceso",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -1.0,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_x_002.svg",
+          "alt": "Vectores de distinto tamaño/escala."
+        }
+      ],
+      "tags": [
+        "t6",
+        "x",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Separaciones y retroceso: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Separaciones y retroceso"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia x"
+      ],
+      "parts_count": 1,
+      "statement_source": "Cañón \\(500 kg\\), proyectil \\(5 kg\\) a \\(100 m/s\\).\n\n(a) Calcula: Retroceso.",
+      "solution_source": "Retroceso \\(-1 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_x_003",
+      "version": 1,
+      "title": "Carro 6 kg se divide en 2 y 4 kg",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Separaciones y retroceso",
+      "family": "x",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "fragmento_pesado",
+          "label": "Fragmento pesado",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -4.0,
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_x_003.svg",
+          "alt": "Separación en eje."
+        }
+      ],
+      "tags": [
+        "t6",
+        "x",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Separaciones y retroceso: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Separaciones y retroceso"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia x"
+      ],
+      "parts_count": 1,
+      "statement_source": "Carro \\(6 kg\\) se divide en \\(2\\) y \\(4 kg\\); fragmento ligero \\(+8\\).\n\n(a) Calcula: Fragmento pesado.",
+      "solution_source": "Fragmento pesado \\(-4 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_x_004",
+      "version": 1,
+      "title": "Objeto en movimiento ,  se separa en 4 y 6 kg",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Separaciones y retroceso",
+      "family": "x",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "otro",
+          "label": "Otro",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 6.67,
+          "unit": "m/s",
+          "tolerance": 0.03335,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_x_004.svg",
+          "alt": "Momento inicial y final."
+        }
+      ],
+      "tags": [
+        "t6",
+        "x",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Separaciones y retroceso: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Separaciones y retroceso"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia x"
+      ],
+      "parts_count": 1,
+      "statement_source": "Objeto en movimiento \\(M=10\\), \\(v=4\\) se separa en \\(4\\) y \\(6 kg\\); uno queda en reposo.\n\n(a) Calcula: Otro.",
+      "solution_source": "Otro \\(6,67 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_x_005",
+      "version": 1,
+      "title": "Dos fragmentos salen perpendiculares desde reposo imposible sin tercero",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Separaciones y retroceso",
+      "family": "x",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Selección: momento vectorial no suma cero; vector tercero requerido"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_x_005.svg",
+          "alt": "Polígono de momentos."
+        }
+      ],
+      "tags": [
+        "t6",
+        "x",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Separaciones y retroceso: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Separaciones y retroceso"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia x"
+      ],
+      "parts_count": 1,
+      "statement_source": "Dos fragmentos salen perpendiculares desde reposo imposible sin tercero.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Selección: momento vectorial no suma cero; vector tercero requerido.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_x_006",
+      "version": 1,
+      "title": "Explosión 2D",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Separaciones y retroceso",
+      "family": "x",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "p_3",
+          "label": "p_3",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "expected_components": [
+            -6.0,
+            -8.0
+          ],
+          "accepted_forms": [
+            "(-6; -8)"
+          ],
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "unit": "",
+          "tolerance": 0.02,
+          "part": "a"
+        },
+        {
+          "id": "modulo",
+          "label": "Módulo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 10.0,
+          "unit": "",
+          "tolerance": 0.05,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_x_006.svg",
+          "alt": "Triángulo cerrado."
+        }
+      ],
+      "tags": [
+        "t6",
+        "x",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Separaciones y retroceso: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Separaciones y retroceso"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia x"
+      ],
+      "parts_count": 2,
+      "statement_source": "Explosión 2D: \\(p_1=(6;0)\\), \\(p_2=(0;8)\\), inicial cero.\n\n(a) Calcula: p_3.\n(b) Calcula: Módulo.",
+      "solution_source": "\\(p_3=(-6;-8)\\); módulo \\(10\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_x_007",
+      "version": 1,
+      "title": "Energía aumenta en separación desde reposo",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Separaciones y retroceso",
+      "family": "x",
+      "subtype": "multi_step",
+      "difficulty": 5,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Selección: energía interna se transforma; ΔK numérico"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_x_007.svg",
+          "alt": "Barras de energía y momento."
+        }
+      ],
+      "tags": [
+        "t6",
+        "x",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Separaciones y retroceso: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Separaciones y retroceso"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia x"
+      ],
+      "parts_count": 1,
+      "statement_source": "Energía aumenta en separación desde reposo.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Selección: energía interna se transforma; \\(\\Delta K\\) numérico.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_x_008",
+      "version": 1,
+      "title": "Auditar signos de retroceso cuando ambos resultados se dan positivos",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Separaciones y retroceso",
+      "family": "x",
+      "subtype": "multi_step",
+      "difficulty": 5,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Velocidad con signo corregida y comprobación de suma cero"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_x_008.svg",
+          "alt": "Eje y tabla de signos."
+        }
+      ],
+      "tags": [
+        "t6",
+        "x",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Separaciones y retroceso: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Separaciones y retroceso"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia x"
+      ],
+      "parts_count": 1,
+      "statement_source": "Auditar signos de retroceso cuando ambos resultados se dan positivos.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Velocidad con signo corregida y comprobación de suma cero.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_c_001",
+      "version": 1,
+      "title": "Choque perfectamente inelástico",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Choques y restitución",
+      "family": "c",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "velocidad_conjunta",
+          "label": "Velocidad conjunta",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2.0,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "perdida",
+          "label": "Pérdida",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3.0,
+          "unit": "J",
+          "tolerance": 0.015,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_c_001.svg",
+          "alt": "Secuencia antes/después."
+        }
+      ],
+      "tags": [
+        "t6",
+        "c",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Choques y restitución: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Choques y restitución"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia c"
+      ],
+      "parts_count": 2,
+      "statement_source": "Choque perfectamente inelástico: \\(2 kg·3 m/s\\) alcanza \\(1 kg\\) en reposo.\n\n(a) Calcula: Velocidad conjunta.\n(b) Calcula: Pérdida.",
+      "solution_source": "Velocidad conjunta \\(2 m/s\\); pérdida \\(3 J\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_c_002",
+      "version": 1,
+      "title": "Choque frontal",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Choques y restitución",
+      "family": "c",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "v_f",
+          "label": "v f",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.0,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "perdida",
+          "label": "Pérdida",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 9.0,
+          "unit": "J",
+          "tolerance": 0.045,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_c_002.svg",
+          "alt": "Eje con signos."
+        }
+      ],
+      "tags": [
+        "t6",
+        "c",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Choques y restitución: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Choques y restitución"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia c"
+      ],
+      "parts_count": 2,
+      "statement_source": "Choque frontal: \\(1 kg\\) a \\(4\\), \\(1 kg\\) a \\(-2\\), se pegan.\n\n(a) Calcula: v f.\n(b) Calcula: Pérdida.",
+      "solution_source": "\\(v_f=1 m/s\\); pérdida \\(9 J\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_c_003",
+      "version": 1,
+      "title": "Bala-bloque",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Choques y restitución",
+      "family": "c",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "velocidad_conjunta",
+          "label": "Velocidad conjunta",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2.0,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_c_003.svg",
+          "alt": "Escalas separadas antes/después."
+        }
+      ],
+      "tags": [
+        "t6",
+        "c",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Choques y restitución: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Choques y restitución"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia c"
+      ],
+      "parts_count": 1,
+      "statement_source": "Bala-bloque: \\(0,01 kg\\) a \\(300\\), bloque \\(1,49\\) en reposo.\n\n(a) Calcula: Velocidad conjunta.",
+      "solution_source": "Velocidad conjunta \\(2 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_c_004",
+      "version": 1,
+      "title": "Masa 2 kg choca con otra de 3 kg en reposo y quedan juntas a 2 m/s",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Choques y restitución",
+      "family": "c",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "velocidad_incidente",
+          "label": "Velocidad incidente",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 5.0,
+          "unit": "m/s",
+          "tolerance": 0.025,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_c_004.svg",
+          "alt": "Línea temporal."
+        }
+      ],
+      "tags": [
+        "t6",
+        "c",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Choques y restitución: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Choques y restitución"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia c"
+      ],
+      "parts_count": 1,
+      "statement_source": "Masa \\(2 kg\\) choca con otra de \\(3 kg\\) en reposo y quedan juntas a \\(2 m/s\\).\n\n(a) Calcula: Velocidad incidente.",
+      "solution_source": "Velocidad incidente \\(5 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_c_005",
+      "version": 1,
+      "title": "Choque elástico de masas iguales, una en reposo",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Choques y restitución",
+      "family": "c",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Intercambio de velocidades seleccionado y calculado"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_c_005.svg",
+          "alt": "Cuatro opciones vectoriales."
+        }
+      ],
+      "tags": [
+        "t6",
+        "c",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Choques y restitución: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Choques y restitución"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia c"
+      ],
+      "parts_count": 1,
+      "statement_source": "Choque elástico de masas iguales, una en reposo.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Intercambio de velocidades seleccionado y calculado.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_c_006",
+      "version": 1,
+      "title": "Elástico 1D",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Choques y restitución",
+      "family": "c",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "velocidad_final_1",
+          "label": "Velocidad final 1",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -2.0,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "velocidad_final_2",
+          "label": "Velocidad final 2",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2.0,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_c_006.svg",
+          "alt": "Antes/después."
+        }
+      ],
+      "tags": [
+        "t6",
+        "c",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Choques y restitución: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Choques y restitución"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia c"
+      ],
+      "parts_count": 2,
+      "statement_source": "Elástico 1D \\(m_1=1\\), \\(m_2=3\\), \\(u_1=4\\), \\(u_2=0\\).\n\n(a) Calcula: Velocidad final 1.\n(b) Calcula: Velocidad final 2.",
+      "solution_source": "\\(v_1=-2\\), \\(v_2=2 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_c_007",
+      "version": 1,
+      "title": "Elástico con masas 3 y 1, mismo",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Choques y restitución",
+      "family": "c",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "velocidad_final_1",
+          "label": "Velocidad final 1",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2.0,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "velocidad_final_2",
+          "label": "Velocidad final 2",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 6.0,
+          "unit": "m/s",
+          "tolerance": 0.03,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_c_007.svg",
+          "alt": "Comparación con el anterior."
+        }
+      ],
+      "tags": [
+        "t6",
+        "c",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Choques y restitución: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Choques y restitución"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia c"
+      ],
+      "parts_count": 2,
+      "statement_source": "Elástico con masas \\(3\\) y \\(1\\), mismo \\(u_1=4\\).\n\n(a) Calcula: Velocidad final 1.\n(b) Calcula: Velocidad final 2.",
+      "solution_source": "\\(v_1=2\\), \\(v_2=6 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_c_008",
+      "version": 1,
+      "title": "Comprobar elasticidad desde velocidades medidas",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Choques y restitución",
+      "family": "c",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "k_f_k_i",
+          "label": "K f/K i",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.0,
+          "unit": "",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_c_008.svg",
+          "alt": "Barras dobles."
+        }
+      ],
+      "tags": [
+        "t6",
+        "c",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Choques y restitución: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Choques y restitución"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia c"
+      ],
+      "parts_count": 1,
+      "statement_source": "Comprobar elasticidad desde velocidades medidas.\n\n(a) Calcula: K f/K i.",
+      "solution_source": "Momento antes/después y razón \\(K_f/K_i=1\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_c_009",
+      "version": 1,
+      "title": "Choque conserva momento pero pierde 40% de K",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Choques y restitución",
+      "family": "c",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "concepto_1",
+          "label": "Tipo de interacción",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "perfectamente_inelastico",
+              "label": "Perfectamente inelástico"
+            },
+            {
+              "id": "inelastico",
+              "label": "Inelástico"
+            },
+            {
+              "id": "elastico",
+              "label": "Elástico"
+            },
+            {
+              "id": "superelastico",
+              "label": "Superelástico"
+            }
+          ],
+          "correct_option_id": "inelastico",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_c_009.svg",
+          "alt": "Diagrama p constante/K decrece."
+        }
+      ],
+      "tags": [
+        "t6",
+        "c",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Choques y restitución: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Choques y restitución"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia c"
+      ],
+      "parts_count": 1,
+      "statement_source": "Choque conserva momento pero pierde \\(40%\\) de \\(K\\).\n\n(a) Selecciona: Tipo de interacción.",
+      "solution_source": "Clasificación inelástico; energía perdida numérica.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_c_010",
+      "version": 1,
+      "title": "Coeficiente de restitución con velocidades dadas",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Choques y restitución",
+      "family": "c",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "e=|v_2-v_1|/|u_1-u_2|; valor cerrado"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_c_010.svg",
+          "alt": "Velocidades relativas."
+        }
+      ],
+      "tags": [
+        "t6",
+        "c",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Choques y restitución: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Choques y restitución"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia c"
+      ],
+      "parts_count": 1,
+      "statement_source": "Coeficiente de restitución con velocidades dadas.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "\\(e=|v_2-v_1|/|u_1-u_2|\\); valor cerrado.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_c_011",
+      "version": 1,
+      "title": "Problema estructurado",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Choques y restitución",
+      "family": "c",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "concepto_1",
+          "label": "Tipo de interacción",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "perfectamente_inelastico",
+              "label": "Perfectamente inelástico"
+            },
+            {
+              "id": "inelastico",
+              "label": "Inelástico"
+            },
+            {
+              "id": "elastico",
+              "label": "Elástico"
+            },
+            {
+              "id": "superelastico",
+              "label": "Superelástico"
+            }
+          ],
+          "correct_option_id": "perfectamente_inelastico",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_c_011.svg",
+          "alt": "Objetos unidos."
+        }
+      ],
+      "tags": [
+        "t6",
+        "c",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Choques y restitución: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Choques y restitución"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia c"
+      ],
+      "parts_count": 1,
+      "statement_source": "\\(e=0\\): interpretar y calcular velocidad común.\n\n(a) Selecciona: Tipo de interacción.",
+      "solution_source": "Perfectamente inelástico; \\(v_f\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_c_012",
+      "version": 1,
+      "title": "Problema estructurado",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Choques y restitución",
+      "family": "c",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Dos velocidades finales"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_c_012.svg",
+          "alt": "Sistema de dos ecuaciones visual."
+        }
+      ],
+      "tags": [
+        "t6",
+        "c",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Choques y restitución: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Choques y restitución"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia c"
+      ],
+      "parts_count": 1,
+      "statement_source": "\\(e=1\\): resolver junto con momento.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Dos velocidades finales.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_c_013",
+      "version": 1,
+      "title": "Masas iguales, una en reposo",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Choques y restitución",
+      "family": "c",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "velocidad_final_1",
+          "label": "Velocidad final 1",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.5,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "velocidad_final_2",
+          "label": "Velocidad final 2",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 4.5,
+          "unit": "m/s",
+          "tolerance": 0.0225,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_c_013.svg",
+          "alt": "Separación relativa."
+        }
+      ],
+      "tags": [
+        "t6",
+        "c",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Choques y restitución: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Choques y restitución"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia c"
+      ],
+      "parts_count": 2,
+      "statement_source": "\\(e=0,5\\), masas iguales, una en reposo, \\(u=6\\).\n\n(a) Calcula: Velocidad final 1.\n(b) Calcula: Velocidad final 2.",
+      "solution_source": "\\(v_1=1,5\\), \\(v_2=4,5 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_c_014",
+      "version": 1,
+      "title": "Pelota rebota en suelo",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Choques y restitución",
+      "family": "c",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "v_y",
+          "label": "v y",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 8.0,
+          "unit": "%",
+          "tolerance": 0.04,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "porcentaje_de_energia_vertical",
+          "label": "Porcentaje de energía vertical",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 64.0,
+          "unit": "%",
+          "tolerance": 0.32,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_c_014.svg",
+          "alt": "Impacto vertical."
+        }
+      ],
+      "tags": [
+        "t6",
+        "c",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Choques y restitución: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Choques y restitución"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia c"
+      ],
+      "parts_count": 2,
+      "statement_source": "Pelota rebota en suelo: \\(u_y=-10\\), \\(e=0,8\\).\n\n(a) Calcula: v y.\n(b) Calcula: Porcentaje de energía vertical.",
+      "solution_source": "\\(v_y=+8\\); porcentaje de energía vertical \\(64%\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_c_015",
+      "version": 1,
+      "title": "Dos cuerpos se mueven juntos",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Choques y restitución",
+      "family": "c",
+      "subtype": "multi_step",
+      "difficulty": 5,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "concepto_1",
+          "label": "Tipo de interacción",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "perfectamente_inelastico",
+              "label": "Perfectamente inelástico"
+            },
+            {
+              "id": "inelastico",
+              "label": "Inelástico"
+            },
+            {
+              "id": "elastico",
+              "label": "Elástico"
+            },
+            {
+              "id": "superelastico",
+              "label": "Superelástico"
+            }
+          ],
+          "correct_option_id": "perfectamente_inelastico",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_c_015.svg",
+          "alt": "Fotogramas."
+        }
+      ],
+      "tags": [
+        "t6",
+        "c",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Choques y restitución: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Choques y restitución"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia c"
+      ],
+      "parts_count": 1,
+      "statement_source": "Dos cuerpos se mueven juntos: determinar si puede saberse que fue inelástico.\n\n(a) Selecciona: Tipo de interacción.",
+      "solution_source": "Selección: estado final común implica perfectamente inelástico en 1D.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_c_016",
+      "version": 1,
+      "title": "Choque 2D con objeto inicialmente en reposo y vectores finales perpendicular",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Choques y restitución",
+      "family": "c",
+      "subtype": "multi_step",
+      "difficulty": 5,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Vector momento inicial y una velocidad desconocida por componentes"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_c_016.svg",
+          "alt": "Triángulo de momentos."
+        }
+      ],
+      "tags": [
+        "t6",
+        "c",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Choques y restitución: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Choques y restitución"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia c"
+      ],
+      "parts_count": 1,
+      "statement_source": "Choque 2D con objeto inicialmente en reposo y vectores finales perpendiculares.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Vector momento inicial y una velocidad desconocida por componentes.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_c_017",
+      "version": 1,
+      "title": "Billar ideal, masas iguales, una en reposo",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Choques y restitución",
+      "family": "c",
+      "subtype": "multi_step",
+      "difficulty": 5,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Relación pitagórica de velocidades y ángulos"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_c_017.svg",
+          "alt": "Vista superior."
+        }
+      ],
+      "tags": [
+        "t6",
+        "c",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Choques y restitución: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Choques y restitución"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia c"
+      ],
+      "parts_count": 1,
+      "statement_source": "Billar ideal, masas iguales, una en reposo; finales perpendiculares.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Relación pitagórica de velocidades y ángulos.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_c_018",
+      "version": 1,
+      "title": "Auditar solución que conserva energía cinética en choque pegajoso",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Choques y restitución",
+      "family": "c",
+      "subtype": "multi_step",
+      "difficulty": 5,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Paso erróneo seleccionado; velocidad correcta y pérdida"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_c_018.svg",
+          "alt": "Dos balances contrapuestos."
+        }
+      ],
+      "tags": [
+        "t6",
+        "c",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Choques y restitución: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Choques y restitución"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia c"
+      ],
+      "parts_count": 1,
+      "statement_source": "Auditar solución que conserva energía cinética en choque pegajoso.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Paso erróneo seleccionado; velocidad correcta y pérdida.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_a_001",
+      "version": 1,
+      "title": "Reconstruir velocidad desde sensor F(t) de impacto y masa conocida",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Integración, gráficas y auditoría",
+      "family": "a",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Área, Δp, velocidad final"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_a_001.svg",
+          "alt": "Pulso experimental suavizado."
+        }
+      ],
+      "tags": [
+        "t6",
+        "a",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Integración, gráficas y auditoría: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Integración, gráficas y auditoría"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia a"
+      ],
+      "parts_count": 1,
+      "statement_source": "Reconstruir velocidad desde sensor \\(F(t)\\) de impacto y masa conocida.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Área, \\(\\Delta p\\), velocidad final.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_a_002",
+      "version": 1,
+      "title": "Comparar dos cascos con igual impulso y picos distintos",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Integración, gráficas y auditoría",
+      "family": "a",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Selección del menor pico/mayor duración; áreas iguales"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_a_002.svg",
+          "alt": "Pulsos superpuestos."
+        }
+      ],
+      "tags": [
+        "t6",
+        "a",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Integración, gráficas y auditoría: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Integración, gráficas y auditoría"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia a"
+      ],
+      "parts_count": 1,
+      "statement_source": "Comparar dos cascos con igual impulso y picos distintos.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Selección del menor pico/mayor duración; áreas iguales.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_a_003",
+      "version": 1,
+      "title": "Choque pegajoso seguido de frenada por rozamiento",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Integración, gráficas y auditoría",
+      "family": "a",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Etapa 1 momento; etapa 2 energía/cinemática; distancia final"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_a_003.svg",
+          "alt": "Línea temporal en dos modelos."
+        }
+      ],
+      "tags": [
+        "t6",
+        "a",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Integración, gráficas y auditoría: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Integración, gráficas y auditoría"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia a"
+      ],
+      "parts_count": 1,
+      "statement_source": "Choque pegajoso seguido de frenada por rozamiento.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Etapa 1 momento; etapa 2 energía/cinemática; distancia final.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_a_004",
+      "version": 1,
+      "title": "Bala-bloque-péndulo",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Integración, gráficas y auditoría",
+      "family": "a",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Velocidad conjunta por altura; velocidad de bala por momento"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_a_004.svg",
+          "alt": "Péndulo balístico en dos etapas."
+        }
+      ],
+      "tags": [
+        "t6",
+        "a",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Integración, gráficas y auditoría: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Integración, gráficas y auditoría"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia a"
+      ],
+      "parts_count": 1,
+      "statement_source": "Bala-bloque-péndulo: impacto y ascenso.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Velocidad conjunta por altura; velocidad de bala por momento.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_a_005",
+      "version": 1,
+      "title": "Carro 1 kg a 6 m/s se pega a otro de 2 kg",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Integración, gráficas y auditoría",
+      "family": "a",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "velocidad_conjunta",
+          "label": "Velocidad conjunta",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2.0,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "energia_elastica",
+          "label": "Energía elástica",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 6.0,
+          "unit": "J",
+          "tolerance": 0.03,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "compresion_maxima",
+          "label": "Compresión máxima",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.2,
+          "unit": "m",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "c",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_a_005.svg",
+          "alt": "Choque→muelle comprimido."
+        }
+      ],
+      "tags": [
+        "t6",
+        "a",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Integración, gráficas y auditoría: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Integración, gráficas y auditoría"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia a"
+      ],
+      "parts_count": 3,
+      "statement_source": "Carro \\(1 kg\\) a \\(6 m/s\\) se pega a otro de \\(2 kg\\); después comprimen un muelle \\(k=300 N/m\\) sin rozamiento.\n\n(a) Calcula: Velocidad conjunta.\n(b) Calcula: Energía elástica.\n(c) Calcula: Compresión máxima.",
+      "solution_source": "Velocidad conjunta \\(2 m/s\\); energía elástica \\(6 J\\); compresión máxima \\(0,20 m\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_a_006",
+      "version": 1,
+      "title": "Elegir sistema y ley para cinco fases de una interacción",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Integración, gráficas y auditoría",
+      "family": "a",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Secuencia cerrada: impulso, momento, energía"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_a_006.svg",
+          "alt": "Diagrama de decisiones."
+        }
+      ],
+      "tags": [
+        "t6",
+        "a",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Integración, gráficas y auditoría: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Integración, gráficas y auditoría"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia a"
+      ],
+      "parts_count": 1,
+      "statement_source": "Elegir sistema y ley para cinco fases de una interacción.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Secuencia cerrada: impulso, momento, energía.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_a_007",
+      "version": 1,
+      "title": "Gráficas de fuerzas mutuas durante choque",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Integración, gráficas y auditoría",
+      "family": "a",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "F_12(t)=-F_21(t); impulsos opuestos"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_a_007.svg",
+          "alt": "Dos pulsos especulares."
+        }
+      ],
+      "tags": [
+        "t6",
+        "a",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Integración, gráficas y auditoría: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Integración, gráficas y auditoría"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia a"
+      ],
+      "parts_count": 1,
+      "statement_source": "Gráficas de fuerzas mutuas durante choque.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "\\(F_12(t)=-F_21(t)\\); impulsos opuestos.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_a_008",
+      "version": 1,
+      "title": "Datos con incertidumbre",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Integración, gráficas y auditoría",
+      "family": "a",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Diferencia relativa y selección sí/no por umbral"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_a_008.svg",
+          "alt": "Barras con intervalos."
+        }
+      ],
+      "tags": [
+        "t6",
+        "a",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Integración, gráficas y auditoría: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Integración, gráficas y auditoría"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia a"
+      ],
+      "parts_count": 1,
+      "statement_source": "Datos con incertidumbre: decidir si momento se conserva dentro de tolerancia.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Diferencia relativa y selección sí/no por umbral.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_a_009",
+      "version": 1,
+      "title": "Hallar masa desconocida desde choque y velocidades medidas",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Integración, gráficas y auditoría",
+      "family": "a",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Ecuación de momento y masa positiva"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_a_009.svg",
+          "alt": "Fotogramas con velocidades."
+        }
+      ],
+      "tags": [
+        "t6",
+        "a",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Integración, gráficas y auditoría: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Integración, gráficas y auditoría"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia a"
+      ],
+      "parts_count": 1,
+      "statement_source": "Hallar masa desconocida desde choque y velocidades medidas.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Ecuación de momento y masa positiva.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_a_010",
+      "version": 1,
+      "title": "Detectar datos físicamente incompatibles (e>1 sin aporte energético declarad",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Integración, gráficas y auditoría",
+      "family": "a",
+      "subtype": "multi_step",
+      "difficulty": 5,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "concepto_1",
+          "label": "Tipo de interacción",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "perfectamente_inelastico",
+              "label": "Perfectamente inelástico"
+            },
+            {
+              "id": "inelastico",
+              "label": "Inelástico"
+            },
+            {
+              "id": "elastico",
+              "label": "Elástico"
+            },
+            {
+              "id": "superelastico",
+              "label": "Superelástico"
+            }
+          ],
+          "correct_option_id": "superelastico",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_a_010.svg",
+          "alt": "Velocidades relativas."
+        }
+      ],
+      "tags": [
+        "t6",
+        "a",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Integración, gráficas y auditoría: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Integración, gráficas y auditoría"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia a"
+      ],
+      "parts_count": 1,
+      "statement_source": "Detectar datos físicamente incompatibles (\\(e>1\\) sin aporte energético declarado).\n\n(a) Selecciona: Tipo de interacción.",
+      "solution_source": "\\(e\\) calculado y opción “superelástico/no compatible con modelo pasivo”.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_a_011",
+      "version": 1,
+      "title": "Movimiento 2D",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Integración, gráficas y auditoría",
+      "family": "a",
+      "subtype": "multi_step",
+      "difficulty": 5,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Momento horizontal en explosión; alcance de fragmento con cinemática"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_a_011.svg",
+          "alt": "Secuencia vectorial y trayectorias."
+        }
+      ],
+      "tags": [
+        "t6",
+        "a",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Integración, gráficas y auditoría: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Integración, gráficas y auditoría"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia a"
+      ],
+      "parts_count": 1,
+      "statement_source": "Movimiento 2D: explosión y caída posterior.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Momento horizontal en explosión; alcance de fragmento con cinemática.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_a_012",
+      "version": 1,
+      "title": "Miniinvestigación cerrada de choque",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Integración, gráficas y auditoría",
+      "family": "a",
+      "subtype": "multi_step",
+      "difficulty": 5,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Cuatro campos numéricos/cerrados"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_a_012.svg",
+          "alt": "Antes/después, barras y gráfica F(t)."
+        }
+      ],
+      "tags": [
+        "t6",
+        "a",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Integración, gráficas y auditoría: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Integración, gráficas y auditoría"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia a"
+      ],
+      "parts_count": 1,
+      "statement_source": "Miniinvestigación cerrada de choque: clasificar, calcular \\(e\\), pérdida y seleccionar gráfico.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Cuatro campos numéricos/cerrados.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    }
+  ]
+}

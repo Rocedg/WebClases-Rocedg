@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc" style="max-width:100%;height:auto">
+  <title id="title">Carro 6 kg se divide en 2 y 4 kg</title><desc id="desc">Separación en eje.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="context-stroke"/></marker></defs>
+  <rect width="640" height="360" fill="#fff"/>
+  <g font-family="Arial,sans-serif" fill="#203148" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="320" cy="190" r="28" fill="#fff0c9" stroke="#bd7b08"/><path d="M320 190L500 105" stroke="#2766d8" stroke-width="3" marker-end="url(#arrow)"/><text x="508" y="105" font-size="15" fill="#2766d8">p₁</text><path d="M320 190L145 115" stroke="#ba513c" stroke-width="3" marker-end="url(#arrow)"/><text x="153" y="115" font-size="15" fill="#ba513c">p₂</text><path d="M320 190L300 310" stroke="#7b5ab5" stroke-width="3" marker-end="url(#arrow)"/><text x="308" y="310" font-size="15" fill="#7b5ab5">p₃</text><text x="275" y="55">suma vectorial cerrada</text>
+  </g>
+</svg>

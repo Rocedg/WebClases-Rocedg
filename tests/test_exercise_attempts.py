@@ -18,7 +18,8 @@ from services.exercise_attempt_service import (
 )
 
 
-EXERCISE_ID = "faraday_area_motional_001"
+EXERCISE_ID = "t1_r_001"
+EXERCISE_TYPE_KEY = "1bach:t1:r"
 
 
 def login(client, username="Guest"):
@@ -104,13 +105,33 @@ def test_homework_new_exercise_cta_does_not_create_attempt_before_click():
     client = flask_app.test_client()
     assert login(client).status_code == 302
 
-    response = client.get("/homework")
+    response = client.get("/homework", query_string={"type": EXERCISE_TYPE_KEY})
 
     assert response.status_code == 200
     assert b"Empezar ejercicio" in response.data
     assert f"/exercise/{EXERCISE_ID}/start".encode() in response.data
     with flask_app.app_context():
         assert ExerciseAttempt.query.count() == 0
+
+
+def test_homework_landing_groups_real_exercise_types_with_catalogue_metrics():
+    client = flask_app.test_client()
+    assert login(client).status_code == 302
+
+    landing = client.get("/homework")
+
+    assert landing.status_code == 200
+    assert "Referencia y posición".encode("utf-8") in landing.data
+    assert "Dificultad media".encode("utf-8") in landing.data
+    assert b"Tiempo total" in landing.data
+    assert b"type=1bach:t1:r" in landing.data
+    assert b">r<" not in landing.data
+
+    practice = client.get("/homework", query_string={"type": "1bach:t1:r"})
+    assert practice.status_code == 200
+    assert b"t1_r_001" in practice.data
+    assert b"Empezar ejercicio" in practice.data
+    assert b"expected_value" not in practice.data
 
 
 def test_clicking_new_exercise_start_creates_exactly_one_attempt():
@@ -133,7 +154,7 @@ def test_started_exercise_is_shown_as_continue_and_reopens_attempt():
     with flask_app.app_context():
         attempt_id = ExerciseAttempt.query.one().id
 
-    response = client.get("/homework")
+    response = client.get("/homework", query_string={"type": EXERCISE_TYPE_KEY})
 
     assert response.status_code == 200
     assert b"Continuar ejercicio" in response.data
@@ -150,17 +171,17 @@ def test_draft_response_persists_and_can_be_updated_with_raw_and_normalized_nume
 
     client.post(
         f"/exercise/{EXERCISE_ID}/attempt/{attempt_id}/draft",
-        data={"response_emf_magnitude": " 8,66 "},
+        data={"response_xa": " -300,0 "},
     )
     client.post(
         f"/exercise/{EXERCISE_ID}/attempt/{attempt_id}/draft",
-        data={"response_emf_magnitude": "8.67"},
+        data={"response_xa": "-299"},
     )
 
     with flask_app.app_context():
-        response = ExerciseResponse.query.filter_by(field_id="emf_magnitude").one()
-        assert response.raw_value == "8.67"
-        assert response.normalized_value == "8.67"
+        response = ExerciseResponse.query.filter_by(field_id="xa").one()
+        assert response.raw_value == "-299"
+        assert response.normalized_value == "-299"
         assert response.grading_status == "ungraded"
 
 
@@ -246,13 +267,13 @@ def test_submitted_attempt_cannot_be_edited_and_new_start_creates_later_attempt(
 
     submit_response = client.post(
         f"/exercise/{EXERCISE_ID}/attempt/{attempt_id}/submit",
-        data={"response_identify_flux_change": "area"},
+        data={"response_xa": "-300"},
     )
     assert submit_response.status_code == 302
 
     edit_response = client.post(
         f"/exercise/{EXERCISE_ID}/attempt/{attempt_id}/draft",
-        data={"response_identify_flux_change": "b_field"},
+        data={"response_xa": "-299"},
     )
     assert edit_response.status_code == 403
 
@@ -306,9 +327,9 @@ def test_homework_filter_by_course_topic_difficulty_status_and_invalid_value():
     assert login(client).status_code == 302
     client.post(f"/exercise/{EXERCISE_ID}/start")
 
-    course = client.get("/homework?course=2bach")
-    topic = client.get("/homework?topic=Inducci%C3%B3n+electromagn%C3%A9tica")
-    difficulty = client.get("/homework?difficulty=3")
+    course = client.get("/homework?course=1bach")
+    topic = client.get("/homework?topic=t1")
+    difficulty = client.get("/homework?difficulty=2")
     status = client.get("/homework?status=started")
     invalid = client.get("/homework?course=nope")
 
@@ -328,19 +349,19 @@ def test_homework_card_states_and_completed_cta():
     client = flask_app.test_client()
     assert login(client).status_code == 302
 
-    new_page = client.get("/homework")
+    new_page = client.get("/homework", query_string={"type": EXERCISE_TYPE_KEY})
     assert b"exercise-card-new" in new_page.data
     assert b"Nuevo" in new_page.data
 
     client.post(f"/exercise/{EXERCISE_ID}/start")
-    started_page = client.get("/homework")
+    started_page = client.get("/homework", query_string={"type": EXERCISE_TYPE_KEY})
     assert b"exercise-card-started" in started_page.data
     assert b"En progreso" in started_page.data
 
     with flask_app.app_context():
         attempt_id = ExerciseAttempt.query.filter_by(exercise_id=EXERCISE_ID).one().id
-    client.post(f"/exercise/{EXERCISE_ID}/attempt/{attempt_id}/submit", data={"response_identify_flux_change": "area"})
-    completed_page = client.get("/homework")
+    client.post(f"/exercise/{EXERCISE_ID}/attempt/{attempt_id}/submit", data={"response_xa": "-300"})
+    completed_page = client.get("/homework", query_string={"type": EXERCISE_TYPE_KEY})
     assert b"exercise-card-completed" in completed_page.data
     assert b"Completado" in completed_page.data
     assert b"Practicar de nuevo" in completed_page.data
@@ -358,12 +379,12 @@ def test_submitted_retry_creates_new_attempt_and_guided_solution_is_submission_o
 
     submitted = client.post(
         f"/exercise/{EXERCISE_ID}/attempt/{attempt_id}/submit",
-        data={"response_identify_flux_change": "area"},
+        data={"response_xa": "-300", "response_xb": "500", "response_dx": "-800", "response_d": "800"},
         follow_redirects=True,
     )
     assert submitted.status_code == 200
     assert b"Ver solucion guiada" in submitted.data
-    assert "Identificar que cambia".encode("utf-8") in submitted.data
+    assert "Con origen".encode("utf-8") in submitted.data
 
     client.post(f"/exercise/{EXERCISE_ID}/start")
     with flask_app.app_context():
@@ -374,16 +395,16 @@ def test_next_exercise_action_is_deterministic_and_hidden_at_topic_end():
     client = flask_app.test_client()
     assert login(client).status_code == 302
 
-    first_id = "faraday_area_motional_001"
-    next_id = "faraday_b_variable_001"
-    last_id = "faraday_period_ratio_001"
+    first_id = "t1_r_001"
+    next_id = "t1_r_002"
+    last_id = "t6_a_012"
 
     client.post(f"/exercise/{first_id}/start")
     with flask_app.app_context():
         first_attempt_id = ExerciseAttempt.query.filter_by(exercise_id=first_id).one().id
     first_submitted = client.post(
         f"/exercise/{first_id}/attempt/{first_attempt_id}/submit",
-        data={"response_identify_flux_change": "area"},
+        data={"response_xa": "-300"},
         follow_redirects=True,
     )
     assert f"/exercise/{next_id}/start".encode() in first_submitted.data
@@ -394,7 +415,7 @@ def test_next_exercise_action_is_deterministic_and_hidden_at_topic_end():
         last_attempt_id = ExerciseAttempt.query.filter_by(exercise_id=last_id).one().id
     last_submitted = client.post(
         f"/exercise/{last_id}/attempt/{last_attempt_id}/submit",
-        data={"response_proportionality_reasoning": "inverse_period"},
+        data={},
         follow_redirects=True,
     )
     assert b"Siguiente ejercicio" not in last_submitted.data

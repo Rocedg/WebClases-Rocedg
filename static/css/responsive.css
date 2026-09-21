@@ -35,6 +35,7 @@
 
     .exercise-filter-grid,
     .exercise-card-grid,
+    .exercise-type-grid,
     .metric-grid,
     .access-grid,
     .practice-grid,
@@ -42,6 +43,10 @@
     .progress-metrics,
     .practice-list {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .continue-grid {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -52,6 +57,7 @@
 
     .exercise-submitted-actions,
     .exercise-timer,
+    .progress-dashboard-header,
     .footer-card,
     .course-heading,
     .section-heading {
@@ -137,6 +143,7 @@
 
     .exercise-filter-grid,
     .exercise-card-grid,
+    .exercise-type-grid,
     .metric-grid,
     .access-grid,
     .practice-grid,
