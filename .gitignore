@@ -36,3 +36,6 @@ Thumbs.db
 *.fls
 *.fdb_latexmk
 *.synctex.gz
+
+# Local source material (PDFs, question banks, class sheets); never commit.
+source-material/
