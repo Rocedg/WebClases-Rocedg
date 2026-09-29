@@ -444,8 +444,8 @@ def ensure_database_schema():
         columns = {column['name'] for column in inspector.get_columns('exercise_attempts')}
         additions = {
             'active_duration_seconds': 'INTEGER',
-            'timer_enabled': 'BOOLEAN NOT NULL DEFAULT 1',
-            'timer_paused': 'BOOLEAN NOT NULL DEFAULT 0',
+            'timer_enabled': 'BOOLEAN NOT NULL DEFAULT TRUE',
+            'timer_paused': 'BOOLEAN NOT NULL DEFAULT FALSE',
         }
         for column, ddl in additions.items():
             if column not in columns:
@@ -455,6 +455,18 @@ def ensure_database_schema():
         if 'canonical_value' not in columns:
             db.session.execute(text('ALTER TABLE exercise_responses ADD COLUMN canonical_value TEXT'))
     db.session.commit()
+
+
+# Create missing tables on startup: Render's free disk is ephemeral, so the
+# SQLite file starts empty after every deploy or restart. Both calls are
+# idempotent and never drop or recreate existing tables.
+with app.app_context():
+    try:
+        db.create_all()
+        ensure_database_schema()
+    except Exception:
+        db.session.rollback()
+        app.logger.exception('Database schema setup failed at startup')
 
 
 def find_tracked_resource(resource_type, resource_id):
@@ -1092,6 +1104,8 @@ def page_not_found(e):
 
 @app.errorhandler(500)
 def internal_error(e):
+    original = getattr(e, 'original_exception', None) or e
+    app.logger.exception('Unhandled error on %s %s', request.method, request.path, exc_info=original)
     return render_template('errors/500.html'), 500
 
 
