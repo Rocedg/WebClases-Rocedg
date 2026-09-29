@@ -151,7 +151,8 @@ def response_map(attempt):
 def human_field_label(field):
     field_id = str(field.get("id", "")).strip()
     label = str(field.get("label") or field.get("prompt") or "").strip()
-    if label and "_" not in label:
+    # Underscores usually mean a raw field id; inside \( \) they are TeX subscripts.
+    if label and ("_" not in label or "\\(" in label):
         return label
     fallback_labels = {
         "unit_derived": "Unidad usando N",
