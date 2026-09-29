@@ -57,7 +57,7 @@
                             <span>
                                 <strong>{{ session.username }}</strong>
                                 {% if session.role %}
-                                <small>{% if session.role == 'student' %}Alumno{% else %}{{ session.role }}{% endif %}</small>
+                                <small>{{ role_labels.get(session.role, session.role) }}</small>
                                 {% endif %}
                             </span>
                         </div>

@@ -51,9 +51,17 @@ CONTENT_DIR = os.path.join(BASE_DIR, 'content')
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
 QUIZZES_WEB_ENABLED = False
 
+ROLE_STUDENT = 'student'
+ROLE_TEACHER = 'teacher'
+ROLE_LABELS = {ROLE_STUDENT: 'Alumno', ROLE_TEACHER: 'Profesor'}
+
+# Personal accounts read their password from the environment so it never reaches
+# the public repository. An account whose variable is unset cannot log in.
 USERS = {
-    'Paul': ['fisica2026', 'student'],
-    'Guest': ['studentpass', 'student']
+    'Paul': ['fisica2026', ROLE_STUDENT],
+    'Guest': ['studentpass', ROLE_STUDENT],
+    'Sandro': [os.environ.get('SANDRO_PASSWORD'), ROLE_STUDENT],
+    'Edgar': [os.environ.get('EDGAR_PASSWORD'), ROLE_TEACHER],
 }
 
 NAV_ITEMS = [
@@ -89,6 +97,19 @@ def login_required(f):
     def decorated_function(*args, **kwargs):
         if 'username' not in session:
             return redirect(url_for('login'))
+        return f(*args, **kwargs)
+    return decorated_function
+
+
+def teacher_required(f):
+    # Reserved for the future teacher dashboard; teachers can already use every
+    # student page through login_required.
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        if 'username' not in session:
+            return redirect(url_for('login'))
+        if session.get('role') != ROLE_TEACHER:
+            return render_template('errors/403.html'), 403
         return f(*args, **kwargs)
     return decorated_function
 
@@ -549,6 +570,7 @@ def inject_layout_context():
     return {
         'asset_url': asset_url,
         'nav_items': NAV_ITEMS,
+        'role_labels': ROLE_LABELS,
         'public_static_exists': public_static_exists,
         'format_duration': format_duration,
         'attempt_correction_summary': attempt_correction_summary,
@@ -615,7 +637,8 @@ def login():
         username = request.form['username']
         password = request.form['password']
 
-        if username in USERS and USERS[username][0] == password:
+        stored_password = USERS.get(username, [None])[0]
+        if stored_password and stored_password == password:
             session['username'] = username
             session['role'] = USERS[username][1]
             return redirect(url_for('home'))
