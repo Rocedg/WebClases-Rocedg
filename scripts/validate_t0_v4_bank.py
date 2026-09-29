@@ -13,8 +13,8 @@ BANK_PATH = ROOT / "content" / "exercises" / "1bach" / "t0" / "exercises_t0.json
 
 EXPECTED_DISTRIBUTION = {
     "units": 16,
-    "vectors": 24,
-    "measurement": 19,
+    "vectors": 37,
+    "measurement": 25,
     "calculus_graphs": 18,
 }
 
@@ -26,7 +26,8 @@ LEGACY_RETIRED_IDS = {
     "t0_e_002",
     *{f"t0_c_{number:03d}" for number in range(21, 25)},
 }
-RETIRED_IDS = LEGACY_RETIRED_IDS | {"t0_m_007", "t0_c_007", "t0_c_018"}
+RETIRED_IDS = LEGACY_RETIRED_IDS | {"t0_c_007", "t0_c_018"}
+ALLOWED_VERSIONS = {4, 5}
 
 MANDATORY_ASSET_IDS = {
     "t0_v_012",
@@ -52,10 +53,10 @@ def validate_bank(root: Path | None = None) -> list[str]:
     ids = [exercise.get("id") for exercise in exercises]
 
     published = [exercise for exercise in exercises if exercise.get("status") != "retired"]
-    if len(exercises) != 80:
-        errors.append(f"Expected 80 ordered T0 records, found {len(exercises)}.")
-    if len(published) != 77:
-        errors.append(f"Expected 77 published T0 exercises, found {len(published)}.")
+    if len(exercises) != 98:
+        errors.append(f"Expected 98 ordered T0 records, found {len(exercises)}.")
+    if len(published) != 96:
+        errors.append(f"Expected 96 published T0 exercises, found {len(published)}.")
     duplicates = [exercise_id for exercise_id, count in Counter(ids).items() if count > 1]
     if duplicates:
         errors.append(f"Duplicated IDs: {', '.join(sorted(duplicates))}.")
@@ -64,8 +65,8 @@ def validate_bank(root: Path | None = None) -> list[str]:
 
     for exercise in exercises:
         exercise_id = str(exercise.get("id"))
-        if exercise.get("version") != 4:
-            errors.append(f"{exercise_id}: version must be 4.")
+        if exercise.get("version") not in ALLOWED_VERSIONS:
+            errors.append(f"{exercise_id}: version must be 4 or 5.")
         if exercise.get("difficulty") == 1:
             errors.append(f"{exercise_id}: difficulty 1 is not allowed in active v4.")
         if exercise_id in LEGACY_RETIRED_IDS:

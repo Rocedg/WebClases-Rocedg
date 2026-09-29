@@ -1,7 +1,7 @@
 {
   "version": 1,
   "generated": true,
-  "generated_at": "2026-09-21T15:09:16Z",
+  "generated_at": "2026-09-29T18:00:25Z",
   "source": "content/exercises",
   "exercises": [
     {
@@ -374,7 +374,7 @@
     },
     {
       "id": "t0_v_001",
-      "version": 4,
+      "version": 5,
       "title": "Escalar y vector en un trayecto",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -389,7 +389,7 @@
       "tags": [
         "t0",
         "vectors",
-        "version_4"
+        "version_5"
       ],
       "workflow": {
         "status": "active"
@@ -397,7 +397,7 @@
     },
     {
       "id": "t0_v_002",
-      "version": 4,
+      "version": 5,
       "title": "Módulo, unitario y dirección",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -412,7 +412,7 @@
       "tags": [
         "t0",
         "vectors",
-        "version_4"
+        "version_5"
       ],
       "workflow": {
         "status": "active"
@@ -420,7 +420,7 @@
     },
     {
       "id": "t0_v_003",
-      "version": 4,
+      "version": 5,
       "title": "Fuerza con dirección prescrita",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -435,7 +435,7 @@
       "tags": [
         "t0",
         "vectors",
-        "version_4"
+        "version_5"
       ],
       "workflow": {
         "status": "active"
@@ -443,7 +443,7 @@
     },
     {
       "id": "t0_v_004",
-      "version": 4,
+      "version": 5,
       "title": "Tres representaciones del mismo vector",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -458,7 +458,7 @@
       "tags": [
         "t0",
         "vectors",
-        "version_4"
+        "version_5"
       ],
       "workflow": {
         "status": "active"
@@ -466,7 +466,7 @@
     },
     {
       "id": "t0_v_005",
-      "version": 4,
+      "version": 5,
       "title": "Componente desconocida y dos direcciones posibles",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -481,7 +481,7 @@
       "tags": [
         "t0",
         "vectors",
-        "version_4"
+        "version_5"
       ],
       "workflow": {
         "status": "active"
@@ -489,7 +489,7 @@
     },
     {
       "id": "t0_v_006",
-      "version": 4,
+      "version": 5,
       "title": "Relaciones entre pares de vectores",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -504,7 +504,7 @@
       "tags": [
         "t0",
         "vectors",
-        "version_4"
+        "version_5"
       ],
       "workflow": {
         "status": "active"
@@ -535,7 +535,7 @@
     },
     {
       "id": "t0_v_008",
-      "version": 4,
+      "version": 5,
       "title": "Combinación lineal y vector equilibrante",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -550,7 +550,7 @@
       "tags": [
         "t0",
         "vectors",
-        "version_4"
+        "version_5"
       ],
       "workflow": {
         "status": "active"
@@ -558,7 +558,7 @@
     },
     {
       "id": "t0_v_009",
-      "version": 4,
+      "version": 5,
       "title": "Tres desplazamientos y dirección final",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -573,7 +573,7 @@
       "tags": [
         "t0",
         "vectors",
-        "version_4"
+        "version_5"
       ],
       "workflow": {
         "status": "active"
@@ -581,7 +581,7 @@
     },
     {
       "id": "t0_v_010",
-      "version": 4,
+      "version": 5,
       "title": "Combinación en tres dimensiones",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -596,7 +596,7 @@
       "tags": [
         "t0",
         "vectors",
-        "version_4"
+        "version_5"
       ],
       "workflow": {
         "status": "active"
@@ -604,7 +604,7 @@
     },
     {
       "id": "t0_v_011",
-      "version": 4,
+      "version": 5,
       "title": "Ecuación vectorial con comprobación",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -619,7 +619,7 @@
       "tags": [
         "t0",
         "vectors",
-        "version_4"
+        "version_5"
       ],
       "workflow": {
         "status": "active"
@@ -650,7 +650,7 @@
     },
     {
       "id": "t0_v_013",
-      "version": 4,
+      "version": 5,
       "title": "Componentes y proyección horizontal",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -665,7 +665,7 @@
       "tags": [
         "t0",
         "vectors",
-        "version_4"
+        "version_5"
       ],
       "workflow": {
         "status": "active"
@@ -673,7 +673,7 @@
     },
     {
       "id": "t0_v_014",
-      "version": 4,
+      "version": 5,
       "title": "Dos cuadrantes y una resultante",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -688,7 +688,7 @@
       "tags": [
         "t0",
         "vectors",
-        "version_4"
+        "version_5"
       ],
       "workflow": {
         "status": "active"
@@ -696,7 +696,7 @@
     },
     {
       "id": "t0_v_015",
-      "version": 4,
+      "version": 5,
       "title": "Ángulo medido desde el eje y",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -711,7 +711,7 @@
       "tags": [
         "t0",
         "vectors",
-        "version_4"
+        "version_5"
       ],
       "workflow": {
         "status": "active"
@@ -742,7 +742,7 @@
     },
     {
       "id": "t0_v_017",
-      "version": 4,
+      "version": 5,
       "title": "Cambio a ejes girados",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -757,7 +757,7 @@
       "tags": [
         "t0",
         "vectors",
-        "version_4"
+        "version_5"
       ],
       "workflow": {
         "status": "active"
@@ -788,7 +788,7 @@
     },
     {
       "id": "t0_v_019",
-      "version": 4,
+      "version": 5,
       "title": "Distancia recorrida y desplazamiento",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -803,7 +803,7 @@
       "tags": [
         "t0",
         "vectors",
-        "version_4"
+        "version_5"
       ],
       "workflow": {
         "status": "active"
@@ -811,7 +811,7 @@
     },
     {
       "id": "t0_v_020",
-      "version": 4,
+      "version": 5,
       "title": "Resultante y fuerza equilibrante",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -826,7 +826,7 @@
       "tags": [
         "t0",
         "vectors",
-        "version_4"
+        "version_5"
       ],
       "workflow": {
         "status": "active"
@@ -857,7 +857,7 @@
     },
     {
       "id": "t0_v_022",
-      "version": 4,
+      "version": 5,
       "title": "Desplazamiento de un dron",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -872,7 +872,7 @@
       "tags": [
         "t0",
         "vectors",
-        "version_4"
+        "version_5"
       ],
       "workflow": {
         "status": "active"
@@ -880,7 +880,7 @@
     },
     {
       "id": "t0_v_023",
-      "version": 4,
+      "version": 5,
       "title": "Producto escalar y proyección",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -895,7 +895,7 @@
       "tags": [
         "t0",
         "vectors",
-        "version_4"
+        "version_5"
       ],
       "workflow": {
         "status": "active"
@@ -903,7 +903,7 @@
     },
     {
       "id": "t0_v_024",
-      "version": 4,
+      "version": 5,
       "title": "Producto vectorial y carga negativa",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -918,7 +918,306 @@
       "tags": [
         "t0",
         "vectors",
-        "version_4"
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_v_037",
+      "version": 5,
+      "title": "Producto escalar por componentes y ángulo",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Vectores y elección de ejes",
+      "subtype": "numeric_multi",
+      "difficulty": 2,
+      "estimated_time_min": 8,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_v_038",
+      "version": 5,
+      "title": "Producto escalar con una componente desconocida",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Vectores y elección de ejes",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_time_min": 9,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_v_039",
+      "version": 5,
+      "title": "El trabajo como producto escalar",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Vectores y elección de ejes",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_time_min": 10,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_v_040",
+      "version": 5,
+      "title": "Producto vectorial por componentes",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Vectores y elección de ejes",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_time_min": 11,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_v_041",
+      "version": 5,
+      "title": "Área de un triángulo con el producto vectorial",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Vectores y elección de ejes",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_time_min": 11,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_v_042",
+      "version": 5,
+      "title": "Regla de la mano derecha en el plano",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Vectores y elección de ejes",
+      "subtype": "numeric_plus_choice",
+      "difficulty": 3,
+      "estimated_time_min": 10,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_v_043",
+      "version": 5,
+      "title": "Escalar y vectorial del mismo par",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Vectores y elección de ejes",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_time_min": 12,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_v_044",
+      "version": 5,
+      "title": "Descomponer vectores con ángulos no medidos desde +x",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Vectores y elección de ejes",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_time_min": 12,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_v_045",
+      "version": 5,
+      "title": "La misma fuerza en ejes horizontales y en ejes de la rampa",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Vectores y elección de ejes",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_time_min": 13,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_v_046",
+      "version": 5,
+      "title": "Cambio de ejes descomponiendo paso a paso",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Vectores y elección de ejes",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_time_min": 14,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_v_047",
+      "version": 5,
+      "title": "Cambio a ejes girados en sentido horario",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Vectores y elección de ejes",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_time_min": 14,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_v_048",
+      "version": 5,
+      "title": "Volver de los ejes girados a los habituales",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Vectores y elección de ejes",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_time_min": 12,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_v_049",
+      "version": 5,
+      "title": "De una rampa a otra pasando por los ejes habituales",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Vectores y elección de ejes",
+      "subtype": "numeric_multi",
+      "difficulty": 5,
+      "estimated_time_min": 16,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
       ],
       "workflow": {
         "status": "active"
@@ -926,7 +1225,7 @@
     },
     {
       "id": "t0_m_001",
-      "version": 4,
+      "version": 5,
       "title": "Error absoluto, relativo y signo",
       "course": "1bach",
       "block": "Medida, error, incertidumbre y cifras significativas",
@@ -941,7 +1240,7 @@
       "tags": [
         "t0",
         "measurement",
-        "version_4"
+        "version_5"
       ],
       "workflow": {
         "status": "active"
@@ -949,7 +1248,7 @@
     },
     {
       "id": "t0_m_002",
-      "version": 4,
+      "version": 5,
       "title": "Mismo porcentaje, distinto error absoluto",
       "course": "1bach",
       "block": "Medida, error, incertidumbre y cifras significativas",
@@ -964,7 +1263,7 @@
       "tags": [
         "t0",
         "measurement",
-        "version_4"
+        "version_5"
       ],
       "workflow": {
         "status": "active"
@@ -1041,7 +1340,7 @@
     },
     {
       "id": "t0_m_006",
-      "version": 4,
+      "version": 5,
       "title": "Resolución de dos instrumentos",
       "course": "1bach",
       "block": "Medida, error, incertidumbre y cifras significativas",
@@ -1056,7 +1355,30 @@
       "tags": [
         "t0",
         "measurement",
-        "version_4"
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_m_007",
+      "version": 5,
+      "title": "Precisión y exactitud no son sinónimos",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Medida, error, incertidumbre y cifras significativas",
+      "subtype": "numeric_plus_choice",
+      "difficulty": 4,
+      "estimated_time_min": 13,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "measurement",
+        "version_5"
       ],
       "workflow": {
         "status": "active"
@@ -1064,7 +1386,7 @@
     },
     {
       "id": "t0_m_008",
-      "version": 4,
+      "version": 5,
       "title": "Corrección de error de cero",
       "course": "1bach",
       "block": "Medida, error, incertidumbre y cifras significativas",
@@ -1079,7 +1401,7 @@
       "tags": [
         "t0",
         "measurement",
-        "version_4"
+        "version_5"
       ],
       "workflow": {
         "status": "active"
@@ -1156,7 +1478,7 @@
     },
     {
       "id": "t0_m_012",
-      "version": 4,
+      "version": 5,
       "title": "Elegir el instrumento adecuado",
       "course": "1bach",
       "block": "Medida, error, incertidumbre y cifras significativas",
@@ -1171,7 +1493,7 @@
       "tags": [
         "t0",
         "measurement",
-        "version_4"
+        "version_5"
       ],
       "workflow": {
         "status": "active"
@@ -1179,7 +1501,7 @@
     },
     {
       "id": "t0_m_013",
-      "version": 4,
+      "version": 5,
       "title": "Dato atípico en una serie",
       "course": "1bach",
       "block": "Medida, error, incertidumbre y cifras significativas",
@@ -1194,7 +1516,7 @@
       "tags": [
         "t0",
         "measurement",
-        "version_4"
+        "version_5"
       ],
       "workflow": {
         "status": "active"
@@ -1294,7 +1616,7 @@
     },
     {
       "id": "t0_m_018",
-      "version": 4,
+      "version": 5,
       "title": "Calibración lineal de un termómetro",
       "course": "1bach",
       "block": "Medida, error, incertidumbre y cifras significativas",
@@ -1309,7 +1631,7 @@
       "tags": [
         "t0",
         "measurement",
-        "version_4"
+        "version_5"
       ],
       "workflow": {
         "status": "active"
@@ -1317,7 +1639,7 @@
     },
     {
       "id": "t0_m_019",
-      "version": 4,
+      "version": 5,
       "title": "Compatibilidad de dos medidas",
       "course": "1bach",
       "block": "Medida, error, incertidumbre y cifras significativas",
@@ -1332,7 +1654,7 @@
       "tags": [
         "t0",
         "measurement",
-        "version_4"
+        "version_5"
       ],
       "workflow": {
         "status": "active"
@@ -1340,7 +1662,7 @@
     },
     {
       "id": "t0_m_020",
-      "version": 4,
+      "version": 5,
       "title": "Medir varias oscilaciones",
       "course": "1bach",
       "block": "Medida, error, incertidumbre y cifras significativas",
@@ -1355,7 +1677,122 @@
       "tags": [
         "t0",
         "measurement",
-        "version_4"
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_m_021",
+      "version": 5,
+      "title": "Valor esperado frente a media calculada",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Medida, error, incertidumbre y cifras significativas",
+      "subtype": "numeric_plus_choice",
+      "difficulty": 3,
+      "estimated_time_min": 12,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "measurement",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_m_022",
+      "version": 5,
+      "title": "El dato más alejado como estimación del error",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Medida, error, incertidumbre y cifras significativas",
+      "subtype": "numeric_plus_choice",
+      "difficulty": 3,
+      "estimated_time_min": 10,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "measurement",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_m_023",
+      "version": 5,
+      "title": "Preciso pero no exacto: dos cronometradores",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Medida, error, incertidumbre y cifras significativas",
+      "subtype": "numeric_plus_choice",
+      "difficulty": 4,
+      "estimated_time_min": 14,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "measurement",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_m_024",
+      "version": 5,
+      "title": "¿Respecto a qué valor calculo el error?",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Medida, error, incertidumbre y cifras significativas",
+      "subtype": "numeric_plus_choice",
+      "difficulty": 3,
+      "estimated_time_min": 11,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "measurement",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_m_025",
+      "version": 5,
+      "title": "Detectar y corregir un sesgo con el valor esperado",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Medida, error, incertidumbre y cifras significativas",
+      "subtype": "numeric_plus_choice",
+      "difficulty": 4,
+      "estimated_time_min": 11,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "measurement",
+        "version_5"
       ],
       "workflow": {
         "status": "active"

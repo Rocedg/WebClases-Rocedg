@@ -59,13 +59,13 @@ def test_t0_v4_active_distribution_and_retired_ids():
     exercises = bank["exercises"]
     ids = {exercise["id"] for exercise in exercises}
 
-    assert len(exercises) == 80
-    assert len(ids) == 80
+    assert len(exercises) == 98
+    assert len(ids) == 98
     assert sum(1 for exercise in exercises if exercise["family"] == "units") == 16
-    assert sum(1 for exercise in exercises if exercise["family"] == "vectors") == 24
-    assert sum(1 for exercise in exercises if exercise["family"] == "measurement") == 20
+    assert sum(1 for exercise in exercises if exercise["family"] == "vectors") == 37
+    assert sum(1 for exercise in exercises if exercise["family"] == "measurement") == 25
     assert sum(1 for exercise in exercises if exercise["family"] == "calculus_graphs") == 20
-    assert {exercise["version"] for exercise in exercises} == {4}
+    assert {exercise["version"] for exercise in exercises} == {4, 5}
     assert all(exercise["difficulty"] != 1 for exercise in exercises)
     assert not (ids & set(bank["retired_ids"]))
 
@@ -190,3 +190,36 @@ def test_retired_t0_attempt_history_does_not_link_to_missing_exercise():
     assert b"t0_u_017" in response.data
     assert b"Ejercicio retirado del cat" in response.data
     assert b"/exercise/t0_u_017/attempt/" not in response.data
+
+
+def test_tex_labels_with_subscripts_are_kept_but_raw_ids_are_hidden():
+    from services.exercise_attempt_service import human_field_label
+
+    assert human_field_label({"id": "Px", "label": r"Componente \(P_x\)"}) == r"Componente \(P_x\)"
+    assert human_field_label({"id": "raw", "label": "raw_field_id"}) == "Respuesta"
+
+
+def test_t0_v5_expected_answers_grade_as_correct():
+    bank = load_t0_bank()
+    revised = [item for item in bank["exercises"] if item.get("version") == 5]
+    assert revised
+
+    def as_text(value):
+        return str(value).replace(".", ",")
+
+    with flask_app.app_context():
+        for exercise in revised:
+            values = {}
+            for field in exercise["response_fields"]:
+                if field["type"] == "numeric":
+                    values[field["id"]] = as_text(field["expected_value"])
+                elif field["type"] == "vector":
+                    values[field["id"]] = "(" + "; ".join(as_text(c) for c in field["expected_components"]) + ")"
+                elif field["type"] == "single_choice":
+                    values[field["id"]] = field["correct_option_id"]
+                elif field["type"] == "short_text":
+                    values[field["id"]] = field["accepted_forms"][0]
+            attempt, _ = start_or_resume_attempt("Guest", exercise)
+            submit_attempt("Guest", attempt.id, exercise, values)
+            wrong = [r.field_id for r in attempt.responses if r.grading_status != GRADE_CORRECT]
+            assert not wrong, (exercise["id"], wrong)
