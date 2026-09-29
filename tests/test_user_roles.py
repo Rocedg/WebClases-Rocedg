@@ -6,6 +6,14 @@ def login(client, username, password):
     return client.post("/login", data={"username": username, "password": password})
 
 
+def test_real_accounts_log_in_with_their_roles():
+    for username, password, role in [("Sandro", "fisica2027", "student"), ("Edgar", " ", "teacher")]:
+        client = flask_app.test_client()
+        assert login(client, username, password).status_code == 302
+        with client.session_transaction() as session:
+            assert session["role"] == role
+
+
 def test_teacher_can_log_in_and_sees_student_pages(monkeypatch):
     monkeypatch.setitem(app_module.USERS, "Edgar", ["teacher-pass", app_module.ROLE_TEACHER])
     client = flask_app.test_client()

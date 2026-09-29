@@ -55,13 +55,11 @@ ROLE_STUDENT = 'student'
 ROLE_TEACHER = 'teacher'
 ROLE_LABELS = {ROLE_STUDENT: 'Alumno', ROLE_TEACHER: 'Profesor'}
 
-# Personal accounts read their password from the environment so it never reaches
-# the public repository. An account whose variable is unset cannot log in.
 USERS = {
     'Paul': ['fisica2026', ROLE_STUDENT],
     'Guest': ['studentpass', ROLE_STUDENT],
-    'Sandro': [os.environ.get('SANDRO_PASSWORD'), ROLE_STUDENT],
-    'Edgar': [os.environ.get('EDGAR_PASSWORD'), ROLE_TEACHER],
+    'Sandro': ['fisica2027', ROLE_STUDENT],
+    'Edgar': [' ', ROLE_TEACHER],
 }
 
 NAV_ITEMS = [

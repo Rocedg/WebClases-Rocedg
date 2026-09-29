@@ -53,8 +53,10 @@ Todas las tablas se agrupan por `username`:
   datos se borran en cada deploy o reinicio, así que el panel mostraría poco. Hay
   que configurar antes una Postgres con `DATABASE_URL`.
 - Excluir de las estadísticas las cuentas de prueba (`Guest`) y al propio profesor.
-- Las contraseñas de las cuentas personales se leen de variables de entorno
-  (`SANDRO_PASSWORD`, `EDGAR_PASSWORD`) porque el repositorio es público.
+- **Antes de publicar el panel, cambiar la contraseña de `Edgar`.** Hoy está
+  escrita en `app.py` (un espacio) y el repositorio es público, así que
+  cualquiera podría entrar como profesor y ver los datos de los alumnos. Lo
+  mínimo es leerla de una variable de entorno (por ejemplo `EDGAR_PASSWORD`).
 
 ## Validation checklist
 
