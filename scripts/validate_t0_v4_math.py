@@ -62,6 +62,36 @@ def validate_math() -> list[str]:
     assert_close(errors, "t0_c_020.displacement", field(exercises, "t0_c_020", "displacement"), displacement, 0.01)
     assert_close(errors, "t0_c_020.distance", field(exercises, "t0_c_020", "distance"), distance, 0.01)
 
+    # Calculus v5: derivatives and integrals recomputed from the statements.
+    def num_derivative(f, x, h=1e-5):
+        return (f(x + h) - f(x - h)) / (2 * h)
+
+    def num_integral(f, a, b, n=2000):
+        step = (b - a) / n
+        return sum(f(a + (i + 0.5) * step) for i in range(n)) * step
+
+    x001 = lambda t: 7 - 3 * t + 2 * t**4
+    v001 = lambda t: num_derivative(x001, t)
+    assert_close(errors, "t0_c_001.v_1", field(exercises, "t0_c_001", "v_1"), v001(1.0), 0.001)
+    assert_close(errors, "t0_c_001.a_1", field(exercises, "t0_c_001", "a_1"), num_derivative(v001, 1.0, 1e-3), 0.01)
+    g002 = lambda x: 5 * x**-1 - 2 * x**-3
+    assert_close(errors, "t0_c_002.value", field(exercises, "t0_c_002", "value"), num_derivative(g002, 2.0), 1e-6)
+    h003 = lambda x: 3 * math.sqrt(x) - 4 / math.sqrt(x)
+    assert_close(errors, "t0_c_003.slope_1", field(exercises, "t0_c_003", "slope_1"), num_derivative(h003, 1.0), 1e-6)
+    assert_close(errors, "t0_c_003.slope", field(exercises, "t0_c_003", "slope"), num_derivative(h003, 4.0), 1e-6)
+    x005 = lambda t: t**3 - 4 * t
+    assert_close(errors, "t0_c_005.average_velocity", field(exercises, "t0_c_005", "average_velocity"), x005(2) - x005(1), 1e-9)
+    assert_close(errors, "t0_c_005.instant_velocity", field(exercises, "t0_c_005", "instant_velocity"), num_derivative(x005, 2.0), 1e-6)
+    assert_close(errors, "t0_c_005.acceleration", field(exercises, "t0_c_005", "acceleration"), num_derivative(lambda t: num_derivative(x005, t), 2.0, 1e-3), 0.01)
+    assert_close(errors, "t0_c_008.v_2", field(exercises, "t0_c_008", "v_2"), -2 + num_integral(lambda t: 4 + 3 * t**2, 0, 2), 1e-6)
+    a009 = lambda t: 6 * t**2 - 4 * t + 1
+    assert_close(errors, "t0_c_009.delta_v", field(exercises, "t0_c_009", "delta_v"), num_integral(a009, 0, 2), 1e-6)
+    assert_close(errors, "t0_c_009.v_2", field(exercises, "t0_c_009", "v_2"), 3 + num_integral(a009, 0, 2), 1e-6)
+    displacement010 = num_integral(lambda t: 2 * t + 1, 1, 3)
+    assert_close(errors, "t0_c_010.displacement", field(exercises, "t0_c_010", "displacement"), displacement010, 1e-6)
+    assert_close(errors, "t0_c_010.average_velocity", field(exercises, "t0_c_010", "average_velocity"), displacement010 / 2, 1e-6)
+    assert_close(errors, "t0_c_017.C", field(exercises, "t0_c_017", "C"), 3 - (3 * 1**2 - 4 * 1), 1e-9)
+
     # Measurement v5: expected value vs mean, farthest datum as error.
     g = [9.62, 9.71, 9.68, 9.75, 9.64]
     g_mean = sum(g) / len(g)

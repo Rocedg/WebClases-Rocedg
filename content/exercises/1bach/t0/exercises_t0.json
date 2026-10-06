@@ -7014,7 +7014,7 @@
       "topic": "t0",
       "concept": "Tema 0",
       "family": "calculus_graphs",
-      "subtype": "short_text_plus_numeric",
+      "subtype": "function_plus_numeric",
       "difficulty": 3,
       "estimated_minutes": 10,
       "response_mode": "structured",
@@ -7022,67 +7022,73 @@
       "response_fields": [
         {
           "id": "v_expression",
-          "label": "V expression",
+          "label": "Velocidad \\(v(t)\\)",
           "required": true,
-          "type": "numeric",
-          "expected_value": -3.0,
-          "tolerance": 0.01,
-          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "type": "function",
+          "response_kind": "function",
+          "variable": "t",
+          "canonical_expression": "-3+8*t^3",
+          "accepted_forms": [
+            "8*t^3-3"
+          ],
+          "prompt": "Escribe la expresión usando * para multiplicar y ^ para las potencias.",
+          "unit": "m/s",
           "part": "a"
         },
         {
           "id": "a_expression",
-          "label": "A expression",
+          "label": "Aceleración \\(a(t)\\)",
           "required": true,
-          "type": "numeric",
-          "expected_value": 24.0,
-          "tolerance": 0.01,
-          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "type": "function",
+          "response_kind": "function",
+          "variable": "t",
+          "canonical_expression": "24*t^2",
+          "accepted_forms": [],
+          "prompt": "Escribe la expresión usando * para multiplicar y ^ para las potencias.",
+          "unit": "m/s²",
           "part": "b"
         },
         {
           "id": "v_1",
-          "label": "V 1",
+          "label": "Velocidad en \\(t=1{,}00\\) s",
           "required": true,
           "type": "numeric",
           "expected_value": 5.0,
           "tolerance": 0.01,
-          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
-          "unit": "m s^-1",
-          "part": "b"
+          "unit": "m/s",
+          "part": "c"
         },
         {
           "id": "a_1",
-          "label": "A 1",
+          "label": "Aceleración en \\(t=1{,}00\\) s",
           "required": true,
           "type": "numeric",
           "expected_value": 24.0,
           "tolerance": 0.01,
-          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
-          "unit": "m s^-2",
-          "part": "b"
+          "unit": "m/s²",
+          "part": "c"
         }
       ],
       "assets": [],
       "tags": [
         "t0",
         "calculus_graphs",
-        "version_4"
+        "version_5"
       ],
       "origin": {
         "kind": "exercise_bank_t0_v4_spec",
         "source": "exercise-bank-t0-v4-spec.md"
       },
       "status": "active",
-      "version": 4,
+      "version": 5,
       "learning_objective": "Funciones, gráficas, derivadas e integrales",
       "common_mistakes": [
         "olvidar derivar la constante",
         "escribir unidades de posición en v/a",
         "decir que velocidad positiva implica necesariamente aceleración positiva en todo instante"
       ],
-      "statement_source": "La posición de una partícula es \\(x(t)=7-3t+2t^4\\) m, con t en s. \n(a) Obtén \\(v(t)\\) y \\(a(t)\\) con unidades.\n(b) Calcula ambas en \\(t=1,00\\) s.",
-      "solution_source": "\\(v=-3+8t^3\\) y \\(a=24t^2\\).\n\nEn 1,00 s, \\(v=5,00\\) m·s⁻¹ y \\(a=24,0\\) m·s⁻²; el movimiento instantáneo es hacia \\(+x\\).",
+      "statement_source": "La posición de una partícula es \\(x(t)=7-3t+2t^4\\), con \\(x\\) en m y \\(t\\) en s.\n\n(a) Deriva para obtener la velocidad \\(v(t)=\\dfrac{dx}{dt}\\).\n(b) Deriva otra vez para obtener la aceleración \\(a(t)=\\dfrac{dv}{dt}\\).\n(c) Calcula la velocidad y la aceleración en \\(t=1{,}00\\) s.",
+      "solution_source": "(a) La constante 7 deriva a cero; \\(-3t\\) da \\(-3\\) y \\(2t^4\\) da \\(2\\cdot4t^3=8t^3\\). Por tanto \\(v(t)=-3+8t^3\\) m/s.\n(b) \\(a(t)=\\dfrac{d}{dt}(-3+8t^3)=24t^2\\) m/s².\n(c) \\(v(1)=-3+8=5{,}00\\) m/s y \\(a(1)=24{,}0\\) m/s². La velocidad es positiva: en ese instante se mueve hacia \\(+x\\).",
       "solution_reference": "exercise-bank-t0-v4-spec.md"
     },
     {
@@ -7093,7 +7099,7 @@
       "topic": "t0",
       "concept": "Tema 0",
       "family": "calculus_graphs",
-      "subtype": "short_text_plus_numeric",
+      "subtype": "function_plus_numeric",
       "difficulty": 3,
       "estimated_minutes": 9,
       "response_mode": "structured",
@@ -7101,22 +7107,25 @@
       "response_fields": [
         {
           "id": "derivative",
-          "label": "Derivative",
+          "label": "Derivada \\(g'(x)\\)",
           "required": true,
-          "type": "numeric",
-          "expected_value": -5.0,
-          "tolerance": 0.01,
-          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
-          "unit": "x^-2+6x^-4",
+          "type": "function",
+          "response_kind": "function",
+          "variable": "x",
+          "canonical_expression": "-5*x^-2+6*x^-4",
+          "accepted_forms": [
+            "-5/x^2+6/x^4"
+          ],
+          "prompt": "Escribe la expresión usando * para multiplicar y ^ para las potencias.",
           "part": "a"
         },
         {
           "id": "value",
-          "label": "Value",
+          "label": "Valor de \\(g'(2)\\)",
           "required": true,
           "type": "numeric",
           "expected_value": -0.875,
-          "tolerance": 0.002,
+          "tolerance": 0.001,
           "part": "b"
         }
       ],
@@ -7124,22 +7133,22 @@
       "tags": [
         "t0",
         "calculus_graphs",
-        "version_4"
+        "version_5"
       ],
       "origin": {
         "kind": "exercise_bank_t0_v4_spec",
         "source": "exercise-bank-t0-v4-spec.md"
       },
       "status": "active",
-      "version": 4,
+      "version": 5,
       "learning_objective": "Funciones, gráficas, derivadas e integrales",
       "common_mistakes": [
         "convertir $x^{-1}$ en $-x$",
         "perder el signo de la segunda derivada",
         "incluir cero"
       ],
-      "statement_source": "Para \\(g(x)=5x^{-1}-2x^{-3}\\), \\(x\\ne0\\): \n(a) calcula \\(g'(x)\\);\n(b) evalúa \\(g'(2)\\);",
-      "solution_source": "\\(g'=-5x^{-2}+6x^{-4}\\) y \\(g'(2)=-5/4+6/16=-0,875\\).\n\nEl dominio excluye \\(x=0\\).",
+      "statement_source": "Sea \\(g(x)=5x^{-1}-2x^{-3}\\), con \\(x\\ne0\\).\n\n(a) Calcula la derivada \\(g'(x)\\) aplicando \\(\\dfrac{d}{dx}(cx^n)=c\\,n\\,x^{n-1}\\) también con exponentes negativos.\n(b) Calcula \\(g'(2)\\) con tres decimales.",
+      "solution_source": "(a) \\(5x^{-1}\\to5\\cdot(-1)x^{-2}=-5x^{-2}\\) y \\(-2x^{-3}\\to-2\\cdot(-3)x^{-4}=6x^{-4}\\). Por tanto \\(g'(x)=-5x^{-2}+6x^{-4}\\).\n(b) \\(g'(2)=-\\dfrac{5}{4}+\\dfrac{6}{16}=-1{,}250+0{,}375=-0{,}875\\). Al bajar el exponente, un exponente negativo se hace más negativo: de \\(-1\\) pasa a \\(-2\\).",
       "solution_reference": "exercise-bank-t0-v4-spec.md"
     },
     {
@@ -7150,42 +7159,61 @@
       "topic": "t0",
       "concept": "Tema 0",
       "family": "calculus_graphs",
-      "subtype": "short_text_plus_numeric",
+      "subtype": "numeric_multi",
       "difficulty": 3,
       "estimated_minutes": 9,
       "response_mode": "structured",
       "response_prompt": "Responde los apartados en sus campos.",
       "response_fields": [
         {
+          "id": "exponent",
+          "label": "Exponente de \\(x\\) en el segundo término",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -0.5,
+          "tolerance": 0.001,
+          "prompt": "Como número decimal, por ejemplo 0,5.",
+          "part": "a"
+        },
+        {
+          "id": "slope_1",
+          "label": "Pendiente \\(h'(1)\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 3.5,
+          "tolerance": 0.01,
+          "part": "b"
+        },
+        {
           "id": "slope",
-          "label": "Slope",
+          "label": "Pendiente \\(h'(4)\\)",
           "required": true,
           "type": "numeric",
           "expected_value": 1.0,
-          "tolerance": 0.005,
-          "part": "a"
+          "tolerance": 0.01,
+          "part": "c"
         }
       ],
       "assets": [],
       "tags": [
         "t0",
         "calculus_graphs",
-        "version_4"
+        "version_5"
       ],
       "origin": {
         "kind": "exercise_bank_t0_v4_spec",
         "source": "exercise-bank-t0-v4-spec.md"
       },
       "status": "active",
-      "version": 4,
+      "version": 5,
       "learning_objective": "Funciones, gráficas, derivadas e integrales",
       "common_mistakes": [
-        "derivar la raíz como $x^{-1/2}$ sin factor 1/2",
-        "mantener signo negativo en el segundo término",
-        "evaluar antes de derivar"
+        "escribir \\(1/\\sqrt{x}\\) como \\(x^{1/2}\\)",
+        "olvidar que bajar el exponente \\(-1/2\\) da \\(-3/2\\)",
+        "cambiar el signo del segundo término al derivar"
       ],
-      "statement_source": "Reescribe \\(h(x)=3\\sqrt{x}-4/\\sqrt{x}\\) como potencias, deriva para \\(x>0\\) y calcula la pendiente en \\(x=4\\).\n\n(a) Completa: Slope.",
-      "solution_source": "\\(h'=\\tfrac32x^{-1/2}+2x^{-3/2}\\).\n\nEn \\(x=4\\): \\(3/4+1/4=1\\).",
+      "statement_source": "Sea \\(h(x)=3\\sqrt{x}-\\dfrac{4}{\\sqrt{x}}\\), con \\(x>0\\).\n\n(a) Reescribe \\(h\\) como suma de potencias de \\(x\\) e indica el exponente del segundo término.\n(b) Deriva y calcula la pendiente \\(h'(1)\\).\n(c) Calcula la pendiente \\(h'(4)\\).",
+      "solution_source": "(a) \\(\\sqrt{x}=x^{1/2}\\) y \\(1/\\sqrt{x}=x^{-1/2}\\), así que \\(h(x)=3x^{1/2}-4x^{-1/2}\\): el segundo exponente es \\(-0{,}5\\).\n(b) \\(h'(x)=\\tfrac32x^{-1/2}+2x^{-3/2}\\). En \\(x=1\\): \\(1{,}5+2=3{,}5\\).\n(c) En \\(x=4\\): \\(x^{-1/2}=\\tfrac12\\) y \\(x^{-3/2}=\\tfrac18\\), luego \\(h'(4)=0{,}75+0{,}25=1{,}0\\).",
       "solution_reference": "exercise-bank-t0-v4-spec.md"
     },
     {
@@ -7261,7 +7289,7 @@
       "response_fields": [
         {
           "id": "average_velocity",
-          "label": "Average velocity",
+          "label": "Velocidad media entre 1,0 s y 2,0 s",
           "required": true,
           "type": "numeric",
           "expected_value": 3.0,
@@ -7272,7 +7300,7 @@
         },
         {
           "id": "instant_velocity",
-          "label": "Instant velocity",
+          "label": "Velocidad instantánea en 2,0 s",
           "required": true,
           "type": "numeric",
           "expected_value": 8.0,
@@ -7283,7 +7311,7 @@
         },
         {
           "id": "acceleration",
-          "label": "Acceleration",
+          "label": "Aceleración en 2,0 s",
           "required": true,
           "type": "numeric",
           "expected_value": 12.0,
@@ -7311,8 +7339,8 @@
         "dividir posición final por tiempo final",
         "confundir v con a"
       ],
-      "statement_source": "Una posición viene dada por \\(x(t)=t^3-4t\\) m. \n(a) Calcula la velocidad media entre 1,0 s y 2,0 s.\n(b) Calcula la velocidad instantánea y la aceleración en 2,0 s.\n(c) Completa: Acceleration.",
-      "solution_source": "\\(v_{med}=[0-(-3)]/(2-1)=3\\) m/s.\n\n\\(v=3t^2-4\\), luego \\(v(2)=8\\) m/s; \\(a=6t\\), luego \\(a(2)=12\\) m/s².",
+      "statement_source": "Una posición viene dada por \\(x(t)=t^3-4t\\), con \\(x\\) en m y \\(t\\) en s.\n\n(a) Calcula la velocidad media entre \\(1{,}0\\) s y \\(2{,}0\\) s, \\(v_{med}=\\dfrac{x(2)-x(1)}{2-1}\\).\n(b) Deriva y calcula la velocidad instantánea en \\(2{,}0\\) s.\n(c) Calcula la aceleración en \\(2{,}0\\) s.",
+      "solution_source": "(a) \\(x(1)=1-4=-3\\) m y \\(x(2)=8-8=0\\) m, así que \\(v_{med}=\\dfrac{0-(-3)}{1}=3\\) m/s.\n(b) \\(v(t)=3t^2-4\\), luego \\(v(2)=12-4=8\\) m/s. No coincide con la media: la velocidad cambia dentro del intervalo.\n(c) \\(a(t)=6t\\), luego \\(a(2)=12\\) m/s².",
       "solution_reference": "exercise-bank-t0-v4-spec.md"
     },
     {
@@ -7417,7 +7445,7 @@
       "topic": "t0",
       "concept": "Tema 0",
       "family": "calculus_graphs",
-      "subtype": "short_text_plus_numeric",
+      "subtype": "function_plus_numeric",
       "difficulty": 3,
       "estimated_minutes": 10,
       "response_mode": "structured",
@@ -7425,33 +7453,45 @@
       "response_fields": [
         {
           "id": "v_expression",
-          "label": "V expression",
+          "label": "Velocidad \\(v(t)\\)",
           "required": true,
-          "type": "numeric",
-          "expected_value": 4.0,
-          "tolerance": 0.01,
-          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "type": "function",
+          "response_kind": "function",
+          "variable": "t",
+          "canonical_expression": "-2+4*t+t^3",
+          "accepted_forms": [
+            "t^3+4*t-2"
+          ],
+          "prompt": "Escribe la expresión usando * para multiplicar y ^ para las potencias.",
+          "unit": "m/s",
           "part": "a"
         },
         {
           "id": "v_2",
-          "label": "V 2",
+          "label": "Velocidad en \\(t=2{,}0\\) s",
           "required": true,
           "type": "numeric",
           "expected_value": 14.0,
           "tolerance": 0.01,
-          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
-          "unit": "m s^-1",
+          "unit": "m/s",
           "part": "b"
         },
         {
-          "id": "conceptual_no_la_condici_n_fija_C",
-          "label": "Conceptual: no, la condición fija C",
+          "id": "constant_needed",
+          "label": "¿Basta con una primitiva sin constante?",
           "required": true,
-          "type": "numeric",
-          "expected_value": -2.0,
-          "tolerance": 0.01,
-          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "no",
+              "label": "No: la condición inicial es la que fija la constante"
+            },
+            {
+              "id": "si",
+              "label": "Sí: la constante siempre vale cero"
+            }
+          ],
+          "correct_option_id": "no",
           "part": "c"
         }
       ],
@@ -7459,22 +7499,22 @@
       "tags": [
         "t0",
         "calculus_graphs",
-        "version_4"
+        "version_5"
       ],
       "origin": {
         "kind": "exercise_bank_t0_v4_spec",
         "source": "exercise-bank-t0-v4-spec.md"
       },
       "status": "active",
-      "version": 4,
+      "version": 5,
       "learning_objective": "Funciones, gráficas, derivadas e integrales",
       "common_mistakes": [
         "olvidar C",
         "usar C=0 automáticamente",
         "derivar en lugar de integrar"
       ],
-      "statement_source": "Una partícula tiene \\(a(t)=4+3t^2\\) m·s⁻² y \\(v(0)=-2\\) m·s⁻¹. \n(a) Obtén \\(v(t)\\).\n(b) Calcula v(2,0 s).\n(c) Indica si basta con una primitiva sin constante.",
-      "solution_source": "una primitiva es \\(4t+t^3+C\\); \\(v(0)=-2\\) da \\(C=-2\\).\n\nAsí \\(v(2)=8+8-2=14 m/s\\).",
+      "statement_source": "Una partícula tiene aceleración \\(a(t)=4+3t^2\\) m/s² y velocidad inicial \\(v(0)=-2\\) m/s.\n\n(a) Integra para obtener \\(v(t)\\), usando la condición inicial para fijar la constante.\n(b) Calcula \\(v(2{,}0\\ \\mathrm{s})\\).\n(c) Indica si basta con una primitiva sin constante.",
+      "solution_source": "(a) Una primitiva es \\(4t+t^3+C\\). Con \\(v(0)=-2\\): \\(C=-2\\) m/s, así que \\(v(t)=-2+4t+t^3\\) m/s.\n(b) \\(v(2)=-2+8+8=14\\) m/s.\n(c) No. Sin la constante saldría \\(v(0)=0\\), que contradice el dato: la condición inicial es la que fija \\(C\\).",
       "solution_reference": "exercise-bank-t0-v4-spec.md"
     },
     {
@@ -7485,7 +7525,7 @@
       "topic": "t0",
       "concept": "Tema 0",
       "family": "calculus_graphs",
-      "subtype": "short_text_plus_numeric",
+      "subtype": "function_plus_numeric",
       "difficulty": 4,
       "estimated_minutes": 11,
       "response_mode": "structured",
@@ -7493,35 +7533,35 @@
       "response_fields": [
         {
           "id": "v_expression",
-          "label": "V expression",
+          "label": "Velocidad \\(v(t)\\)",
           "required": true,
-          "type": "numeric",
-          "expected_value": 2.0,
-          "tolerance": 0.01,
-          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
-          "unit": "t^3-2t^2+t+3",
+          "type": "function",
+          "response_kind": "function",
+          "variable": "t",
+          "canonical_expression": "2*t^3-2*t^2+t+3",
+          "accepted_forms": [],
+          "prompt": "Escribe la expresión usando * para multiplicar y ^ para las potencias.",
+          "unit": "m/s",
           "part": "a"
         },
         {
           "id": "delta_v",
-          "label": "Delta v",
+          "label": "Cambio de velocidad \\(\\Delta v\\) entre 0 y 2 s",
           "required": true,
           "type": "numeric",
           "expected_value": 10.0,
           "tolerance": 0.01,
-          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
-          "unit": "m s^-1",
+          "unit": "m/s",
           "part": "b"
         },
         {
           "id": "v_2",
-          "label": "V 2",
+          "label": "Velocidad en \\(t=2\\) s",
           "required": true,
           "type": "numeric",
           "expected_value": 13.0,
           "tolerance": 0.01,
-          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
-          "unit": "m s^-1",
+          "unit": "m/s",
           "part": "c"
         }
       ],
@@ -7529,22 +7569,22 @@
       "tags": [
         "t0",
         "calculus_graphs",
-        "version_4"
+        "version_5"
       ],
       "origin": {
         "kind": "exercise_bank_t0_v4_spec",
         "source": "exercise-bank-t0-v4-spec.md"
       },
       "status": "active",
-      "version": 4,
+      "version": 5,
       "learning_objective": "Funciones, gráficas, derivadas e integrales",
       "common_mistakes": [
         "sumar v(0) dentro de $\\Delta v$",
         "omitir límites",
         "perder el término lineal"
       ],
-      "statement_source": "\\(a(t)=6t^2-4t+1\\) m·s⁻² y \\(v(0)=3\\) m·s⁻¹. \n(a) Halla \\(v(t)\\).\n(b) Calcula el cambio de velocidad entre 0 y 2 s mediante una integral definida.\n(c) Completa: V 2.",
-      "solution_source": "\\(v=2t^3-2t^2+t+3\\).\n\nLa integral vale \\([2t^3-2t^2+t]_0^2=10\\) m/s y \\(13−3\\)=10.",
+      "statement_source": "Una partícula tiene aceleración \\(a(t)=6t^2-4t+1\\) m/s² y velocidad inicial \\(v(0)=3\\) m/s.\n\n(a) Integra para obtener \\(v(t)\\).\n(b) Calcula el cambio de velocidad entre \\(0\\) y \\(2\\) s con la integral definida \\(\\Delta v=\\displaystyle\\int_0^2a(t)\\,dt\\).\n(c) Calcula \\(v(2\\ \\mathrm{s})\\) y comprueba que \\(v(2)=v(0)+\\Delta v\\).",
+      "solution_source": "(a) Primitiva: \\(2t^3-2t^2+t+C\\). Con \\(v(0)=3\\), \\(C=3\\): \\(v(t)=2t^3-2t^2+t+3\\) m/s.\n(b) \\(\\Delta v=[2t^3-2t^2+t]_0^2=16-8+2-0=10\\) m/s. En la integral definida la constante se cancela.\n(c) \\(v(2)=16-8+2+3=13\\) m/s, que es \\(3+10\\).",
       "solution_reference": "exercise-bank-t0-v4-spec.md"
     },
     {
@@ -7574,13 +7614,13 @@
         },
         {
           "id": "average_velocity",
-          "label": "Average velocity",
+          "label": "Velocidad media",
           "required": true,
           "type": "numeric",
           "expected_value": 5.0,
           "tolerance": 0.01,
           "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
-          "unit": "m s^-1",
+          "unit": "m/s",
           "part": "b"
         }
       ],
@@ -7602,8 +7642,8 @@
         "confundir área con velocidad",
         "dividir entre 3 s y no entre 2 s"
       ],
-      "statement_source": "La velocidad es \\(v(t)=2t+1\\) m·s⁻¹. Entre \\(t=1 s\\) y \\(t=3 s\\): \n(a) calcula el desplazamiento por integración;\n(b) calcula la velocidad media;",
-      "solution_source": "\\(\\int_1^3(2t+1)dt=10\\) m.\n\n\\(v_{med}=10/2=5\\) m/s.\n\nTrapecio: \\((3+7)2/2=10\\) m.",
+      "statement_source": "La velocidad de un móvil es \\(v(t)=2t+1\\) m/s. Entre \\(t=1\\) s y \\(t=3\\) s:\n\n(a) calcula el desplazamiento integrando, \\(\\Delta x=\\displaystyle\\int_1^3v(t)\\,dt\\);\n(b) calcula la velocidad media, \\(v_{med}=\\Delta x/\\Delta t\\).",
+      "solution_source": "(a) \\(\\Delta x=[t^2+t]_1^3=(9+3)-(1+1)=10\\) m. Comprobación geométrica: el área bajo \\(v(t)\\) es un trapecio, \\((3+7)\\cdot2/2=10\\) m.\n(b) \\(v_{med}=10/2=5\\) m/s.",
       "solution_reference": "exercise-bank-t0-v4-spec.md"
     },
     {
@@ -8044,7 +8084,7 @@
       "topic": "t0",
       "concept": "Tema 0",
       "family": "calculus_graphs",
-      "subtype": "short_text_multi",
+      "subtype": "function_plus_numeric",
       "difficulty": 4,
       "estimated_minutes": 11,
       "response_mode": "structured",
@@ -8052,23 +8092,23 @@
       "response_fields": [
         {
           "id": "C",
-          "label": "C",
+          "label": "Constante \\(C\\)",
           "required": true,
           "type": "numeric",
           "expected_value": 4.0,
           "tolerance": 0.01,
-          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
-          "part": "b"
+          "part": "a"
         },
         {
           "id": "f",
-          "label": "F",
+          "label": "Función \\(f(x)\\)",
           "required": true,
-          "type": "numeric",
-          "expected_value": 3.0,
-          "tolerance": 0.01,
-          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
-          "unit": "x^2-4x+4",
+          "type": "function",
+          "response_kind": "function",
+          "variable": "x",
+          "canonical_expression": "3*x^2-4*x+4",
+          "accepted_forms": [],
+          "prompt": "Escribe la expresión usando * para multiplicar y ^ para las potencias.",
           "part": "b"
         }
       ],
@@ -8076,22 +8116,22 @@
       "tags": [
         "t0",
         "calculus_graphs",
-        "version_4"
+        "version_5"
       ],
       "origin": {
         "kind": "exercise_bank_t0_v4_spec",
         "source": "exercise-bank-t0-v4-spec.md"
       },
       "status": "active",
-      "version": 4,
+      "version": 5,
       "learning_objective": "Funciones, gráficas, derivadas e integrales",
       "common_mistakes": [
         "omitir C",
         "imponer f(0)=3",
         "comprobar solo una de las dos condiciones"
       ],
-      "statement_source": "Se sabe que \\(f'(x)=6x-4\\) y \\(f(1)=3\\). \n(b) Usa la condición para obtener f.",
-      "solution_source": "\\(f=3x^2-4x+C\\).\n\nComo \\(f(1)=3\\), \\(3-4+C=3\\), así que \\(C=4\\).",
+      "statement_source": "Se sabe que \\(f'(x)=6x-4\\) y que \\(f(1)=3\\).\n\n(a) Escribe la primitiva general \\(f(x)=\\ldots+C\\) y usa \\(f(1)=3\\) para calcular \\(C\\).\n(b) Escribe \\(f(x)\\) completa.",
+      "solution_source": "(a) Una primitiva de \\(6x-4\\) es \\(3x^2-4x\\), así que \\(f(x)=3x^2-4x+C\\). Con \\(f(1)=3\\): \\(3-4+C=3\\Rightarrow C=4\\).\n(b) \\(f(x)=3x^2-4x+4\\). Comprobación: al derivar sale \\(6x-4\\) y \\(f(1)=3\\).",
       "solution_reference": "exercise-bank-t0-v4-spec.md"
     },
     {

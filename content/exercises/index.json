@@ -1,7 +1,7 @@
 {
   "version": 1,
   "generated": true,
-  "generated_at": "2026-09-29T18:00:25Z",
+  "generated_at": "2026-10-06T14:32:08Z",
   "source": "content/exercises",
   "exercises": [
     {
@@ -1800,14 +1800,14 @@
     },
     {
       "id": "t0_c_001",
-      "version": 4,
+      "version": 5,
       "title": "De posición a velocidad y aceleración",
       "course": "1bach",
       "block": "Funciones, gráficas, derivadas e integrales",
       "topic": "t0",
       "concept": "Tema 0",
       "exercise_type": "Funciones, gráficas, derivadas e integrales",
-      "subtype": "short_text_plus_numeric",
+      "subtype": "function_plus_numeric",
       "difficulty": 3,
       "estimated_time_min": 10,
       "statement_pdf": null,
@@ -1815,7 +1815,7 @@
       "tags": [
         "t0",
         "calculus_graphs",
-        "version_4"
+        "version_5"
       ],
       "workflow": {
         "status": "active"
@@ -1823,14 +1823,14 @@
     },
     {
       "id": "t0_c_002",
-      "version": 4,
+      "version": 5,
       "title": "Potencias negativas y tasa local",
       "course": "1bach",
       "block": "Funciones, gráficas, derivadas e integrales",
       "topic": "t0",
       "concept": "Tema 0",
       "exercise_type": "Funciones, gráficas, derivadas e integrales",
-      "subtype": "short_text_plus_numeric",
+      "subtype": "function_plus_numeric",
       "difficulty": 3,
       "estimated_time_min": 9,
       "statement_pdf": null,
@@ -1838,7 +1838,7 @@
       "tags": [
         "t0",
         "calculus_graphs",
-        "version_4"
+        "version_5"
       ],
       "workflow": {
         "status": "active"
@@ -1846,14 +1846,14 @@
     },
     {
       "id": "t0_c_003",
-      "version": 4,
+      "version": 5,
       "title": "Raíces como potencias",
       "course": "1bach",
       "block": "Funciones, gráficas, derivadas e integrales",
       "topic": "t0",
       "concept": "Tema 0",
       "exercise_type": "Funciones, gráficas, derivadas e integrales",
-      "subtype": "short_text_plus_numeric",
+      "subtype": "numeric_multi",
       "difficulty": 3,
       "estimated_time_min": 9,
       "statement_pdf": null,
@@ -1861,7 +1861,7 @@
       "tags": [
         "t0",
         "calculus_graphs",
-        "version_4"
+        "version_5"
       ],
       "workflow": {
         "status": "active"
@@ -1938,14 +1938,14 @@
     },
     {
       "id": "t0_c_008",
-      "version": 4,
+      "version": 5,
       "title": "De aceleración a velocidad con condición inicial",
       "course": "1bach",
       "block": "Funciones, gráficas, derivadas e integrales",
       "topic": "t0",
       "concept": "Tema 0",
       "exercise_type": "Funciones, gráficas, derivadas e integrales",
-      "subtype": "short_text_plus_numeric",
+      "subtype": "function_plus_numeric",
       "difficulty": 3,
       "estimated_time_min": 10,
       "statement_pdf": null,
@@ -1953,7 +1953,7 @@
       "tags": [
         "t0",
         "calculus_graphs",
-        "version_4"
+        "version_5"
       ],
       "workflow": {
         "status": "active"
@@ -1961,14 +1961,14 @@
     },
     {
       "id": "t0_c_009",
-      "version": 4,
+      "version": 5,
       "title": "Cambio de velocidad acumulado",
       "course": "1bach",
       "block": "Funciones, gráficas, derivadas e integrales",
       "topic": "t0",
       "concept": "Tema 0",
       "exercise_type": "Funciones, gráficas, derivadas e integrales",
-      "subtype": "short_text_plus_numeric",
+      "subtype": "function_plus_numeric",
       "difficulty": 4,
       "estimated_time_min": 11,
       "statement_pdf": null,
@@ -1976,7 +1976,7 @@
       "tags": [
         "t0",
         "calculus_graphs",
-        "version_4"
+        "version_5"
       ],
       "workflow": {
         "status": "active"
@@ -2145,14 +2145,14 @@
     },
     {
       "id": "t0_c_017",
-      "version": 4,
+      "version": 5,
       "title": "Recuperar una función desde su derivada",
       "course": "1bach",
       "block": "Funciones, gráficas, derivadas e integrales",
       "topic": "t0",
       "concept": "Tema 0",
       "exercise_type": "Funciones, gráficas, derivadas e integrales",
-      "subtype": "short_text_multi",
+      "subtype": "function_plus_numeric",
       "difficulty": 4,
       "estimated_time_min": 11,
       "statement_pdf": null,
@@ -2160,7 +2160,7 @@
       "tags": [
         "t0",
         "calculus_graphs",
-        "version_4"
+        "version_5"
       ],
       "workflow": {
         "status": "active"

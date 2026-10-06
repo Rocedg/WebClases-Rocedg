@@ -219,7 +219,28 @@ def test_t0_v5_expected_answers_grade_as_correct():
                     values[field["id"]] = field["correct_option_id"]
                 elif field["type"] == "short_text":
                     values[field["id"]] = field["accepted_forms"][0]
+                elif field["type"] == "function":
+                    values[field["id"]] = field["canonical_expression"]
             attempt, _ = start_or_resume_attempt("Guest", exercise)
             submit_attempt("Guest", attempt.id, exercise, values)
             wrong = [r.field_id for r in attempt.responses if r.grading_status != GRADE_CORRECT]
             assert not wrong, (exercise["id"], wrong)
+
+
+def test_t0_calculus_function_fields_accept_equivalent_forms():
+    from services.exercise_attempt_service import _functions_equivalent
+
+    bank = load_t0_bank()
+    fields = [
+        field
+        for exercise in bank["exercises"]
+        if exercise["id"].startswith("t0_c_")
+        for field in exercise["response_fields"]
+        if field["type"] == "function"
+    ]
+    assert fields
+    for field in fields:
+        for form in field.get("accepted_forms", []):
+            assert _functions_equivalent(form, field["canonical_expression"]), (field["id"], form)
+    assert _functions_equivalent("8*t^3 - 3", "-3+8*t^3")
+    assert not _functions_equivalent("8*t^2-3", "-3+8*t^3")
