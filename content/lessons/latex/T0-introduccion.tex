@@ -1,6 +1,6 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage{webclases-lesson}
-\lessonSetup{T0}{v0.5}{T0 - Herramientas para empezar Fisica}
+\lessonSetup{T0}{v0.6}{T0 - Herramientas para empezar Fisica}
 \begin{document}
 \shorthandoff{<>}
 \color{Ink}
@@ -11,7 +11,8 @@ direcci\'on o tama\~no ser\'ia razonable. Estas herramientas se reutilizar\'an e
 \indexentry{sec:b1}{1. Medir y comprobar unidades}
 \indexentry{sec:b2}{2. Pensar con vectores}
 \indexentry{sec:b3}{3. Cu\'anto confiar en una medida}
-\indexentry{sec:b4}{4. Leer cambios y acumulaciones}
+\indexentry{sec:cifras}{4. Cifras significativas}
+\indexentry{sec:b4}{5. Leer cambios y acumulaciones}
 \end{lessonindex}
 
 \block{1}{Medir y comprobar unidades}{sec:b1}
@@ -213,6 +214,21 @@ Sin referencia no podemos conocer ese error: comunicamos $x\pm\Delta x$ y
 el criterio usado para estimar $\Delta x$.
 La incertidumbre relativa $\Delta x/|x|$ compara calidad entre escalas.
 
+\begin{keybox}
+\textbf{¿Respecto a qu\'e valor?} El \textbf{valor de referencia esperado,
+te\'orico o tabulado} viene de fuera del experimento; por ejemplo,
+$g=9{,}81\units{m/s^2}$. Si el problema lo da, el error y la exactitud se juzgan
+respecto a \'el. La \textbf{media de las medidas $\bar x$} es la mejor estimaci\'on
+que sale de nuestros datos, pero solo coincidir\'ia con el valor real si no hubiera
+error sistem\'atico, algo que los datos solos no permiten saber.
+
+\textbf{Regla:} si aparece el valor esperado, \'usalo como referencia para el error;
+si no, usa la media y dilo. Con la media como referencia medimos
+\textbf{dispersi\'on (precisi\'on)}, no exactitud. El resultado siempre se centra
+en la medida, $\bar x\pm\Delta x$; el valor esperado sirve para calcular el error y
+comprobar si cae dentro de ese intervalo.
+\end{keybox}
+
 \begin{examplebox}{medidas repetidas}
 \origin{Elaboraci\'on propia.}
 \step{Planteamiento} Cinco longitudes en cm:
@@ -231,22 +247,6 @@ declarado. No es una incertidumbre estad\'istica de la media ni un intervalo con
 probabilidad de cobertura especificada. Su incertidumbre relativa es
 $0,02/12,42=0,00161$, aproximadamente $0,16\,\text{\%}$.
 \end{examplebox}
-
-\heading{Cifras que se pueden defender}
-$0,00450$ tiene tres cifras significativas: los primeros ceros sit\'uan la coma y
-el \'ultimo cero comunica precisi\'on. $4,50\cdot10^{-3}$ lo hace expl\'icito.
-Para operaciones sin incertidumbres dadas, estas reglas son aproximaciones:
-\begin{itemize}
-\item En sumas y restas manda el dato con menos decimales:
-$12,3+0,45=12,75\to12,8$.
-\item En productos y cocientes manda el menor n\'umero de cifras significativas:
-$2,4\cdot3,12=7,488\to7,5$.
-\item Con incertidumbre expl\'icita, redondea primero esa incertidumbre
-(normalmente una o dos cifras) y el valor al mismo decimal.
-Conserva cifras de guarda durante el c\'alculo.
-\end{itemize}
-Los conteos exactos y las conversiones definidas, como $1\units{m}=100\units{cm}$,
-no introducen por s\'i mismos incertidumbre.
 
 \heading{Propagar una incertidumbre peque\~na}
 Como estimaci\'on lineal conservadora, se suman incertidumbres absolutas al sumar o
@@ -274,7 +274,92 @@ $1,19/2,40=0,4958$ y $1,21/2,32=0,5216\mps$ dan un intervalo parecido.
 La contribuci\'on relativa del tiempo es la mayor; mejorar solo la regla ayudar\'ia menos.
 \end{exercisebox}
 
-\block{4}{Leer cambios y acumulaciones}{sec:b4}
+\begin{examplebox}{el intervalo sobre una regla}
+\origin{Elaboraci\'on propia.}
+Cinco medidas en cm son $12{,}40;\ 12{,}41;\ 12{,}41;\ 12{,}43;\ 12{,}45$, con
+resoluci\'on $0{,}01\units{cm}$. Su media es
+$\bar x=62{,}10/5=12{,}42\units{cm}$ y las desviaciones son
+$-0{,}02;\ -0{,}01;\ -0{,}01;\ +0{,}01;\ +0{,}03\units{cm}$.
+Por tanto, la m\'axima desviaci\'on es $\Delta x=0{,}03\units{cm}$.
+\begin{center}
+\begin{tikzpicture}[x=1.15cm,y=1cm,font=\scriptsize]
+\draw[axis] (-.35,0)--(9.45,0);
+\foreach \i in {0,...,9} {
+  \draw (\i,0)--(\i,-.14);
+}
+\foreach \i/\value in {0/{12{,}38},1/{12{,}39},2/{12{,}40},3/{12{,}41},4/{12{,}42},5/{12{,}43},6/{12{,}44},7/{12{,}45},8/{12{,}46},9/{12{,}47}} {
+  \node[below=2pt] at (\i,0) {\value};
+}
+\draw[GreenLine!80!black,very thick] (1,1.02)--(7,1.02);
+\draw[GreenLine!80!black,thick] (1,1.02)--(1,.82) (7,1.02)--(7,.82);
+\node[above=3pt] at (4,1.02) {$[12{,}39;\ 12{,}45]$};
+\fill[BrandBlue] (2,.25) circle (2.1pt);
+\fill[BrandBlue] (3,.25) circle (2.1pt);
+\fill[BrandBlue] (3,.42) circle (2.1pt);
+\fill[BrandBlue] (5,.25) circle (2.1pt);
+\fill[BrandBlue] (7,.25) circle (2.1pt);
+\draw[AmberLine!92!black,thick] (4,.13)--(4,.68);
+\node[above] at (4,.7) {$\bar x=12{,}42$};
+\draw[RedLine,thick,dashed] (2,-.1)--(2,.68);
+\node[below=15pt] at (2,0) {$L_{\rm ref}=12{,}40$};
+\end{tikzpicture}
+\end{center}
+$L=(12{,}42\pm0{,}03)\units{cm}$ construye un intervalo que contiene todas las
+medidas. Tambi\'en puede escribirse
+$[x_{\min},x_{\max}]=[12{,}40;\ 12{,}45]\units{cm}$. En esta segunda notaci\'on,
+$c=(x_{\min}+x_{\max})/2=12{,}425$ y
+$\Delta=(x_{\max}-x_{\min})/2=0{,}025\units{cm}$, la semidispersi\'on.
+Los corchetes $[a;b]$ y $c\pm\Delta$ son dos formas de nombrar un mismo
+intervalo; en F\'isica suele preferirse $\pm$. Centrar en la media y usar la
+m\'axima desviaci\'on da un intervalo algo m\'as ancho que sigue conteniendo
+todas las medidas.
+\end{examplebox}
+
+\block{4}{Cifras significativas}{sec:cifras}
+Una cifra significativa es un d\'igito que aporta informaci\'on sobre la medida:
+comunica hasta qu\'e decimal defendemos su precisi\'on. Los ceros iniciales solo
+sit\'uan la coma; los dem\'as pueden comunicar precisi\'on.
+\begin{tabularx}{\linewidth}{@{}p{5.2cm}Y@{}}
+\toprule
+Regla & Ejemplo\\
+\midrule
+D\'igitos distintos de cero cuentan; los ceros entre ellos tambi\'en. &
+$305$ tiene 3 cifras significativas.\\
+Ceros iniciales no cuentan. & $0{,}00450$ tiene 3.\\
+Ceros finales tras la coma cuentan. & $12{,}30$ tiene 4.\\
+Ceros finales de un entero son ambiguos: usa notaci\'on cient\'ifica. &
+$1200$: $1,2\cdot10^3$ tiene 2; $1,200\cdot10^3$ tiene 4.\\
+Conteos exactos y conversiones definidas no limitan las cifras. &
+$1\units{m}=100\units{cm}$ es exacta.\\
+\bottomrule
+\end{tabularx}
+
+\heading{Redondear y operar}
+$0{,}004587$ a 2 cifras significativas es $0{,}0046$; $2{,}349$ a 2 es $2{,}3$.
+En sumas y restas manda el dato con menos decimales:
+$12{,}3+0{,}45=12{,}75\to12{,}8$ y
+$105{,}3+2{,}456=107{,}756\to107{,}8$. En productos y cocientes manda el menor
+n\'umero de cifras significativas:
+$2{,}4\cdot3{,}12=7{,}488\to7{,}5$ y
+$3{,}0\cdot4{,}56/1{,}2345=11{,}08\ldots\to11$.
+Conserva cifras de guarda durante el c\'alculo y redondea solo al final.
+
+\heading{Cuando hay una incertidumbre expl\'icita}
+Redondea primero $\Delta x$ a una cifra (o a dos si empieza por 1) y despu\'es
+el valor hasta el mismo decimal:
+$9{,}8137\pm0{,}0462\to(9{,}81\pm0{,}05)$. El ejemplo de la regla se escribe,
+con el mismo criterio, como $(12{,}42\pm0{,}03)\units{cm}$.
+
+\begin{exercisebox}{contar y redondear}
+Indica las cifras significativas de $0{,}0305$, $250{,}0$ y $2{,}50\cdot10^2$.
+Redondea $4{,}376\pm0{,}084$ siguiendo la regla de incertidumbres.
+\solutionblock
+$0{,}0305$ tiene 3; $250{,}0$ tiene 4; $2{,}50\cdot10^2$ tiene 3.
+La incertidumbre empieza por 8: $0{,}084\to0{,}08$, y el valor al mismo decimal es
+$4{,}38$. Resultado: $(4{,}38\pm0{,}08)$.
+\end{exercisebox}
+
+\block{5}{Leer cambios y acumulaciones}{sec:b4}
 Una gr\'afica temporal no dibuja el camino en el espacio: el eje horizontal es el
 tiempo. La pendiente compara el cambio vertical con el horizontal y conserva unidades.
 En $x(t)$, $\Delta x/\Delta t$ es una velocidad media; la derivada da la instant\'anea.
