@@ -9,7 +9,15 @@ from sqlalchemy import inspect, text
 from flask import Flask, flash, jsonify, redirect, render_template, request, send_file, session, url_for
 
 from database import db, init_app as init_database
-from models import User
+from models import (
+    ExerciseAttempt,
+    User,
+    UserActivityEvent,
+    UserQuizAttempt,
+    UserResourceAccess,
+    UserStudyState,
+    UserTopicProgress,
+)
 from services.exercise_presentation import exercise_number, render_exercise_source, response_format_notes, response_placeholder
 from services.exercise_bank_loader import load_topic_banks
 from services.activity_service import (
@@ -28,6 +36,7 @@ from services.exercise_attempt_service import (
     field_map,
     format_duration,
     get_catalogue_attempt_summaries,
+    get_attempt_for_teacher,
     get_owned_attempt,
     get_student_attempt_history,
     latest_started_attempt,
@@ -117,10 +126,10 @@ NAV_ITEMS = [
         'icon': 'fa-chart-line'
     },
     {
-        'endpoint': 'teacher_accounts',
-        'label': 'Cuentas',
-        'description': 'Gestionar alumnos',
-        'icon': 'fa-users',
+        'endpoint': 'teacher',
+        'label': 'Panel',
+        'description': 'Seguimiento de alumnos',
+        'icon': 'fa-chart-line',
         'teacher_only': True,
     }
 ]
@@ -336,6 +345,75 @@ def send_inline_lesson_pdf(lesson):
 
 def current_username():
     return session.get('username')
+
+
+def list_student_usernames():
+    usernames = {
+        user.username
+        for user in db.session.scalars(
+            db.select(User).where(User.role == ROLE_STUDENT)
+        ).all()
+    }
+    for model in (
+        ExerciseAttempt,
+        UserActivityEvent,
+        UserQuizAttempt,
+        UserResourceAccess,
+        UserStudyState,
+        UserTopicProgress,
+    ):
+        usernames.update(
+            username
+            for username in db.session.scalars(
+                db.select(model.username).distinct()
+            ).all()
+            if username
+        )
+    return sorted(usernames, key=str.casefold)
+
+
+def teacher_student_summary(username, exercises):
+    snapshot = get_user_activity_snapshot(username, exercises=exercises)
+    user = db.session.scalar(db.select(User).where(User.username == username))
+    dates = [
+        snapshot['latest_topic'].last_opened_at if snapshot['latest_topic'] else None,
+        snapshot['study_state'].last_lesson_at if snapshot['study_state'] else None,
+        snapshot['study_state'].last_exercise_at if snapshot['study_state'] else None,
+        db.session.scalar(
+            db.select(db.func.max(ExerciseAttempt.updated_at)).where(
+                ExerciseAttempt.username == username
+            )
+        ),
+        db.session.scalar(
+            db.select(db.func.max(UserActivityEvent.created_at)).where(
+                UserActivityEvent.username == username
+            )
+        ),
+        db.session.scalar(
+            db.select(db.func.max(UserResourceAccess.created_at)).where(
+                UserResourceAccess.username == username
+            )
+        ),
+        db.session.scalar(
+            db.select(db.func.max(UserQuizAttempt.submitted_at)).where(
+                UserQuizAttempt.username == username
+            )
+        ),
+    ]
+    latest_activity = max((date for date in dates if date), default=None)
+    state = snapshot['study_state']
+    latest_topic = (
+        snapshot['latest_topic'].topic_title
+        if snapshot['latest_topic']
+        else state.last_exercise_topic_title if state else None
+    )
+    return {
+        'username': username,
+        'user': user,
+        'snapshot': snapshot,
+        'latest_activity': latest_activity,
+        'latest_topic': latest_topic,
+    }
 
 
 def lesson_topic_key(lesson):
@@ -713,6 +791,63 @@ def teacher_accounts():
         db.select(User).order_by(User.role, User.username)
     ).all()
     return render_template('teacher/accounts.html', users=users)
+
+
+@app.route('/teacher')
+@teacher_required
+def teacher():
+    exercises = load_exercise_catalogue().get('exercises', [])
+    students = [
+        teacher_student_summary(username, exercises)
+        for username in list_student_usernames()
+    ]
+    students.sort(
+        key=lambda student: student['latest_activity'] or datetime.min,
+        reverse=True,
+    )
+    return render_template('teacher/dashboard.html', students=students)
+
+
+@app.route('/teacher/student/<username>')
+@teacher_required
+def teacher_student(username):
+    if username not in list_student_usernames():
+        return render_template('errors/404.html'), 404
+    exercises = load_exercise_catalogue().get('exercises', [])
+    snapshot = get_user_activity_snapshot(username, exercises=exercises)
+    attempts = get_student_attempt_history(username)
+    return render_template(
+        'teacher/student.html',
+        username=username,
+        snapshot=snapshot,
+        attempts=attempts,
+        exercise_titles=exercise_titles_by_id(),
+        active_exercise_ids=active_exercise_ids(),
+    )
+
+
+@app.route('/teacher/student/<username>/attempt/<int:attempt_id>')
+@teacher_required
+def teacher_student_attempt(username, attempt_id):
+    if username not in list_student_usernames():
+        return render_template('errors/404.html'), 404
+    try:
+        attempt = get_attempt_for_teacher(attempt_id)
+    except ExerciseAttemptError:
+        return render_template('errors/404.html'), 404
+    if attempt.username != username:
+        return render_template('errors/404.html'), 404
+    exercise = find_by_id(load_exercise_catalogue().get('exercises', []), attempt.exercise_id)
+    if not exercise:
+        return render_template('errors/404.html'), 404
+    return render_template(
+        'teacher/attempt.html',
+        username=username,
+        attempt=attempt,
+        exercise=exercise,
+        fields=response_fields(exercise),
+        responses=response_map(attempt),
+    )
 
 
 @app.route('/teacher/accounts/create', methods=['POST'])

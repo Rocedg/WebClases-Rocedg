@@ -2,6 +2,7 @@ import app as app_module
 from app import app as flask_app
 from database import db
 from models import User
+from services.activity_service import record_activity_event
 from werkzeug.security import generate_password_hash
 
 
@@ -81,3 +82,46 @@ def test_teacher_required_only_allows_teachers():
         from flask import session
         session.update(username="Edgar", role="teacher")
         assert view() == "panel"
+
+
+def test_teacher_panel_access_and_student_data():
+    set_password("Edgar", "teacher-pass")
+    with flask_app.app_context():
+        record_activity_event(
+            "Sandro",
+            "lesson_viewed",
+            "lesson",
+            object_id="T0-introduccion",
+            object_title="Apunte de Sandro",
+        )
+    teacher_client = flask_app.test_client()
+    assert login(teacher_client, "Edgar", "teacher-pass").status_code == 302
+
+    panel = teacher_client.get("/teacher")
+    assert panel.status_code == 200
+    assert "Sandro" in panel.get_data(as_text=True)
+
+    student_page = teacher_client.get("/teacher/student/Sandro")
+    assert student_page.status_code == 200
+    page = student_page.get_data(as_text=True)
+    assert "Sandro" in page
+    assert "Apunte de Sandro" in page
+
+
+def test_teacher_panel_rejects_students_and_redirects_logged_out_users():
+    student_client = flask_app.test_client()
+    assert login(student_client, "Sandro", "fisica2027").status_code == 302
+    assert student_client.get("/teacher").status_code == 403
+    assert student_client.get("/teacher/student/Sandro").status_code == 403
+
+    anonymous_client = flask_app.test_client()
+    response = anonymous_client.get("/teacher")
+    assert response.status_code == 302
+    assert "/login" in response.location
+
+
+def test_teacher_panel_returns_404_for_unknown_student():
+    set_password("Edgar", "teacher-pass")
+    client = flask_app.test_client()
+    assert login(client, "Edgar", "teacher-pass").status_code == 302
+    assert client.get("/teacher/student/Unknown").status_code == 404

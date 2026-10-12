@@ -6,6 +6,8 @@ Repository cleanup on `chore/repository-cleanup`, based on safety checkpoint `5d
 
 ## Completed
 
+- Panel de profesor en modo lectura añadido: resumen de alumnos, seguimiento individual, historial de intentos y respuestas enviadas, con acceso protegido por `teacher_required`.
+
 - First provisional complete 1.º Bachillerato version prepared on `main`: T0–T6 lessons and guided practice are connected by topic, the public exercise catalogue is limited to 1.º, and reserved quiz PDFs plus the unrelated 2.º induction pilot remain stored but inaccessible from web routes.
 - Real study continuity and progress dashboard implemented locally: the database now records the last lesson and last exercise topic/type, the guided-practice landing groups exercises by readable pedagogical type with catalogue metrics, and progress uses persisted visits, attempts, scores and active time instead of placeholder values.
 
@@ -90,6 +92,7 @@ Repository cleanup on `chore/repository-cleanup`, based on safety checkpoint `5d
 - Letting old design reference locations or placeholder branding leak into review.
 
 ## Update Log
+- 2026-10-12: Añadido el panel de profesor en modo lectura con resumen de alumnos, seguimiento individual y consulta de respuestas de intentos sin relajar la propiedad de los intentos estudiantiles.
 - 2026-10-12: La lista de seed de `app.py` queda limitada a las cuentas de prueba `Guest` y `Edgar`. Los alumnos reales se conservan en `users` y se crean desde `/teacher/accounts`; los tests aíslan sus cuentas auxiliares sin cambiar el comportamiento aditivo del seed ni la autenticación basada en la base de datos.
 
 - 2026-10-12: Añadida la gestión de cuentas de alumnos para el profesor: creación con contraseña inicial, restablecimiento, desactivación/reactivación, validación de usuarios y navegación protegida por `teacher_required`.

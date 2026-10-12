@@ -418,6 +418,13 @@ def get_owned_attempt(username, attempt_id):
     return attempt
 
 
+def get_attempt_for_teacher(attempt_id):
+    attempt = db.session.get(ExerciseAttempt, attempt_id)
+    if attempt is None:
+        raise ExerciseAttemptError("Attempt not found.")
+    return attempt
+
+
 def latest_started_attempt(username, exercise):
     return (
         ExerciseAttempt.query.filter_by(

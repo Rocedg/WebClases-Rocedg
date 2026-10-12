@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% from "components/_macros.html" import page_header, empty_state with context %}
+
+{% block title %}{{ username }} · Panel del profesor{% endblock %}
+
+{% block content %}
+<section class="section-shell progress-dashboard">
+    {{ page_header(
+        'Alumno',
+        username,
+        'Progreso e historial de actividad.',
+        'fa-user-graduate'
+    ) }}
+    <div class="d-flex justify-content-between align-items-center gap-3 mb-4">
+        <a href="{{ url_for('teacher') }}" class="btn btn-outline-primary"><i class="fas fa-arrow-left me-1" aria-hidden="true"></i>Volver al panel</a>
+        {% if snapshot.study_state and snapshot.study_state.last_exercise_topic_title %}
+        <span class="badge-soft">{{ snapshot.study_state.last_exercise_topic_title }}</span>
+        {% endif %}
+    </div>
+
+    <div class="metric-grid progress-metrics">
+        <article class="metric-card"><div><span class="metric-card-label">Ejercicios completados</span><strong>{{ snapshot.completed_exercise_count }}</strong><span class="metric-card-note">{{ snapshot.exercise_attempt_count }} intentos guardados</span></div><span class="metric-icon"><i class="fas fa-circle-check" aria-hidden="true"></i></span></article>
+        <article class="metric-card"><div><span class="metric-card-label">Acierto corregido</span><strong>{% if snapshot.exercise_accuracy is not none %}{{ snapshot.exercise_accuracy }}%{% else %}Sin datos{% endif %}</strong><span class="metric-card-note">Solo respuestas autocorregidas</span></div><span class="metric-icon"><i class="fas fa-bullseye" aria-hidden="true"></i></span></article>
+        <article class="metric-card"><div><span class="metric-card-label">Tiempo activo</span><strong>{{ format_duration(snapshot.total_active_seconds) }}</strong><span class="metric-card-note">Medido dentro de ejercicios</span></div><span class="metric-icon"><i class="fas fa-stopwatch" aria-hidden="true"></i></span></article>
+    </div>
+
+    <div class="progress-layout">
+        <section class="panel-card progress-panel">
+            <div class="section-heading"><h2>Actividad por temas</h2><span class="section-heading-note">Completados sobre disponibles</span></div>
+            <div class="topic-progress-list">
+                {% for item in snapshot.topic_progress %}
+                <div class="topic-progress-row">
+                    <div class="progress-block-heading"><h3>{{ item.title }}</h3><strong>{{ item.completed }}/{{ item.total }}</strong></div>
+                    <div class="progress-track" aria-label="{{ item.completion_percentage }}% completado"><span class="progress-fill" style="width: {{ item.completion_percentage }}%"></span></div>
+                    <p>{{ item.attempted }} ejercicios intentados{% if item.accuracy is not none %} · {{ item.accuracy }}% de acierto corregido{% endif %}</p>
+                </div>
+                {% else %}
+                <p class="resource-card-copy mb-0">Todavía no hay progreso por temas.</p>
+                {% endfor %}
+            </div>
+        </section>
+
+        <aside class="progress-sidebar">
+            <section class="panel-card progress-panel">
+                <div class="section-heading"><h2>Apuntes visitados</h2><span class="section-heading-note">{{ snapshot.visited_lessons|length }}</span></div>
+                {% if snapshot.visited_lessons %}<div class="visited-material-list">{% for lesson in snapshot.visited_lessons[:5] %}<div><span><strong>{{ lesson.title }}</strong><small>{{ lesson.visits }} visita{% if lesson.visits != 1 %}s{% endif %}</small></span><time>{{ lesson.last_at.strftime('%d/%m') }}</time></div>{% endfor %}</div>{% else %}<p class="resource-card-copy mb-0">No hay apuntes visitados.</p>{% endif %}
+            </section>
+            <section class="panel-card progress-panel">
+                <div class="section-heading"><h2>Actividad reciente</h2><span class="section-heading-note">Eventos útiles</span></div>
+                {% if snapshot.recent_events %}<div class="activity-timeline">{% for event in snapshot.recent_events %}<article><span class="activity-icon"><i class="fas {{ event.icon }}" aria-hidden="true"></i></span><div><strong>{{ event.label }}</strong><p>{{ event.title }}</p><time>{{ event.created_at.strftime('%d/%m/%Y · %H:%M') }}</time></div></article>{% endfor %}</div>{% else %}<p class="resource-card-copy mb-0">No hay actividad reciente.</p>{% endif %}
+            </section>
+        </aside>
+    </div>
+
+    <section class="panel-card progress-panel mt-4">
+        <div class="section-heading"><h2>Historial de intentos</h2><span class="section-heading-note">{{ attempts|length }}</span></div>
+        {% if attempts %}
+        <div class="progress-block-list">
+            {% for attempt in attempts %}
+            {% set correction = attempt_correction_summary(attempt) %}
+            <article class="progress-block-row">
+                <div class="progress-block-heading"><div><h3>{{ exercise_titles.get(attempt.exercise_id, attempt.exercise_id) }}</h3><p class="resource-card-copy mb-0">Intento #{{ attempt.id }}</p></div><span class="badge-soft">{% if attempt.status == 'started' %}En progreso{% elif attempt.status == 'submitted' %}Entregado{% elif attempt.status == 'reviewed' %}Revisado{% else %}{{ attempt.status }}{% endif %}</span></div>
+                <p class="resource-card-copy mb-2">Última actividad: {{ attempt.updated_at.strftime('%d/%m/%Y %H:%M') if attempt.updated_at else 'Sin fecha' }}{% if attempt.submitted_at %} · Entrega: {{ attempt.submitted_at.strftime('%d/%m/%Y %H:%M') }}{% endif %}{% if attempt.active_duration_seconds is not none %} · Tiempo activo: {{ format_duration(attempt.active_duration_seconds) }}{% endif %}</p>
+                <p class="resource-card-copy mb-3">{% if correction.pending %}Autocorrección parcial: {{ correction.correct }} correctas; {{ correction.pending }} pendientes de revisión.{% elif attempt.max_score is not none %}Autocorregido: {{ attempt.score|round|int }} / {{ attempt.max_score|round|int }}{% else %}Autocorrección pendiente{% endif %}</p>
+                <a href="{{ url_for('teacher_student_attempt', username=username, attempt_id=attempt.id) }}" class="btn btn-primary"><i class="fas fa-eye me-1" aria-hidden="true"></i>Ver respuestas</a>
+            </article>
+            {% endfor %}
+        </div>
+        {% else %}
+        {{ empty_state('Sin intentos guardados', 'Este alumno todavía no ha guardado ejercicios.', 'fa-clock') }}
+        {% endif %}
+    </section>
+</section>
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% from "components/_macros.html" import page_header, empty_state with context %}
+
+{% block title %}Panel del profesor{% endblock %}
+
+{% block content %}
+<section class="section-shell">
+    {{ page_header(
+        'Seguimiento',
+        'Panel del profesor',
+        'Consulta el progreso de tus alumnos sin modificar sus datos.',
+        'fa-chart-line'
+    ) }}
+
+    <div class="d-flex justify-content-end mb-4">
+        <a href="{{ url_for('teacher_accounts') }}" class="btn btn-outline-primary">
+            <i class="fas fa-users me-1" aria-hidden="true"></i>Cuentas
+        </a>
+    </div>
+
+    {% if students %}
+    <div class="progress-block-list">
+        {% for student in students %}
+        <a class="progress-block-row text-decoration-none" href="{{ url_for('teacher_student', username=student.username) }}">
+            <div class="progress-block-heading">
+                <div>
+                    <h2>{{ student.username }}{% if student.user and not student.user.is_active %} <span class="badge-soft">Cuenta inactiva</span>{% elif not student.user %} <span class="badge-soft">Sin cuenta</span>{% endif %}</h2>
+                    <p class="resource-card-copy mb-0">
+                        {% if student.latest_activity %}Última actividad: {{ student.latest_activity.strftime('%d/%m/%Y · %H:%M') }}{% else %}Sin actividad registrada{% endif %}
+                    </p>
+                </div>
+                <i class="fas fa-arrow-right text-primary" aria-hidden="true"></i>
+            </div>
+            <div class="metadata-row">
+                <span class="badge-soft">Completados: {{ student.snapshot.completed_exercise_count }}</span>
+                <span class="badge-soft">Acierto: {% if student.snapshot.exercise_accuracy is not none %}{{ student.snapshot.exercise_accuracy }}%{% else %}Sin datos{% endif %}</span>
+                <span class="badge-soft">Tiempo: {{ format_duration(student.snapshot.total_active_seconds) }}</span>
+                <span class="badge-soft">Tema: {{ student.latest_topic or 'Sin tema' }}</span>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+    {% else %}
+    {{ empty_state('Sin alumnos', 'Cuando haya cuentas o actividad registrada aparecerán aquí.', 'fa-users') }}
+    {% endif %}
+</section>
+{% endblock %}

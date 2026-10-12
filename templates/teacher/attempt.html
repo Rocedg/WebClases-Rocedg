@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% from "components/_macros.html" import page_header with context %}
+
+{% block title %}Intento #{{ attempt.id }} · {{ username }}{% endblock %}
+
+{% block content %}
+<section class="section-shell">
+    {{ page_header('Alumno · ' ~ username, exercise.title, 'Respuesta enviada e información de corrección.', 'fa-eye') }}
+    <div class="d-flex justify-content-between align-items-center gap-3 mb-4">
+        <a href="{{ url_for('teacher_student', username=username) }}" class="btn btn-outline-primary"><i class="fas fa-arrow-left me-1" aria-hidden="true"></i>Volver al alumno</a>
+        <span class="badge-soft">Intento #{{ attempt.id }} · {{ attempt.status }}</span>
+    </div>
+
+    <section class="panel-card exercise-workspace">
+        <div class="section-heading"><h2>Resultado</h2></div>
+        <p class="resource-card-copy">Inicio: {{ attempt.started_at.strftime('%d/%m/%Y %H:%M') if attempt.started_at else 'Sin fecha' }} · Última actividad: {{ attempt.updated_at.strftime('%d/%m/%Y %H:%M') if attempt.updated_at else 'Sin fecha' }}</p>
+        <p class="resource-card-copy">{% if attempt.max_score is not none %}Puntuación: <strong>{{ attempt.score|round|int }} / {{ attempt.max_score|round|int }}</strong>{% else %}Puntuación pendiente de corrección{% endif %}{% if attempt.active_duration_seconds is not none %} · Tiempo activo: {{ format_duration(attempt.active_duration_seconds) }}{% endif %}</p>
+    </section>
+
+    <section class="panel-card exercise-workspace mt-4">
+        <div class="section-heading"><h2>Respuestas enviadas</h2></div>
+        {% for field in fields %}
+        {% set response = responses.get(field.id) %}
+        <article class="quiz-question exercise-field">
+            <h3 class="h5">{{ field.label }}</h3>
+            {% if field.prompt %}<p class="resource-card-copy">{{ field.prompt }}</p>{% endif %}
+            <div class="alert alert-light border mb-2">{{ response.raw_value if response and response.raw_value else 'Sin respuesta' }}</div>
+            {% if response %}
+            <p class="resource-card-copy mb-0">Estado: {{ response.grading_status }}{% if response.feedback %} · {{ response.feedback }}{% endif %}</p>
+            {% endif %}
+        </article>
+        {% else %}
+        <p class="resource-card-copy mb-0">Este ejercicio no tiene campos de respuesta.</p>
+        {% endfor %}
+    </section>
+</section>
+{% endblock %}
