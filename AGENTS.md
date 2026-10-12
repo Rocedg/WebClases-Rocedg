@@ -28,6 +28,9 @@ For feature work, also read the relevant spec in `docs/context/feature-specs/`.
 - Keep Flask as the web framework.
 - Keep Jinja templates.
 - Keep JSON content unless a dedicated spec approves a data-layer change.
+- First-year exercise banks live under `content/exercises/1bach/tN/` as a
+  `_topic.json` manifest plus ordered block files. Add new exercises to the
+  corresponding block file.
 - Keep the project understandable for a non-expert maintainer.
 - Prefer small branches and pull requests.
 
@@ -63,4 +66,3 @@ After completing a unit:
 - For documentation-only changes, run `git status`.
 - If the local environment exists, run pytest when practical.
 - For code changes, run the smoke tests and any relevant Flask import/test-client checks.
-

@@ -27,12 +27,15 @@ contains activity and exercise logic. Local persistence remains
 | Exams | `content/exams/exams.json` | Existing `static/pdfs/examenes/` |
 
 The full exercise catalogue is loaded from topic JSON, with the generated index
-as a fallback. The current 1bach banks are separate files:
-`exercises_t0.json` through `exercises_t6.json`. The loader
-reads each bank independently. The existing 2bach editorial fixture still uses
-its own legacy `exercises.json` path and remains stored for future work, but is
-excluded from the public catalogue. The legacy quiz PDFs are likewise retained
-under `static/pdfs/quizzes/` while their UI, quiz routes and direct static delivery
+as a fallback. The current 1bach banks live in `content/exercises/1bach/t0/`
+through `t6/`: each topic has a `_topic.json` manifest and ordered block JSON
+files. New exercises belong in the matching block file. T0 vectors and
+measurement, and any other oversized block, are split into contiguous subtopic
+files. The loader also accepts the legacy single-file layout for migration
+tools. The existing 2bach editorial fixture still uses its own legacy
+`exercises.json` path and remains stored for future work, but is excluded from
+the public catalogue. The legacy quiz PDFs are likewise retained under
+`static/pdfs/quizzes/` while their UI, quiz routes and direct static delivery
 are disabled. SQL stores
 student work keyed by exercise ID and version; it does not replace JSON
 educational content.
