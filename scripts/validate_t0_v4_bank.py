@@ -5,11 +5,15 @@ from __future__ import annotations
 import json
 from collections import Counter
 from pathlib import Path
+import sys
 from typing import Any
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from services.exercise_bank_loader import load_topic_bank
 
 ROOT = Path(__file__).resolve().parents[1]
-BANK_PATH = ROOT / "content" / "exercises" / "1bach" / "t0" / "exercises_t0.json"
+BANK_PATH = ROOT / "content" / "exercises" / "1bach" / "t0"
 
 EXPECTED_DISTRIBUTION = {
     "units": 16,
@@ -41,8 +45,7 @@ MANDATORY_ASSET_IDS = {
 
 
 def load_bank() -> dict[str, Any]:
-    with BANK_PATH.open(encoding="utf-8") as file:
-        return json.load(file)
+    return load_topic_bank(BANK_PATH)
 
 
 def validate_bank(root: Path | None = None) -> list[str]:

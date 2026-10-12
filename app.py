@@ -2,6 +2,7 @@ from datetime import datetime
 from functools import wraps
 import json
 import os
+from pathlib import Path
 
 import click
 from sqlalchemy import inspect, text
@@ -9,6 +10,7 @@ from flask import Flask, jsonify, redirect, render_template, request, send_file,
 
 from database import db, init_app as init_database
 from services.exercise_presentation import exercise_number, render_exercise_source, response_format_notes, response_placeholder
+from services.exercise_bank_loader import load_topic_banks
 from services.activity_service import (
     get_user_activity_snapshot,
     mark_exercise_worked,
@@ -179,16 +181,6 @@ def load_exercise_index():
     return load_json_file(content_path('exercises/index.json'), {'exercises': []})
 
 
-EXERCISE_BANK_FILENAMES = (
-    'exercises_t0.json',
-    'exercises_t1.json',
-    'exercises_t2.json',
-    'exercises_t3.json',
-    'exercises_t4.json',
-    'exercises_t5.json',
-    'exercises_t6.json',
-    'exercises.json',
-)
 from services.exercise_taxonomy import (
     build_exercise_type_summaries,
     exercise_topic_title,
@@ -198,21 +190,13 @@ from services.exercise_taxonomy import (
 
 
 def exercise_bank_paths():
-    exercises_root = os.path.join(CONTENT_DIR, 'exercises')
-    paths = []
-    for root, dirs, files in os.walk(exercises_root):
-        dirs.sort()
-        for filename in EXERCISE_BANK_FILENAMES:
-            if filename in files:
-                paths.append(os.path.join(root, filename))
-    return paths
+    return [str(path) for path, _ in load_topic_banks(Path(CONTENT_DIR) / 'exercises')]
 
 
 def load_exercise_catalogue():
     exercises = []
 
-    for bank_path in exercise_bank_paths():
-        data = load_json_file(bank_path, {'exercises': []})
+    for _, data in load_topic_banks(Path(CONTENT_DIR) / 'exercises'):
         for exercise in data.get('exercises', []):
             if (
                 isinstance(exercise, dict)

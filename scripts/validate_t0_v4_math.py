@@ -5,10 +5,14 @@ from __future__ import annotations
 import json
 import math
 from pathlib import Path
+import sys
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from services.exercise_bank_loader import load_topic_bank
 
 ROOT = Path(__file__).resolve().parents[1]
-BANK_PATH = ROOT / "content" / "exercises" / "1bach" / "t0" / "exercises_t0.json"
+BANK_PATH = ROOT / "content" / "exercises" / "1bach" / "t0"
 
 
 def field(exercises, exercise_id: str, field_id: str) -> float:
@@ -40,8 +44,7 @@ def assert_close(errors: list[str], label: str, actual: float, expected: float, 
 
 
 def validate_math() -> list[str]:
-    with BANK_PATH.open(encoding="utf-8") as file:
-        exercises = json.load(file)["exercises"]
+    exercises = load_topic_bank(BANK_PATH)["exercises"]
 
     errors: list[str] = []
     assert_close(errors, "t0_u_001.speed", field(exercises, "t0_u_001", "speed"), 12600 / 1080, 0.04)

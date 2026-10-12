@@ -6,6 +6,7 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 from app import load_exercise_catalogue
+from services.exercise_bank_loader import load_topic_bank
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -23,8 +24,7 @@ def load_builder():
 
 
 def load_bank(topic: str) -> dict:
-    path = ROOT / "content" / "exercises" / "1bach" / topic / f"exercises_{topic}.json"
-    return json.loads(path.read_text(encoding="utf-8"))
+    return load_topic_bank(ROOT / "content" / "exercises" / "1bach" / topic)
 
 
 def test_t3_t6_banks_are_complete_compact_and_structured():

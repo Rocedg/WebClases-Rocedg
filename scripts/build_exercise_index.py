@@ -9,7 +9,12 @@ from __future__ import annotations
 import json
 from datetime import datetime, timezone
 from pathlib import Path
+import sys
 from typing import Any
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from services.exercise_bank_loader import load_topic_banks
 
 
 SUMMARY_FIELDS = [
@@ -29,18 +34,6 @@ SUMMARY_FIELDS = [
     "tags",
 ]
 
-EXERCISE_BANK_FILENAMES = (
-    "exercises_t0.json",
-    "exercises_t1.json",
-    "exercises_t2.json",
-    "exercises_t3.json",
-    "exercises_t4.json",
-    "exercises_t5.json",
-    "exercises_t6.json",
-    "exercises.json",
-)
-
-
 def repo_root() -> Path:
     return Path(__file__).resolve().parents[1]
 
@@ -51,14 +44,7 @@ def load_json(path: Path) -> Any:
 
 
 def topic_files(root: Path) -> list[Path]:
-    content_root = root / "content" / "exercises"
-    if not content_root.exists():
-        return []
-    return sorted(
-        path
-        for filename in EXERCISE_BANK_FILENAMES
-        for path in content_root.rglob(filename)
-    )
+    return [path for path, _ in load_topic_banks(root / "content" / "exercises")]
 
 
 def summarize_exercise(exercise: dict[str, Any]) -> dict[str, Any]:
@@ -81,8 +67,7 @@ def summarize_exercise(exercise: dict[str, Any]) -> dict[str, Any]:
 
 def collect_exercises(root: Path) -> list[dict[str, Any]]:
     exercises: list[dict[str, Any]] = []
-    for path in topic_files(root):
-        data = load_json(path)
+    for _, data in load_topic_banks(root / "content" / "exercises"):
         for exercise in data.get("exercises", []):
             if isinstance(exercise, dict) and exercise.get("status") != "retired":
                 exercises.append(summarize_exercise(exercise))

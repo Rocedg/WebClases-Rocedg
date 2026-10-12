@@ -6,6 +6,7 @@ import sys
 from pathlib import Path
 
 from app import app as flask_app
+from services.exercise_bank_loader import load_topic_bank
 from database import db
 from models import ExerciseAttempt
 from services.exercise_attempt_service import (
@@ -19,7 +20,7 @@ from services.exercise_attempt_service import (
 
 
 ROOT = Path(__file__).resolve().parents[1]
-BANK_PATH = ROOT / "content" / "exercises" / "1bach" / "t0" / "exercises_t0.json"
+BANK_PATH = ROOT / "content" / "exercises" / "1bach" / "t0"
 
 
 def load_script(relative_path: str, module_name: str):
@@ -33,8 +34,7 @@ def load_script(relative_path: str, module_name: str):
 
 
 def load_t0_bank():
-    with BANK_PATH.open(encoding="utf-8") as file:
-        return json.load(file)
+    return load_topic_bank(BANK_PATH)
 
 
 def login(client, username="Guest"):

@@ -10,8 +10,12 @@ from __future__ import annotations
 import json
 from dataclasses import dataclass, field
 from pathlib import Path
+import sys
 from typing import Any
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from services.exercise_bank_loader import load_topic_banks
 
 REQUIRED_EXERCISE_FIELDS = [
     "id",
@@ -286,39 +290,17 @@ def validate_exercise(
 
 
 def load_topic_exercises(root: Path, result: ValidationResult) -> tuple[list[dict[str, Any]], set[str]]:
-    content_root = root / "content" / "exercises"
-    bank_filenames = (
-        "exercises_t0.json",
-        "exercises_t1.json",
-        "exercises_t2.json",
-        "exercises_t3.json",
-        "exercises_t4.json",
-        "exercises_t5.json",
-        "exercises_t6.json",
-        "exercises.json",
-    )
-    topic_files = (
-        sorted(
-            path
-            for filename in bank_filenames
-            for path in content_root.rglob(filename)
-        )
-        if content_root.exists()
-        else []
-    )
-    result.topic_file_count = len(topic_files)
+    topic_banks = load_topic_banks(root / "content" / "exercises")
+    result.topic_file_count = len(topic_banks)
 
-    if not topic_files:
+    if not topic_banks:
         result.errors.append("No topic exercise files found under content/exercises/.")
         return [], set()
 
     exercises: list[dict[str, Any]] = []
     seen_ids: set[str] = set()
 
-    for topic_file in topic_files:
-        data = load_json(topic_file, result)
-        if data is None:
-            continue
+    for topic_file, data in topic_banks:
         if not isinstance(data, dict):
             result.errors.append(f"{relative_path(topic_file, root)}: top-level JSON must be an object.")
             continue

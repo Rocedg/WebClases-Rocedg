@@ -6,13 +6,11 @@ from pathlib import Path
 
 from app import app as flask_app, exercise_titles_by_id, load_exercise_catalogue
 from services.exercise_attempt_service import start_or_resume_attempt, submit_attempt
+from services.exercise_bank_loader import load_topic_bank
 
 
 ROOT = Path(__file__).resolve().parents[1]
-BANKS = tuple(
-    ROOT / "content" / "exercises" / "1bach" / topic / f"exercises_{topic}.json"
-    for topic in ("t0", "t1", "t2")
-)
+BANKS = tuple(ROOT / "content" / "exercises" / "1bach" / topic for topic in ("t0", "t1", "t2"))
 ALLOWED_TYPES = {"numeric", "unit_expression", "single_choice", "vector", "function", "short_text"}
 RETIRED = {"t0_c_007", "t0_c_018"}
 
@@ -28,8 +26,8 @@ def load_migration_module():
 def test_all_published_t0_t1_t2_records_use_compact_safe_structured_content():
     counts = {}
     for path in BANKS:
-        exercises = json.loads(path.read_text(encoding="utf-8"))["exercises"]
-        counts[path.parent.name] = sum(e.get("status") != "retired" for e in exercises)
+        exercises = load_topic_bank(path)["exercises"]
+        counts[path.name] = sum(e.get("status") != "retired" for e in exercises)
         for exercise in exercises:
             if exercise.get("status") == "retired":
                 assert exercise["id"] in RETIRED
@@ -49,16 +47,16 @@ def test_retired_records_keep_order_ids_and_history_titles_but_are_not_published
     catalogue_ids = {exercise["id"] for exercise in load_exercise_catalogue()["exercises"]}
     assert not (RETIRED & catalogue_ids)
     assert RETIRED.issubset(exercise_titles_by_id())
-    t0_ids = [e["id"] for e in json.loads(BANKS[0].read_text(encoding="utf-8"))["exercises"]]
+    t0_ids = [e["id"] for e in load_topic_bank(BANKS[0])["exercises"]]
     assert t0_ids.index("t0_c_007") == 84
     assert t0_ids.index("t0_c_018") == 95
 
 
 def test_migration_check_is_read_only_and_idempotent():
     module = load_migration_module()
-    before = {path: path.read_bytes() for path in BANKS}
+    before = {path: tuple(sorted(item.read_bytes() for item in path.glob("*.json"))) for path in BANKS}
     report = module.migrate_all(write=False)
-    after = {path: path.read_bytes() for path in BANKS}
+    after = {path: tuple(sorted(item.read_bytes() for item in path.glob("*.json"))) for path in BANKS}
     assert before == after
     assert report["retired"] == []
     assert report["migrated"] == {}
