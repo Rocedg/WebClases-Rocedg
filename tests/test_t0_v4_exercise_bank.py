@@ -219,6 +219,8 @@ def test_t0_v5_expected_answers_grade_as_correct():
                     values[field["id"]] = field["correct_option_id"]
                 elif field["type"] == "short_text":
                     values[field["id"]] = field["accepted_forms"][0]
+                elif field["type"] == "unit_expression":
+                    values[field["id"]] = field["expected_value"]
                 elif field["type"] == "function":
                     values[field["id"]] = field["canonical_expression"]
             attempt, _ = start_or_resume_attempt("Guest", exercise)

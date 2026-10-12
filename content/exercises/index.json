@@ -1,7 +1,7 @@
 {
   "version": 1,
   "generated": true,
-  "generated_at": "2026-10-06T14:32:08Z",
+  "generated_at": "2026-10-12T17:19:28Z",
   "source": "content/exercises",
   "exercises": [
     {
@@ -98,7 +98,7 @@
     },
     {
       "id": "t0_u_005",
-      "version": 4,
+      "version": 5,
       "title": "Elegir una ley dimensionalmente posible",
       "course": "1bach",
       "block": "Lenguaje físico, unidades y análisis dimensional",
@@ -144,7 +144,7 @@
     },
     {
       "id": "t0_u_007",
-      "version": 4,
+      "version": 5,
       "title": "Fase inicial y periodo",
       "course": "1bach",
       "block": "Lenguaje físico, unidades y análisis dimensional",
@@ -328,7 +328,7 @@
     },
     {
       "id": "t0_u_015",
-      "version": 4,
+      "version": 5,
       "title": "Oscilación amortiguada y tiempo característico",
       "course": "1bach",
       "block": "Lenguaje físico, unidades y análisis dimensional",
@@ -351,7 +351,7 @@
     },
     {
       "id": "t0_u_016",
-      "version": 4,
+      "version": 5,
       "title": "Suma bajo una raíz",
       "course": "1bach",
       "block": "Lenguaje físico, unidades y análisis dimensional",

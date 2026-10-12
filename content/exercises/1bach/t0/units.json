@@ -16,27 +16,27 @@
       "response_fields": [
         {
           "id": "distance_m",
-          "label": "Distance m",
+          "label": "Distancia en metros",
           "required": true,
           "type": "numeric",
           "expected_value": 12600.0,
           "tolerance": 1.0,
           "unit": "m",
-          "part": "b"
+          "part": "a"
         },
         {
           "id": "time_s",
-          "label": "Time s",
+          "label": "Tiempo en segundos",
           "required": true,
           "type": "numeric",
           "expected_value": 1080.0,
           "tolerance": 0.5,
           "unit": "s",
-          "part": "b"
+          "part": "a"
         },
         {
           "id": "speed",
-          "label": "Speed",
+          "label": "Rapidez media",
           "required": true,
           "type": "numeric",
           "expected_value": 11.7,
@@ -44,11 +44,11 @@
           "significant_figures": 3,
           "prompt": "Da el resultado con 3 cifras significativas.",
           "unit": "m·s⁻¹",
-          "part": "c"
+          "part": "b"
         },
         {
           "id": "dimension",
-          "label": "Dimension",
+          "label": "Dimensión de la rapidez",
           "required": true,
           "type": "unit_expression",
           "expected_value": "L T^-1",
@@ -78,7 +78,7 @@
         "responder 11,666… sin el redondeo pedido",
         "confundir unidad con dimensión"
       ],
-      "statement_source": "Una ciclista recorre 12,6 km en 18,0 min. \n(b) Calcula la rapidez media en m·s⁻¹.\n(c) Escribe la dimensión física de la rapidez.",
+      "statement_source": "Una ciclista recorre 12,6 km en 18,0 min. Regla: antes de calcular una rapidez, expresa distancia y tiempo en unidades SI; la rapidez media es distancia dividida entre tiempo.\n(a) Convierte la distancia a metros y el tiempo a segundos.\n(b) Calcula la rapidez media en m·s⁻¹ y exprésala con 3 cifras significativas.\n(c) Escribe la dimensión física de la rapidez, sin confundirla con su unidad.",
       "solution_source": "\\(12,6\\,\\mathrm{km}=12600\\,\\mathrm{m}\\) y \\(18,0\\,\\mathrm{min}=1080\\,\\mathrm{s}\\).\n\nEntonces \\(v=12600/1080=11,666\\ldots\\,\\mathrm{m\\,s^{-1}}\\), que a 3 cifras significativas es \\(11,7\\,\\mathrm{m\\,s^{-1}}\\).\n\nSu dimensión es \\(LT^{-1}\\).",
       "solution_reference": "exercise-bank-t0-v4-spec.md"
     },
@@ -98,7 +98,7 @@
       "response_fields": [
         {
           "id": "density_cgs",
-          "label": "Density cgs",
+          "label": "Densidad en g·cm⁻³",
           "required": true,
           "type": "numeric",
           "expected_value": 2.7,
@@ -110,7 +110,7 @@
         },
         {
           "id": "density_si",
-          "label": "Density si",
+          "label": "Densidad en kg·m⁻³",
           "required": true,
           "type": "numeric",
           "expected_value": 2700.0,
@@ -126,11 +126,11 @@
           "options": [
             {
               "id": "aluminium",
-              "label": "aluminium"
+              "label": "Aluminio"
             },
             {
               "id": "iron`)",
-              "label": "iron`)"
+              "label": "Hierro"
             }
           ],
           "correct_option_id": "aluminium",
@@ -155,7 +155,7 @@
         "usar $1\\,\\mathrm{cm^3}=10^{-2}\\,\\mathrm{m^3}$",
         "elegir por cercanía sin mostrar la conversión"
       ],
-      "statement_source": "Una pieza de metal tiene una masa de 270 g y ocupa 100 cm³. \n(a) Calcula su densidad en g·cm⁻³.\n(b) Conviértela a kg·m⁻³.\n(c) Entre aluminio (2700 kg·m⁻³) y hierro (7870 kg·m⁻³), indica con cuál es compatible.",
+      "statement_source": "Una pieza de metal tiene una masa de 270 g y ocupa 100 cm³. Regla: la densidad es masa dividida entre volumen; al convertir cm³ a m³ hay que elevar al cubo el factor de conversión.\n(a) Calcula la densidad en g·cm⁻³, con 3 cifras significativas.\n(b) Convierte ese resultado a kg·m⁻³.\n(c) Compara con aluminio (2700 kg·m⁻³) y hierro (7870 kg·m⁻³) e indica el material compatible.",
       "solution_source": "\\(\\rho=270/100=2,70\\,\\mathrm{g\\,cm^{-3}}=2700\\,\\mathrm{kg\\,m^{-3}}\\).\n\nEs compatible con el aluminio.",
       "solution_reference": "exercise-bank-t0-v4-spec.md"
     },
@@ -224,7 +224,7 @@
         "invertir la fórmula",
         "aplicar el cambio de área o tiempo dos veces"
       ],
-      "statement_source": "Una superficie de 0,800 m² recibe 2,40 kJ de energía en 5,00 min y se modela mediante \\(Q=kAt\\). \n(a) Deduce la unidad SI de \\(k\\).\n(b) Calcula \\(k\\).\n(c) Predice la energía recibida por 1,20 m² durante 2,00 min si \\(k\\) no cambia.",
+      "statement_source": "Una superficie de 0,800 m² recibe 2,40 kJ de energía en 5,00 min. El modelo es \\(Q=kAt\\): describe una energía que se acumula proporcionalmente al área y al tiempo; no necesitas conocer su origen, solo practicar unidades y despeje.\n(a) Deduce la unidad SI de \\(k\\).\n(b) Convierte los datos a SI y calcula \\(k\\), con 3 cifras significativas.\n(c) Calcula la energía recibida por 1,20 m² durante 2,00 min si \\(k\\) no cambia, con 3 cifras significativas.",
       "solution_source": "\\([k]=\\mathrm{J\\,m^{-2}\\,s^{-1}}\\).\n\nCon \\(Q=2400\\) J y \\(t=300\\) s, \\(k=2400/(0,80\\cdot300)=10,0\\).\n\nDespués, \\(Q=10,0\\cdot1,20\\cdot120=1440\\) J.",
       "solution_reference": "exercise-bank-t0-v4-spec.md"
     },
@@ -267,7 +267,7 @@
         },
         {
           "id": "energy_9cm",
-          "label": "Energy 9cm",
+          "label": "Energía para 9,00 cm",
           "required": true,
           "type": "numeric",
           "expected_value": 0.81,
@@ -296,7 +296,7 @@
         "usar 6 y 9 como metros",
         "suponer que la energía crece linealmente con $x$"
       ],
-      "statement_source": "La energía almacenada por un muelle se modela como \\(E=\\tfrac12kx^2\\). Al deformarlo 6,00 cm almacena 0,360 J. \n(a) Deduce la unidad SI de \\(k\\).\n(b) Calcula \\(k\\).\n(c) Calcula la energía para una deformación de 9,00 cm.",
+      "statement_source": "La energía almacenada por un muelle se modela como \\(E=\\tfrac12kx^2\\). Esta fórmula relaciona energía y deformación; no necesitas estudiar el muelle, solo practicar unidades y una potencia.\n(a) Deduce la unidad SI de \\(k\\).\n(b) Si una deformación de 6,00 cm almacena 0,360 J, convierte la longitud a metros y calcula \\(k\\), con 3 cifras significativas.\n(c) Calcula la energía para una deformación de 9,00 cm, con 3 cifras significativas.",
       "solution_source": "\\([k]=\\mathrm{J\\,m^{-2}}=\\mathrm{N\\,m^{-1}}\\).\n\n\\(k=2(0,360)/(0,060)^2=200\\,\\mathrm{N\\,m^{-1}}\\).\n\nPara \\(x=0,090\\) m, \\(E=\\tfrac12(200)(0,090)^2=0,810\\) J.",
       "solution_reference": "exercise-bank-t0-v4-spec.md"
     },
@@ -316,21 +316,44 @@
       "response_fields": [
         {
           "id": "choice",
-          "label": "Choice",
+          "label": "Expresión dimensionalmente posible",
           "required": true,
           "type": "single_choice",
           "options": [
             {
+              "id": "A",
+              "label": "A"
+            },
+            {
               "id": "B",
               "label": "B"
+            },
+            {
+              "id": "C",
+              "label": "C"
+            },
+            {
+              "id": "D",
+              "label": "D"
             }
           ],
           "correct_option_id": "B",
           "part": "a"
         },
         {
+          "id": "justification",
+          "label": "Justificación dimensional",
+          "required": true,
+          "type": "short_text",
+          "accepted_forms": [
+            "La opción B tiene dimensión de tiempo",
+            "B"
+          ],
+          "part": "b"
+        },
+        {
           "id": "period",
-          "label": "Period",
+          "label": "Periodo del péndulo",
           "required": true,
           "type": "numeric",
           "expected_value": 1.9,
@@ -338,7 +361,7 @@
           "significant_figures": 3,
           "prompt": "Da el resultado con 3 cifras significativas.",
           "unit": "s",
-          "part": "a"
+          "part": "c"
         }
       ],
       "assets": [],
@@ -352,14 +375,14 @@
         "source": "exercise-bank-t0-v4-spec.md"
       },
       "status": "active",
-      "version": 4,
+      "version": 5,
       "learning_objective": "Lenguaje físico, unidades y análisis dimensional",
       "common_mistakes": [
         "elegir por recordar la fórmula sin justificar",
         "tratar $2\\pi$ como dimensional",
         "invertir $L/g$"
       ],
-      "statement_source": "Se propone modelar el periodo \\(T\\) de un péndulo usando su longitud \\(L\\) y la aceleración gravitatoria \\(g\\). ¿Cuál de estas expresiones puede ser correcta por dimensiones? A) \\(T=2\\pi L/g\\); B) \\(T=2\\pi\\sqrt{L/g}\\); C) \\(T=2\\pi\\sqrt{g/L}\\); D) \\(T=2\\pi Lg\\).\n\n(a) Completa: Choice, Period.",
+      "statement_source": "Se propone modelar el periodo \\(T\\) de un péndulo usando su longitud \\(L\\) y la aceleración gravitatoria \\(g\\). Regla: solo se pueden sumar o comparar expresiones con las mismas dimensiones; \\([g]=LT^{-2}\\). No necesitas haber estudiado el péndulo: aquí se practica el análisis dimensional.\n(a) Elige la expresión dimensionalmente posible: A) \\(T=2\\pi L/g\\); B) \\(T=2\\pi\\sqrt{L/g}\\); C) \\(T=2\\pi\\sqrt{g/L}\\); D) \\(T=2\\pi Lg\\).\n(b) Justifica brevemente por qué la opción elegida tiene dimensión de tiempo.\n(c) Calcula el periodo para \\(L=0,900\\) m y \\(g=9,80\\) m·s⁻², con 3 cifras significativas.",
       "solution_source": "Solo B produce tiempo: \\([\\sqrt{L/g}]=\\sqrt{L/(LT^{-2})}=T\\).\n\n\\(T=2\\pi\\sqrt{0,90/9,8}=1,90\\) s.",
       "solution_reference": "exercise-bank-t0-v4-spec.md"
     },
@@ -379,7 +402,7 @@
       "response_fields": [
         {
           "id": "unit_A",
-          "label": "Unit A",
+          "label": "Unidad de A",
           "required": true,
           "type": "unit_expression",
           "expected_value": "cm",
@@ -387,15 +410,16 @@
         },
         {
           "id": "unit_lambda",
-          "label": "Unit lambda",
+          "label": "Unidad de λ",
           "required": true,
           "type": "unit_expression",
           "expected_value": "m^-1",
-          "part": "a"
+          "part": "a",
+          "prompt": "Escribe el exponente negativo como m^-1, no como 1/m."
         },
         {
           "id": "A",
-          "label": "Aceleración",
+          "label": "Valor de A",
           "required": true,
           "type": "numeric",
           "expected_value": 12.0,
@@ -405,7 +429,7 @@
         },
         {
           "id": "lambda",
-          "label": "Lambda",
+          "label": "Valor de λ",
           "required": true,
           "type": "numeric",
           "expected_value": 1.25,
@@ -413,7 +437,7 @@
           "significant_figures": 3,
           "prompt": "Da el resultado con 3 cifras significativas.",
           "unit": "m⁻¹",
-          "part": "a"
+          "part": "b"
         }
       ],
       "assets": [],
@@ -434,7 +458,7 @@
         "olvidar el signo menos",
         "escribir $\\lambda$ en m"
       ],
-      "statement_source": "Una amplitud espacial sigue \\(y(x)=Ae^{-\\lambda x}\\). Se mide \\(y(0)=12,0\\) cm y \\(y(0,800\\,\\mathrm{m})=4,40\\) cm. \n(a) Deduce las unidades de \\(A\\) y \\(\\lambda\\).\n(b) Obtén sus valores.",
+      "statement_source": "Una amplitud espacial sigue \\(y(x)=Ae^{-\\lambda x}\\). Esta expresión describe cómo una amplitud disminuye al avanzar una distancia; no necesitas haber estudiado decaimientos, solo comprobar que el exponente sea adimensional y despejar una constante.\nSe mide \\(y(0)=12,0\\) cm y \\(y(0,800\\,\\mathrm{m})=4,40\\) cm.\n(a) Deduce las unidades de \\(A\\) y \\(\\lambda\\).\n(b) Obtén \\(A\\) y \\(\\lambda\\), expresando \\(\\lambda\\) en m⁻¹ y con 3 cifras significativas.",
       "solution_source": "\\(A=12,0\\) cm.\n\nEl exponente \\(\\lambda x\\) debe ser adimensional, así que \\([\\lambda]=\\mathrm{m^{-1}}\\).\n\n\\(\\lambda=-\\ln(4,40/12,0)/0,80=1,25\\,\\mathrm{m^{-1}}\\).",
       "solution_reference": "exercise-bank-t0-v4-spec.md"
     },
@@ -454,7 +478,7 @@
       "response_fields": [
         {
           "id": "unit_omega",
-          "label": "Unit omega",
+          "label": "Unidad de la frecuencia angular",
           "required": true,
           "type": "unit_expression",
           "expected_value": "s^-1",
@@ -465,18 +489,21 @@
         },
         {
           "id": "unit_phi",
-          "label": "Unit phi",
+          "label": "Unidad de la fase inicial",
           "required": true,
-          "type": "unit_expression",
-          "expected_value": "dimensionless",
-          "accepted_forms": [
-            "rad"
+          "type": "single_choice",
+          "part": "a",
+          "options": [
+            {
+              "id": "dimensionless",
+              "label": "No tiene unidades (es adimensional)"
+            }
           ],
-          "part": "b"
+          "correct_option_id": "dimensionless"
         },
         {
           "id": "phi",
-          "label": "Phi",
+          "label": "Fase inicial",
           "required": true,
           "type": "numeric",
           "expected_value": 0.524,
@@ -485,11 +512,11 @@
             "pi/6"
           ],
           "unit": "rad",
-          "part": "c"
+          "part": "b"
         },
         {
           "id": "period",
-          "label": "Period",
+          "label": "Periodo",
           "required": true,
           "type": "numeric",
           "expected_value": 2.09,
@@ -509,14 +536,14 @@
         "source": "exercise-bank-t0-v4-spec.md"
       },
       "status": "active",
-      "version": 4,
+      "version": 5,
       "learning_objective": "Lenguaje físico, unidades y análisis dimensional",
       "common_mistakes": [
         "aceptar ambas fases ignorando el sentido",
         "dar grados sin indicarlo",
         "calcular $T=1/3$"
       ],
-      "statement_source": "Una oscilación se describe por \\(y(t)=4,00\\sin(3,00t+\\phi)\\) cm, con \\(t\\) en segundos. En \\(t=0\\), \\(y=2,00\\) cm y la partícula se mueve en el sentido positivo de \\(y\\). \n(a) Indica las unidades de \\(3,00\\) y de \\(\\phi\\).\n(b) Determina \\(\\phi\\) en el intervalo \\([0,2\\pi)\\).\n(c) Calcula el periodo.",
+      "statement_source": "Una oscilación se describe por \\(y(t)=4,00\\sin(3,00t+\\phi)\\) cm, con \\(t\\) en segundos. La expresión indica una posición que cambia periódicamente; no necesitas estudiar oscilaciones, solo identificar unidades y usar el valor inicial y el sentido del movimiento.\nEn \\(t=0\\), \\(y=2,00\\) cm y la partícula se mueve en el sentido positivo de \\(y\\).\n(a) Indica las unidades de 3,00 y de \\(\\phi\\).\n(b) Determina \\(\\phi\\) en \\([0,2\\pi)\\), teniendo en cuenta el sentido positivo del movimiento.\n(c) Calcula el periodo.",
       "solution_source": "\\(3,0\\) tiene unidad s⁻¹ y \\(\\phi\\) es adimensional (se expresa en rad).\n\n\\(\\sin\\phi=0,5\\) da \\(\\phi=\\pi/6\\) o \\(5\\pi/6\\), pero solo \\(\\pi/6\\) tiene \\(\\cos\\phi>0\\).\n\n\\(T=2\\pi/3,0=2,09\\) s.",
       "solution_reference": "exercise-bank-t0-v4-spec.md"
     },
@@ -536,7 +563,7 @@
       "response_fields": [
         {
           "id": "a",
-          "label": "Aceleración",
+          "label": "Exponente de L, a",
           "required": true,
           "type": "numeric",
           "expected_value": 0.5,
@@ -545,7 +572,7 @@
         },
         {
           "id": "b",
-          "label": "B",
+          "label": "Exponente de g, b",
           "required": true,
           "type": "numeric",
           "expected_value": -0.5,
@@ -554,12 +581,12 @@
         },
         {
           "id": "factor",
-          "label": "Factor",
+          "label": "Factor de cambio del periodo",
           "required": true,
           "type": "numeric",
           "expected_value": 2.0,
           "tolerance": 0.001,
-          "part": "a"
+          "part": "b"
         }
       ],
       "assets": [],
@@ -580,7 +607,7 @@
         "obtener $b=+1/2$",
         "afirmar que el periodo se cuadruplica"
       ],
-      "statement_source": "Sin conocer la fórmula del péndulo, se supone \\(T=C L^a g^b\\), donde \\(C\\) es adimensional. Determina \\(a\\) y \\(b\\) imponiendo compatibilidad dimensional. Después indica cómo cambia \\(T\\) si la longitud se cuadruplica.\n\n(a) Completa: Aceleración, B, Factor.",
+      "statement_source": "Sin conocer la fórmula del péndulo, se supone \\(T=C L^a g^b\\), donde \\(C\\) es adimensional. Regla: los dos lados de una ecuación física deben tener la misma dimensión.\n(a) Impón la compatibilidad dimensional y calcula los exponentes \\(a\\) y \\(b\\).\n(b) Si la longitud \\(L\\) se cuadruplica y \\(g\\) no cambia, calcula el factor por el que cambia \\(T\\).",
       "solution_source": "\\(T=L^{a+b}T^{-2b}\\).\n\nPor tanto \\(a+b=0\\) y \\(-2b=1\\), de donde \\(b=-1/2\\) y \\(a=1/2\\).\n\nComo \\(T\\propto\\sqrt L\\), al cuadruplicar \\(L\\) el periodo se duplica.",
       "solution_reference": "exercise-bank-t0-v4-spec.md"
     },
@@ -608,7 +635,7 @@
         },
         {
           "id": "unit_base",
-          "label": "Unidad en unidades basicas",
+          "label": "Unidad en unidades básicas",
           "required": true,
           "type": "unit_expression",
           "unit_system": "base_si",
@@ -646,7 +673,7 @@
         "cambiar $G$ al modificar el sistema",
         "olvidar que la distancia está al cuadrado"
       ],
-      "statement_source": "La ley \\(F=Gm_1m_2/r^2\\) usa \\(F\\) en N, masas en kg y distancia en m. \n(a) Deduce \\([G]\\) usando N.\n(b) Exprésala solo con kg, m y s.\n(c) Completa: Factor de cambio de la fuerza.",
+      "statement_source": "La ley de gravitación \\(F=Gm_1m_2/r^2\\) relaciona fuerza, masas y distancia; no necesitas haber estudiado la gravitación, solo practicar dimensiones y proporciones.\n(a) Deduce \\([G]\\) usando N.\n(b) Expresa \\([G]\\) solo con kg, m y s.\n(c) Imagina que ambas masas se duplican y la distancia se hace tres veces mayor. Calcula el factor \\(F'/F\\) y explica qué cambios has aplicado.",
       "solution_source": "\\([G]=\\mathrm{N\\,m^2\\,kg^{-2}}=\\mathrm{m^3\\,kg^{-1}\\,s^{-2}}\\).\n\nEl numerador aumenta por 4 y \\(r^2\\) por 9, de modo que \\(F'/F=4/9\\).",
       "solution_reference": "exercise-bank-t0-v4-spec.md"
     },
@@ -666,7 +693,7 @@
       "response_fields": [
         {
           "id": "n",
-          "label": "N",
+          "label": "Exponente de la distancia, n",
           "required": true,
           "type": "numeric",
           "expected_value": 2.0,
@@ -676,7 +703,7 @@
         },
         {
           "id": "ratio",
-          "label": "Ratio",
+          "label": "Cociente F′/F",
           "required": true,
           "type": "numeric",
           "expected_value": 0.1111,
@@ -705,7 +732,7 @@
         "decir que la fuerza se divide entre 3",
         "afirmar que las unidades determinan el valor de $k$"
       ],
-      "statement_source": "Una ley se escribe \\(F=kq_1q_2/r^n\\). La constante tiene unidades N·m²·C⁻². \n(a) Determina \\(n\\) por dimensiones.\n(b) Si la distancia pasa de \\(r\\) a \\(3r\\) sin cambiar las cargas, calcula \\(F'/F\\).",
+      "statement_source": "Una ley se escribe \\(F=kq_1q_2/r^n\\), donde las cargas no cambian y \\(k\\) tiene unidades N·m²·C⁻². No necesitas haber estudiado la fuerza eléctrica: se practica cómo las unidades fijan el exponente y cómo cambia una magnitud con la distancia.\n(a) Determina \\(n\\) por dimensiones.\n(b) Si la distancia pasa de \\(r\\) a \\(3r\\), calcula el cociente \\(F'/F\\).",
       "solution_source": "Para cancelar m² debe cumplirse \\(n=2\\).\n\nAsí, \\(F'/F=(r/3r)^2=1/9\\).\n\nLas dimensiones no contienen información sobre factores adimensionales ni sobre el valor experimental de una constante.",
       "solution_reference": "exercise-bank-t0-v4-spec.md"
     },
@@ -733,7 +760,7 @@
         },
         {
           "id": "area",
-          "label": "Area",
+          "label": "Área de la sección",
           "required": true,
           "type": "numeric",
           "expected_value": 2.83e-07,
@@ -745,7 +772,7 @@
         },
         {
           "id": "rho",
-          "label": "Rho",
+          "label": "Resistividad",
           "required": true,
           "type": "numeric",
           "expected_value": 1e-07,
@@ -753,7 +780,7 @@
           "significant_figures": 2,
           "prompt": "Da el resultado con 2 cifras significativas.",
           "unit": "Ω·m",
-          "part": "a"
+          "part": "b"
         }
       ],
       "assets": [],
@@ -774,7 +801,7 @@
         "convertir mm a m con $10^{-2}$",
         "redondear a `1×10^-7` perdiendo las 2 cifras pedidas"
       ],
-      "statement_source": "Un hilo cilíndrico de longitud 2,40 m, diámetro 0,60 mm y resistencia 0,85 Ω cumple \\(R=\\rho L/A\\). \n(a) Deduce la unidad SI de \\(\\rho\\).\n(b) Calcula el área de la sección.",
+      "statement_source": "Un hilo cilíndrico de longitud 2,40 m, diámetro 0,60 mm y resistencia 0,85 Ω cumple \\(R=\\rho L/A\\). La resistividad es una propiedad del material; no necesitas haber estudiado electricidad, solo practicar unidades y área circular.\n(a) Deduce la unidad SI de \\(\\rho\\).\n(b) Convierte el diámetro a metros y calcula el área de la sección y la resistividad.",
       "solution_source": "\\([\\rho]=\\Omega\\,\\mathrm m\\).\n\n\\(r=3,0\\times10^{-4}\\) m y \\(A=\\pi r^2=2,83\\times10^{-7}\\) m².\n\n\\(\\rho=0,85A/2,40=1,001\\times10^{-7}\\,\\Omega\\,\\mathrm m\\approx1,0\\times10^{-7}\\,\\Omega\\,\\mathrm m\\).",
       "solution_reference": "exercise-bank-t0-v4-spec.md"
     },
@@ -814,7 +841,7 @@
         },
         {
           "id": "power_factor",
-          "label": "Power factor",
+          "label": "Factor de cambio de la potencia",
           "required": true,
           "type": "numeric",
           "expected_value": 8.0,
@@ -841,7 +868,7 @@
         "tratar la ley como lineal",
         "perder potencias de m o s al reducir unidades"
       ],
-      "statement_source": "La potencia necesaria para vencer cierto arrastre se aproxima por \\(P=kAv^3\\). Para \\(P=1,20\\) kW, \\(A=0,500\\) m² y \\(v=10,0\\) m·s⁻¹: \n(a) deduce la unidad de \\(k\\);\n(b) calcula \\(k\\);\n(c) Completa: Power factor.",
+      "statement_source": "La potencia necesaria para vencer cierto arrastre se aproxima por \\(P=kAv^3\\). La fórmula solo describe una potencia que crece con el cubo de la velocidad; no necesitas conocer su origen, solo practicar dimensiones y proporciones.\nPara \\(P=1,20\\) kW, \\(A=0,500\\) m² y \\(v=10,0\\) m·s⁻¹:\n(a) Deduce la unidad de \\(k\\).\n(b) Calcula \\(k\\).\n(c) Si la velocidad se duplica y todo lo demás permanece igual, calcula el factor por el que cambia la potencia.",
       "solution_source": "\\([k]=\\mathrm{W}/[\\mathrm{m^2(m\\,s^{-1})^3}]=\\mathrm{kg\\,m^{-3}}\\).\n\n\\(k=1200/(0,500\\cdot10,0^3)=2,40\\,\\mathrm{kg\\,m^{-3}}\\).\n\nAl duplicar \\(v\\), la potencia se multiplica por 8.",
       "solution_reference": "exercise-bank-t0-v4-spec.md"
     },
@@ -861,7 +888,7 @@
       "response_fields": [
         {
           "id": "unit_a",
-          "label": "Unit a",
+          "label": "Unidad de a",
           "required": true,
           "type": "unit_expression",
           "expected_value": "Pa m^6 mol^-2",
@@ -869,7 +896,7 @@
         },
         {
           "id": "unit_b",
-          "label": "Unit b",
+          "label": "Unidad de b",
           "required": true,
           "type": "unit_expression",
           "expected_value": "m^3 mol^-1",
@@ -877,7 +904,7 @@
         },
         {
           "id": "unit_R",
-          "label": "Unit R",
+          "label": "Unidad de R",
           "required": true,
           "type": "unit_expression",
           "expected_value": "J mol^-1 K^-1",
@@ -902,7 +929,7 @@
         "asignar a $b$ unidad de volumen sin dividir por mol",
         "no comprobar el miembro derecho"
       ],
-      "statement_source": "En \\((P+a n^2/V^2)(V-nb)=nRT\\), \\(P\\) está en Pa, \\(V\\) en m³, \\(n\\) en mol y \\(T\\) en K. \n(a) Deduce las unidades de \\(a\\), \\(b\\) y \\(R\\).",
+      "statement_source": "La ecuación de van der Waals \\((P+a n^2/V^2)(V-nb)=nRT\\) modela un gas real. No necesitas conocer esta ecuación: se practica que solo se suman términos con las mismas unidades.\nCon \\(P\\) en Pa, \\(V\\) en m³, \\(n\\) en mol y \\(T\\) en K, deduce las unidades de \\(a\\), \\(b\\) y \\(R\\).",
       "solution_source": "\\([a]=\\mathrm{Pa\\,m^6\\,mol^{-2}}\\) para que \\(an^2/V^2\\) sea presión. \\([b]=\\mathrm{m^3\\,mol^{-1}}\\) para que \\(nb\\) sea volumen.\n\nEl primer paréntesis es presión y el segundo volumen, por lo que su producto es Pa·m³ = J.\n\nEntonces \\([R]=\\mathrm{J\\,mol^{-1}\\,K^{-1}}\\).",
       "solution_reference": "exercise-bank-t0-v4-spec.md"
     },
@@ -922,7 +949,7 @@
       "response_fields": [
         {
           "id": "pressure_term",
-          "label": "Pressure term",
+          "label": "Contribución de presión",
           "required": true,
           "type": "numeric",
           "expected_value": 120000.0,
@@ -932,7 +959,7 @@
         },
         {
           "id": "height_term",
-          "label": "Height term",
+          "label": "Contribución de altura",
           "required": true,
           "type": "numeric",
           "expected_value": 24500.0,
@@ -942,7 +969,7 @@
         },
         {
           "id": "kinetic_term",
-          "label": "Kinetic term",
+          "label": "Contribución cinética",
           "required": true,
           "type": "numeric",
           "expected_value": 4500.0,
@@ -964,21 +991,21 @@
         },
         {
           "id": "dominant",
-          "label": "Dominant",
+          "label": "Contribución dominante",
           "required": true,
           "type": "single_choice",
           "options": [
             {
               "id": "pressure",
-              "label": "pressure"
+              "label": "Presión"
             },
             {
               "id": "height",
-              "label": "height"
+              "label": "Altura"
             },
             {
               "id": "kinetic",
-              "label": "kinetic"
+              "label": "Cinética"
             }
           ],
           "correct_option_id": "pressure",
@@ -1003,7 +1030,7 @@
         "omitir $1/2$",
         "afirmar compatibilidad sin reducir unidades"
       ],
-      "statement_source": "En un punto de una corriente de agua, \\(P=120,0\\) kPa, \\(\\rho=1000\\) kg·m⁻³, \\(h=2,50\\) m y \\(v=3,00\\) m·s⁻¹. Con \\(g=9,80\\) m·s⁻², usa \\(C=P+\\rho gh+\\tfrac12\\rho v^2\\). \n(a) Completa: Pressure term.\n(b) Calcula cada contribución y \\(C\\).\n(c) Indica cuál domina numéricamente.",
+      "statement_source": "En un punto de una corriente de agua, \\(P=120,0\\) kPa, \\(\\rho=1000\\) kg·m⁻³, \\(h=2,50\\) m y \\(v=3,00\\) m·s⁻¹. La expresión \\(C=P+\\rho gh+\\tfrac12\\rho v^2\\) suma presión, contribución de altura y contribución cinética; no necesitas haber estudiado fluidos, solo calcular y comparar términos. Usa \\(g=9,80\\) m·s⁻².\n(a) Calcula la contribución de presión.\n(b) Calcula la contribución de altura, la contribución cinética y \\(C\\), todas en Pa.\n(c) Indica cuál de las tres contribuciones domina numéricamente.",
       "solution_source": "\\(P=120000\\) Pa, \\(\\rho gh=24500\\) Pa y \\(\\tfrac12\\rho v^2=4500\\) Pa. Los dos últimos reducen a kg·m⁻¹·s⁻² = Pa.\n\n\\(C=149000\\) \\(Pa = 149\\) kPa.\n\nDomina el término de presión estática.",
       "solution_reference": "exercise-bank-t0-v4-spec.md"
     },
@@ -1023,7 +1050,7 @@
       "response_fields": [
         {
           "id": "unit_gamma",
-          "label": "Unit gamma",
+          "label": "Unidad del coeficiente de amortiguamiento",
           "required": true,
           "type": "unit_expression",
           "expected_value": "s^-1",
@@ -1031,45 +1058,48 @@
         },
         {
           "id": "unit_omega",
-          "label": "Unit omega",
+          "label": "Unidad de la frecuencia angular",
           "required": true,
           "type": "unit_expression",
           "expected_value": "s^-1",
           "accepted_forms": [
             "rad·s⁻¹"
           ],
-          "part": "b"
+          "part": "a"
         },
         {
           "id": "unit_phase",
-          "label": "Unit phase",
+          "label": "Unidad de la fase",
           "required": true,
-          "type": "unit_expression",
-          "expected_value": "dimensionless",
-          "accepted_forms": [
-            "rad"
+          "type": "single_choice",
+          "part": "a",
+          "options": [
+            {
+              "id": "dimensionless",
+              "label": "No tiene unidades (es adimensional)"
+            }
           ],
-          "part": "b"
+          "correct_option_id": "dimensionless"
         },
         {
           "id": "half_time",
-          "label": "Half time",
+          "label": "Tiempo para reducir la amplitud a la mitad",
           "required": true,
           "type": "numeric",
           "expected_value": 1.98,
           "tolerance": 0.01,
           "unit": "s",
-          "part": "c"
+          "part": "b"
         },
         {
           "id": "period",
-          "label": "Period",
+          "label": "Periodo",
           "required": true,
           "type": "numeric",
           "expected_value": 1.5,
           "tolerance": 0.01,
           "unit": "s",
-          "part": "c"
+          "part": "b"
         }
       ],
       "assets": [],
@@ -1083,14 +1113,14 @@
         "source": "exercise-bank-t0-v4-spec.md"
       },
       "status": "active",
-      "version": 4,
+      "version": 5,
       "learning_objective": "Lenguaje físico, unidades y análisis dimensional",
       "common_mistakes": [
         "confundir periodo con tiempo de semiamplitud",
         "asignar segundos a la fase",
         "olvidar el logaritmo"
       ],
-      "statement_source": "\\(x(t)=A e^{-0,350t}\\cos(4,20t+0,400)\\) describe una posición en metros con \\(t\\) en segundos. \n(a) Da las unidades de los números 0,350; 4,20 y 0,400.\n(b) Calcula el tiempo en que la amplitud se reduce a la mitad.\n(c) Calcula el periodo de la oscilación.",
+      "statement_source": "La posición \\(x(t)=A e^{-0,350t}\\cos(4,20t+0,400)\\) está en metros y \\(t\\) en segundos. La exponencial describe cómo disminuye la amplitud y el coseno describe la oscilación; no necesitas estudiar oscilaciones amortiguadas, solo identificar unidades y calcular tiempos.\n(a) Indica las unidades de 0,350, 4,20 y 0,400.\n(b) Calcula el tiempo para que la amplitud se reduzca a la mitad y el periodo de la oscilación.",
       "solution_source": "0,35 y 4,2 tienen unidad s⁻¹; 0,40 es una fase adimensional.\n\n\\(t_{1/2}=\\ln2/0,35=1,98\\) s.\n\n\\(T=2\\pi/4,2=1,50\\) s.",
       "solution_reference": "exercise-bank-t0-v4-spec.md"
     },
@@ -1110,33 +1140,40 @@
       "response_fields": [
         {
           "id": "unit_alpha",
-          "label": "Unit alpha",
+          "label": "Unidad de α",
           "required": true,
-          "type": "unit_expression",
-          "expected_value": "dimensionless",
-          "part": "a"
+          "type": "single_choice",
+          "part": "a",
+          "options": [
+            {
+              "id": "dimensionless",
+              "label": "No tiene unidades (es adimensional)"
+            }
+          ],
+          "correct_option_id": "dimensionless"
         },
         {
           "id": "unit_beta",
-          "label": "Unit beta",
+          "label": "Unidad de β",
           "required": true,
           "type": "unit_expression",
           "expected_value": "m",
-          "part": "b"
+          "part": "a",
+          "prompt": "Escribe la unidad como m."
         },
         {
           "id": "calculator_S",
-          "label": "Calculator S",
+          "label": "Valor calculado de S",
           "required": true,
           "type": "numeric",
           "expected_value": 1.768,
           "tolerance": 0.002,
           "unit": "m·s⁻¹",
-          "part": "c"
+          "part": "b"
         },
         {
           "id": "reported_S",
-          "label": "Reported S",
+          "label": "S redondeada a 2 cifras significativas",
           "required": true,
           "type": "numeric",
           "expected_value": 1.8,
@@ -1158,14 +1195,14 @@
         "source": "exercise-bank-t0-v4-spec.md"
       },
       "status": "active",
-      "version": 4,
+      "version": 5,
       "learning_objective": "Lenguaje físico, unidades y análisis dimensional",
       "common_mistakes": [
         "sumar términos de dimensiones distintas",
         "sacar la raíz por separado de una suma",
         "olvidar dividir entre $t$"
       ],
-      "statement_source": "Una magnitud se define como \\(S=\\sqrt{\\alpha x^2+\\beta y}/t\\), con \\(S\\) en m·s⁻¹, \\(x\\) e \\(y\\) en m y \\(t\\) en s. \n(a) Deduce las unidades de \\(\\alpha\\) y \\(\\beta\\).\n(b) Completa: Unit beta.\n(c) Calcula \\(S\\) para \\(\\alpha=0,50\\), \\(\\beta=4,0\\) m, \\(x=3,0\\) m, \\(y=2,0\\) m y \\(t=2,0\\) s.",
+      "statement_source": "Una magnitud se define como \\(S=\\sqrt{\\alpha x^2+\\beta y}/t\\), con \\(S\\) en m·s⁻¹, \\(x\\) e \\(y\\) en m y \\(t\\) en s. Regla: dentro de una suma, todos los términos deben tener las mismas unidades.\n(a) Deduce las unidades de \\(\\alpha\\) y \\(\\beta\\).\n(b) Para \\(\\alpha=0,50\\), \\(\\beta=4,0\\) m, \\(x=3,0\\) m, \\(y=2,0\\) m y \\(t=2,0\\) s, calcula \\(S\\).\n(c) Redondea el resultado a 2 cifras significativas.",
       "solution_source": "\\(\\alpha x^2\\) exige \\([\\alpha]=1\\) y \\(\\beta y\\) exige \\([\\beta]=\\mathrm m\\); ambos términos son m² y se pueden sumar.\n\nEl valor de calculadora es \\(S=\\sqrt{4,5+8,0}/2,0=1,768\\ldots\\,\\mathrm{m\\,s^{-1}}\\) y se informa \\(1,8\\,\\mathrm{m\\,s^{-1}}\\) por los datos de 2 cifras significativas.",
       "solution_reference": "exercise-bank-t0-v4-spec.md"
     }
