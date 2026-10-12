@@ -91,6 +91,8 @@ Repository cleanup on `chore/repository-cleanup`, based on safety checkpoint `5d
 
 ## Update Log
 
+- 2026-10-12: Fijado SQLAlchemy en `2.0.52` y normalizadas las URLs `postgres://` y `postgresql://` a `postgresql+psycopg2://`, manteniendo intactas las URLs con driver explícito y SQLite. Añadida cobertura unitaria para las cuatro formas de URL.
+
 - 2026-10-12: Configuradas las opciones de SQLAlchemy `pool_pre_ping` y `pool_recycle` para que las conexiones de Neon Postgres se recuperen tras periodos de inactividad. SQLite local y los tests mantienen su configuración existente. Documentado el uso de Neon mediante `DATABASE_URL` y la necesidad de `SECRET_KEY` en Render.
 
 - 2026-10-12: Ordered the homework exercise-type filter by topic and lesson order, grouped with topic optgroups while preserving stable type keys and selected GET filters. Added T0 ordering coverage and validated the catalogue rendering.

@@ -13,8 +13,9 @@ LOCAL_DATABASE_PATH = BASE_DIR / "instance" / "web_clases_rocedg.sqlite"
 def get_database_uri():
     database_url = os.environ.get("DATABASE_URL")
     if database_url:
-        if database_url.startswith("postgres://"):
-            return database_url.replace("postgres://", "postgresql://", 1)
+        for prefix in ("postgres://", "postgresql://"):
+            if database_url.startswith(prefix):
+                return "postgresql+psycopg2://" + database_url[len(prefix) :]
         return database_url
 
     return f"sqlite:///{LOCAL_DATABASE_PATH.as_posix()}"
