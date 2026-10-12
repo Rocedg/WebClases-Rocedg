@@ -121,7 +121,8 @@ Instala requirements.txt y conserva este comando:
 gunicorn app:app
 ```
 
-Configura SECRET_KEY en producción y DATABASE_URL si usas PostgreSQL. Se conserva
+En producción se usa Neon Postgres mediante DATABASE_URL y debes configurar SECRET_KEY.
+Se conserva
 el diseño actual de SQLAlchemy; esta limpieza no añade migraciones ni cambia
 tablas. LaTeX y las herramientas de revisión no son necesarios en Render.
 
