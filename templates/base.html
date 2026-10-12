@@ -41,12 +41,14 @@
                             </a>
                         </li>
                         {% for item in nav_items %}
+                        {% if not item.teacher_only or session.role == 'teacher' %}
                         <li class="nav-item">
                             <a class="nav-link {% if request.endpoint == item.endpoint %}active{% endif %}"
                                href="{{ url_for(item.endpoint) }}">
                                 <span>{{ item.label }}</span>
                             </a>
                         </li>
+                        {% endif %}
                         {% endfor %}
                     </ul>
 
@@ -74,6 +76,15 @@
         </nav>
 
         <main class="site-main">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+            <div class="container pt-4">
+                {% for category, message in messages %}
+                <div class="alert alert-{{ category }}" role="alert">{{ message }}</div>
+                {% endfor %}
+            </div>
+            {% endif %}
+            {% endwith %}
             {% block content %}{% endblock %}
         </main>
 

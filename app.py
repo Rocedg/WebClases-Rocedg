@@ -6,9 +6,10 @@ from pathlib import Path
 
 import click
 from sqlalchemy import inspect, text
-from flask import Flask, jsonify, redirect, render_template, request, send_file, session, url_for
+from flask import Flask, flash, jsonify, redirect, render_template, request, send_file, session, url_for
 
 from database import db, init_app as init_database
+from models import User
 from services.exercise_presentation import exercise_number, render_exercise_source, response_format_notes, response_placeholder
 from services.exercise_bank_loader import load_topic_banks
 from services.activity_service import (
@@ -39,7 +40,20 @@ from services.exercise_attempt_service import (
     sync_attempt_timer,
     submit_attempt,
 )
-from services.account_service import authenticate_user, ensure_seed_users, update_password
+from services.account_service import (
+    PASSWORD_MISMATCH,
+    PASSWORD_TOO_SHORT,
+    TEACHER_ACCOUNT,
+    USERNAME_INVALID,
+    USERNAME_TAKEN,
+    USER_NOT_FOUND,
+    authenticate_user,
+    create_student,
+    ensure_seed_users,
+    reset_student_password,
+    set_user_active,
+    update_password,
+)
 
 
 app = Flask(__name__)
@@ -51,6 +65,7 @@ app.jinja_env.globals.update(
 )
 app.secret_key = os.environ.get('SECRET_KEY', 'dev-secret-key')
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+app.config["SESSION_COOKIE_SAMESITE"] = "Lax"
 init_database(app)
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -61,6 +76,14 @@ QUIZZES_WEB_ENABLED = False
 ROLE_STUDENT = 'student'
 ROLE_TEACHER = 'teacher'
 ROLE_LABELS = {ROLE_STUDENT: 'Alumno', ROLE_TEACHER: 'Profesor'}
+ACCOUNT_ERROR_MESSAGES = {
+    PASSWORD_MISMATCH: 'Las dos contraseñas no coinciden.',
+    PASSWORD_TOO_SHORT: 'La contraseña debe tener al menos 8 caracteres.',
+    TEACHER_ACCOUNT: 'Esta acción solo está disponible para cuentas de alumnos.',
+    USERNAME_INVALID: 'El usuario debe tener entre 3 y 30 caracteres y solo puede usar letras, números, punto, guion y guion bajo.',
+    USERNAME_TAKEN: 'Ese usuario ya existe, aunque cambie mayúsculas o minúsculas.',
+    USER_NOT_FOUND: 'No se ha encontrado esa cuenta.',
+}
 
 USERS = {
     'Paul': ['fisica2026', ROLE_STUDENT],
@@ -93,6 +116,13 @@ NAV_ITEMS = [
         'label': 'Progreso',
         'description': 'Ruta recomendada y refuerzo',
         'icon': 'fa-chart-line'
+    },
+    {
+        'endpoint': 'teacher_accounts',
+        'label': 'Cuentas',
+        'description': 'Gestionar alumnos',
+        'icon': 'fa-users',
+        'teacher_only': True,
     }
 ]
 
@@ -675,6 +705,67 @@ def account_password():
         error=error,
         success=success,
     )
+
+
+@app.route('/teacher/accounts')
+@teacher_required
+def teacher_accounts():
+    users = db.session.scalars(
+        db.select(User).order_by(User.role, User.username)
+    ).all()
+    return render_template('teacher/accounts.html', users=users)
+
+
+@app.route('/teacher/accounts/create', methods=['POST'])
+@teacher_required
+def create_teacher_student():
+    username = request.form.get('username', '')
+    password = request.form.get('password', '')
+    repeated_password = request.form.get('repeated_password', '')
+    error_code = create_student(username, password, repeated_password)
+
+    if error_code:
+        flash(ACCOUNT_ERROR_MESSAGES[error_code], 'danger')
+    else:
+        flash(
+            f'Cuenta creada: {username}. Pásale la contraseña y pídele que la cambie en su primera visita.',
+            'success',
+        )
+    return redirect(url_for('teacher_accounts'))
+
+
+@app.route('/teacher/accounts/<username>/password', methods=['POST'])
+@teacher_required
+def reset_teacher_student_password(username):
+    error_code = reset_student_password(
+        username,
+        request.form.get('new_password', ''),
+        request.form.get('repeated_password', ''),
+    )
+    if error_code:
+        flash(ACCOUNT_ERROR_MESSAGES[error_code], 'danger')
+    else:
+        flash(f'Contraseña restablecida para {username}.', 'success')
+    return redirect(url_for('teacher_accounts'))
+
+
+@app.route('/teacher/accounts/<username>/active', methods=['POST'])
+@teacher_required
+def toggle_teacher_student_active(username):
+    user = db.session.scalar(db.select(User).where(User.username == username))
+    if user is None:
+        error_code = USER_NOT_FOUND
+    elif user.role != ROLE_STUDENT:
+        error_code = TEACHER_ACCOUNT
+    else:
+        error_code = set_user_active(username, not user.is_active)
+
+    if error_code:
+        flash(ACCOUNT_ERROR_MESSAGES[error_code], 'danger')
+    else:
+        action = 'reactivada' if user.is_active else 'desactivada'
+        flash(f'Cuenta {action}: {username}.', 'success')
+    return redirect(url_for('teacher_accounts'))
 
 
 @app.route('/logout')

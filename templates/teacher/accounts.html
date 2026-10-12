@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+
+{% block title %}Cuentas de alumnos{% endblock %}
+
+{% block content %}
+<section class="section-shell">
+    <div class="section-heading mb-4">
+        <div>
+            <span class="eyebrow">
+                <i class="fas fa-users" aria-hidden="true"></i>
+                Profesorado
+            </span>
+            <h1 class="page-title">Cuentas de alumnos</h1>
+            <p class="page-copy mb-0">Crea cuentas, restablece contraseñas y conserva el historial de cada alumno.</p>
+        </div>
+    </div>
+
+    <div class="panel-card mb-4">
+        <div class="section-heading">
+            <h2>Usuarios</h2>
+            <span class="section-heading-note">{{ users|length }} cuenta{% if users|length != 1 %}s{% endif %}</span>
+        </div>
+        <div class="table-responsive">
+            <table class="table align-middle">
+                <thead>
+                    <tr>
+                        <th>Usuario</th>
+                        <th>Rol</th>
+                        <th>Estado</th>
+                        <th>Creada</th>
+                        <th>Último cambio de contraseña</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for user in users %}
+                    <tr>
+                        <td><strong>{{ user.username }}</strong></td>
+                        <td>{{ role_labels.get(user.role, user.role) }}</td>
+                        <td>
+                            {% if user.is_active %}
+                            <span class="badge text-bg-success">Activa</span>
+                            {% else %}
+                            <span class="badge text-bg-secondary">Desactivada</span>
+                            {% endif %}
+                        </td>
+                        <td>{{ user.created_at.strftime('%d/%m/%Y') }}</td>
+                        <td>{{ user.password_changed_at.strftime('%d/%m/%Y %H:%M') if user.password_changed_at else 'Nunca' }}</td>
+                        <td>
+                            {% if user.role == 'student' %}
+                            <div class="d-flex flex-column gap-2" style="min-width: 17rem;">
+                                <form method="POST" action="{{ url_for('reset_teacher_student_password', username=user.username) }}">
+                                    <div class="input-group input-group-sm">
+                                        <input type="password" class="form-control" name="new_password"
+                                               minlength="8" placeholder="Nueva contraseña" required>
+                                        <input type="password" class="form-control" name="repeated_password"
+                                               minlength="8" placeholder="Repite" required>
+                                        <button type="submit" class="btn btn-outline-primary">Restablecer</button>
+                                    </div>
+                                </form>
+                                <form method="POST" action="{{ url_for('toggle_teacher_student_active', username=user.username) }}">
+                                    <button type="submit" class="btn btn-sm btn-outline-secondary">
+                                        {% if user.is_active %}Desactivar{% else %}Reactivar{% endif %}
+                                    </button>
+                                </form>
+                            </div>
+                            {% else %}
+                            <span class="text-muted">Gestiona tu contraseña desde tu cuenta.</span>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="panel-card">
+        <div class="section-heading">
+            <h2>Crear alumno</h2>
+        </div>
+        <form method="POST" action="{{ url_for('create_teacher_student') }}" class="row g-3">
+            <div class="col-12 col-lg-4">
+                <label for="username" class="form-label fw-bold">Usuario</label>
+                <input type="text" class="form-control form-control-lg" id="username" name="username"
+                       minlength="3" maxlength="30" pattern="[A-Za-z0-9._-]{3,30}" required>
+                <div class="form-text">De 3 a 30 caracteres: letras, números, punto, guion o guion bajo.</div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <label for="password" class="form-label fw-bold">Contraseña inicial</label>
+                <input type="password" class="form-control form-control-lg" id="password" name="password"
+                       minlength="8" required>
+            </div>
+            <div class="col-12 col-lg-4">
+                <label for="repeated_password" class="form-label fw-bold">Repite la contraseña</label>
+                <input type="password" class="form-control form-control-lg" id="repeated_password"
+                       name="repeated_password" minlength="8" required>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-user-plus me-1" aria-hidden="true"></i>Crear cuenta
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}
