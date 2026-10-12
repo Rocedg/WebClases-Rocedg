@@ -2,7 +2,7 @@
 
 ## Current Phase
 
-Repository cleanup on `chore/repository-cleanup`, based on safety checkpoint `5d6ad08`. The user explicitly authorized checkpoint/push and repository reorganization on 2026-09-14. Current content paths are documented in `docs/context/02-architecture.md`; dated entries below retain historical paths.
+1.º Bachillerato en producción (Render + Postgres en Neon). Fase actual (desde 2026-10-12): cuentas reales gestionadas por el profesor, panel del profesor y pulido de contenidos T0–T6. Las rutas de contenido actuales están en `docs/context/02-architecture.md`; las entradas fechadas conservan rutas históricas.
 
 ## Completed
 
@@ -34,20 +34,33 @@ Repository cleanup on `chore/repository-cleanup`, based on safety checkpoint `5d
 - Guided exercise student UX polished on `dev/exercise-practice-ux-polish`: catalogue cards now start or continue attempts directly via POST/link, filters are server-rendered, MathJax renders exercise notation, submitted attempts show guided solutions plus retry/next actions, and diagrams are contained.
 - T0 exercise bank v4 implemented on `dev/t0-exercise-bank-v4`: active Tema 0 practice now contains 80 versioned exercises across units, vectors, measurement/error, and calculus/graphs, with retired IDs preserved in metadata for historical attempts.
 - Exercise grading/timer polish implemented on `dev/exercise-grading-timer-polish`: semantic unit-expression grading replaces string comparison, pending-review scoring is provisional, student exercise UI hides internal metadata, catalogue cards show New/In progress/Completed backgrounds, active attempts persist an optional active-time timer, and submitted/history views display measured active duration.
+- Repository cleanup (`chore/repository-cleanup`) merged to `main`.
+- 2026-10-12 · Número visible de cada ejercicio en catálogo, detalle e historial (`f69dfdd`).
+- 2026-10-12 · Banco T0 v5 (errores y vectores, `t0_m_021`–`t0_m_025`, `t0_v_037`–`t0_v_049`) en `main`, con el arreglo de los ejercicios de derivadas e integrales (`4e6736c`, `6f41d8f`).
+- 2026-10-12 · Bancos de ejercicios divididos en `_topic.json` + archivos por bloque, con el formato documentado (`dd1c952`, `0e51539`, `3c98025`).
+- 2026-10-12 · Auditoría de enunciados T0, bloque de unidades: 16 ejercicios reescritos para alumnos de 1.º (`aedccdc`).
+- 2026-10-12 · Filtro de tipos de ejercicio ordenado por tema y orden de la lección (`bb5e6a5`).
+- 2026-10-12 · Postgres persistente en Neon vía `DATABASE_URL`, con conexiones que sobreviven a la inactividad y driver `psycopg2` fijado (`030ed13`, `3a48ff3`). Los intentos ya no se pierden en cada despliegue de Render.
+- 2026-10-12 · Tabla `users` con contraseñas hash y cambio de contraseña en `/account/password` (`1bbc55e`). Sustituye a los usuarios hardcodeados como fuente de autenticación.
+- 2026-10-12 · Gestión de cuentas de alumnos por el profesor en `/teacher/accounts`: crear, restablecer contraseña, desactivar y reactivar (`b01ac51`).
 
 ## In Progress
 
-- None.
+- Quitar del código las cuentas de personas reales: `USERS` solo con `Guest` y `Edgar` (prompt en `cuentas/prompt-cc-3-quitar-cuentas-hardcodeadas.md`).
+- Ejercicios de vector unitario `t0_v_050`–`t0_v_057`: prompt listo (`clases/tema0/prompt-cc-7-ejercicios-vector-unitario.md`), todavía no en `main`.
+- Auditoría de enunciados T0: hecho el bloque de unidades; faltan medida/errores, vectores y cálculo.
 
 ## Next Recommended Work
 
-1. Review the repository cleanup branch and the preserved lesson/PDF changes before any separately authorized merge.
-2. Remove generated LaTeX `.aux`/`.out` review artifacts if they appear in the working tree before commit.
-3. Review the T0 v0.3 PDF and embedded lesson viewer if not already approved.
-4. Later: add database migrations before relying on production schema changes.
-5. Later: replace hardcoded users with a real user table.
-6. Later: build teacher review for submitted exercise responses.
-7. Later: replace rough generated exercise diagrams with a shared SVG diagram system.
+1. Terminar las tareas en curso (cuentas hardcodeadas, vector unitario, resto de la auditoría T0).
+2. Panel del profesor: ver progreso e intentos de cada alumno y revisar respuestas enviadas (prompt en `admin/prompt-cc-1-panel-profesor.md`, spec `feature-specs/teacher-dashboard.md`).
+3. Revisión de todas las funcionalidades en producción: login, cuentas, cambio de contraseña, catálogo, intentos, historial, progreso y lecciones; anotar fallos y arreglarlos uno a uno.
+4. Pulir los temas que siguen a T0 (T1–T6): revisar apuntes y bancos de ejercicios y pasar de `draft` a activo los que estén revisados.
+5. Formulario de fórmulas de T0 en LaTeX (PDF) para Sandro.
+6. ~~Replace hardcoded users with a real user table.~~ Hecho el 2026-10-12 (`1bbc55e`).
+7. Later: add database migrations before relying on production schema changes (Postgres ya está en producción).
+8. Later: replace rough generated exercise diagrams with a shared SVG diagram system.
+9. Remove generated LaTeX `.aux`/`.out` review artifacts if they appear in the working tree before commit.
 
 ## Decisions
 
@@ -60,11 +73,11 @@ Repository cleanup on `chore/repository-cleanup`, based on safety checkpoint `5d
 - Use `Web Clases Rocedg` as the brand name, with `Física` as a subject pill.
 - Use SQLAlchemy/Flask-SQLAlchemy for the persistence spike.
 - Use SQLite locally by default.
-- Keep `DATABASE_URL` PostgreSQL-ready for production later.
+- Production uses PostgreSQL (Neon) through `DATABASE_URL`; SQLite stays the local/test default.
 - Store PDF/image paths and metadata only, not files.
-- Do not refactor authentication yet; associate activity by session username.
+- Authentication reads only the `users` table; activity is still associated by username.
 - Do not build the full dashboard yet.
-- Do not build the teacher dashboard yet.
+- Teacher dashboard is now the next planned feature (2026-10-12).
 - Do not expand the exercise system in the UI redesign update branch.
 - Exercise attempts use dedicated `ExerciseAttempt` and `ExerciseResponse` tables instead of extending quiz attempts.
 - Exercise content stays in JSON; SQL rows store user work keyed by `exercise_id` and `exercise_version`.
@@ -76,7 +89,7 @@ Repository cleanup on `chore/repository-cleanup`, based on safety checkpoint `5d
 - Exact PDF page tracking requires a controlled PDF viewer later.
 - Direct static file downloads are not trackable unless users enter through a Flask route.
 - The current tracked resource route records open/download clicks before serving or redirecting resources.
-- Current hardcoded users are associated by username only.
+- Activity and attempts are associated by username only (no user-id foreign key).
 - Tracked PDF routes now serve local PDFs directly with explicit `Content-Disposition` and no-store cache headers.
 - The T0 lesson viewer records `lesson_viewed` on `/lesson/T0-introduccion`, embeds the static PDF to avoid double-counting, and tracks downloads through `/resource/lesson_pdf/.../download`.
 
@@ -90,6 +103,8 @@ Repository cleanup on `chore/repository-cleanup`, based on safety checkpoint `5d
 - Letting old design reference locations or placeholder branding leak into review.
 
 ## Update Log
+- 2026-10-12: Tracker puesto al día: marcadas como hechas las tareas completadas hoy, actualizadas fase, trabajo en curso, siguientes pasos y decisiones obsoletas (auth y panel del profesor).
+
 - 2026-10-12: Añadida la gestión de cuentas de alumnos para el profesor: creación con contraseña inicial, restablecimiento, desactivación/reactivación, validación de usuarios y navegación protegida por `teacher_required`.
 
 - 2026-10-12: Añadida la tabla `users` como fuente única de autenticación, con contraseñas hash, sembrado inicial idempotente por `USERS` y cambio de contraseña en `/account/password`. La navegación enlaza la cuenta y se añadieron pruebas de roles, validación de contraseñas y persistencia del cambio.
