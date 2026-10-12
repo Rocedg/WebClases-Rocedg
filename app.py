@@ -39,6 +39,7 @@ from services.exercise_attempt_service import (
     sync_attempt_timer,
     submit_attempt,
 )
+from services.account_service import authenticate_user, ensure_seed_users, update_password
 
 
 app = Flask(__name__)
@@ -483,6 +484,7 @@ with app.app_context():
     try:
         db.create_all()
         ensure_database_schema()
+        ensure_seed_users(USERS)
     except Exception:
         db.session.rollback()
         app.logger.exception('Database schema setup failed at startup')
@@ -580,6 +582,7 @@ def init_db_command():
     with app.app_context():
         db.create_all()
         ensure_database_schema()
+        ensure_seed_users(USERS)
     database_uri = app.config['SQLALCHEMY_DATABASE_URI']
     if database_uri.startswith('sqlite:///') and database_uri.endswith('web_clases_rocedg.sqlite'):
         database_location = 'instance/web_clases_rocedg.sqlite'
@@ -635,13 +638,43 @@ def login():
         username = request.form['username']
         password = request.form['password']
 
-        stored_password = USERS.get(username, [None])[0]
-        if stored_password and stored_password == password:
+        user = authenticate_user(username, password)
+        if user:
             session['username'] = username
-            session['role'] = USERS[username][1]
+            session['role'] = user.role
             return redirect(url_for('home'))
         return render_template('login.html', error='Credenciales incorrectas')
     return render_template('login.html')
+
+
+@app.route('/account/password', methods=['GET', 'POST'])
+@login_required
+def account_password():
+    error = None
+    success = None
+    if request.method == 'POST':
+        current_password = request.form.get('current_password', '')
+        new_password = request.form.get('new_password', '')
+        repeated_password = request.form.get('repeated_password', '')
+        user = authenticate_user(session['username'], current_password)
+
+        if user is None:
+            error = 'La contraseña actual no es correcta.'
+        elif new_password != repeated_password:
+            error = 'Las dos contraseñas nuevas no coinciden.'
+        elif len(new_password) < 8:
+            error = 'La nueva contraseña debe tener al menos 8 caracteres.'
+        elif new_password == current_password:
+            error = 'La nueva contraseña debe ser distinta de la actual.'
+        else:
+            update_password(user, new_password)
+            success = 'Contraseña actualizada.'
+
+    return render_template(
+        'user/account_password.html',
+        error=error,
+        success=success,
+    )
 
 
 @app.route('/logout')

@@ -52,7 +52,7 @@
 
                     <div class="nav-user mt-3 mt-lg-0">
                         {% if session.username %}
-                        <div class="nav-account">
+                        <a class="nav-account nav-account-link" href="{{ url_for('account_password') }}">
                             <span class="nav-account-icon"><i class="fas fa-user-circle" aria-hidden="true"></i></span>
                             <span>
                                 <strong>{{ session.username }}</strong>
@@ -60,7 +60,7 @@
                                 <small>{{ role_labels.get(session.role, session.role) }}</small>
                                 {% endif %}
                             </span>
-                        </div>
+                        </a>
                         <a class="nav-logout" href="{{ url_for('logout') }}">Salir</a>
                         {% else %}
                         <a href="{{ url_for('login') }}" class="btn btn-primary nav-login">

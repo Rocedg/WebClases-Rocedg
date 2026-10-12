@@ -145,6 +145,15 @@ body {
     color: var(--text-main);
 }
 
+.nav-account-link {
+    text-decoration: none;
+}
+
+.nav-account-link:hover,
+.nav-account-link:focus {
+    color: var(--primary-color);
+}
+
 .nav-account-icon {
     display: grid;
     width: 2.1rem;

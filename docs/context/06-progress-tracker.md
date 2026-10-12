@@ -90,6 +90,8 @@ Repository cleanup on `chore/repository-cleanup`, based on safety checkpoint `5d
 - Letting old design reference locations or placeholder branding leak into review.
 
 ## Update Log
+- 2026-10-12: Añadida la tabla `users` como fuente única de autenticación, con contraseñas hash, sembrado inicial idempotente por `USERS` y cambio de contraseña en `/account/password`. La navegación enlaza la cuenta y se añadieron pruebas de roles, validación de contraseñas y persistencia del cambio.
+
 
 - 2026-10-12: Fijado SQLAlchemy en `2.0.52` y normalizadas las URLs `postgres://` y `postgresql://` a `postgresql+psycopg2://`, manteniendo intactas las URLs con driver explícito y SQLite. Añadida cobertura unitaria para las cuatro formas de URL.
 

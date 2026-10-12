@@ -1,9 +1,19 @@
 import app as app_module
 from app import app as flask_app
+from database import db
+from models import User
+from werkzeug.security import generate_password_hash
 
 
 def login(client, username, password):
     return client.post("/login", data={"username": username, "password": password})
+
+
+def set_password(username, password):
+    with flask_app.app_context():
+        user = db.session.scalar(db.select(User).where(User.username == username))
+        user.password_hash = generate_password_hash(password)
+        db.session.commit()
 
 
 def test_real_accounts_log_in_with_their_roles():
@@ -14,8 +24,8 @@ def test_real_accounts_log_in_with_their_roles():
             assert session["role"] == role
 
 
-def test_teacher_can_log_in_and_sees_student_pages(monkeypatch):
-    monkeypatch.setitem(app_module.USERS, "Edgar", ["teacher-pass", app_module.ROLE_TEACHER])
+def test_teacher_can_log_in_and_sees_student_pages():
+    set_password("Edgar", "teacher-pass")
     client = flask_app.test_client()
 
     assert login(client, "Edgar", "teacher-pass").status_code == 302
@@ -26,8 +36,8 @@ def test_teacher_can_log_in_and_sees_student_pages(monkeypatch):
     assert "Profesor" in client.get("/topics").get_data(as_text=True)
 
 
-def test_student_account_logs_in_as_student(monkeypatch):
-    monkeypatch.setitem(app_module.USERS, "Sandro", ["student-pass", app_module.ROLE_STUDENT])
+def test_student_account_logs_in_as_student():
+    set_password("Sandro", "student-pass")
     client = flask_app.test_client()
 
     assert login(client, "Sandro", "student-pass").status_code == 302
@@ -35,8 +45,11 @@ def test_student_account_logs_in_as_student(monkeypatch):
         assert session["role"] == "student"
 
 
-def test_account_without_configured_password_cannot_log_in(monkeypatch):
-    monkeypatch.setitem(app_module.USERS, "Edgar", [None, app_module.ROLE_TEACHER])
+def test_account_without_configured_password_cannot_log_in():
+    with flask_app.app_context():
+        user = db.session.scalar(db.select(User).where(User.username == "Edgar"))
+        db.session.delete(user)
+        db.session.commit()
     client = flask_app.test_client()
 
     for password in ["", "None"]:
