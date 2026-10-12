@@ -1,0 +1,559 @@
+{
+  "exercises": [
+    {
+      "id": "t6_x_001",
+      "version": 1,
+      "title": "Patinadores 50 y 75 kg",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Separaciones y retroceso",
+      "family": "x",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "segundo",
+          "label": "Segundo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -2.0,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_x_001.svg",
+          "alt": "Antes/después."
+        }
+      ],
+      "tags": [
+        "t6",
+        "x",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Separaciones y retroceso: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Separaciones y retroceso"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia x"
+      ],
+      "parts_count": 1,
+      "statement_source": "Patinadores \\(50\\) y \\(75 kg\\); primero sale a \\(3 m/s\\).\n\n(a) Calcula: Segundo.",
+      "solution_source": "Segundo \\(-2 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_x_002",
+      "version": 1,
+      "title": "Cañón 500 kg, proyectil 5 kg a 100 m/s",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Separaciones y retroceso",
+      "family": "x",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "retroceso",
+          "label": "Retroceso",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -1.0,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_x_002.svg",
+          "alt": "Vectores de distinto tamaño/escala."
+        }
+      ],
+      "tags": [
+        "t6",
+        "x",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Separaciones y retroceso: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Separaciones y retroceso"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia x"
+      ],
+      "parts_count": 1,
+      "statement_source": "Cañón \\(500 kg\\), proyectil \\(5 kg\\) a \\(100 m/s\\).\n\n(a) Calcula: Retroceso.",
+      "solution_source": "Retroceso \\(-1 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_x_003",
+      "version": 1,
+      "title": "Carro 6 kg se divide en 2 y 4 kg",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Separaciones y retroceso",
+      "family": "x",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "fragmento_pesado",
+          "label": "Fragmento pesado",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -4.0,
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_x_003.svg",
+          "alt": "Separación en eje."
+        }
+      ],
+      "tags": [
+        "t6",
+        "x",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Separaciones y retroceso: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Separaciones y retroceso"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia x"
+      ],
+      "parts_count": 1,
+      "statement_source": "Carro \\(6 kg\\) se divide en \\(2\\) y \\(4 kg\\); fragmento ligero \\(+8\\).\n\n(a) Calcula: Fragmento pesado.",
+      "solution_source": "Fragmento pesado \\(-4 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_x_004",
+      "version": 1,
+      "title": "Objeto en movimiento ,  se separa en 4 y 6 kg",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Separaciones y retroceso",
+      "family": "x",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "otro",
+          "label": "Otro",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 6.67,
+          "unit": "m/s",
+          "tolerance": 0.03335,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_x_004.svg",
+          "alt": "Momento inicial y final."
+        }
+      ],
+      "tags": [
+        "t6",
+        "x",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Separaciones y retroceso: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Separaciones y retroceso"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia x"
+      ],
+      "parts_count": 1,
+      "statement_source": "Objeto en movimiento \\(M=10\\), \\(v=4\\) se separa en \\(4\\) y \\(6 kg\\); uno queda en reposo.\n\n(a) Calcula: Otro.",
+      "solution_source": "Otro \\(6,67 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_x_005",
+      "version": 1,
+      "title": "Dos fragmentos salen perpendiculares desde reposo imposible sin tercero",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Separaciones y retroceso",
+      "family": "x",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Selección: momento vectorial no suma cero; vector tercero requerido"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_x_005.svg",
+          "alt": "Polígono de momentos."
+        }
+      ],
+      "tags": [
+        "t6",
+        "x",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Separaciones y retroceso: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Separaciones y retroceso"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia x"
+      ],
+      "parts_count": 1,
+      "statement_source": "Dos fragmentos salen perpendiculares desde reposo imposible sin tercero.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Selección: momento vectorial no suma cero; vector tercero requerido.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_x_006",
+      "version": 1,
+      "title": "Explosión 2D",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Separaciones y retroceso",
+      "family": "x",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "p_3",
+          "label": "p_3",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "expected_components": [
+            -6.0,
+            -8.0
+          ],
+          "accepted_forms": [
+            "(-6; -8)"
+          ],
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "unit": "",
+          "tolerance": 0.02,
+          "part": "a"
+        },
+        {
+          "id": "modulo",
+          "label": "Módulo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 10.0,
+          "unit": "",
+          "tolerance": 0.05,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_x_006.svg",
+          "alt": "Triángulo cerrado."
+        }
+      ],
+      "tags": [
+        "t6",
+        "x",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Separaciones y retroceso: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Separaciones y retroceso"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia x"
+      ],
+      "parts_count": 2,
+      "statement_source": "Explosión 2D: \\(p_1=(6;0)\\), \\(p_2=(0;8)\\), inicial cero.\n\n(a) Calcula: p_3.\n(b) Calcula: Módulo.",
+      "solution_source": "\\(p_3=(-6;-8)\\); módulo \\(10\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_x_007",
+      "version": 1,
+      "title": "Energía aumenta en separación desde reposo",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Separaciones y retroceso",
+      "family": "x",
+      "subtype": "multi_step",
+      "difficulty": 5,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Selección: energía interna se transforma; ΔK numérico"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_x_007.svg",
+          "alt": "Barras de energía y momento."
+        }
+      ],
+      "tags": [
+        "t6",
+        "x",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Separaciones y retroceso: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Separaciones y retroceso"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia x"
+      ],
+      "parts_count": 1,
+      "statement_source": "Energía aumenta en separación desde reposo.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Selección: energía interna se transforma; \\(\\Delta K\\) numérico.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t6_x_008",
+      "version": 1,
+      "title": "Auditar signos de retroceso cuando ambos resultados se dan positivos",
+      "course": "1bach",
+      "topic": "t6",
+      "concept": "Momento lineal, impulso y choques",
+      "block": "Separaciones y retroceso",
+      "family": "x",
+      "subtype": "multi_step",
+      "difficulty": 5,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Velocidad con signo corregida y comprobación de suma cero"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t6/assets/t6_x_008.svg",
+          "alt": "Eje y tabla de signos."
+        }
+      ],
+      "tags": [
+        "t6",
+        "x",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Separaciones y retroceso: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Separaciones y retroceso"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "conservar el momento de un objeto aislado durante el choque",
+        "conservar energía cinética en cualquier interacción",
+        "ignorar la representación específica de la familia x"
+      ],
+      "parts_count": 1,
+      "statement_source": "Auditar signos de retroceso cuando ambos resultados se dan positivos.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Velocidad con signo corregida y comprobación de suma cero.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+    }
+  ]
+}

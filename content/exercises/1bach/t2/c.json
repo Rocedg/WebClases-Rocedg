@@ -1,0 +1,1066 @@
+{
+  "exercises": [
+    {
+      "id": "t2_c_001",
+      "version": 1,
+      "title": "De revoluciones por minuto a periodo",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Movimiento circular",
+      "family": "c",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "f",
+          "label": "Frecuencia",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.5,
+          "unit": "Hz",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "period",
+          "label": "Periodo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.6666666666666666,
+          "unit": "s",
+          "tolerance": 0.001,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "omega",
+          "label": "Velocidad angular",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 9.42477796076938,
+          "unit": "rad/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "angle",
+          "label": "Ángulo girado",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 37.69911184307752,
+          "unit": "rad",
+          "tolerance": 0.05,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "turns",
+          "label": "Número de vueltas",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 6,
+          "unit": "vueltas",
+          "tolerance": 0.001,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_c_001.svg",
+          "alt": "Disco: 90 rpm antihorarias"
+        }
+      ],
+      "tags": [
+        "t2",
+        "c",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "De revoluciones por minuto a periodo. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Movimiento circular"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar usar 90 como frecuencia en hz.",
+      "common_mistakes": [
+        "Usar 90 como frecuencia en Hz",
+        "Confundir 12π rad con 12π vueltas"
+      ],
+      "parts_count": 2,
+      "statement_source": "Un disco centrado en \\(O\\), en el plano \\(xy\\), gira uniformemente a \\(90\\,\\mathrm{rpm}\\). Los ejes son \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba; el giro antihorario es positivo.\n\n(a) Obtén la frecuencia \\(f\\), el periodo \\(T\\) y la velocidad angular \\(\\omega\\) en SI.\n\n(b) Calcula el ángulo girado en radianes y el número de vueltas en \\(4\\,\\mathrm{s}\\).",
+      "solution_source": "La frecuencia es \\(f=90/60=1,50\\,\\mathrm{Hz}\\), así que \\(T=1/f=0,667\\,\\mathrm{s}\\).\n\n\\[\\omega=2\\pi f=3\\pi\\simeq9,42\\,\\mathrm{rad/s}\\]\n\nEn cuatro segundos, \\(\\Delta\\theta=\\omega t=12\\pi\\simeq37,7\\,\\mathrm{rad}\\) y \\(N=\\Delta\\theta/(2\\pi)=6\\) vueltas."
+    },
+    {
+      "id": "t2_c_002",
+      "version": 1,
+      "title": "La rapidez del borde y el arco recorrido",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Movimiento circular",
+      "family": "c",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "omega",
+          "label": "Velocidad angular",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 12.566370614359172,
+          "unit": "rad/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "speed",
+          "label": "Rapidez del borde",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3.141592653589793,
+          "unit": "m/s",
+          "tolerance": 0.005,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "distance",
+          "label": "Distancia",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 15.707963267948966,
+          "unit": "m",
+          "tolerance": 0.05,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "dr",
+          "label": "Desplazamiento tras diez vueltas",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(0; 0)",
+            "0 i + (0) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            0,
+            0
+          ],
+          "unit": "m",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_c_002.svg",
+          "alt": "Punto del borde: R=0,25 m, diez vueltas"
+        }
+      ],
+      "tags": [
+        "t2",
+        "c",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "La rapidez del borde y el arco recorrido. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Movimiento circular"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar dar a ω unidades m/s.",
+      "common_mistakes": [
+        "Dar a ω unidades m/s",
+        "Igualar arco a módulo de desplazamiento"
+      ],
+      "parts_count": 2,
+      "statement_source": "Rueda de radio 0,25 m, centro O y giro antihorario positivo, da 10 vueltas en 5 s con MCU. \n(a) Halla ω y rapidez del borde.\n(b) Calcula longitud recorrida y desplazamiento vectorial tras 5 s si empieza en \\((0,25;0) m\\).",
+      "solution_source": "\\(f=10/5=2 Hz\\); \\(ω=4π rad/s\\). \\(Rapidez=R|ω|=0,25·4π=π m/s\\).\n\n\\(Arco=10·2π·0,25=5π=15,7 m\\).\n\nTras diez vueltas regresa al punto inicial: \\(Δr=(0,0),\\) aunque el recorrido es positivo.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_c_003",
+      "version": 1,
+      "title": "Cuatro tangentes de un mismo MCU",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Movimiento circular",
+      "family": "c",
+      "subtype": "written_upload",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "east",
+          "label": "Velocidad en (2,0)",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(0; 4)",
+            "0 i + (4) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            0,
+            4
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "a"
+        },
+        {
+          "id": "north",
+          "label": "Velocidad en (0,2)",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(-4; 0)",
+            "-4 i + (0) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            -4,
+            0
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "a"
+        },
+        {
+          "id": "west",
+          "label": "Velocidad en (−2,0)",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(0; -4)",
+            "0 i + (-4) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            0,
+            -4
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "a"
+        },
+        {
+          "id": "south",
+          "label": "Velocidad en (0,−2)",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(4; 0)",
+            "4 i + (0) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            4,
+            0
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "a"
+        },
+        {
+          "id": "period",
+          "label": "Periodo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3.141592653589793,
+          "unit": "s",
+          "tolerance": 0.005,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_c_003.svg",
+          "alt": "MCU antihorario de radio 2 m"
+        }
+      ],
+      "tags": [
+        "t2",
+        "c",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Cuatro tangentes de un mismo MCU. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Movimiento circular"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar dibujar velocidades radiales.",
+      "common_mistakes": [
+        "Dibujar velocidades radiales",
+        "Confundir rapidez constante y vector constante"
+      ],
+      "parts_count": 2,
+      "statement_source": "Circunferencia de radio 2 m, centro O, \\(+x\\) derecha,\\(+y\\) arriba, giro antihorario y rapidez 4 m/s. \n(a) Completa: Velocidad en (2,0), Velocidad en (0,2), Velocidad en (−2,0), Velocidad en (0,−2).\n(b) Completa: Periodo.",
+      "solution_source": "La tangente antihoraria da \\(v=(0,4),(−4,0),(0,−4),(4,0) m/s\\) en los cuatro puntos.\n\n\\(T=2πR/|v|=4π/4=π s\\).\n\nEl módulo vale siempre 4 m/s, pero cambia la dirección; por ello el vector velocidad no es constante y existe aceleración.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_c_004",
+      "version": 1,
+      "title": "Aceleración al centro en dos puntos",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Movimiento circular",
+      "family": "c",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "an",
+          "label": "Módulo centrípeto",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 12,
+          "unit": "m/s²",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "ae",
+          "label": "Aceleración en (3,0)",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(-12; 0)",
+            "-12 i + (0) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            -12,
+            0
+          ],
+          "unit": "m/s²",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "a"
+        },
+        {
+          "id": "as",
+          "label": "Aceleración en (0,−3)",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(0; 12)",
+            "0 i + (12) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            0,
+            12
+          ],
+          "unit": "m/s²",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "a"
+        },
+        {
+          "id": "ve",
+          "label": "Velocidad en (3,0)",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(0; 6)",
+            "0 i + (6) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            0,
+            6
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "a"
+        },
+        {
+          "id": "vs",
+          "label": "Velocidad en (0,−3)",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(6; 0)",
+            "6 i + (0) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            6,
+            0
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_c_004.svg",
+          "alt": "Tangentes y centrípetas: R=3 m"
+        }
+      ],
+      "tags": [
+        "t2",
+        "c",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Aceleración al centro en dos puntos. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Movimiento circular"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar dibujar una aceleración hacia fuera.",
+      "common_mistakes": [
+        "Dibujar una aceleración hacia fuera",
+        "Afirmar a=0 por rapidez constante"
+      ],
+      "parts_count": 2,
+      "statement_source": "Un móvil describe MCU de radio 3 m a 6 m/s, centro O, \\(+x\\) derecha,\\(+y\\) arriba y giro antihorario. \n(a) Obtén \\(a_n\\) y su vector en \\((3,0)\\) y \\((0,−3) m\\).",
+      "solution_source": "\\(a_n=v²/R=36/3=12 m/s²\\); hacia O: \\(a(3,0)=(−12,0),\\) \\(a(0,−3)=(0,12)\\).\n\nVelocidades tangentes: \\((0,6)\\) y \\((6,0) m/s\\).\n\nEn ambos puntos v·\\(a=0\\); la aceleración cambia dirección sin modificar rapidez.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_c_005",
+      "version": 1,
+      "title": "Parametrizar un giro horario",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Movimiento circular",
+      "family": "c",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "theta",
+          "label": "Ángulo",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [
+            "pi/2-pi*t/2"
+          ],
+          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
+          "grading": "pending_review",
+          "variable": "t",
+          "variable_unit": "s",
+          "unit": "rad",
+          "domain": "t ≥ 0",
+          "canonical_expression": "pi/2-pi*t/2",
+          "part": "a"
+        },
+        {
+          "id": "x",
+          "label": "X(t)",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [
+            "2*sin(pi*t/2)",
+            "2*cos(pi/2-pi*t/2)"
+          ],
+          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
+          "grading": "pending_review",
+          "variable": "t",
+          "variable_unit": "s",
+          "unit": "m",
+          "domain": "t ≥ 0",
+          "canonical_expression": "2*sin(pi*t/2)",
+          "part": "a"
+        },
+        {
+          "id": "y",
+          "label": "Y(t)",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [
+            "2*cos(pi*t/2)",
+            "2*sin(pi/2-pi*t/2)"
+          ],
+          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
+          "grading": "pending_review",
+          "variable": "t",
+          "variable_unit": "s",
+          "unit": "m",
+          "domain": "t ≥ 0",
+          "canonical_expression": "2*cos(pi*t/2)",
+          "part": "a"
+        },
+        {
+          "id": "r",
+          "label": "Posición a 1 s",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(2; 0)",
+            "2 i + (0) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            2,
+            0
+          ],
+          "unit": "m",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        },
+        {
+          "id": "v",
+          "label": "Velocidad a 1 s",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(0; -3.141592653589793)",
+            "0 i + (-3.141592653589793) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            0,
+            -3.141592653589793
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_c_005.svg",
+          "alt": "Inicio en (0,2); giro horario, T=4 s"
+        }
+      ],
+      "tags": [
+        "t2",
+        "c",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Parametrizar un giro horario. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Movimiento circular"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar usar fase cero aunque sale desde arriba.",
+      "common_mistakes": [
+        "Usar fase cero aunque sale desde arriba",
+        "Perder el signo de la derivada de coseno"
+      ],
+      "parts_count": 2,
+      "statement_source": "Circunferencia de radio 2 m centrada en O, \\(+x\\) derecha,\\(+y\\) arriba; θ positiva antihoraria. El móvil sale de \\((0,2) m\\) y gira en sentido horario con periodo 4 s. \n(a) Escribe θ(t),\\(x(t)\\),\\(y(t)\\).\n(b) Completa: Posición a 1 s, Velocidad a 1 s.",
+      "solution_source": "\\(ω=−2π/4=−π/2 rad/s\\), \\(θ_0=π/2\\); \\(θ=π/2−πt/2\\).\n\n\\(x=2cosθ=2\\sin(πt/2),\\) \\(y=2\\sinθ=2cos(πt/2)\\). En \\(t=1,r=(2,0) m\\).\n\n\\(v=(πcos(πt/2),−π\\sin(πt/2)),\\) así \\(v(1)=(0,−π) m/s\\). x²+y²=4 m² siempre; el radio se conserva.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_c_006",
+      "version": 1,
+      "title": "Las componentes oscilan aunque la rapidez sea fija",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Movimiento circular",
+      "family": "c",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "period",
+          "label": "Periodo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3.141592653589793,
+          "unit": "s",
+          "tolerance": 0.005,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "speed",
+          "label": "Rapidez",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "vx",
+          "label": "V x(t)",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [
+            "-sin(2*t)"
+          ],
+          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
+          "grading": "pending_review",
+          "variable": "t",
+          "variable_unit": "s",
+          "unit": "m/s",
+          "domain": "t ≥ 0",
+          "canonical_expression": "-sin(2*t)",
+          "part": "a"
+        },
+        {
+          "id": "vy",
+          "label": "V y(t)",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [
+            "cos(2*t)"
+          ],
+          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
+          "grading": "pending_review",
+          "variable": "t",
+          "variable_unit": "s",
+          "unit": "m/s",
+          "domain": "t ≥ 0",
+          "canonical_expression": "cos(2*t)",
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_c_006.svg",
+          "alt": "Posición horizontal durante una vuelta; Posición vertical durante una vuelta"
+        }
+      ],
+      "tags": [
+        "t2",
+        "c",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Las componentes oscilan aunque la rapidez sea fija. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Movimiento circular"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar confundir componente variable con rapidez variable.",
+      "common_mistakes": [
+        "Confundir componente variable con rapidez variable",
+        "Situar todos los ceros en el mismo instante"
+      ],
+      "parts_count": 2,
+      "statement_source": "Centro O, \\(+x\\) derecha,\\(+y\\) arriba. MCU dado por \\(x=0,5cos(2t),y=0,5\\sin(2t),\\) en SI. \n(a) Completa: V x(t).\n(b) Completa: Periodo, Rapidez, V y(t).",
+      "solution_source": "\\(ω=2 rad/s\\) y \\(T=2π/2=π s\\). \\(v_x=−\\sin2t,v_y=cos2t m/s\\).\n\n|v|=√(sen²2t+cos²2t)=1 m/s constante.\n\nLas componentes están desfasadas un cuarto de periodo; cuando una se anula, la otra vale ±1. El vector nunca es cero.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_c_007",
+      "version": 1,
+      "title": "Comparar radios exige decir qué permanece fijo",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Movimiento circular",
+      "family": "c",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "va",
+          "label": "Rapidez A",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.2,
+          "unit": "m/s",
+          "tolerance": 0.001,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "vb",
+          "label": "Rapidez B",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.6,
+          "unit": "m/s",
+          "tolerance": 0.001,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "aa",
+          "label": "A n A, mismo omega",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.4,
+          "unit": "m/s²",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "ab",
+          "label": "A n B, mismo omega",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.2,
+          "unit": "m/s²",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "aa2",
+          "label": "A n A, misma rapidez",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3.6,
+          "unit": "m/s²",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "ab2",
+          "label": "A n B, misma rapidez",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.2,
+          "unit": "m/s²",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "period",
+          "label": "Periodo del disco",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3.141592653589793,
+          "unit": "s",
+          "tolerance": 0.005,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_c_007.svg",
+          "alt": "Disco: radios 0,1 m y 0,3 m"
+        }
+      ],
+      "tags": [
+        "t2",
+        "c",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Comparar radios exige decir qué permanece fijo. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Movimiento circular"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar afirmar proporcionalidad inversa sin condición.",
+      "common_mistakes": [
+        "Afirmar proporcionalidad inversa sin condición",
+        "Dar periodos distintos a puntos del mismo disco rígido"
+      ],
+      "parts_count": 2,
+      "statement_source": "Dos puntos A y B de un disco están a radios 0,1 y 0,3 m y giran a 2 rad/s. Centro O y giro antihorario. \n(a) Compara rapidez, \\(a_n\\) y periodo.\n(b) Completa: A n A, misma rapidez, A n B, misma rapidez.",
+      "solution_source": "Con \\(ω=2\\): \\(v_A=0,1·2=0,2\\) y \\(v_B=0,3·2=0,6 m/s\\); \\(a_A=0,1·4=0,4\\) y \\(a_B=1,2 m/s²\\). Ambos \\(T=π s\\).\n\nCon \\(v=0,6\\): \\(a_A=0,36/0,1=3,6\\) y \\(a_B=0,36/0,3=1,2 m/s²\\).\n\nA igual ω, \\(a_n\\)∝R; a igual v, \\(a_n\\)∝1/R. No hay contradicción: se mantienen constantes cantidades distintas.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_c_008",
+      "version": 1,
+      "title": "Rueda frenada: aceleración total variable",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Movimiento circular",
+      "family": "c",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_minutes": 20,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "t",
+          "label": "Tiempo de parada",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 5,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "theta",
+          "label": "Ángulo hasta parar",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 25,
+          "unit": "rad",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "turns",
+          "label": "Vueltas",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3.9788735772973833,
+          "unit": "vueltas",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "speed",
+          "label": "Rapidez a 2 s",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2.4,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "at",
+          "label": "Componente tangencial a 2 s",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -0.8,
+          "unit": "m/s²",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "an",
+          "label": "Centrípeta a 2 s",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 14.4,
+          "unit": "m/s²",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "atotal",
+          "label": "Módulo de aceleración total",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 14.422205101855958,
+          "unit": "m/s²",
+          "tolerance": 0.05,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_c_008.svg",
+          "alt": "Rueda de radio 0,4 m en frenada; Velocidad angular hasta parar"
+        }
+      ],
+      "tags": [
+        "t2",
+        "c",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Rueda frenada: aceleración total variable. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Movimiento circular"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar prolongar a giro horario tras la parada.",
+      "common_mistakes": [
+        "Prolongar a giro horario tras la parada",
+        "Usar solo a_t como aceleración total"
+      ],
+      "parts_count": 3,
+      "statement_source": "Rueda de radio 0,4 m con centro fijo O. Ángulo positivo antihorario; \\(ω_0=10 rad/s\\), \\(α=−2 rad/s²\\) hasta parar y reposo después. Un punto parte de \\((0,4;0) m\\). \n(a) Obtén tiempo de parada, ángulo y vueltas.\n(b) En \\(t=2 s\\) calcula rapidez, \\(a_t\\) con signo, \\(a_n\\) y módulo total.",
+      "solution_source": "\\(ω=10−2t=0\\) a 5 s. \\(θ=10t−t²\\): \\(θ(5)=25 rad\\)=3,98 vueltas; después θ permanece en 25 rad.\n\nEn 2 s, \\(ω=6 rad/s\\): \\(rapidez=0,4·6=2,4 m/s\\); \\(a_t=Rα=−0,8 m/s²\\), \\(a_n=Rω²=14,4 m/s²\\); |a|=√(\\(0,64+207,36\\))=14,42 m/s².\n\n\\(r(t)=0,4[cos(10t−t²)i+\\sin(10t−t²)j] m\\) para \\(0≤t≤5\\). \\(a_t\\) se opone a v y \\(a_n\\) apunta al centro; α constante no hace constante \\(a_n\\).",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    }
+  ]
+}

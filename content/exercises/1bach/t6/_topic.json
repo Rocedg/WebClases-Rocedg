@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "course": "1bach",
+  "topic": "t6",
+  "topic_slug": "momento-lineal,-impulso-y-choques",
+  "block": "Momento lineal, impulso y choques",
+  "description": "Momento, impulso, sistemas, separaciones, choques y restitución.",
+  "exercise_files": [
+    "i.json",
+    "s.json",
+    "x.json",
+    "c.json",
+    "a.json"
+  ]
+}

@@ -1,0 +1,751 @@
+{
+  "exercises": [
+    {
+      "id": "t1_g_009",
+      "version": 1,
+      "title": "Ajuste lineal con un dato de control",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "Funciones y gráficas",
+      "family": "g",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "fit",
+          "label": "Recta ajustada",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [
+            "3+4*t"
+          ],
+          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
+          "grading": "pending_review",
+          "variable": "t",
+          "variable_unit": "s",
+          "unit": "m",
+          "domain": "t ≥ 0",
+          "canonical_expression": "3+4*t",
+          "part": "a"
+        },
+        {
+          "id": "prediction",
+          "label": "Predicción a 6 s",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 27,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "residual",
+          "label": "Residuo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -1,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_g_009.svg",
+          "alt": "Registros para ajustar y contrastar"
+        }
+      ],
+      "tags": [
+        "t1",
+        "g",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Ajuste lineal con un dato de control. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Funciones y gráficas"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar ajustar los tres puntos a la fuerza.",
+      "common_mistakes": [
+        "Ajustar los tres puntos a la fuerza",
+        "Confundir residuo con incertidumbre"
+      ],
+      "parts_count": 3,
+      "statement_source": "\\(+x\\) derecha. Se mide \\((t,x)=(1 s,7 m)\\),(4 s,19 m),(6 s,26 m). Se propone MRU. \n(a) Ajusta una recta a los dos primeros puntos.\n(b) Predice el tercero y calcula residuo medido menos previsto.",
+      "solution_source": "\\(v=(19−7)/(4−1)=4 m/s\\); \\(x_0=7−4=3 m\\).\n\n\\(x(6)=3+24=27 m\\); \\(residuo=26−27=−1 m\\).\n\nEl residuo supera cinco veces la incertidumbre indicada; el tercer dato no confirma ese MRU bajo las hipótesis dadas.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_g_010",
+      "version": 1,
+      "title": "Una parábola determinada por condiciones",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "Funciones y gráficas",
+      "family": "g",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "x",
+          "label": "Función ajustada",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [
+            "2+2*t+t**2"
+          ],
+          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
+          "grading": "pending_review",
+          "variable": "t",
+          "variable_unit": "s",
+          "unit": "m",
+          "domain": "t ≥ 0",
+          "canonical_expression": "2+2*t+t**2",
+          "part": "a"
+        },
+        {
+          "id": "a",
+          "label": "Aceleración",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2,
+          "unit": "m/s²",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "v0",
+          "label": "Velocidad inicial",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "x4",
+          "label": "Posición a 4 s",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 26,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_g_010.svg",
+          "alt": "Punto y pendiente final para reconstruir x"
+        }
+      ],
+      "tags": [
+        "t1",
+        "g",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Una parábola determinada por condiciones. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Funciones y gráficas"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar usar v(2) como otro valor de x.",
+      "common_mistakes": [
+        "Usar v(2) como otro valor de x",
+        "Confundir c con aceleración"
+      ],
+      "parts_count": 3,
+      "statement_source": "\\(+x\\) derecha. Un MRUA cumple \\(x(0)=2 m\\), \\(x(2)=10 m\\) y \\(v(2)=6 m/s\\). \n(a) Deduce \\(x(t)\\).\n(b) Halla a y \\(v_0\\).\n(c) Completa: Posición a 4 s.",
+      "solution_source": "Escribe \\(x=2+bt+ct²\\). \\(x(2)=10\\) da \\(2b+4c\\)=8; \\(v(2)=b+4c=6\\).\n\nRestando b+2c=4 de b+4c=6: \\(c=1 m/s²\\), \\(b=2 m/s\\); \\(a=2c=2 m/s²\\).\n\n\\(x=2+2t+t²\\) cumple \\(x(0)=2,x(2)=10,v(2)=6\\); \\(x(4)=26 m\\).",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_g_011",
+      "version": 1,
+      "title": "Dos gráficas que no pueden pertenecer al mismo móvil",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "Funciones y gráficas",
+      "family": "g",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "dx_given",
+          "label": "Desplazamiento de x dada",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 12,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "dx_area",
+          "label": "Desplazamiento de v dada",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 9,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "correct",
+          "label": "Función de posición compatible (SI)",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "linear",
+              "label": "\\(x(t)=2t\\)"
+            },
+            {
+              "id": "quadratic",
+              "label": "\\(x(t)=t^2\\)"
+            },
+            {
+              "id": "offset",
+              "label": "\\(x(t)=t^2+4\\)"
+            }
+          ],
+          "correct_option_id": "quadratic",
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_g_011.svg",
+          "alt": "Posición declarada por el informe; Velocidad declarada por el mismo informe"
+        }
+      ],
+      "tags": [
+        "t1",
+        "g",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Dos gráficas que no pueden pertenecer al mismo móvil. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Funciones y gráficas"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar dar por compatibles todas las rectas crecientes.",
+      "common_mistakes": [
+        "Dar por compatibles todas las rectas crecientes",
+        "Cambiar una gráfica sin conservar la condición inicial"
+      ],
+      "parts_count": 2,
+      "statement_source": "Un informe presenta estas dos gráficas para un mismo móvil, con \\(+x\\) al este y unidades SI, entre \\(0\\) y \\(3\\,\\mathrm{s}\\):\n\n\\[x(t)=4t,\\qquad v(t)=2t.\\]\n\n(a) Calcula el desplazamiento que se deduce de cada gráfica entre \\(0\\) y \\(3\\,\\mathrm{s}\\).\n\n(b) Selecciona la función de posición compatible con la gráfica de velocidad y con \\(x(0)=0\\).",
+      "solution_source": "La posición indicada da \\(\\Delta x=4\\cdot3=12\\,\\mathrm{m}\\). El área del triángulo bajo la velocidad da \\(\\Delta x=3\\cdot6/2=9\\,\\mathrm{m}\\): no son compatibles.\n\nConservar \\(v=2t\\) exige \\(x=\\int2t\\,dt=t^2+C\\). Como \\(x(0)=0\\), la función correcta es \\(x(t)=t^2\\)."
+    },
+    {
+      "id": "t1_g_012",
+      "version": 1,
+      "title": "Aceleración negativa antes y después del giro",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "Funciones y gráficas",
+      "family": "g",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "speed1",
+          "label": "Rapidez a 1 s",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "speed5",
+          "label": "Rapidez a 5 s",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_g_012.svg",
+          "alt": "Una pendiente negativa, dos efectos sobre |v|"
+        }
+      ],
+      "tags": [
+        "t1",
+        "g",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Aceleración negativa antes y después del giro. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Funciones y gráficas"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar llamar frenada a todo el intervalo.",
+      "common_mistakes": [
+        "Llamar frenada a todo el intervalo",
+        "Confundir igualdad de rapidez con igualdad de velocidad"
+      ],
+      "parts_count": 2,
+      "statement_source": "\\(+x\\) derecha; \\(v=3−t\\) en SI, \\(0≤t≤6\\). \n(b) Completa: Rapidez a 1 s, Rapidez a 5 s.",
+      "solution_source": "\\(a=dv/dt=−1 m/s²\\). Antes de 3 s, v>0 y v·a<0: frena.\n\nDespués de 3 s, v<0 y v·a>0: aumenta |v|.\n\n\\(v(1)=+2\\) y \\(v(5)=−2 m/s\\), igual rapidez de 2 m/s y sentidos opuestos.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_g_013",
+      "version": 1,
+      "title": "Cuatro etapas y tres gráficas",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "Funciones y gráficas",
+      "family": "g",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_minutes": 18,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "turn",
+          "label": "Instante del giro",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 7,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "xf",
+          "label": "Posición final",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 14,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "distance",
+          "label": "Distancia",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 25,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_g_013.svg",
+          "alt": "Aceleración en cuatro etapas"
+        }
+      ],
+      "tags": [
+        "t1",
+        "g",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Cuatro etapas y tres gráficas. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Funciones y gráficas"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar reiniciar condiciones iniciales en cada tramo.",
+      "common_mistakes": [
+        "Reiniciar condiciones iniciales en cada tramo",
+        "Sumar áreas con signo para obtener distancia"
+      ],
+      "parts_count": 3,
+      "statement_source": "\\(+x\\) derecha, \\(x_0=−1 m\\), \\(v_0=0\\). Aceleraciones: +2 m/s² en 0–2 s; 0 en 2–5 s; −2 m/s² en 5–8 s; 0 en 8–10 s. \n(b) Halla giro, posición final y recorrido.\n(c) Revisa continuidad y áreas.",
+      "solution_source": "0–2: \\(v=2t,\\) \\(x=−1+t²\\); al final \\(v=4,x=3\\). 2–5: \\(v=4,x=3+4(t−2)\\); al final \\(x=15\\).\n\n5–8, \\(τ=t−5\\): \\(v=4−2τ,x=15+4τ−τ²\\). Giro en \\(τ=2\\) (\\(t=7),\\) \\(x=19\\); en \\(t=8,\\) \\(v=−2,x=18\\).\n\n8–10: \\(v=−2,x=18−2(t−8)\\); \\(x(10)=14 m\\). \\(Recorrido=(19−(−1))+(19−14)=25 m\\); \\(desplazamiento=15 m\\). x y v son continuas; a cambia por saltos.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_g_014",
+      "version": 1,
+      "title": "Reconstrucción desde velocidad y posición tardía",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "Funciones y gráficas",
+      "family": "g",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "a",
+          "label": "Aceleración",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -2,
+          "unit": "m/s²",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "v0",
+          "label": "Velocidad inicial",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 4,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "x0",
+          "label": "Posición inicial",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "x",
+          "label": "Posición",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [
+            "2+4*t-t**2"
+          ],
+          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
+          "grading": "pending_review",
+          "variable": "t",
+          "variable_unit": "s",
+          "unit": "m",
+          "domain": "t ≥ 0",
+          "canonical_expression": "2+4*t-t**2",
+          "part": "b"
+        },
+        {
+          "id": "x4",
+          "label": "Posición a 4 s",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_g_014.svg",
+          "alt": "Recta observada entre 1 y 4 s"
+        }
+      ],
+      "tags": [
+        "t1",
+        "g",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Reconstrucción desde velocidad y posición tardía. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Funciones y gráficas"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar tomar x_0=0 sin dato.",
+      "common_mistakes": [
+        "Tomar x_0=0 sin dato",
+        "Leer v(1) como v_0"
+      ],
+      "parts_count": 2,
+      "statement_source": "\\(+x\\) derecha. v-t es recta y pasa por (1 s,2 m/s) y (4 s,−4 m/s). Además \\(x(1)=5 m\\). \n(a) Deduce a,\\(v_0\\),\\(x_0\\).\n(b) Completa: Posición, Posición a 4 s.",
+      "solution_source": "\\(a=(−4−2)/(4−1)=−2 m/s²\\); \\(v_0=2−(−2)·1=4 m/s\\).\n\n\\(x=x_0+4t−t²\\); \\(x(1)=5\\) implica \\(x_0=2 m\\).\n\n\\(x(4)=2 m\\). Entre 1 y 4, área=(\\(2−4\\))·3/2=−3 m; \\(5−3\\)=2 m, coherente.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_g_015",
+      "version": 1,
+      "title": "Intersección frente a cruce del origen",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "Funciones y gráficas",
+      "family": "g",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "t",
+          "label": "Instante de encuentro",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 7.5,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "x",
+          "label": "Posición común",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 20,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "ta",
+          "label": "Paso de A por el origen",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2.5,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "tb",
+          "label": "Paso de B por el origen",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 12.5,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_g_015.svg",
+          "alt": "Dos posiciones en un reloj compartido"
+        }
+      ],
+      "tags": [
+        "t1",
+        "g",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Intersección frente a cruce del origen. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Funciones y gráficas"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar identificar intersección con origen.",
+      "common_mistakes": [
+        "Identificar intersección con origen",
+        "No advertir la extrapolación de B más allá de 10 s"
+      ],
+      "parts_count": 2,
+      "statement_source": "\\(+x\\) al este. Dos gráficas x-t son rectas: A une \\((0,−10)\\),\\((10,30)\\); B une \\((0,50)\\),\\((10,10)\\), en SI. \n(a) Determina su intersección.\n(b) Completa: Instante de encuentro, Paso de A por el origen, Paso de B por el origen.",
+      "solution_source": "\\(x_A=−10+4t\\) y \\(x_B=50−4t\\); 8t=60 da \\(t=7,5 s\\),\\(x=20 m\\).\n\nA cruza \\(x=0\\) en 2,5 s y B en 12,5 s si continúa el MRU.\n\nCoincidir exige igual posición al mismo tiempo, no visitar el mismo lugar en tiempos distintos.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_g_016",
+      "version": 1,
+      "title": "Traducir velocidad a una historia precisa",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "Funciones y gráficas",
+      "family": "g",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "x2",
+          "label": "Posición a 2 s",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -6,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "xg",
+          "label": "Posición en el giro",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -8.25,
+          "unit": "m",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "x7",
+          "label": "Posición final",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "d",
+          "label": "Recorrido",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 16.5,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_g_016.svg",
+          "alt": "Historia desde v-t con dos mesetas"
+        }
+      ],
+      "tags": [
+        "t1",
+        "g",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Traducir velocidad a una historia precisa. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Funciones y gráficas"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar decir solo que la gráfica sube o baja.",
+      "common_mistakes": [
+        "Decir solo que la gráfica sube o baja",
+        "Ignorar el giro dentro del tramo inclinado"
+      ],
+      "parts_count": 3,
+      "statement_source": "\\(+x\\) hacia el este, \\(x_0=0\\). v-t une \\((0,−3)\\),\\((2,−3)\\),\\((5,3)\\),\\((7,3)\\), en SI. \n(a) Describe el movimiento por intervalos, incluyendo el giro.\n(b) Calcula \\(x(2)\\),x del giro,\\(x(7)\\) y recorrido.",
+      "solution_source": "0–2: retrocede uniformemente; \\(x=−3t\\) y \\(x(2)=−6 m\\). 2–5: \\(a=(3+3)/3=2 m/s²\\); \\(v=−3+2(t−2)\\).\n\nGiro en \\(t=3,5 s\\); \\(x=−6−3τ+τ²\\) da \\(x_g=−8,25 m\\). En \\(t=5,\\) \\(x=−6 m\\).\n\n5–7: avanza a 3 m/s, \\(x(7)=0\\). \\(Recorrido=8,25+8,25=16,5 m\\). x-t baja, pasa por mínimo y sube; v negativa creciente primero reduce la rapidez.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    }
+  ]
+}

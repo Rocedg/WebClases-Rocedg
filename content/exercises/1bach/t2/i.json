@@ -1,0 +1,1065 @@
+{
+  "exercises": [
+    {
+      "id": "t2_i_001",
+      "version": 1,
+      "title": "Rumbo de un dron para llegar exactamente al norte",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Problemas integradores",
+      "family": "i",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_minutes": 18,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "air",
+          "label": "Velocidad propia necesaria",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(-6; 8)",
+            "-6 i + (8) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            -6,
+            8
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "a"
+        },
+        {
+          "id": "ground",
+          "label": "Velocidad terrestre",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(0; 8)",
+            "0 i + (8) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            0,
+            8
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        },
+        {
+          "id": "angle",
+          "label": "Rumbo propio desde +x",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 126.86989765,
+          "unit": "°",
+          "tolerance": 0.2,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "t",
+          "label": "Tiempo de llegada",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 30,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_i_001.svg",
+          "alt": "Triángulo de velocidades para anular deriva"
+        }
+      ],
+      "tags": [
+        "t2",
+        "i",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Rumbo de un dron para llegar exactamente al norte. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Problemas integradores"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar orientar el dron al norte ignorando viento.",
+      "common_mistakes": [
+        "Orientar el dron al norte ignorando viento",
+        "Aceptar la raíz negativa de v_y para llegar al norte"
+      ],
+      "parts_count": 3,
+      "statement_source": "Vista horizontal: \\(+x\\) este,\\(+y\\) norte, origen en salida. Un dron puede mantener rapidez de 10 m/s respecto al aire. Viento constante de \\((6,0) m/s\\). Debe llegar a \\((0,240) m\\). \n(a) Halla rumbo propio que elimina deriva.\n(b) Da velocidad terrestre, trayectoria y tiempo.",
+      "solution_source": "Para \\(x=0\\) se exige \\(v_x\\),\\(propia=−6 m/s\\). Con módulo 10: \\(v_y=+√(100−36)=8 m/s\\), el signo + permite ir al norte.\n\n\\(v_tierra=(−6,8)+(6,0)=(0,8) m/s\\); \\(r=(0,8t),\\) \\(t=240/8=30 s\\). Rumbo 126,87° desde \\(+x\\).\n\nCon viento 12, v_y²=\\(100−144\\)<0: no existe rumbo real que lo cancele. La condición de posibilidad es |viento|<10 para avance norte no nulo.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_i_002",
+      "version": 1,
+      "title": "Pelota desde una grada",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Problemas integradores",
+      "family": "i",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_minutes": 20,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "max",
+          "label": "Altura máxima",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 11.25,
+          "unit": "m",
+          "tolerance": 0.05,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "t",
+          "label": "Tiempo de vuelo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2.4,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "range",
+          "label": "Alcance",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 28.8,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "v",
+          "label": "Velocidad de impacto",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(12; -15)",
+            "12 i + (-15) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            12,
+            -15
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "c"
+        },
+        {
+          "id": "speed",
+          "label": "Rapidez final",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 19.209372712298546,
+          "unit": "m/s",
+          "tolerance": 0.05,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        },
+        {
+          "id": "angle",
+          "label": "Ángulo bajo +x",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 51.34019174590991,
+          "unit": "°",
+          "tolerance": 0.1,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_i_002.svg",
+          "alt": "Grada de 7,2 m y componentes (12,9)"
+        }
+      ],
+      "tags": [
+        "t2",
+        "i",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Pelota desde una grada. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Problemas integradores"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar usar 2v_y0/g para un vuelo a distinto nivel.",
+      "common_mistakes": [
+        "Usar 2v_y0/g para un vuelo a distinto nivel",
+        "Dar ángulo de primer cuadrante a la velocidad final"
+      ],
+      "parts_count": 3,
+      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−10 m/s²\\). Desde \\(y=7,2 m\\) sale una pelota a 15 m/s con componentes \\((12,9) m/s\\). \n(a) Completa: Altura máxima, Tiempo de vuelo.\n(b) Halla máximo, vuelo y alcance.\n(c) Completa: Velocidad de impacto, Rapidez final, Ángulo bajo +x.",
+      "solution_source": "\\(x=12t,y=7,2+9t−5t²\\); \\(v=(12,9−10t)\\). Máximo \\(t=0,9 s\\),\\(y=7,2+81/20=11,25 m\\).\n\n\\(y=0\\) da \\(t=(9±√225)/10\\): 2,4 s o −0,6 s. \\(Alcance=12·2,4=28,8 m\\).\n\n\\(v_f=(12,−15) m/s\\), |\\(v_f\\)|=√369=19,2 m/s y ángulo 51,3° bajo \\(+x\\). Supera la rapidez inicial de 15 m/s porque termina más abajo.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_i_003",
+      "version": 1,
+      "title": "Diana elevada y techo limitante",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Problemas integradores",
+      "family": "i",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_minutes": 20,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "low",
+          "label": "Ángulo bajo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 30.36119340482171,
+          "unit": "°",
+          "tolerance": 0.1,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "high",
+          "label": "Ángulo alto",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 73.67505006310476,
+          "unit": "°",
+          "tolerance": 0.1,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "hlo",
+          "label": "Máximo bajo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.277395808972829,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "hhi",
+          "label": "Máximo alto",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 4.604957132203642,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "time",
+          "label": "Tiempo del tiro viable",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.5794708255183387,
+          "unit": "s",
+          "tolerance": 0.005,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_i_003.svg",
+          "alt": "Dos trayectorias y techo a 4 m"
+        }
+      ],
+      "tags": [
+        "t2",
+        "i",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Diana elevada y techo limitante. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Problemas integradores"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar aceptar las dos raíces sin comprobar obstáculos.",
+      "common_mistakes": [
+        "Aceptar las dos raíces sin comprobar obstáculos",
+        "Comparar altura de la diana y techo en vez del máximo"
+      ],
+      "parts_count": 3,
+      "statement_source": "Origen en el suelo, \\(+x\\) derecha,\\(+y\\) arriba; sin aire,\\(a_y=−g=−10 m/s²\\). Lanzador de 10 m/s; diana en \\((5;1,25) m\\) y techo horizontal a \\(y=4 m\\). \n(a) Determina dos ángulos posibles para la diana.\n(b) Calcula máximos de ambos vuelos y decide cuál evita el techo antes de alcanzar la diana.\n(c) Completa: Tiempo del tiro viable.",
+      "solution_source": "Con \\(u=tanθ,\\) \\(y=xu−x²(1+u²)/20\\). En la diana: 1,25=\\(5u−1,25\\)(1+u²), u²−\\(4u+2\\)=0; θ≈30,36° o 73,68°.\n\n\\(H=v_0y²/(2g)=5u²/(1+u²)\\): \\(H_baja\\)≈1,277 m y \\(H_alta\\)≈4,605 m. Ambos máximos ocurren antes de \\(x=5 m\\); el tiro alto toca el techo antes de llegar.\n\nPara el tiro bajo \\(t=0,5√(1+u²)≈0,5795 s\\) y \\(v_y\\)≈−0,740 m/s: llega bajando, sin superar \\(y=4\\). Sustituir \\(x=5\\) da \\(y=1,25\\).",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_i_004",
+      "version": 1,
+      "title": "Lanzamiento horizontal hacia una rampa descendente",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Problemas integradores",
+      "family": "i",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_minutes": 20,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "t",
+          "label": "Tiempo de contacto",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.4806248474865698,
+          "unit": "s",
+          "tolerance": 0.005,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "r",
+          "label": "Punto de contacto",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(7.4031242374328485; -2.9612496949731395)",
+            "7.4031242374328485 i + (-2.9612496949731395) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            7.4031242374328485,
+            -2.9612496949731395
+          ],
+          "unit": "m",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "a"
+        },
+        {
+          "id": "v",
+          "label": "Velocidad final",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(5; -14.806248474865697)",
+            "5 i + (-14.806248474865697) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            5,
+            -14.806248474865697
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "a"
+        },
+        {
+          "id": "speed",
+          "label": "Rapidez final",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 15.627699571576835,
+          "unit": "m/s",
+          "tolerance": 0.05,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "angle",
+          "label": "Ángulo agudo con la rampa",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 49.539008554243594,
+          "unit": "°",
+          "tolerance": 0.1,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_i_004.svg",
+          "alt": "Rampa descendente y=−0,4x"
+        }
+      ],
+      "tags": [
+        "t2",
+        "i",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Lanzamiento horizontal hacia una rampa descendente. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Problemas integradores"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar imponer y=0 como condición de contacto.",
+      "common_mistakes": [
+        "Imponer y=0 como condición de contacto",
+        "Sumar ángulos que bajan en el mismo sentido"
+      ],
+      "parts_count": 3,
+      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−10 m/s²\\). Una bola sale horizontalmente a 5 m/s desde \\(y=8 m\\). Debajo hay una rampa \\(y=−0,4x,\\) x≥0. \n(a) Obtén tiempo y punto de primer contacto.\n(b) Calcula vector, rapidez y ángulo de impacto respecto a la horizontal.\n(c) Completa: Ángulo agudo con la rampa.",
+      "solution_source": "\\(x=5t,y=8−5t²\\). Sobre rampa: \\(8−5t²\\)=−2t, luego \\(t=(2±√164)/10\\); raíz física 1,481 s.\n\n\\(P=(7,403\\);−2,961) m y \\(v=(5\\);−14,806) m/s. Rapidez≈15,6 m/s; dirección≈71,3° bajo \\(+x\\).\n\nLa rampa baja arctan0,4≈21,8°: ángulo relativo≈49,5°. Separación y+0,4x=\\(8+2t−5t²\\) es positiva entre 0 y la raíz positiva; no hubo contacto previo.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_i_005",
+      "version": 1,
+      "title": "Movimiento paramétrico con instante de rapidez mínima",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Problemas integradores",
+      "family": "i",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_minutes": 20,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "path",
+          "label": "X(y)",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [
+            "(y-2)**2/9-4*(y-2)/3"
+          ],
+          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
+          "grading": "pending_review",
+          "variable": "y",
+          "variable_unit": "m",
+          "unit": "m",
+          "domain": "2≤y≤14",
+          "canonical_expression": "(y-2)**2/9-4*(y-2)/3",
+          "part": "a"
+        },
+        {
+          "id": "tmin",
+          "label": "Instante de rapidez mínima",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        },
+        {
+          "id": "speed",
+          "label": "Rapidez mínima",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        },
+        {
+          "id": "r",
+          "label": "Posición de rapidez mínima",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(-4; 8)",
+            "-4 i + (8) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            -4,
+            8
+          ],
+          "unit": "m",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "c"
+        },
+        {
+          "id": "v",
+          "label": "Velocidad allí",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(0; 3)",
+            "0 i + (3) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            0,
+            3
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "c"
+        },
+        {
+          "id": "a",
+          "label": "Aceleración",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(2; 0)",
+            "2 i + (0) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            2,
+            0
+          ],
+          "unit": "m/s²",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_i_005.svg",
+          "alt": "Trayectoria del robot y mínimo de rapidez"
+        }
+      ],
+      "tags": [
+        "t2",
+        "i",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Movimiento paramétrico con instante de rapidez mínima. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Problemas integradores"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar identificar v_x=0 con reposo.",
+      "common_mistakes": [
+        "Identificar v_x=0 con reposo",
+        "Afirmar retorno solo porque x vuelve a cero"
+      ],
+      "parts_count": 4,
+      "statement_source": "\\(+x\\) derecha,\\(+y\\) arriba. Un robot sigue \\(r(t)=(t²−4t)i+(3t+2)j m\\), t en s, \\(0≤t≤4\\). \n(a) Completa: X(y).\n(c) Halla rapidez mínima, punto y vectores allí.",
+      "solution_source": "\\(v=(2t−4,3) m/s\\),\\(a=(2,0) m/s²\\). Como \\(y=3t+2,t=(y−2)/3\\): \\(x=(y−2)²/9−4(y−2)/3,2≤y≤14\\).\n\n|v|²=(\\(2t−4\\))²+9 es mínimo en \\(t=2 s\\): |v|=3 m/s,\\(r=(−4,8),v=(0,3)\\). a es horizontal, perpendicular a v en ese instante.\n\n\\(x=0\\) en \\(t=0\\) y 4, pero \\(r(0)=(0,2)\\) y \\(r(4)=(0,14) m\\). No regresa al mismo punto: igual x no implica igual vector posición.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_i_006",
+      "version": 1,
+      "title": "Reconstruir un tiro desde el impacto",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Problemas integradores",
+      "family": "i",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_minutes": 20,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "vy",
+          "label": "Componente vertical final",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -12,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "t",
+          "label": "Tiempo de caída",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.2,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "h",
+          "label": "Altura inicial",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 7.2,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "range",
+          "label": "Alcance",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 6,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "angle",
+          "label": "Ángulo bajo horizontal",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 67.38013505195958,
+          "unit": "°",
+          "tolerance": 0.1,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_i_006.svg",
+          "alt": "Datos de impacto para reconstruir la salida"
+        }
+      ],
+      "tags": [
+        "t2",
+        "i",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Reconstruir un tiro desde el impacto. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Problemas integradores"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar tomar raíz positiva de v_y por defecto.",
+      "common_mistakes": [
+        "Tomar raíz positiva de v_y por defecto",
+        "Usar rapidez 13 como velocidad horizontal"
+      ],
+      "parts_count": 3,
+      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−10 m/s²\\). Una bola sale horizontalmente desde altura desconocida. Al impactar, su rapidez es 13 m/s y su componente horizontal es +5 m/s; el impacto ocurre descendiendo. \n(a) Reconstruye \\(v_y\\) final, tiempo, altura y alcance.\n(c) Completa: Ángulo bajo horizontal.",
+      "solution_source": "v_y²=\\(13²−5²\\)=144, y por descenso \\(v_y=−12 m/s\\). \\(v_y=−10t\\) da \\(t=1,2 s\\).\n\n\\(h=5t²=7,2 m\\); \\(alcance=5t=6 m\\). Horizontal \\(x=5t\\); vertical \\(y=7,2−5t²\\); \\(v=(5,−10t)\\).\n\nEn \\(t=1,2,\\) \\(y=0\\) y |v|=√(\\(25+144\\))=13 m/s. El ángulo final es \\(arctan(12/5)=67,4°\\) bajo \\(+x\\); a es vertical y constante.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_i_007",
+      "version": 1,
+      "title": "De una gráfica angular al vector aceleración",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Problemas integradores",
+      "family": "i",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_minutes": 20,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "theta",
+          "label": "Ángulo a 3 s",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 15,
+          "unit": "rad",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "arc",
+          "label": "Arco en 3 s",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 7.5,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "speed",
+          "label": "Rapidez a 1 s",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "at",
+          "label": "Tangencial a 1 s",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1,
+          "unit": "m/s²",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "an",
+          "label": "Normal a 1 s",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 8,
+          "unit": "m/s²",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "total",
+          "label": "Módulo total a 1 s",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 8.06225774829855,
+          "unit": "m/s²",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_i_007.svg",
+          "alt": "Disco acelerado de radio 0,5 m; ω=2+2t entre 0 y 3 s"
+        }
+      ],
+      "tags": [
+        "t2",
+        "i",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "De una gráfica angular al vector aceleración. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Problemas integradores"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar suponer a total constante por α constante.",
+      "common_mistakes": [
+        "Suponer a total constante por α constante",
+        "Confundir arco Rθ con desplazamiento vectorial"
+      ],
+      "parts_count": 4,
+      "statement_source": "Disco de radio 0,5 m centrado en O. \\(+x\\) derecha,\\(+y\\) arriba, giro antihorario positivo. \\(ω(t)=2+2t rad/s\\) entre 0 y 3 s y \\(θ(0)=0\\). \n(a) Halla ángulo y arco en 3 s.\n(b) Calcula rapidez, \\(a_t\\),\\(a_n\\) y módulo total en 1 s.",
+      "solution_source": "\\(α=dω/dt=2 rad/s²\\); \\(θ=∫(2+2t)dt=2t+t²\\). En 3 s \\(θ=15 rad\\) y \\(arco=Rθ=7,5 m\\).\n\nEn \\(t=1\\): \\(θ=3 rad\\),\\(ω=4 rad/s\\); \\(rapidez=2 m/s\\),\\(a_t=Rα=1 m/s²\\),\\(a_n=Rω²=8 m/s²\\); |a|=√65=8,06 m/s².\n\n\\(r=0,5(cosθ,sinθ)\\). En \\(t=1\\): \\(e_r=(cos3,sin3),e_t=(−sin3,cos3)\\); \\(v=2e_t m/s\\),\\(a=−8e_r+e_t m/s²\\). \\(a_n\\) crece y las bases giran: a total varía aunque α sea constante.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_i_008",
+      "version": 1,
+      "title": "Simulacro: salida tangente desde una rueda",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Problemas integradores",
+      "family": "i",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_minutes": 20,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "r0",
+          "label": "Posición de liberación",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(0; 6)",
+            "0 i + (6) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            0,
+            6
+          ],
+          "unit": "m",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "a"
+        },
+        {
+          "id": "v0",
+          "label": "Velocidad de liberación",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(4; 0)",
+            "4 i + (0) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            4,
+            0
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "a"
+        },
+        {
+          "id": "an",
+          "label": "Centrípeta antes de salir",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 16,
+          "unit": "m/s²",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "time",
+          "label": "Tiempo de vuelo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.0954451150103321,
+          "unit": "s",
+          "tolerance": 0.005,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "range",
+          "label": "Alcance",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 4.381780460041329,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        },
+        {
+          "id": "vf",
+          "label": "Velocidad de impacto",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(4; -10.95445115010332)",
+            "4 i + (-10.95445115010332) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            4,
+            -10.95445115010332
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "a"
+        },
+        {
+          "id": "angle",
+          "label": "Ángulo de impacto bajo +x",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 69.94041655079744,
+          "unit": "°",
+          "tolerance": 0.1,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "d"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_i_008.svg",
+          "alt": "Guía circular y vuelo desde el punto más alto"
+        }
+      ],
+      "tags": [
+        "t2",
+        "i",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Simulacro: salida tangente desde una rueda. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Problemas integradores"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar usar la altura del centro como altura de suelta.",
+      "common_mistakes": [
+        "Usar la altura del centro como altura de suelta",
+        "Mantener aceleración centrípeta después de salir de la guía"
+      ],
+      "parts_count": 4,
+      "statement_source": "En el plano vertical, centro \\(O=(0,5) m\\), suelo \\(y=0,\\) \\(+x\\) derecha,\\(+y\\) arriba. Una pequeña bola recorre una guía circular de radio 1 m a rapidez 4 m/s en sentido horario. Se libera en el punto más alto en \\(t=0\\). Después no hay aire y \\(a_y=−g=−10 m/s²\\). \n(a) Calcula posición y velocidad de liberación y \\(a_n\\) justo antes.\n(b) Modela el vuelo y halla impacto.\n(c) Da velocidad y ángulo final.\n(d) Completa: Ángulo de impacto bajo +x.",
+      "solution_source": "La parte alta está en \\(r_0=(0,6) m\\). La tangente horaria allí apunta a \\(+x\\): \\(v_0=(4,0) m/s\\); \\(a_n=4²/1=16 m/s²\\) hacia el centro, vertical abajo.\n\nEn vuelo: \\(x=4t,y=6−5t²\\); suelo a \\(t=√1,2=1,095 s\\) y \\(x=4,382 m\\).\n\n\\(v_f=(4,−10√1,2)=(4,−10,954) m/s\\); ángulo≈69,9° bajo \\(+x\\). Antes la aceleración cinemática normal era 16 m/s²; después es \\((0,−10) m/s²\\). La velocidad inicial es continua, no la aceleración.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    }
+  ]
+}

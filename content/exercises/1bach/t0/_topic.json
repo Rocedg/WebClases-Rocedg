@@ -1,0 +1,165 @@
+{
+  "version": 4,
+  "course": "1bach",
+  "block": "Herramientas para empezar Física",
+  "topic": "t0",
+  "topic_slug": "t0",
+  "description": "Banco editorial T0: versión 4 convertida desde exercise-bank-t0-v4-spec.md, con revisión v5 de medida/error y vectores.",
+  "retired_ids": [
+    "t0_u_017",
+    "t0_u_018",
+    "t0_v_025",
+    "t0_v_026",
+    "t0_v_027",
+    "t0_v_028",
+    "t0_v_029",
+    "t0_v_030",
+    "t0_v_031",
+    "t0_v_032",
+    "t0_v_033",
+    "t0_v_034",
+    "t0_v_035",
+    "t0_v_036",
+    "t0_e_001",
+    "t0_e_002",
+    "t0_c_021",
+    "t0_c_022",
+    "t0_c_023",
+    "t0_c_024"
+  ],
+  "retired_exercises": [
+    {
+      "id": "t0_u_017",
+      "title": "t0_u_017 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_u_018",
+      "title": "t0_u_018 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_v_025",
+      "title": "t0_v_025 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_v_026",
+      "title": "t0_v_026 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_v_027",
+      "title": "t0_v_027 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_v_028",
+      "title": "t0_v_028 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_v_029",
+      "title": "t0_v_029 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_v_030",
+      "title": "t0_v_030 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_v_031",
+      "title": "t0_v_031 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_v_032",
+      "title": "t0_v_032 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_v_033",
+      "title": "t0_v_033 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_v_034",
+      "title": "t0_v_034 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_v_035",
+      "title": "t0_v_035 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_v_036",
+      "title": "t0_v_036 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_e_001",
+      "title": "t0_e_001 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_e_002",
+      "title": "t0_e_002 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_c_021",
+      "title": "t0_c_021 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_c_022",
+      "title": "t0_c_022 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_c_023",
+      "title": "t0_c_023 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    },
+    {
+      "id": "t0_c_024",
+      "title": "t0_c_024 (retirado del banco activo T0 v4)",
+      "version": 3,
+      "status": "retired"
+    }
+  ],
+  "exercise_files": [
+    "units.json",
+    "vectors_basics.json",
+    "vectors_operations.json",
+    "vectors_components.json",
+    "vectors_applications.json",
+    "vectors_products.json",
+    "vectors_decomposition.json",
+    "vectors_axes.json",
+    "measurement_accuracy.json",
+    "measurement_uncertainty.json",
+    "calculus_graphs.json"
+  ]
+}

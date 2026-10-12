@@ -1,0 +1,934 @@
+{
+  "exercises": [
+    {
+      "id": "t1_i_001",
+      "version": 1,
+      "title": "Viaje de tren con horario completo",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "Problemas integradores",
+      "family": "i",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_minutes": 20,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "time",
+          "label": "Duración",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 165,
+          "unit": "s",
+          "tolerance": 0.1,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "d",
+          "label": "Distancia",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2850,
+          "unit": "m",
+          "tolerance": 5,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "mean",
+          "label": "Rapidez media",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 17.272727272727273,
+          "unit": "m/s",
+          "tolerance": 0.05,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_i_001.svg",
+          "alt": "Programa de aceleraciones del tren"
+        }
+      ],
+      "tags": [
+        "t1",
+        "i",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Viaje de tren con horario completo. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Problemas integradores"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar usar tiempo global dentro de una ley de tramo local.",
+      "common_mistakes": [
+        "Usar tiempo global dentro de una ley de tramo local",
+        "Omitir las distancias de arranque y frenada"
+      ],
+      "parts_count": 3,
+      "statement_source": "Origen en la estación de salida, \\(+x\\) hacia destino, \\(t=0\\) al arrancar. Tren en reposo: acelera a 0,8 m/s² durante 25 s, mantiene la velocidad 120 s y frena a −1 m/s² hasta parar. \n(b) Calcula duración, distancia y rapidez media.",
+      "solution_source": "Arranque: \\(v=0,8t,x=0,4t²\\); en 25 s, \\(v=20 m/s\\),\\(x=250 m\\). Crucero hasta \\(t=145\\): \\(x=250+20(t−25),v=20\\); \\(x=2650 m\\).\n\nFrenada \\(τ=t−145\\): \\(v=20−τ,x=2650+20τ−0,5τ²\\); \\(τ_f=20 s\\). Final \\(t=165 s\\),\\(x=2850 m\\); después queda en reposo.\n\nÁreas: \\(250+2400+200\\)=2850 m. Rapidez \\(media=2850/165=17,3 m/s\\). x y v enlazan en cada cambio; la rapidez media es menor que 20 m/s.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_i_002",
+      "version": 1,
+      "title": "Un mensajero alcanza al peatón",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "Problemas integradores",
+      "family": "i",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_minutes": 16,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "t",
+          "label": "Instante global",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 40,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "x",
+          "label": "Posición de alcance",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 60,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "dc",
+          "label": "Distancia de la ciclista",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 150,
+          "unit": "m",
+          "tolerance": 0.2,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_i_002.svg",
+          "alt": "Posiciones desde antes de la salida de la ciclista"
+        }
+      ],
+      "tags": [
+        "t1",
+        "i",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Un mensajero alcanza al peatón. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Problemas integradores"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar olvidar la posición negativa de la ciclista.",
+      "common_mistakes": [
+        "Olvidar la posición negativa de la ciclista",
+        "Confundir distancia recorrida y coordenada de alcance"
+      ],
+      "parts_count": 3,
+      "statement_source": "\\(+x\\) al este y \\(t=0\\) cuando un peatón pasa por el portal \\(x=0\\) a 1,5 m/s. Una ciclista está en \\(x=−90 m\\), espera hasta \\(t=20 s\\) y sale a 7,5 m/s. \n(a) Modela ambos movimientos y represéntalos.\n(b) Halla alcance, posición y distancia de la ciclista.",
+      "solution_source": "Peatón: \\(x_P=1,5t\\). Ciclista: \\(x_C=−90\\) hasta 20 s y \\(x_C=−90+7,5(t−20)\\) después.\n\n1,5t=\\(7,5t−240 da\\) \\(t=40 s\\), \\(x=60 m\\). La ciclista recorre 60−(−90)=150 m en 20 s.\n\nEn \\(t=20\\) el peatón está en 30 m, con separación 120 m; a 6 m/s de cierre tarda 20 s adicionales.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_i_003",
+      "version": 1,
+      "title": "¿Detención o impacto antes de parar?",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "Problemas integradores",
+      "family": "i",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_minutes": 18,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "stop",
+          "label": "Posición teórica de parada",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 60,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        },
+        {
+          "id": "impact_time",
+          "label": "Instante de impacto",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3.26393202250021,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "impact_v",
+          "label": "Velocidad de impacto",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 8.94427190999916,
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_i_003.svg",
+          "alt": "Obstáculo antes de la parada teórica"
+        }
+      ],
+      "tags": [
+        "t1",
+        "i",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "¿Detención o impacto antes de parar?. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Problemas integradores"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar elegir automáticamente la raíz mayor.",
+      "common_mistakes": [
+        "Elegir automáticamente la raíz mayor",
+        "Continuar el modelo después del contacto"
+      ],
+      "parts_count": 3,
+      "statement_source": "Modelo ideal con \\(+x\\) hacia un obstáculo en \\(x=50 m\\). Un vehículo en \\(x=0\\) lleva 20 m/s, tarda 0,5 s en reaccionar y luego frena a −4 m/s². \n(b) Decide si choca y calcula instante y velocidad en el primer contacto.\n(c) Completa: Posición teórica de parada, Velocidad de impacto.",
+      "solution_source": "Reacción: \\(d_r=20·0,5=10 m\\). Frenado completo: \\(τ_f=5 s\\),\\(d_f=20²/8=50 m\\); pararía en \\(x=60 m\\), más allá del obstáculo.\n\nCon \\(τ=t−0,5,\\) \\(x=10+20τ−2τ²\\). En \\(x=50\\): τ²−10τ+20=0, \\(τ=5±√5 s\\).\n\nPrimer contacto: \\(τ=2,764 s\\),\\(t=3,264 s\\); \\(v=20−4τ=4√5=8,94 m/s\\). La otra raíz ocurre después de la parada teórica y prolonga indebidamente el modelo tras el choque.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_i_004",
+      "version": 1,
+      "title": "Lanzamiento desde una azotea",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "Problemas integradores",
+      "family": "i",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_minutes": 18,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "max",
+          "label": "Altura máxima",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 36.25,
+          "unit": "m",
+          "tolerance": 0.05,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "t",
+          "label": "Tiempo de impacto",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 4.192582403567252,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "v",
+          "label": "Velocidad de impacto",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -26.92582403567252,
+          "unit": "m/s",
+          "tolerance": 0.05,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "distance",
+          "label": "Distancia",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 47.5,
+          "unit": "m",
+          "tolerance": 0.05,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_i_004.svg",
+          "alt": "Altura de la bola desde la azotea"
+        }
+      ],
+      "tags": [
+        "t1",
+        "i",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Lanzamiento desde una azotea. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Problemas integradores"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar aplicar la fórmula de vuelo a igual altura.",
+      "common_mistakes": [
+        "Aplicar la fórmula de vuelo a igual altura",
+        "Confundir altura máxima y elevación"
+      ],
+      "parts_count": 3,
+      "statement_source": "Suelo \\(y=0\\) y \\(+y\\) arriba. Desde \\(y_0=25 m\\) se lanza una bola hacia arriba a 15 m/s en \\(t=0,\\) sin aire, \\(a_y=−g=−10 m/s²\\). \n(a) Completa: Altura máxima.\n(b) Halla impacto y velocidad.\n(c) Completa: Distancia.",
+      "solution_source": "\\(y=25+15t−5t²,\\) \\(v_y=15−10t\\); máximo a 1,50 s en \\(y=36,25 m\\).\n\nImpacto: \\(5t²−15t−25\\)=0; \\(t=(15±√725)/10\\). La positiva es 4,193 s; la negativa −1,193 s queda fuera. \\(v_y=−√725=−26,9 m/s\\).\n\n\\(Δy=−25 m\\); \\(recorrido=11,25+36,25=47,5 m\\). El impacto tiene mayor rapidez que la salida por llegar a un nivel inferior; en la cima la aceleración sigue negativa.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_i_005",
+      "version": 1,
+      "title": "Ascensor con destino fijado por áreas",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "Problemas integradores",
+      "family": "i",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_minutes": 18,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "duration",
+          "label": "Duración",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 11,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "height",
+          "label": "Altura final",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 27,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "v",
+          "label": "Velocidad final",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_i_005.svg",
+          "alt": "Aceleración programada del ascensor"
+        }
+      ],
+      "tags": [
+        "t1",
+        "i",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Ascensor con destino fijado por áreas. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Problemas integradores"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar detener el ascensor al empezar la fase a=0.",
+      "common_mistakes": [
+        "Detener el ascensor al empezar la fase a=0",
+        "Prolongar el frenado como descenso"
+      ],
+      "parts_count": 3,
+      "statement_source": "\\(+y\\) arriba, \\(y_0=0,\\) \\(v_0=0\\). \\(a_y=1,2 m/s²\\) durante 3 s, cero durante los 4 s siguientes y −0,9 m/s² hasta detenerse. \n(b) Calcula duración y altura final.\n(c) Completa: Velocidad final.",
+      "solution_source": "0–3: \\(v=1,2t,y=0,6t²\\); final \\(v=3,6 m/s\\),\\(y=5,4 m\\). 3–7: \\(v=3,6,y=5,4+3,6(t−3)\\); \\(y(7)=19,8 m\\).\n\nCon \\(τ=t−7\\): \\(v=3,6−0,9τ,y=19,8+3,6τ−0,45τ²\\). Parada a \\(τ=4 s\\): \\(t=11 s\\),\\(y=27 m\\).\n\nÁreas v-t: \\(5,4+14,4+7,2\\)=27 m. Después \\(v=0,y=27\\): prolongar a<0 inventaría un descenso.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_i_006",
+      "version": 1,
+      "title": "Informe de un sensor con una medida incoherente",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "Problemas integradores",
+      "family": "i",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_minutes": 20,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "v0",
+          "label": "Velocidad inicial ajustada",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "a",
+          "label": "Aceleración ajustada",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2,
+          "unit": "m/s²",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "res3",
+          "label": "Residuo a 3 s",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "res4",
+          "label": "Residuo a 4 s",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "model",
+          "label": "Modelo cuadrático",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [
+            "2+2*t+t**2"
+          ],
+          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
+          "grading": "pending_review",
+          "variable": "t",
+          "variable_unit": "s",
+          "unit": "m",
+          "domain": "t ≥ 0",
+          "canonical_expression": "2+2*t+t**2",
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_i_006.svg",
+          "alt": "Datos del sensor; contraste de modelos"
+        }
+      ],
+      "tags": [
+        "t1",
+        "i",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Informe de un sensor con una medida incoherente. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Problemas integradores"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar declarar exacta la predicción ignorando incertidumbre de los datos.",
+      "common_mistakes": [
+        "Declarar exacta la predicción ignorando incertidumbre de los datos",
+        "Borrar un dato sin justificar el desacuerdo"
+      ],
+      "parts_count": 3,
+      "statement_source": "\\(+x\\) a la derecha. Un sensor registra \\(t=(0,1,2,3,4) s\\) y \\(x=(2,5,10,18,26) m\\). Cada posición tiene incertidumbre ±0,1 m. Se contrastan MRU y \\(x=x_0+v_0t+at²/2\\). \n(a) Usa los tres primeros datos nominales para ajustar ambos criterios.\n(b) Completa: Residuo a 3 s, Residuo a 4 s.\n(c) Completa: Modelo cuadrático.",
+      "solution_source": "Incrementos nominales 3 y 5 m por segundo descartan un único MRU exacto. Con \\(x_0=2\\): \\(v_0\\)+a/2=3 y 2v_0+2a=8; resulta \\(a=2 m/s²\\),\\(v_0=2 m/s\\).\n\nEl modelo \\(x=2+2t+t²\\) predice \\(x(3)=17\\) y \\(x(4)=26 m\\); residuos medido−modelo: +1 y 0 m.\n\nAl propagar cotas de ±0,1 m del ajuste, \\(x(3)=x(0)−3x(1)+3x(2)\\) tiene cota ±0,7 m; junto al dato ±0,1, el residuo 1 m aún supera 0,8 m. Revisar \\(t=3\\) o el modelo; una tabla no garantiza extrapolación.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_i_007",
+      "version": 1,
+      "title": "Diseñar una gráfica para comparar recorridos",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "Problemas integradores",
+      "family": "i",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_minutes": 18,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "arr",
+          "label": "Recorrido de arranque",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 24,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        },
+        {
+          "id": "brake",
+          "label": "Recorrido de frenado",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 36,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        },
+        {
+          "id": "xf",
+          "label": "Posición final",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 132,
+          "unit": "m",
+          "tolerance": 0.2,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "equal",
+          "label": "Duración de frenado para igual recorrido",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 4,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_i_007.svg",
+          "alt": "Arranque y frenado de distinta duración"
+        }
+      ],
+      "tags": [
+        "t1",
+        "i",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Diseñar una gráfica para comparar recorridos. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Problemas integradores"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar afirmar igual distancia solo por iguales velocidades extremas.",
+      "common_mistakes": [
+        "Afirmar igual distancia solo por iguales velocidades extremas",
+        "Confundir mayor pendiente con mayor área"
+      ],
+      "parts_count": 3,
+      "statement_source": "\\(+x\\) derecha y \\(x_0=0\\). v-t une \\((0,0)\\),\\((4,12)\\),\\((10,12)\\),\\((16,0)\\), en SI. \n(b) Completa: Posición final.\n(c) ¿Qué duración de frenado daría el mismo recorrido que el arranque si comienza a 12 m/s y termina en reposo?",
+      "solution_source": "Las áreas triangulares dan 12·4/2=24 m y 12·6/2=36 m; frenar ocupa 1,5 veces la distancia de arrancar.\n\n0–4: \\(x=1,5t²\\). 4–10: \\(x=24+12(t−4)\\). 10–16: \\(x=96+12τ−τ²,\\) \\(τ=t−10\\). \\(x(16)=132 m\\).\n\nPara igualar 24 m: 12T/2=24, \\(T=4 s\\) y \\(a=−3 m/s²\\). Las áreas dependen de la duración, no solo de la velocidad máxima.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_i_008",
+      "version": 1,
+      "title": "Alcance durante una frenada",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "Problemas integradores",
+      "family": "i",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_minutes": 20,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "t",
+          "label": "Instante de alcance",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 8.090169943749475,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "x",
+          "label": "Posición de alcance",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 96.35254915624212,
+          "unit": "m",
+          "tolerance": 0.1,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "va",
+          "label": "Velocidad A al alcance",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3.819660112501051,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_i_008.svg",
+          "alt": "A frena mientras B se aproxima"
+        }
+      ],
+      "tags": [
+        "t1",
+        "i",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Alcance durante una frenada. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Problemas integradores"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar usar una velocidad relativa inicial para todo el proceso.",
+      "common_mistakes": [
+        "Usar una velocidad relativa inicial para todo el proceso",
+        "Aceptar una raíz sin verificar el tramo"
+      ],
+      "parts_count": 3,
+      "statement_source": "\\(+x\\) al este. En \\(t=0\\) un vehículo A pasa por \\(x=0\\) a 20 m/s y frena a −2 m/s² hasta parar. B está en \\(x=−25 m\\) y sigue en MRU a 15 m/s. \n(b) Halla instante y posición de alcance y velocidades.",
+      "solution_source": "A: \\(x_A=20t−t²\\) hasta \\(t=10 s\\). B: \\(x_B=−25+15t\\). Igualdad: t²−\\(5t−25\\)=0.\n\nRaíces (5±√125)/2; la positiva \\(t=8,090 s\\) da \\(x=96,35 m\\). \\(v_A=20−2t=3,820 m/s\\); \\(v_B=15 m/s\\).\n\nLa otra raíz es negativa; 8,090<10 confirma el tramo de frenado. Primero la separación aumenta (A es más rápido); luego disminuye hasta el alcance. El modelo acaba en el contacto.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_i_009",
+      "version": 1,
+      "title": "Comparación argumentada de dos frenadas",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "Problemas integradores",
+      "family": "i",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_minutes": 16,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "da",
+          "label": "Distancia A",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 18,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "db",
+          "label": "Distancia B",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 36,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "xa4",
+          "label": "X A(4)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 18,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        },
+        {
+          "id": "xb4",
+          "label": "X B(4)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 32,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_i_009.svg",
+          "alt": "Dos frenadas desde 12 m/s"
+        }
+      ],
+      "tags": [
+        "t1",
+        "i",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Comparación argumentada de dos frenadas. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Problemas integradores"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar aplicar la parábola de a después de 3 s.",
+      "common_mistakes": [
+        "Aplicar la parábola de A después de 3 s",
+        "Comparar distancias usando solo la rapidez inicial"
+      ],
+      "parts_count": 3,
+      "statement_source": "Dos pruebas independientes comienzan en \\(x=0\\) con \\(+x\\) hacia delante y \\(v_0=12 m/s\\). A frena uniformemente hasta parar en 3 s; B hasta parar en 6 s. \n(a) Completa: Distancia A.\n(b) Escribe sus posiciones con reposo posterior.\n(c) Completa: X A(4), X B(4).",
+      "solution_source": "A tiene \\(a=−4 m/s²\\) y área 12·3/2=18 m; B \\(a=−2 m/s²\\) y área 12·6/2=36 m.\n\nA: \\(x=12t−2t²\\) hasta 3 s y 18 m después. B: \\(x=12t−t²\\) hasta 6 s y 36 m después.\n\nEn \\(t=4,\\) \\(x_A=18 m\\),\\(x_B=48−16=32 m\\). A ya está parado; B sigue a 4 m/s. Igual rapidez inicial no implica igual distancia de parada.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_i_010",
+      "version": 1,
+      "title": "Simulacro: un reparto de ida y vuelta",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "Problemas integradores",
+      "family": "i",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_minutes": 20,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "delivery",
+          "label": "Posición de entrega",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 32,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "time",
+          "label": "Duración total",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 31,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        },
+        {
+          "id": "distance",
+          "label": "Distancia",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 64,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "mean",
+          "label": "Rapidez media",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2.064516129032258,
+          "unit": "m/s",
+          "tolerance": 0.005,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        },
+        {
+          "id": "velocity",
+          "label": "Velocidad media",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_i_010.svg",
+          "alt": "Reparto: almacén y punto de entrega"
+        }
+      ],
+      "tags": [
+        "t1",
+        "i",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Simulacro: un reparto de ida y vuelta. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Problemas integradores"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar usar velocidad de crucero durante el arranque.",
+      "common_mistakes": [
+        "Usar velocidad de crucero durante el arranque",
+        "Ignorar los cambios instantáneos del modelo"
+      ],
+      "parts_count": 4,
+      "statement_source": "Origen en el almacén, \\(+x\\) al este, \\(t=0\\) al salir. Un robot parte del reposo, acelera a 1 m/s² durante 4 s, continúa a velocidad constante 6 s, espera 5 s y regresa directamente al almacén a 2 m/s. Los cambios de velocidad en la espera y al regresar se idealizan instantáneos. \n(a) Obtén posición de entrega.\n(b) Completa: Distancia.\n(c) Calcula tiempo total, recorrido y dos medias.",
+      "solution_source": "0–4: \\(x=t²/2,v=t\\); llega a \\(x=8 m\\),\\(v=4 m/s\\). 4–10: \\(x=8+4(t−4)\\); entrega en \\(x=32 m\\).\n\n10–15: \\(x=32,v=0\\). Regreso: \\(x=32−2(t−15)\\); \\(x=0\\) a \\(t=31 s\\).\n\n\\(Recorrido=64 m\\); \\(desplazamiento=0\\); rapidez \\(media=64/31=2,06 m/s\\) y \\(v_media=0\\). Hay saltos idealizados de v en 10,15 y 31 s; x se mantiene continua.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    }
+  ]
+}

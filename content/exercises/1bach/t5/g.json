@@ -1,0 +1,686 @@
+{
+  "exercises": [
+    {
+      "id": "t5_g_001",
+      "version": 1,
+      "title": "Subir 5 m",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía potencial gravitatoria",
+      "family": "g",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "u_g",
+          "label": "ΔU g",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 147.0,
+          "unit": "J",
+          "tolerance": 0.735,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "trabajo_del_peso",
+          "label": "Trabajo del peso",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -147.0,
+          "unit": "J",
+          "tolerance": 0.735,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_g_001.svg",
+          "alt": "Dos niveles."
+        }
+      ],
+      "tags": [
+        "t5",
+        "g",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía potencial gravitatoria: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía potencial gravitatoria"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia g"
+      ],
+      "parts_count": 2,
+      "statement_source": "\\(m=3 kg\\), subir \\(5 m\\).\n\n(a) Calcula: ΔU g.\n(b) Calcula: Trabajo del peso.",
+      "solution_source": "\\(\\Delta U_g=147 J\\); trabajo del peso \\(-147 J\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_g_002",
+      "version": 1,
+      "title": "Cambiar referencia de suelo a mesa",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía potencial gravitatoria",
+      "family": "g",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Dos valores absolutos, misma ΔU"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_g_002.svg",
+          "alt": "Ejes de energía con ceros distintos."
+        }
+      ],
+      "tags": [
+        "t5",
+        "g",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía potencial gravitatoria: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía potencial gravitatoria"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia g"
+      ],
+      "parts_count": 1,
+      "statement_source": "Cambiar referencia de suelo a mesa.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Dos valores absolutos, misma \\(\\Delta U\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_g_003",
+      "version": 1,
+      "title": "Caída desde 20 m, sin aire",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía potencial gravitatoria",
+      "family": "g",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "rapidez",
+          "label": "Rapidez",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 19.8,
+          "unit": "m/s",
+          "tolerance": 0.099,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_g_003.svg",
+          "alt": "Torre y energía."
+        }
+      ],
+      "tags": [
+        "t5",
+        "g",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía potencial gravitatoria: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía potencial gravitatoria"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia g"
+      ],
+      "parts_count": 1,
+      "statement_source": "Caída desde \\(20 m\\), sin aire.\n\n(a) Calcula: Rapidez.",
+      "solution_source": "Rapidez \\(19,8 m/s\\); barras inicial/final.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_g_004",
+      "version": 1,
+      "title": "Rampa sin rozamiento con desnivel 3 m",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía potencial gravitatoria",
+      "family": "g",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "rapidez_final",
+          "label": "Rapidez final",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 7.67,
+          "unit": "m/s",
+          "tolerance": 0.03835,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_g_004.svg",
+          "alt": "Dos rampas."
+        }
+      ],
+      "tags": [
+        "t5",
+        "g",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía potencial gravitatoria: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía potencial gravitatoria"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia g"
+      ],
+      "parts_count": 1,
+      "statement_source": "Rampa sin rozamiento con desnivel \\(3 m\\).\n\n(a) Calcula: Rapidez final.",
+      "solution_source": "Rapidez final \\(7,67 m/s\\), independiente de forma.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_g_005",
+      "version": 1,
+      "title": "Lanzamiento vertical",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía potencial gravitatoria",
+      "family": "g",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "altura_adicional",
+          "label": "Altura adicional",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 10.0,
+          "unit": "m",
+          "tolerance": 0.05,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_g_005.svg",
+          "alt": "Estados salida/cima."
+        }
+      ],
+      "tags": [
+        "t5",
+        "g",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía potencial gravitatoria: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía potencial gravitatoria"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia g"
+      ],
+      "parts_count": 1,
+      "statement_source": "Lanzamiento vertical \\(v_0=14 m/s\\).\n\n(a) Calcula: Altura adicional.",
+      "solution_source": "Altura adicional \\(10 m\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_g_006",
+      "version": 1,
+      "title": "Montaña rusa",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía potencial gravitatoria",
+      "family": "g",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "rapidez",
+          "label": "Rapidez",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 17.1,
+          "unit": "m/s",
+          "tolerance": 0.0855,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_g_006.svg",
+          "alt": "Perfil con niveles."
+        }
+      ],
+      "tags": [
+        "t5",
+        "g",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía potencial gravitatoria: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía potencial gravitatoria"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia g"
+      ],
+      "parts_count": 1,
+      "statement_source": "Montaña rusa: alturas \\(20\\to 5 m\\), parte del reposo.\n\n(a) Calcula: Rapidez.",
+      "solution_source": "\\(v=17,1 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_g_007",
+      "version": 1,
+      "title": "Velocidad mínima para superar colina de 8 m",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía potencial gravitatoria",
+      "family": "g",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "v_min",
+          "label": "v min",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 12.5,
+          "unit": "m/s",
+          "tolerance": 0.0625,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_g_007.svg",
+          "alt": "Perfil y punto de retorno."
+        }
+      ],
+      "tags": [
+        "t5",
+        "g",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía potencial gravitatoria: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía potencial gravitatoria"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia g"
+      ],
+      "parts_count": 1,
+      "statement_source": "Velocidad mínima para superar colina de \\(8 m\\).\n\n(a) Calcula: v min.",
+      "solution_source": "\\(v_min=12,5 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_g_008",
+      "version": 1,
+      "title": "Elegir gráfico U_g(h) para varios ceros",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía potencial gravitatoria",
+      "family": "g",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "concepto_1",
+          "label": "Conclusión",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "se_conserva",
+              "label": "Se conserva"
+            },
+            {
+              "id": "aumenta_necesariamente",
+              "label": "Aumenta necesariamente"
+            },
+            {
+              "id": "disminuye_necesariamente",
+              "label": "Disminuye necesariamente"
+            }
+          ],
+          "correct_option_id": "se_conserva",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_g_008.svg",
+          "alt": "Tres rectas paralelas."
+        }
+      ],
+      "tags": [
+        "t5",
+        "g",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía potencial gravitatoria: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía potencial gravitatoria"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia g"
+      ],
+      "parts_count": 1,
+      "statement_source": "Elegir gráfico \\(U_g(h)\\) para varios ceros.\n\n(a) Selecciona: Conclusión.",
+      "solution_source": "Pendiente \\(mg\\); opciones equivalentes por constante.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_g_009",
+      "version": 1,
+      "title": "Plano inclinado",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía potencial gravitatoria",
+      "family": "g",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Función U(s)=mg s sinθ+C"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_g_009.svg",
+          "alt": "Geometría de rampa."
+        }
+      ],
+      "tags": [
+        "t5",
+        "g",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía potencial gravitatoria: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía potencial gravitatoria"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia g"
+      ],
+      "parts_count": 1,
+      "statement_source": "Plano inclinado: relacionar recorrido \\(s\\) y altura \\(s sinθ\\).\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Función \\(U(s)=mg s sinθ+C\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_g_010",
+      "version": 1,
+      "title": "Auditar afirmación “la energía potencial pertenece al objeto”",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía potencial gravitatoria",
+      "family": "g",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Selección: pertenece al sistema de interacción; ΔU numérico"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_g_010.svg",
+          "alt": "Fronteras objeto/Tierra."
+        }
+      ],
+      "tags": [
+        "t5",
+        "g",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía potencial gravitatoria: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía potencial gravitatoria"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia g"
+      ],
+      "parts_count": 1,
+      "statement_source": "Auditar afirmación “la energía potencial pertenece al objeto”.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Selección: pertenece al sistema de interacción; \\(\\Delta U\\) numérico.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    }
+  ]
+}

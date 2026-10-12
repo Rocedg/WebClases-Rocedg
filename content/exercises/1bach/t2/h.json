@@ -1,0 +1,1118 @@
+{
+  "exercises": [
+    {
+      "id": "t2_h_001",
+      "version": 1,
+      "title": "Salida horizontal y dirección de impacto",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Tiro horizontal",
+      "family": "h",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "t",
+          "label": "Tiempo de vuelo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "range",
+          "label": "Alcance",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 12,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "v",
+          "label": "Velocidad de impacto",
+          "type": "vector",
+          "required": true,
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            6,
+            -20
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        },
+        {
+          "id": "speed",
+          "label": "Rapidez de impacto",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 20.8806130178211,
+          "unit": "m/s",
+          "tolerance": 0.05,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "angle",
+          "label": "Ángulo bajo +x",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 73.30075576600639,
+          "unit": "°",
+          "tolerance": 0.1,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_h_001.svg",
+          "alt": "Bola: altura 20 m, salida horizontal 6 m/s"
+        }
+      ],
+      "tags": [
+        "t2",
+        "h",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Salida horizontal y dirección de impacto. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Tiro horizontal"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar anular a_y porque la salida es horizontal.",
+      "common_mistakes": [
+        "Anular a_y porque la salida es horizontal",
+        "Usar solo |v_y| como rapidez total"
+      ],
+      "parts_count": 2,
+      "statement_source": "Una bola sale horizontalmente a \\(6\\,\\mathrm{m/s}\\) desde \\(20\\,\\mathrm{m}\\) de altura. El origen está al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) hacia arriba.\n\nDesprecia el aire y usa \\(a_x=0\\), \\(a_y=-g=-10\\,\\mathrm{m/s^2}\\).\n\n(a) Halla el tiempo de vuelo y el alcance horizontal.\n\n(b) Calcula el vector velocidad de impacto en el orden \\((v_x;v_y)\\), su módulo y el ángulo positivo bajo \\(+x\\).",
+      "solution_source": "Las componentes cumplen \\(x=6t\\), \\(y=20-5t^2\\), \\(v_x=6\\) y \\(v_y=-10t\\), en SI.\n\nAl llegar al suelo, \\(y=0\\) da \\(t=2\\,\\mathrm{s}\\) y \\(x=12\\,\\mathrm{m}\\).\n\n\\[\\vec v=(6;-20)\\,\\mathrm{m/s},\\qquad |\\vec v|=\\sqrt{436}\\simeq20,9\\,\\mathrm{m/s}\\]\n\nEl ángulo bajo \\(+x\\) es \\(\\arctan(20/6)=73,3^\\circ\\)."
+    },
+    {
+      "id": "t2_h_002",
+      "version": 1,
+      "title": "Velocidad necesaria para una marca",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Tiro horizontal",
+      "family": "h",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "t",
+          "label": "Tiempo de caída",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.6,
+          "unit": "s",
+          "tolerance": 0.001,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "v0",
+          "label": "Velocidad horizontal requerida",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 4,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "vf",
+          "label": "Velocidad final",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(4; -6)",
+            "4 i + (-6) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            4,
+            -6
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        },
+        {
+          "id": "path",
+          "label": "Trayectoria",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [
+            "1.8-5*x**2/16"
+          ],
+          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
+          "grading": "pending_review",
+          "variable": "x",
+          "variable_unit": "m",
+          "unit": "m",
+          "domain": "0≤x≤2,4",
+          "canonical_expression": "1.8-5*x**2/16",
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_h_002.svg",
+          "alt": "Mesa de 1,8 m y marca a 2,4 m"
+        }
+      ],
+      "tags": [
+        "t2",
+        "h",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Velocidad necesaria para una marca. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Tiro horizontal"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar introducir la velocidad desconocida en la ecuación vertical.",
+      "common_mistakes": [
+        "Introducir la velocidad desconocida en la ecuación vertical",
+        "Usar la distancia horizontal como altura"
+      ],
+      "parts_count": 2,
+      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−10 m/s²\\). Desde una mesa de 1,8 m una bola debe caer en una marca del suelo a 2,4 m de su pie. \n(a) Deduce la velocidad horizontal necesaria.\n(b) Completa: Tiempo de caída, Velocidad final, Trayectoria.",
+      "solution_source": "\\(y=1,8−5t²=0\\): \\(t=√0,36=0,600 s\\). \\(x=v_0t=2,4\\): \\(v_0=4,00 m/s\\).\n\n\\(v_x=4,v_y=−10·0,6=−6 m/s\\).\n\nEliminando \\(t=x/4\\): \\(y=1,8−5x²/16\\). En \\(x=2,4\\) da \\(y=0,\\) comprobando la diana.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_h_003",
+      "version": 1,
+      "title": "Altura inferida desde el alcance",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Tiro horizontal",
+      "family": "h",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "t",
+          "label": "Tiempo de vuelo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.5,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "h",
+          "label": "Altura inferida",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 11.25,
+          "unit": "m",
+          "tolerance": 0.05,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "angle",
+          "label": "Ángulo bajo horizontal",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 71.56505117707799,
+          "unit": "°",
+          "tolerance": 0.1,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_h_003.svg",
+          "alt": "Datos de fotografía: alcance 7,5 m"
+        }
+      ],
+      "tags": [
+        "t2",
+        "h",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Altura inferida desde el alcance. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Tiro horizontal"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar suponer una altura por la apariencia del dibujo.",
+      "common_mistakes": [
+        "Suponer una altura por la apariencia del dibujo",
+        "Creer que un alcance fija por sí solo v_0 y h"
+      ],
+      "parts_count": 2,
+      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−10 m/s²\\). Una fotografía calibrada indica que una bola lanzada horizontalmente a 5 m/s impacta a 7,5 m del pie de la plataforma. \n(a) Deduce tiempo y altura de salida.\n(b) Completa: Ángulo bajo horizontal.",
+      "solution_source": "\\(x=5t=7,5\\) da \\(t=1,50 s\\). En vertical 0=h−5t²: \\(h=11,25 m\\).\n\n\\(v=(5,−15) m/s\\); ángulo bajo \\(horizontal=arctan(15/5)=71,6°\\).\n\nCon solo alcance R, \\(h=5(R/v_0)²\\) admite infinitas parejas h,\\(v_0\\).",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_h_004",
+      "version": 1,
+      "title": "Dos velocidades desde la misma plataforma",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Tiro horizontal",
+      "family": "h",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "t",
+          "label": "Tiempo común",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "ra",
+          "label": "Alcance A",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "rb",
+          "label": "Alcance B",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 6,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "va",
+          "label": "Velocidad final A",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(3; -10)",
+            "3 i + (-10) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            3,
+            -10
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        },
+        {
+          "id": "vb",
+          "label": "Velocidad final B",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(6; -10)",
+            "6 i + (-10) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            6,
+            -10
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_h_004.svg",
+          "alt": "Dos trayectorias desde altura 5 m"
+        }
+      ],
+      "tags": [
+        "t2",
+        "h",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Dos velocidades desde la misma plataforma. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Tiro horizontal"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar afirmar que la bola más rápida tarda menos en caer.",
+      "common_mistakes": [
+        "Afirmar que la bola más rápida tarda menos en caer",
+        "Duplicar también la velocidad vertical de B"
+      ],
+      "parts_count": 2,
+      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−10 m/s²\\). Dos bolas salen a la vez desde 5 m de altura, horizontalmente a 3 y 6 m/s. \n(a) Predice y calcula tiempos y alcances.\n(b) Completa: Alcance B, Velocidad final A, Velocidad final B.",
+      "solution_source": "Ambas comparten \\(y=5−5t²\\): caen en 1 s. Horizontalmente \\(x_A=3t,x_B=6t\\): alcances 3 y 6 m.\n\n\\(v_A=(3,−10),v_B=(6,−10) m/s\\); las velocidades verticales coinciden y las totales no.\n\nx-t tiene dos rectas de pendiente distinta; y-t es la misma parábola para ambas. Duplicar \\(v_x\\) duplica alcance, no tiempo.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_h_005",
+      "version": 1,
+      "title": "Cambiar la altura: una ley de raíz cuadrada",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Tiro horizontal",
+      "family": "h",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "ta",
+          "label": "Tiempo desde 5 m",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "tb",
+          "label": "Tiempo desde 20 m",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "ra",
+          "label": "Alcance desde 5 m",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 4,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "rb",
+          "label": "Alcance desde 20 m",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 8,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "ratio",
+          "label": "Razón de módulos verticales B/A",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2,
+          "unit": "1",
+          "tolerance": 0.001,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_h_005.svg",
+          "alt": "Dos plataformas; salida común 4 m/s"
+        }
+      ],
+      "tags": [
+        "t2",
+        "h",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Cambiar la altura: una ley de raíz cuadrada. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Tiro horizontal"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar escalar linealmente el tiempo con altura.",
+      "common_mistakes": [
+        "Escalar linealmente el tiempo con altura",
+        "Cambiar v_x al cambiar h"
+      ],
+      "parts_count": 2,
+      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−10 m/s²\\). Se lanza horizontalmente a 4 m/s desde alturas de 5 y 20 m en pruebas independientes. \n(a) Halla tiempos y alcances.\n(b) Completa: Alcance desde 5 m, Alcance desde 20 m, Razón de módulos verticales B/A.",
+      "solution_source": "\\(t=√(2h/g)\\): \\(t_A=1 s\\),\\(t_B=2 s\\). \\(R=4t\\): 4 y 8 m.\n\nCon \\(v_x\\) fijo, R∝√h, no h. Cuadruplicar h multiplica R por √4=2.\n\n\\(v_y=−10t\\): \\(−10 y −20 m/s\\). También su módulo se duplica, mientras \\(v_x\\) permanece igual.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_h_006",
+      "version": 1,
+      "title": "Cuatro gráficas de una salida horizontal",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Tiro horizontal",
+      "family": "h",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "t",
+          "label": "Tiempo de vuelo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.6,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "rmid",
+          "label": "Posición a 0,8 s",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(6.4; 9.6)",
+            "6.4 i + (9.6) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            6.4,
+            9.6
+          ],
+          "unit": "m",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        },
+        {
+          "id": "vfinal",
+          "label": "Velocidad final",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(8; -16)",
+            "8 i + (-16) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            8,
+            -16
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "c"
+        },
+        {
+          "id": "range",
+          "label": "Alcance",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 12.8,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_h_006.svg",
+          "alt": "Vuelo desde 12,8 m a 8 m/s"
+        }
+      ],
+      "tags": [
+        "t2",
+        "h",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Cuatro gráficas de una salida horizontal. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Tiro horizontal"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar dibujar y(t) lineal por v_y inicialmente nula.",
+      "common_mistakes": [
+        "Dibujar y(t) lineal por v_y inicialmente nula",
+        "Olvidar que la integral de v_y da cambio de altura"
+      ],
+      "parts_count": 3,
+      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−10 m/s²\\). Una bola sale a 8 m/s desde 12,8 m de altura. \n(a) Completa: Tiempo de vuelo.\n(b) Marca estado a \\(t=0,8 s\\) y en el impacto.\n(c) Completa: Velocidad final, Alcance.",
+      "solution_source": "\\(x=8t,y=12,8−5t²,v_x=8,v_y=−10t\\). Dominio: \\(0≤t≤1,6\\) s.\n\nEn \\(t=0,8\\): \\(r=(6,4\\);9,6) m,\\(v=(8\\);−8) m/s; en impacto \\(r=(12,8\\);0) m,\\(v=(8\\);−16) m/s.\n\nÁrea de \\(v_x=8·1,6=12,8 m\\); área de \\(v_y=−16·1,6/2=−12,8 m\\), igual a la caída.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_h_007",
+      "version": 1,
+      "title": "Elegir trayectoria y componentes compatibles",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Tiro horizontal",
+      "family": "h",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "r",
+          "label": "Posición a 0,5 s",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(1; 3.75)",
+            "1 i + (3.75) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            1,
+            3.75
+          ],
+          "unit": "m",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        },
+        {
+          "id": "v",
+          "label": "Velocidad a 0,5 s",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(2; -5)",
+            "2 i + (-5) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            2,
+            -5
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_h_007.svg",
+          "alt": "Opciones A,C frente a B: coordenada horizontal; Opciones de velocidad vertical"
+        }
+      ],
+      "tags": [
+        "t2",
+        "h",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Elegir trayectoria y componentes compatibles. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Tiro horizontal"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar escoger solo por la forma parabólica.",
+      "common_mistakes": [
+        "Escoger solo por la forma parabólica",
+        "Omitir el factor dos en la derivada"
+      ],
+      "parts_count": 2,
+      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−10 m/s²\\). Desde 5 m se lanza horizontalmente a 2 m/s. Opciones en SI: A: \\(x=2t,y=5−5t²,v_x=2,v_y=−10t\\); B: \\(x=2t²,y=5−5t²,v_x=4t,v_y=−10t\\); C: \\(x=2t,y=5−5t²,v_x=2,v_y=−5t\\). \n(b) Calcula posición y velocidad a 0,5 s.",
+      "solution_source": "A respeta x lineal y \\(v_x\\) inicial de 2 m/s; derivar \\(y=5−5t²\\) da \\(v_y=−10t\\).\n\nB tiene x″=4 m/s², incompatible con \\(a_x=0\\). C asigna la mitad de la derivada correcta a \\(v_y\\).\n\nA los 0,5 s: \\(x=1,y=3,75 m\\),\\(v=(2,−5) m/s\\). El avance horizontal no altera la caída.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_h_008",
+      "version": 1,
+      "title": "Contacto con una rampa ascendente",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Tiro horizontal",
+      "family": "h",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "t",
+          "label": "Tiempo de contacto",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.145683229480096,
+          "unit": "s",
+          "tolerance": 0.005,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "r",
+          "label": "Punto de contacto",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(6.874099376880577; 3.4370496884402884)",
+            "6.874099376880577 i + (3.4370496884402884) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            6.874099376880577,
+            3.4370496884402884
+          ],
+          "unit": "m",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        },
+        {
+          "id": "v",
+          "label": "Velocidad de contacto",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(6; -11.45683229480096)",
+            "6 i + (-11.45683229480096) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            6,
+            -11.45683229480096
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_h_008.svg",
+          "alt": "Salida horizontal y rampa y=x/2"
+        }
+      ],
+      "tags": [
+        "t2",
+        "h",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Contacto con una rampa ascendente. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Tiro horizontal"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar usar el tiempo de caída al suelo horizontal.",
+      "common_mistakes": [
+        "Usar el tiempo de caída al suelo horizontal",
+        "Aceptar la raíz negativa"
+      ],
+      "parts_count": 3,
+      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−10 m/s²\\). Una bola sale horizontalmente a 6 m/s desde \\(y=10 m\\). La superficie receptora es \\(y=x/2\\) para x≥0. \n(b) Halla tiempo, punto y velocidad de impacto.",
+      "solution_source": "Horizontal \\(x=6t\\); vertical \\(y=10−5t²\\); trayectoria \\(y=10−5x²/36\\).\n\nLa rampa exige \\(10−5t²\\)=3t: \\(t=(−3±√209)/10\\). Solo la raíz 1,146 s es positiva.\n\nPunto \\((6,874;3,437) m\\); \\(v=(6\\);−11,457) m/s. La separación y−x/2 decrece para t≥0 y se anula una sola vez: primer contacto.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_h_009",
+      "version": 1,
+      "title": "Lanzamiento desde una plataforma móvil",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Tiro horizontal",
+      "family": "h",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "t",
+          "label": "Tiempo común",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "ground",
+          "label": "Alcance respecto al suelo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 7,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "platform",
+          "label": "Desplazamiento respecto a plataforma",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "vg",
+          "label": "Velocidad final terrestre",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(7; -10)",
+            "7 i + (-10) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            7,
+            -10
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        },
+        {
+          "id": "vp",
+          "label": "Velocidad final relativa",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(3; -10)",
+            "3 i + (-10) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            3,
+            -10
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_h_009.svg",
+          "alt": "Suelo y plataforma: posiciones al cabo de 1 s"
+        }
+      ],
+      "tags": [
+        "t2",
+        "h",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Lanzamiento desde una plataforma móvil. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Tiro horizontal"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar tomar 3 m/s como velocidad terrestre.",
+      "common_mistakes": [
+        "Tomar 3 m/s como velocidad terrestre",
+        "Suponer que la plataforma queda en x=0"
+      ],
+      "parts_count": 3,
+      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−10 m/s²\\). Una plataforma avanza a 4 m/s respecto al suelo. A 5 m de altura lanza una bola horizontalmente hacia delante a 3 m/s respecto a sí misma. En \\(t=0\\) su borde está en \\(x=0\\). \n(a) Modela la bola en ambas referencias.\n(b) Halla punto de caída respecto a suelo y plataforma y velocidades de impacto.",
+      "solution_source": "\\(v_x\\),\\(tierra=4+3=7 m/s\\); \\(x=7t\\). Respecto a plataforma x′=x−4t=3t. En ambos \\(y=5−5t²\\).\n\nCaída en \\(t=1 s\\): \\(x=7 m\\), plataforma en 4 m,x′=3 m.\n\nVelocidades finales \\((7,−10)\\) y \\((3,−10) m/s\\). Comparten caída y reloj; solo cambia la componente horizontal.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_h_010",
+      "version": 1,
+      "title": "Laboratorio: estimar la velocidad de salida",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Tiro horizontal",
+      "family": "h",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_minutes": 20,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "slope",
+          "label": "Pendiente de R² frente a h",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.8,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "v0",
+          "label": "Velocidad estimada",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "unc",
+          "label": "Mayor cota de incertidumbre en v 0",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.06666666666666667,
+          "unit": "m/s",
+          "tolerance": 0.001,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "pred",
+          "label": "Alcance predicho",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.8,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_h_010.svg",
+          "alt": "Linealización de datos de laboratorio"
+        }
+      ],
+      "tags": [
+        "t2",
+        "h",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Laboratorio: estimar la velocidad de salida. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Tiro horizontal"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar ajustar r proporcional a h.",
+      "common_mistakes": [
+        "Ajustar R proporcional a h",
+        "Confundir concordancia de tres puntos con prueba del modelo"
+      ],
+      "parts_count": 3,
+      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−10 m/s²\\). Desde alturas \\(h=(0,45\\);0,80;1,25) m se obtienen alcances \\(R=(0,90\\);1,20;1,50) m, cada uno con incertidumbre ±0,02 m; alturas y g se tratan exactos para este análisis. \n(a) Linealiza R² frente a h y estima \\(v_0\\).\n(b) Calcula \\(v_0\\) desde cada par y una cota de incertidumbre.\n(c) Evalúa si el ajuste respalda \\(v_0\\) constante y predice R para \\(h=1,80 m\\).",
+      "solution_source": "\\(x=v_0t,y=h−5t²\\); \\(t=√(h/5)\\). Entonces R²=(v_0²/5)h. Los cuadrados \\((0,81;1,44;2,25) m\\)² dan pendiente 1,8 m.\n\n\\(v_0=√(5·1,8)=3 m/s\\). Tiempos 0,3;0,4;0,5 s: R/\\(t=3\\) en cada caso. Cotas \\(δv=δR/t\\): 0,0667;0,0500;0,0400 m/s.\n\nLas tres medidas son compatibles con velocidad constante, sin demostrar ausencia de errores sistemáticos. Para 1,8 m, \\(t=0,6 s\\) y \\(R=1,8 m\\). Una cota conservadora usando 0,0667 m/s es ±0,04 m.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    }
+  ]
+}

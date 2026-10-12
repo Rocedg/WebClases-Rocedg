@@ -1,0 +1,1313 @@
+{
+  "exercises": [
+    {
+      "id": "t1_a_001",
+      "version": 1,
+      "title": "MRUA que empieza hacia atrás",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "MRUA y movimiento vertical",
+      "family": "a",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "x",
+          "label": "Posición",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [
+            "5-4*t+t**2"
+          ],
+          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
+          "grading": "pending_review",
+          "variable": "t",
+          "variable_unit": "s",
+          "unit": "m",
+          "domain": "0≤t≤4",
+          "canonical_expression": "5-4*t+t**2",
+          "part": "a"
+        },
+        {
+          "id": "v",
+          "label": "Velocidad",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [
+            "-4+2*t"
+          ],
+          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
+          "grading": "pending_review",
+          "variable": "t",
+          "variable_unit": "s",
+          "unit": "m/s",
+          "domain": "0≤t≤4",
+          "canonical_expression": "-4+2*t",
+          "part": "a"
+        },
+        {
+          "id": "x3",
+          "label": "Posición a 3 s",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "v3",
+          "label": "Velocidad a 3 s",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_a_001.svg",
+          "alt": "Velocidad con cambio de signo"
+        }
+      ],
+      "tags": [
+        "t1",
+        "a",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "MRUA que empieza hacia atrás. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "MRUA y movimiento vertical"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar omitir el factor 1/2 en x.",
+      "common_mistakes": [
+        "Omitir el factor 1/2 en x",
+        "Confundir signo de posición y movimiento"
+      ],
+      "parts_count": 2,
+      "statement_source": "\\(+x\\) a la derecha. \\(x_0=5 m\\), \\(v_0=−4 m/s\\) y \\(a=+2 m/s²\\), constantes hasta \\(t=4 s\\). \n(a) Escribe \\(x(t)\\),\\(v(t)\\).\n(b) Completa: Posición a 3 s, Velocidad a 3 s.",
+      "solution_source": "\\(x=5−4t+(1/2)·2t²=5−4t+t²\\); \\(v=−4+2t\\).\n\n\\(x(3)=5−12+9=2 m\\) y \\(v(3)=−4+6=+2 m/s\\).\n\n\\(v=0\\) en \\(t=2 s\\); a 3 s ya se mueve hacia la derecha. x positiva no indica por sí sola el sentido.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_a_002",
+      "version": 1,
+      "title": "Frenar viajando hacia el oeste",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "MRUA y movimiento vertical",
+      "family": "a",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 8,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "a",
+          "label": "Aceleración",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.5,
+          "unit": "m/s²",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "dx",
+          "label": "Desplazamiento",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -45,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_a_002.svg",
+          "alt": "Frenada con velocidad negativa"
+        }
+      ],
+      "tags": [
+        "t1",
+        "a",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Frenar viajando hacia el oeste. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "MRUA y movimiento vertical"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar dar aceleración negativa por la palabra frenada.",
+      "common_mistakes": [
+        "Dar aceleración negativa por la palabra frenada",
+        "Cambiar desplazamiento por distancia"
+      ],
+      "parts_count": 2,
+      "statement_source": "\\(+x\\) al este. Un carro pasa uniformemente de \\(v=−12 m/s\\) a \\(v=−3 m/s\\) en 6 s. \n(a) Completa: Aceleración.\n(b) Obtén desplazamiento en ese intervalo.",
+      "solution_source": "\\(a=(−3−(−12))/6=+1,50 m/s²\\).\n\n\\(Δx=(v_i+v_f)Δt/2=(−12−3)·6/2=−45 m\\).\n\nLa rapidez disminuye; el carro sigue moviéndose al oeste durante todo el tramo.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_a_003",
+      "version": 1,
+      "title": "Hasta detenerse, y no más allá",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "MRUA y movimiento vertical",
+      "family": "a",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "tf",
+          "label": "Tiempo de frenada",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 4,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "d",
+          "label": "Distancia de frenada",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 48,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "x6",
+          "label": "Posición a 6 s",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 48,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "x",
+          "label": "Posición por tramos",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [
+            "24*t-3*t**2 (0<=t<=4); 48 (t>4)"
+          ],
+          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
+          "grading": "pending_review",
+          "variable": "t",
+          "variable_unit": "s",
+          "unit": "m",
+          "domain": "t ≥ 0",
+          "canonical_expression": "24*t-3*t**2 (0<=t<=4); 48 (t>4)",
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_a_003.svg",
+          "alt": "Frenada seguida de reposo"
+        }
+      ],
+      "tags": [
+        "t1",
+        "a",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Hasta detenerse, y no más allá. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "MRUA y movimiento vertical"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar prolongar la frenada después de detenerse.",
+      "common_mistakes": [
+        "Prolongar la frenada después de detenerse",
+        "Usar a positiva en el eje hacia delante"
+      ],
+      "parts_count": 2,
+      "statement_source": "Coche en \\(x=0,\\) \\(+x\\) hacia delante, \\(v_0=24 m/s\\). Frena a −6 m/s² hasta parar y queda quieto. \n(a) Calcula tiempo y distancia de frenado.\n(b) Escribe \\(x(t)\\) incluyendo el reposo y calcula \\(x(6)\\).",
+      "solution_source": "0=\\(24−6t\\) da \\(t_f=4 s\\). \\(x_f=24·4−3·16=48 m\\).\n\nHasta parar \\(x=24t−3t²\\); después \\(x=48 m\\).\n\n\\(x(6)=48 m\\). Prolongar la parábola daría 36 m y una marcha atrás no autorizada.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_a_004",
+      "version": 1,
+      "title": "Los segundos no aportan igual distancia",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "MRUA y movimiento vertical",
+      "family": "a",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 8,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "x2",
+          "label": "X(2)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3.2,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "x4",
+          "label": "X(4)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 12.8,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "d24",
+          "label": "Recorrido de 2 a 4 s",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 9.6,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "ratio",
+          "label": "Cociente de recorridos",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3,
+          "unit": "1",
+          "tolerance": 0.001,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_a_004.svg",
+          "alt": "Arranque: x=0,8t²"
+        }
+      ],
+      "tags": [
+        "t1",
+        "a",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Los segundos no aportan igual distancia. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "MRUA y movimiento vertical"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar usar 0,8(4−2)² como distancia del segundo tramo.",
+      "common_mistakes": [
+        "Usar 0,8(4−2)² como distancia del segundo tramo",
+        "Suponer x proporcional a t"
+      ],
+      "parts_count": 2,
+      "statement_source": "Un robot parte del reposo en \\(x=0\\) con \\(+x\\) hacia delante y \\(a=1,6 m/s²\\). \n(a) Calcula \\(x(2)\\), \\(x(4)\\) y la distancia recorrida entre 2 y 4 s.\n(b) Compara esa distancia con la de los dos primeros segundos.",
+      "solution_source": "\\(x=(1/2)·1,6t²=0,8t²\\); \\(x(2)=3,20 m\\) y \\(x(4)=12,8 m\\).\n\nΔx_2→4=\\(12,8−3,2\\)=9,60 m; 9,6/3,2=3.\n\nEn igual tiempo recorre más porque empieza el segundo intervalo con velocidad no nula.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_a_005",
+      "version": 1,
+      "title": "Desplazamiento tras dar la vuelta",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "MRUA y movimiento vertical",
+      "family": "a",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "tg",
+          "label": "Instante de giro",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 4,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "xg",
+          "label": "Posición de giro",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 14,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "xf",
+          "label": "Posición final",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 5,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "dx",
+          "label": "Desplazamiento",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 7,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "d",
+          "label": "Distancia",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 25,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_a_005.svg",
+          "alt": "Posición y máximo; Velocidad y áreas de distinto signo"
+        }
+      ],
+      "tags": [
+        "t1",
+        "a",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Desplazamiento tras dar la vuelta. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "MRUA y movimiento vertical"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar igualar recorrido al módulo del desplazamiento.",
+      "common_mistakes": [
+        "Igualar recorrido al módulo del desplazamiento",
+        "Buscar el giro imponiendo x=0"
+      ],
+      "parts_count": 3,
+      "statement_source": "\\(+x\\) al este. Un móvil parte de \\(x=−2 m\\) con \\(v_0=8 m/s\\) y \\(a=−2 m/s²\\) hasta \\(t=7 s\\). \n(a) Halla instante y posición de giro.\n(b) Calcula \\(x(7)\\), desplazamiento y distancia de 0 a 7 s.",
+      "solution_source": "\\(v=8−2t\\) se anula a 4 s. \\(x=−2+8t−t²\\); \\(x(4)=14 m\\).\n\n\\(x(7)=−2+56−49=5 m\\); \\(Δx=5−(−2)=7 m\\).\n\n\\(Ida=16 m\\), \\(vuelta=9 m\\): \\(d=25 m\\). El cero de v coincide con máximo de x, no con \\(x=0\\).",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_a_006",
+      "version": 1,
+      "title": "Reconstruir la velocidad inicial",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "MRUA y movimiento vertical",
+      "family": "a",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "v0",
+          "label": "Velocidad inicial",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 8,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "vf",
+          "label": "Velocidad final",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 4,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "dx",
+          "label": "Desplazamiento",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 24,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_a_006.svg",
+          "alt": "Velocidad final conocida tras reconstruir v₀"
+        }
+      ],
+      "tags": [
+        "t1",
+        "a",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Reconstruir la velocidad inicial. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "MRUA y movimiento vertical"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar tomar x_f como desplazamiento.",
+      "common_mistakes": [
+        "Tomar x_f como desplazamiento",
+        "Elegir una raíz de v² sin signo físico"
+      ],
+      "parts_count": 2,
+      "statement_source": "\\(+x\\) a la derecha. Un móvil sale de \\(x=4 m\\) con \\(a=−1 m/s²\\) y llega a \\(x=28 m\\) en 4 s. \n(b) Completa: Velocidad inicial, Velocidad final, Desplazamiento.",
+      "solution_source": "28=\\(4+4v\\)_0−(1/2)·16: 4v_0=32, \\(v_0=8 m/s\\).\n\n\\(v(4)=8−4=4 m/s\\); \\(Δx=(8+4)·4/2=24 m\\).\n\nv solo se anularía a 8 s, fuera del intervalo; no ha girado.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_a_007",
+      "version": 1,
+      "title": "Caída desde una plataforma",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "MRUA y movimiento vertical",
+      "family": "a",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "y",
+          "label": "Altura",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [
+            "45-5*t**2"
+          ],
+          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
+          "grading": "pending_review",
+          "variable": "t",
+          "variable_unit": "s",
+          "unit": "m",
+          "domain": "0≤t≤3",
+          "canonical_expression": "45-5*t**2",
+          "part": "a"
+        },
+        {
+          "id": "t",
+          "label": "Tiempo de caída",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "v",
+          "label": "Velocidad vertical de impacto",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -30,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "speed",
+          "label": "Rapidez de impacto",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 30,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_a_007.svg",
+          "alt": "Altura de la esfera durante la caída"
+        }
+      ],
+      "tags": [
+        "t1",
+        "a",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Caída desde una plataforma. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "MRUA y movimiento vertical"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar usar a_y=+g con eje hacia arriba.",
+      "common_mistakes": [
+        "Usar a_y=+g con eje hacia arriba",
+        "Dar rapidez negativa"
+      ],
+      "parts_count": 2,
+      "statement_source": "Suelo \\(y=0,\\) \\(+y\\) arriba. Se deja caer una esfera desde 45 m, sin aire y con \\(a_y=−g=−10 m/s²\\). \n(a) Escribe \\(y(t)\\),\\(v_y\\)(t).\n(b) Halla tiempo de caída y velocidad de impacto; distingue velocidad y rapidez.",
+      "solution_source": "\\(y=45−5t²\\) y \\(v_y=−10t\\); el reposo inicial solo implica \\(v_0=0\\).\n\n0=\\(45−5t²\\): \\(t=±3 s\\). El tiempo físico es +3 s.\n\n\\(v_y(3)=−30 m/s\\); \\(rapidez=30 m/s\\). El signo negativo indica descenso, consistente con la caída.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_a_008",
+      "version": 1,
+      "title": "Subir y regresar al nivel de salida",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "MRUA y movimiento vertical",
+      "family": "a",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "up",
+          "label": "Tiempo de subida",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.6,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "h",
+          "label": "Altura máxima",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 12.8,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "flight",
+          "label": "Tiempo de regreso",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3.2,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "v",
+          "label": "Velocidad de regreso",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -16,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "d",
+          "label": "Recorrido total",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 25.6,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_a_008.svg",
+          "alt": "Velocidad durante subida y bajada"
+        }
+      ],
+      "tags": [
+        "t1",
+        "a",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Subir y regresar al nivel de salida. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "MRUA y movimiento vertical"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar anular gravedad en la cima.",
+      "common_mistakes": [
+        "Anular gravedad en la cima",
+        "Confundir elevación con recorrido total"
+      ],
+      "parts_count": 2,
+      "statement_source": "Desde \\(y=0\\) se lanza una bola hacia arriba a 16 m/s. \\(+y\\) arriba, \\(a_y=−10 m/s²\\), sin aire. \n(a) Halla tiempo de subida y altura máxima.\n(b) Halla tiempo de regreso, velocidad de regreso y recorrido total.",
+      "solution_source": "\\(v_y=16−10t\\); \\(v_y=0\\) da \\(t=1,60 s\\). \\(y=16t−5t²\\) y \\(y(1,6)=12,8 m\\).\n\n\\(y=0\\) produce \\(t=0\\) o 3,20 s. El regreso es la segunda raíz; \\(v_y=−16 m/s\\).\n\n\\(Distancia=2·12,8=25,6 m\\) y \\(desplazamiento=0\\). En la cima \\(a_y\\) sigue siendo −10 m/s².",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_a_009",
+      "version": 1,
+      "title": "Dos lanzamientos y un único reloj",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "MRUA y movimiento vertical",
+      "family": "a",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_minutes": 18,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "t",
+          "label": "Instante global de encuentro",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2.5,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "y",
+          "label": "Altura de encuentro",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 18.75,
+          "unit": "m",
+          "tolerance": 0.05,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "va",
+          "label": "Velocidad de A",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -5,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "vb",
+          "label": "Velocidad de B",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 5,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_a_009.svg",
+          "alt": "Vuelos con salidas separadas un segundo"
+        }
+      ],
+      "tags": [
+        "t1",
+        "a",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Dos lanzamientos y un único reloj. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "MRUA y movimiento vertical"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar usar el mismo tiempo transcurrido para ambos.",
+      "common_mistakes": [
+        "Usar el mismo tiempo transcurrido para ambos",
+        "No comprobar el dominio anterior al impacto"
+      ],
+      "parts_count": 3,
+      "statement_source": "Suelo \\(y=0,\\) \\(+y\\) arriba, \\(a_y=−10 m/s²\\) sin aire. A sale hacia arriba a 20 m/s en \\(t=0\\); B desde el mismo punto a 20 m/s en \\(t=1 s\\). \n(b) Halla encuentro posterior a la salida de B, altura y velocidades.",
+      "solution_source": "A: \\(y_A=20t−5t²\\) para \\(0≤t≤4\\). B: \\(y_B=20(t−1)−5(t−1)²\\) para \\(1≤t≤5\\).\n\nAl igualar \\(y_A\\)−\\(y_B=25−10t=0,\\) resulta \\(t=2,50 s\\). \\(y=50−31,25=18,75 m\\).\n\n\\(v_A=20−25=−5 m/s\\); \\(v_B=20−10·1,5=+5 m/s\\). A baja y B sube; 2,5 pertenece a ambos vuelos.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_a_010",
+      "version": 1,
+      "title": "Ascensor que deja de acelerar",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "MRUA y movimiento vertical",
+      "family": "a",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "v5",
+          "label": "Velocidad a 5 s",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 4,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "y5",
+          "label": "Altura a 5 s",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 16,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "y",
+          "label": "Posición por tramos",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [
+            "t**2 (0<=t<=2); 4+4*(t-2) (2<t<=5)"
+          ],
+          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
+          "grading": "pending_review",
+          "variable": "t",
+          "variable_unit": "s",
+          "unit": "m",
+          "domain": "0≤t≤5",
+          "canonical_expression": "t**2 (0<=t<=2); 4+4*(t-2) (2<t<=5)",
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_a_010.svg",
+          "alt": "Aceleración del ascensor"
+        }
+      ],
+      "tags": [
+        "t1",
+        "a",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Ascensor que deja de acelerar. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "MRUA y movimiento vertical"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar interpretar a=0 como reposo.",
+      "common_mistakes": [
+        "Interpretar a=0 como reposo",
+        "Reiniciar y=0 en cada tramo"
+      ],
+      "parts_count": 2,
+      "statement_source": "\\(y=0\\) en planta baja y \\(+y\\) arriba. Ascensor en reposo: \\(a_y=2 m/s²\\) entre 0 y 2 s, \\(a_y=0\\) entre 2 y 5 s. \n(b) Completa: Velocidad a 5 s, Altura a 5 s, Posición por tramos.",
+      "solution_source": "Primer tramo: \\(v=2t,\\) \\(y=t²\\); en \\(t=2\\): \\(v=4 m/s\\), \\(y=4 m\\).\n\nDespués \\(v=4\\) y \\(y=4+4(t−2),\\) de modo que \\(y(5)=16 m\\).\n\n\\(a=0\\) significa velocidad constante, aquí no nula. Las posiciones y velocidades enlazan en 2 s.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_a_011",
+      "version": 1,
+      "title": "Leer los coeficientes con sus unidades",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "MRUA y movimiento vertical",
+      "family": "a",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "x0",
+          "label": "Posición inicial",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 7,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "v0",
+          "label": "Velocidad inicial",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -6,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "a",
+          "label": "Aceleración",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3,
+          "unit": "m/s²",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "t",
+          "label": "Instante de giro",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "x",
+          "label": "Posición de giro",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_a_011.svg",
+          "alt": "Una parábola con mínimo positivo"
+        }
+      ],
+      "tags": [
+        "t1",
+        "a",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Leer los coeficientes con sus unidades. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "MRUA y movimiento vertical"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar confundir el coeficiente cuadrático con a.",
+      "common_mistakes": [
+        "Confundir el coeficiente cuadrático con a",
+        "No asignar unidades a los coeficientes"
+      ],
+      "parts_count": 2,
+      "statement_source": "Con \\(+x\\) a la derecha, \\(x(t)=7−6t+1,5t²\\) en SI. \n(a) Completa: Posición inicial.\n(b) Halla el instante de velocidad nula y x en ese instante.",
+      "solution_source": "Comparando con \\(x=x_0+v_0t+(a/2)t²\\): \\(x_0=7 m\\), \\(v_0=−6 m/s\\), \\(a=3 m/s²\\).\n\nEl coeficiente 1,5 tiene unidad m/s² y es a/2, no a.\n\n\\(v=−6+3t\\) se anula a 2 s; \\(x(2)=7−12+6=1 m\\), un mínimo.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_a_012",
+      "version": 1,
+      "title": "Elegir un modelo con condiciones iniciales",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "MRUA y movimiento vertical",
+      "family": "a",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "x2",
+          "label": "Posición a 2 s",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 9,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t1",
+        "a",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Elegir un modelo con condiciones iniciales. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "MRUA y movimiento vertical"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar elegir solo por las unidades.",
+      "common_mistakes": [
+        "Elegir solo por las unidades",
+        "Olvidar que x″ es el doble del coeficiente de t²"
+      ],
+      "parts_count": 2,
+      "statement_source": "SI y \\(+x\\) a la derecha. Un móvil parte de \\(x_0=−3 m\\), \\(v_0=2 m/s\\) y \\(a=4 m/s²\\). Se proponen A: \\(x=−3+2t+4t²\\); B: \\(x=−3+2t+2t²\\); C: \\(x=3+2t+2t²\\); D: \\(x=−3+2t\\). \n(b) Calcula \\(x(2)\\).",
+      "solution_source": "En B, x′=\\(2+4t\\) y x″=4; las tres condiciones iniciales se cumplen.\n\nA tiene \\(a=8\\); C da \\(x_0=+3\\); D tiene \\(a=0\\). Todos pueden escribirse dimensionalmente en SI, pero solo B representa los datos.\n\n\\(x(2)=−3+2·2+2·4=9 m\\).",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_a_013",
+      "version": 1,
+      "title": "Reacción y frenada son dos modelos",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "MRUA y movimiento vertical",
+      "family": "a",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "dr",
+          "label": "Distancia de reacción",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 13.5,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "df",
+          "label": "Distancia de frenada",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 36,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "total",
+          "label": "Distancia total",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 49.5,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "time",
+          "label": "Tiempo total",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 4.75,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_a_013.svg",
+          "alt": "Reacción y frenado: dos áreas"
+        }
+      ],
+      "tags": [
+        "t1",
+        "a",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Reacción y frenada son dos modelos. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "MRUA y movimiento vertical"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar aplicar aceleración durante la reacción.",
+      "common_mistakes": [
+        "Aplicar aceleración durante la reacción",
+        "Sumar tiempos sin sumar las distancias de ambos tramos"
+      ],
+      "parts_count": 3,
+      "statement_source": "\\(+x\\) hacia delante y \\(x=0\\) al detectar un obstáculo. Coche a 18 m/s: reacción de 0,75 s a velocidad constante y frenado posterior a −4,5 m/s² hasta parar. \n(a) Modela x y v por tramos.\n(b) Halla tiempo y distancia total.",
+      "solution_source": "Durante reacción \\(x=18t,\\) \\(v=18\\). Al frenar \\(τ=t−0,75\\): \\(x=13,5+18τ−2,25τ²\\) y \\(v=18−4,5τ\\).\n\n\\(τ_f=18/4,5=4 s\\); tiempo global 4,75 s. \\(d_f=18²/(2·4,5)=36 m\\).\n\n\\(Total=13,5+36=49,5 m\\). El rectángulo 18·0,75 y triángulo 18·4/2 dan la misma suma; después \\(x=49,5\\) y \\(v=0\\).",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_a_014",
+      "version": 1,
+      "title": "Velocidad máxima compatible con una parada",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "MRUA y movimiento vertical",
+      "family": "a",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_minutes": 17,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "vmax",
+          "label": "Velocidad máxima",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 18.979157616563597,
+          "unit": "m/s",
+          "tolerance": 0.05,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "kmh",
+          "label": "Velocidad máxima en km/h",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 68.32496741962895,
+          "unit": "km/h",
+          "tolerance": 0.1,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "d25",
+          "label": "Parada si v",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 87.5,
+          "unit": "m",
+          "tolerance": 0.05,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_a_014.svg",
+          "alt": "Condición espacial para la parada"
+        }
+      ],
+      "tags": [
+        "t1",
+        "a",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Velocidad máxima compatible con una parada. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "MRUA y movimiento vertical"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar omitir el margen de cinco metros.",
+      "common_mistakes": [
+        "Omitir el margen de cinco metros",
+        "Aceptar la raíz negativa como rapidez"
+      ],
+      "parts_count": 3,
+      "statement_source": "Modelo ideal: obstáculo a 60 m, origen en la detección y \\(+x\\) hacia él. Reacción 1 s y frenada a −5 m/s² hasta parar; se exige detenerse al menos 5 m antes. \n(b) Calcula la velocidad máxima en m/s y km/h.\n(c) Completa: Parada si v.",
+      "solution_source": "La distancia admisible es \\(60−5\\)=55 m. \\(d=v_0·1+v_0²/(2·5)≤55\\).\n\nv_0²+10v_0−550≤0; raíz positiva (−10+√2300)/2=18,98 m/s, es decir 68,3 km/h. La otra raíz no es rapidez válida.\n\nCon esa rapidez \\(d=55 m\\). A 25 m/s: \\(d=25+625/10=87,5 m\\), incompatible. Es una conclusión del modelo, no una recomendación de conducción.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    }
+  ]
+}

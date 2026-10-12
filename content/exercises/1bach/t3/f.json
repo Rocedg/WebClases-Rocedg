@@ -1,0 +1,834 @@
+{
+  "exercises": [
+    {
+      "id": "t3_f_001",
+      "version": 1,
+      "title": "Libro en reposo sobre mesa",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Fuerzas e interacciones",
+      "family": "f",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "resultante",
+          "label": "Resultante",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.0,
+          "unit": "N",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_f_001.svg",
+          "alt": "Libro aislado y diagrama de interacciones separado."
+        }
+      ],
+      "tags": [
+        "t3",
+        "f",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Fuerzas e interacciones: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Fuerzas e interacciones"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia f"
+      ],
+      "parts_count": 1,
+      "statement_source": "Libro en reposo sobre mesa: identificar interacciones Tierra-libro y mesa-libro.\n\n(a) Calcula: Resultante.",
+      "solution_source": "Selección múltiple cerrada: peso y normal; resultante \\(0 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t3_f_002",
+      "version": 1,
+      "title": "Lámpara colgada de un cable vertical",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Fuerzas e interacciones",
+      "family": "f",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "tension",
+          "label": "Tensión",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 29.4,
+          "unit": "N",
+          "tolerance": 0.147,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_f_002.svg",
+          "alt": "Lámpara, cable y dos DCL alternativos."
+        }
+      ],
+      "tags": [
+        "t3",
+        "f",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Fuerzas e interacciones: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Fuerzas e interacciones"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia f"
+      ],
+      "parts_count": 1,
+      "statement_source": "Lámpara colgada de un cable vertical, \\(m=3 kg\\), \\(g=9,8\\).\n\n(a) Calcula: Tensión.",
+      "solution_source": "\\(T=29,4 N\\); par de reacción de la tensión: lámpara sobre cable.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t3_f_003",
+      "version": 1,
+      "title": "Caja empujada horizontalmente sin rozamiento con",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Fuerzas e interacciones",
+      "family": "f",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "aceleracion",
+          "label": "Aceleración",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3.0,
+          "unit": "m/s²",
+          "tolerance": 0.015,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_f_003.svg",
+          "alt": "Caja y flechas con ejes."
+        }
+      ],
+      "tags": [
+        "t3",
+        "f",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Fuerzas e interacciones: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Fuerzas e interacciones"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia f"
+      ],
+      "parts_count": 1,
+      "statement_source": "Caja empujada horizontalmente sin rozamiento con \\(F=18 N\\), \\(m=6 kg\\).\n\n(a) Calcula: Aceleración.",
+      "solution_source": "Fuerzas: peso, normal y empuje; \\(a=3 m/s²\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t3_f_004",
+      "version": 1,
+      "title": "Ascensor que sube a velocidad constante con persona de 60 kg",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Fuerzas e interacciones",
+      "family": "f",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "normal",
+          "label": "Normal",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 588.0,
+          "unit": "N",
+          "tolerance": 2.94,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_f_004.svg",
+          "alt": "Persona aislada dentro del ascensor."
+        }
+      ],
+      "tags": [
+        "t3",
+        "f",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Fuerzas e interacciones: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Fuerzas e interacciones"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia f"
+      ],
+      "parts_count": 1,
+      "statement_source": "Ascensor que sube a velocidad constante con persona de \\(60 kg\\).\n\n(a) Calcula: Normal.",
+      "solution_source": "\\(N=588 N\\); selección: aceleración nula aunque se mueve.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t3_f_005",
+      "version": 1,
+      "title": "Ascensor acelera hacia arriba a 1,5 m/s², persona 60 kg",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Fuerzas e interacciones",
+      "family": "f",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "normal",
+          "label": "Normal",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 678.0,
+          "unit": "N",
+          "tolerance": 3.39,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "vector",
+          "label": "Vector",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "expected_components": [
+            0.0,
+            90.0
+          ],
+          "accepted_forms": [
+            "(0; 90)"
+          ],
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "unit": "N",
+          "tolerance": 0.02,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_f_005.svg",
+          "alt": "Comparación visual N>P."
+        }
+      ],
+      "tags": [
+        "t3",
+        "f",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Fuerzas e interacciones: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Fuerzas e interacciones"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia f"
+      ],
+      "parts_count": 2,
+      "statement_source": "Ascensor acelera hacia arriba a \\(1,5 m/s²\\), persona \\(60 kg\\).\n\n(a) Calcula: Normal.\n(b) Calcula: Vector.",
+      "solution_source": "\\(N=678 N\\); vector resultante \\((0;90) N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t3_f_006",
+      "version": 1,
+      "title": "Misma persona con aceleración descendente 2 m/s²",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Fuerzas e interacciones",
+      "family": "f",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "normal",
+          "label": "Normal",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 468.0,
+          "unit": "N",
+          "tolerance": 2.34,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_f_006.svg",
+          "alt": "Comparación con el caso anterior."
+        }
+      ],
+      "tags": [
+        "t3",
+        "f",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Fuerzas e interacciones: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Fuerzas e interacciones"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia f"
+      ],
+      "parts_count": 1,
+      "statement_source": "Misma persona con aceleración descendente \\(2 m/s²\\).\n\n(a) Calcula: Normal.",
+      "solution_source": "\\(N=468 N\\); selección \\(N<P\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t3_f_007",
+      "version": 1,
+      "title": "Bloque sobre plano de 30°, sin rozamiento",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Fuerzas e interacciones",
+      "family": "f",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "componentes_del_peso_paralela",
+          "label": "Componentes del peso: paralela",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 24.5,
+          "unit": "N",
+          "tolerance": 0.1225,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "peso_paralela_normal",
+          "label": "Peso: paralela , normal",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 42.4,
+          "unit": "N",
+          "tolerance": 0.212,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "m",
+          "label": "m",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 5.0,
+          "unit": "kg",
+          "tolerance": 0.025,
+          "significant_figures": 3,
+          "part": "c",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_f_007.svg",
+          "alt": "Peso y ejes rotados, sin fuerzas ficticias."
+        }
+      ],
+      "tags": [
+        "t3",
+        "f",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Fuerzas e interacciones: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Fuerzas e interacciones"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia f"
+      ],
+      "parts_count": 3,
+      "statement_source": "Bloque sobre plano de \\(30°\\), sin rozamiento.\n\n(a) Calcula: Componentes del peso: paralela.\n(b) Calcula: Peso: paralela , normal.\n(c) Calcula: m.",
+      "solution_source": "Componentes del peso: paralela \\(24,5 N\\), normal \\(42,4 N\\) para \\(m=5 kg\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t3_f_008",
+      "version": 1,
+      "title": "Dos patinadores se empujan con 80 N",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Fuerzas e interacciones",
+      "family": "f",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "fuerzas_mutuas",
+          "label": "Fuerzas mutuas",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 80.0,
+          "unit": "N",
+          "tolerance": 0.4,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_f_008.svg",
+          "alt": "Dos cuerpos y pares coloreados."
+        }
+      ],
+      "tags": [
+        "t3",
+        "f",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Fuerzas e interacciones: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Fuerzas e interacciones"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia f"
+      ],
+      "parts_count": 1,
+      "statement_source": "Dos patinadores se empujan con \\(80 N\\).\n\n(a) Calcula: Fuerzas mutuas.",
+      "solution_source": "Fuerzas mutuas \\(80 N\\) y sentidos opuestos; selección del par correcto.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t3_f_009",
+      "version": 1,
+      "title": "Caballo tira de carro",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Fuerzas e interacciones",
+      "family": "f",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Selección: suelo sobre caballo; par cuerda-carro/carro-cuerda"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_f_009.svg",
+          "alt": "Diagrama de interacciones de tres sistemas."
+        }
+      ],
+      "tags": [
+        "t3",
+        "f",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Fuerzas e interacciones: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Fuerzas e interacciones"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia f"
+      ],
+      "parts_count": 1,
+      "statement_source": "Caballo tira de carro: distinguir par acción-reacción y fuerza que acelera el sistema.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Selección: suelo sobre caballo; par cuerda-carro/carro-cuerda.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t3_f_010",
+      "version": 1,
+      "title": "Pelota ascendiendo tras abandonar la mano, sin aire",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Fuerzas e interacciones",
+      "family": "f",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "vector",
+          "label": "Vector",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "expected_components": [
+            0.0,
+            -9.8
+          ],
+          "accepted_forms": [
+            "(0; -9,8)"
+          ],
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "unit": "m/s²",
+          "tolerance": 0.02,
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_f_010.svg",
+          "alt": "Tres DCL, dos con fuerzas inventadas."
+        }
+      ],
+      "tags": [
+        "t3",
+        "f",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Fuerzas e interacciones: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Fuerzas e interacciones"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia f"
+      ],
+      "parts_count": 1,
+      "statement_source": "Pelota ascendiendo tras abandonar la mano, sin aire.\n\n(a) Calcula: Vector.",
+      "solution_source": "Selección: solo peso; aceleración \\((0;-9,8) m/s²\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t3_f_011",
+      "version": 1,
+      "title": "Satélite ideal en órbita",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Fuerzas e interacciones",
+      "family": "f",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "concepto_1",
+          "label": "Dirección vectorial",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "tangente",
+              "label": "Tangente"
+            },
+            {
+              "id": "radial_hacia_fuera",
+              "label": "Radial hacia fuera"
+            },
+            {
+              "id": "paralela_a_la_aceleracion",
+              "label": "Paralela a la aceleración"
+            }
+          ],
+          "correct_option_id": "tangente",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_f_011.svg",
+          "alt": "Órbita con cuatro pares vectoriales candidatos."
+        }
+      ],
+      "tags": [
+        "t3",
+        "f",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Fuerzas e interacciones: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Fuerzas e interacciones"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia f"
+      ],
+      "parts_count": 1,
+      "statement_source": "Satélite ideal en órbita: fuerza y velocidad en un punto.\n\n(a) Selecciona: Dirección vectorial.",
+      "solution_source": "Selección: fuerza radial, velocidad tangente, perpendiculares.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t3_f_012",
+      "version": 1,
+      "title": "Auditar un DCL con “fuerza del movimiento” y resultante añadida",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Fuerzas e interacciones",
+      "family": "f",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "numero_de_fuerzas_reales",
+          "label": "Número de fuerzas reales",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2.0,
+          "unit": "",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_f_012.svg",
+          "alt": "DCL deliberadamente incorrecto y versión numerada."
+        }
+      ],
+      "tags": [
+        "t3",
+        "f",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Fuerzas e interacciones: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Fuerzas e interacciones"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia f"
+      ],
+      "parts_count": 1,
+      "statement_source": "Auditar un DCL con “fuerza del movimiento” y resultante añadida.\n\n(a) Calcula: Número de fuerzas reales.",
+      "solution_source": "Selección de dos flechas que deben eliminarse; número de fuerzas reales \\(2\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    }
+  ]
+}

@@ -1,0 +1,1329 @@
+{
+  "exercises": [
+    {
+      "id": "t0_c_001",
+      "title": "De posición a velocidad y aceleración",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "function_plus_numeric",
+      "difficulty": 3,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "v_expression",
+          "label": "Velocidad \\(v(t)\\)",
+          "required": true,
+          "type": "function",
+          "response_kind": "function",
+          "variable": "t",
+          "canonical_expression": "-3+8*t^3",
+          "accepted_forms": [
+            "8*t^3-3"
+          ],
+          "prompt": "Escribe la expresión usando * para multiplicar y ^ para las potencias.",
+          "unit": "m/s",
+          "part": "a"
+        },
+        {
+          "id": "a_expression",
+          "label": "Aceleración \\(a(t)\\)",
+          "required": true,
+          "type": "function",
+          "response_kind": "function",
+          "variable": "t",
+          "canonical_expression": "24*t^2",
+          "accepted_forms": [],
+          "prompt": "Escribe la expresión usando * para multiplicar y ^ para las potencias.",
+          "unit": "m/s²",
+          "part": "b"
+        },
+        {
+          "id": "v_1",
+          "label": "Velocidad en \\(t=1{,}00\\) s",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 5.0,
+          "tolerance": 0.01,
+          "unit": "m/s",
+          "part": "c"
+        },
+        {
+          "id": "a_1",
+          "label": "Aceleración en \\(t=1{,}00\\) s",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 24.0,
+          "tolerance": 0.01,
+          "unit": "m/s²",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "olvidar derivar la constante",
+        "escribir unidades de posición en v/a",
+        "decir que velocidad positiva implica necesariamente aceleración positiva en todo instante"
+      ],
+      "statement_source": "La posición de una partícula es \\(x(t)=7-3t+2t^4\\), con \\(x\\) en m y \\(t\\) en s.\n\n(a) Deriva para obtener la velocidad \\(v(t)=\\dfrac{dx}{dt}\\).\n(b) Deriva otra vez para obtener la aceleración \\(a(t)=\\dfrac{dv}{dt}\\).\n(c) Calcula la velocidad y la aceleración en \\(t=1{,}00\\) s.",
+      "solution_source": "(a) La constante 7 deriva a cero; \\(-3t\\) da \\(-3\\) y \\(2t^4\\) da \\(2\\cdot4t^3=8t^3\\). Por tanto \\(v(t)=-3+8t^3\\) m/s.\n(b) \\(a(t)=\\dfrac{d}{dt}(-3+8t^3)=24t^2\\) m/s².\n(c) \\(v(1)=-3+8=5{,}00\\) m/s y \\(a(1)=24{,}0\\) m/s². La velocidad es positiva: en ese instante se mueve hacia \\(+x\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_c_002",
+      "title": "Potencias negativas y tasa local",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "function_plus_numeric",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "derivative",
+          "label": "Derivada \\(g'(x)\\)",
+          "required": true,
+          "type": "function",
+          "response_kind": "function",
+          "variable": "x",
+          "canonical_expression": "-5*x^-2+6*x^-4",
+          "accepted_forms": [
+            "-5/x^2+6/x^4"
+          ],
+          "prompt": "Escribe la expresión usando * para multiplicar y ^ para las potencias.",
+          "part": "a"
+        },
+        {
+          "id": "value",
+          "label": "Valor de \\(g'(2)\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -0.875,
+          "tolerance": 0.001,
+          "part": "b"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "convertir $x^{-1}$ en $-x$",
+        "perder el signo de la segunda derivada",
+        "incluir cero"
+      ],
+      "statement_source": "Sea \\(g(x)=5x^{-1}-2x^{-3}\\), con \\(x\\ne0\\).\n\n(a) Calcula la derivada \\(g'(x)\\) aplicando \\(\\dfrac{d}{dx}(cx^n)=c\\,n\\,x^{n-1}\\) también con exponentes negativos.\n(b) Calcula \\(g'(2)\\) con tres decimales.",
+      "solution_source": "(a) \\(5x^{-1}\\to5\\cdot(-1)x^{-2}=-5x^{-2}\\) y \\(-2x^{-3}\\to-2\\cdot(-3)x^{-4}=6x^{-4}\\). Por tanto \\(g'(x)=-5x^{-2}+6x^{-4}\\).\n(b) \\(g'(2)=-\\dfrac{5}{4}+\\dfrac{6}{16}=-1{,}250+0{,}375=-0{,}875\\). Al bajar el exponente, un exponente negativo se hace más negativo: de \\(-1\\) pasa a \\(-2\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_c_003",
+      "title": "Raíces como potencias",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "exponent",
+          "label": "Exponente de \\(x\\) en el segundo término",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -0.5,
+          "tolerance": 0.001,
+          "prompt": "Como número decimal, por ejemplo 0,5.",
+          "part": "a"
+        },
+        {
+          "id": "slope_1",
+          "label": "Pendiente \\(h'(1)\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 3.5,
+          "tolerance": 0.01,
+          "part": "b"
+        },
+        {
+          "id": "slope",
+          "label": "Pendiente \\(h'(4)\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.0,
+          "tolerance": 0.01,
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "escribir \\(1/\\sqrt{x}\\) como \\(x^{1/2}\\)",
+        "olvidar que bajar el exponente \\(-1/2\\) da \\(-3/2\\)",
+        "cambiar el signo del segundo término al derivar"
+      ],
+      "statement_source": "Sea \\(h(x)=3\\sqrt{x}-\\dfrac{4}{\\sqrt{x}}\\), con \\(x>0\\).\n\n(a) Reescribe \\(h\\) como suma de potencias de \\(x\\) e indica el exponente del segundo término.\n(b) Deriva y calcula la pendiente \\(h'(1)\\).\n(c) Calcula la pendiente \\(h'(4)\\).",
+      "solution_source": "(a) \\(\\sqrt{x}=x^{1/2}\\) y \\(1/\\sqrt{x}=x^{-1/2}\\), así que \\(h(x)=3x^{1/2}-4x^{-1/2}\\): el segundo exponente es \\(-0{,}5\\).\n(b) \\(h'(x)=\\tfrac32x^{-1/2}+2x^{-3/2}\\). En \\(x=1\\): \\(1{,}5+2=3{,}5\\).\n(c) En \\(x=4\\): \\(x^{-1/2}=\\tfrac12\\) y \\(x^{-3/2}=\\tfrac18\\), luego \\(h'(4)=0{,}75+0{,}25=1{,}0\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_c_004",
+      "title": "Parámetros y unidades en una función física",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "short_text_multi",
+      "difficulty": 4,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "v",
+          "label": "Vector velocidad",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 3.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "b"
+        },
+        {
+          "id": "a_x",
+          "label": "A x",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 6.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "confundir el parámetro a con aceleración",
+        "dar las mismas unidades a los tres coeficientes",
+        "comprobar solo la fórmula original"
+      ],
+      "statement_source": "\\(x(t)=at^3-bt+c\\) representa una posición en m y t se mide en s. \n(b) Obtén velocidad y aceleración.\n(c) Completa: A x.",
+      "solution_source": "`\\([a]=m s\\)^-3`, `\\([b]=m s\\)^-1`, `\\([c]=m`\\); \\(v=3at^2-b\\) en m·s⁻¹; \\(a_x=6at\\) en m·s⁻²; comprobación escrita.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_c_005",
+      "title": "Cambio medio e instantáneo",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "average_velocity",
+          "label": "Velocidad media entre 1,0 s y 2,0 s",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 3.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "m s^-1",
+          "part": "a"
+        },
+        {
+          "id": "instant_velocity",
+          "label": "Velocidad instantánea en 2,0 s",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 8.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "m s^-1",
+          "part": "b"
+        },
+        {
+          "id": "acceleration",
+          "label": "Aceleración en 2,0 s",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 12.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "m s^-2",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "promediar $v(1)$ y $v(2)$ sin justificar",
+        "dividir posición final por tiempo final",
+        "confundir v con a"
+      ],
+      "statement_source": "Una posición viene dada por \\(x(t)=t^3-4t\\), con \\(x\\) en m y \\(t\\) en s.\n\n(a) Calcula la velocidad media entre \\(1{,}0\\) s y \\(2{,}0\\) s, \\(v_{med}=\\dfrac{x(2)-x(1)}{2-1}\\).\n(b) Deriva y calcula la velocidad instantánea en \\(2{,}0\\) s.\n(c) Calcula la aceleración en \\(2{,}0\\) s.",
+      "solution_source": "(a) \\(x(1)=1-4=-3\\) m y \\(x(2)=8-8=0\\) m, así que \\(v_{med}=\\dfrac{0-(-3)}{1}=3\\) m/s.\n(b) \\(v(t)=3t^2-4\\), luego \\(v(2)=12-4=8\\) m/s. No coincide con la media: la velocidad cambia dentro del intervalo.\n(c) \\(a(t)=6t\\), luego \\(a(2)=12\\) m/s².",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_c_006",
+      "title": "Puntos estacionarios y clasificación",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "numeric_multi_plus_text",
+      "difficulty": 4,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "x1",
+          "label": "X1",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "a"
+        },
+        {
+          "id": "x2",
+          "label": "X2",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 2.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "b"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "resolver solo x=2",
+        "llamar extremos a las raíces de f",
+        "clasificar sin comprobar cambio o segunda derivada"
+      ],
+      "statement_source": "Para \\(f(x)=x^3-3x^2\\): \n(a) localiza los puntos donde \\(f'=0\\);\n(b) calcula sus coordenadas;",
+      "solution_source": "en \\(x=0,\\) \\(f''=-6<0\\), máximo local \\((0,0)\\).\n\nEn \\(x=2,\\) \\(f''=6>0\\), mínimo local \\((2,-4)\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_c_007",
+      "title": "Misma velocidad, distinta posición",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "short_text_multi",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [],
+      "assets": [],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "retired",
+      "version": 4,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "concluir que ocupan el mismo lugar porque tienen la misma derivada",
+        "decir que la constante “no importa”",
+        "restar 3−5"
+      ],
+      "statement_source": "Dos móviles tienen \\(x_1(t)=2t^2+3\\) m y \\(x_2(t)=2t^2-5\\) m. \n(a) Compara sus velocidades y aceleraciones. \n(b) Calcula su separación con signo \\(x_1-x_2\\). \n(c) Explica físicamente qué representa la constante que desaparece al derivar.",
+      "solution_source": "ambas velocidades \\(4t\\) m/s y aceleraciones \\(4\\) m/s²; separación constante 8 m; constantes representan posiciones iniciales.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md",
+      "retired_reason": "El ejercicio dependía por completo de respuestas abiertas sin corrección automática fiable."
+    },
+    {
+      "id": "t0_c_008",
+      "title": "De aceleración a velocidad con condición inicial",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "function_plus_numeric",
+      "difficulty": 3,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "v_expression",
+          "label": "Velocidad \\(v(t)\\)",
+          "required": true,
+          "type": "function",
+          "response_kind": "function",
+          "variable": "t",
+          "canonical_expression": "-2+4*t+t^3",
+          "accepted_forms": [
+            "t^3+4*t-2"
+          ],
+          "prompt": "Escribe la expresión usando * para multiplicar y ^ para las potencias.",
+          "unit": "m/s",
+          "part": "a"
+        },
+        {
+          "id": "v_2",
+          "label": "Velocidad en \\(t=2{,}0\\) s",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 14.0,
+          "tolerance": 0.01,
+          "unit": "m/s",
+          "part": "b"
+        },
+        {
+          "id": "constant_needed",
+          "label": "¿Basta con una primitiva sin constante?",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "no",
+              "label": "No: la condición inicial es la que fija la constante"
+            },
+            {
+              "id": "si",
+              "label": "Sí: la constante siempre vale cero"
+            }
+          ],
+          "correct_option_id": "no",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "olvidar C",
+        "usar C=0 automáticamente",
+        "derivar en lugar de integrar"
+      ],
+      "statement_source": "Una partícula tiene aceleración \\(a(t)=4+3t^2\\) m/s² y velocidad inicial \\(v(0)=-2\\) m/s.\n\n(a) Integra para obtener \\(v(t)\\), usando la condición inicial para fijar la constante.\n(b) Calcula \\(v(2{,}0\\ \\mathrm{s})\\).\n(c) Indica si basta con una primitiva sin constante.",
+      "solution_source": "(a) Una primitiva es \\(4t+t^3+C\\). Con \\(v(0)=-2\\): \\(C=-2\\) m/s, así que \\(v(t)=-2+4t+t^3\\) m/s.\n(b) \\(v(2)=-2+8+8=14\\) m/s.\n(c) No. Sin la constante saldría \\(v(0)=0\\), que contradice el dato: la condición inicial es la que fija \\(C\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_c_009",
+      "title": "Cambio de velocidad acumulado",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "function_plus_numeric",
+      "difficulty": 4,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "v_expression",
+          "label": "Velocidad \\(v(t)\\)",
+          "required": true,
+          "type": "function",
+          "response_kind": "function",
+          "variable": "t",
+          "canonical_expression": "2*t^3-2*t^2+t+3",
+          "accepted_forms": [],
+          "prompt": "Escribe la expresión usando * para multiplicar y ^ para las potencias.",
+          "unit": "m/s",
+          "part": "a"
+        },
+        {
+          "id": "delta_v",
+          "label": "Cambio de velocidad \\(\\Delta v\\) entre 0 y 2 s",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 10.0,
+          "tolerance": 0.01,
+          "unit": "m/s",
+          "part": "b"
+        },
+        {
+          "id": "v_2",
+          "label": "Velocidad en \\(t=2\\) s",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 13.0,
+          "tolerance": 0.01,
+          "unit": "m/s",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "sumar v(0) dentro de $\\Delta v$",
+        "omitir límites",
+        "perder el término lineal"
+      ],
+      "statement_source": "Una partícula tiene aceleración \\(a(t)=6t^2-4t+1\\) m/s² y velocidad inicial \\(v(0)=3\\) m/s.\n\n(a) Integra para obtener \\(v(t)\\).\n(b) Calcula el cambio de velocidad entre \\(0\\) y \\(2\\) s con la integral definida \\(\\Delta v=\\displaystyle\\int_0^2a(t)\\,dt\\).\n(c) Calcula \\(v(2\\ \\mathrm{s})\\) y comprueba que \\(v(2)=v(0)+\\Delta v\\).",
+      "solution_source": "(a) Primitiva: \\(2t^3-2t^2+t+C\\). Con \\(v(0)=3\\), \\(C=3\\): \\(v(t)=2t^3-2t^2+t+3\\) m/s.\n(b) \\(\\Delta v=[2t^3-2t^2+t]_0^2=16-8+2-0=10\\) m/s. En la integral definida la constante se cancela.\n(c) \\(v(2)=16-8+2+3=13\\) m/s, que es \\(3+10\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_c_010",
+      "title": "Área bajo v(t)",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "displacement",
+          "label": "Desplazamiento",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 10.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "m",
+          "part": "a"
+        },
+        {
+          "id": "average_velocity",
+          "label": "Velocidad media",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 5.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "m/s",
+          "part": "b"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "calcular el área desde t=0",
+        "confundir área con velocidad",
+        "dividir entre 3 s y no entre 2 s"
+      ],
+      "statement_source": "La velocidad de un móvil es \\(v(t)=2t+1\\) m/s. Entre \\(t=1\\) s y \\(t=3\\) s:\n\n(a) calcula el desplazamiento integrando, \\(\\Delta x=\\displaystyle\\int_1^3v(t)\\,dt\\);\n(b) calcula la velocidad media, \\(v_{med}=\\Delta x/\\Delta t\\).",
+      "solution_source": "(a) \\(\\Delta x=[t^2+t]_1^3=(9+3)-(1+1)=10\\) m. Comprobación geométrica: el área bajo \\(v(t)\\) es un trapecio, \\((3+7)\\cdot2/2=10\\) m.\n(b) \\(v_{med}=10/2=5\\) m/s.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_c_011",
+      "title": "Desplazamiento cero, distancia no nula",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "numeric_multi_plus_text",
+      "difficulty": 4,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "displacement",
+          "label": "Desplazamiento",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "m",
+          "part": "a"
+        },
+        {
+          "id": "distance",
+          "label": "Distancia",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 8.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "m",
+          "part": "b"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "concluir que no se mueve",
+        "usar la integral con signo como distancia",
+        "tomar valor absoluto solo al final"
+      ],
+      "statement_source": "Un móvil tiene \\(v(t)=t^3\\) m·s⁻¹ entre −2 s y 2 s. \n(a) Calcula el desplazamiento.\n(b) Calcula la distancia recorrida.",
+      "solution_source": "la función impar integra 0 en límites simétricos.\n\nDistancia \\(=\\int_{-2}^0(-t^3)dt+\\int_0^2t^3dt=4+4=8\\) m.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_c_012",
+      "title": "Signo antes de calcular",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "single_choice_plus_numeric",
+      "difficulty": 2,
+      "estimated_minutes": 7,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "sign",
+          "label": "Sign",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "negative",
+              "label": "negative"
+            },
+            {
+              "id": "positive",
+              "label": "positive"
+            },
+            {
+              "id": "zero",
+              "label": "zero"
+            }
+          ],
+          "correct_option_id": "negative",
+          "part": "a"
+        },
+        {
+          "id": "I",
+          "label": "I",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -4.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "a"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "predecir positivo porque el área geométrica es positiva",
+        "cambiar límites",
+        "omitir el signo exterior"
+      ],
+      "statement_source": "Después calcula I exactamente.\n\n(a) Completa: Sign, I.",
+      "solution_source": "el integrando es siempre negativo, por lo que I<0.\n\n\\(I=-[x^2/2+x]_0^2=-4\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_c_013",
+      "title": "Movimiento a velocidad constante por tramos",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "displacement",
+          "label": "Desplazamiento",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 2.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "m",
+          "part": "a"
+        },
+        {
+          "id": "distance",
+          "label": "Distancia",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 10.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "m",
+          "part": "b"
+        },
+        {
+          "id": "final_position",
+          "label": "Final position",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 7.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "m",
+          "part": "c"
+        },
+        {
+          "id": "return_within_interval",
+          "label": "Return within interval",
+          "required": true,
+          "type": "short_text",
+          "accepted_forms": [
+            "no"
+          ],
+          "part": "d"
+        },
+        {
+          "id": "hypothetical_return_time",
+          "label": "Hypothetical return time",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 9.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "d"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "afirmar t=6 s contando desde cero en el segundo tramo",
+        "sumar velocidades",
+        "confundir posición final y desplazamiento"
+      ],
+      "statement_source": "\\(v=2,0\\) m/s entre 0 y 3 s y \\(v=-1,0\\) m/s entre 3 y 7 s. Si \\(x(0)=5,0\\) m: \n(a) calcula desplazamiento;\n(b) distancia;\n(c) posición final;\n(d) instante en que vuelve a \\(x=5,0 m\\), si ocurre.",
+      "solution_source": "\\(\\Delta x=6-4=2\\) m; distancia \\(6+4=10\\) m; \\(x_f=7\\) m.\n\nDesde \\(x=11 m\\) en \\(t=3\\) necesita retroceder 6 m, por lo que vuelve a \\(x=5\\) en \\(t=9 s\\), **fuera del intervalo descrito**.\n\nPor tanto, dentro de [0,7] no vuelve.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_c_014",
+      "title": "Recta experimental por dos puntos",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "short_text_multi",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "slope",
+          "label": "Slope",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 2.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "mA V^-1",
+          "part": "a"
+        },
+        {
+          "id": "intercept",
+          "label": "Intercept",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "mA",
+          "part": "a"
+        },
+        {
+          "id": "prediction",
+          "label": "Prediction",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 7.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "mA",
+          "part": "a"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "hallar pendiente 1/2",
+        "escribir y=2x sin aclarar unidades",
+        "suponer b=0 sin comprobar"
+      ],
+      "statement_source": "Una calibración lineal relaciona entrada x (V) y salida y (mA) y pasa por (1,0 V; 2,0 mA) y (5,0 V; 10,0 mA). Obtén la ecuación, las unidades de pendiente e intercepto y predice y para 3,5 V.\n\n(a) Completa: Slope, Intercept, Prediction.",
+      "solution_source": "pendiente \\((10-2)/(5-1)=2\\) mA/V y \\(b=0\\); para 3,5 V, \\(y=7,0\\) mA.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_c_015",
+      "title": "Recta, cortes e interpretación",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "ecuaci_n_y",
+          "label": "Ecuación `y",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -3.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "x+11",
+          "part": "a"
+        },
+        {
+          "id": "y_intercept",
+          "label": "Y intercept",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 11.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "b"
+        },
+        {
+          "id": "x_intercept",
+          "label": "X intercept",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 3.6666666666666665,
+          "tolerance": 0.002,
+          "accepted_forms": [
+            "11/3"
+          ],
+          "part": "c"
+        },
+        {
+          "id": "comprobaci_n_y_2",
+          "label": "Comprobación `y(2)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 5.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "usar b=5",
+        "cambiar el signo al desarrollar",
+        "redondear 11/3 demasiado pronto"
+      ],
+      "statement_source": "Construye la recta de pendiente −3 que pasa por \\((2,5)\\). \n(a) Escríbela como \\(y=mx+b\\).\n(b) Calcula sus cortes con ambos ejes.\n(c) Completa: X intercept, Comprobación `y(2).",
+      "solution_source": "\\(y=-3x+11\\); cortes \\((0,11)\\) y (11/3,0).\n\nAl sustituir \\(x=2\\) se obtiene 5.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_c_016",
+      "title": "Función por tramos y continuidad",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "written_upload_plus_text",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "f",
+          "label": "F",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "b"
+        },
+        {
+          "id": "f",
+          "label": "F",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 2.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t0/assets/c016_piecewise.svg",
+          "alt": "Diagrama obligatorio para t0_c_016."
+        }
+      ],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "usar pendiente 4/2 en lugar de (5−1)/(4−2) aunque aquí coincidan sin justificar",
+        "generar saltos por intervalos mal definidos",
+        "omitir puntos extremos"
+      ],
+      "statement_source": "Construye y dibuja \\(f(x)\\): vale 1 de \\(x=0\\) a 2; crece linealmente hasta valer 5 en \\(x=4\\); permanece en 5 hasta \\(x=6\\). \n(b) Completa: F.\n(c) Da la pendiente de cada tramo.",
+      "solution_source": "\\(f=1\\) en [0,2]; \\(f=2x-3\\) en (2,4]; \\(f=5\\) en (4,6]; pendientes 0,2,0; continua en uniones.\n\nDibujo `pending_review`.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_c_017",
+      "title": "Recuperar una función desde su derivada",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "function_plus_numeric",
+      "difficulty": 4,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "C",
+          "label": "Constante \\(C\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 4.0,
+          "tolerance": 0.01,
+          "part": "a"
+        },
+        {
+          "id": "f",
+          "label": "Función \\(f(x)\\)",
+          "required": true,
+          "type": "function",
+          "response_kind": "function",
+          "variable": "x",
+          "canonical_expression": "3*x^2-4*x+4",
+          "accepted_forms": [],
+          "prompt": "Escribe la expresión usando * para multiplicar y ^ para las potencias.",
+          "part": "b"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "omitir C",
+        "imponer f(0)=3",
+        "comprobar solo una de las dos condiciones"
+      ],
+      "statement_source": "Se sabe que \\(f'(x)=6x-4\\) y que \\(f(1)=3\\).\n\n(a) Escribe la primitiva general \\(f(x)=\\ldots+C\\) y usa \\(f(1)=3\\) para calcular \\(C\\).\n(b) Escribe \\(f(x)\\) completa.",
+      "solution_source": "(a) Una primitiva de \\(6x-4\\) es \\(3x^2-4x\\), así que \\(f(x)=3x^2-4x+C\\). Con \\(f(1)=3\\): \\(3-4+C=3\\Rightarrow C=4\\).\n(b) \\(f(x)=3x^2-4x+4\\). Comprobación: al derivar sale \\(6x-4\\) y \\(f(1)=3\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_c_018",
+      "title": "Construcción con valor y pendiente",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "written_solution",
+      "difficulty": 5,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [],
+      "assets": [],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "retired",
+      "version": 4,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "dar una solución válida de grado mayor sin atender «grado mínimo»",
+        "afirmar unicidad entre todas las funciones",
+        "no verificar"
+      ],
+      "statement_source": "Busca el polinomio de grado mínimo que cumple \\(f(0)=2\\), \\(f(1)=3\\) y \\(f'(1)=0\\). \n(a) Justifica por qué una recta no basta. \n(b) Determina el polinomio. \n(c) Explica si las tres condiciones harían única una función sin restringir el grado.",
+      "solution_source": "grado mínimo 2; \\(f(x)=-x^2+2x+2\\); una recta no puede tener pendiente 0 y cambiar de 2 a 3; sin limitar grado no es única.\n\nCorrección manual/parcial por pasos.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md",
+      "retired_reason": "El ejercicio dependía por completo de respuestas abiertas sin corrección automática fiable."
+    },
+    {
+      "id": "t0_c_019",
+      "title": "Leer crecimiento y pendientes de una gráfica",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "numeric_multi_plus_text",
+      "difficulty": 4,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "no_derivable_en_x",
+          "label": "Punto no derivable (x)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 2.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "s",
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t0/assets/c019_growth.svg",
+          "alt": "Diagrama obligatorio para t0_c_019."
+        }
+      ],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "incluir las esquinas en intervalos de derivada constante",
+        "confundir decrecer con valores negativos",
+        "decir que pendiente cero implica y=0"
+      ],
+      "statement_source": "Una gráfica lineal por tramos une \\((0,0)\\), \\((2,4)\\), \\((4,4)\\) y \\((6,1)\\). \n(c) Completa: Punto no derivable (x).",
+      "solution_source": "Respuestas indicadas por campos: intervalos `\\((0,2)\\)`, `\\((2,4)\\)`, `\\((4,6)\\)`; pendientes `2`, `0`, `-1.5`; no derivable en \\(x=2\\) y \\(x=4\\) por cambio brusco de pendiente.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_c_020",
+      "title": "Área con signo y movimiento en una gráfica v–t",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "numeric_multi_plus_text",
+      "difficulty": 5,
+      "estimated_minutes": 16,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "zero_time",
+          "label": "Instante de cambio de sentido",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 5.142857142857143,
+          "tolerance": 0.003,
+          "accepted_forms": [
+            "36/7"
+          ],
+          "unit": "s",
+          "part": "a"
+        },
+        {
+          "id": "positive_area",
+          "label": "Área positiva",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 14.285714285714286,
+          "tolerance": 0.01,
+          "accepted_forms": [
+            "100/7"
+          ],
+          "unit": "m",
+          "part": "b"
+        },
+        {
+          "id": "negative_signed",
+          "label": "Área negativa con signo",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -1.2857142857142858,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "accepted_forms": [
+            "-9/7"
+          ],
+          "unit": "m",
+          "part": "b"
+        },
+        {
+          "id": "displacement",
+          "label": "Desplazamiento",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 13.0,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "m",
+          "part": "c"
+        },
+        {
+          "id": "distance",
+          "label": "Distancia total",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 15.571428571428571,
+          "tolerance": 0.01,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "accepted_forms": [
+            "109/7"
+          ],
+          "unit": "m",
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t0/assets/c020_signed_area.svg",
+          "alt": "Velocidad por tramos entre cero y seis segundos, con áreas de distinto signo."
+        }
+      ],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Funciones, gráficas, derivadas e integrales",
+      "common_mistakes": [
+        "tratar todo el último trapecio como positivo o negativo",
+        "usar `12` como área positiva ignorando la parte sobre el eje después de t=4",
+        "sumar área negativa con signo para la distancia. **Nota:** la respuesta del banco v3 para este gráfico era incorrecta",
+        "no reutilizar `12, −3, 9`"
+      ],
+      "statement_source": "La gráfica velocidad-tiempo une linealmente los puntos \\((0\\,\\mathrm{s},0\\,\\mathrm{m/s})\\), \\((2\\,\\mathrm{s},4\\,\\mathrm{m/s})\\), \\((4\\,\\mathrm{s},4\\,\\mathrm{m/s})\\) y \\((6\\,\\mathrm{s},-3\\,\\mathrm{m/s})\\).\n\n(a) Halla el instante en que cambia de sentido en el último tramo.\n\n(b) Calcula el área positiva y el área negativa con signo entre \\(0\\) y \\(6\\,\\mathrm{s}\\).\n\n(c) Calcula el desplazamiento y la distancia total en ese intervalo.",
+      "solution_source": "En el último tramo, \\(v=4-\\frac72(t-4)\\). Al imponer \\(v=0\\), resulta \\(t=36/7\\,\\mathrm{s}\\).\n\nEl área positiva es \\(4+8+16/7=100/7\\,\\mathrm{m}\\) y la negativa es \\(-9/7\\,\\mathrm{m}\\).\n\nEl desplazamiento suma las áreas con signo: \\(\\Delta x=13\\,\\mathrm{m}\\). La distancia suma sus módulos: \\(d=109/7\\,\\mathrm{m}\\)."
+    }
+  ]
+}

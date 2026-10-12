@@ -1,0 +1,1086 @@
+{
+  "exercises": [
+    {
+      "id": "t3_p_001",
+      "version": 1,
+      "title": "Bloque 4 kg en plano 30° sin rozamiento",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Planos, cuerdas y sistemas enlazados",
+      "family": "p",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "aceleracion",
+          "label": "Aceleración",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 4.9,
+          "unit": "m/s²",
+          "tolerance": 0.0245,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "normal",
+          "label": "Normal",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 33.9,
+          "unit": "N",
+          "tolerance": 0.16949999999999998,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "concepto_3",
+          "label": "Sentido",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "hacia_arriba",
+              "label": "Hacia arriba"
+            },
+            {
+              "id": "hacia_abajo",
+              "label": "Hacia abajo"
+            },
+            {
+              "id": "sin_direccion_preferente",
+              "label": "Sin dirección preferente"
+            }
+          ],
+          "correct_option_id": "hacia_abajo",
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_p_001.svg",
+          "alt": "Plano y DCL con ejes locales."
+        }
+      ],
+      "tags": [
+        "t3",
+        "p",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Planos, cuerdas y sistemas enlazados: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Planos, cuerdas y sistemas enlazados"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia p"
+      ],
+      "parts_count": 3,
+      "statement_source": "Bloque \\(4 kg\\) en plano \\(30°\\) sin rozamiento.\n\n(a) Calcula: Aceleración.\n(b) Calcula: Normal.\n(c) Selecciona: Sentido.",
+      "solution_source": "\\(a=4,9 m/s²\\) cuesta abajo; \\(N=33,9 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t3_p_002",
+      "version": 1,
+      "title": "Fuerza paralela de 30 N sube el bloque anterior",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Planos, cuerdas y sistemas enlazados",
+      "family": "p",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "resultante_paralela",
+          "label": "Resultante paralela",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 10.4,
+          "unit": "N",
+          "tolerance": 0.052000000000000005,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "aceleracion",
+          "label": "Aceleración",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2.6,
+          "unit": "m/s²",
+          "tolerance": 0.013000000000000001,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "concepto_3",
+          "label": "Sentido",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "hacia_arriba",
+              "label": "Hacia arriba"
+            },
+            {
+              "id": "hacia_abajo",
+              "label": "Hacia abajo"
+            },
+            {
+              "id": "sin_direccion_preferente",
+              "label": "Sin dirección preferente"
+            }
+          ],
+          "correct_option_id": "hacia_arriba",
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_p_002.svg",
+          "alt": "Comparación de fuerzas paralelas."
+        }
+      ],
+      "tags": [
+        "t3",
+        "p",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Planos, cuerdas y sistemas enlazados: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Planos, cuerdas y sistemas enlazados"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia p"
+      ],
+      "parts_count": 3,
+      "statement_source": "Fuerza paralela de \\(30 N\\) sube el bloque anterior.\n\n(a) Calcula: Resultante paralela.\n(b) Calcula: Aceleración.\n(c) Selecciona: Sentido.",
+      "solution_source": "Resultante paralela \\(10,4 N\\); \\(a=2,6 m/s²\\) arriba.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t3_p_003",
+      "version": 1,
+      "title": "Fuerza horizontal 40 N sobre bloque 5 kg en plano 30°",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Planos, cuerdas y sistemas enlazados",
+      "family": "p",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "componentes_locales",
+          "label": "Componentes locales",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 34.6,
+          "unit": "N",
+          "tolerance": 0.17300000000000001,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "componentes_locales_y",
+          "label": "Componentes locales y",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -20.0,
+          "unit": "N",
+          "tolerance": 0.1,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "normal",
+          "label": "Normal",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 62.4,
+          "unit": "N",
+          "tolerance": 0.312,
+          "significant_figures": 3,
+          "part": "c",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_p_003.svg",
+          "alt": "Descomposición de una fuerza no alineada."
+        }
+      ],
+      "tags": [
+        "t3",
+        "p",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Planos, cuerdas y sistemas enlazados: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Planos, cuerdas y sistemas enlazados"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia p"
+      ],
+      "parts_count": 3,
+      "statement_source": "Fuerza horizontal \\(40 N\\) sobre bloque \\(5 kg\\) en plano \\(30°\\).\n\n(a) Calcula: Componentes locales.\n(b) Calcula: Componentes locales y.\n(c) Calcula: Normal.",
+      "solution_source": "Componentes locales \\(34,6 N\\) y \\(-20 N\\); \\(N=62,4 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t3_p_004",
+      "version": 1,
+      "title": "Masa colgante 3 kg en equilibrio sostenida por dos cuerdas simétricas a 45°",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Planos, cuerdas y sistemas enlazados",
+      "family": "p",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "cada_tension",
+          "label": "Cada tensión",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 20.8,
+          "unit": "N",
+          "tolerance": 0.10400000000000001,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_p_004.svg",
+          "alt": "Nudo con ángulos y fuerzas concurrentes."
+        }
+      ],
+      "tags": [
+        "t3",
+        "p",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Planos, cuerdas y sistemas enlazados: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Planos, cuerdas y sistemas enlazados"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia p"
+      ],
+      "parts_count": 1,
+      "statement_source": "Masa colgante \\(3 kg\\) en equilibrio sostenida por dos cuerdas simétricas a \\(45°\\).\n\n(a) Calcula: Cada tensión.",
+      "solution_source": "Cada tensión \\(20,8 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t3_p_005",
+      "version": 1,
+      "title": "Nudo con cable horizontal y cable a 30°, carga 100 N",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Planos, cuerdas y sistemas enlazados",
+      "family": "p",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "cable_inclinado",
+          "label": "Cable inclinado",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 200.0,
+          "unit": "N",
+          "tolerance": 1.0,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "horizontal",
+          "label": "Horizontal",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 173.2,
+          "unit": "N",
+          "tolerance": 0.866,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_p_005.svg",
+          "alt": "Diagrama de nudo, no de la carga completa."
+        }
+      ],
+      "tags": [
+        "t3",
+        "p",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Planos, cuerdas y sistemas enlazados: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Planos, cuerdas y sistemas enlazados"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia p"
+      ],
+      "parts_count": 2,
+      "statement_source": "Nudo con cable horizontal y cable a \\(30°\\), carga \\(100 N\\).\n\n(a) Calcula: Cable inclinado.\n(b) Calcula: Horizontal.",
+      "solution_source": "Cable inclinado \\(200 N\\); horizontal \\(173,2 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t3_p_006",
+      "version": 1,
+      "title": "Dos bloques 2 y 3 kg unidos, tirados con 20 N, mesa ideal",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Planos, cuerdas y sistemas enlazados",
+      "family": "p",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "aceleracion",
+          "label": "Aceleración",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 4.0,
+          "unit": "m/s²",
+          "tolerance": 0.02,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "tension",
+          "label": "Tensión",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 12.0,
+          "unit": "N",
+          "tolerance": 0.06,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_p_006.svg",
+          "alt": "Dos DCL alineados."
+        }
+      ],
+      "tags": [
+        "t3",
+        "p",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Planos, cuerdas y sistemas enlazados: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Planos, cuerdas y sistemas enlazados"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia p"
+      ],
+      "parts_count": 2,
+      "statement_source": "Dos bloques \\(2\\) y \\(3 kg\\) unidos, tirados con \\(20 N\\), mesa ideal.\n\n(a) Calcula: Aceleración.\n(b) Calcula: Tensión.",
+      "solution_source": "\\(a=4 m/s²\\); tensión \\(12 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t3_p_007",
+      "version": 1,
+      "title": "Misma cadena tirada desde el bloque de 2 kg",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Planos, cuerdas y sistemas enlazados",
+      "family": "p",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "aceleracion",
+          "label": "Aceleración",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 4.0,
+          "unit": "m/s²",
+          "tolerance": 0.02,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "tension",
+          "label": "Tensión",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 8.0,
+          "unit": "N",
+          "tolerance": 0.04,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_p_007.svg",
+          "alt": "Comparación de extremos de aplicación."
+        }
+      ],
+      "tags": [
+        "t3",
+        "p",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Planos, cuerdas y sistemas enlazados: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Planos, cuerdas y sistemas enlazados"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia p"
+      ],
+      "parts_count": 2,
+      "statement_source": "Misma cadena tirada desde el bloque de \\(2 kg\\).\n\n(a) Calcula: Aceleración.\n(b) Calcula: Tensión.",
+      "solution_source": "\\(a=4 m/s²\\); tensión \\(8 N\\); selección: tensión cambia.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t3_p_008",
+      "version": 1,
+      "title": "Máquina de Atwood ideal",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Planos, cuerdas y sistemas enlazados",
+      "family": "p",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "aceleracion",
+          "label": "Aceleración",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.96,
+          "unit": "m/s²",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "tension",
+          "label": "Tensión",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 23.5,
+          "unit": "N",
+          "tolerance": 0.11750000000000001,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_p_008.svg",
+          "alt": "Polea y dos ejes verticales coherentes."
+        }
+      ],
+      "tags": [
+        "t3",
+        "p",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Planos, cuerdas y sistemas enlazados: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Planos, cuerdas y sistemas enlazados"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia p"
+      ],
+      "parts_count": 2,
+      "statement_source": "Máquina de Atwood ideal \\(m_1=2\\), \\(m_2=3 kg\\).\n\n(a) Calcula: Aceleración.\n(b) Calcula: Tensión.",
+      "solution_source": "\\(a=1,96 m/s²\\); \\(T=23,5 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t3_p_009",
+      "version": 1,
+      "title": "Atwood con masas iguales y velocidad inicial no nula",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Planos, cuerdas y sistemas enlazados",
+      "family": "p",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "aceleracion",
+          "label": "Aceleración",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.0,
+          "unit": "",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_p_009.svg",
+          "alt": "Flechas de velocidad y fuerzas equilibradas."
+        }
+      ],
+      "tags": [
+        "t3",
+        "p",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Planos, cuerdas y sistemas enlazados: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Planos, cuerdas y sistemas enlazados"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia p"
+      ],
+      "parts_count": 1,
+      "statement_source": "Atwood con masas iguales y velocidad inicial no nula.\n\n(a) Calcula: Aceleración.",
+      "solution_source": "\\(a=0\\); selección: mantiene velocidad, no se detiene necesariamente.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t3_p_010",
+      "version": 1,
+      "title": "Bloque 4 kg en mesa unido a masa colgante 1 kg",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Planos, cuerdas y sistemas enlazados",
+      "family": "p",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "aceleracion",
+          "label": "Aceleración",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.96,
+          "unit": "m/s²",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "tension",
+          "label": "Tensión",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 7.84,
+          "unit": "N",
+          "tolerance": 0.0392,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_p_010.svg",
+          "alt": "Dos DCL y cuerda ideal."
+        }
+      ],
+      "tags": [
+        "t3",
+        "p",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Planos, cuerdas y sistemas enlazados: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Planos, cuerdas y sistemas enlazados"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia p"
+      ],
+      "parts_count": 2,
+      "statement_source": "Bloque \\(4 kg\\) en mesa unido a masa colgante \\(1 kg\\).\n\n(a) Calcula: Aceleración.\n(b) Calcula: Tensión.",
+      "solution_source": "\\(a=1,96 m/s²\\); \\(T=7,84 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t3_p_011",
+      "version": 1,
+      "title": "Bloque 3 kg en plano 30° unido a colgante 2 kg",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Planos, cuerdas y sistemas enlazados",
+      "family": "p",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "aceleracion",
+          "label": "Aceleración",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.98,
+          "unit": "m/s²",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "tension",
+          "label": "Tensión",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 17.6,
+          "unit": "N",
+          "tolerance": 0.08800000000000001,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_p_011.svg",
+          "alt": "Plano-polea-colgante con sentidos supuestos."
+        }
+      ],
+      "tags": [
+        "t3",
+        "p",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Planos, cuerdas y sistemas enlazados: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Planos, cuerdas y sistemas enlazados"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia p"
+      ],
+      "parts_count": 2,
+      "statement_source": "Bloque \\(3 kg\\) en plano \\(30°\\) unido a colgante \\(2 kg\\).\n\n(a) Calcula: Aceleración.\n(b) Calcula: Tensión.",
+      "solution_source": "\\(a=0,98 m/s²\\) hacia el colgante; \\(T=17,6 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t3_p_012",
+      "version": 1,
+      "title": "Tres bloques 1,2,3 kg tirados por 24 N",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Planos, cuerdas y sistemas enlazados",
+      "family": "p",
+      "subtype": "multi_step",
+      "difficulty": 5,
+      "estimated_minutes": 17,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "aceleracion",
+          "label": "Aceleración",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 4.0,
+          "unit": "m/s²",
+          "tolerance": 0.02,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "t_12",
+          "label": "T 12",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 4.0,
+          "unit": "N",
+          "tolerance": 0.02,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "t_23",
+          "label": "T 23",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 12.0,
+          "unit": "N",
+          "tolerance": 0.06,
+          "significant_figures": 3,
+          "part": "c",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_p_012.svg",
+          "alt": "Tres DCL o mapa de cortes de cuerda."
+        }
+      ],
+      "tags": [
+        "t3",
+        "p",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Planos, cuerdas y sistemas enlazados: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Planos, cuerdas y sistemas enlazados"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia p"
+      ],
+      "parts_count": 3,
+      "statement_source": "Tres bloques \\(1,2,3 kg\\) tirados por \\(24 N\\).\n\n(a) Calcula: Aceleración.\n(b) Calcula: T 12.\n(c) Calcula: T 23.",
+      "solution_source": "\\(a=4 m/s²\\); tensiones \\(T_12=4 N\\), \\(T_23=12 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t3_p_013",
+      "version": 1,
+      "title": "Polea móvil ideal que sostiene una carga de 200 N",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Planos, cuerdas y sistemas enlazados",
+      "family": "p",
+      "subtype": "multi_step",
+      "difficulty": 5,
+      "estimated_minutes": 16,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "tension_por_tramo",
+          "label": "Tensión por tramo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 100.0,
+          "unit": "N",
+          "tolerance": 0.5,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "fuerza_aplicada",
+          "label": "Fuerza aplicada",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 100.0,
+          "unit": "N",
+          "tolerance": 0.5,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_p_013.svg",
+          "alt": "Polea móvil y dos tramos portantes."
+        }
+      ],
+      "tags": [
+        "t3",
+        "p",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Planos, cuerdas y sistemas enlazados: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Planos, cuerdas y sistemas enlazados"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia p"
+      ],
+      "parts_count": 2,
+      "statement_source": "Polea móvil ideal que sostiene una carga de \\(200 N\\).\n\n(a) Calcula: Tensión por tramo.\n(b) Calcula: Fuerza aplicada.",
+      "solution_source": "Tensión por tramo \\(100 N\\); fuerza aplicada \\(100 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t3_p_014",
+      "version": 1,
+      "title": "Auditar solución que usa una única ecuación para dos cuerpos y obtiene tensi",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Planos, cuerdas y sistemas enlazados",
+      "family": "p",
+      "subtype": "multi_step",
+      "difficulty": 5,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "tension",
+          "label": "Tensión",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 12.0,
+          "unit": "N",
+          "tolerance": 0.06,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_p_014.svg",
+          "alt": "Solución ficticia anotada por pasos."
+        }
+      ],
+      "tags": [
+        "t3",
+        "p",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Planos, cuerdas y sistemas enlazados: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Planos, cuerdas y sistemas enlazados"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia p"
+      ],
+      "parts_count": 1,
+      "statement_source": "Auditar solución que usa una única ecuación para dos cuerpos y obtiene tensión incorrecta.\n\n(a) Calcula: Tensión.",
+      "solution_source": "Selección del sistema para \\(a\\); ecuación individual correcta; \\(T=12 N\\) para datos de \\(p_006\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    }
+  ]
+}

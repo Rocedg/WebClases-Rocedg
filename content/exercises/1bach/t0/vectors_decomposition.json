@@ -1,0 +1,193 @@
+{
+  "exercises": [
+    {
+      "id": "t0_v_044",
+      "title": "Descomponer vectores con ángulos no medidos desde +x",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "Ax",
+          "label": "\\(A_x\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -6.55,
+          "tolerance": 0.02,
+          "prompt": "Con 2 decimales.",
+          "unit": "m",
+          "part": "a"
+        },
+        {
+          "id": "Ay",
+          "label": "\\(A_y\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -4.59,
+          "tolerance": 0.02,
+          "prompt": "Con 2 decimales.",
+          "unit": "m",
+          "part": "a"
+        },
+        {
+          "id": "Bx",
+          "label": "\\(B_x\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -1.71,
+          "tolerance": 0.02,
+          "prompt": "Con 2 decimales.",
+          "unit": "m",
+          "part": "b"
+        },
+        {
+          "id": "By",
+          "label": "\\(B_y\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 4.7,
+          "tolerance": 0.02,
+          "prompt": "Con 2 decimales.",
+          "unit": "m",
+          "part": "b"
+        },
+        {
+          "id": "R",
+          "label": "Resultante \\(\\vec R\\)",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            -2.26,
+            0.11
+          ],
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "tolerance": 0.02,
+          "prompt": "Escribe (x; y) con 2 decimales.",
+          "unit": "m",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "t0_bank_v5_extension",
+        "source": "Revisión T0 v5 (errores y vectores)"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "usar siempre coseno para x aunque el ángulo se mida desde el eje y",
+        "olvidar los signos del cuadrante",
+        "sumar módulos en vez de componentes"
+      ],
+      "statement_source": "Tres desplazamientos en el plano, con \\(+x\\) hacia el este y \\(+y\\) hacia el norte:\n\n\\(\\vec A\\): 8,0 m, formando \\(35^\\circ\\) por debajo del semieje \\(-x\\) (hacia el suroeste).\n\\(\\vec B\\): 5,0 m, formando \\(20^\\circ\\) a la izquierda del semieje \\(+y\\) (hacia el noroeste).\n\\(\\vec C\\): 6,0 m hacia \\(+x\\).\n\n(a) Calcula las componentes de \\(\\vec A\\). Decide primero los signos mirando el cuadrante.\n(b) Calcula las componentes de \\(\\vec B\\). Ojo: el ángulo está medido desde el eje \\(y\\).\n(c) Calcula la resultante \\(\\vec R=\\vec A+\\vec B+\\vec C\\).",
+      "solution_source": "(a) \\(\\vec A\\) está en el tercer cuadrante: \\(A_x=-8{,}0\\cos35^\\circ=-6{,}55\\) m y \\(A_y=-8{,}0\\sin35^\\circ=-4{,}59\\) m.\n(b) Respecto al eje \\(y\\), el cateto adyacente es el vertical: \\(B_y=5{,}0\\cos20^\\circ=4{,}70\\) m y \\(B_x=-5{,}0\\sin20^\\circ=-1{,}71\\) m.\n(c) \\(R_x=-6{,}55-1{,}71+6{,}0=-2{,}26\\) m y \\(R_y=-4{,}59+4{,}70=0{,}11\\) m."
+    },
+    {
+      "id": "t0_v_045",
+      "title": "La misma fuerza en ejes horizontales y en ejes de la rampa",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "Fx",
+          "label": "\\(F_x\\) (ejes horizontal y vertical)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 72.5,
+          "tolerance": 0.1,
+          "prompt": "Con 1 decimal.",
+          "unit": "N",
+          "part": "a"
+        },
+        {
+          "id": "Fy",
+          "label": "\\(F_y\\) (ejes horizontal y vertical)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 33.8,
+          "tolerance": 0.1,
+          "prompt": "Con 1 decimal.",
+          "unit": "N",
+          "part": "a"
+        },
+        {
+          "id": "F_par",
+          "label": "\\(F_\\parallel\\) (a lo largo de la rampa)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 78.8,
+          "tolerance": 0.1,
+          "prompt": "Con 1 decimal.",
+          "unit": "N",
+          "part": "b"
+        },
+        {
+          "id": "F_perp",
+          "label": "\\(F_\\perp\\) (perpendicular a la rampa)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 13.9,
+          "tolerance": 0.1,
+          "prompt": "Con 1 decimal.",
+          "unit": "N",
+          "part": "b"
+        },
+        {
+          "id": "F_par_check",
+          "label": "\\(F_\\parallel\\) recalculada desde \\(F_x\\) y \\(F_y\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 78.8,
+          "tolerance": 0.1,
+          "prompt": "Con 1 decimal.",
+          "unit": "N",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "t0_bank_v5_extension",
+        "source": "Revisión T0 v5 (errores y vectores)"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "usar 25° en lugar de 10° en los ejes de la rampa",
+        "sumar los ángulos en vez de restarlos",
+        "creer que cambiar de ejes cambia el módulo de la fuerza"
+      ],
+      "statement_source": "Se tira de un bloque que está sobre una rampa inclinada \\(15^\\circ\\) con una cuerda de 80 N. La cuerda forma \\(25^\\circ\\) con la horizontal (hacia arriba y en el sentido de subida de la rampa).\n\n(a) Descompón la fuerza en ejes horizontal y vertical.\n(b) Descompón la misma fuerza en ejes de la rampa: \\(\\parallel\\) a lo largo de la rampa (hacia arriba) y \\(\\perp\\) perpendicular a ella (hacia fuera). Primero calcula el ángulo que forma la cuerda con la rampa.\n(c) Comprueba (b) de otra forma: proyecta \\(F_x\\) y \\(F_y\\) sobre la dirección de la rampa, \\(F_\\parallel=F_x\\cos15^\\circ+F_y\\sin15^\\circ\\).",
+      "solution_source": "(a) \\(F_x=80\\cos25^\\circ=72{,}5\\) N y \\(F_y=80\\sin25^\\circ=33{,}8\\) N.\n(b) La cuerda forma \\(25^\\circ-15^\\circ=10^\\circ\\) con la rampa: \\(F_\\parallel=80\\cos10^\\circ=78{,}8\\) N y \\(F_\\perp=80\\sin10^\\circ=13{,}9\\) N.\n(c) \\(72{,}5\\cos15^\\circ+33{,}8\\sin15^\\circ=70{,}0+8{,}8=78{,}8\\) N. Coincide: es la misma fuerza vista desde otros ejes."
+    }
+  ]
+}

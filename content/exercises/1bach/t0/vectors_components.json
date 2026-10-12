@@ -1,0 +1,339 @@
+{
+  "exercises": [
+    {
+      "id": "t0_v_013",
+      "title": "Componentes y proyección horizontal",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "Fx",
+          "label": "\\(F_x\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 8.66,
+          "tolerance": 0.02,
+          "significant_figures": 3,
+          "prompt": "Con 3 cifras significativas.",
+          "unit": "N",
+          "part": "a"
+        },
+        {
+          "id": "Fy",
+          "label": "\\(F_y\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 5.0,
+          "tolerance": 0.02,
+          "significant_figures": 3,
+          "prompt": "Con 3 cifras significativas.",
+          "unit": "N",
+          "part": "a"
+        },
+        {
+          "id": "horizontal_fraction",
+          "label": "\\(F_x/F\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.866,
+          "tolerance": 0.002,
+          "prompt": "Un número sin unidades.",
+          "part": "b"
+        },
+        {
+          "id": "reconstructed",
+          "label": "Módulo reconstruido",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 10.0,
+          "tolerance": 0.01,
+          "unit": "N",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "intercambiar seno y coseno",
+        "dar porcentajes sin aclararlo",
+        "redondear tan pronto que falle la comprobación"
+      ],
+      "statement_source": "Una fuerza de 10,0 N forma \\(30{,}0^\\circ\\) por encima de \\(+x\\).\n\n(a) Calcula sus componentes.\n(b) Calcula qué fracción del módulo representa la componente horizontal, \\(F_x/F\\).\n(c) Reconstruye el módulo a partir de las componentes.",
+      "solution_source": "(a) \\(F_x=10{,}0\\cos30^\\circ=8{,}66\\) N y \\(F_y=10{,}0\\sin30^\\circ=5{,}00\\) N.\n(b) \\(F_x/F=\\cos30^\\circ=0{,}866\\).\n(c) \\(\\sqrt{8{,}66^2+5{,}00^2}=10{,}0\\) N.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_014",
+      "title": "Dos cuadrantes y una resultante",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "Ax",
+          "label": "\\(A_x\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -10.39,
+          "tolerance": 0.01,
+          "prompt": "Con 2 decimales.",
+          "part": "a"
+        },
+        {
+          "id": "Ay",
+          "label": "\\(A_y\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -6.0,
+          "tolerance": 0.01,
+          "prompt": "Con 2 decimales.",
+          "part": "a"
+        },
+        {
+          "id": "Bx",
+          "label": "\\(B_x\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 5.66,
+          "tolerance": 0.01,
+          "prompt": "Con 2 decimales.",
+          "part": "a"
+        },
+        {
+          "id": "By",
+          "label": "\\(B_y\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -5.66,
+          "tolerance": 0.01,
+          "prompt": "Con 2 decimales.",
+          "part": "a"
+        },
+        {
+          "id": "Rx",
+          "label": "\\(R_x\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -4.74,
+          "tolerance": 0.03,
+          "prompt": "Con 2 decimales.",
+          "part": "b"
+        },
+        {
+          "id": "Ry",
+          "label": "\\(R_y\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -11.66,
+          "tolerance": 0.03,
+          "prompt": "Con 2 decimales.",
+          "part": "b"
+        },
+        {
+          "id": "Rmag",
+          "label": "Módulo \\(|\\vec R|\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 12.58,
+          "tolerance": 0.03,
+          "part": "c"
+        },
+        {
+          "id": "Rangle",
+          "label": "Ángulo de R desde +x",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 247.9,
+          "tolerance": 0.3,
+          "prompt": "Entre 0 y 360°.",
+          "unit": "°",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "introducir grados como radianes",
+        "ignorar signos",
+        "usar el ángulo principal de la arctangente sin cuadrante"
+      ],
+      "statement_source": "\\(\\vec A\\) tiene módulo 12,0 y forma \\(210^\\circ\\) con \\(+x\\); \\(\\vec B\\) tiene módulo 8,00 y forma \\(315^\\circ\\).\n\n(a) Calcula las componentes de \\(\\vec A\\) y de \\(\\vec B\\).\n(b) Calcula las componentes de \\(\\vec R=\\vec A+\\vec B\\).\n(c) Calcula el módulo de \\(\\vec R\\) y el ángulo que forma con \\(+x\\).",
+      "solution_source": "(a) \\(\\vec A=(12{,}0\\cos210^\\circ,\\;12{,}0\\sin210^\\circ)=(-10{,}39;\\,-6{,}00)\\) y \\(\\vec B=(8{,}00\\cos315^\\circ,\\;8{,}00\\sin315^\\circ)=(5{,}66;\\,-5{,}66)\\).\n(b) \\(\\vec R=(-4{,}74;\\,-11{,}66)\\).\n(c) \\(|\\vec R|=12{,}58\\). Tercer cuadrante: \\(\\theta=180^\\circ+\\arctan(11{,}66/4{,}74)=247{,}9^\\circ\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_015",
+      "title": "Ángulo medido desde el eje y",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "Fx",
+          "label": "\\(F_x\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 32.1,
+          "tolerance": 0.1,
+          "significant_figures": 3,
+          "prompt": "Con 3 cifras significativas.",
+          "unit": "N",
+          "part": "a"
+        },
+        {
+          "id": "Fy",
+          "label": "\\(F_y\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 38.3,
+          "tolerance": 0.1,
+          "significant_figures": 3,
+          "prompt": "Con 3 cifras significativas.",
+          "unit": "N",
+          "part": "a"
+        },
+        {
+          "id": "angle_from_x",
+          "label": "Ángulo desde +x",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 50.0,
+          "tolerance": 0.01,
+          "unit": "°",
+          "part": "b"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "tratar los 40° como medidos desde x",
+        "intercambiar componentes",
+        "poner un signo negativo sin razón"
+      ],
+      "statement_source": "Una fuerza de 50,0 N forma \\(40{,}0^\\circ\\) con el semieje \\(+y\\), inclinada hacia \\(+x\\). Haz un croquis antes de calcular.\n\n(a) Calcula sus componentes. Ojo: el ángulo está medido desde el eje y.\n(b) Calcula el ángulo equivalente medido desde \\(+x\\).",
+      "solution_source": "(a) Respecto al eje \\(y\\), el cateto adyacente es el vertical: \\(F_y=50{,}0\\cos40^\\circ=38{,}3\\) N y \\(F_x=50{,}0\\sin40^\\circ=32{,}1\\) N.\n(b) \\(90^\\circ-40^\\circ=50{,}0^\\circ\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_016",
+      "title": "La ambigüedad de la arctangente",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "magnitude",
+          "label": "Módulo",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 10.0,
+          "tolerance": 0.01,
+          "part": "a"
+        },
+        {
+          "id": "angle",
+          "label": "Ángulo entre 0 y 360°",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 233.1,
+          "tolerance": 0.2,
+          "unit": "°",
+          "part": "b"
+        },
+        {
+          "id": "equivalent",
+          "label": "Ángulo equivalente negativo",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -126.9,
+          "tolerance": 0.2,
+          "unit": "°",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "aceptar 53,1°",
+        "sumar 360° al ángulo agudo",
+        "creer que ángulos negativos son siempre inválidos"
+      ],
+      "statement_source": "Un vector tiene componentes \\((-6,\\,-8)\\). Una calculadora muestra \\(\\arctan(y/x)=53{,}1^\\circ\\), pero ese no es el ángulo del vector.\n\n(a) Calcula el módulo.\n(b) Calcula el ángulo correcto con \\(+x\\), entre \\(0^\\circ\\) y \\(360^\\circ\\).\n(c) Da el ángulo equivalente negativo, entre \\(-180^\\circ\\) y \\(0^\\circ\\).",
+      "solution_source": "(a) \\(\\sqrt{36+64}=10\\).\n(b) Las dos componentes son negativas: tercer cuadrante. La calculadora no distingue \\((-6,\\,-8)\\) de \\((6,\\,8)\\); hay que sumar \\(180^\\circ\\): \\(53{,}1^\\circ+180^\\circ=233{,}1^\\circ\\).\n(c) \\(233{,}1^\\circ-360^\\circ=-126{,}9^\\circ\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    }
+  ]
+}

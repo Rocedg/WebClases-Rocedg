@@ -1,0 +1,579 @@
+{
+  "exercises": [
+    {
+      "id": "t0_v_037",
+      "title": "Producto escalar por componentes y ángulo",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 2,
+      "estimated_minutes": 8,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "dot",
+          "label": "\\(\\vec A\\cdot\\vec B\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 8.0,
+          "tolerance": 0.01,
+          "part": "a"
+        },
+        {
+          "id": "mod_A",
+          "label": "Módulo \\(|\\vec A|\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 3.742,
+          "tolerance": 0.005,
+          "prompt": "Con 3 decimales.",
+          "part": "b"
+        },
+        {
+          "id": "mod_B",
+          "label": "Módulo \\(|\\vec B|\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 4.583,
+          "tolerance": 0.005,
+          "prompt": "Con 3 decimales.",
+          "part": "b"
+        },
+        {
+          "id": "angle",
+          "label": "Ángulo entre \\(\\vec A\\) y \\(\\vec B\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 62.2,
+          "tolerance": 0.1,
+          "prompt": "En grados, con una cifra decimal.",
+          "unit": "°",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "t0_bank_v5_extension",
+        "source": "Revisión T0 v5 (errores y vectores)"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "multiplicar los módulos en vez de las componentes",
+        "olvidar el signo de las componentes negativas",
+        "dar el coseno en lugar del ángulo"
+      ],
+      "statement_source": "Sean \\(\\vec A=(3,\\,-2,\\,1)\\) y \\(\\vec B=(4,\\,1,\\,-2)\\).\n\n(a) Calcula el producto escalar \\(\\vec A\\cdot\\vec B=A_xB_x+A_yB_y+A_zB_z\\).\n(b) Calcula los módulos \\(|\\vec A|\\) y \\(|\\vec B|\\).\n(c) Calcula el ángulo que forman, usando \\(\\cos\\theta=\\dfrac{\\vec A\\cdot\\vec B}{|\\vec A|\\,|\\vec B|}\\).",
+      "solution_source": "(a) \\(\\vec A\\cdot\\vec B=3\\cdot4+(-2)\\cdot1+1\\cdot(-2)=12-2-2=8\\).\n(b) \\(|\\vec A|=\\sqrt{9+4+1}=\\sqrt{14}=3{,}742\\); \\(|\\vec B|=\\sqrt{16+1+4}=\\sqrt{21}=4{,}583\\).\n(c) \\(\\cos\\theta=8/(3{,}742\\cdot4{,}583)=0{,}4666\\), así que \\(\\theta=62{,}2^\\circ\\). Es agudo porque el producto escalar es positivo."
+    },
+    {
+      "id": "t0_v_038",
+      "title": "Producto escalar con una componente desconocida",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "k_perp",
+          "label": "Valor de \\(k\\) para que sean perpendiculares",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.0,
+          "tolerance": 0.01,
+          "part": "a"
+        },
+        {
+          "id": "k_ten",
+          "label": "Valor de \\(k\\) para que \\(\\vec A\\cdot\\vec B=10\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -4.0,
+          "tolerance": 0.01,
+          "part": "b"
+        },
+        {
+          "id": "angle",
+          "label": "Ángulo con ese valor de k",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 66.1,
+          "tolerance": 0.1,
+          "prompt": "En grados, con una cifra decimal.",
+          "unit": "°",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "t0_bank_v5_extension",
+        "source": "Revisión T0 v5 (errores y vectores)"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "olvidar que el término de k lleva el signo de la componente de B",
+        "igualar a cero los módulos en lugar del producto escalar",
+        "usar k = 1 en el apartado (c)"
+      ],
+      "statement_source": "Sean \\(\\vec A=(2,\\,k,\\,-1)\\) y \\(\\vec B=(3,\\,-2,\\,4)\\), donde \\(k\\) es un número desconocido.\n\n(a) Calcula \\(k\\) para que \\(\\vec A\\) y \\(\\vec B\\) sean perpendiculares (producto escalar nulo).\n(b) Calcula \\(k\\) para que \\(\\vec A\\cdot\\vec B=10\\).\n(c) Con el valor de \\(k\\) del apartado (b), calcula el ángulo entre los dos vectores.",
+      "solution_source": "\\(\\vec A\\cdot\\vec B=6-2k-4=2-2k\\).\n(a) \\(2-2k=0\\Rightarrow k=1\\).\n(b) \\(2-2k=10\\Rightarrow k=-4\\).\n(c) Con \\(k=-4\\): \\(|\\vec A|=\\sqrt{4+16+1}=\\sqrt{21}\\), \\(|\\vec B|=\\sqrt{9+4+16}=\\sqrt{29}\\). \\(\\cos\\theta=10/\\sqrt{609}=0{,}4052\\), así que \\(\\theta=66{,}1^\\circ\\)."
+    },
+    {
+      "id": "t0_v_039",
+      "title": "El trabajo como producto escalar",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "work",
+          "label": "Trabajo \\(W\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 16.0,
+          "tolerance": 0.01,
+          "unit": "J",
+          "part": "a"
+        },
+        {
+          "id": "angle",
+          "label": "Ángulo entre la fuerza y el desplazamiento",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 75.7,
+          "tolerance": 0.1,
+          "prompt": "En grados, con una cifra decimal.",
+          "unit": "°",
+          "part": "b"
+        },
+        {
+          "id": "F_parallel",
+          "label": "Componente de la fuerza en la dirección del desplazamiento",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 3.2,
+          "tolerance": 0.01,
+          "unit": "N",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "t0_bank_v5_extension",
+        "source": "Revisión T0 v5 (errores y vectores)"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "sumar las componentes en vez de multiplicarlas",
+        "multiplicar los módulos sin el coseno",
+        "dividir entre el módulo de la fuerza en el apartado (c)"
+      ],
+      "statement_source": "Una fuerza \\(\\vec F=(12\\,\\hat\\imath-5\\,\\hat\\jmath)\\) N actúa sobre un objeto mientras este se desplaza \\(\\Delta\\vec r=(3{,}0\\,\\hat\\imath+4{,}0\\,\\hat\\jmath)\\) m. El trabajo es el producto escalar \\(W=\\vec F\\cdot\\Delta\\vec r\\).\n\n(a) Calcula el trabajo \\(W\\).\n(b) Calcula el ángulo que forman la fuerza y el desplazamiento.\n(c) Calcula la componente de \\(\\vec F\\) en la dirección del desplazamiento, \\(F_\\parallel=W/|\\Delta\\vec r|\\).",
+      "solution_source": "(a) \\(W=12\\cdot3{,}0+(-5)\\cdot4{,}0=36-20=16\\) J.\n(b) \\(|\\vec F|=13\\) N y \\(|\\Delta\\vec r|=5{,}0\\) m. \\(\\cos\\theta=16/(13\\cdot5{,}0)=0{,}246\\), así que \\(\\theta=75{,}7^\\circ\\).\n(c) \\(F_\\parallel=16/5{,}0=3{,}2\\) N. Solo esa parte de la fuerza, la alineada con el desplazamiento, hace trabajo."
+    },
+    {
+      "id": "t0_v_040",
+      "title": "Producto vectorial por componentes",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "AxB",
+          "label": "\\(\\vec A\\times\\vec B\\)",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            -10.0,
+            7.0,
+            9.0
+          ],
+          "component_order": [
+            "x",
+            "y",
+            "z"
+          ],
+          "tolerance": 0.01,
+          "prompt": "Escribe las componentes entre paréntesis separadas por punto y coma: (x; y; z).",
+          "part": "a"
+        },
+        {
+          "id": "check",
+          "label": "\\(\\vec A\\cdot(\\vec A\\times\\vec B)\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.0,
+          "tolerance": 0.01,
+          "part": "b"
+        },
+        {
+          "id": "modulus",
+          "label": "Módulo \\(|\\vec A\\times\\vec B|\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 15.17,
+          "tolerance": 0.01,
+          "prompt": "Con 2 decimales.",
+          "part": "c"
+        },
+        {
+          "id": "BxA",
+          "label": "\\(\\vec B\\times\\vec A\\)",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            10.0,
+            -7.0,
+            -9.0
+          ],
+          "component_order": [
+            "x",
+            "y",
+            "z"
+          ],
+          "tolerance": 0.01,
+          "prompt": "Escribe las componentes entre paréntesis separadas por punto y coma: (x; y; z).",
+          "part": "d"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "t0_bank_v5_extension",
+        "source": "Revisión T0 v5 (errores y vectores)"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "equivocarse de signo en la componente y",
+        "creer que el producto vectorial es conmutativo",
+        "confundir el producto vectorial con el escalar"
+      ],
+      "statement_source": "Sean \\(\\vec A=(2,\\,-1,\\,3)\\) y \\(\\vec B=(1,\\,4,\\,-2)\\). Usa\n\\[\\vec A\\times\\vec B=(A_yB_z-A_zB_y,\\;A_zB_x-A_xB_z,\\;A_xB_y-A_yB_x).\\]\n(a) Calcula \\(\\vec A\\times\\vec B\\).\n(b) Comprueba que el resultado es perpendicular a \\(\\vec A\\): calcula \\(\\vec A\\cdot(\\vec A\\times\\vec B)\\).\n(c) Calcula el módulo \\(|\\vec A\\times\\vec B|\\).\n(d) Calcula \\(\\vec B\\times\\vec A\\).",
+      "solution_source": "(a) \\(x\\): \\((-1)(-2)-3\\cdot4=-10\\). \\(y\\): \\(3\\cdot1-2\\cdot(-2)=7\\). \\(z\\): \\(2\\cdot4-(-1)\\cdot1=9\\). Por tanto \\(\\vec A\\times\\vec B=(-10,\\,7,\\,9)\\).\n(b) \\(2(-10)+(-1)(7)+3\\cdot9=0\\): son perpendiculares, como debe ser.\n(c) \\(\\sqrt{100+49+81}=\\sqrt{230}=15{,}17\\).\n(d) Invertir el orden invierte el sentido: \\(\\vec B\\times\\vec A=(10,\\,-7,\\,-9)\\)."
+    },
+    {
+      "id": "t0_v_041",
+      "title": "Área de un triángulo con el producto vectorial",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "PQ",
+          "label": "\\(\\vec{PQ}\\)",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            -1.0,
+            2.0,
+            0.0
+          ],
+          "component_order": [
+            "x",
+            "y",
+            "z"
+          ],
+          "tolerance": 0.01,
+          "prompt": "Escribe las componentes entre paréntesis separadas por punto y coma: (x; y; z).",
+          "part": "a"
+        },
+        {
+          "id": "PR",
+          "label": "\\(\\vec{PR}\\)",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            -1.0,
+            0.0,
+            3.0
+          ],
+          "component_order": [
+            "x",
+            "y",
+            "z"
+          ],
+          "tolerance": 0.01,
+          "prompt": "Escribe las componentes entre paréntesis separadas por punto y coma: (x; y; z).",
+          "part": "a"
+        },
+        {
+          "id": "cross",
+          "label": "\\(\\vec{PQ}\\times\\vec{PR}\\)",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            6.0,
+            3.0,
+            2.0
+          ],
+          "component_order": [
+            "x",
+            "y",
+            "z"
+          ],
+          "tolerance": 0.01,
+          "prompt": "Escribe las componentes entre paréntesis separadas por punto y coma: (x; y; z).",
+          "part": "b"
+        },
+        {
+          "id": "area",
+          "label": "Área del triángulo",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 3.5,
+          "tolerance": 0.01,
+          "unit": "m²",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "t0_bank_v5_extension",
+        "source": "Revisión T0 v5 (errores y vectores)"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "restar los puntos al revés sin mantener el mismo origen",
+        "olvidar dividir entre 2 para el triángulo",
+        "sumar las componentes del producto en lugar de calcular el módulo"
+      ],
+      "statement_source": "Los vértices de un triángulo son P(1, 0, 0), Q(0, 2, 0) y R(0, 0, 3), con coordenadas en metros.\n\n(a) Calcula los vectores \\(\\vec{PQ}=Q-P\\) y \\(\\vec{PR}=R-P\\).\n(b) Calcula \\(\\vec{PQ}\\times\\vec{PR}\\).\n(c) El módulo del producto vectorial es el área del paralelogramo que forman los dos vectores. Calcula el área del triángulo.",
+      "solution_source": "(a) \\(\\vec{PQ}=(-1,\\,2,\\,0)\\) m y \\(\\vec{PR}=(-1,\\,0,\\,3)\\) m.\n(b) \\((2\\cdot3-0\\cdot0,\\;0\\cdot(-1)-(-1)\\cdot3,\\;(-1)\\cdot0-2\\cdot(-1))=(6,\\,3,\\,2)\\) m².\n(c) \\(|(6,\\,3,\\,2)|=\\sqrt{36+9+4}=7\\) m², que es el paralelogramo. El triángulo es la mitad: 3,5 m²."
+    },
+    {
+      "id": "t0_v_042",
+      "title": "Regla de la mano derecha en el plano",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_plus_choice",
+      "difficulty": 3,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "z",
+          "label": "Componente \\(z\\) de \\(\\vec A\\times\\vec B\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 14.0,
+          "tolerance": 0.01,
+          "part": "a"
+        },
+        {
+          "id": "sense",
+          "label": "Sentido de \\(\\vec A\\times\\vec B\\)",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "sale",
+              "label": "Sale del papel (+z)"
+            },
+            {
+              "id": "entra",
+              "label": "Entra en el papel (−z)"
+            },
+            {
+              "id": "plano",
+              "label": "Está en el plano xy"
+            }
+          ],
+          "correct_option_id": "sale",
+          "part": "b"
+        },
+        {
+          "id": "angle",
+          "label": "Ángulo entre los vectores",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 98.1,
+          "tolerance": 0.1,
+          "prompt": "En grados, con una cifra decimal.",
+          "unit": "°",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "t0_bank_v5_extension",
+        "source": "Revisión T0 v5 (errores y vectores)"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "restar en el orden contrario y obtener −14",
+        "quedarse con el ángulo agudo que da el arcoseno",
+        "creer que el producto vectorial de dos vectores del plano xy está en ese plano"
+      ],
+      "statement_source": "En el plano \\(xy\\) (\\(x\\) hacia la derecha, \\(y\\) hacia arriba) se tienen \\(\\vec A=(3,\\,1,\\,0)\\) y \\(\\vec B=(-2,\\,4,\\,0)\\).\n\n(a) Calcula la componente \\(z\\) de \\(\\vec A\\times\\vec B\\), que es \\(A_xB_y-A_yB_x\\).\n(b) Indica si \\(\\vec A\\times\\vec B\\) sale del papel o entra en él.\n(c) Calcula el ángulo entre \\(\\vec A\\) y \\(\\vec B\\). Cuidado: \\(\\sin\\theta=|\\vec A\\times\\vec B|/(|\\vec A||\\vec B|)\\) da dos ángulos posibles; usa el signo de \\(\\vec A\\cdot\\vec B\\) para decidir.",
+      "solution_source": "(a) \\(3\\cdot4-1\\cdot(-2)=14\\), así que \\(\\vec A\\times\\vec B=14\\,\\hat k\\).\n(b) Componente \\(z\\) positiva: sale del papel. Con la mano derecha, al girar de \\(\\vec A\\) hacia \\(\\vec B\\) en sentido antihorario el pulgar apunta hacia ti.\n(c) \\(\\sin\\theta=14/(\\sqrt{10}\\sqrt{20})=0{,}990\\), que da \\(81{,}9^\\circ\\) o \\(98{,}1^\\circ\\). Como \\(\\vec A\\cdot\\vec B=-6+4=-2<0\\), el ángulo es obtuso: \\(98{,}1^\\circ\\)."
+    },
+    {
+      "id": "t0_v_043",
+      "title": "Escalar y vectorial del mismo par",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "dot",
+          "label": "\\(\\vec A\\cdot\\vec B\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 4.0,
+          "tolerance": 0.01,
+          "part": "a"
+        },
+        {
+          "id": "cross",
+          "label": "\\(\\vec A\\times\\vec B\\)",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            6.0,
+            2.0,
+            -5.0
+          ],
+          "component_order": [
+            "x",
+            "y",
+            "z"
+          ],
+          "tolerance": 0.01,
+          "prompt": "Escribe las componentes entre paréntesis separadas por punto y coma: (x; y; z).",
+          "part": "b"
+        },
+        {
+          "id": "cross_sq",
+          "label": "\\(|\\vec A\\times\\vec B|^2\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 65.0,
+          "tolerance": 0.01,
+          "part": "c"
+        },
+        {
+          "id": "check",
+          "label": "\\(|\\vec A\\times\\vec B|^2+(\\vec A\\cdot\\vec B)^2\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 81.0,
+          "tolerance": 0.01,
+          "part": "c"
+        },
+        {
+          "id": "angle",
+          "label": "Ángulo entre los vectores",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 63.6,
+          "tolerance": 0.1,
+          "prompt": "En grados, con una cifra decimal.",
+          "unit": "°",
+          "part": "d"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "t0_bank_v5_extension",
+        "source": "Revisión T0 v5 (errores y vectores)"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "mezclar las fórmulas del producto escalar y del vectorial",
+        "equivocarse de signo en la componente y del producto vectorial",
+        "no aprovechar la comprobación para detectar un error"
+      ],
+      "statement_source": "Sean \\(\\vec A=(1,\\,2,\\,2)\\) y \\(\\vec B=(2,\\,-1,\\,2)\\).\n\n(a) Calcula \\(\\vec A\\cdot\\vec B\\).\n(b) Calcula \\(\\vec A\\times\\vec B\\).\n(c) Calcula \\(|\\vec A\\times\\vec B|^2\\) y la suma \\(|\\vec A\\times\\vec B|^2+(\\vec A\\cdot\\vec B)^2\\). Compárala con \\(|\\vec A|^2|\\vec B|^2\\).\n(d) Calcula el ángulo entre los vectores.",
+      "solution_source": "(a) \\(2-2+4=4\\).\n(b) \\((2\\cdot2-2\\cdot(-1),\\;2\\cdot2-1\\cdot2,\\;1\\cdot(-1)-2\\cdot2)=(6,\\,2,\\,-5)\\).\n(c) \\(36+4+25=65\\) y \\(65+16=81\\). Como \\(|\\vec A|=|\\vec B|=3\\), \\(|\\vec A|^2|\\vec B|^2=81\\): coincide, porque \\(\\sin^2\\theta+\\cos^2\\theta=1\\).\n(d) \\(\\cos\\theta=4/9\\), así que \\(\\theta=63{,}6^\\circ\\)."
+    }
+  ]
+}

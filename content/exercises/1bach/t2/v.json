@@ -1,0 +1,1099 @@
+{
+  "exercises": [
+    {
+      "id": "t2_v_001",
+      "version": 1,
+      "title": "Una posición en el segundo cuadrante",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Vectores y composición",
+      "family": "v",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 8,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "r",
+          "label": "Vector posición",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(-6; 8)",
+            "-6 i + (8) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            -6,
+            8
+          ],
+          "unit": "m",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "a"
+        },
+        {
+          "id": "norm",
+          "label": "Módulo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 10,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "angle",
+          "label": "Ángulo desde +x",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 126.86989765,
+          "unit": "°",
+          "tolerance": 0.2,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_v_001.svg",
+          "alt": "Posición P al noroeste de O"
+        }
+      ],
+      "tags": [
+        "t2",
+        "v",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Una posición en el segundo cuadrante. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Vectores y composición"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar dar módulo negativo por x negativa.",
+      "common_mistakes": [
+        "Dar módulo negativo por x negativa",
+        "Aceptar el cuadrante de una arctangente sin comprobarlo"
+      ],
+      "parts_count": 2,
+      "statement_source": "Plano con origen O, \\(+x\\) este y \\(+y\\) norte. Un dron está en \\(P=(−6,8) m\\). \n(a) Escribe su vector posición y módulo.\n(b) Completa: Ángulo desde +x.",
+      "solution_source": "\\(r=−6\\) i+8 j m; |r|=√(\\(36+64\\))=10 m.\n\natan2(8,−6)=126,87°, es decir 127° a tres cifras.\n\nEstá en el segundo cuadrante; arctan(\\(8/−6\\)) devuelve −53,13° y hay que añadir 180°.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_v_002",
+      "version": 1,
+      "title": "Desplazarse no es medir desde el origen",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Vectores y composición",
+      "family": "v",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "dr",
+          "label": "Desplazamiento A→B",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(-6; 8)",
+            "-6 i + (8) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            -6,
+            8
+          ],
+          "unit": "m",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "a"
+        },
+        {
+          "id": "norm",
+          "label": "Módulo de desplazamiento",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 10,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "angle",
+          "label": "Dirección",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 126.86989765,
+          "unit": "°",
+          "tolerance": 0.2,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_v_002.svg",
+          "alt": "Flecha de A hacia B"
+        }
+      ],
+      "tags": [
+        "t2",
+        "v",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Desplazarse no es medir desde el origen. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Vectores y composición"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar usar r_b como desplazamiento.",
+      "common_mistakes": [
+        "Usar r_B como desplazamiento",
+        "Restar los módulos de posición"
+      ],
+      "parts_count": 2,
+      "statement_source": "\\(+x\\) este,\\(+y\\) norte. \\(A=(2,−1) m\\) y \\(B=(−4,7) m\\). \n(a) Completa: Desplazamiento A→B, Módulo de desplazamiento.\n(b) Calcula dirección desde \\(+x\\) y compara Δr con \\(r_B\\).",
+      "solution_source": "\\(Δr=r_B−r_A=(−4−2,7−(−1))=(−6,8) m\\).\n\n|Δr|=10 m y dirección 126,87° desde \\(+x\\).\n\n\\(r_B=(−4,7) m\\) tiene otro origen geométrico; confundirlo con Δr ignora el punto inicial A.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_v_003",
+      "version": 1,
+      "title": "Velocidad media y datos insuficientes para rapidez",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Vectores y composición",
+      "family": "v",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "vm",
+          "label": "Velocidad media",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(3; 1.25)",
+            "3 i + (1.25) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            3,
+            1.25
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "a"
+        },
+        {
+          "id": "mod",
+          "label": "Módulo de velocidad media",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3.25,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "min",
+          "label": "Mínima rapidez media",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3.25,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_v_003.svg",
+          "alt": "Dos registros, trayectoria no especificada"
+        }
+      ],
+      "tags": [
+        "t2",
+        "v",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Velocidad media y datos insuficientes para rapidez. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Vectores y composición"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar dividir entre 5 s en vez de 4.",
+      "common_mistakes": [
+        "Dividir entre 5 s en vez de 4",
+        "Equiparar rapidez media con módulo de velocidad media"
+      ],
+      "parts_count": 2,
+      "statement_source": "Plano horizontal, \\(+x\\) este,\\(+y\\) norte. Un robot pasa de \\((−3,2) m\\) en \\(t=1 s\\) a \\((9,7) m\\) en \\(t=5 s\\). \n(a) Halla velocidad media vectorial y su módulo.\n(b) ¿Se puede obtener la rapidez media sin conocer la trayectoria? Da su menor valor posible.",
+      "solution_source": "\\(Δr=(12,5) m\\) y \\(Δt=4 s\\): \\(v_media=(3,1,25) m/s\\).\n\n|Δr|=√169=13 m; |\\(v_media\\)|=13/4=3,25 m/s.\n\nLa longitud del camino es al menos 13 m; solo el trayecto recto sin vueltas alcanza la cota. Los extremos no fijan la rapidez media exacta.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_v_004",
+      "version": 1,
+      "title": "Aceleración media de un giro",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Vectores y composición",
+      "family": "v",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "a",
+          "label": "Aceleración media",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(-3; 4)",
+            "-3 i + (4) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            -3,
+            4
+          ],
+          "unit": "m/s²",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "a"
+        },
+        {
+          "id": "norm",
+          "label": "Módulo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 5,
+          "unit": "m/s²",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "angle",
+          "label": "Dirección",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 126.86989765,
+          "unit": "°",
+          "tolerance": 0.2,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_v_004.svg",
+          "alt": "Plano de velocidades: resta vectorial"
+        }
+      ],
+      "tags": [
+        "t2",
+        "v",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Aceleración media de un giro. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Vectores y composición"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar restar módulos y obtener una aceleración escalar.",
+      "common_mistakes": [
+        "Restar módulos y obtener una aceleración escalar",
+        "Suponer a constante sin dato"
+      ],
+      "parts_count": 2,
+      "statement_source": "Ejes \\(+x\\) este,\\(+y\\) norte. La velocidad cambia de \\((6,0)\\) a \\((0,8) m/s\\) en 2 s. \n(a) Completa: Aceleración media, Módulo, Dirección.",
+      "solution_source": "\\(Δv=(0−6,8−0)=(−6,8) m/s\\). Dividiendo por 2 s: \\(a_media=(−3,4) m/s²\\).\n\n|\\(a_media\\)|=√(\\(9+16\\))=5 m/s², ángulo 126,87°.\n\nNo se ha afirmado aceleración constante: la media no permite reconstruir \\(v(t)\\) ni \\(r(t)\\) de forma única.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_v_005",
+      "version": 1,
+      "title": "Camino quebrado y cuerda entre extremos",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Vectores y composición",
+      "family": "v",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "d",
+          "label": "Recorrido",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 14,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "dr",
+          "label": "Desplazamiento",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(6; 8)",
+            "6 i + (8) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            6,
+            8
+          ],
+          "unit": "m",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "a"
+        },
+        {
+          "id": "speed",
+          "label": "Rapidez media",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.4,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "vm",
+          "label": "Módulo de velocidad media",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_v_005.svg",
+          "alt": "Ruta O→A→B y desplazamiento directo"
+        }
+      ],
+      "tags": [
+        "t2",
+        "v",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Camino quebrado y cuerda entre extremos. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Vectores y composición"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar aplicar pitágoras a la longitud del camino quebrado.",
+      "common_mistakes": [
+        "Aplicar Pitágoras a la longitud del camino quebrado",
+        "Sumar componentes para el módulo"
+      ],
+      "parts_count": 2,
+      "statement_source": "En 10 s un robot va de \\(O=(0,0)\\) a \\(A=(6,0)\\) y luego a \\(B=(6,8),\\) en metros, sin retrocesos. \\(+x\\) este,\\(+y\\) norte. \n(a) Calcula recorrido y desplazamiento.\n(b) Completa: Rapidez media, Módulo de velocidad media.",
+      "solution_source": "\\(Recorrido=6+8=14 m\\); \\(Δr=(6,8) m\\) y |Δr|=10 m.\n\nRapidez \\(media=14/10=1,40 m/s\\); |\\(v_media\\)|=10/10=1,00 m/s.\n\nLa ruta quebrada es más larga que el segmento directo, aunque comparten extremos y tiempo total.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_v_006",
+      "version": 1,
+      "title": "Componentes de una velocidad oblicua",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Vectores y composición",
+      "family": "v",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 8,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "v",
+          "label": "Velocidad",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(-8.660254037844386; 5)",
+            "-8.660254037844386 i + (5) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            -8.660254037844386,
+            5
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "a"
+        },
+        {
+          "id": "dr",
+          "label": "Desplazamiento",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(-34.64101615137754; 20)",
+            "-34.64101615137754 i + (20) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            -34.64101615137754,
+            20
+          ],
+          "unit": "m",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        },
+        {
+          "id": "d",
+          "label": "Módulo del desplazamiento",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 40,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_v_006.svg",
+          "alt": "Triángulo de componentes del rumbo 150°"
+        }
+      ],
+      "tags": [
+        "t2",
+        "v",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Componentes de una velocidad oblicua. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Vectores y composición"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar intercambiar seno y coseno.",
+      "common_mistakes": [
+        "Intercambiar seno y coseno",
+        "Hacer positivas ambas componentes"
+      ],
+      "parts_count": 2,
+      "statement_source": "\\(+x\\) este,\\(+y\\) norte. Un dron vuela a 10 m/s con rumbo 150° desde \\(+x\\) antihorario. \n(a) Obtén \\(v_x\\),\\(v_y\\) con signo.\n(b) Completa: Desplazamiento, Módulo del desplazamiento.",
+      "solution_source": "\\(v_x=10\\) cos150°=−8,66 m/s; \\(v_y=10\\) sen150°=5,00 m/s.\n\n\\(Δr=4v=(−34,6,20,0) m\\); |Δr|=4·10=40,0 m.\n\nAmbos vectores están en el segundo cuadrante, coherente con rumbo noroeste.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_v_007",
+      "version": 1,
+      "title": "Tangente y aceleración en un vuelo",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Vectores y composición",
+      "family": "v",
+      "subtype": "written_upload",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "v0",
+          "label": "Velocidad inicial",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(8; 10)",
+            "8 i + (10) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            8,
+            10
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        },
+        {
+          "id": "v1",
+          "label": "Velocidad en la cima",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(8; 0)",
+            "8 i + (0) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            8,
+            0
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        },
+        {
+          "id": "v2",
+          "label": "Velocidad final",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(8; -10)",
+            "8 i + (-10) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            8,
+            -10
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_v_007.svg",
+          "alt": "Tres puntos de un vuelo de dos segundos"
+        }
+      ],
+      "tags": [
+        "t2",
+        "v",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Tangente y aceleración en un vuelo. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Vectores y composición"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar anular todo el vector v en la cima.",
+      "common_mistakes": [
+        "Anular todo el vector v en la cima",
+        "Dibujar a siguiendo la curva"
+      ],
+      "parts_count": 2,
+      "statement_source": "Origen en el lanzamiento, \\(+x\\) derecha,\\(+y\\) arriba. Sin aire, \\(a_y=−g=−10 m/s²\\), \\(v_0=(8,10) m/s\\). La trayectoria pasa por \\((0,0)\\), \\((8,5)\\) y \\((16,0) m\\) a \\(t=0,1,2 s\\). \n(b) Completa: Velocidad inicial, Velocidad en la cima, Velocidad final.",
+      "solution_source": "\\(x=8t,y=10t−5t²\\); \\(v=(8,10−10t) m/s\\) y \\(a=(0,−10) m/s²\\).\n\nEn 0,1,2 s: \\(v=(8,10),(8,0),(8,−10) m/s\\); las flechas son tangentes.\n\nLa gravedad apunta abajo en los tres puntos. La cima es máximo de y, no reposo del proyectil.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_v_008",
+      "version": 1,
+      "title": "Barca que apunta a la otra orilla",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Vectores y composición",
+      "family": "v",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "v",
+          "label": "Velocidad respecto a tierra",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(2; 3)",
+            "2 i + (3) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            2,
+            3
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "a"
+        },
+        {
+          "id": "speed",
+          "label": "Rapidez terrestre",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3.605551275463989,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "angle",
+          "label": "Rumbo desde +x",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 56.309932474020215,
+          "unit": "°",
+          "tolerance": 0.1,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "t",
+          "label": "Tiempo de cruce",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 20,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "drift",
+          "label": "Deriva",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 40,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_v_008.svg",
+          "alt": "Vista en planta: barca y corriente"
+        }
+      ],
+      "tags": [
+        "t2",
+        "v",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Barca que apunta a la otra orilla. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Vectores y composición"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar sumar módulos como escalares.",
+      "common_mistakes": [
+        "Sumar módulos como escalares",
+        "Usar la rapidez oblicua para cruzar el ancho"
+      ],
+      "parts_count": 2,
+      "statement_source": "Vista en planta: \\(+x\\) aguas abajo,\\(+y\\) hacia la otra orilla. Río de 60 m de ancho; agua a \\((2,0) m/s\\) respecto a tierra y barca a \\((0,3) m/s\\) respecto al agua. \n(a) Halla v respecto a tierra, módulo y rumbo.\n(b) Calcula tiempo de cruce y deriva.",
+      "solution_source": "\\(v_B\\)/\\(T=v_B/A+v_A/T=(2,3) m/s\\). Módulo √13=3,61 m/s y rumbo 56,3°.\n\n\\(y=3t=60\\) da \\(t=20 s\\); \\(x=2·20=40 m\\).\n\nLa corriente no cambia la componente transversal de 3 m/s: no se divide el ancho entre √13.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_v_009",
+      "version": 1,
+      "title": "Elegir ejes sin cambiar la física",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Vectores y composición",
+      "family": "v",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "va",
+          "label": "Velocidad en A",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(1.5; 2.5)",
+            "1.5 i + (2.5) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            1.5,
+            2.5
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        },
+        {
+          "id": "vb",
+          "label": "Velocidad en B",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(2.5; -1.5)",
+            "2.5 i + (-1.5) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            2.5,
+            -1.5
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        },
+        {
+          "id": "t",
+          "label": "Tiempo de cruce",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 16,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "d",
+          "label": "Deriva",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 24,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_v_009.svg",
+          "alt": "A: corriente +x; cruce +y"
+        }
+      ],
+      "tags": [
+        "t2",
+        "v",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Elegir ejes sin cambiar la física. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Vectores y composición"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar declarar físicamente incorrecto un sistema solo por incómodo.",
+      "common_mistakes": [
+        "Declarar físicamente incorrecto un sistema solo por incómodo",
+        "Mantener signos al invertir un eje"
+      ],
+      "parts_count": 2,
+      "statement_source": "En un río de 40 m de ancho, corriente 1,5 m/s aguas abajo y barca 2,5 m/s respecto al agua apuntando perpendicularmente a las orillas. Compara tres referencias: A: \\(+x\\) corriente,\\(+y\\) transversal; B: \\(+x\\) transversal,\\(+y\\) contracorriente; C: ambos ejes girados 45° respecto a A. \n(b) Da componentes de velocidad terrestre en A y B y calcula cruce y deriva.",
+      "solution_source": "A alinea cada aportación con un eje: \\(v=(1,5,2,5) m/s\\). B también es válida: v′=\\((2,5,−1,5) m/s\\). C exige proyectar ambos vectores.\n\nEn A: \\(t=40/2,5=16 s\\) y \\(deriva=1,5·16=24 m\\). En B: x′=40,y′=−24 m.\n\nLas coordenadas cambian, pero el tiempo y el punto físico de llegada coinciden. Admitir A o B con justificación coherente.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_v_010",
+      "version": 1,
+      "title": "Reconstruir el viento",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Vectores y composición",
+      "family": "v",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "ground",
+          "label": "Velocidad respecto a tierra",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(8; 5)",
+            "8 i + (5) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            8,
+            5
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "a"
+        },
+        {
+          "id": "wind",
+          "label": "Velocidad del viento",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(2; -3)",
+            "2 i + (-3) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            2,
+            -3
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        },
+        {
+          "id": "speed",
+          "label": "Rapidez del viento",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3.605551275463989,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "angle",
+          "label": "Ángulo del viento en [0,360)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 303.6900675,
+          "unit": "°",
+          "tolerance": 0.5,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_v_010.svg",
+          "alt": "Suma que debe cerrar el paralelogramo"
+        }
+      ],
+      "tags": [
+        "t2",
+        "v",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Reconstruir el viento. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Vectores y composición"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar invertir el orden de la resta de velocidades.",
+      "common_mistakes": [
+        "Invertir el orden de la resta de velocidades",
+        "Dar dirección de primer cuadrante a un viento hacia el sur"
+      ],
+      "parts_count": 2,
+      "statement_source": "\\(+x\\) este,\\(+y\\) norte. Un dron tiene \\(v_D\\)/\\(aire=(6,8) m/s\\) y tarda 20 s en desplazarse desde O hasta \\((160,100) m\\) con velocidades constantes. \n(a) Halla \\(v_D\\)/tierra y viento.\n(b) Completa: Velocidad del viento, Rapidez del viento, Ángulo del viento en [0,360).",
+      "solution_source": "\\(v_D\\)/\\(T=(160,100)/20=(8,5) m/s\\).\n\n\\(v_aire\\)/\\(T=v_D/T−v_D/aire=(2,−3) m/s\\); módulo √13=3,61 m/s, dirección 303,69° (o −56,31°).\n\n\\((6,8)\\)+\\((2,−3)\\)=\\((8,5)\\); multiplicando por 20 s recuperamos la posición medida.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    }
+  ]
+}

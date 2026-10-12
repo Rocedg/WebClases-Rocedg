@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "course": "1bach",
+  "topic": "t5",
+  "topic_slug": "energía-y-trabajo",
+  "block": "Energía y trabajo",
+  "description": "Trabajo, potencia y balances de energía con gravedad, muelles y disipación.",
+  "exercise_files": [
+    "w.json",
+    "k.json",
+    "g.json",
+    "e.json",
+    "b.json"
+  ]
+}

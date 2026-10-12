@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "course": "1bach",
+  "topic": "t1",
+  "topic_slug": "t1",
+  "block": "Movimiento rectilíneo",
+  "description": "Banco de contenido: revisión editorial y matemática; sin implementación de interfaz ni intentos.",
+  "exercise_files": [
+    "r.json",
+    "u.json",
+    "a.json",
+    "g_slopes.json",
+    "g_areas.json",
+    "i.json"
+  ]
+}

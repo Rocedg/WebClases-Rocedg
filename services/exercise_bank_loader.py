@@ -86,3 +86,58 @@ def load_topic_banks(content_root: Path) -> list[tuple[Path, dict[str, Any]]]:
 def load_exercise_banks(content_root: Path) -> list[dict[str, Any]]:
     """Load all logical topic banks below a content root."""
     return [data for _, data in load_topic_banks(content_root)]
+
+
+def exercise_block_name(topic: str, exercise: dict[str, Any]) -> str:
+    if topic != "t0":
+        return str(exercise["family"])
+    prefix, number_text = exercise["id"].rsplit("_", 1)
+    number = int(number_text)
+    if prefix == "t0_u":
+        return "units"
+    if prefix == "t0_m":
+        return "measurement_accuracy" if number <= 13 else "measurement_uncertainty"
+    if prefix == "t0_v":
+        if number <= 6:
+            return "vectors_basics"
+        if number <= 12:
+            return "vectors_operations"
+        if number <= 16:
+            return "vectors_components"
+        if number <= 24:
+            return "vectors_applications"
+        if number <= 43:
+            return "vectors_products"
+        if number <= 45:
+            return "vectors_decomposition"
+        return "vectors_axes"
+    return "calculus_graphs"
+
+
+def split_topic_bank(bank: dict[str, Any]) -> tuple[dict[str, Any], list[tuple[str, dict[str, Any]]]]:
+    """Split a merged bank while retaining exercise order within each block."""
+    topic = str(bank.get("topic") or "")
+    grouped: dict[str, list[dict[str, Any]]] = {}
+    for exercise in bank.get("exercises", []):
+        grouped.setdefault(exercise_block_name(topic, exercise), []).append(exercise)
+
+    manifest = {key: value for key, value in bank.items() if key != "exercises"}
+    filenames = [f"{name}.json" for name in grouped]
+    manifest["exercise_files"] = filenames
+    blocks = [(filename, {"exercises": exercises}) for filename, exercises in zip(filenames, grouped.values())]
+    return manifest, blocks
+
+
+def serialize_topic_bank(bank: dict[str, Any]) -> dict[Path, str]:
+    """Return the manifest and block files for deterministic generator output."""
+    manifest, blocks = split_topic_bank(bank)
+    output = {
+        Path("_topic.json"): json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+    }
+    output.update(
+        {
+            Path(filename): json.dumps(block, ensure_ascii=False, indent=2) + "\n"
+            for filename, block in blocks
+        }
+    )
+    return output

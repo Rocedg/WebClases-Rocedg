@@ -1,0 +1,424 @@
+{
+  "exercises": [
+    {
+      "id": "t0_v_046",
+      "title": "Cambio de ejes descomponiendo paso a paso",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "part_x",
+          "label": "\\(A_x\\hat\\imath\\) en los ejes nuevos",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            5.2,
+            -3.0
+          ],
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "tolerance": 0.02,
+          "prompt": "Escribe (x'; y') con 2 decimales.",
+          "unit": "m",
+          "part": "a"
+        },
+        {
+          "id": "part_y",
+          "label": "\\(A_y\\hat\\jmath\\) en los ejes nuevos",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            1.0,
+            1.73
+          ],
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "tolerance": 0.02,
+          "prompt": "Escribe (x'; y') con 2 decimales.",
+          "unit": "m",
+          "part": "b"
+        },
+        {
+          "id": "A_new",
+          "label": "\\(\\vec A\\) en los ejes nuevos",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            6.2,
+            -1.27
+          ],
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "tolerance": 0.02,
+          "prompt": "Escribe (x'; y') con 2 decimales.",
+          "unit": "m",
+          "part": "c"
+        },
+        {
+          "id": "modulus",
+          "label": "Módulo de \\(\\vec A\\) calculado en los ejes nuevos",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 6.32,
+          "tolerance": 0.01,
+          "prompt": "Con 2 decimales.",
+          "unit": "m",
+          "part": "d"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "t0_bank_v5_extension",
+        "source": "Revisión T0 v5 (errores y vectores)"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "poner positiva la componente y' de 6,0 î",
+        "intercambiar seno y coseno al descomponer ĵ",
+        "girar el vector en lugar de los ejes"
+      ],
+      "statement_source": "Un vector \\(\\vec A=(6{,}0;\\ 2{,}0)\\) m está dado en los ejes \\(x\\), \\(y\\) habituales. Se quieren sus componentes en unos ejes nuevos \\(x'\\), \\(y'\\) girados \\(30^\\circ\\) en sentido antihorario respecto a los originales.\n\nMétodo: escribe \\(\\vec A=A_x\\hat\\imath+A_y\\hat\\jmath\\). Cada uno de esos dos vectores, \\(A_x\\hat\\imath\\) y \\(A_y\\hat\\jmath\\), se descompone a su vez en los ejes nuevos \\(x'\\), \\(y'\\). Al final se suman las componentes \\(x'\\) entre sí y las \\(y'\\) entre sí.\n\n(a) El vector \\(6{,}0\\,\\hat\\imath\\) forma \\(30^\\circ\\) con \\(x'\\) y queda por debajo de él. Calcula sus componentes en \\(x'\\) y \\(y'\\).\n(b) El vector \\(2{,}0\\,\\hat\\jmath\\) forma \\(30^\\circ\\) con \\(y'\\) y queda a la derecha de \\(y'\\) (hacia \\(+x'\\)). Calcula sus componentes en \\(x'\\) y \\(y'\\).\n(c) Suma los resultados para obtener \\(\\vec A\\) en los ejes nuevos.\n(d) Comprueba el resultado: calcula el módulo con las componentes nuevas. Debe coincidir con el original.",
+      "solution_source": "(a) \\(6{,}0\\hat\\imath\\to(6{,}0\\cos30^\\circ;\\ -6{,}0\\sin30^\\circ)=(5{,}20;\\ -3{,}00)\\) m. La componente \\(y'\\) es negativa porque \\(\\hat\\imath\\) queda por debajo de \\(x'\\).\n(b) \\(2{,}0\\hat\\jmath\\to(2{,}0\\sin30^\\circ;\\ 2{,}0\\cos30^\\circ)=(1{,}00;\\ 1{,}73)\\) m.\n(c) \\(\\vec A'=(5{,}20+1{,}00;\\ -3{,}00+1{,}73)=(6{,}20;\\ -1{,}27)\\) m.\n(d) \\(\\sqrt{6{,}20^2+1{,}27^2}=6{,}32\\) m, igual que \\(\\sqrt{6{,}0^2+2{,}0^2}=6{,}32\\) m. Cambiar de ejes cambia las componentes, no el vector.\n\nTodo junto: \\(A'_x=A_x\\cos\\alpha+A_y\\sin\\alpha\\) y \\(A'_y=-A_x\\sin\\alpha+A_y\\cos\\alpha\\), con \\(\\alpha=30^\\circ\\)."
+    },
+    {
+      "id": "t0_v_047",
+      "title": "Cambio a ejes girados en sentido horario",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "part_x",
+          "label": "\\(4{,}0\\,\\hat\\imath\\) en los ejes nuevos",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            3.76,
+            1.37
+          ],
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "tolerance": 0.02,
+          "prompt": "Escribe (x'; y') con 2 decimales.",
+          "unit": "m/s",
+          "part": "a"
+        },
+        {
+          "id": "part_y",
+          "label": "\\(-3{,}0\\,\\hat\\jmath\\) en los ejes nuevos",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            1.03,
+            -2.82
+          ],
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "tolerance": 0.02,
+          "prompt": "Escribe (x'; y') con 2 decimales.",
+          "unit": "m/s",
+          "part": "b"
+        },
+        {
+          "id": "v_new",
+          "label": "\\(\\vec v\\) en los ejes nuevos",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            4.78,
+            -1.45
+          ],
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "tolerance": 0.02,
+          "prompt": "Escribe (x'; y') con 2 decimales.",
+          "unit": "m/s",
+          "part": "c"
+        },
+        {
+          "id": "modulus",
+          "label": "Módulo de \\(\\vec v\\) en los ejes nuevos",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 5.0,
+          "tolerance": 0.01,
+          "unit": "m/s",
+          "part": "d"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "t0_bank_v5_extension",
+        "source": "Revisión T0 v5 (errores y vectores)"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "usar +20° cuando los ejes giran en sentido horario",
+        "dar negativa la componente x' de −3,0 ĵ",
+        "no comprobar que el módulo se conserva"
+      ],
+      "statement_source": "Una pelota lleva una velocidad \\(\\vec v=(4{,}0;\\ -3{,}0)\\) m/s en ejes \\(x\\) horizontal e \\(y\\) vertical. Rueda sobre una rampa que baja \\(20^\\circ\\), así que conviene usar ejes \\(x'\\) a lo largo de la rampa (hacia abajo, \\(20^\\circ\\) por debajo de \\(+x\\)) e \\(y'\\) perpendicular a ella (hacia fuera).\n\nMétodo: escribe \\(\\vec A=A_x\\hat\\imath+A_y\\hat\\jmath\\). Cada uno de esos dos vectores, \\(A_x\\hat\\imath\\) y \\(A_y\\hat\\jmath\\), se descompone a su vez en los ejes nuevos \\(x'\\), \\(y'\\). Al final se suman las componentes \\(x'\\) entre sí y las \\(y'\\) entre sí.\n\n(a) \\(\\hat\\imath\\) queda \\(20^\\circ\\) por encima de \\(x'\\). Calcula las componentes de \\(4{,}0\\,\\hat\\imath\\) en \\(x'\\), \\(y'\\).\n(b) \\(-\\hat\\jmath\\) (hacia abajo) forma \\(70^\\circ\\) con \\(x'\\). Calcula las componentes de \\(-3{,}0\\,\\hat\\jmath\\) en \\(x'\\), \\(y'\\).\n(c) Suma los resultados para obtener \\(\\vec v\\) en los ejes de la rampa.\n(d) Comprueba el módulo.",
+      "solution_source": "(a) \\(4{,}0\\hat\\imath\\to(4{,}0\\cos20^\\circ;\\ 4{,}0\\sin20^\\circ)=(3{,}76;\\ 1{,}37)\\) m/s.\n(b) \\(-3{,}0\\hat\\jmath\\to(3{,}0\\sin20^\\circ;\\ -3{,}0\\cos20^\\circ)=(1{,}03;\\ -2{,}82)\\) m/s. Hacia abajo tiene componente positiva a lo largo de la rampa, porque la rampa baja.\n(c) \\(\\vec v'=(4{,}78;\\ -1{,}45)\\) m/s.\n(d) \\(\\sqrt{4{,}78^2+1{,}45^2}=5{,}0\\) m/s, igual que \\(\\sqrt{4{,}0^2+3{,}0^2}\\).\n\nCon la fórmula general y \\(\\alpha=-20^\\circ\\): \\(v'_x=v_x\\cos\\alpha+v_y\\sin\\alpha\\), \\(v'_y=-v_x\\sin\\alpha+v_y\\cos\\alpha\\)."
+    },
+    {
+      "id": "t0_v_048",
+      "title": "Volver de los ejes girados a los habituales",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "part_x",
+          "label": "\\(5{,}0\\,\\hat\\imath'\\) en ejes \\(x\\), \\(y\\)",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            3.83,
+            3.21
+          ],
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "tolerance": 0.02,
+          "prompt": "Escribe (x; y) con 2 decimales.",
+          "unit": "N",
+          "part": "a"
+        },
+        {
+          "id": "part_y",
+          "label": "\\(2{,}0\\,\\hat\\jmath'\\) en ejes \\(x\\), \\(y\\)",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            -1.29,
+            1.53
+          ],
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "tolerance": 0.02,
+          "prompt": "Escribe (x; y) con 2 decimales.",
+          "unit": "N",
+          "part": "b"
+        },
+        {
+          "id": "F",
+          "label": "\\(\\vec F\\) en ejes \\(x\\), \\(y\\)",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            2.54,
+            4.75
+          ],
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "tolerance": 0.02,
+          "prompt": "Escribe (x; y) con 2 decimales.",
+          "unit": "N",
+          "part": "c"
+        },
+        {
+          "id": "angle",
+          "label": "Ángulo de \\(\\vec F\\) con \\(+x\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 61.8,
+          "tolerance": 0.1,
+          "prompt": "En grados, con una cifra decimal.",
+          "unit": "°",
+          "part": "d"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "t0_bank_v5_extension",
+        "source": "Revisión T0 v5 (errores y vectores)"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "dar positiva la componente x de 2,0 ĵ'",
+        "restar el giro en vez de sumarlo al comprobar el ángulo",
+        "aplicar la fórmula de ida en lugar de la de vuelta"
+      ],
+      "statement_source": "En unos ejes \\(x'\\), \\(y'\\) girados \\(40^\\circ\\) en sentido antihorario respecto a los habituales, una fuerza vale \\(\\vec F=(5{,}0\\,\\hat\\imath'+2{,}0\\,\\hat\\jmath')\\) N. Queremos sus componentes en los ejes \\(x\\), \\(y\\) habituales. El método es el mismo, al revés: cada vector \\(5{,}0\\,\\hat\\imath'\\) y \\(2{,}0\\,\\hat\\jmath'\\) se descompone en \\(x\\), \\(y\\) y luego se suma.\n\n(a) \\(\\hat\\imath'\\) forma \\(40^\\circ\\) con \\(+x\\). Calcula las componentes de \\(5{,}0\\,\\hat\\imath'\\) en \\(x\\), \\(y\\).\n(b) \\(\\hat\\jmath'\\) forma \\(40^\\circ\\) con \\(+y\\), inclinado hacia \\(-x\\). Calcula las componentes de \\(2{,}0\\,\\hat\\jmath'\\) en \\(x\\), \\(y\\).\n(c) Suma los resultados.\n(d) Calcula el ángulo de \\(\\vec F\\) con \\(+x\\) y compruébalo: debe ser \\(40^\\circ\\) más el ángulo de \\(\\vec F\\) con \\(x'\\).",
+      "solution_source": "(a) \\(5{,}0\\hat\\imath'\\to(5{,}0\\cos40^\\circ;\\ 5{,}0\\sin40^\\circ)=(3{,}83;\\ 3{,}21)\\) N.\n(b) \\(2{,}0\\hat\\jmath'\\to(-2{,}0\\sin40^\\circ;\\ 2{,}0\\cos40^\\circ)=(-1{,}29;\\ 1{,}53)\\) N.\n(c) \\(\\vec F=(2{,}54;\\ 4{,}75)\\) N.\n(d) \\(\\arctan(4{,}75/2{,}54)=61{,}8^\\circ\\). En los ejes girados, \\(\\arctan(2{,}0/5{,}0)=21{,}8^\\circ\\), y \\(40^\\circ+21{,}8^\\circ=61{,}8^\\circ\\)."
+    },
+    {
+      "id": "t0_v_049",
+      "title": "De una rampa a otra pasando por los ejes habituales",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 5,
+      "estimated_minutes": 16,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "F_xy",
+          "label": "\\(\\vec F\\) en ejes \\(x\\), \\(y\\)",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            8.66,
+            5.0
+          ],
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "tolerance": 0.02,
+          "prompt": "Escribe (x; y) con 2 decimales.",
+          "unit": "N",
+          "part": "a"
+        },
+        {
+          "id": "part_x",
+          "label": "\\(F_x\\hat\\imath\\) en los ejes de la rampa 2",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            8.37,
+            2.24
+          ],
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "tolerance": 0.02,
+          "prompt": "Escribe (x''; y'') con 2 decimales.",
+          "unit": "N",
+          "part": "b"
+        },
+        {
+          "id": "part_y",
+          "label": "\\(F_y\\hat\\jmath\\) en los ejes de la rampa 2",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            -1.29,
+            4.83
+          ],
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "tolerance": 0.02,
+          "prompt": "Escribe (x''; y'') con 2 decimales.",
+          "unit": "N",
+          "part": "b"
+        },
+        {
+          "id": "F_ramp2",
+          "label": "\\(\\vec F\\) en los ejes de la rampa 2",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            7.07,
+            7.07
+          ],
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "tolerance": 0.02,
+          "prompt": "Escribe (x''; y'') con 2 decimales.",
+          "unit": "N",
+          "part": "c"
+        },
+        {
+          "id": "angle",
+          "label": "Ángulo entre \\(\\vec F\\) y el eje \\(x''\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 45.0,
+          "tolerance": 0.1,
+          "unit": "°",
+          "part": "d"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "t0_bank_v5_extension",
+        "source": "Revisión T0 v5 (errores y vectores)"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "sumar 30° y 15° con el signo equivocado",
+        "dar positiva la componente x'' de F_y ĵ",
+        "olvidar que el módulo debe seguir siendo 10,0 N"
+      ],
+      "statement_source": "Una fuerza de 10,0 N apunta a lo largo de la rampa 1, que sube \\(30^\\circ\\): en los ejes de esa rampa vale \\(\\vec F=(10{,}0;\\ 0)\\) N. Se quiere expresar en los ejes de la rampa 2, que baja \\(15^\\circ\\): \\(x''\\) a lo largo de la rampa 2 (\\(15^\\circ\\) por debajo de \\(+x\\)) e \\(y''\\) perpendicular a ella (hacia fuera).\n\nHazlo en dos pasos, pasando por los ejes habituales.\n\n(a) Descompón \\(\\vec F\\) en los ejes \\(x\\), \\(y\\) habituales.\n(b) Descompón cada parte, \\(F_x\\hat\\imath\\) y \\(F_y\\hat\\jmath\\), en los ejes de la rampa 2. \\(\\hat\\imath\\) queda \\(15^\\circ\\) por encima de \\(x''\\); \\(\\hat\\jmath\\) forma \\(15^\\circ\\) con \\(y''\\), inclinado hacia \\(-x''\\).\n(c) Suma para obtener \\(\\vec F\\) en los ejes de la rampa 2.\n(d) Calcula el ángulo entre \\(\\vec F\\) y \\(x''\\). ¿Cuadra con el ángulo entre las dos rampas?",
+      "solution_source": "(a) \\(F_x=10{,}0\\cos30^\\circ=8{,}66\\) N y \\(F_y=10{,}0\\sin30^\\circ=5{,}00\\) N.\n(b) \\(8{,}66\\hat\\imath\\to(8{,}66\\cos15^\\circ;\\ 8{,}66\\sin15^\\circ)=(8{,}37;\\ 2{,}24)\\) N. \\(5{,}00\\hat\\jmath\\to(-5{,}00\\sin15^\\circ;\\ 5{,}00\\cos15^\\circ)=(-1{,}29;\\ 4{,}83)\\) N.\n(c) \\(\\vec F''=(7{,}07;\\ 7{,}07)\\) N.\n(d) \\(\\arctan(7{,}07/7{,}07)=45^\\circ\\), justo \\(30^\\circ+15^\\circ\\): el ángulo entre las dos rampas. Con matrices de giro se haría en un paso, pero descomponer paso a paso deja ver qué aporta cada componente."
+    }
+  ]
+}

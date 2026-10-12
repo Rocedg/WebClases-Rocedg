@@ -1,0 +1,707 @@
+{
+  "exercises": [
+    {
+      "id": "t0_v_017",
+      "title": "Cambio a ejes girados",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "written_upload_plus_numeric",
+      "difficulty": 5,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "Ax_prime",
+          "label": "\\(A_{x'}\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 8.66,
+          "tolerance": 0.02,
+          "unit": "N",
+          "part": "a"
+        },
+        {
+          "id": "Ay_prime",
+          "label": "\\(A_{y'}\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -5.0,
+          "tolerance": 0.02,
+          "unit": "N",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t0/assets/v017_ejes_girados.svg",
+          "alt": "Diagrama obligatorio para t0_v_017."
+        }
+      ],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "girar el vector junto con los ejes",
+        "poner $A_{y'}>0$",
+        "confundir transformación activa y cambio de base"
+      ],
+      "statement_source": "El vector \\(\\vec A=(10,\\,0)\\) N está dado en los ejes \\(x\\), \\(y\\). Unos ejes nuevos \\(x'\\), \\(y'\\) están girados \\(30^\\circ\\) en sentido antihorario respecto a los originales. Dibuja los dos sistemas antes de calcular.\n\n(a) Calcula las componentes de \\(\\vec A\\) en los ejes nuevos, \\(A_{x'}\\) y \\(A_{y'}\\).",
+      "solution_source": "\\(\\vec A\\) queda \\(30^\\circ\\) por debajo de \\(x'\\): \\(A_{x'}=10\\cos30^\\circ=8{,}66\\) N y \\(A_{y'}=-10\\sin30^\\circ=-5{,}00\\) N. El signo negativo aparece porque \\(\\vec A\\) queda en el lado \\(-y'\\). Al proyectar de vuelta se recupera \\((10,\\,0)\\) N.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_018",
+      "title": "Peso en un plano inclinado",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "written_upload_plus_numeric",
+      "difficulty": 4,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "response_1",
+          "label": "Dirección del peso",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "vertical",
+              "label": "Vertical hacia abajo"
+            },
+            {
+              "id": "normal",
+              "label": "Perpendicular al plano hacia dentro"
+            },
+            {
+              "id": "parallel",
+              "label": "Paralela a la rampa hacia abajo"
+            }
+          ],
+          "correct_option_id": "vertical",
+          "part": "a"
+        },
+        {
+          "id": "Px",
+          "label": "Componente \\(P_x\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -24.8,
+          "tolerance": 0.1,
+          "significant_figures": 3,
+          "prompt": "Da el resultado con 3 cifras significativas.",
+          "unit": "N",
+          "part": "b"
+        },
+        {
+          "id": "normal",
+          "label": "Módulo de la normal",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 53.3,
+          "tolerance": 0.1,
+          "tolerance_note": "Tolerancia añadida por contrato técnico al no estar explicitada en la línea abreviada del spec.",
+          "unit": "N",
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t0/assets/v018_plano_inclinado.svg",
+          "alt": "Plano inclinado con ejes locales y peso vertical."
+        }
+      ],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "poner una componente positiva",
+        "intercambiar seno/coseno",
+        "dibujar el peso perpendicular a la rampa"
+      ],
+      "statement_source": "Un bloque de \\(6,00\\,\\mathrm{kg}\\) reposa sobre un plano inclinado \\(25,0^\\circ\\). Toma \\(+x\\) hacia arriba por la rampa y \\(+y\\) normal hacia fuera. Usa \\(g=9,80\\,\\mathrm{m/s^2}\\).\n\n(a) Selecciona la dirección del peso en estos ejes.\n\n(b) Calcula la componente \\(P_x\\) del peso.\n\n(c) Calcula el módulo de la normal si no hay otras fuerzas perpendiculares al plano.",
+      "solution_source": "El peso es vertical hacia abajo, con ambas componentes negativas en los ejes locales.\n\n\\[P_x=-mg\\sin25^\\circ=-24,8\\,\\mathrm{N}\\]\n\nComo \\(P_y=-mg\\cos25^\\circ\\), el equilibrio perpendicular da \\(N=-P_y=53,3\\,\\mathrm{N}\\)."
+    },
+    {
+      "id": "t0_v_019",
+      "title": "Distancia recorrida y desplazamiento",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "distance",
+          "label": "Distancia recorrida",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 10.0,
+          "tolerance": 0.01,
+          "unit": "km",
+          "part": "a"
+        },
+        {
+          "id": "Rx",
+          "label": "\\(\\Delta x\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -2.0,
+          "tolerance": 0.01,
+          "unit": "km",
+          "part": "b"
+        },
+        {
+          "id": "Ry",
+          "label": "\\(\\Delta y\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 2.0,
+          "tolerance": 0.01,
+          "unit": "km",
+          "part": "b"
+        },
+        {
+          "id": "Rmag",
+          "label": "Módulo del desplazamiento",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 2.83,
+          "tolerance": 0.01,
+          "unit": "km",
+          "part": "c"
+        },
+        {
+          "id": "Rangle",
+          "label": "Ángulo desde +x",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 135.0,
+          "tolerance": 0.01,
+          "unit": "°",
+          "part": "c"
+        },
+        {
+          "id": "average_speed",
+          "label": "Rapidez media",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 5.0,
+          "tolerance": 0.01,
+          "unit": "km/h",
+          "part": "d"
+        },
+        {
+          "id": "average_velocity_magnitude",
+          "label": "Módulo de la velocidad media",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.41,
+          "tolerance": 0.01,
+          "unit": "km/h",
+          "part": "d"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "dividir el mismo numerador en ambos promedios",
+        "dar solo el módulo del desplazamiento",
+        "omitir dirección"
+      ],
+      "statement_source": "Una persona camina 3,0 km al este, 2,0 km al norte y 5,0 km al oeste, y tarda 2,0 h. Toma \\(+x\\) hacia el este y \\(+y\\) hacia el norte.\n\n(a) Calcula la distancia total recorrida.\n(b) Calcula las componentes del desplazamiento.\n(c) Calcula el módulo del desplazamiento y el ángulo que forma con \\(+x\\).\n(d) Calcula la rapidez media y el módulo de la velocidad media.",
+      "solution_source": "(a) 3,0 + 2,0 + 5,0 = 10,0 km.\n(b) \\(\\Delta\\vec r=(3{,}0-5{,}0;\\;2{,}0)=(-2{,}0;\\;2{,}0)\\) km.\n(c) \\(|\\Delta\\vec r|=2{,}83\\) km, a \\(135^\\circ\\) (noroeste).\n(d) Rapidez media 10,0/2,0 = 5,00 km/h; velocidad media 2,83/2,0 = 1,41 km/h.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_020",
+      "title": "Resultante y fuerza equilibrante",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "Rx",
+          "label": "\\(R_x\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 12.5,
+          "tolerance": 0.01,
+          "unit": "N",
+          "part": "a"
+        },
+        {
+          "id": "Ry",
+          "label": "\\(R_y\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 4.33,
+          "tolerance": 0.01,
+          "unit": "N",
+          "part": "a"
+        },
+        {
+          "id": "Rmag",
+          "label": "Módulo \\(|\\vec R|\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 13.23,
+          "tolerance": 0.03,
+          "unit": "N",
+          "part": "b"
+        },
+        {
+          "id": "Rangle",
+          "label": "Ángulo de R desde +x",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 19.1,
+          "tolerance": 0.2,
+          "unit": "°",
+          "part": "c"
+        },
+        {
+          "id": "response_4",
+          "label": "Fuerza equilibrante",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            -12.5,
+            -4.33
+          ],
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "tolerance": 0.02,
+          "prompt": "Escribe (x; y) con 2 decimales.",
+          "unit": "N",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "sumar módulos",
+        "confundir equilibrante con una fuerza perpendicular",
+        "cambiar el módulo al invertir el sentido"
+      ],
+      "statement_source": "Tres personas tiran de una anilla: 40,0 N a \\(0^\\circ\\), 30,0 N a \\(120^\\circ\\) y 25,0 N a \\(240^\\circ\\), con los ángulos medidos desde \\(+x\\).\n\n(a) Calcula las componentes de la resultante.\n(b) Calcula su módulo.\n(c) Calcula su ángulo con +x y la cuarta fuerza que dejaría la anilla en equilibrio.",
+      "solution_source": "(a) \\(R_x=40{,}0+30{,}0\\cos120^\\circ+25{,}0\\cos240^\\circ=12{,}50\\) N y \\(R_y=30{,}0\\sin120^\\circ+25{,}0\\sin240^\\circ=4{,}33\\) N.\n(b) \\(|\\vec R|=13{,}23\\) N.\n(c) \\(\\theta=19{,}1^\\circ\\). La equilibrante es \\(-\\vec R=(-12{,}50;\\,-4{,}33)\\) N, a \\(199{,}1^\\circ\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_021",
+      "title": "Barca que quiere cruzar sin deriva",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 5,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "heading",
+          "label": "Ángulo al oeste del norte",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 22.0,
+          "tolerance": 0.2,
+          "unit": "°",
+          "part": "a"
+        },
+        {
+          "id": "response_2",
+          "label": "Velocidad respecto a la orilla",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            0.0,
+            3.71
+          ],
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "tolerance": 0.02,
+          "prompt": "Escribe (x; y) con 2 decimales.",
+          "unit": "m/s",
+          "part": "b"
+        },
+        {
+          "id": "crossing_time",
+          "label": "Tiempo de cruce",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 48.5,
+          "tolerance": 0.2,
+          "unit": "s",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "sumar 4 y 1,5 como escalares",
+        "usar la resultante de deriva libre",
+        "dividir el ancho entre 4,00"
+      ],
+      "statement_source": "Una barca navega a 4,00 m·s⁻¹ respecto al agua. El río fluye a 1,50 m·s⁻¹ hacia el este y tiene 180 m de ancho. La barca quiere llegar justo enfrente, en la orilla norte. Toma +x hacia el este y +y hacia el norte.\n\n(a) Calcula el ángulo, medido desde el norte hacia el oeste, con que debe apuntar la barca.\n(b) Calcula la velocidad de la barca respecto a la orilla.\n(c) Calcula el tiempo que tarda en cruzar.",
+      "solution_source": "(a) La componente oeste de la barca debe anular la corriente: \\(4{,}00\\sin\\alpha=1{,}50\\Rightarrow\\alpha=22{,}0^\\circ\\).\n(b) La componente norte es \\(\\sqrt{4{,}00^2-1{,}50^2}=3{,}71\\) m/s: \\(\\vec v=(0;\\,3{,}71)\\) m/s.\n(c) \\(t=180/3{,}71=48{,}5\\) s.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_022",
+      "title": "Desplazamiento de un dron",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "third_angle",
+          "label": "Ángulo del tercer tramo desde +x",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 120.0,
+          "tolerance": 0.01,
+          "unit": "°",
+          "part": "a"
+        },
+        {
+          "id": "Rx",
+          "label": "\\(\\Delta x\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 9.5,
+          "tolerance": 0.01,
+          "unit": "m",
+          "part": "b"
+        },
+        {
+          "id": "Ry",
+          "label": "\\(\\Delta y\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -2.67,
+          "tolerance": 0.01,
+          "unit": "m",
+          "part": "b"
+        },
+        {
+          "id": "Rmag",
+          "label": "Módulo del desplazamiento",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 9.87,
+          "tolerance": 0.03,
+          "unit": "m",
+          "part": "c"
+        },
+        {
+          "id": "path_length",
+          "label": "Distancia recorrida",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 24.0,
+          "tolerance": 0.01,
+          "unit": "m",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "usar 60° desde +x",
+        "sumar 5 al componente x",
+        "responder 24 m como desplazamiento"
+      ],
+      "statement_source": "Un dron se desplaza 12,0 m al este, 7,0 m al sur y después 5,0 m en una dirección que forma \\(60^\\circ\\) por encima del semieje oeste. Toma \\(+x\\) hacia el este y \\(+y\\) hacia el norte.\n\n(a) Calcula el ángulo del tercer tramo medido desde \\(+x\\).\n(b) Calcula las componentes del desplazamiento total.\n(c) Calcula el módulo del desplazamiento y la distancia recorrida.",
+      "solution_source": "(a) \\(180^\\circ-60^\\circ=120^\\circ\\).\n(b) Tercer tramo: \\((5{,}0\\cos120^\\circ;\\;5{,}0\\sin120^\\circ)=(-2{,}50;\\;4{,}33)\\) m. Total: \\((12{,}0-2{,}50;\\;-7{,}0+4{,}33)=(9{,}50;\\;-2{,}67)\\) m.\n(c) \\(|\\Delta\\vec r|=9{,}87\\) m, frente a 24,0 m recorridos.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_023",
+      "title": "Producto escalar y proyección",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 5,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "dot",
+          "label": "\\(\\vec A\\cdot\\vec B\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -3.0,
+          "tolerance": 0.01,
+          "part": "a"
+        },
+        {
+          "id": "angle",
+          "label": "Ángulo entre A y B",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 96.9,
+          "tolerance": 0.2,
+          "unit": "°",
+          "part": "b"
+        },
+        {
+          "id": "scalar_projection",
+          "label": "Proyección escalar \\(\\vec d\\cdot\\hat u\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 5.2,
+          "tolerance": 0.02,
+          "unit": "m",
+          "part": "c"
+        },
+        {
+          "id": "projection_x",
+          "label": "Componente x del vector proyección",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 3.12,
+          "tolerance": 0.01,
+          "unit": "m",
+          "part": "d"
+        },
+        {
+          "id": "projection_y",
+          "label": "Componente y del vector proyección",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 4.16,
+          "tolerance": 0.01,
+          "unit": "m",
+          "part": "d"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "multiplicar módulos en lugar de componentes",
+        "proyectar sobre u sin normalizar",
+        "no interpretar el producto negativo como ángulo obtuso"
+      ],
+      "statement_source": "Sean \\(\\vec A=(2,\\,-1,\\,3)\\) y \\(\\vec B=(4,\\,5,\\,-2)\\). Además, sean \\(\\vec d=(6,\\,2)\\) m y la dirección \\(\\vec u=(3,\\,4)\\).\n\n(a) Calcula \\(\\vec A\\cdot\\vec B\\).\n(b) Calcula el ángulo entre \\(\\vec A\\) y \\(\\vec B\\).\n(c) Calcula la proyección escalar de \\(\\vec d\\) sobre la dirección de \\(\\vec u\\), \\(\\vec d\\cdot\\hat u\\).\n(d) Calcula el vector proyección, \\((\\vec d\\cdot\\hat u)\\,\\hat u\\).",
+      "solution_source": "(a) \\(8-5-6=-3\\).\n(b) \\(\\cos\\theta=-3/(\\sqrt{14}\\sqrt{45})\\), así que \\(\\theta=96{,}9^\\circ\\): obtuso porque el producto es negativo.\n(c) \\(\\hat u=(0{,}6;\\,0{,}8)\\) y \\(\\vec d\\cdot\\hat u=3{,}6+1{,}6=5{,}20\\) m. Hay que normalizar \\(\\vec u\\) antes.\n(d) \\(5{,}20\\,\\hat u=(3{,}12;\\,4{,}16)\\) m.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_024",
+      "title": "Producto vectorial y carga negativa",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "short_text_plus_numeric",
+      "difficulty": 5,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "A_cross_B",
+          "label": "Componente \\(z\\) de \\(\\vec A\\times\\vec B\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 12.0,
+          "tolerance": 0.01,
+          "part": "a"
+        },
+        {
+          "id": "B_cross_A",
+          "label": "Componente \\(z\\) de \\(\\vec B\\times\\vec A\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -12.0,
+          "tolerance": 0.01,
+          "part": "a"
+        },
+        {
+          "id": "area",
+          "label": "Área del paralelogramo",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 12.0,
+          "tolerance": 0.01,
+          "part": "b"
+        },
+        {
+          "id": "v_cross_B",
+          "label": "Sentido de \\(\\vec v\\times\\vec B\\)",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "sale",
+              "label": "Sale del papel (+z)"
+            },
+            {
+              "id": "entra",
+              "label": "Entra en el papel (−z)"
+            }
+          ],
+          "correct_option_id": "sale",
+          "part": "c"
+        },
+        {
+          "id": "force",
+          "label": "Sentido de la fuerza \\(q\\,\\vec v\\times\\vec B\\)",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "sale",
+              "label": "Sale del papel (+z)"
+            },
+            {
+              "id": "entra",
+              "label": "Entra en el papel (−z)"
+            }
+          ],
+          "correct_option_id": "entra",
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t0/assets/v024_entra_sale.svg",
+          "alt": "Diagrama obligatorio para t0_v_024."
+        }
+      ],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "considerar conmutativo el producto vectorial",
+        "volver a multiplicar por el módulo de q cuando solo se pide sentido",
+        "olvidar invertir por carga negativa"
+      ],
+      "statement_source": "Sean \\(\\vec A=3\\,\\hat\\imath\\) y \\(\\vec B=4\\,\\hat\\jmath\\), con \\(x\\) hacia la derecha, \\(y\\) hacia arriba y \\(+z\\) saliendo del papel.\n\n(a) Calcula la componente \\(z\\) de \\(\\vec A\\times\\vec B\\) y la de \\(\\vec B\\times\\vec A\\).\n(b) Calcula el área del paralelogramo que forman \\(\\vec A\\) y \\(\\vec B\\).\n(c) Una carga negativa \\(q\\) se mueve hacia \\(+x\\) en un campo magnético \\(\\vec B\\) hacia \\(+y\\). Indica el sentido de \\(\\vec v\\times\\vec B\\) y el de la fuerza \\(q\\,\\vec v\\times\\vec B\\).",
+      "solution_source": "(a) \\(\\vec A\\times\\vec B=12\\,\\hat k\\) (sale del papel) y \\(\\vec B\\times\\vec A=-12\\,\\hat k\\) (entra): el orden importa.\n(b) \\(|\\vec A\\times\\vec B|=12\\).\n(c) \\(\\hat\\imath\\times\\hat\\jmath=\\hat k\\): \\(\\vec v\\times\\vec B\\) sale del papel. Como \\(q<0\\), la fuerza tiene el sentido contrario: entra en el papel.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    }
+  ]
+}

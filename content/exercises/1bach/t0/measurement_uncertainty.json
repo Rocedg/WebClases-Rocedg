@@ -1,0 +1,1203 @@
+{
+  "exercises": [
+    {
+      "id": "t0_m_014",
+      "title": "Pendiente experimental y unidades",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "slope",
+          "label": "Pendiente \\(m\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 2.0,
+          "tolerance": 0.02,
+          "unit": "N·m⁻¹",
+          "part": "a"
+        },
+        {
+          "id": "intercept",
+          "label": "Ordenada en el origen \\(b\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.0,
+          "tolerance": 0.02,
+          "unit": "N",
+          "part": "b"
+        },
+        {
+          "id": "prediction",
+          "label": "Predicción \\(y(3{,}0\\ \\mathrm{m})\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 7.0,
+          "tolerance": 0.05,
+          "unit": "N",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "omitir unidades de pendiente",
+        "forzar paso por origen",
+        "intercambiar x e y"
+      ],
+      "statement_source": "En una gráfica de \\(y\\) (en N, eje vertical) frente a \\(x\\) (en m, eje horizontal) hay tres puntos: (0,0 m; 1,0 N), (2,0 m; 5,1 N) y (4,0 m; 9,0 N). Usa solo el primer y el último punto para trazar la recta \\(y=mx+b\\).\n\n(a) Calcula la pendiente \\(m\\).\n(b) Calcula la ordenada en el origen \\(b\\).\n(c) Con esa recta, predice \\(y\\) para \\(x=3{,}0\\) m.",
+      "solution_source": "(a) \\(m=\\dfrac{9{,}0-1{,}0}{4{,}0-0{,}0}=2{,}00\\) N·m⁻¹. La pendiente lleva unidades de eje vertical entre eje horizontal.\n(b) En \\(x=0\\), \\(y=1{,}0\\) N, así que \\(b=1{,}00\\) N. La recta no pasa por el origen.\n(c) \\(y=2{,}00\\cdot3{,}0+1{,}00=7{,}00\\) N.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_015",
+      "title": "Incertidumbre de una potencia",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "volume",
+          "label": "Volumen \\(V\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 65.45,
+          "tolerance": 0.02,
+          "prompt": "Sin redondear (2 decimales).",
+          "unit": "cm³",
+          "part": "a"
+        },
+        {
+          "id": "relative",
+          "label": "Incertidumbre relativa",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 2.4,
+          "tolerance": 0.01,
+          "prompt": "En porcentaje.",
+          "unit": "%",
+          "part": "b"
+        },
+        {
+          "id": "absolute",
+          "label": "Incertidumbre absoluta \\(\\Delta V\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.6,
+          "tolerance": 0.05,
+          "unit": "cm³",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "usar $3u_r$ sin dividir por r",
+        "cubicar la incertidumbre",
+        "informar más decimales en V que en u"
+      ],
+      "statement_source": "Se calcula el volumen de una esfera con \\(V=\\tfrac43\\pi r^3\\) a partir del radio medido \\(r=(2{,}50\\pm0{,}02)\\) cm. Para una potencia, la incertidumbre relativa se multiplica por el exponente: \\(\\dfrac{\\Delta V}{V}=3\\,\\dfrac{\\Delta r}{r}\\).\n\n(a) Calcula el volumen \\(V\\).\n(b) Calcula su incertidumbre relativa, en porcentaje.\n(c) Calcula su incertidumbre absoluta \\(\\Delta V\\), con 2 cifras significativas.\n\nDespués escribe el resultado como \\((V\\pm\\Delta V)\\) cm³.",
+      "solution_source": "(a) \\(V=\\tfrac43\\pi(2{,}50)^3=65{,}45\\) cm³.\n(b) \\(3\\cdot0{,}02/2{,}50=0{,}0240=2{,}40\\,\\%\\). No se eleva 0,02 al cubo.\n(c) \\(\\Delta V=65{,}45\\cdot0{,}0240=1{,}57\\approx1{,}6\\) cm³.\n\nResultado: \\((65{,}4\\pm1{,}6)\\) cm³.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_016",
+      "title": "Escritura correcta de un resultado",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "single_choice_plus_text",
+      "difficulty": 3,
+      "estimated_minutes": 8,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "choice",
+          "label": "Resultado bien comunicado",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "A",
+              "label": "A) \\((2{,}3764\\pm0{,}083)\\) m"
+            },
+            {
+              "id": "B",
+              "label": "B) \\((2{,}4\\pm0{,}08)\\) m"
+            },
+            {
+              "id": "C",
+              "label": "C) \\((2{,}38\\pm0{,}08)\\) m"
+            },
+            {
+              "id": "D",
+              "label": "D) \\((2{,}376\\pm0{,}1)\\) m"
+            }
+          ],
+          "correct_option_id": "C",
+          "part": "a"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "elegir A por “más precisión”",
+        "elegir B redondeando x a décimas",
+        "redondear x antes de u"
+      ],
+      "statement_source": "Un cálculo produce \\(x=2{,}3764\\) m con una incertidumbre \\(\\Delta x=0{,}083\\) m. Regla: la incertidumbre se comunica con una cifra significativa y el valor se redondea al mismo decimal que la incertidumbre.\n\n(a) Elige la forma correcta de comunicar el resultado.",
+      "solution_source": "C. Primero se redondea la incertidumbre: \\(0{,}083\\to0{,}08\\) m (centésimas). Después el valor a centésimas: \\(2{,}3764\\to2{,}38\\) m.\nA da cifras que no se pueden defender; B redondea el valor a décimas aunque la incertidumbre llega a centésimas; D redondea mal la incertidumbre y no iguala decimales.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_017",
+      "title": "Conversión de una medida con incertidumbre",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "numeric_with_format",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "value",
+          "label": "Valor en m·s⁻¹",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 20.0,
+          "tolerance": 0.005,
+          "unit": "m·s⁻¹",
+          "part": "a"
+        },
+        {
+          "id": "uncertainty",
+          "label": "Incertidumbre en m·s⁻¹",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.14,
+          "tolerance": 0.005,
+          "significant_figures": 2,
+          "prompt": "Con 2 cifras significativas.",
+          "unit": "m·s⁻¹",
+          "part": "b"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "convertir solo el valor central",
+        "multiplicar por 3,6",
+        "informar 20 ± 0,14"
+      ],
+      "statement_source": "Una velocidad se mide como \\((72{,}0\\pm0{,}5)\\) km·h⁻¹. Hay que expresarla en m·s⁻¹ aplicando el mismo factor al valor y a la incertidumbre.\n\n(a) Convierte el valor central a m·s⁻¹.\n(b) Convierte la incertidumbre a m·s⁻¹ y redondéala a 2 cifras significativas.\n\nDespués escribe el resultado con el mismo número de decimales en el valor y en la incertidumbre.",
+      "solution_source": "(a) \\(72{,}0/3{,}6=20{,}00\\) m·s⁻¹.\n(b) \\(0{,}5/3{,}6=0{,}1389\\approx0{,}14\\) m·s⁻¹.\n\nResultado: \\((20{,}00\\pm0{,}14)\\) m·s⁻¹. Escribir \\(20\\pm0{,}14\\) no iguala los decimales.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_018",
+      "title": "Calibración lineal de un termómetro",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "numeric_multi",
+      "difficulty": 5,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "a",
+          "label": "Pendiente \\(a\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.008,
+          "tolerance": 0.0005,
+          "prompt": "Sin unidades, con 4 cifras significativas.",
+          "part": "a"
+        },
+        {
+          "id": "b",
+          "label": "Término \\(b\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.4,
+          "tolerance": 0.01,
+          "unit": "°C",
+          "part": "b"
+        },
+        {
+          "id": "corrected",
+          "label": "Temperatura real",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 36.3,
+          "tolerance": 0.05,
+          "unit": "°C",
+          "part": "c"
+        },
+        {
+          "id": "reason",
+          "label": "¿Por qué no basta con restar 0,4 °C?",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "escala",
+              "label": "Porque además del error de cero hay error de escala: \\(a\\neq1\\)"
+            },
+            {
+              "id": "resolucion",
+              "label": "Porque 0,4 °C es menor que la resolución del termómetro"
+            },
+            {
+              "id": "aleatorio",
+              "label": "Porque el error de cero es aleatorio"
+            }
+          ],
+          "correct_option_id": "escala",
+          "part": "d"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "corregir solo el cero",
+        "invertir a",
+        "usar grados Celsius como factor multiplicativo con unidades en a"
+      ],
+      "statement_source": "Un termómetro marca 0,4 °C cuando la temperatura real es 0,0 °C y 101,2 °C cuando la real es 100,0 °C. Supón una relación lineal entre la lectura y la temperatura real: \\(T_{lec}=a\\,T_{real}+b\\).\n\n(a) Calcula la pendiente \\(a\\) (no tiene unidades).\n(b) Calcula \\(b\\).\n(c) El termómetro marca 37,0 °C. Calcula la temperatura real con \\(T_{real}=(T_{lec}-b)/a\\).\n(d) Indica por qué restar solo 0,4 °C no corrige del todo la lectura.",
+      "solution_source": "(a) \\(a=(101{,}2-0{,}4)/(100{,}0-0{,}0)=1{,}008\\).\n(b) Con \\(T_{real}=0\\): \\(b=0{,}4\\) °C.\n(c) \\(T_{real}=(37{,}0-0{,}4)/1{,}008=36{,}31\\approx36{,}3\\) °C.\n(d) Restar 0,4 °C daría 36,6 °C. Falta corregir el error de escala: el termómetro avanza 1,008 °C por cada grado real.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_019",
+      "title": "Compatibilidad de dos medidas",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "short_text_plus_numeric",
+      "difficulty": 4,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "A_min",
+          "label": "Extremo inferior de A",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 9.6,
+          "tolerance": 0.01,
+          "part": "a"
+        },
+        {
+          "id": "A_max",
+          "label": "Extremo superior de A",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 10.0,
+          "tolerance": 0.01,
+          "part": "a"
+        },
+        {
+          "id": "B_min",
+          "label": "Extremo inferior de B",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 10.0,
+          "tolerance": 0.01,
+          "part": "b"
+        },
+        {
+          "id": "B_max",
+          "label": "Extremo superior de B",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 10.2,
+          "tolerance": 0.01,
+          "part": "b"
+        },
+        {
+          "id": "compatible",
+          "label": "¿Son compatibles?",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "solapan",
+              "label": "Sí, los intervalos se solapan ampliamente"
+            },
+            {
+              "id": "limite",
+              "label": "Sí, pero justo en el límite: los intervalos solo se tocan"
+            },
+            {
+              "id": "centros",
+              "label": "No, porque los valores centrales son distintos"
+            },
+            {
+              "id": "separados",
+              "label": "No, los intervalos no llegan a tocarse"
+            }
+          ],
+          "correct_option_id": "limite",
+          "part": "c"
+        },
+        {
+          "id": "difference",
+          "label": "Diferencia \\(B-A\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.3,
+          "tolerance": 0.01,
+          "part": "d"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "comparar solo centros",
+        "exigir solapamiento de anchura positiva pese al criterio",
+        "sumar incertidumbres al centro incorrecto"
+      ],
+      "statement_source": "Dos métodos miden la misma magnitud y dan \\(A=(9{,}8\\pm0{,}2)\\) y \\(B=(10{,}1\\pm0{,}1)\\), en la misma unidad. Criterio: dos medidas son compatibles si sus intervalos \\([x-\\Delta x,\\ x+\\Delta x]\\) se solapan o, al menos, se tocan.\n\n(a) Escribe los extremos inferior y superior del intervalo de A.\n(b) Escribe los extremos inferior y superior del intervalo de B.\n(c) Decide si A y B son compatibles.\n(d) Calcula la diferencia entre los valores centrales, \\(B-A\\).",
+      "solution_source": "(a) A: [9,6; 10,0].\n(b) B: [10,0; 10,2].\n(c) Los intervalos se tocan en 10,0: son compatibles, justo en el límite del criterio. No basta con comparar los centros.\n(d) 10,1 − 9,8 = 0,3.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_020",
+      "title": "Medir varias oscilaciones",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "numeric_multi_plus_text",
+      "difficulty": 5,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "T1",
+          "label": "Periodo con una oscilación",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.9,
+          "tolerance": 0.01,
+          "unit": "s",
+          "part": "a"
+        },
+        {
+          "id": "u1",
+          "label": "Incertidumbre con una oscilación",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.2,
+          "tolerance": 0.01,
+          "unit": "s",
+          "part": "a"
+        },
+        {
+          "id": "T10",
+          "label": "Periodo con diez oscilaciones",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.86,
+          "tolerance": 0.005,
+          "unit": "s",
+          "part": "b"
+        },
+        {
+          "id": "u10",
+          "label": "Incertidumbre con diez oscilaciones",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.02,
+          "tolerance": 0.005,
+          "unit": "s",
+          "part": "b"
+        },
+        {
+          "id": "improvement_factor",
+          "label": "Factor de reducción",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 10.0,
+          "tolerance": 0.01,
+          "prompt": "Un número sin unidades.",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "mantener ±0,2 después de dividir",
+        "dividir la incertidumbre entre $\\sqrt{10}$ pese al modelo explícito",
+        "decir que el valor 1,86 es más exacto solo por tener más decimales"
+      ],
+      "statement_source": "Un cronómetro manual tiene una incertidumbre de reacción de ±0,2 s en cada tiempo que se mide.\n\n(a) Se cronometra una sola oscilación y se obtiene 1,9 s. Escribe el periodo y su incertidumbre.\n(b) Se cronometran 10 oscilaciones seguidas y duran 18,6 s; los ±0,2 s afectan a ese tiempo total. Calcula el periodo \\(T\\) y su incertidumbre dividiendo ambos entre 10.\n(c) Calcula por qué factor se reduce la incertidumbre absoluta del periodo al pasar del método (a) al (b).",
+      "solution_source": "(a) \\(T=(1{,}9\\pm0{,}2)\\) s.\n(b) \\(T=18{,}6/10=1{,}86\\) s y \\(\\Delta T=0{,}2/10=0{,}02\\) s, así que \\(T=(1{,}86\\pm0{,}02)\\) s.\n(c) La incertidumbre pasa de 0,2 s a 0,02 s: se reduce 10 veces. Por eso conviene medir varios periodos seguidos: el error de reacción se reparte entre todas las oscilaciones.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_021",
+      "title": "Valor esperado frente a media calculada",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "numeric_plus_choice",
+      "difficulty": 3,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "mean",
+          "label": "Media \\(\\bar g\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 9.68,
+          "tolerance": 0.005,
+          "unit": "m·s⁻²",
+          "part": "a"
+        },
+        {
+          "id": "abs_error",
+          "label": "Error absoluto de la media",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.13,
+          "tolerance": 0.005,
+          "prompt": "Respecto al valor esperado.",
+          "unit": "m·s⁻²",
+          "part": "b"
+        },
+        {
+          "id": "rel_error",
+          "label": "Error relativo de la media",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.3,
+          "tolerance": 0.05,
+          "significant_figures": 2,
+          "prompt": "En porcentaje, con 2 cifras significativas.",
+          "unit": "%",
+          "part": "c"
+        },
+        {
+          "id": "max_dev",
+          "label": "Desviación máxima respecto a la media",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.07,
+          "tolerance": 0.005,
+          "unit": "m·s⁻²",
+          "part": "d"
+        },
+        {
+          "id": "accuracy_measure",
+          "label": "¿Qué número informa sobre la exactitud?",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "error_esperado",
+              "label": "El error de la media respecto al valor esperado"
+            },
+            {
+              "id": "desviacion_media",
+              "label": "La desviación máxima respecto a la media"
+            }
+          ],
+          "correct_option_id": "error_esperado",
+          "part": "e"
+        },
+        {
+          "id": "precision_measure",
+          "label": "¿Qué número informa sobre la precisión?",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "error_esperado",
+              "label": "El error de la media respecto al valor esperado"
+            },
+            {
+              "id": "desviacion_media",
+              "label": "La desviación máxima respecto a la media"
+            }
+          ],
+          "correct_option_id": "desviacion_media",
+          "part": "e"
+        },
+        {
+          "id": "compatible",
+          "label": "¿Está 9,81 dentro de \\(\\bar g\\pm\\) desviación máxima?",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "no_sistematico",
+              "label": "No: queda fuera de [9,61; 9,75]; probablemente hay un error sistemático"
+            },
+            {
+              "id": "si",
+              "label": "Sí: el valor esperado queda dentro del intervalo"
+            },
+            {
+              "id": "no_aleatorio",
+              "label": "No, y eso se arregla repitiendo más medidas"
+            }
+          ],
+          "correct_option_id": "no_sistematico",
+          "part": "f"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "t0_bank_v5_extension",
+        "source": "Revisión T0 v5 (errores y vectores)"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "usar la media como si fuera el valor esperado al calcular la exactitud",
+        "calcular la desviación máxima respecto a 9,81 en vez de respecto a la media",
+        "creer que repetir medidas corrige un error sistemático"
+      ],
+      "statement_source": "Un grupo mide la aceleración de la gravedad con un péndulo y obtiene cinco valores: 9,62; 9,71; 9,68; 9,75; 9,64 m·s⁻². El valor esperado en el laboratorio es \\(g_{esp}=9{,}81\\) m·s⁻².\n\nAquí hay dos valores que pueden servir de referencia, y no son lo mismo: el valor esperado \\(g_{esp}\\), que viene de fuera del experimento, y la media calculada \\(\\bar g\\), que sale de tus propios datos.\n\n(a) Calcula la media \\(\\bar g\\).\n(b) Calcula el error absoluto de la media respecto al valor esperado, \\(|\\bar g-g_{esp}|\\).\n(c) Calcula el error relativo de la media respecto al valor esperado, \\(|\\bar g-g_{esp}|/g_{esp}\\), en porcentaje.\n(d) Busca el dato más alejado de la media y calcula su distancia a ella, \\(|g_i-\\bar g|_{max}\\) (desviación máxima).\n(e) Indica qué número de los anteriores informa sobre la exactitud y cuál sobre la precisión.\n(f) Usa la desviación máxima como incertidumbre y decide si el valor esperado cabe en \\(\\bar g\\pm\\Delta g\\).",
+      "solution_source": "(a) \\(\\bar g=48{,}40/5=9{,}680\\) m·s⁻².\n(b) \\(|9{,}68-9{,}81|=0{,}13\\) m·s⁻².\n(c) \\(0{,}13/9{,}81\\cdot100=1{,}33\\,\\%\\approx1{,}3\\,\\%\\).\n(d) Desviaciones respecto a 9,68: 0,06; 0,03; 0,00; 0,07; 0,04. La mayor es la de 9,75: \\(\\Delta g=0{,}07\\) m·s⁻².\n(e) Exactitud: se compara la media con el valor esperado (0,13). Precisión: se compara cada dato con la media, sin mirar el valor esperado (0,07).\n(f) \\(\\bar g=(9{,}68\\pm0{,}07)\\) m·s⁻², es decir, [9,61; 9,75]. 9,81 queda fuera: las medidas están agrupadas pero desplazadas, lo típico de un error sistemático (por ejemplo, medir mal la longitud del péndulo). Repetir más veces no lo arreglaría."
+    },
+    {
+      "id": "t0_m_022",
+      "title": "El dato más alejado como estimación del error",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "numeric_plus_choice",
+      "difficulty": 3,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "mean",
+          "label": "Media \\(\\bar L\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 25.5,
+          "tolerance": 0.005,
+          "unit": "cm",
+          "part": "a"
+        },
+        {
+          "id": "farthest",
+          "label": "Dato más alejado de la media",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 25.8,
+          "tolerance": 0.01,
+          "unit": "cm",
+          "part": "b"
+        },
+        {
+          "id": "max_dev",
+          "label": "\\(\\Delta L\\) con el criterio 1",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.3,
+          "tolerance": 0.005,
+          "unit": "cm",
+          "part": "c"
+        },
+        {
+          "id": "half_range",
+          "label": "\\(\\Delta L\\) con el criterio 2",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.25,
+          "tolerance": 0.005,
+          "unit": "cm",
+          "part": "d"
+        },
+        {
+          "id": "relative",
+          "label": "Incertidumbre relativa (criterio 1)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.2,
+          "tolerance": 0.05,
+          "significant_figures": 2,
+          "prompt": "En porcentaje, con 2 cifras significativas.",
+          "unit": "%",
+          "part": "e"
+        },
+        {
+          "id": "conservative",
+          "label": "¿Qué criterio es más conservador aquí?",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "criterio1",
+              "label": "El criterio 1 (desviación máxima): da el intervalo más ancho"
+            },
+            {
+              "id": "criterio2",
+              "label": "El criterio 2 (semidispersión): da el intervalo más ancho"
+            },
+            {
+              "id": "iguales",
+              "label": "Los dos dan lo mismo"
+            }
+          ],
+          "correct_option_id": "criterio1",
+          "part": "f"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "t0_bank_v5_extension",
+        "source": "Revisión T0 v5 (errores y vectores)"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "tomar como dato más alejado el mínimo o el máximo sin calcular las desviaciones",
+        "calcular la desviación respecto al centro del recorrido en vez de respecto a la media",
+        "no declarar el criterio usado para la incertidumbre"
+      ],
+      "statement_source": "Se mide cinco veces la longitud de una varilla: 25,3; 25,6; 25,4; 25,8; 25,4 cm. No hay valor de referencia: la mejor estimación es la media, y el error se estima a partir de lo que se separan los datos de ella.\n\n(a) Calcula la media \\(\\bar L\\).\n(b) Escribe el dato que está más lejos de la media.\n(c) Criterio 1, desviación máxima: \\(\\Delta L=|L_i-\\bar L|_{max}\\), la distancia del dato más alejado a la media. Calcula \\(\\Delta L\\).\n(d) Criterio 2, semidispersión: \\(\\Delta L=(L_{max}-L_{min})/2\\). Calcula \\(\\Delta L\\).\n(e) Con el criterio 1, calcula la incertidumbre relativa \\(\\Delta L/\\bar L\\) en porcentaje.\n(f) Indica qué criterio es más conservador en este caso.",
+      "solution_source": "(a) \\(\\bar L=127{,}5/5=25{,}50\\) cm.\n(b) Desviaciones: 0,2; 0,1; 0,1; 0,3; 0,1 cm. El más alejado es 25,8 cm. Ojo: el mínimo (25,3) no es el más alejado, porque la media no está en el centro del recorrido.\n(c) \\(\\Delta L=|25{,}8-25{,}5|=0{,}3\\) cm, así que \\(L=(25{,}5\\pm0{,}3)\\) cm.\n(d) \\(\\Delta L=(25{,}8-25{,}3)/2=0{,}25\\) cm.\n(e) \\(0{,}3/25{,}5\\cdot100=1{,}18\\,\\%\\approx1{,}2\\,\\%\\).\n(f) El criterio 1 da un intervalo más ancho, así que es más conservador. Los dos son válidos si se declara cuál se usa."
+    },
+    {
+      "id": "t0_m_023",
+      "title": "Preciso pero no exacto: dos cronometradores",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "numeric_plus_choice",
+      "difficulty": 4,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "mean_P",
+          "label": "Media de P",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.61,
+          "tolerance": 0.005,
+          "unit": "s",
+          "part": "a"
+        },
+        {
+          "id": "mean_Q",
+          "label": "Media de Q",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.5,
+          "tolerance": 0.005,
+          "unit": "s",
+          "part": "a"
+        },
+        {
+          "id": "dev_P",
+          "label": "Desviación máxima de P",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.01,
+          "tolerance": 0.003,
+          "unit": "s",
+          "part": "b"
+        },
+        {
+          "id": "dev_Q",
+          "label": "Desviación máxima de Q",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.12,
+          "tolerance": 0.003,
+          "unit": "s",
+          "part": "b"
+        },
+        {
+          "id": "err_P",
+          "label": "Error de la media de P",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.11,
+          "tolerance": 0.003,
+          "prompt": "Respecto al valor esperado, sin signo.",
+          "unit": "s",
+          "part": "c"
+        },
+        {
+          "id": "err_Q",
+          "label": "Error de la media de Q",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.0,
+          "tolerance": 0.003,
+          "prompt": "Respecto al valor esperado, sin signo.",
+          "unit": "s",
+          "part": "c"
+        },
+        {
+          "id": "more_precise",
+          "label": "¿Quién es más preciso?",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "P",
+              "label": "P"
+            },
+            {
+              "id": "Q",
+              "label": "Q"
+            }
+          ],
+          "correct_option_id": "P",
+          "part": "d"
+        },
+        {
+          "id": "more_accurate",
+          "label": "¿Quién es más exacto?",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "P",
+              "label": "P"
+            },
+            {
+              "id": "Q",
+              "label": "Q"
+            }
+          ],
+          "correct_option_id": "Q",
+          "part": "d"
+        },
+        {
+          "id": "error_type_P",
+          "label": "Error que domina en P",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "sistematico",
+              "label": "Sistemático: todas sus medidas se desplazan hacia arriba"
+            },
+            {
+              "id": "aleatorio",
+              "label": "Aleatorio: sus medidas cambian mucho de una a otra"
+            }
+          ],
+          "correct_option_id": "sistematico",
+          "part": "e"
+        },
+        {
+          "id": "averaging_helps",
+          "label": "¿A quién ayuda más repetir y promediar?",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "P",
+              "label": "A P"
+            },
+            {
+              "id": "Q",
+              "label": "A Q"
+            }
+          ],
+          "correct_option_id": "Q",
+          "part": "f"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "t0_bank_v5_extension",
+        "source": "Revisión T0 v5 (errores y vectores)"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "medir la precisión con respecto al valor esperado",
+        "pensar que el más preciso es también el más exacto",
+        "creer que promediar corrige un sesgo sistemático"
+      ],
+      "statement_source": "Se deja caer una bola desde una altura fija. La teoría predice un tiempo de caída de 1,50 s (valor esperado). Dos alumnos cronometran cuatro veces cada uno:\n\nAlumno P: 1,61; 1,62; 1,60; 1,61 s.\nAlumno Q: 1,38; 1,62; 1,47; 1,53 s.\n\n(a) Calcula la media de P y la de Q.\n(b) Para cada alumno, calcula la desviación máxima: la distancia del dato más alejado a su propia media.\n(c) Calcula el error de cada media respecto al valor esperado.\n(d) Indica quién es más preciso y quién es más exacto.\n(e) Indica qué tipo de error domina en P.\n(f) Indica a quién mejoraría más repetir muchas medidas y promediar.",
+      "solution_source": "(a) P: 6,44/4 = 1,61 s. Q: 6,00/4 = 1,50 s.\n(b) P: todas a 0,01 s o menos de 1,61, así que 0,01 s. Q: 1,38 y 1,62 están a 0,12 s de 1,50, así que 0,12 s.\n(c) P: |1,61 − 1,50| = 0,11 s. Q: |1,50 − 1,50| = 0,00 s.\n(d) P es más preciso (poca dispersión). Q es más exacto (su media coincide con el valor esperado).\n(e) En P domina un error sistemático: todas sus medidas salen unos 0,11 s largas, por ejemplo por parar siempre tarde el cronómetro.\n(f) A Q: promediar reduce el efecto del error aleatorio. A P no le sirve, porque su sesgo se repite en todas las medidas."
+    },
+    {
+      "id": "t0_m_024",
+      "title": "¿Respecto a qué valor calculo el error?",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "numeric_plus_choice",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "mean",
+          "label": "Media \\(\\bar\\rho\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 2.65,
+          "tolerance": 0.005,
+          "unit": "g·cm⁻³",
+          "part": "a"
+        },
+        {
+          "id": "reference_accuracy",
+          "label": "Valor con el que se juzga la exactitud",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "tabulado",
+              "label": "El valor tabulado, 2,70 g·cm⁻³"
+            },
+            {
+              "id": "media",
+              "label": "La media de mis medidas"
+            },
+            {
+              "id": "alejado",
+              "label": "El dato más alejado de la media"
+            }
+          ],
+          "correct_option_id": "tabulado",
+          "part": "b"
+        },
+        {
+          "id": "err_mean",
+          "label": "Error de la media respecto al tabulado",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.05,
+          "tolerance": 0.003,
+          "prompt": "Sin signo.",
+          "unit": "g·cm⁻³",
+          "part": "c"
+        },
+        {
+          "id": "dev_262",
+          "label": "Desviación de 2,62 respecto a la media",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.03,
+          "tolerance": 0.003,
+          "prompt": "Sin signo.",
+          "unit": "g·cm⁻³",
+          "part": "d"
+        },
+        {
+          "id": "err_262",
+          "label": "Error de 2,62 respecto al tabulado",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.08,
+          "tolerance": 0.003,
+          "prompt": "Sin signo.",
+          "unit": "g·cm⁻³",
+          "part": "e"
+        },
+        {
+          "id": "which_spread",
+          "label": "¿Qué número describe la dispersión de tus medidas?",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "d",
+              "label": "El del apartado (d)"
+            },
+            {
+              "id": "e",
+              "label": "El del apartado (e)"
+            }
+          ],
+          "correct_option_id": "d",
+          "part": "f"
+        },
+        {
+          "id": "inside",
+          "label": "¿Está 2,70 dentro de \\(\\bar\\rho\\pm0{,}03\\)?",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "no",
+              "label": "No: el intervalo es [2,62; 2,68] y 2,70 queda fuera"
+            },
+            {
+              "id": "si",
+              "label": "Sí: 2,70 está dentro del intervalo"
+            }
+          ],
+          "correct_option_id": "no",
+          "part": "g"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "t0_bank_v5_extension",
+        "source": "Revisión T0 v5 (errores y vectores)"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "comparar con la media para juzgar la exactitud",
+        "medir la dispersión respecto al valor tabulado",
+        "no decir respecto a qué valor se calcula un error"
+      ],
+      "statement_source": "Se mide la densidad de una pieza de aluminio cuatro veces: 2,62; 2,66; 2,64; 2,68 g·cm⁻³. El valor tabulado (valor esperado) del aluminio es 2,70 g·cm⁻³.\n\n(a) Calcula la media \\(\\bar\\rho\\).\n(b) Indica con qué valor hay que comparar el resultado para juzgar su exactitud.\n(c) Calcula el error de la media respecto al valor tabulado.\n(d) Calcula la desviación de la medida 2,62 respecto a la media.\n(e) Calcula el error de esa misma medida, 2,62, respecto al valor tabulado.\n(f) Indica cuál de los dos números, (d) o (e), describe la dispersión de tus medidas.\n(g) La desviación máxima respecto a la media es 0,03 g·cm⁻³. Decide si el valor tabulado cabe en \\(\\bar\\rho\\pm0{,}03\\).",
+      "solution_source": "(a) \\(\\bar\\rho=10{,}60/4=2{,}65\\) g·cm⁻³.\n(b) La exactitud se juzga con el valor esperado (2,70), que no depende de tus datos.\n(c) |2,65 − 2,70| = 0,05 g·cm⁻³.\n(d) |2,62 − 2,65| = 0,03 g·cm⁻³.\n(e) |2,62 − 2,70| = 0,08 g·cm⁻³. El mismo dato tiene un «error» distinto según la referencia: por eso hay que decir siempre respecto a qué se calcula.\n(f) El (d): la dispersión se mide respecto a la media, sin mirar el valor tabulado.\n(g) No: [2,62; 2,68] no llega a 2,70. Las medidas se desvían todas hacia abajo; conviene buscar un error sistemático (por ejemplo, burbujas de aire al medir el volumen)."
+    },
+    {
+      "id": "t0_m_025",
+      "title": "Detectar y corregir un sesgo con el valor esperado",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "numeric_plus_choice",
+      "difficulty": 4,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "mean",
+          "label": "Media de las lecturas",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 101.5,
+          "tolerance": 0.005,
+          "unit": "°C",
+          "part": "a"
+        },
+        {
+          "id": "signed_error",
+          "label": "Error con signo de la media",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.5,
+          "tolerance": 0.005,
+          "prompt": "Puede ser positivo o negativo.",
+          "unit": "°C",
+          "part": "b"
+        },
+        {
+          "id": "max_dev",
+          "label": "Desviación máxima respecto a la media",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.1,
+          "tolerance": 0.005,
+          "unit": "°C",
+          "part": "c"
+        },
+        {
+          "id": "diagnosis",
+          "label": "¿Qué describe mejor al termómetro?",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "precisa_no_exacta",
+              "label": "Preciso pero no exacto: tiene un sesgo sistemático"
+            },
+            {
+              "id": "exacta_no_precisa",
+              "label": "Exacto pero poco preciso"
+            },
+            {
+              "id": "precisa_exacta",
+              "label": "Preciso y exacto"
+            },
+            {
+              "id": "ni_ni",
+              "label": "Ni preciso ni exacto"
+            }
+          ],
+          "correct_option_id": "precisa_no_exacta",
+          "part": "d"
+        },
+        {
+          "id": "corrected",
+          "label": "Lectura corregida",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 36.7,
+          "tolerance": 0.005,
+          "unit": "°C",
+          "part": "e"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "t0_bank_v5_extension",
+        "source": "Revisión T0 v5 (errores y vectores)"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "sumar el sesgo en lugar de restarlo",
+        "confundir la desviación respecto a la media con el error respecto al valor esperado",
+        "llamar exacto a un instrumento solo porque repite lecturas"
+      ],
+      "statement_source": "Un termómetro se introduce en agua hirviendo a presión normal, donde el valor esperado es 100,0 °C. Da cuatro lecturas: 101,4; 101,6; 101,5; 101,5 °C.\n\n(a) Calcula la media de las lecturas.\n(b) Calcula el error con signo de la media, \\(\\bar T-T_{esp}\\).\n(c) Calcula la desviación máxima de las lecturas respecto a su media.\n(d) Indica qué describe mejor al termómetro.\n(e) Supón que el sesgo es el mismo en todo el rango (solo error de cero). Corrige una lectura de 38,2 °C.",
+      "solution_source": "(a) 406,0/4 = 101,5 °C.\n(b) 101,5 − 100,0 = +1,5 °C: marca 1,5 °C de más.\n(c) Todas están a 0,1 °C o menos de 101,5: desviación máxima 0,1 °C.\n(d) Dispersión pequeña (0,1 °C) pero media desplazada 1,5 °C: preciso pero no exacto.\n(e) Se resta el sesgo: 38,2 − 1,5 = 36,7 °C. La media sirvió para medir la dispersión; el valor esperado, para medir el sesgo."
+    }
+  ]
+}

@@ -1,0 +1,778 @@
+{
+  "exercises": [
+    {
+      "id": "t2_p_008",
+      "version": 1,
+      "title": "Dos ángulos para una diana elevada",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Tiro parabólico",
+      "family": "p",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_minutes": 20,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "low",
+          "label": "Ángulo bajo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 30.36119340482171,
+          "unit": "°",
+          "tolerance": 0.1,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "high",
+          "label": "Ángulo alto",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 73.67505006310476,
+          "unit": "°",
+          "tolerance": 0.1,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "tl",
+          "label": "Tiempo con ángulo bajo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.1589416510366775,
+          "unit": "s",
+          "tolerance": 0.005,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "th",
+          "label": "Tiempo con ángulo alto",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3.5576472913278487,
+          "unit": "s",
+          "tolerance": 0.005,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_p_008.svg",
+          "alt": "Diana (20,5): dos trayectorias posibles"
+        }
+      ],
+      "tags": [
+        "t2",
+        "p",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Dos ángulos para una diana elevada. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Tiro parabólico"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar suponer ángulos complementarios con diana elevada.",
+      "common_mistakes": [
+        "Suponer ángulos complementarios con diana elevada",
+        "Eliminar una raíz positiva sin criterio físico"
+      ],
+      "parts_count": 3,
+      "statement_source": "Origen en el suelo, \\(+x\\) derecha,\\(+y\\) arriba; sin aire, \\(a_y=−g=−10 m/s²\\). Se lanza a 20 m/s hacia una diana en \\((20,5) m\\). \n(b) Calcula ambos ángulos y sus tiempos de llegada.",
+      "solution_source": "\\(x=20\\) cosθ t,\\(y=20\\) senθ t−5t². Eliminando t: \\(y=xu−(x²/80)(1+u²)\\).\n\nEn \\((20,5)\\): 5=\\(20u−5\\)(1+u²), luego u²−\\(4u+2\\)=0; \\(u=2±√2\\). θ≈30,36° y 73,68°.\n\n\\(t=20/(20cosθ)=√(1+u²)\\): 1,159 y 3,558 s. Sustituir da \\(y=5 m\\) en ambos; las componentes verticales y máximos son diferentes, aunque el punto final coincide.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_p_009",
+      "version": 1,
+      "title": "Ángulos complementarios: mismo alcance",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Tiro parabólico",
+      "family": "p",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "t30",
+          "label": "Tiempo a 30°",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "t60",
+          "label": "Tiempo a 60°",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.7320508075688772,
+          "unit": "s",
+          "tolerance": 0.005,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "range",
+          "label": "Alcance común",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 8.660254037844386,
+          "unit": "m",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "h30",
+          "label": "Máximo a 30°",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.25,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "h60",
+          "label": "Máximo a 60°",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3.75,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_p_009.svg",
+          "alt": "30° y 60°: mismo punto, diferente vuelo"
+        }
+      ],
+      "tags": [
+        "t2",
+        "p",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Ángulos complementarios: mismo alcance. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Tiro parabólico"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar concluir igual tiempo por igual alcance.",
+      "common_mistakes": [
+        "Concluir igual tiempo por igual alcance",
+        "Aplicar complementariedad a alturas diferentes"
+      ],
+      "parts_count": 3,
+      "statement_source": "Origen en el suelo, \\(+x\\) derecha,\\(+y\\) arriba; sin aire, \\(a_y=−g=−10 m/s²\\). Dos lanzamientos a 10 m/s, uno a 30° y otro a 60°, regresan al nivel de salida. \n(a) Compara tiempos, alcances y máximos.\n(b) Completa: Alcance común.",
+      "solution_source": "30°: \\(v_x=5√3,v_y0=5\\); \\(T=1 s\\),\\(R=5√3 m\\),\\(H=25/20=1,25 m\\).\n\n60°: \\(v_x=5,v_y0=5√3\\); \\(T=√3 s\\),\\(R=5√3 m\\),\\(H=75/20=3,75 m\\).\n\nsen60°=sen120° explica \\(R=v_0²\\sin2θ/g\\). Hace falta igual rapidez, gravedad, ausencia de aire y mismo nivel final; no llegan simultáneamente.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_p_010",
+      "version": 1,
+      "title": "Velocidad mínima para una condición de ángulo fijo",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Tiro parabólico",
+      "family": "p",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "v0",
+          "label": "Rapidez inicial",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 12.649110640673518,
+          "unit": "m/s",
+          "tolerance": 0.05,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "t",
+          "label": "Tiempo hasta diana",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.3416407864998738,
+          "unit": "s",
+          "tolerance": 0.005,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "v",
+          "label": "Velocidad en la diana",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(8.94427190999916; -4.47213595499958)",
+            "8.94427190999916 i + (-4.47213595499958) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            8.94427190999916,
+            -4.47213595499958
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_p_010.svg",
+          "alt": "Diana (12,3), salida a 45°"
+        }
+      ],
+      "tags": [
+        "t2",
+        "p",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Velocidad mínima para una condición de ángulo fijo. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Tiro parabólico"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar omitir el cuadrado de cosθ en y(x).",
+      "common_mistakes": [
+        "Omitir el cuadrado de cosθ en y(x)",
+        "Llamar mínima global a una solución con ángulo fijo"
+      ],
+      "parts_count": 2,
+      "statement_source": "Origen en el suelo, \\(+x\\) derecha,\\(+y\\) arriba; sin aire, \\(a_y=−g=−10 m/s²\\). Un lanzador tiene \\(θ=45°\\) fijo y debe pasar exactamente por \\((12,3) m\\). \n(a) Deduce \\(v_0\\).\n(b) Completa: Tiempo hasta diana, Velocidad en la diana.",
+      "solution_source": "A 45°, \\(v_x=v_y0=v_0/√2\\). Eliminando t: \\(y=x−gx²/v_0²\\).\n\n3=\\(12−10·\\)144/v_0² implica v_0²=160 y \\(v_0=12,65 m/s\\). \\(t=12/√80=1,342 s\\).\n\n\\(v=(√80,√80−10t)=(8,944\\);−4,472) m/s; pasa descendiendo. Para ángulo fijo este valor es único, no una optimización entre ángulos.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_p_011",
+      "version": 1,
+      "title": "Qué cambia al duplicar la componente horizontal",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Tiro parabólico",
+      "family": "p",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "t",
+          "label": "Vuelo común",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.6,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "h",
+          "label": "Altura máxima común",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3.2,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "ra",
+          "label": "Alcance A",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 9.6,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "rb",
+          "label": "Alcance B",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 19.2,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_p_011.svg",
+          "alt": "Componentes horizontales distintas; Componente vertical común"
+        }
+      ],
+      "tags": [
+        "t2",
+        "p",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Qué cambia al duplicar la componente horizontal. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Tiro parabólico"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar duplicar vuelo por duplicar v_x.",
+      "common_mistakes": [
+        "Duplicar vuelo por duplicar v_x",
+        "Suponer que se conserva el ángulo inicial"
+      ],
+      "parts_count": 2,
+      "statement_source": "Origen en el suelo, \\(+x\\) derecha,\\(+y\\) arriba; sin aire, \\(a_y=−g=−10 m/s²\\). A tiene \\(v_0=(6,8),\\) \\(B=(12,8) m/s\\). \n(a) Completa: Vuelo común, Alcance A, Alcance B.\n(b) Calcula vuelo, altura y alcances.",
+      "solution_source": "Para ambas \\(y=8t−5t²,\\) \\(v_y=8−10t\\): \\(T=1,6 s\\) y \\(H=8²/20=3,2 m\\).\n\n\\(x_A=6t,x_B=12t\\): \\(R_A=9,6 m\\),\\(R_B=19,2 m\\).\n\nII es correcta; se modifica \\(v_x\\) y también el ángulo y el módulo iniciales, no la componente vertical.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_p_012",
+      "version": 1,
+      "title": "Proyecto de cuatro gráficas desde una trayectoria",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Tiro parabólico",
+      "family": "p",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_minutes": 18,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "t",
+          "label": "Tiempo de impacto",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "top",
+          "label": "Instante de cima",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.8,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "rmax",
+          "label": "Posición en la cima",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(4.8; 7.2)",
+            "4.8 i + (7.2) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            4.8,
+            7.2
+          ],
+          "unit": "m",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        },
+        {
+          "id": "vf",
+          "label": "Velocidad final",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(6; -12)",
+            "6 i + (-12) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            6,
+            -12
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        },
+        {
+          "id": "range",
+          "label": "Alcance",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 12,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_p_012.svg",
+          "alt": "Pelota desde 4 m: tres estados a representar"
+        }
+      ],
+      "tags": [
+        "t2",
+        "p",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Proyecto de cuatro gráficas desde una trayectoria. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Tiro parabólico"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar forzar simetría temporal con alturas distintas.",
+      "common_mistakes": [
+        "Forzar simetría temporal con alturas distintas",
+        "Confundir la parábola espacial con x-t"
+      ],
+      "parts_count": 3,
+      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−10 m/s²\\). Una pelota sale desde 4 m con \\(v_0=(6,8) m/s\\). \n(a) Completa: Tiempo de impacto.\n(b) Marca salida, cima y suelo con coordenadas y velocidades.\n(c) Completa: Alcance.",
+      "solution_source": "\\(x=6t,y=4+8t−5t²,v_x=6,v_y=8−10t\\). \\(y=0\\) da \\(t=2 s\\) o −0,4 s.\n\nCima \\(t=0,8 s\\),\\(r=(4,8\\);7,2) m,\\(v=(6\\);0) m/s; impacto \\(r=(12\\);0),\\(v=(6\\);−12).\n\nÁrea \\(v_x=6·2=12 m\\). Área \\(v_y=(8−12)·2/2=−4 m\\); sumada a \\(y_0=4\\) da suelo. x es lineal,y parabólica,\\(v_x\\) constante y \\(v_y\\) lineal.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_p_013",
+      "version": 1,
+      "title": "Tiro sobre un plano inclinado",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Tiro parabólico",
+      "family": "p",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_minutes": 18,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "t",
+          "label": "Tiempo hasta contacto",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "r",
+          "label": "Punto de contacto",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(20; 10)",
+            "20 i + (10) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            20,
+            10
+          ],
+          "unit": "m",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "a"
+        },
+        {
+          "id": "d",
+          "label": "Distancia sobre la rampa",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 22.360679774997898,
+          "unit": "m",
+          "tolerance": 0.05,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "v",
+          "label": "Velocidad de impacto",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(10; -5)",
+            "10 i + (-5) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            10,
+            -5
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        },
+        {
+          "id": "angle",
+          "label": "Ángulo entre velocidad y rampa",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 53.13010235415598,
+          "unit": "°",
+          "tolerance": 0.1,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_p_013.svg",
+          "alt": "Proyectil contra y=0,5x"
+        }
+      ],
+      "tags": [
+        "t2",
+        "p",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Tiro sobre un plano inclinado. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Tiro parabólico"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar usar alcance horizontal como distancia sobre rampa.",
+      "common_mistakes": [
+        "Usar alcance horizontal como distancia sobre rampa",
+        "Elegir t=0 como nuevo contacto"
+      ],
+      "parts_count": 3,
+      "statement_source": "Origen en el inicio de una rampa \\(y=0,5x\\) para x≥0; \\(+x\\) derecha,\\(+y\\) arriba. Se lanza con \\(v_0=(10,15) m/s\\), sin aire y \\(a_y=−g=−10 m/s²\\). \n(a) Calcula primer contacto con la rampa tras salir.\n(b) Halla distancia sobre la rampa y velocidad de impacto.\n(c) Obtén el ángulo entre velocidad y rampa.",
+      "solution_source": "\\(x=10t,y=15t−5t²\\). Rampa: \\(15t−5t²\\)=5t, es decir 5t(2−t)=0; excluir \\(t=0,\\) contacto a 2 s.\n\n\\(P=(20,10) m\\); distancia desde origen sobre la rampa √(\\(20²+10²\\))=22,36 m. \\(v=(10,15−20)=(10,−5) m/s\\).\n\nLa rampa forma +26,565° y v forma −26,565° con \\(+x\\): entre ambas hay 53,13°. Antes de 2 s, y−0,5x=5t(2−t)>0, por lo que no hubo contacto previo.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_p_014",
+      "version": 1,
+      "title": "Auditar signos, raíces y unidades",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Tiro parabólico",
+      "family": "p",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "time",
+          "label": "Tiempo de impacto",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2.414213562373095,
+          "unit": "s",
+          "tolerance": 0.005,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "v",
+          "label": "Velocidad final",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(6; -14.142135623730951)",
+            "6 i + (-14.142135623730951) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            6,
+            -14.142135623730951
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        },
+        {
+          "id": "speed",
+          "label": "Rapidez final",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 15.362291495737216,
+          "unit": "m/s",
+          "tolerance": 0.05,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "y2",
+          "label": "Altura a 2 s",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 5,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_p_014.svg",
+          "alt": "Caso para auditar: salida elevada"
+        }
+      ],
+      "tags": [
+        "t2",
+        "p",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Auditar signos, raíces y unidades. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Tiro parabólico"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar corregir el número sin explicar el error físico.",
+      "common_mistakes": [
+        "Corregir el número sin explicar el error físico",
+        "Confundir velocidad vertical con rapidez total"
+      ],
+      "parts_count": 3,
+      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−10 m/s²\\). Desde \\(y=5 m\\) se lanza con \\(v_0=(6,10) m/s\\). Una solución ficticia propone «\\(x=6t\\); \\(y=5+10t+5t²\\); en la cima \\(a=0\\); \\(T=2 s\\); rapidez \\(final=−10 m/s\\)». \n(b) Obtén tiempo y vector de impacto correctos;\n(c) Completa: Altura a 2 s.",
+      "solution_source": "\\(a_y=−10\\) obliga \\(y=5+10t−5t²\\). En la cima solo \\(v_y=0,\\) \\(a=(0,−10) m/s²\\).\n\n\\(y=0\\) da \\(t=1±√2\\); raíz positiva 2,414 s. \\(v=(6,10−10t)=(6,−14,142) m/s\\).\n\n\\(Rapidez=√236=15,36 m/s\\), nunca negativa. A 2 s, \\(y=5 m\\): regresa a la altura inicial, no al suelo.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    }
+  ]
+}

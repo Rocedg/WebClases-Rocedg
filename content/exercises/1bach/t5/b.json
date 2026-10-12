@@ -1,0 +1,1020 @@
+{
+  "exercises": [
+    {
+      "id": "t5_b_001",
+      "version": 1,
+      "title": "Bloque baja 4 m de altura con rozamiento que hace -30 J",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Balances, disipación e integración",
+      "family": "b",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "k_f",
+          "label": "K f",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 48.4,
+          "unit": "J",
+          "tolerance": 0.242,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "rapidez",
+          "label": "Rapidez",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 6.96,
+          "unit": "m/s",
+          "tolerance": 0.0348,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_b_001.svg",
+          "alt": "Barras U, térmica y K."
+        }
+      ],
+      "tags": [
+        "t5",
+        "b",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Balances, disipación e integración: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Balances, disipación e integración"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia b"
+      ],
+      "parts_count": 2,
+      "statement_source": "Bloque baja \\(4 m\\) de altura con rozamiento que hace \\(-30 J\\), \\(m=2\\).\n\n(a) Calcula: K f.\n(b) Calcula: Rapidez.",
+      "solution_source": "\\(K_f=48,4 J\\); \\(v=6,96 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_b_002",
+      "version": 1,
+      "title": "Rampa rugosa, hallar μ_k desde rapidez final",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Balances, disipación e integración",
+      "family": "b",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Balance cerrado y μ_k numérico"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_b_002.svg",
+          "alt": "Perfil y frontera del sistema."
+        }
+      ],
+      "tags": [
+        "t5",
+        "b",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Balances, disipación e integración: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Balances, disipación e integración"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia b"
+      ],
+      "parts_count": 1,
+      "statement_source": "Rampa rugosa, hallar \\(μ_k\\) desde rapidez final.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Balance cerrado y \\(μ_k\\) numérico.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_b_003",
+      "version": 1,
+      "title": "Muelle impulsa bloque por zona rugosa hasta detenerse",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Balances, disipación e integración",
+      "family": "b",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Distancia d=kx²/(2μmg)"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_b_003.svg",
+          "alt": "Muelle-zona rugosa."
+        }
+      ],
+      "tags": [
+        "t5",
+        "b",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Balances, disipación e integración: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Balances, disipación e integración"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia b"
+      ],
+      "parts_count": 1,
+      "statement_source": "Muelle impulsa bloque por zona rugosa hasta detenerse.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Distancia \\(d=kx²/(2μmg)\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_b_004",
+      "version": 1,
+      "title": "Bloque cae sobre muelle vertical",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Balances, disipación e integración",
+      "family": "b",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Ecuación cuadrática y raíz física seleccionada"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_b_004.svg",
+          "alt": "Tres estados verticales."
+        }
+      ],
+      "tags": [
+        "t5",
+        "b",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Balances, disipación e integración: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Balances, disipación e integración"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia b"
+      ],
+      "parts_count": 1,
+      "statement_source": "Bloque cae sobre muelle vertical: compresión máxima.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Ecuación cuadrática y raíz física seleccionada.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_b_005",
+      "version": 1,
+      "title": "Montaña rusa con bucle",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Balances, disipación e integración",
+      "family": "b",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "v_top=√(gr) y altura inicial 2,5r"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_b_005.svg",
+          "alt": "Bucle y barras por estado."
+        }
+      ],
+      "tags": [
+        "t5",
+        "b",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Balances, disipación e integración: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Balances, disipación e integración"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia b"
+      ],
+      "parts_count": 1,
+      "statement_source": "Montaña rusa con bucle: energía + condición dinámica mínima arriba.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "\\(v_top=√(gr)\\) y altura inicial \\(2,5r\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_b_006",
+      "version": 1,
+      "title": "Péndulo soltado desde ángulo 60°, longitud 1 m",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Balances, disipación e integración",
+      "family": "b",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "rapidez_abajo",
+          "label": "Rapidez abajo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3.13,
+          "unit": "m/s",
+          "tolerance": 0.01565,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "concepto_2",
+          "label": "Sentido",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "hacia_arriba",
+              "label": "Hacia arriba"
+            },
+            {
+              "id": "hacia_abajo",
+              "label": "Hacia abajo"
+            },
+            {
+              "id": "sin_direccion_preferente",
+              "label": "Sin dirección preferente"
+            }
+          ],
+          "correct_option_id": "hacia_abajo",
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_b_006.svg",
+          "alt": "Arco y niveles."
+        }
+      ],
+      "tags": [
+        "t5",
+        "b",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Balances, disipación e integración: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Balances, disipación e integración"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia b"
+      ],
+      "parts_count": 2,
+      "statement_source": "Péndulo soltado desde ángulo \\(60°\\), longitud \\(1 m\\).\n\n(a) Calcula: Rapidez abajo.\n(b) Selecciona: Sentido.",
+      "solution_source": "Rapidez abajo \\(3,13 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_b_007",
+      "version": 1,
+      "title": "Columpio pierde 15% de energía por oscilación",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Balances, disipación e integración",
+      "family": "b",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "factor_de_altura",
+          "label": "Factor de altura",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.85,
+          "unit": "",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_b_007.svg",
+          "alt": "Barras decrecientes."
+        }
+      ],
+      "tags": [
+        "t5",
+        "b",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Balances, disipación e integración: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Balances, disipación e integración"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia b"
+      ],
+      "parts_count": 1,
+      "statement_source": "Columpio pierde \\(15%\\) de energía por oscilación.\n\n(a) Calcula: Factor de altura.",
+      "solution_source": "Factor de altura \\(0,85\\); tras 3, \\(0,85³\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_b_008",
+      "version": 1,
+      "title": "Motor sube carga con rendimiento 80%",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Balances, disipación e integración",
+      "family": "b",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Potencia de entrada P_útil/0,8"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_b_008.svg",
+          "alt": "Diagrama de Sankey simple."
+        }
+      ],
+      "tags": [
+        "t5",
+        "b",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Balances, disipación e integración: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Balances, disipación e integración"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia b"
+      ],
+      "parts_count": 1,
+      "statement_source": "Motor sube carga con rendimiento \\(80%\\).\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Potencia de entrada \\(P_útil/0,8\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_b_009",
+      "version": 1,
+      "title": "Comparar tres sistemas para el mismo descenso con rozamiento",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Balances, disipación e integración",
+      "family": "b",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Selección de términos internos/externos"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_b_009.svg",
+          "alt": "Fronteras superpuestas."
+        }
+      ],
+      "tags": [
+        "t5",
+        "b",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Balances, disipación e integración: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Balances, disipación e integración"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia b"
+      ],
+      "parts_count": 1,
+      "statement_source": "Comparar tres sistemas para el mismo descenso con rozamiento.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Selección de términos internos/externos.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_b_010",
+      "version": 1,
+      "title": "Gráfica de energía potencial U(x) con mínimos y máximos",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Balances, disipación e integración",
+      "family": "b",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Equilibrios, estabilidad y fuerza por pendiente seleccionados"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_b_010.svg",
+          "alt": "Paisaje energético."
+        }
+      ],
+      "tags": [
+        "t5",
+        "b",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Balances, disipación e integración: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Balances, disipación e integración"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia b"
+      ],
+      "parts_count": 1,
+      "statement_source": "Gráfica de energía potencial \\(U(x)\\) con mínimos y máximos.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Equilibrios, estabilidad y fuerza por pendiente seleccionados.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_b_011",
+      "version": 1,
+      "title": "Dada energía total horizontal, hallar regiones permitidas",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Balances, disipación e integración",
+      "family": "b",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Intervalo de x donde E≥U(x)"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_b_011.svg",
+          "alt": "U(x) y línea E."
+        }
+      ],
+      "tags": [
+        "t5",
+        "b",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Balances, disipación e integración: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Balances, disipación e integración"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia b"
+      ],
+      "parts_count": 1,
+      "statement_source": "Dada energía total horizontal, hallar regiones permitidas.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Intervalo de \\(x\\) donde \\(E≥U(x)\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_b_012",
+      "version": 1,
+      "title": "Fuerza conservativa desde",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Balances, disipación e integración",
+      "family": "b",
+      "subtype": "multi_step",
+      "difficulty": 5,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "x",
+          "label": "x",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.0,
+          "unit": "",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_b_012.svg",
+          "alt": "Panel U/F."
+        }
+      ],
+      "tags": [
+        "t5",
+        "b",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Balances, disipación e integración: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Balances, disipación e integración"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia b"
+      ],
+      "parts_count": 1,
+      "statement_source": "Fuerza conservativa desde \\(U(x)=2x²-4x\\).\n\n(a) Calcula: x.",
+      "solution_source": "\\(F(x)=-4x+4\\); equilibrio \\(x=1\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_b_013",
+      "version": 1,
+      "title": "Auditoría de balance que suma simultáneamente trabajo del peso y ΔU_g",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Balances, disipación e integración",
+      "family": "b",
+      "subtype": "multi_step",
+      "difficulty": 5,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Seleccionar doble conteo; ecuación corregida"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_b_013.svg",
+          "alt": "Libro mayor de energía."
+        }
+      ],
+      "tags": [
+        "t5",
+        "b",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Balances, disipación e integración: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Balances, disipación e integración"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia b"
+      ],
+      "parts_count": 1,
+      "statement_source": "Auditoría de balance que suma simultáneamente trabajo del peso y \\(\\Delta U_g\\).\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Seleccionar doble conteo; ecuación corregida.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_b_014",
+      "version": 1,
+      "title": "Investigación cerrada de carrito",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Balances, disipación e integración",
+      "family": "b",
+      "subtype": "multi_step",
+      "difficulty": 5,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "E_i, E_f, pérdida y porcentaje"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_b_014.svg",
+          "alt": "Datos, perfil y barras."
+        }
+      ],
+      "tags": [
+        "t5",
+        "b",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Balances, disipación e integración: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Balances, disipación e integración"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia b"
+      ],
+      "parts_count": 1,
+      "statement_source": "Investigación cerrada de carrito: datos de altura/rapidez estiman pérdida y eficiencia.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "\\(E_i\\), \\(E_f\\), pérdida y porcentaje.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    }
+  ]
+}

@@ -1,0 +1,886 @@
+{
+  "exercises": [
+    {
+      "id": "t4_m_001",
+      "version": 1,
+      "title": "Muelle  estirado 3 cm",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Muelles y ley de Hooke",
+      "family": "m",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "fuerza",
+          "label": "Fuerza",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 6.0,
+          "unit": "N",
+          "tolerance": 0.03,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_m_001.svg",
+          "alt": "Escala longitud natural/deformada."
+        }
+      ],
+      "tags": [
+        "t4",
+        "m",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Muelles y ley de Hooke: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Muelles y ley de Hooke"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia m"
+      ],
+      "parts_count": 1,
+      "statement_source": "Muelle \\(k=200 N/m\\) estirado \\(3 cm\\).\n\n(a) Calcula: Fuerza.",
+      "solution_source": "Fuerza \\(6 N\\) hacia el equilibrio.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_m_002",
+      "version": 1,
+      "title": "Compresión 5 cm, eje positivo a la derecha",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Muelles y ley de Hooke",
+      "family": "m",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "x",
+          "label": "x",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -0.05,
+          "unit": "m",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "f",
+          "label": "F",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 10.0,
+          "unit": "N",
+          "tolerance": 0.05,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "k",
+          "label": "k",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 200.0,
+          "unit": "",
+          "tolerance": 1.0,
+          "significant_figures": 3,
+          "part": "c",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_m_002.svg",
+          "alt": "Eje y signos."
+        }
+      ],
+      "tags": [
+        "t4",
+        "m",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Muelles y ley de Hooke: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Muelles y ley de Hooke"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia m"
+      ],
+      "parts_count": 3,
+      "statement_source": "Compresión \\(5 cm\\), eje positivo a la derecha.\n\n(a) Calcula: x.\n(b) Calcula: F.\n(c) Calcula: k.",
+      "solution_source": "\\(x=-0,05 m\\); \\(F=+10 N\\) para \\(k=200\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_m_003",
+      "version": 1,
+      "title": "Masa colgada 0,5 kg",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Muelles y ley de Hooke",
+      "family": "m",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "alargamiento_de_equilibrio",
+          "label": "Alargamiento de equilibrio",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.049,
+          "unit": "m",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_m_003.svg",
+          "alt": "Dos referencias: natural y equilibrio."
+        }
+      ],
+      "tags": [
+        "t4",
+        "m",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Muelles y ley de Hooke: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Muelles y ley de Hooke"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia m"
+      ],
+      "parts_count": 1,
+      "statement_source": "Masa colgada \\(0,5 kg\\), \\(k=100 N/m\\).\n\n(a) Calcula: Alargamiento de equilibrio.",
+      "solution_source": "Alargamiento de equilibrio \\(0,049 m\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_m_004",
+      "version": 1,
+      "title": "Añadir 0,2 kg a la masa anterior",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Muelles y ley de Hooke",
+      "family": "m",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "incremento_de_alargamiento",
+          "label": "Incremento de alargamiento",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.0196,
+          "unit": "m",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "total",
+          "label": "Total",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.0686,
+          "unit": "m",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_m_004.svg",
+          "alt": "Regla vertical con dos posiciones."
+        }
+      ],
+      "tags": [
+        "t4",
+        "m",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Muelles y ley de Hooke: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Muelles y ley de Hooke"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia m"
+      ],
+      "parts_count": 2,
+      "statement_source": "Añadir \\(0,2 kg\\) a la masa anterior.\n\n(a) Calcula: Incremento de alargamiento.\n(b) Calcula: Total.",
+      "solution_source": "Incremento de alargamiento \\(0,0196 m\\); total \\(0,0686 m\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_m_005",
+      "version": 1,
+      "title": "Gráfica F-x experimental",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Muelles y ley de Hooke",
+      "family": "m",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "k",
+          "label": "k",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 150.0,
+          "unit": "N/m",
+          "tolerance": 0.75,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_m_005.svg",
+          "alt": "Puntos con signos y recta."
+        }
+      ],
+      "tags": [
+        "t4",
+        "m",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Muelles y ley de Hooke: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Muelles y ley de Hooke"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia m"
+      ],
+      "parts_count": 1,
+      "statement_source": "Gráfica \\(F-x\\) experimental.\n\n(a) Calcula: k.",
+      "solution_source": "Pendiente \\(k=150 N/m\\); función \\(F=-150x\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_m_006",
+      "version": 1,
+      "title": "Dos muelles en paralelo",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Muelles y ley de Hooke",
+      "family": "m",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "constante_equivalente",
+          "label": "Constante equivalente",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 250.0,
+          "unit": "N/m",
+          "tolerance": 1.25,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "reparto_para",
+          "label": "Reparto para 1",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 4.0,
+          "unit": "N",
+          "tolerance": 0.02,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "reparto_para_2",
+          "label": "Reparto para 2",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 6.0,
+          "unit": "N",
+          "tolerance": 0.03,
+          "significant_figures": 3,
+          "part": "c",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_m_006.svg",
+          "alt": "Dos muelles paralelos."
+        }
+      ],
+      "tags": [
+        "t4",
+        "m",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Muelles y ley de Hooke: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Muelles y ley de Hooke"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia m"
+      ],
+      "parts_count": 3,
+      "statement_source": "Dos muelles en paralelo \\(k_1=100\\), \\(k_2=150\\).\n\n(a) Calcula: Constante equivalente.\n(b) Calcula: Reparto para 1.\n(c) Calcula: Reparto para 2.",
+      "solution_source": "\\(k_eq=250 N/m\\); reparto para \\(x=0,04\\): \\(4 N\\), \\(6 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_m_007",
+      "version": 1,
+      "title": "Dos muelles en serie con mismos valores",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Muelles y ley de Hooke",
+      "family": "m",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "constante_equivalente",
+          "label": "Constante equivalente",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 60.0,
+          "unit": "N/m",
+          "tolerance": 0.3,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "alargamientos_con",
+          "label": "Alargamientos con 1",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.06,
+          "unit": "",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "alargamientos_con_2",
+          "label": "Alargamientos con 2",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.04,
+          "unit": "m",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "c",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_m_007.svg",
+          "alt": "Serie y tensión común."
+        }
+      ],
+      "tags": [
+        "t4",
+        "m",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Muelles y ley de Hooke: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Muelles y ley de Hooke"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia m"
+      ],
+      "parts_count": 3,
+      "statement_source": "Dos muelles en serie con mismos valores.\n\n(a) Calcula: Constante equivalente.\n(b) Calcula: Alargamientos con 1.\n(c) Calcula: Alargamientos con 2.",
+      "solution_source": "\\(k_eq=60 N/m\\); alargamientos con \\(F=6 N\\): \\(0,06\\), \\(0,04 m\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_m_008",
+      "version": 1,
+      "title": "Bloque horizontal unido a muelle, posición , , sin rozamiento",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Muelles y ley de Hooke",
+      "family": "m",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "fuerza",
+          "label": "Fuerza",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -6.0,
+          "unit": "N",
+          "tolerance": 0.03,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "aceleracion_para",
+          "label": "Aceleración para",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -3.0,
+          "unit": "m/s²",
+          "tolerance": 0.015,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_m_008.svg",
+          "alt": "Bloque, origen y vector restaurador."
+        }
+      ],
+      "tags": [
+        "t4",
+        "m",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Muelles y ley de Hooke: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Muelles y ley de Hooke"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia m"
+      ],
+      "parts_count": 2,
+      "statement_source": "Bloque horizontal unido a muelle, posición \\(x=0,08\\), \\(k=75\\), sin rozamiento.\n\n(a) Calcula: Fuerza.\n(b) Calcula: Aceleración para.",
+      "solution_source": "Fuerza \\(-6 N\\); aceleración para \\(m=2\\): \\(-3 m/s²\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_m_009",
+      "version": 1,
+      "title": "Muelle vertical",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Muelles y ley de Hooke",
+      "family": "m",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Selección de DCL por encima/debajo del equilibrio; fuerzas numéricas"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_m_009.svg",
+          "alt": "Tres alturas del bloque."
+        }
+      ],
+      "tags": [
+        "t4",
+        "m",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Muelles y ley de Hooke: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Muelles y ley de Hooke"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia m"
+      ],
+      "parts_count": 1,
+      "statement_source": "Muelle vertical: rapidez instantánea no determina equilibrio.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Selección de DCL por encima/debajo del equilibrio; fuerzas numéricas.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_m_010",
+      "version": 1,
+      "title": "Calibrar dinamómetro con masas 0,1–0,5 kg",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Muelles y ley de Hooke",
+      "family": "m",
+      "subtype": "multi_step",
+      "difficulty": 5,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Función x=(g/k)m; obtener k desde pendiente"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_m_010.svg",
+          "alt": "Tabla y ajuste lineal."
+        }
+      ],
+      "tags": [
+        "t4",
+        "m",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Muelles y ley de Hooke: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Muelles y ley de Hooke"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia m"
+      ],
+      "parts_count": 1,
+      "statement_source": "Calibrar dinamómetro con masas \\(0,1–0,5 kg\\).\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Función \\(x=(g/k)m\\); obtener \\(k\\) desde pendiente.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_m_011",
+      "version": 1,
+      "title": "Muelle real deja de ser lineal tras 8 cm",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Muelles y ley de Hooke",
+      "family": "m",
+      "subtype": "multi_step",
+      "difficulty": 5,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Seleccionar rango de Hooke y punto que debe excluirse del ajuste"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_m_011.svg",
+          "alt": "Curva experimental con cambio de pendiente."
+        }
+      ],
+      "tags": [
+        "t4",
+        "m",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Muelles y ley de Hooke: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Muelles y ley de Hooke"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia m"
+      ],
+      "parts_count": 1,
+      "statement_source": "Muelle real deja de ser lineal tras \\(8 cm\\).\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Seleccionar rango de Hooke y punto que debe excluirse del ajuste.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t4_m_012",
+      "version": 1,
+      "title": "Auditar confusión entre longitud L y deformación",
+      "course": "1bach",
+      "topic": "t4",
+      "concept": "Rozamiento y aplicaciones de las fuerzas",
+      "block": "Muelles y ley de Hooke",
+      "family": "m",
+      "subtype": "multi_step",
+      "difficulty": 5,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "fuerza_correctas_con",
+          "label": "Fuerza correctas con",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 5.6,
+          "unit": "N",
+          "tolerance": 0.027999999999999997,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t4/assets/t4_m_012.svg",
+          "alt": "Dos medidas etiquetadas."
+        }
+      ],
+      "tags": [
+        "t4",
+        "m",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Muelles y ley de Hooke: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Muelles y ley de Hooke"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "usar siempre el rozamiento estático máximo",
+        "elegir el sentido del rozamiento sin analizar la tendencia",
+        "ignorar la representación específica de la familia m"
+      ],
+      "parts_count": 1,
+      "statement_source": "Auditar confusión entre longitud \\(L\\) y deformación \\(x=L-L_0\\).\n\n(a) Calcula: Fuerza correctas con.",
+      "solution_source": "\\(x\\) y fuerza correctas con \\(L_0=20 cm\\), \\(L=27 cm\\), \\(k=80\\): \\(5,6 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+    }
+  ]
+}

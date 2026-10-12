@@ -5,12 +5,17 @@ from __future__ import annotations
 import json
 import re
 from pathlib import Path
+import sys
 from typing import Any
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from services.exercise_bank_loader import serialize_topic_bank
 
 
 ROOT = Path(__file__).resolve().parents[1]
 SPEC_PATH = ROOT / "content" / "exercises" / "1bach" / "t0" / "exercise-bank-t0-v4-spec.md"
-OUTPUT_PATH = ROOT / "content" / "exercises" / "1bach" / "t0" / "exercises_t0.json"
+OUTPUT_DIR = ROOT / "content" / "exercises" / "1bach" / "t0"
 
 FAMILY_BY_LETTER = {
     "U": ("units", "Lenguaje físico, unidades y análisis dimensional"),
@@ -356,8 +361,11 @@ def build_bank() -> dict[str, Any]:
 
 def main() -> int:
     bank = build_bank()
-    OUTPUT_PATH.write_text(json.dumps(bank, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"Wrote {OUTPUT_PATH.relative_to(ROOT)} with {len(bank['exercises'])} exercises.")
+    for relative_path, content in serialize_topic_bank(bank).items():
+        output_path = OUTPUT_DIR / relative_path
+        output_path.write_text(content, encoding="utf-8")
+        print(f"Wrote {output_path.relative_to(ROOT)}.")
+    print(f"Wrote split T0 bank with {len(bank['exercises'])} exercises.")
     return 0
 
 

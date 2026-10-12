@@ -1,0 +1,937 @@
+{
+  "exercises": [
+    {
+      "id": "t3_n_001",
+      "version": 1,
+      "title": "Fuerzas horizontales 14 N derecha y 8 N izquierda sobre 2 kg",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Resultante y leyes de Newton",
+      "family": "n",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "fuerza_resultante",
+          "label": "Fuerza resultante",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 6.0,
+          "unit": "N",
+          "tolerance": 0.03,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "aceleracion",
+          "label": "Aceleración",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3.0,
+          "unit": "m/s²",
+          "tolerance": 0.015,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "concepto_3",
+          "label": "Sentido",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "derecha",
+              "label": "Derecha"
+            },
+            {
+              "id": "izquierda",
+              "label": "Izquierda"
+            },
+            {
+              "id": "resultante_nula",
+              "label": "Resultante nula"
+            }
+          ],
+          "correct_option_id": "derecha",
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_n_001.svg",
+          "alt": "Recta, fuerzas y vector resultante a completar."
+        }
+      ],
+      "tags": [
+        "t3",
+        "n",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Resultante y leyes de Newton: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Resultante y leyes de Newton"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia n"
+      ],
+      "parts_count": 3,
+      "statement_source": "Fuerzas horizontales \\(14 N\\) derecha y \\(8 N\\) izquierda sobre \\(2 kg\\).\n\n(a) Calcula: Fuerza resultante.\n(b) Calcula: Aceleración.\n(c) Selecciona: Sentido.",
+      "solution_source": "\\(F_R=6 N\\); \\(a=3 m/s²\\), derecha.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t3_n_002",
+      "version": 1,
+      "title": "Fuerzas perpendiculares 6 N y 8 N sobre 5 kg",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Resultante y leyes de Newton",
+      "family": "n",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "vector",
+          "label": "Vector",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "expected_components": [
+            6.0,
+            8.0
+          ],
+          "accepted_forms": [
+            "(6; 8)"
+          ],
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "unit": "N",
+          "tolerance": 0.02,
+          "part": "a"
+        },
+        {
+          "id": "modulo",
+          "label": "Módulo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 10.0,
+          "unit": "N",
+          "tolerance": 0.05,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "aceleracion",
+          "label": "Aceleración",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2.0,
+          "unit": "m/s²",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "c",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_n_002.svg",
+          "alt": "Paralelogramo vectorial."
+        }
+      ],
+      "tags": [
+        "t3",
+        "n",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Resultante y leyes de Newton: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Resultante y leyes de Newton"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia n"
+      ],
+      "parts_count": 3,
+      "statement_source": "Fuerzas perpendiculares \\(6 N\\) y \\(8 N\\) sobre \\(5 kg\\).\n\n(a) Calcula: Vector.\n(b) Calcula: Módulo.\n(c) Calcula: Aceleración.",
+      "solution_source": "Resultante \\((6;8) N\\); módulo \\(10 N\\); \\(a=2 m/s²\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t3_n_003",
+      "version": 1,
+      "title": "Carrito pasa de 2 a 8 m/s en 3 s",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Resultante y leyes de Newton",
+      "family": "n",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "aceleracion",
+          "label": "Aceleración",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2.0,
+          "unit": "m/s²",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "fuerza_resultante",
+          "label": "Fuerza resultante",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 8.0,
+          "unit": "N",
+          "tolerance": 0.04,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_n_003.svg",
+          "alt": "Panel v(t) y DCL incompleto."
+        }
+      ],
+      "tags": [
+        "t3",
+        "n",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Resultante y leyes de Newton: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Resultante y leyes de Newton"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia n"
+      ],
+      "parts_count": 2,
+      "statement_source": "Carrito pasa de \\(2\\) a \\(8 m/s\\) en \\(3 s\\), \\(m=4 kg\\).\n\n(a) Calcula: Aceleración.\n(b) Calcula: Fuerza resultante.",
+      "solution_source": "\\(a=2 m/s²\\); \\(F_R=8 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t3_n_004",
+      "version": 1,
+      "title": "Resultante constante -12 N",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Resultante y leyes de Newton",
+      "family": "n",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "aceleracion",
+          "label": "Aceleración",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -4.0,
+          "unit": "m/s²",
+          "tolerance": 0.02,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "parada",
+          "label": "Parada",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2.5,
+          "unit": "s",
+          "tolerance": 0.0125,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_n_004.svg",
+          "alt": "Vectores v y a opuestos."
+        }
+      ],
+      "tags": [
+        "t3",
+        "n",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Resultante y leyes de Newton: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Resultante y leyes de Newton"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia n"
+      ],
+      "parts_count": 2,
+      "statement_source": "Resultante constante \\(-12 N\\), \\(m=3 kg\\), \\(v_0=10 m/s\\).\n\n(a) Calcula: Aceleración.\n(b) Calcula: Parada.",
+      "solution_source": "\\(a=-4 m/s²\\); parada \\(2,5 s\\); selección del sentido antes de parar.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t3_n_005",
+      "version": 1,
+      "title": "Dos cuerpos reciben la misma resultante",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Resultante y leyes de Newton",
+      "family": "n",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "a_1_a_2",
+          "label": "a 1/a 2",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2.5,
+          "unit": "",
+          "tolerance": 0.0125,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_n_005.svg",
+          "alt": "Dos carros y gráfica comparativa."
+        }
+      ],
+      "tags": [
+        "t3",
+        "n",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Resultante y leyes de Newton: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Resultante y leyes de Newton"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia n"
+      ],
+      "parts_count": 1,
+      "statement_source": "Dos cuerpos reciben la misma resultante; masas \\(2\\) y \\(5 kg\\).\n\n(a) Calcula: a 1/a 2.",
+      "solution_source": "Razón \\(a_1/a_2=2,5\\); elección de la gráfica \\(a(F)\\) correcta.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t3_n_006",
+      "version": 1,
+      "title": "Experimento F-a",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Resultante y leyes de Newton",
+      "family": "n",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "pendiente_masa",
+          "label": "Pendiente/masa",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 4.0,
+          "unit": "kg",
+          "tolerance": 0.02,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_n_006.svg",
+          "alt": "Dispersión lineal con origen."
+        }
+      ],
+      "tags": [
+        "t3",
+        "n",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Resultante y leyes de Newton: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Resultante y leyes de Newton"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia n"
+      ],
+      "parts_count": 1,
+      "statement_source": "Experimento \\(F-a\\): puntos \\((2,0,5)\\), \\((4,1)\\), \\((6,1,5)\\).\n\n(a) Calcula: Pendiente/masa.",
+      "solution_source": "Pendiente/masa \\(4 kg\\); función \\(F=4a\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t3_n_007",
+      "version": 1,
+      "title": "Velocidad constante pese a motor de 500 N",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Resultante y leyes de Newton",
+      "family": "n",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "fuerza_resistiva",
+          "label": "Fuerza resistiva",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 500.0,
+          "unit": "N",
+          "tolerance": 2.5,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "resultante",
+          "label": "Resultante",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.0,
+          "unit": "N",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_n_007.svg",
+          "alt": "Vehículo con fuerzas horizontales equilibradas."
+        }
+      ],
+      "tags": [
+        "t3",
+        "n",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Resultante y leyes de Newton: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Resultante y leyes de Newton"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia n"
+      ],
+      "parts_count": 2,
+      "statement_source": "Velocidad constante pese a motor de \\(500 N\\).\n\n(a) Calcula: Fuerza resistiva.\n(b) Calcula: Resultante.",
+      "solution_source": "Fuerza resistiva \\(500 N\\); resultante \\(0 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t3_n_008",
+      "version": 1,
+      "title": "Trineo 20 kg, fuerza (60",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Resultante y leyes de Newton",
+      "family": "n",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "resistencia",
+          "label": "Resistencia",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 20.0,
+          "unit": "N",
+          "tolerance": 0.1,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "vector",
+          "label": "Vector",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "expected_components": [
+            40.0,
+            0.0
+          ],
+          "accepted_forms": [
+            "(40; 0)"
+          ],
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "unit": "N",
+          "tolerance": 0.02,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_n_008.svg",
+          "alt": "DCL con fuerza desconocida."
+        }
+      ],
+      "tags": [
+        "t3",
+        "n",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Resultante y leyes de Newton: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Resultante y leyes de Newton"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia n"
+      ],
+      "parts_count": 2,
+      "statement_source": "Trineo \\(20 kg\\), fuerza \\((60;0) N\\), aceleración \\((2;0)\\).\n\n(a) Calcula: Resistencia.\n(b) Calcula: Vector.",
+      "solution_source": "Resistencia \\(20 N\\) opuesta; resultante \\((40;0) N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t3_n_009",
+      "version": 1,
+      "title": "Cuerpo con",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Resultante y leyes de Newton",
+      "family": "n",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "vector",
+          "label": "Vector",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "expected_components": [
+            6.0,
+            -3.0
+          ],
+          "accepted_forms": [
+            "(6; -3)"
+          ],
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "unit": "N",
+          "tolerance": 0.02,
+          "part": "a"
+        },
+        {
+          "id": "modulo",
+          "label": "Módulo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 6.71,
+          "unit": "N",
+          "tolerance": 0.03355,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_n_009.svg",
+          "alt": "Plano cartesiano de aceleración/resultante."
+        }
+      ],
+      "tags": [
+        "t3",
+        "n",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Resultante y leyes de Newton: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Resultante y leyes de Newton"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia n"
+      ],
+      "parts_count": 2,
+      "statement_source": "Cuerpo con \\(a=(2;-1) m/s²\\), \\(m=3 kg\\).\n\n(a) Calcula: Vector.\n(b) Calcula: Módulo.",
+      "solution_source": "Resultante \\((6;-3) N\\); módulo \\(6,71 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t3_n_010",
+      "version": 1,
+      "title": "Elegir gráfica de aceleración cuando la fuerza neta cambia de signo",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Resultante y leyes de Newton",
+      "family": "n",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "valores",
+          "label": "Valores",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2.0,
+          "unit": "m/s²",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_n_010.svg",
+          "alt": "Paneles escalonados F(t) y opciones a(t)."
+        }
+      ],
+      "tags": [
+        "t3",
+        "n",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Resultante y leyes de Newton: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Resultante y leyes de Newton"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia n"
+      ],
+      "parts_count": 1,
+      "statement_source": "Elegir gráfica de aceleración cuando la fuerza neta cambia de signo.\n\n(a) Calcula: Valores.",
+      "solution_source": "Opción exacta \\(a(t)=F(t)/m\\); valores \\(2,0,-1 m/s²\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t3_n_011",
+      "version": 1,
+      "title": "Báscula en ascensor registra 735 N para",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Resultante y leyes de Newton",
+      "family": "n",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "aceleracion",
+          "label": "Aceleración",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.7,
+          "unit": "m/s²",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "concepto_2",
+          "label": "Sentido",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "hacia_arriba",
+              "label": "Hacia arriba"
+            },
+            {
+              "id": "hacia_abajo",
+              "label": "Hacia abajo"
+            },
+            {
+              "id": "sin_direccion_preferente",
+              "label": "Sin dirección preferente"
+            }
+          ],
+          "correct_option_id": "hacia_arriba",
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_n_011.svg",
+          "alt": "Báscula y DCL con lectura N."
+        }
+      ],
+      "tags": [
+        "t3",
+        "n",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Resultante y leyes de Newton: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Resultante y leyes de Newton"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia n"
+      ],
+      "parts_count": 2,
+      "statement_source": "Báscula en ascensor registra \\(735 N\\) para \\(m=70 kg\\).\n\n(a) Calcula: Aceleración.\n(b) Selecciona: Sentido.",
+      "solution_source": "\\(a=0,7 m/s²\\) hacia arriba.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t3_n_012",
+      "version": 1,
+      "title": "Error",
+      "course": "1bach",
+      "topic": "t3",
+      "concept": "Leyes de Newton",
+      "block": "Resultante y leyes de Newton",
+      "family": "n",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "concepto_1",
+          "label": "Conclusión",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "se_conserva",
+              "label": "Se conserva"
+            },
+            {
+              "id": "aumenta_necesariamente",
+              "label": "Aumenta necesariamente"
+            },
+            {
+              "id": "disminuye_necesariamente",
+              "label": "Disminuye necesariamente"
+            }
+          ],
+          "correct_option_id": "se_conserva",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t3/assets/t3_n_012.svg",
+          "alt": "Dos gráficas x(t) candidatas."
+        }
+      ],
+      "tags": [
+        "t3",
+        "n",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Resultante y leyes de Newton: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Resultante y leyes de Newton"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "añadir la resultante como una fuerza independiente",
+        "confundir acción-reacción con fuerzas sobre el mismo cuerpo",
+        "ignorar la representación específica de la familia n"
+      ],
+      "parts_count": 1,
+      "statement_source": "Error: “si la resultante es cero, el objeto está parado”.\n\n(a) Selecciona: Conclusión.",
+      "solution_source": "Selección contraejemplo: MRU; velocidad compatible \\(cualquier constante\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+    }
+  ]
+}

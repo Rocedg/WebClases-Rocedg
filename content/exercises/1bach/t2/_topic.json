@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "course": "1bach",
+  "topic": "t2",
+  "topic_slug": "t2",
+  "block": "Movimiento en el plano",
+  "description": "Banco de contenido: revisión editorial y matemática; sin implementación de interfaz ni intentos.",
+  "exercise_files": [
+    "v.json",
+    "f.json",
+    "h.json",
+    "p_launches.json",
+    "p_ranges.json",
+    "c.json",
+    "i.json"
+  ]
+}

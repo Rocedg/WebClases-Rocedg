@@ -77,16 +77,21 @@ def collect_exercises(root: Path) -> list[dict[str, Any]]:
 def build_index(root: Path | None = None, write: bool = True) -> dict[str, Any]:
     root = root or repo_root()
     exercises = collect_exercises(root)
+    generated_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+    output_path = root / "content" / "exercises" / "index.json"
+    if output_path.exists():
+        previous = load_json(output_path)
+        if previous.get("exercises") == exercises and isinstance(previous.get("generated_at"), str):
+            generated_at = previous["generated_at"]
     index = {
         "version": 1,
         "generated": True,
-        "generated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
+        "generated_at": generated_at,
         "source": "content/exercises",
         "exercises": exercises,
     }
 
     if write:
-        output_path = root / "content" / "exercises" / "index.json"
         output_path.parent.mkdir(parents=True, exist_ok=True)
         output_path.write_text(
             json.dumps(index, ensure_ascii=False, indent=2) + "\n",

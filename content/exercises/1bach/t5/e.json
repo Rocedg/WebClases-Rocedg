@@ -1,0 +1,702 @@
+{
+  "exercises": [
+    {
+      "id": "t5_e_001",
+      "version": 1,
+      "title": "Muelle , deformación 0,10 m",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía elástica",
+      "family": "e",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "u_e",
+          "label": "U e",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.0,
+          "unit": "J",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_e_001.svg",
+          "alt": "Longitud natural/deformada."
+        }
+      ],
+      "tags": [
+        "t5",
+        "e",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía elástica: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía elástica"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia e"
+      ],
+      "parts_count": 1,
+      "statement_source": "Muelle \\(k=200\\), deformación \\(0,10 m\\).\n\n(a) Calcula: U e.",
+      "solution_source": "\\(U_e=1 J\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_e_002",
+      "version": 1,
+      "title": "Duplicar deformación",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía elástica",
+      "family": "e",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "razon_de_energias",
+          "label": "Razón de energías",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 4.0,
+          "unit": "",
+          "tolerance": 0.02,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_e_002.svg",
+          "alt": "Parábola U(x)."
+        }
+      ],
+      "tags": [
+        "t5",
+        "e",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía elástica: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía elástica"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia e"
+      ],
+      "parts_count": 1,
+      "statement_source": "Duplicar deformación.\n\n(a) Calcula: Razón de energías.",
+      "solution_source": "Razón de energías \\(4\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_e_003",
+      "version": 1,
+      "title": "Trabajo del muelle de  a 0",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía elástica",
+      "family": "e",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "resultado_1",
+          "label": "Resultado 1",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.72,
+          "unit": "J",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_e_003.svg",
+          "alt": "Área triangular F-x."
+        }
+      ],
+      "tags": [
+        "t5",
+        "e",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía elástica: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía elástica"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia e"
+      ],
+      "parts_count": 1,
+      "statement_source": "Trabajo del muelle de \\(x=0,12\\) a \\(0\\). \\(k=100\\).\n\n(a) Calcula: Resultado 1.",
+      "solution_source": "\\(+0,72 J\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_e_004",
+      "version": 1,
+      "title": "Trabajo externo cuasiestático al comprimir 0→0,08",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía elástica",
+      "family": "e",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "resultado_1",
+          "label": "Resultado 1",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.8,
+          "unit": "J",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_e_004.svg",
+          "alt": "Fuerza aplicada creciente."
+        }
+      ],
+      "tags": [
+        "t5",
+        "e",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía elástica: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía elástica"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia e"
+      ],
+      "parts_count": 1,
+      "statement_source": "Trabajo externo cuasiestático al comprimir \\(0\\to 0,08\\), \\(k=250\\).\n\n(a) Calcula: Resultado 1.",
+      "solution_source": "\\(0,8 J\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_e_005",
+      "version": 1,
+      "title": "Muelle lanza bloque 0,5 kg, , , sin rozamiento",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía elástica",
+      "family": "e",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "rapidez",
+          "label": "Rapidez",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2.0,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_e_005.svg",
+          "alt": "Estado comprimido/salida."
+        }
+      ],
+      "tags": [
+        "t5",
+        "e",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía elástica: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía elástica"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia e"
+      ],
+      "parts_count": 1,
+      "statement_source": "Muelle lanza bloque \\(0,5 kg\\), \\(k=200\\), \\(x=0,10\\), sin rozamiento.\n\n(a) Calcula: Rapidez.",
+      "solution_source": "\\(v=2 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_e_006",
+      "version": 1,
+      "title": "Muelle vertical",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía elástica",
+      "family": "e",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "x_eq=mg/k; energía total con ambas referencias"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_e_006.svg",
+          "alt": "Dos ceros geométricos."
+        }
+      ],
+      "tags": [
+        "t5",
+        "e",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía elástica: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía elástica"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia e"
+      ],
+      "parts_count": 1,
+      "statement_source": "Muelle vertical: comparar referencia natural y equilibrio.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "\\(x_eq=mg/k\\); energía total con ambas referencias.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_e_007",
+      "version": 1,
+      "title": "Dos muelles en paralelo almacenan energía",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía elástica",
+      "family": "e",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "U=½(k_1+k_2)x²"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_e_007.svg",
+          "alt": "Montaje paralelo y barras."
+        }
+      ],
+      "tags": [
+        "t5",
+        "e",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía elástica: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía elástica"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia e"
+      ],
+      "parts_count": 1,
+      "statement_source": "Dos muelles en paralelo almacenan energía.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "\\(U=½(k_1+k_2)x²\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_e_008",
+      "version": 1,
+      "title": "Muelles en serie ,  sometidos a",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía elástica",
+      "family": "e",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 17,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "deformaciones",
+          "label": "Deformaciones 1",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.1,
+          "unit": "",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "deformaciones_2",
+          "label": "Deformaciones 2",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.05,
+          "unit": "m",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "b",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "energia_3",
+          "label": "Energía 3",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.5,
+          "unit": "",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "c",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "energia_4",
+          "label": "Energía 4",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.25,
+          "unit": "J",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "d",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        },
+        {
+          "id": "total",
+          "label": "Total",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.75,
+          "unit": "J",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "e",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_e_008.svg",
+          "alt": "Deformaciones separadas."
+        }
+      ],
+      "tags": [
+        "t5",
+        "e",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía elástica: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía elástica"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia e"
+      ],
+      "parts_count": 5,
+      "statement_source": "Muelles en serie \\(k_1=100\\), \\(k_2=200 N/m\\) sometidos a \\(F=10 N\\).\n\n(a) Calcula: Deformaciones 1.\n(b) Calcula: Deformaciones 2.\n(c) Calcula: Energía 3.\n(d) Calcula: Energía 4.\n(e) Calcula: Total.",
+      "solution_source": "Deformaciones \\(0,10\\), \\(0,05 m\\); energías \\(0,50\\), \\(0,25 J\\); total \\(0,75 J\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_e_009",
+      "version": 1,
+      "title": "La curva da  cuando",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía elástica",
+      "family": "e",
+      "subtype": "multi_step",
+      "difficulty": 5,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "k",
+          "label": "k",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 80.0,
+          "unit": "N/m",
+          "tolerance": 0.4,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_e_009.svg",
+          "alt": "Datos U-x."
+        }
+      ],
+      "tags": [
+        "t5",
+        "e",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía elástica: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía elástica"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia e"
+      ],
+      "parts_count": 1,
+      "statement_source": "La curva da \\(U=0,90 J\\) cuando \\(x=0,15 m\\).\n\n(a) Calcula: k.",
+      "solution_source": "\\(k=2U/x²=80 N/m\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_e_010",
+      "version": 1,
+      "title": "Auditar  para",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía elástica",
+      "family": "e",
+      "subtype": "multi_step",
+      "difficulty": 5,
+      "estimated_minutes": 15,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "resultado",
+          "label": "Resultado",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.6,
+          "unit": "J",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_e_010.svg",
+          "alt": "Tarjetas de fórmulas dimensionales."
+        }
+      ],
+      "tags": [
+        "t5",
+        "e",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía elástica: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía elástica"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia e"
+      ],
+      "parts_count": 1,
+      "statement_source": "Auditar \\(U=kx\\) para \\(k=120 N/m\\), \\(x=0,10 m\\).\n\n(a) Calcula: Resultado.",
+      "solution_source": "Seleccionar \\(U=½kx²\\); unidad \\(J\\); resultado \\(0,60 J\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    }
+  ]
+}

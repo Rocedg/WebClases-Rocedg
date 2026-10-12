@@ -1,0 +1,626 @@
+{
+  "exercises": [
+    {
+      "id": "t0_v_001",
+      "title": "Escalar y vector en un trayecto",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "single_choice_multi",
+      "difficulty": 2,
+      "estimated_minutes": 7,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "tiempo",
+          "label": "Tiempo",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "escalar",
+              "label": "Escalar"
+            },
+            {
+              "id": "vectorial",
+              "label": "Vectorial"
+            }
+          ],
+          "correct_option_id": "escalar",
+          "part": "a"
+        },
+        {
+          "id": "distancia",
+          "label": "Distancia recorrida",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "escalar",
+              "label": "Escalar"
+            },
+            {
+              "id": "vectorial",
+              "label": "Vectorial"
+            }
+          ],
+          "correct_option_id": "escalar",
+          "part": "a"
+        },
+        {
+          "id": "rapidez",
+          "label": "Rapidez media",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "escalar",
+              "label": "Escalar"
+            },
+            {
+              "id": "vectorial",
+              "label": "Vectorial"
+            }
+          ],
+          "correct_option_id": "escalar",
+          "part": "a"
+        },
+        {
+          "id": "desplazamiento",
+          "label": "Desplazamiento",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "escalar",
+              "label": "Escalar"
+            },
+            {
+              "id": "vectorial",
+              "label": "Vectorial"
+            }
+          ],
+          "correct_option_id": "vectorial",
+          "part": "a"
+        },
+        {
+          "id": "velocidad",
+          "label": "Velocidad media",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "escalar",
+              "label": "Escalar"
+            },
+            {
+              "id": "vectorial",
+              "label": "Vectorial"
+            }
+          ],
+          "correct_option_id": "vectorial",
+          "part": "a"
+        },
+        {
+          "id": "distance",
+          "label": "Distancia recorrida",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 700.0,
+          "tolerance": 0.5,
+          "unit": "m",
+          "part": "b"
+        },
+        {
+          "id": "displacement_magnitude",
+          "label": "Módulo del desplazamiento",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 500.0,
+          "tolerance": 0.5,
+          "unit": "m",
+          "part": "b"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "clasificar rapidez como vector",
+        "responder 700 m como desplazamiento",
+        "definir vector solo como «algo con flecha» sin referirse a módulo, dirección y sentido"
+      ],
+      "statement_source": "Una alumna camina 300 m al este y después 400 m al norte, y tarda 10 min.\n\n(a) Clasifica cada magnitud como escalar o vectorial.\n(b) Calcula la distancia recorrida y el módulo del desplazamiento.",
+      "solution_source": "(a) Tiempo, distancia y rapidez media son escalares: solo tienen valor. Desplazamiento y velocidad media son vectoriales: tienen módulo, dirección y sentido.\n(b) Recorre \\(300+400=700\\) m, pero se desplaza \\((300,\\,400)\\) m, de módulo \\(\\sqrt{300^2+400^2}=500\\) m. No son intercambiables: la distancia no tiene dirección y el desplazamiento sí.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_002",
+      "title": "Módulo, unitario y dirección",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "magnitude",
+          "label": "Módulo \\(|\\vec a|\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 5.0,
+          "tolerance": 0.01,
+          "unit": "m",
+          "part": "a"
+        },
+        {
+          "id": "ux",
+          "label": "Componente \\(x\\) de \\(\\hat a\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.8,
+          "tolerance": 0.002,
+          "part": "b"
+        },
+        {
+          "id": "uy",
+          "label": "Componente \\(y\\) de \\(\\hat a\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -0.6,
+          "tolerance": 0.002,
+          "part": "b"
+        },
+        {
+          "id": "angle",
+          "label": "Ángulo desde +x",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 323.1,
+          "tolerance": 0.2,
+          "prompt": "Entre 0 y 360°.",
+          "unit": "°",
+          "part": "c"
+        },
+        {
+          "id": "unit_check",
+          "label": "Módulo de \\(\\hat a\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.0,
+          "tolerance": 0.002,
+          "part": "d"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "dar $-36,9^\\circ$ sin ajustarse al intervalo",
+        "dividir por una componente",
+        "perder el signo de $y$"
+      ],
+      "statement_source": "Sea \\(\\vec a=(4,\\,-3)\\) m.\n\n(a) Calcula su módulo.\n(b) Calcula las componentes del vector unitario en su dirección, \\(\\hat a=\\vec a/|\\vec a|\\).\n(c) Calcula el ángulo que forma con \\(+x\\), entre \\(0^\\circ\\) y \\(360^\\circ\\).\n(d) Comprueba que \\(\\hat a\\) tiene módulo 1: calcula \\(|\\hat a|\\).",
+      "solution_source": "(a) \\(|\\vec a|=\\sqrt{16+9}=5\\) m.\n(b) \\(\\hat a=(4/5,\\,-3/5)=(0{,}8;\\,-0{,}6)\\), sin unidades.\n(c) Cuarto cuadrante: \\(\\theta=360^\\circ-\\arctan(3/4)=323{,}1^\\circ\\).\n(d) \\(\\sqrt{0{,}64+0{,}36}=1\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_003",
+      "title": "Fuerza con dirección prescrita",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 8,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "Fx",
+          "label": "\\(F_x\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 9.0,
+          "tolerance": 0.02,
+          "unit": "N",
+          "part": "a"
+        },
+        {
+          "id": "Fy",
+          "label": "\\(F_y\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 12.0,
+          "tolerance": 0.02,
+          "unit": "N",
+          "part": "a"
+        },
+        {
+          "id": "magnitude",
+          "label": "Módulo de \\(\\vec F\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 15.0,
+          "tolerance": 0.02,
+          "unit": "N",
+          "part": "b"
+        },
+        {
+          "id": "opposite_x",
+          "label": "Componente \\(x\\) de \\(-\\vec F\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -9.0,
+          "tolerance": 0.01,
+          "unit": "N",
+          "part": "c"
+        },
+        {
+          "id": "opposite_y",
+          "label": "Componente \\(y\\) de \\(-\\vec F\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -12.0,
+          "tolerance": 0.01,
+          "unit": "N",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "multiplicar directamente $(6,8)$ por 15",
+        "construir un perpendicular",
+        "cambiar solo un signo"
+      ],
+      "statement_source": "Queremos una fuerza de 15,0 N con la misma dirección y sentido que el vector \\((6,\\,8)\\).\n\n(a) Calcula las componentes de la fuerza \\(\\vec F\\). Pista de método: construye primero el unitario de \\((6,\\,8)\\).\n(b) Comprueba su módulo.\n(c) Escribe las componentes de la fuerza opuesta, \\(-\\vec F\\).",
+      "solution_source": "(a) \\(|(6,\\,8)|=10\\), así que el unitario es \\((0{,}6;\\,0{,}8)\\) y \\(\\vec F=15{,}0\\cdot(0{,}6;\\,0{,}8)=(9{,}00;\\,12{,}0)\\) N.\n(b) \\(\\sqrt{81+144}=15{,}0\\) N.\n(c) \\(-\\vec F=(-9{,}00;\\,-12{,}0)\\) N.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_004",
+      "title": "Tres representaciones del mismo vector",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "x",
+          "label": "Componente \\(x\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -17.3,
+          "tolerance": 0.05,
+          "significant_figures": 3,
+          "prompt": "Con 3 cifras significativas.",
+          "unit": "m",
+          "part": "a"
+        },
+        {
+          "id": "y",
+          "label": "Componente \\(y\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 10.0,
+          "tolerance": 0.05,
+          "significant_figures": 3,
+          "prompt": "Con 3 cifras significativas.",
+          "unit": "m",
+          "part": "a"
+        },
+        {
+          "id": "quadrant",
+          "label": "Cuadrante",
+          "required": true,
+          "type": "short_text",
+          "accepted_forms": [
+            "II",
+            "2",
+            "segundo",
+            "segundo cuadrante"
+          ],
+          "prompt": "Escribe el número romano: I, II, III o IV.",
+          "part": "b"
+        },
+        {
+          "id": "reconstrucci_n_magnitude",
+          "label": "Módulo reconstruido",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 20.0,
+          "tolerance": 0.01,
+          "unit": "m",
+          "part": "c"
+        },
+        {
+          "id": "angle",
+          "label": "Ángulo reconstruido desde +x",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 150.0,
+          "tolerance": 0.2,
+          "unit": "°",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "usar seno para $x$ sin justificar otra convención",
+        "devolver ambas componentes positivas",
+        "confundir vector con su módulo"
+      ],
+      "statement_source": "Un desplazamiento tiene módulo 20,0 m y forma \\(150^\\circ\\) con \\(+x\\).\n\n(a) Calcula sus componentes cartesianas.\n(b) Indica en qué cuadrante está.\n(c) Reconstruye el módulo y el ángulo a partir de las componentes.",
+      "solution_source": "(a) \\(R_x=20{,}0\\cos150^\\circ=-17{,}3\\) m y \\(R_y=20{,}0\\sin150^\\circ=10{,}0\\) m, es decir, \\(\\vec R=(-17{,}3\\,\\hat\\imath+10{,}0\\,\\hat\\jmath)\\) m.\n(b) \\(x<0\\), \\(y>0\\): segundo cuadrante.\n(c) \\(\\sqrt{17{,}3^2+10{,}0^2}=20{,}0\\) m. La calculadora da \\(\\arctan(10{,}0/-17{,}3)=-30^\\circ\\); como está en el segundo cuadrante se suma \\(180^\\circ\\): \\(150^\\circ\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_005",
+      "title": "Componente desconocida y dos direcciones posibles",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "a_positive",
+          "label": "Valor positivo de \\(a\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 5.0,
+          "tolerance": 0.01,
+          "part": "a"
+        },
+        {
+          "id": "a_negative",
+          "label": "Valor negativo de \\(a\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -5.0,
+          "tolerance": 0.01,
+          "part": "a"
+        },
+        {
+          "id": "angle_positive",
+          "label": "Ángulo con \\(a\\) positivo",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 67.4,
+          "tolerance": 0.2,
+          "unit": "°",
+          "part": "b"
+        },
+        {
+          "id": "angle_negative",
+          "label": "Ángulo con \\(a\\) negativo",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 112.6,
+          "tolerance": 0.2,
+          "unit": "°",
+          "part": "b"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "quedarse solo con $a=5$",
+        "usar el mismo ángulo para ambos",
+        "resolver $a+12=13$"
+      ],
+      "statement_source": "El vector \\(\\vec u=(a,\\,12)\\) tiene módulo 13.\n\n(a) Calcula los dos valores posibles de \\(a\\).\n(b) Calcula el ángulo con \\(+x\\) de cada uno de los dos vectores.",
+      "solution_source": "(a) \\(a^2+144=169\\Rightarrow a^2=25\\Rightarrow a=\\pm5\\).\n(b) \\((5,\\,12)\\) está en el primer cuadrante: \\(67{,}4^\\circ\\). \\((-5,\\,12)\\) está en el segundo: \\(180^\\circ-67{,}4^\\circ=112{,}6^\\circ\\). El módulo solo no fija la dirección.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_006",
+      "title": "Relaciones entre pares de vectores",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "short_text_multi",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "C_D_paralelos_de_sentido_opuesto_y_D",
+          "label": "Factor \\(k\\) de \\(\\vec D=k\\vec C\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -2.0,
+          "tolerance": 0.01,
+          "part": "a"
+        },
+        {
+          "id": "E_F_perpendiculares_porque_E_cdot_F",
+          "label": "\\(\\vec E\\cdot\\vec F\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.0,
+          "tolerance": 0.01,
+          "part": "b"
+        },
+        {
+          "id": "pair_AB",
+          "label": "Par \\(\\vec A\\), \\(\\vec B\\)",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "iguales",
+              "label": "Iguales"
+            },
+            {
+              "id": "paralelos_opuestos",
+              "label": "Paralelos de sentido opuesto"
+            },
+            {
+              "id": "paralelos_mismo",
+              "label": "Paralelos del mismo sentido, distinto módulo"
+            },
+            {
+              "id": "perpendiculares",
+              "label": "Perpendiculares"
+            }
+          ],
+          "correct_option_id": "iguales",
+          "part": "c"
+        },
+        {
+          "id": "pair_CD",
+          "label": "Par \\(\\vec C\\), \\(\\vec D\\)",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "iguales",
+              "label": "Iguales"
+            },
+            {
+              "id": "paralelos_opuestos",
+              "label": "Paralelos de sentido opuesto"
+            },
+            {
+              "id": "paralelos_mismo",
+              "label": "Paralelos del mismo sentido, distinto módulo"
+            },
+            {
+              "id": "perpendiculares",
+              "label": "Perpendiculares"
+            }
+          ],
+          "correct_option_id": "paralelos_opuestos",
+          "part": "c"
+        },
+        {
+          "id": "pair_EF",
+          "label": "Par \\(\\vec E\\), \\(\\vec F\\)",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "iguales",
+              "label": "Iguales"
+            },
+            {
+              "id": "paralelos_opuestos",
+              "label": "Paralelos de sentido opuesto"
+            },
+            {
+              "id": "paralelos_mismo",
+              "label": "Paralelos del mismo sentido, distinto módulo"
+            },
+            {
+              "id": "perpendiculares",
+              "label": "Perpendiculares"
+            }
+          ],
+          "correct_option_id": "perpendiculares",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "llamar iguales a C y D",
+        "afirmar que longitudes distintas impiden paralelismo",
+        "decidir perpendicularidad por apariencia"
+      ],
+      "statement_source": "Tres pares de vectores: \\(\\vec A=(2,\\,-1)\\) y \\(\\vec B=(2,\\,-1)\\); \\(\\vec C=(3,\\,0)\\) y \\(\\vec D=(-6,\\,0)\\); \\(\\vec E=(1,\\,2)\\) y \\(\\vec F=(2,\\,-1)\\). Usa las componentes (proporcionalidad o producto escalar), no solo el dibujo.\n\n(a) Calcula el factor \\(k\\) tal que \\(\\vec D=k\\,\\vec C\\).\n(b) Calcula el producto escalar \\(\\vec E\\cdot\\vec F\\).\n(c) Clasifica cada par.",
+      "solution_source": "(a) \\(\\vec D=-2\\,\\vec C\\): \\(k=-2\\).\n(b) \\(\\vec E\\cdot\\vec F=1\\cdot2+2\\cdot(-1)=0\\).\n(c) \\(\\vec A\\) y \\(\\vec B\\) son iguales. \\(\\vec C\\) y \\(\\vec D\\) son paralelos de sentido opuesto (no son opuestos en sentido estricto, porque \\(\\vec D\\neq-\\vec C\\)). \\(\\vec E\\) y \\(\\vec F\\) son perpendiculares porque su producto escalar es 0.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    }
+  ]
+}

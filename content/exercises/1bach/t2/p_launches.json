@@ -1,0 +1,768 @@
+{
+  "exercises": [
+    {
+      "id": "t2_p_001",
+      "version": 1,
+      "title": "Un lanzamiento hacia la izquierda",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Tiro parabólico",
+      "family": "p",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "v0",
+          "label": "Velocidad inicial",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(-10; 17.32050807568877)",
+            "-10 i + (17.32050807568877) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            -10,
+            17.32050807568877
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "a"
+        },
+        {
+          "id": "v1",
+          "label": "Velocidad a 1 s",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(-10; 7.320508075688771)",
+            "-10 i + (7.320508075688771) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            -10,
+            7.320508075688771
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_p_001.svg",
+          "alt": "Descomposición de v₀ a 120°"
+        }
+      ],
+      "tags": [
+        "t2",
+        "p",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Un lanzamiento hacia la izquierda. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Tiro parabólico"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar usar componentes positivas por ser un lanzamiento.",
+      "common_mistakes": [
+        "Usar componentes positivas por ser un lanzamiento",
+        "Confundir a_y negativa con v_y negativa"
+      ],
+      "parts_count": 2,
+      "statement_source": "Origen en el lanzamiento, \\(+x\\) derecha,\\(+y\\) arriba; sin aire, \\(a_y=−g=−10 m/s²\\). Se lanza a 20 m/s formando 120° desde \\(+x\\). \n(a) Completa: Velocidad inicial.\n(b) Obtén v a 1 s e indica si sube y hacia qué lado.",
+      "solution_source": "\\(v_0x=20\\) cos120°=−10 m/s; \\(v_0y=20\\) sen120°=10√3=17,3 m/s.\n\n√(\\(100+300\\))=20 m/s. A 1 s: \\(v_x=−10,v_y=17,3205−10=7,32 m/s\\).\n\nSigue subiendo (\\(v_y\\)>0) mientras avanza a la izquierda (\\(v_x\\)<0); \\(a_y\\) negativa no implica descenso inmediato.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_p_002",
+      "version": 1,
+      "title": "Ecuaciones con origen no situado en la salida",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Tiro parabólico",
+      "family": "p",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "x",
+          "label": "X(t)",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [
+            "3+8*t"
+          ],
+          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
+          "grading": "pending_review",
+          "variable": "t",
+          "variable_unit": "s",
+          "unit": "m",
+          "domain": "t ≥ 0",
+          "canonical_expression": "3+8*t",
+          "part": "a"
+        },
+        {
+          "id": "y",
+          "label": "Y(t)",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [
+            "2+6*t-5*t**2"
+          ],
+          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
+          "grading": "pending_review",
+          "variable": "t",
+          "variable_unit": "s",
+          "unit": "m",
+          "domain": "t ≥ 0",
+          "canonical_expression": "2+6*t-5*t**2",
+          "part": "a"
+        },
+        {
+          "id": "r",
+          "label": "Posición a 0,5 s",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(7; 3.75)",
+            "7 i + (3.75) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            7,
+            3.75
+          ],
+          "unit": "m",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        },
+        {
+          "id": "v",
+          "label": "Velocidad a 0,5 s",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(8; 1)",
+            "8 i + (1) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            8,
+            1
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_p_002.svg",
+          "alt": "Salida desplazada: punto (3,2) m"
+        }
+      ],
+      "tags": [
+        "t2",
+        "p",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Ecuaciones con origen no situado en la salida. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Tiro parabólico"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar suponer salida en (0,0).",
+      "common_mistakes": [
+        "Suponer salida en (0,0)",
+        "Añadir g también a la componente horizontal"
+      ],
+      "parts_count": 2,
+      "statement_source": "\\(+x\\) derecha,\\(+y\\) arriba y suelo \\(y=0\\); sin aire, \\(a_y=−g=−10 m/s²\\). En \\(t=0\\) una pelota sale de \\((3,2) m\\) con \\(v_0=(8,6) m/s\\). \n(a) Escribe r,v,a.\n(b) Completa: Posición a 0,5 s, Velocidad a 0,5 s.",
+      "solution_source": "\\(x=3+8t,y=2+6t−5t²\\); \\(v=(8,6−10t) m/s\\) y \\(a=(0,−10) m/s²\\).\n\nA 0,5 s: \\(x=7 m\\),\\(y=3,75 m\\); \\(v=(8,1) m/s\\).\n\ny>0 y \\(v_y\\)>0: está sobre el suelo y aún sube. La posición inicial no modifica las derivadas.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_p_003",
+      "version": 1,
+      "title": "Raíces de regreso al mismo nivel",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Tiro parabólico",
+      "family": "p",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "time",
+          "label": "Tiempo de vuelo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.8,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "range",
+          "label": "Alcance",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 28.05922308261581,
+          "unit": "m",
+          "tolerance": 0.05,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_p_003.svg",
+          "alt": "Altura: salida y regreso"
+        }
+      ],
+      "tags": [
+        "t2",
+        "p",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Raíces de regreso al mismo nivel. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Tiro parabólico"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar contar t=0 como tiempo de vuelo.",
+      "common_mistakes": [
+        "Contar t=0 como tiempo de vuelo",
+        "Usar toda v_0 como componente vertical"
+      ],
+      "parts_count": 2,
+      "statement_source": "Origen en el suelo, \\(+x\\) derecha,\\(+y\\) arriba; sin aire, \\(a_y=−g=−10 m/s²\\). \\(v_0=18 m/s\\), \\(θ=30°\\). \n(a) Deduce el tiempo de vuelo sin usar una fórmula memorizada.\n(b) Completa: Alcance.",
+      "solution_source": "\\(v_0x=9√3 m/s\\),\\(v_0y=9 m/s\\). Horizontal \\(x=9√3t\\); vertical \\(y=9t−5t²\\).\n\n\\(y=0\\) da \\(t(9−5t)=0\\): \\(t=0\\) o 1,8 s. El tiempo de vuelo es 1,8 s.\n\n\\(x_f=9√3·1,8=28,1 m\\). En la llegada \\(v_y=−9 m/s\\), simétrico al valor inicial.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_p_004",
+      "version": 1,
+      "title": "Alcance y condición de igual altura",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Tiro parabólico",
+      "family": "p",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "time",
+          "label": "Tiempo de vuelo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "range",
+          "label": "Alcance",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 60,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "path",
+          "label": "Trayectoria",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [
+            "0.75*x-x**2/80"
+          ],
+          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
+          "grading": "pending_review",
+          "variable": "x",
+          "variable_unit": "m",
+          "unit": "m",
+          "domain": "0≤x≤60",
+          "canonical_expression": "0.75*x-x**2/80",
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_p_004.svg",
+          "alt": "Componentes (20,15) m/s desde el suelo"
+        }
+      ],
+      "tags": [
+        "t2",
+        "p",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Alcance y condición de igual altura. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Tiro parabólico"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar aplicar el alcance de igual altura en cualquier terreno.",
+      "common_mistakes": [
+        "Aplicar el alcance de igual altura en cualquier terreno",
+        "Usar módulo 25 m/s como v_x"
+      ],
+      "parts_count": 2,
+      "statement_source": "Origen en el suelo, \\(+x\\) derecha,\\(+y\\) arriba; sin aire, \\(a_y=−g=−10 m/s²\\). Un balón sale a 25 m/s con componentes \\((20,15) m/s\\). \n(a) Obtén vuelo y alcance.\n(b) Completa: Trayectoria.",
+      "solution_source": "Horizontal \\(x=20t\\); vertical \\(y=15t−5t²\\). Raíz de regreso \\(t=3 s\\); \\(R=20·3=60 m\\).\n\n\\(t=x/20\\) da \\(y=0,75x−x²/80\\); en \\(x=60\\): \\(45−45\\)=0.\n\nSi llega a \\(y=−4,\\) cambia la condición final, aumenta el vuelo y no se conserva \\(R=60 m\\).",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_p_005",
+      "version": 1,
+      "title": "Altura máxima sin reposo total",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Tiro parabólico",
+      "family": "p",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "time",
+          "label": "Instante del máximo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.6,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "r",
+          "label": "Posición máxima",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(19.2; 12.8)",
+            "19.2 i + (12.8) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            19.2,
+            12.8
+          ],
+          "unit": "m",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "a"
+        },
+        {
+          "id": "v",
+          "label": "Velocidad en el máximo",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(12; 0)",
+            "12 i + (0) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            12,
+            0
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "a"
+        },
+        {
+          "id": "speed",
+          "label": "Rapidez mínima",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 12,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "a",
+          "label": "Aceleración en la cima",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(0; -10)",
+            "0 i + (-10) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            0,
+            -10
+          ],
+          "unit": "m/s²",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_p_005.svg",
+          "alt": "El máximo coincide con v_y=0"
+        }
+      ],
+      "tags": [
+        "t2",
+        "p",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Altura máxima sin reposo total. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Tiro parabólico"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar afirmar que velocidad y aceleración se anulan juntas.",
+      "common_mistakes": [
+        "Afirmar que velocidad y aceleración se anulan juntas",
+        "Medir la altura usando el tiempo total"
+      ],
+      "parts_count": 2,
+      "statement_source": "Origen en el suelo, \\(+x\\) derecha,\\(+y\\) arriba; sin aire, \\(a_y=−g=−10 m/s²\\). \\(v_0=(12,16) m/s\\). \n(a) Halla instante, posición y velocidad en el máximo.\n(b) Compara aceleración allí con la de la salida y calcula rapidez mínima.",
+      "solution_source": "\\(v_y=16−10t=0\\) implica \\(t=1,6 s\\). \\(x=12·1,6=19,2 m\\); \\(y=16·1,6−5·1,6²=12,8 m\\).\n\n\\(v=(12,0) m/s\\) y \\(rapidez=12 m/s\\), mínima porque |v|²=12²+v_y².\n\n\\(a=(0,−10) m/s²\\) tanto en la cima como al salir. La trayectoria no tiene un punto de reposo.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_p_006",
+      "version": 1,
+      "title": "Velocidad de impacto con ángulo y sentido",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Tiro parabólico",
+      "family": "p",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "t",
+          "label": "Tiempo de vuelo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.7041594578792296,
+          "unit": "s",
+          "tolerance": 0.005,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "v",
+          "label": "Velocidad final",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(8; -12.041594578792296)",
+            "8 i + (-12.041594578792296) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            8,
+            -12.041594578792296
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        },
+        {
+          "id": "speed",
+          "label": "Rapidez final",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 14.45683229480096,
+          "unit": "m/s",
+          "tolerance": 0.05,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        },
+        {
+          "id": "angle",
+          "label": "Ángulo bajo +x",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 56.401374265091164,
+          "unit": "°",
+          "tolerance": 0.1,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_p_006.svg",
+          "alt": "Salida desde 6 m y velocidad (8,5) m/s"
+        }
+      ],
+      "tags": [
+        "t2",
+        "p",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Velocidad de impacto con ángulo y sentido. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Tiro parabólico"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar usar arctan sin sentido angular.",
+      "common_mistakes": [
+        "Usar arctan sin sentido angular",
+        "Confundir rapidez final con |v_y|"
+      ],
+      "parts_count": 3,
+      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−10 m/s²\\). Sale una pelota desde \\(y=6 m\\) con \\(v_0=(8,5) m/s\\). \n(a) Obtén tiempo de impacto físico.\n(b) Da componentes, módulo y ángulo de impacto desde \\(+x\\), indicando si se mide por debajo o antihorario.\n(c) Completa: Rapidez final.",
+      "solution_source": "Horizontal \\(x=8t,v_x=8\\). Vertical \\(y=6+5t−5t²\\): \\(t=(5±√145)/10\\); solo 1,704 s es positiva.\n\n\\(v_y=5−10t=−√145=−12,04 m/s\\). |v|=√(\\(64+145\\))=√209=14,46 m/s.\n\nÁngulo=56,4° bajo \\(+x\\), equivalente a 303,6° antihorario. Rapidez inicial √89=9,43 m/s; es menor, coherente con terminar más abajo.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_p_007",
+      "version": 1,
+      "title": "Vuelo desde un balcón y cambio de origen",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Tiro parabólico",
+      "family": "p",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "t",
+          "label": "Tiempo de impacto",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "range",
+          "label": "Alcance",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 30,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "max",
+          "label": "Altura máxima sobre el suelo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 20,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "rise",
+          "label": "Elevación desde salida",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 5,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        },
+        {
+          "id": "yp",
+          "label": "Altura respecto al balcón",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [
+            "10*t-5*t**2"
+          ],
+          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
+          "grading": "pending_review",
+          "variable": "t",
+          "variable_unit": "s",
+          "unit": "m",
+          "domain": "0≤t≤3",
+          "canonical_expression": "10*t-5*t**2",
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_p_007.svg",
+          "alt": "Balcón a 15 m: caída a distinto nivel"
+        }
+      ],
+      "tags": [
+        "t2",
+        "p",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Vuelo desde un balcón y cambio de origen. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Tiro parabólico"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar imponer y′=0 para impacto en el suelo.",
+      "common_mistakes": [
+        "Imponer y′=0 para impacto en el suelo",
+        "Usar el vuelo simétrico de dos segundos"
+      ],
+      "parts_count": 3,
+      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−10 m/s²\\). Una pelota sale desde 15 m con \\(v_0=(10,10) m/s\\). \n(a) Halla vuelo, alcance y altura máxima sobre el suelo.\n(b) Repite la condición de impacto usando origen vertical en el balcón.\n(c) Compara elevación y altura máxima.",
+      "solution_source": "\\(x=10t,y=15+10t−5t²\\). Impacto: t²−\\(2t−3\\)=0, \\(t=3\\) o −1 s; raíz física 3 s y alcance 30 m.\n\nMáximo en \\(v_y=10−10t=0,\\) \\(t=1 s\\): \\(y=20 m\\); elevación=5 m.\n\nCon y′=y−15=\\(10t−5t²\\), el suelo es y′=−15, no cero. Se recupera \\(t=3 s\\); cambiar origen no cambia el vuelo.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    }
+  ]
+}

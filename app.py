@@ -342,8 +342,7 @@ def exercise_titles_by_id():
         str(exercise.get('id')): exercise.get('title')
         for exercise in load_exercise_catalogue().get('exercises', [])
     }
-    for bank_path in exercise_bank_paths():
-        data = load_json_file(bank_path, {})
+    for _, data in load_topic_banks(Path(CONTENT_DIR) / 'exercises'):
         for exercise in data.get('exercises', []):
             if isinstance(exercise, dict) and exercise.get('id'):
                 titles.setdefault(str(exercise.get('id')), exercise.get('title'))

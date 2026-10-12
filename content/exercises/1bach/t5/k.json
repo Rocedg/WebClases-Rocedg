@@ -1,0 +1,790 @@
+{
+  "exercises": [
+    {
+      "id": "t5_k_001",
+      "version": 1,
+      "title": "Rapidez 3 m/s",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía cinética y potencia",
+      "family": "k",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "energia_cinetica",
+          "label": "Energía cinética",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 9.0,
+          "unit": "J",
+          "tolerance": 0.045,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_k_001.svg",
+          "alt": "Barra de energía cinética."
+        }
+      ],
+      "tags": [
+        "t5",
+        "k",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía cinética y potencia: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía cinética y potencia"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia k"
+      ],
+      "parts_count": 1,
+      "statement_source": "\\(m=2 kg\\), rapidez \\(3 m/s\\).\n\n(a) Calcula: Energía cinética.",
+      "solution_source": "\\(K=9 J\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_k_002",
+      "version": 1,
+      "title": "Duplicar rapidez con masa fija",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía cinética y potencia",
+      "family": "k",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "k_2_k_1",
+          "label": "K 2/K 1",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 4.0,
+          "unit": "",
+          "tolerance": 0.02,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_k_002.svg",
+          "alt": "Barras comparativas."
+        }
+      ],
+      "tags": [
+        "t5",
+        "k",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía cinética y potencia: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía cinética y potencia"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia k"
+      ],
+      "parts_count": 1,
+      "statement_source": "Duplicar rapidez con masa fija.\n\n(a) Calcula: K 2/K 1.",
+      "solution_source": "Razón \\(K_2/K_1=4\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_k_003",
+      "version": 1,
+      "title": "Trabajo neto 50 J desde reposo",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía cinética y potencia",
+      "family": "k",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "rapidez",
+          "label": "Rapidez",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 5.0,
+          "unit": "m/s",
+          "tolerance": 0.025,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_k_003.svg",
+          "alt": "Flujo trabajo→cinética."
+        }
+      ],
+      "tags": [
+        "t5",
+        "k",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía cinética y potencia: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía cinética y potencia"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia k"
+      ],
+      "parts_count": 1,
+      "statement_source": "Trabajo neto \\(50 J\\) desde reposo, \\(m=4 kg\\).\n\n(a) Calcula: Rapidez.",
+      "solution_source": "\\(v=5 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_k_004",
+      "version": 1,
+      "title": "Problema estructurado",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía cinética y potencia",
+      "family": "k",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "trabajo_neto",
+          "label": "Trabajo neto",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -150.0,
+          "unit": "kJ",
+          "tolerance": 0.75,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_k_004.svg",
+          "alt": "Estados y barras K."
+        }
+      ],
+      "tags": [
+        "t5",
+        "k",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía cinética y potencia: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía cinética y potencia"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia k"
+      ],
+      "parts_count": 1,
+      "statement_source": "\\(m=1000 kg\\), \\(v_i=20\\), \\(v_f=10 m/s\\).\n\n(a) Calcula: Trabajo neto.",
+      "solution_source": "Trabajo neto \\(-150 kJ\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_k_005",
+      "version": 1,
+      "title": "Frenada con fuerza constante 6000 N del coche anterior",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía cinética y potencia",
+      "family": "k",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "distancia",
+          "label": "Distancia",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 25.0,
+          "unit": "m",
+          "tolerance": 0.125,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_k_005.svg",
+          "alt": "Trayectoria de frenada."
+        }
+      ],
+      "tags": [
+        "t5",
+        "k",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía cinética y potencia: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía cinética y potencia"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia k"
+      ],
+      "parts_count": 1,
+      "statement_source": "Frenada con fuerza constante \\(6000 N\\) del coche anterior.\n\n(a) Calcula: Distancia.",
+      "solution_source": "Distancia \\(25 m\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_k_006",
+      "version": 1,
+      "title": "Fuerza neta variable dada por F-x",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía cinética y potencia",
+      "family": "k",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Trabajo por área y rapidez final"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_k_006.svg",
+          "alt": "Gráfica más estados."
+        }
+      ],
+      "tags": [
+        "t5",
+        "k",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía cinética y potencia: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía cinética y potencia"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia k"
+      ],
+      "parts_count": 1,
+      "statement_source": "Fuerza neta variable dada por \\(F-x\\); partir con \\(v_0=2\\).\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Trabajo por área y rapidez final.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_k_007",
+      "version": 1,
+      "title": "Máquina hace 12 kJ en 8 s",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía cinética y potencia",
+      "family": "k",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "potencia_media",
+          "label": "Potencia media",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.5,
+          "unit": "kW",
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_k_007.svg",
+          "alt": "Línea temporal."
+        }
+      ],
+      "tags": [
+        "t5",
+        "k",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía cinética y potencia: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía cinética y potencia"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia k"
+      ],
+      "parts_count": 1,
+      "statement_source": "Máquina hace \\(12 kJ\\) en \\(8 s\\).\n\n(a) Calcula: Potencia media.",
+      "solution_source": "Potencia media \\(1,5 kW\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_k_008",
+      "version": 1,
+      "title": "Elevador 500 kg sube a 2 m/s constante",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía cinética y potencia",
+      "family": "k",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "potencia",
+          "label": "Potencia",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 9.8,
+          "unit": "kW",
+          "tolerance": 0.049,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_k_008.svg",
+          "alt": "Ascensor y flujo energético."
+        }
+      ],
+      "tags": [
+        "t5",
+        "k",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía cinética y potencia: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía cinética y potencia"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia k"
+      ],
+      "parts_count": 1,
+      "statement_source": "Elevador \\(500 kg\\) sube a \\(2 m/s\\) constante.\n\n(a) Calcula: Potencia.",
+      "solution_source": "Potencia \\(9,8 kW\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_k_009",
+      "version": 1,
+      "title": "Vehículo  a",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía cinética y potencia",
+      "family": "k",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "potencia_instantanea",
+          "label": "Potencia instantánea",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 12.0,
+          "unit": "kW",
+          "tolerance": 0.06,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_k_009.svg",
+          "alt": "Vectores paralelos."
+        }
+      ],
+      "tags": [
+        "t5",
+        "k",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía cinética y potencia: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía cinética y potencia"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia k"
+      ],
+      "parts_count": 1,
+      "statement_source": "Vehículo \\(F=800 N\\) a \\(v=15 m/s\\).\n\n(a) Calcula: Potencia instantánea.",
+      "solution_source": "Potencia instantánea \\(12 kW\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_k_010",
+      "version": 1,
+      "title": "Fuerza a 60° respecto de v",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía cinética y potencia",
+      "family": "k",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "p",
+          "label": "P",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 200.0,
+          "unit": "W",
+          "tolerance": 1.0,
+          "significant_figures": 3,
+          "part": "a",
+          "rounding": "Tres cifras significativas; conservar precisión intermedia."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_k_010.svg",
+          "alt": "Ángulo fuerza-velocidad."
+        }
+      ],
+      "tags": [
+        "t5",
+        "k",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía cinética y potencia: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía cinética y potencia"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia k"
+      ],
+      "parts_count": 1,
+      "statement_source": "Fuerza a \\(60°\\) respecto de \\(v\\), \\(F=100\\), \\(v=4\\).\n\n(a) Calcula: P.",
+      "solution_source": "\\(P=200 W\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_k_011",
+      "version": 1,
+      "title": "Gráfica P(t) escalonada",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía cinética y potencia",
+      "family": "k",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Energía transferida por áreas; resultado en J"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_k_011.svg",
+          "alt": "P-t con áreas."
+        }
+      ],
+      "tags": [
+        "t5",
+        "k",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía cinética y potencia: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía cinética y potencia"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia k"
+      ],
+      "parts_count": 1,
+      "statement_source": "Gráfica \\(P(t)\\) escalonada.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Energía transferida por áreas; resultado en J.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    },
+    {
+      "id": "t5_k_012",
+      "version": 1,
+      "title": "Elegir gráfica K(v) y P(v) para fuerza constante",
+      "course": "1bach",
+      "topic": "t5",
+      "concept": "Energía y trabajo",
+      "block": "Energía cinética y potencia",
+      "family": "k",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "conclusion",
+          "label": "Conclusión física",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "modelo_correcto",
+              "label": "Opciones correctas: cuadrática y lineal"
+            },
+            {
+              "id": "signo_opuesto",
+              "label": "La magnitud relevante tiene siempre el signo opuesto."
+            },
+            {
+              "id": "indeterminado",
+              "label": "Los datos no permiten establecer ninguna relación."
+            }
+          ],
+          "correct_option_id": "modelo_correcto",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t5/assets/t5_k_012.svg",
+          "alt": "Cuatro pares de curvas."
+        }
+      ],
+      "tags": [
+        "t5",
+        "k",
+        "comprension",
+        "diagrama",
+        "original"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagrama propios."
+      },
+      "status": "draft",
+      "learning_objective": "Energía cinética y potencia: conectar la representación con el modelo físico y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Energía cinética y potencia"
+      ],
+      "difficulty_reason": "Exige identificar el modelo, leer el diagrama y coordinar varios resultados verificables.",
+      "common_mistakes": [
+        "confundir trabajo transferido con energía almacenada",
+        "sumar dos veces una interacción conservativa",
+        "ignorar la representación específica de la familia k"
+      ],
+      "parts_count": 1,
+      "statement_source": "Elegir gráfica \\(K(v)\\) y \\(P(v)\\) para fuerza constante.\n\n(a) Selecciona: Conclusión física.",
+      "solution_source": "Opciones correctas: cuadrática y lineal.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+    }
+  ]
+}

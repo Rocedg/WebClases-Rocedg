@@ -1,0 +1,1282 @@
+{
+  "exercises": [
+    {
+      "id": "t2_f_001",
+      "version": 1,
+      "title": "Dos funciones y un punto del plano",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Funciones paramétricas",
+      "family": "f",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "r1",
+          "label": "Posición a 1 s",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(3; 3)",
+            "3 i + (3) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            3,
+            3
+          ],
+          "unit": "m",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "a"
+        },
+        {
+          "id": "r2",
+          "label": "Posición a 2 s",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(5; 0)",
+            "5 i + (0) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            5,
+            0
+          ],
+          "unit": "m",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "a"
+        },
+        {
+          "id": "dr",
+          "label": "Desplazamiento",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(2; -3)",
+            "2 i + (-3) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            2,
+            -3
+          ],
+          "unit": "m",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "a"
+        },
+        {
+          "id": "vm",
+          "label": "Velocidad media",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(2; -3)",
+            "2 i + (-3) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            2,
+            -3
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_f_001.svg",
+          "alt": "Coordenada horizontal; Coordenada vertical; Trayectoria paramétrica"
+        }
+      ],
+      "tags": [
+        "t2",
+        "f",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Dos funciones y un punto del plano. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Funciones paramétricas"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar usar distintos tiempos en las componentes.",
+      "common_mistakes": [
+        "Usar distintos tiempos en las componentes",
+        "Confundir la cuerda con la trayectoria"
+      ],
+      "parts_count": 2,
+      "statement_source": "\\(+x\\) derecha,\\(+y\\) arriba; \\(r(t)=(1+2t)i+(4−t²)j m\\), t en s, \\(0≤t≤3\\). \n(a) Calcula posiciones en 1 y 2 s y el desplazamiento entre ellas.\n(b) Sitúa ambos puntos y calcula velocidad media.",
+      "solution_source": "\\(r(1)=(3,3) m\\) y \\(r(2)=(5,0) m\\), evaluando ambas componentes con el mismo reloj.\n\n\\(Δr=(5−3,0−3)=(2,−3) m\\). \\(Δt=1 s\\): \\(v_media=(2,−3) m/s\\).\n\nLa recta que une los dos puntos representa desplazamiento, no toda la curva recorrida.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_f_002",
+      "version": 1,
+      "title": "Derivar una posición vectorial",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Funciones paramétricas",
+      "family": "f",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "vx",
+          "label": "V x(t)",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [
+            "4*t-1"
+          ],
+          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
+          "grading": "pending_review",
+          "variable": "t",
+          "variable_unit": "s",
+          "unit": "m/s",
+          "domain": "0≤t≤3",
+          "canonical_expression": "4*t-1",
+          "part": "a"
+        },
+        {
+          "id": "vy",
+          "label": "V y(t)",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [
+            "3"
+          ],
+          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
+          "grading": "pending_review",
+          "variable": "t",
+          "variable_unit": "s",
+          "unit": "m/s",
+          "domain": "0≤t≤3",
+          "canonical_expression": "3",
+          "part": "a"
+        },
+        {
+          "id": "a",
+          "label": "Aceleración",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(4; 0)",
+            "4 i + (0) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            4,
+            0
+          ],
+          "unit": "m/s²",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        },
+        {
+          "id": "v2",
+          "label": "Velocidad a 2 s",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(7; 3)",
+            "7 i + (3) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            7,
+            3
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        },
+        {
+          "id": "speed",
+          "label": "Rapidez a 2 s",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 7.615773105863909,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_f_002.svg",
+          "alt": "Trayectoria con aceleración horizontal"
+        }
+      ],
+      "tags": [
+        "t2",
+        "f",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Derivar una posición vectorial. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Funciones paramétricas"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar derivar el módulo de r para obtener v.",
+      "common_mistakes": [
+        "Derivar el módulo de r para obtener v",
+        "Llamar MRU al movimiento total porque una componente lo es"
+      ],
+      "parts_count": 2,
+      "statement_source": "Ejes cartesianos \\(+x\\) derecha,\\(+y\\) arriba. \\(r(t)=(2t²−t)i+(3t+1)j m\\), t en s, \\(0≤t≤3\\). \n(a) Obtén \\(v(t)\\),\\(a(t)\\).\n(b) Completa: Aceleración, Velocidad a 2 s, Rapidez a 2 s.",
+      "solution_source": "Derivando por componentes: \\(v=(4t−1,3) m/s\\); \\(a=(4,0) m/s²\\).\n\n\\(v(2)=(7,3) m/s\\) y |v|=√58=7,62 m/s.\n\ny es MRU porque \\(v_y=3\\) constante; x es MRUA. El movimiento completo no es rectilíneo uniforme.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_f_003",
+      "version": 1,
+      "title": "De coordenadas a trayectoria",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Funciones paramétricas",
+      "family": "f",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "r",
+          "label": "Función vectorial",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [
+            "(-2+3*t)*i+(5-2*t)*j"
+          ],
+          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
+          "grading": "pending_review",
+          "variable": "t",
+          "variable_unit": "s",
+          "unit": "m",
+          "domain": "0≤t≤4",
+          "canonical_expression": "(-2+3*t)*i+(5-2*t)*j",
+          "part": "a"
+        },
+        {
+          "id": "v",
+          "label": "Velocidad",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(3; -2)",
+            "3 i + (-2) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            3,
+            -2
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "a"
+        },
+        {
+          "id": "path",
+          "label": "Y(x)",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [
+            "(11-2*x)/3",
+            "5-2*(x+2)/3"
+          ],
+          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
+          "grading": "pending_review",
+          "variable": "x",
+          "variable_unit": "m",
+          "unit": "m",
+          "domain": "−2≤x≤10",
+          "canonical_expression": "(11-2*x)/3",
+          "part": "b"
+        },
+        {
+          "id": "end",
+          "label": "Posición final",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(10; -3)",
+            "10 i + (-3) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            10,
+            -3
+          ],
+          "unit": "m",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_f_003.svg",
+          "alt": "Segmento recorrido durante cuatro segundos"
+        }
+      ],
+      "tags": [
+        "t2",
+        "f",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "De coordenadas a trayectoria. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Funciones paramétricas"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar olvidar dominio espacial.",
+      "common_mistakes": [
+        "Olvidar dominio espacial",
+        "Tratar y(x) como función de tiempo"
+      ],
+      "parts_count": 3,
+      "statement_source": "\\(+x\\) este,\\(+y\\) norte. \\(x=−2+3t,\\) \\(y=5−2t\\) en SI para \\(0≤t≤4\\). \n(a) Escribe \\(r(t)\\) y v.\n(b) Elimina t y da dominio de la trayectoria.\n(c) Completa: Posición final.",
+      "solution_source": "\\(r=(−2+3t)i+(5−2t)j\\); \\(v=(3,−2) m/s\\).\n\n\\(t=(x+2)/3\\): \\(y=5−2(x+2)/3=(11−2x)/3,\\) con −\\(2≤x≤10\\).\n\n\\(r(4)=(10,−3) m\\) satisface la recta. Es un segmento recorrido hacia \\(+x\\) y \\(−y\\), no la recta infinita.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_f_004",
+      "version": 1,
+      "title": "Trayectoria recta con rapidez variable",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Funciones paramétricas",
+      "family": "f",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "path",
+          "label": "Trayectoria",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [
+            "2*x+1"
+          ],
+          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
+          "grading": "pending_review",
+          "variable": "x",
+          "variable_unit": "m",
+          "unit": "m",
+          "domain": "0≤x≤9",
+          "canonical_expression": "2*x+1",
+          "part": "a"
+        },
+        {
+          "id": "v1",
+          "label": "Velocidad a 1 s",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(2; 4)",
+            "2 i + (4) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            2,
+            4
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        },
+        {
+          "id": "v2",
+          "label": "Velocidad a 2 s",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(4; 8)",
+            "4 i + (8) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            4,
+            8
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_f_004.svg",
+          "alt": "x(t) cuadrática; y(t) cuadrática; Trayectoria recta pese a funciones cuadráticas"
+        }
+      ],
+      "tags": [
+        "t2",
+        "f",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Trayectoria recta con rapidez variable. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Funciones paramétricas"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar asociar toda recta espacial con mru.",
+      "common_mistakes": [
+        "Asociar toda recta espacial con MRU",
+        "Confundir aceleración con cambio de dirección exclusivamente"
+      ],
+      "parts_count": 2,
+      "statement_source": "\\(+x\\) derecha,\\(+y\\) arriba. \\(x=t²,\\) \\(y=2t²+1\\) en SI, \\(0≤t≤3\\). \n(a) Completa: Trayectoria.\n(b) Completa: Velocidad a 1 s, Velocidad a 2 s.",
+      "solution_source": "Al sustituir t²=x, \\(y=2x+1\\) para x entre 0 y 9 m.\n\n\\(v=(2t,4t) m/s\\), así que \\(v(1)=(2,4)\\) y \\(v(2)=(4,8)\\).\n\nAmbas velocidades tienen la misma dirección, pero la segunda duplica el módulo; trayectoria recta no implica rapidez constante.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_f_005",
+      "version": 1,
+      "title": "Eliminar tiempo sin perder el dominio físico",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Funciones paramétricas",
+      "family": "f",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "path",
+          "label": "Trayectoria",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [
+            "20-5*x**2/16"
+          ],
+          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
+          "grading": "pending_review",
+          "variable": "x",
+          "variable_unit": "m",
+          "unit": "m",
+          "domain": "0≤x≤8",
+          "canonical_expression": "20-5*x**2/16",
+          "part": "a"
+        },
+        {
+          "id": "x15",
+          "label": "Coordenada a 15 m de altura",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 4,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "v",
+          "label": "Velocidad allí",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(4; -10)",
+            "4 i + (-10) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            4,
+            -10
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_f_005.svg",
+          "alt": "Vuelo horizontal desde 20 m"
+        }
+      ],
+      "tags": [
+        "t2",
+        "f",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Eliminar tiempo sin perder el dominio físico. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Funciones paramétricas"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar aceptar x negativa por simetría algebraica.",
+      "common_mistakes": [
+        "Aceptar x negativa por simetría algebraica",
+        "Extender la curva después del primer impacto"
+      ],
+      "parts_count": 2,
+      "statement_source": "Origen al pie de una plataforma, \\(+x\\) derecha,\\(+y\\) arriba. Sin aire y \\(a_y=−g=−10 m/s²\\), \\(x=4t,\\) \\(y=20−5t²\\) en SI hasta el suelo. \n(a) Obtén \\(y(x)\\) y dominio físico.\n(b) Halla dónde alcanza \\(y=15 m\\) y su velocidad en ese punto.",
+      "solution_source": "\\(t=x/4,\\) luego \\(y=20−5x²/16\\). Suelo: \\(t=2 s\\),\\(x=8 m\\), dominio \\(0≤x≤8\\).\n\n15=\\(20−5t²\\) da \\(t=1 s\\) (la raíz −1 no pertenece al vuelo); \\(x=4 m\\).\n\n\\(v=(4,−10t)=(4,−10) m/s\\). La pendiente dy/\\(dx=−10x/16\\) en \\(x=4\\) es −2,5, igual a \\(v_y\\)/\\(v_x\\).",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_f_006",
+      "version": 1,
+      "title": "Una parábola espacial y cuatro gráficas",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Funciones paramétricas",
+      "family": "f",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "path",
+          "label": "Trayectoria",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [
+            "12*x/5-x**2/5"
+          ],
+          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
+          "grading": "pending_review",
+          "variable": "x",
+          "variable_unit": "m",
+          "unit": "m",
+          "domain": "0≤x≤12",
+          "canonical_expression": "12*x/5-x**2/5",
+          "part": "b"
+        },
+        {
+          "id": "vx",
+          "label": "V x",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [
+            "5"
+          ],
+          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
+          "grading": "pending_review",
+          "variable": "t",
+          "variable_unit": "s",
+          "unit": "m/s",
+          "domain": "0≤t≤2,4",
+          "canonical_expression": "5",
+          "part": "a"
+        },
+        {
+          "id": "vy",
+          "label": "V y",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [
+            "12-10*t"
+          ],
+          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
+          "grading": "pending_review",
+          "variable": "t",
+          "variable_unit": "s",
+          "unit": "m/s",
+          "domain": "0≤t≤2,4",
+          "canonical_expression": "12-10*t",
+          "part": "a"
+        },
+        {
+          "id": "flight",
+          "label": "Duración",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2.4,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "top",
+          "label": "Instante del máximo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.2,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_f_006.svg",
+          "alt": "Trayectoria para reconstruir las funciones"
+        }
+      ],
+      "tags": [
+        "t2",
+        "f",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Una parábola espacial y cuatro gráficas. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Funciones paramétricas"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar usar metros en el eje temporal.",
+      "common_mistakes": [
+        "Usar metros en el eje temporal",
+        "Anular v_x en el máximo"
+      ],
+      "parts_count": 2,
+      "statement_source": "En SI, \\(+x\\) derecha,\\(+y\\) arriba, \\(x=5t,y=12t−5t²\\); sin aire, \\(a_y=−g=−10 m/s²\\). \n(a) Da \\(y(x)\\),\\(v_x\\),\\(v_y\\) y duración hasta regresar a \\(y=0\\).\n(b) Completa: Trayectoria, Instante del máximo.",
+      "solution_source": "\\(t=x/5\\) da \\(y=(12/5)x−x²/5\\). \\(v_x=5\\) y \\(v_y=12−10t\\).\n\n\\(y=t(12−5t)=0\\) da regreso en 2,4 s; máximo a \\(v_y=0\\) en 1,2 s, \\(x=6 m\\),\\(y=7,2 m\\).\n\n\\(x(t)\\) es recta creciente, \\(y(t)\\) parábola, \\(v_x\\) horizontal y \\(v_y\\) recta decreciente; todos comparten 0–2,4 s.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_f_007",
+      "version": 1,
+      "title": "Misma curva, distinto ritmo",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Funciones paramétricas",
+      "family": "f",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "path",
+          "label": "Trayectoria común",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [
+            "x**2"
+          ],
+          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
+          "grading": "pending_review",
+          "variable": "x",
+          "variable_unit": "m",
+          "unit": "m",
+          "domain": "0≤x≤2",
+          "canonical_expression": "x**2",
+          "part": "c"
+        },
+        {
+          "id": "ta",
+          "label": "Instante A en (1,1)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        },
+        {
+          "id": "tb",
+          "label": "Instante B en (1,1)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.5,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        },
+        {
+          "id": "va",
+          "label": "Velocidad A en ese punto",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(1; 2)",
+            "1 i + (2) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            1,
+            2
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        },
+        {
+          "id": "vb",
+          "label": "Velocidad B en ese punto",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(2; 4)",
+            "2 i + (4) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            2,
+            4
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_f_007.svg",
+          "alt": "Curva común: dos leyes de recorrido; Ritmos horizontales diferentes"
+        }
+      ],
+      "tags": [
+        "t2",
+        "f",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Misma curva, distinto ritmo. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Funciones paramétricas"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar comparar a igual tiempo cuando se pide mismo punto.",
+      "common_mistakes": [
+        "Comparar a igual tiempo cuando se pide mismo punto",
+        "Identificar curva y ley temporal"
+      ],
+      "parts_count": 3,
+      "statement_source": "Ejes \\(+x\\) derecha,\\(+y\\) arriba. A: \\(r_A(t)=(t,t²) m\\) para \\(0≤t≤2\\) s; B: \\(r_B(t)=(2t,4t²) m\\) para \\(0≤t≤1\\) s. \n(b) Compara sus velocidades al pasar por \\((1,1) m\\).\n(c) Completa: Trayectoria común, Instante A en (1,1), Instante B en (1,1), Velocidad B en ese punto.",
+      "solution_source": "Ambas cumplen \\(y=x²\\) con \\(0≤x≤2\\) m. A tarda 2 s y B 1 s en recorrer el arco.\n\nEn \\((1,1)\\), \\(t_A=1\\) y \\(t_B=0,5 s\\). \\(v_A=(1,2t)=(1,2)\\); \\(v_B=(2,8t)=(2,4) m/s\\).\n\nLa velocidad de B duplica la de A en el mismo punto. En \\(t=0,5\\) están en posiciones distintas: \\((0,5;0,25)\\) y \\((1;1)\\).",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_f_008",
+      "version": 1,
+      "title": "Integrar dos componentes de velocidad",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Funciones paramétricas",
+      "family": "f",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "a",
+          "label": "Aceleración",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(0; 2)",
+            "0 i + (2) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            0,
+            2
+          ],
+          "unit": "m/s²",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "a"
+        },
+        {
+          "id": "x",
+          "label": "X(t)",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [
+            "1+3*t"
+          ],
+          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
+          "grading": "pending_review",
+          "variable": "t",
+          "variable_unit": "s",
+          "unit": "m",
+          "domain": "0≤t≤4",
+          "canonical_expression": "1+3*t",
+          "part": "a"
+        },
+        {
+          "id": "y",
+          "label": "Y(t)",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [
+            "-2-2*t+t**2"
+          ],
+          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
+          "grading": "pending_review",
+          "variable": "t",
+          "variable_unit": "s",
+          "unit": "m",
+          "domain": "0≤t≤4",
+          "canonical_expression": "-2-2*t+t**2",
+          "part": "a"
+        },
+        {
+          "id": "r4",
+          "label": "Posición final",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(13; 6)",
+            "13 i + (6) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            13,
+            6
+          ],
+          "unit": "m",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        },
+        {
+          "id": "min",
+          "label": "Instante de y mínima",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_f_008.svg",
+          "alt": "Componente horizontal constante; Componente vertical creciente"
+        }
+      ],
+      "tags": [
+        "t2",
+        "f",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Integrar dos componentes de velocidad. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Funciones paramétricas"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar olvidar la posición inicial negativa.",
+      "common_mistakes": [
+        "Olvidar la posición inicial negativa",
+        "Confundir mínimo de y con reposo total"
+      ],
+      "parts_count": 2,
+      "statement_source": "Ejes \\(+x\\) este,\\(+y\\) norte, \\(r_0=(1,−2) m\\). En \\(0≤t≤4\\) s, \\(v_x=3 m/s\\) y \\(v_y\\) pasa linealmente de \\(−2 a +6 m/s\\). \n(a) Obtén a y \\(r(t)\\).\n(b) Calcula posición final y cuándo y alcanza su mínimo.",
+      "solution_source": "\\(v_y=−2+2t,\\) \\(a=(0,2) m/s²\\). Integrando: \\(x=1+3t,y=−2−2t+t²\\).\n\n\\(r(4)=(13,6) m\\); área \\(v_y\\)-\\(t=(−2+6)·4/2=8 m\\), que sumada a −2 da 6 m.\n\n\\(v_y=0\\) en \\(t=1 s\\) y cambia de negativo a positivo: y mínima=−3 m. \\(v_x\\) sigue siendo 3 m/s.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_f_009",
+      "version": 1,
+      "title": "Cruzar una altura no es acertar en un punto",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Funciones paramétricas",
+      "family": "f",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "t1",
+          "label": "Primer cruce",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "t2",
+          "label": "Segundo cruce",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "x1",
+          "label": "Primera coordenada horizontal",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "x2",
+          "label": "Segunda coordenada horizontal",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 9,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "v",
+          "label": "Velocidad en la diana",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(3; -4)",
+            "3 i + (-4) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            3,
+            -4
+          ],
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_f_009.svg",
+          "alt": "Dos cruces de altura, una diana"
+        }
+      ],
+      "tags": [
+        "t2",
+        "f",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Cruzar una altura no es acertar en un punto. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Funciones paramétricas"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar afirmar dos impactos en una sola diana.",
+      "common_mistakes": [
+        "Afirmar dos impactos en una sola diana",
+        "Comprobar solo la coordenada y"
+      ],
+      "parts_count": 2,
+      "statement_source": "\\(+x\\) derecha,\\(+y\\) arriba. \\(x=3t,y=8t−2t²\\) en SI, \\(0≤t≤4\\). Una cámara registra los cruces de \\(y=6 m\\). \n(a) Calcula los dos instantes y posiciones.\n(b) Una diana está en \\((9,6) m\\): determina qué cruce corresponde a ella y la velocidad allí.",
+      "solution_source": "\\(8t−2t²\\)=6 equivale a t²−\\(4t+3\\)=0: \\(t=1\\) y 3 s.\n\n\\(x=3t\\) da \\((3,6)\\) y \\((9,6) m\\). Solo el segundo coincide con la diana.\n\n\\(v=(3,8−4t)\\): en 3 s es \\((3,−4) m/s\\); cruza la diana descendiendo.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t2_f_010",
+      "version": 1,
+      "title": "Auditoría de una parametrización",
+      "course": "1bach",
+      "topic": "t2",
+      "concept": "Movimiento en el plano",
+      "block": "Funciones paramétricas",
+      "family": "f",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "t",
+          "label": "Tiempo hasta suelo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "range",
+          "label": "Alcance",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 4,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "a",
+          "label": "Aceleración del modelo",
+          "type": "vector",
+          "response_kind": "vector",
+          "required": true,
+          "accepted_forms": [
+            "(0; -2)",
+            "0 i + (-2) j"
+          ],
+          "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
+          "grading": "pending_review",
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "expected_components": [
+            0,
+            -2
+          ],
+          "unit": "m/s²",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas.",
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t2/assets/t2_f_010.svg",
+          "alt": "Trayectoria declarada: derecha y abajo"
+        }
+      ],
+      "tags": [
+        "t2",
+        "f",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Auditoría de una parametrización. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Funciones paramétricas"
+      ],
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar introducir g=10 cuando la función prescribe otra aceleración.",
+      "common_mistakes": [
+        "Introducir g=10 cuando la función prescribe otra aceleración",
+        "Elegir solo por la posición inicial"
+      ],
+      "parts_count": 2,
+      "statement_source": "\\(+x\\) derecha,\\(+y\\) arriba. El dibujo declarado parte de \\((0,4) m\\), avanza a la derecha y desciende hasta el suelo con \\(v_y\\) inicial nula. Se proponen A: \\(x=2t,y=4−t²\\); B: \\(x=−2t,y=4−t²\\); C: \\(x=2t,y=4+t²,\\) en SI para t≥0. \n(a) Completa: Tiempo hasta suelo.\n(b) Da duración, alcance y aceleración del modelo compatible.",
+      "solution_source": "A satisface \\(x(0)=0,y(0)=4,v_x=2>0,v_y=−2t\\) y \\(v_y(0)=0\\).\n\n4−t²=0 da \\(t=2 s\\); \\(x=4 m\\). \\(a=(0,−2) m/s²\\).\n\nNo se ha fijado gravedad terrestre: este modelo tiene aceleración vertical −2 m/s², no debe sustituirse por −10 sin autorización.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    }
+  ]
+}

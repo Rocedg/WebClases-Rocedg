@@ -15,15 +15,20 @@ from html.parser import HTMLParser
 import json
 from pathlib import Path
 import re
+import sys
 from typing import Any
 import unicodedata
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from services.exercise_bank_loader import load_topic_bank, serialize_topic_bank
 
 
 ROOT = Path(__file__).resolve().parents[1]
 BANKS = (
-    ROOT / "content/exercises/1bach/t0/exercises_t0.json",
-    ROOT / "content/exercises/1bach/t1/exercises_t1.json",
-    ROOT / "content/exercises/1bach/t2/exercises_t2.json",
+    ROOT / "content/exercises/1bach/t0",
+    ROOT / "content/exercises/1bach/t1",
+    ROOT / "content/exercises/1bach/t2",
 )
 OPEN_TYPES = {"open_text", "written_upload", "open_text", "text", "textarea", "numeric_or_expression_placeholder"}
 PUBLISHED_STATUSES = {"active", "draft"}
@@ -422,18 +427,19 @@ def migrate_all(write: bool = False) -> dict[str, Any]:
     report: dict[str, Any] = {"migrated": {}, "retired": [], "field_actions": {}, "files": []}
     outputs: list[tuple[Path, dict[str, Any]]] = []
     for path in BANKS:
-        before = json.loads(path.read_text(encoding="utf-8"))
+        before = load_topic_bank(path)
         after = copy.deepcopy(before)
         after["exercises"] = [migrate_exercise(exercise, report) for exercise in before["exercises"]]
         validate_bank(before, after, path)
         # Round-trip validation happens before any file is written.
-        serialized = json.dumps(after, ensure_ascii=False, indent=2) + "\n"
-        json.loads(serialized)
+        for serialized in serialize_topic_bank(after).values():
+            json.loads(serialized)
         outputs.append((path, after))
         report["files"].append(str(path.relative_to(ROOT)))
     if write:
         for path, data in outputs:
-            path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            for relative_path, content in serialize_topic_bank(data).items():
+                (path / relative_path).write_text(content, encoding="utf-8")
     return report
 
 

@@ -11,10 +11,15 @@ import html
 import json
 import math
 import re
+import sys
 import unicodedata
 from collections import Counter
 from pathlib import Path
 from typing import Any
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from services.exercise_bank_loader import serialize_topic_bank
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -496,15 +501,14 @@ def validate(banks: dict[str, dict[str, Any]], assets: dict[Path, str]) -> list[
 def changed_outputs(banks: dict[str, dict[str, Any]], assets: dict[Path, str]) -> list[Path]:
     planned: dict[Path, str] = dict(assets)
     for topic, bank in banks.items():
-        path = COURSE_ROOT / topic / f"exercises_{topic}.json"
-        planned[path] = json.dumps(bank, ensure_ascii=False, indent=2) + "\n"
+        planned.update({COURSE_ROOT / topic / path: content for path, content in serialize_topic_bank(bank).items()})
     return [path for path, content in planned.items() if not path.exists() or path.read_text(encoding="utf-8-sig") != content]
 
 
 def write_outputs(banks: dict[str, dict[str, Any]], assets: dict[Path, str]) -> None:
     for topic, bank in banks.items():
-        path = COURSE_ROOT / topic / f"exercises_{topic}.json"
-        path.write_text(json.dumps(bank, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        for relative_path, content in serialize_topic_bank(bank).items():
+            (COURSE_ROOT / topic / relative_path).write_text(content, encoding="utf-8")
     for path, content in assets.items():
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(content, encoding="utf-8")

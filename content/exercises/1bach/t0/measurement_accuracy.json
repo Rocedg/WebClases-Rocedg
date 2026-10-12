@@ -1,0 +1,1171 @@
+{
+  "exercises": [
+    {
+      "id": "t0_m_001",
+      "title": "Error absoluto, relativo y signo",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "numeric_multi",
+      "difficulty": 2,
+      "estimated_minutes": 7,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "signed_error",
+          "label": "Error con signo \\(e\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -1.4,
+          "tolerance": 0.01,
+          "prompt": "Puede ser negativo. Escribe solo el número.",
+          "unit": "cm",
+          "part": "a"
+        },
+        {
+          "id": "absolute_error",
+          "label": "Error absoluto \\(|e|\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.4,
+          "tolerance": 0.01,
+          "prompt": "Nunca es negativo.",
+          "unit": "cm",
+          "part": "b"
+        },
+        {
+          "id": "relative_error",
+          "label": "Error relativo",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.17,
+          "tolerance": 0.01,
+          "significant_figures": 3,
+          "prompt": "En porcentaje, con 3 cifras significativas.",
+          "unit": "%",
+          "part": "c"
+        },
+        {
+          "id": "direction",
+          "label": "¿La medida subestima o sobreestima?",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "subestima",
+              "label": "Subestima: la medida es menor que la referencia"
+            },
+            {
+              "id": "sobreestima",
+              "label": "Sobreestima: la medida es mayor que la referencia"
+            },
+            {
+              "id": "coincide",
+              "label": "Coincide con la referencia"
+            }
+          ],
+          "correct_option_id": "subestima",
+          "part": "d"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "dividir por la medida obtenida",
+        "dar error absoluto negativo",
+        "confundir 0,0117 con 1,17 %"
+      ],
+      "statement_source": "La longitud de referencia de una mesa (su valor conocido) es 120,0 cm. Una alumna la mide y obtiene 118,6 cm.\n\n(a) Calcula el error con signo \\(e=x_{med}-x_{ref}\\).\n(b) Calcula el error absoluto \\(|e|\\).\n(c) Calcula el error relativo en porcentaje, \\(\\dfrac{|e|}{x_{ref}}\\cdot100\\).\n(d) Indica si la medida se queda por debajo del valor de referencia (subestima) o por encima (sobreestima).",
+      "solution_source": "(a) \\(e=118{,}6-120{,}0=-1{,}4\\) cm. El signo negativo indica que la medida se queda corta.\n(b) \\(|e|=1{,}4\\) cm.\n(c) Se divide entre el valor de referencia, no entre la medida: \\(1{,}4/120{,}0\\cdot100=1{,}17\\,\\%\\).\n(d) Como \\(e<0\\), la medida subestima la longitud.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_002",
+      "title": "Mismo porcentaje, distinto error absoluto",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 8,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "abs_A",
+          "label": "Error absoluto de A",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.0,
+          "tolerance": 0.01,
+          "unit": "g",
+          "part": "a"
+        },
+        {
+          "id": "abs_B",
+          "label": "Error absoluto de B",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 20.0,
+          "tolerance": 0.01,
+          "unit": "g",
+          "part": "a"
+        },
+        {
+          "id": "rel_A",
+          "label": "Error relativo de A",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 2.0,
+          "tolerance": 0.01,
+          "prompt": "En porcentaje.",
+          "unit": "%",
+          "part": "b"
+        },
+        {
+          "id": "rel_B",
+          "label": "Error relativo de B",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 2.0,
+          "tolerance": 0.01,
+          "prompt": "En porcentaje.",
+          "unit": "%",
+          "part": "b"
+        },
+        {
+          "id": "relative_comparison",
+          "label": "¿Cuál es mejor en términos relativos?",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "A",
+              "label": "A es mejor"
+            },
+            {
+              "id": "B",
+              "label": "B es mejor"
+            },
+            {
+              "id": "iguales",
+              "label": "Son igual de buenas"
+            }
+          ],
+          "correct_option_id": "iguales",
+          "part": "c"
+        },
+        {
+          "id": "larger_absolute",
+          "label": "¿Cuál se desvía más en gramos?",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "A",
+              "label": "A"
+            },
+            {
+              "id": "B",
+              "label": "B"
+            },
+            {
+              "id": "iguales",
+              "label": "Las dos se desvían lo mismo"
+            }
+          ],
+          "correct_option_id": "B",
+          "part": "d"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "declarar A mejor sin especificar criterio",
+        "usar 49 o 980 como denominador de referencia",
+        "olvidar el porcentaje"
+      ],
+      "statement_source": "Dos básculas se ponen a prueba con masas patrón, cuyo valor de referencia se conoce.\n\nMedición A: la báscula marca 49 g con una masa patrón de 50 g.\nMedición B: la báscula marca 980 g con una masa patrón de 1000 g.\n\n(a) Calcula el error absoluto de cada medición, en gramos.\n(b) Calcula el error relativo de cada medición, en porcentaje. Divide entre el valor de referencia.\n(c) Compara las dos mediciones en términos relativos.\n(d) Indica qué medición se desvía más en gramos.",
+      "solution_source": "(a) A: \\(|49-50|=1\\) g. B: \\(|980-1000|=20\\) g.\n(b) A: \\(1/50\\cdot100=2{,}00\\,\\%\\). B: \\(20/1000\\cdot100=2{,}00\\,\\%\\).\n(c) Son igual de buenas en términos relativos: las dos se equivocan un 2 % de lo que miden.\n(d) B se desvía más en gramos. El error absoluto dice cuánto te equivocas; el relativo dice si eso es mucho o poco.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_003",
+      "title": "Multiplicación y cifras significativas",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "numeric_with_format",
+      "difficulty": 3,
+      "estimated_minutes": 8,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "calculator",
+          "label": "Valor de calculadora",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 50.375,
+          "tolerance": 0.001,
+          "prompt": "Todas las cifras, sin redondear.",
+          "part": "a"
+        },
+        {
+          "id": "reported",
+          "label": "Resultado comunicado",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 50.0,
+          "tolerance": 0.01,
+          "significant_figures": 2,
+          "prompt": "Con el número de cifras significativas correcto. Puedes usar notación científica: 3,0e2 significa \\(3{,}0\\times10^2\\).",
+          "part": "b"
+        },
+        {
+          "id": "limiting",
+          "label": "Dato que limita",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.8,
+          "tolerance": 0.01,
+          "prompt": "Escribe el dato tal como aparece (por ejemplo 12,4).",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "redondear a 50,4 por decimales",
+        "escribir 50 sin marcar dos cifras",
+        "tomar 12,4 como limitante"
+      ],
+      "statement_source": "Los tres datos de esta expresión son medidas: \\(R=\\dfrac{12{,}4\\times3{,}25}{0{,}80}\\).\n\n(a) Escribe el valor que da la calculadora, sin redondear.\n(b) Escribe el resultado que debe comunicarse según la regla de cifras significativas para productos y cocientes.\n(c) Escribe cuál de los tres datos limita el número de cifras significativas.",
+      "solution_source": "(a) 50,375.\n(b) En productos y cocientes manda el dato con menos cifras significativas. 0,80 tiene 2, así que se comunica \\(5{,}0\\times10^1\\). Escribir solo 50 no deja claro si tiene una o dos cifras.\n(c) 0,80 (dos cifras significativas; 12,4 y 3,25 tienen tres).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_004",
+      "title": "Suma y posición decimal",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "numeric_with_format",
+      "difficulty": 2,
+      "estimated_minutes": 7,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "calculator",
+          "label": "Suma sin redondear",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 16.312,
+          "tolerance": 0.01,
+          "unit": "cm",
+          "part": "a"
+        },
+        {
+          "id": "reported",
+          "label": "Resultado comunicado",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 16.3,
+          "tolerance": 0.001,
+          "prompt": "Con los decimales que permita el dato menos preciso.",
+          "unit": "cm",
+          "part": "b"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "responder 16 cm por tener 1 cifra significativa en 0,8",
+        "conservar todas las cifras",
+        "redondear cada sumando antes de sumar"
+      ],
+      "statement_source": "Se suman tres longitudes medidas: 12,37 cm + 0,8 cm + 3,142 cm.\n\n(a) Escribe el resultado de la calculadora, sin redondear.\n(b) Escribe el resultado redondeado según la regla de cifras para sumas y restas.",
+      "solution_source": "(a) 16,312 cm.\n(b) En sumas y restas manda la posición decimal, no el número de cifras significativas. 0,8 cm solo llega a las décimas, así que se comunica 16,3 cm.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_005",
+      "title": "Serie de medidas y semidispersión",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "mean",
+          "label": "Media \\(\\bar x\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 10.3,
+          "tolerance": 0.01,
+          "unit": "cm",
+          "part": "a"
+        },
+        {
+          "id": "uncertainty",
+          "label": "Incertidumbre \\(\\Delta x\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.2,
+          "tolerance": 0.01,
+          "unit": "cm",
+          "part": "b"
+        },
+        {
+          "id": "relative",
+          "label": "Incertidumbre relativa",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.9,
+          "tolerance": 0.05,
+          "significant_figures": 2,
+          "prompt": "En porcentaje, con 2 cifras significativas.",
+          "unit": "%",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "usar el rango completo 0,4",
+        "escribir más decimales en la media que en la incertidumbre",
+        "dividir la incertidumbre entre 100"
+      ],
+      "statement_source": "Se mide cinco veces la misma longitud y se obtiene: 10,2; 10,4; 10,3; 10,5; 10,1 cm. No hay valor de referencia, así que la mejor estimación es la media \\(\\bar x\\). Como incertidumbre usa la semidispersión: \\(\\Delta x=\\dfrac{x_{max}-x_{min}}{2}\\).\n\n(a) Calcula la media \\(\\bar x\\).\n(b) Calcula la incertidumbre \\(\\Delta x\\).\n(c) Calcula la incertidumbre relativa \\(\\Delta x/\\bar x\\) en porcentaje.\n\nDespués escribe el resultado como \\((\\bar x\\pm\\Delta x)\\) cm.",
+      "solution_source": "(a) \\(\\bar x=51{,}5/5=10{,}3\\) cm (la media usa las cinco medidas).\n(b) \\(\\Delta x=(10{,}5-10{,}1)/2=0{,}2\\) cm (solo el máximo y el mínimo).\n(c) \\(0{,}2/10{,}3\\cdot100=1{,}94\\,\\%\\approx1{,}9\\,\\%\\).\n\nResultado: \\((10{,}3\\pm0{,}2)\\) cm.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_006",
+      "title": "Resolución de dos instrumentos",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "single_choice_plus_numeric",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "u_ruler",
+          "label": "Incertidumbre de la regla",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.5,
+          "tolerance": 0.01,
+          "unit": "mm",
+          "part": "a"
+        },
+        {
+          "id": "u_caliper",
+          "label": "Incertidumbre del calibre",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.05,
+          "tolerance": 0.01,
+          "prompt": "Cuidado: 0,01 cm son 0,1 mm.",
+          "unit": "mm",
+          "part": "b"
+        },
+        {
+          "id": "better",
+          "label": "Instrumento con mejor resolución",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "regla",
+              "label": "La regla"
+            },
+            {
+              "id": "calibre",
+              "label": "El calibre"
+            },
+            {
+              "id": "iguales",
+              "label": "Los dos igual"
+            }
+          ],
+          "correct_option_id": "calibre",
+          "part": "c"
+        },
+        {
+          "id": "reason",
+          "label": "Razón de la elección",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "digital",
+              "label": "Porque es digital"
+            },
+            {
+              "id": "salto",
+              "label": "Porque su menor salto (0,1 mm) es diez veces más pequeño que la división de la regla (1 mm)"
+            },
+            {
+              "id": "cifras",
+              "label": "Porque muestra más cifras en pantalla, aunque el salto fuera el mismo"
+            }
+          ],
+          "correct_option_id": "salto",
+          "part": "d"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "convertir 0,01 cm en 1 mm",
+        "comparar pantallas y no escalas",
+        "usar la división completa pese al convenio dado"
+      ],
+      "statement_source": "Una regla tiene divisiones de 1 mm. Un calibre digital muestra centésimas de centímetro: su último dígito cambia de 0,01 cm en 0,01 cm. Toma como incertidumbre instrumental la mitad de la menor división de la escala o del menor salto de la pantalla.\n\n(a) Calcula la incertidumbre instrumental de la regla, en mm.\n(b) Calcula la incertidumbre instrumental del calibre, en mm.\n(c) Indica qué instrumento tiene mejor resolución.\n(d) Indica la razón correcta de esa elección.",
+      "solution_source": "(a) Regla: 1 mm / 2 = 0,5 mm.\n(b) Calibre: 0,01 cm = 0,1 mm; la mitad es 0,05 mm.\n(c) El calibre.\n(d) No por ser digital: un aparato digital que avanzara de 1 mm en 1 mm no sería mejor que la regla. Lo que cuenta es el menor salto, 0,1 mm frente a 1 mm.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_007",
+      "title": "Precisión y exactitud no son sinónimos",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "numeric_plus_choice",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "mean_A",
+          "label": "Media del grupo A",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 10.0,
+          "tolerance": 0.005,
+          "unit": "cm",
+          "part": "a"
+        },
+        {
+          "id": "mean_B",
+          "label": "Media del grupo B",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 10.49,
+          "tolerance": 0.005,
+          "unit": "cm",
+          "part": "a"
+        },
+        {
+          "id": "mean_C",
+          "label": "Media del grupo C",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 10.0,
+          "tolerance": 0.005,
+          "unit": "cm",
+          "part": "a"
+        },
+        {
+          "id": "spread_A",
+          "label": "Semidispersión de A",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.01,
+          "tolerance": 0.003,
+          "unit": "cm",
+          "part": "b"
+        },
+        {
+          "id": "spread_B",
+          "label": "Semidispersión de B",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.01,
+          "tolerance": 0.003,
+          "unit": "cm",
+          "part": "b"
+        },
+        {
+          "id": "spread_C",
+          "label": "Semidispersión de C",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.3,
+          "tolerance": 0.003,
+          "unit": "cm",
+          "part": "b"
+        },
+        {
+          "id": "class_A",
+          "label": "Clasificación del grupo A",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "precisa_exacta",
+              "label": "Precisa y exacta"
+            },
+            {
+              "id": "precisa_no_exacta",
+              "label": "Precisa pero no exacta"
+            },
+            {
+              "id": "exacta_no_precisa",
+              "label": "Media exacta pero poco precisa"
+            },
+            {
+              "id": "ni_ni",
+              "label": "Ni precisa ni exacta"
+            }
+          ],
+          "correct_option_id": "precisa_exacta",
+          "part": "c"
+        },
+        {
+          "id": "class_B",
+          "label": "Clasificación del grupo B",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "precisa_exacta",
+              "label": "Precisa y exacta"
+            },
+            {
+              "id": "precisa_no_exacta",
+              "label": "Precisa pero no exacta"
+            },
+            {
+              "id": "exacta_no_precisa",
+              "label": "Media exacta pero poco precisa"
+            },
+            {
+              "id": "ni_ni",
+              "label": "Ni precisa ni exacta"
+            }
+          ],
+          "correct_option_id": "precisa_no_exacta",
+          "part": "c"
+        },
+        {
+          "id": "class_C",
+          "label": "Clasificación del grupo C",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "precisa_exacta",
+              "label": "Precisa y exacta"
+            },
+            {
+              "id": "precisa_no_exacta",
+              "label": "Precisa pero no exacta"
+            },
+            {
+              "id": "exacta_no_precisa",
+              "label": "Media exacta pero poco precisa"
+            },
+            {
+              "id": "ni_ni",
+              "label": "Ni precisa ni exacta"
+            }
+          ],
+          "correct_option_id": "exacta_no_precisa",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "llamar exacta a B por ser consistente",
+        "llamar precisa a C porque contiene un dato exacto",
+        "valorar datos aislados y no la serie"
+      ],
+      "statement_source": "El valor de referencia de una longitud es 10,00 cm. Tres grupos la miden tres veces cada uno:\n\nGrupo A: 9,99; 10,00; 10,01 cm.\nGrupo B: 10,48; 10,50; 10,49 cm.\nGrupo C: 9,70; 10,30; 10,00 cm.\n\nLa precisión mide cuánto se agrupan las medidas entre sí (poca dispersión = alta precisión). La exactitud mide lo cerca que está la media del valor de referencia.\n\n(a) Calcula la media de cada grupo.\n(b) Calcula la semidispersión \\((x_{max}-x_{min})/2\\) de cada grupo.\n(c) Clasifica cada grupo según su precisión y la exactitud de su media.",
+      "solution_source": "(a) Medias: A = 10,00 cm; B = 10,49 cm; C = 10,00 cm.\n(b) Semidispersiones: A = 0,01 cm; B = 0,01 cm; C = 0,30 cm.\n(c) A está agrupada y centrada: precisa y exacta. B está igual de agrupada que A, pero su media se desplaza 0,49 cm: precisa pero no exacta (sesgo sistemático). C está muy dispersa, pero su media coincide con 10,00 cm: media exacta, poca precisión. Que C contenga un dato de 10,00 no la hace precisa: se juzga la serie, no un dato aislado.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_008",
+      "title": "Corrección de error de cero",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 8,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "error_type",
+          "label": "Tipo de error",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "sistematico_cero",
+              "label": "Sistemático de cero: desplaza todas las lecturas la misma cantidad"
+            },
+            {
+              "id": "aleatorio",
+              "label": "Aleatorio: cambia de una medida a otra"
+            },
+            {
+              "id": "escala",
+              "label": "De escala: crece en proporción a la masa medida"
+            }
+          ],
+          "correct_option_id": "sistematico_cero",
+          "part": "a"
+        },
+        {
+          "id": "corrected_mass",
+          "label": "Masa corregida",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 124.8,
+          "tolerance": 0.01,
+          "unit": "g",
+          "part": "b"
+        },
+        {
+          "id": "uncertainty",
+          "label": "Incertidumbre \\(\\Delta m\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.05,
+          "tolerance": 0.01,
+          "unit": "g",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "sumar la corrección",
+        "llamarlo aleatorio",
+        "informar 124,8 ± 0,05 mezclando posiciones decimales"
+      ],
+      "statement_source": "Una balanza marca +0,6 g cuando está vacía. Al colocar una muestra indica 125,4 g. La balanza muestra décimas de gramo (resolución 0,1 g).\n\n(a) Indica qué tipo de error tiene la balanza.\n(b) Calcula la masa corregida de la muestra.\n(c) Toma como incertidumbre instrumental la mitad de la resolución y escribe su valor.\n\nDespués escribe el resultado como \\((m\\pm\\Delta m)\\) g, con el mismo número de decimales en el valor y en la incertidumbre.",
+      "solution_source": "(a) Error sistemático de cero: la balanza suma 0,6 g a todas las lecturas.\n(b) Se resta el desplazamiento: \\(m=125{,}4-0{,}6=124{,}8\\) g.\n(c) \\(\\Delta m=0{,}1/2=0{,}05\\) g.\n\nResultado: \\((124{,}80\\pm0{,}05)\\) g. Escribir \\(124{,}8\\pm0{,}05\\) mezcla decimales distintos.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_009",
+      "title": "Diferencia de longitudes con incertidumbre",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "D",
+          "label": "Diferencia \\(D\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 3.7,
+          "tolerance": 0.01,
+          "unit": "cm",
+          "part": "a"
+        },
+        {
+          "id": "u_D",
+          "label": "Incertidumbre \\(\\Delta D\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.2,
+          "tolerance": 0.01,
+          "unit": "cm",
+          "part": "b"
+        },
+        {
+          "id": "min",
+          "label": "Valor mínimo compatible",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 3.5,
+          "tolerance": 0.01,
+          "unit": "cm",
+          "part": "c"
+        },
+        {
+          "id": "max",
+          "label": "Valor máximo compatible",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 3.9,
+          "tolerance": 0.01,
+          "unit": "cm",
+          "part": "d"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "restar incertidumbres",
+        "confundir extremos al restar intervalos",
+        "conservar centésimas inexistentes"
+      ],
+      "statement_source": "Se miden dos longitudes: \\(L_1=(12{,}4\\pm0{,}1)\\) cm y \\(L_2=(8{,}7\\pm0{,}1)\\) cm. En sumas y restas, la incertidumbre del resultado es la suma de las incertidumbres absolutas.\n\n(a) Calcula la diferencia \\(D=L_1-L_2\\).\n(b) Calcula su incertidumbre \\(\\Delta D\\).\n(c) Escribe el valor mínimo compatible, \\(D-\\Delta D\\).\n(d) Escribe el valor máximo compatible, \\(D+\\Delta D\\).",
+      "solution_source": "(a) \\(D=12{,}4-8{,}7=3{,}7\\) cm.\n(b) Las incertidumbres se suman aunque los valores se resten: \\(\\Delta D=0{,}1+0{,}1=0{,}2\\) cm.\n(c) 3,5 cm. (d) 3,9 cm.\n\nResultado: \\(D=(3{,}7\\pm0{,}2)\\) cm.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_010",
+      "title": "Área e incertidumbre relativa",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "area",
+          "label": "Área \\(A\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 60.0,
+          "tolerance": 0.01,
+          "unit": "cm²",
+          "part": "a"
+        },
+        {
+          "id": "relative",
+          "label": "Incertidumbre relativa",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 2.83,
+          "tolerance": 0.02,
+          "prompt": "En porcentaje.",
+          "unit": "%",
+          "part": "b"
+        },
+        {
+          "id": "absolute",
+          "label": "Incertidumbre absoluta \\(\\Delta A\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.7,
+          "tolerance": 0.05,
+          "unit": "cm²",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "sumar 0,1+0,1 directamente al área",
+        "expresar 0,0283 como 0,0283 %",
+        "cuadrar la incertidumbre"
+      ],
+      "statement_source": "Un rectángulo mide \\((12{,}0\\pm0{,}1)\\) cm de largo y \\((5{,}0\\pm0{,}1)\\) cm de ancho. En productos, la incertidumbre relativa del resultado es la suma de las incertidumbres relativas de los factores.\n\n(a) Calcula el área \\(A\\).\n(b) Calcula la incertidumbre relativa del área, \\(\\Delta A/A\\), en porcentaje.\n(c) Calcula la incertidumbre absoluta del área, \\(\\Delta A\\).\n\nDespués escribe el resultado como \\((A\\pm\\Delta A)\\) cm².",
+      "solution_source": "(a) \\(A=12{,}0\\cdot5{,}0=60{,}0\\) cm².\n(b) \\(\\Delta A/A=0{,}1/12{,}0+0{,}1/5{,}0=0{,}0283=2{,}83\\,\\%\\).\n(c) \\(\\Delta A=60{,}0\\cdot0{,}0283=1{,}7\\) cm².\n\nResultado: \\((60{,}0\\pm1{,}7)\\) cm².",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_011",
+      "title": "Densidad con incertidumbre",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "rho",
+          "label": "Densidad \\(\\rho\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 8.42,
+          "tolerance": 0.01,
+          "unit": "g·cm⁻³",
+          "part": "a"
+        },
+        {
+          "id": "relative",
+          "label": "Incertidumbre relativa",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 2.12,
+          "tolerance": 0.02,
+          "prompt": "En porcentaje.",
+          "unit": "%",
+          "part": "b"
+        },
+        {
+          "id": "absolute",
+          "label": "Incertidumbre absoluta \\(\\Delta\\rho\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.18,
+          "tolerance": 0.01,
+          "unit": "g·cm⁻³",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "restar errores relativos por tratarse de un cociente",
+        "usar porcentajes como factores sin dividir entre 100",
+        "sobre-redondear el valor central"
+      ],
+      "statement_source": "Una muestra tiene masa \\(m=(84{,}2\\pm0{,}1)\\) g y volumen \\(V=(10{,}0\\pm0{,}2)\\) cm³. Para la densidad \\(\\rho=m/V\\), la incertidumbre relativa es la suma de las incertidumbres relativas de \\(m\\) y \\(V\\).\n\n(a) Calcula la densidad \\(\\rho\\).\n(b) Calcula su incertidumbre relativa, en porcentaje.\n(c) Calcula su incertidumbre absoluta \\(\\Delta\\rho\\), con 2 cifras significativas.\n\nDespués escribe el resultado como \\((\\rho\\pm\\Delta\\rho)\\) g·cm⁻³.",
+      "solution_source": "(a) \\(\\rho=84{,}2/10{,}0=8{,}42\\) g·cm⁻³.\n(b) En un cociente también se suman: \\(0{,}1/84{,}2+0{,}2/10{,}0=0{,}0212=2{,}12\\,\\%\\).\n(c) \\(\\Delta\\rho=8{,}42\\cdot0{,}0212=0{,}178\\approx0{,}18\\) g·cm⁻³.\n\nResultado: \\((8{,}42\\pm0{,}18)\\) g·cm⁻³.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_012",
+      "title": "Elegir el instrumento adecuado",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "single_choice_multi",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "p_1mm",
+          "label": "Error relativo con 1 mm",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 62.5,
+          "tolerance": 0.01,
+          "prompt": "En porcentaje.",
+          "unit": "%",
+          "part": "a"
+        },
+        {
+          "id": "p_0_1mm",
+          "label": "Error relativo con 0,1 mm",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 6.25,
+          "tolerance": 0.01,
+          "prompt": "En porcentaje.",
+          "unit": "%",
+          "part": "b"
+        },
+        {
+          "id": "p_0_01mm",
+          "label": "Error relativo con 0,01 mm",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.625,
+          "tolerance": 0.01,
+          "prompt": "En porcentaje.",
+          "unit": "%",
+          "part": "c"
+        },
+        {
+          "id": "valid",
+          "label": "Instrumentos que cumplen",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "solo_001",
+              "label": "Solo el de 0,01 mm"
+            },
+            {
+              "id": "01_y_001",
+              "label": "El de 0,1 mm y el de 0,01 mm"
+            },
+            {
+              "id": "los_tres",
+              "label": "Los tres"
+            },
+            {
+              "id": "ninguno",
+              "label": "Ninguno"
+            }
+          ],
+          "correct_option_id": "solo_001",
+          "part": "d"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "comparar resolución absoluta con 5 sin porcentaje",
+        "escoger 0,1 mm por parecer “una décima”",
+        "usar la resolución completa"
+      ],
+      "statement_source": "Se quiere medir el grosor de una lámina de unos 0,80 mm con un error relativo instrumental menor del 5 %. Hay tres instrumentos, con resoluciones de 1 mm, 0,1 mm y 0,01 mm. Para cada uno, toma como incertidumbre la mitad de su resolución y divídela entre 0,80 mm.\n\n(a) Calcula el error relativo con el instrumento de 1 mm.\n(b) Calcula el error relativo con el de 0,1 mm.\n(c) Calcula el error relativo con el de 0,01 mm.\n(d) Indica qué instrumentos cumplen la condición de menos del 5 %.",
+      "solution_source": "(a) \\(0{,}5/0{,}80\\cdot100=62{,}5\\,\\%\\).\n(b) \\(0{,}05/0{,}80\\cdot100=6{,}25\\,\\%\\).\n(c) \\(0{,}005/0{,}80\\cdot100=0{,}625\\,\\%\\).\n(d) Solo el de 0,01 mm baja del 5 %. El de 0,1 mm parece suficiente, pero se queda en 6,25 %.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_m_013",
+      "title": "Dato atípico en una serie",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "numeric_plus_text",
+      "difficulty": 4,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "suspect",
+          "label": "Dato sospechoso",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 2.46,
+          "tolerance": 0.01,
+          "unit": "s",
+          "part": "a"
+        },
+        {
+          "id": "action",
+          "label": "¿Qué se hace con el dato sospechoso?",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "borrar",
+              "label": "Borrarlo directamente porque estropea la media"
+            },
+            {
+              "id": "investigar",
+              "label": "Investigar su causa; solo se excluye si se confirma un fallo"
+            },
+            {
+              "id": "mantener",
+              "label": "Mantenerlo siempre, pase lo que pase"
+            }
+          ],
+          "correct_option_id": "investigar",
+          "part": "b"
+        },
+        {
+          "id": "mean",
+          "label": "Media sin el dato excluido",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.805,
+          "tolerance": 0.001,
+          "prompt": "Sin redondear (3 decimales).",
+          "unit": "s",
+          "part": "c"
+        },
+        {
+          "id": "half_range",
+          "label": "Semidispersión",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.015,
+          "tolerance": 0.001,
+          "prompt": "Sin redondear.",
+          "unit": "s",
+          "part": "d"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "measurement",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Medida, error, incertidumbre y cifras significativas",
+      "common_mistakes": [
+        "borrar el dato solo porque molesta",
+        "incluirlo después de declararlo fallo confirmado",
+        "escribir 1,805 ± 0,015 como resultado final sin criterio de redondeo"
+      ],
+      "statement_source": "Se cronometra cinco veces el periodo de un péndulo: 1,82; 1,79; 1,81; 2,46; 1,80 s.\n\n(a) Escribe el dato que se aleja claramente del resto (dato sospechoso).\n(b) Indica qué hay que hacer con ese dato.\n(c) Supón que se revisa y se confirma un fallo al cronometrar, así que se excluye. Calcula la media de los cuatro datos restantes.\n(d) Calcula la semidispersión \\((x_{max}-x_{min})/2\\) de esos cuatro datos.\n\nDespués escribe el resultado redondeando primero la incertidumbre a una cifra y luego la media al mismo decimal.",
+      "solution_source": "(a) 2,46 s: los demás están entre 1,79 y 1,82 s.\n(b) No se borra solo porque molesta: primero se busca la causa. Si se confirma un fallo, se excluye y se dice.\n(c) \\((1{,}82+1{,}79+1{,}81+1{,}80)/4=1{,}805\\) s.\n(d) \\((1{,}82-1{,}79)/2=0{,}015\\) s.\n\nAl comunicar: \\(\\Delta T\\approx0{,}02\\) s, así que \\(T=(1{,}81\\pm0{,}02)\\) s.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    }
+  ]
+}

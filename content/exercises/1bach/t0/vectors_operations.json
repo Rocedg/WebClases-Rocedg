@@ -1,0 +1,481 @@
+{
+  "exercises": [
+    {
+      "id": "t0_v_007",
+      "title": "Suma, resta y significado geométrico",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "response_1",
+          "label": "\\(\\vec A+\\vec B\\)",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            4.0,
+            5.0
+          ],
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "tolerance": 0.02,
+          "prompt": "Escribe las componentes entre paréntesis separadas por punto y coma: (x; y).",
+          "unit": "m",
+          "part": "a"
+        },
+        {
+          "id": "response_2",
+          "label": "\\(\\vec A-\\vec B\\)",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            6.0,
+            -9.0
+          ],
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "tolerance": 0.02,
+          "prompt": "Escribe las componentes entre paréntesis separadas por punto y coma: (x; y).",
+          "unit": "m",
+          "part": "a"
+        },
+        {
+          "id": "sum_magnitude",
+          "label": "Módulo de \\(\\vec A+\\vec B\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 6.4,
+          "tolerance": 0.02,
+          "unit": "m",
+          "part": "b"
+        },
+        {
+          "id": "sum_angle",
+          "label": "Ángulo de \\(\\vec A+\\vec B\\) con \\(+x\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 51.3,
+          "tolerance": 0.2,
+          "unit": "°",
+          "part": "b"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "sumar módulos",
+        "calcular $B-A$",
+        "obtener un ángulo del cuadrante incorrecto"
+      ],
+      "statement_source": "Sean \\(\\vec A=(5,\\,-2)\\) m y \\(\\vec B=(-1,\\,7)\\) m.\n\n(a) Calcula \\(\\vec A+\\vec B\\) y \\(\\vec A-\\vec B\\).\n(b) Calcula el módulo y el ángulo con \\(+x\\) de \\(\\vec A+\\vec B\\).",
+      "solution_source": "(a) \\(\\vec A+\\vec B=(4,\\,5)\\) m y \\(\\vec A-\\vec B=(6,\\,-9)\\) m. \\(\\vec A-\\vec B\\) es el vector que hay que sumar a \\(\\vec B\\) para llegar a \\(\\vec A\\).\n(b) \\(|\\vec A+\\vec B|=\\sqrt{41}=6{,}40\\) m y \\(\\theta=\\arctan(5/4)=51{,}3^\\circ\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_008",
+      "title": "Combinación lineal y vector equilibrante",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "Rx",
+          "label": "\\(R_x\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 8.0,
+          "tolerance": 0.01,
+          "unit": "N",
+          "part": "a"
+        },
+        {
+          "id": "Ry",
+          "label": "\\(R_y\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -17.0,
+          "tolerance": 0.01,
+          "unit": "N",
+          "part": "a"
+        },
+        {
+          "id": "Cx",
+          "label": "\\(C_x\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -8.0,
+          "tolerance": 0.01,
+          "unit": "N",
+          "part": "b"
+        },
+        {
+          "id": "Cy",
+          "label": "\\(C_y\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 17.0,
+          "tolerance": 0.01,
+          "unit": "N",
+          "part": "b"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "interpretar $-3B$ como $(-3,-3)+B$",
+        "olvidar cambiar ambos signos en $C$",
+        "sumar módulos"
+      ],
+      "statement_source": "Sean \\(\\vec A=(1,\\,-4)\\) N y \\(\\vec B=(-2,\\,3)\\) N.\n\n(a) Calcula \\(\\vec R=2\\vec A-3\\vec B\\).\n(b) Calcula el vector \\(\\vec C\\) que cumple \\(2\\vec A-3\\vec B+\\vec C=\\vec 0\\).",
+      "solution_source": "(a) \\(2\\vec A=(2,\\,-8)\\) y \\(3\\vec B=(-6,\\,9)\\), así que \\(\\vec R=(2+6,\\,-8-9)=(8,\\,-17)\\) N.\n(b) \\(\\vec C=-\\vec R=(-8,\\,17)\\) N. Comprobación: \\((8-8,\\,-17+17)=(0,\\,0)\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_009",
+      "title": "Tres desplazamientos y dirección final",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "Rx",
+          "label": "\\(R_x\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -9.0,
+          "tolerance": 0.01,
+          "unit": "cm",
+          "part": "a"
+        },
+        {
+          "id": "Ry",
+          "label": "\\(R_y\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 11.0,
+          "tolerance": 0.01,
+          "unit": "cm",
+          "part": "a"
+        },
+        {
+          "id": "quadrant",
+          "label": "Cuadrante",
+          "required": true,
+          "type": "short_text",
+          "accepted_forms": [
+            "II",
+            "2",
+            "segundo",
+            "segundo cuadrante"
+          ],
+          "prompt": "Escribe el número romano: I, II, III o IV.",
+          "part": "b"
+        },
+        {
+          "id": "magnitude",
+          "label": "Módulo \\(|\\vec R|\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 14.2,
+          "tolerance": 0.05,
+          "unit": "cm",
+          "part": "c"
+        },
+        {
+          "id": "angle",
+          "label": "Ángulo desde +x",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 129.3,
+          "tolerance": 0.2,
+          "unit": "°",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "restar solo el módulo de C",
+        "aceptar $-50,7^\\circ$ sin corregir el cuadrante"
+      ],
+      "statement_source": "Sean \\(\\vec A=(2,\\,1)\\) cm, \\(\\vec B=(-3,\\,4)\\) cm y \\(\\vec C=(5,\\,-2)\\) cm.\n\n(a) Calcula las componentes de \\(\\vec R=\\vec A+2\\vec B-\\vec C\\).\n(b) Indica en qué cuadrante está \\(\\vec R\\), antes de usar la calculadora.\n(c) Calcula su módulo y el ángulo que forma con \\(+x\\).",
+      "solution_source": "(a) \\(\\vec R=(2-6-5,\\;1+8+2)=(-9,\\,11)\\) cm.\n(b) \\(x<0\\), \\(y>0\\): segundo cuadrante.\n(c) \\(|\\vec R|=\\sqrt{202}=14{,}2\\) cm. La calculadora da \\(\\arctan(11/-9)=-50{,}7^\\circ\\); en el segundo cuadrante, \\(\\theta=129{,}3^\\circ\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_010",
+      "title": "Combinación en tres dimensiones",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 4,
+      "estimated_minutes": 11,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "R",
+          "label": "\\(\\vec R\\)",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            5.0,
+            -9.0,
+            6.0
+          ],
+          "component_order": [
+            "x",
+            "y",
+            "z"
+          ],
+          "tolerance": 0.01,
+          "prompt": "Escribe las componentes entre paréntesis separadas por punto y coma: (x; y; z).",
+          "part": "a"
+        },
+        {
+          "id": "magnitude",
+          "label": "Módulo \\(|\\vec R|\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 11.92,
+          "tolerance": 0.02,
+          "prompt": "Con 2 decimales.",
+          "part": "b"
+        },
+        {
+          "id": "cos_z",
+          "label": "\\(R_z/|\\vec R|\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.503,
+          "tolerance": 0.003,
+          "prompt": "Un número sin unidades, no un ángulo.",
+          "part": "c"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "perder el signo al calcular $-2B$",
+        "aplicar Pitágoras solo a dos componentes",
+        "dar grados en el campo del coseno"
+      ],
+      "statement_source": "Sean \\(\\vec A=(1,\\,0,\\,3)\\), \\(\\vec B=(-2,\\,4,\\,1)\\) y \\(\\vec C=(0,\\,-1,\\,5)\\).\n\n(a) Calcula \\(\\vec R=\\vec A-2\\vec B+\\vec C\\).\n(b) Calcula \\(|\\vec R|\\).\n(c) Calcula el coseno director respecto a \\(+z\\), \\(R_z/|\\vec R|\\).",
+      "solution_source": "(a) \\(-2\\vec B=(4,\\,-8,\\,-2)\\), así que \\(\\vec R=(1+4+0,\\;0-8-1,\\;3-2+5)=(5,\\,-9,\\,6)\\).\n(b) \\(\\sqrt{25+81+36}=\\sqrt{142}=11{,}92\\).\n(c) \\(6/11{,}92=0{,}503\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_011",
+      "title": "Ecuación vectorial con comprobación",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_multi",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "Xx",
+          "label": "\\(X_x\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -3.0,
+          "tolerance": 0.01,
+          "part": "a"
+        },
+        {
+          "id": "Xy",
+          "label": "\\(X_y\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 7.0,
+          "tolerance": 0.01,
+          "part": "a"
+        },
+        {
+          "id": "magnitude",
+          "label": "Módulo \\(|\\vec X|\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 7.62,
+          "tolerance": 0.02,
+          "prompt": "Con 2 decimales.",
+          "part": "b"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "usar $(A-B)/2$",
+        "dividir solo una componente",
+        "no comprobar"
+      ],
+      "statement_source": "Resuelve la ecuación \\(2\\vec X+\\vec A=\\vec B\\) con \\(\\vec A=(4,\\,-6)\\) y \\(\\vec B=(-2,\\,8)\\).\n\n(a) Calcula las componentes de \\(\\vec X\\). Comprueba el resultado sustituyéndolo en la ecuación.\n(b) Calcula \\(|\\vec X|\\).",
+      "solution_source": "(a) \\(2\\vec X=\\vec B-\\vec A=(-6,\\,14)\\), así que \\(\\vec X=(-3,\\,7)\\). Comprobación: \\(2(-3,\\,7)+(4,\\,-6)=(-2,\\,8)=\\vec B\\).\n(b) \\(|\\vec X|=\\sqrt{58}=7{,}62\\).",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_v_012",
+      "title": "Construcción punta-cola",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "written_upload_plus_numeric",
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "response_2",
+          "label": "\\(\\vec A+\\vec B\\)",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            4.0,
+            5.0
+          ],
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "tolerance": 0.02,
+          "prompt": "Escribe las componentes entre paréntesis separadas por punto y coma: (x; y).",
+          "part": "a"
+        },
+        {
+          "id": "response_3",
+          "label": "\\(\\vec A-\\vec B\\)",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            2.0,
+            -3.0
+          ],
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "tolerance": 0.02,
+          "prompt": "Escribe las componentes entre paréntesis separadas por punto y coma: (x; y).",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t0/assets/v012_punta_cola.svg",
+          "alt": "Diagrama obligatorio para t0_v_012."
+        }
+      ],
+      "tags": [
+        "t0",
+        "vectors",
+        "version_4"
+      ],
+      "origin": {
+        "kind": "exercise_bank_t0_v4_spec",
+        "source": "exercise-bank-t0-v4-spec.md"
+      },
+      "status": "active",
+      "version": 4,
+      "learning_objective": "Vectores y elección de ejes",
+      "common_mistakes": [
+        "dibujar B desde el origen en vez de desde la punta de A",
+        "usar B en lugar de $-B$ en la resta",
+        "evaluar solo estética sin comprobar componentes"
+      ],
+      "statement_source": "Sean \\(\\vec A=(3,\\,1)\\) y \\(\\vec B=(1,\\,4)\\).\n\n(a) En papel cuadriculado, construye \\(\\vec A+\\vec B\\) colocando la cola de \\(\\vec B\\) en la punta de \\(\\vec A\\), y \\(\\vec A-\\vec B\\) colocando la cola de \\(-\\vec B\\) en la punta de \\(\\vec A\\). Después comprueba ambos resultados por componentes y escríbelos aquí.",
+      "solution_source": "\\(\\vec A+\\vec B=(4,\\,5)\\) y \\(\\vec A-\\vec B=(2,\\,-3)\\). En el dibujo, distingue el vector trasladado de su posición original.",
+      "solution_reference": "exercise-bank-t0-v4-spec.md"
+    }
+  ]
+}
