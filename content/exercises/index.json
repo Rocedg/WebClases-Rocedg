@@ -1,7 +1,7 @@
 {
   "version": 1,
   "generated": true,
-  "generated_at": "2026-10-12T17:19:28Z",
+  "generated_at": "2026-10-12T17:47:40Z",
   "source": "content/exercises",
   "exercises": [
     {
@@ -1217,6 +1217,198 @@
       "tags": [
         "t0",
         "vectors",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_v_050",
+      "version": 5,
+      "title": "¿Es unitario?",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Vectores y elección de ejes",
+      "subtype": "numeric_choice_multi",
+      "difficulty": 2,
+      "estimated_time_min": 6,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "vectors",
+        "unit_vector",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_v_051",
+      "version": 5,
+      "title": "El error de dividir entre la suma",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Vectores y elección de ejes",
+      "subtype": "numeric_choice_vector",
+      "difficulty": 2,
+      "estimated_time_min": 7,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "vectors",
+        "unit_vector",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_v_052",
+      "version": 5,
+      "title": "Unitario con componentes negativas",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Vectores y elección de ejes",
+      "subtype": "numeric_choice_vector",
+      "difficulty": 3,
+      "estimated_time_min": 8,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "vectors",
+        "unit_vector",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_v_053",
+      "version": 5,
+      "title": "Del ángulo al unitario",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Vectores y elección de ejes",
+      "subtype": "vector_numeric_choice",
+      "difficulty": 3,
+      "estimated_time_min": 8,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "vectors",
+        "unit_vector",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_v_054",
+      "version": 5,
+      "title": "Ir de un punto a otro",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Vectores y elección de ejes",
+      "subtype": "vector_numeric_multi",
+      "difficulty": 3,
+      "estimated_time_min": 9,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "vectors",
+        "unit_vector",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_v_055",
+      "version": 5,
+      "title": "«Desde… hacia…»: el sentido importa",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Vectores y elección de ejes",
+      "subtype": "vector_numeric_choice",
+      "difficulty": 4,
+      "estimated_time_min": 9,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "vectors",
+        "unit_vector",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_v_056",
+      "version": 5,
+      "title": "Componente desconocida de un unitario",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Vectores y elección de ejes",
+      "subtype": "numeric_choice_vector",
+      "difficulty": 4,
+      "estimated_time_min": 9,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "vectors",
+        "unit_vector",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_v_057",
+      "version": 5,
+      "title": "Unitario en 3D",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Vectores y elección de ejes",
+      "subtype": "numeric_vector_multi",
+      "difficulty": 4,
+      "estimated_time_min": 9,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "vectors",
+        "unit_vector",
         "version_5"
       ],
       "workflow": {

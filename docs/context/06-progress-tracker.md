@@ -1,5 +1,10 @@
 # Progress Tracker
 
+## 2026-10-12
+
+- Added T0 unit-vector practice exercises `t0_v_050` through `t0_v_057` in the ordered split bank.
+- Added independent numerical checks and updated T0 catalogue/test counts.
+
 ## Current Phase
 
 Repository cleanup on `chore/repository-cleanup`, based on safety checkpoint `5d6ad08`. The user explicitly authorized checkpoint/push and repository reorganization on 2026-09-14. Current content paths are documented in `docs/context/02-architecture.md`; dated entries below retain historical paths.

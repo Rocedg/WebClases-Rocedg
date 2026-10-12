@@ -158,6 +158,7 @@
     "vectors_products.json",
     "vectors_decomposition.json",
     "vectors_axes.json",
+    "vectors_unit_vectors.json",
     "measurement_accuracy.json",
     "measurement_uncertainty.json",
     "calculus_graphs.json"

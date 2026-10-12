@@ -17,7 +17,7 @@ BANK_PATH = ROOT / "content" / "exercises" / "1bach" / "t0"
 
 EXPECTED_DISTRIBUTION = {
     "units": 16,
-    "vectors": 37,
+    "vectors": 45,
     "measurement": 25,
     "calculus_graphs": 18,
 }
@@ -56,10 +56,10 @@ def validate_bank(root: Path | None = None) -> list[str]:
     ids = [exercise.get("id") for exercise in exercises]
 
     published = [exercise for exercise in exercises if exercise.get("status") != "retired"]
-    if len(exercises) != 98:
-        errors.append(f"Expected 98 ordered T0 records, found {len(exercises)}.")
-    if len(published) != 96:
-        errors.append(f"Expected 96 published T0 exercises, found {len(published)}.")
+    if len(exercises) != 106:
+        errors.append(f"Expected 106 ordered T0 records, found {len(exercises)}.")
+    if len(published) != 104:
+        errors.append(f"Expected 104 published T0 exercises, found {len(published)}.")
     duplicates = [exercise_id for exercise_id, count in Counter(ids).items() if count > 1]
     if duplicates:
         errors.append(f"Duplicated IDs: {', '.join(sorted(duplicates))}.")

@@ -121,6 +121,17 @@ def validate_math() -> list[str]:
     assert_vector(errors, "t0_v_047.v_new", components(exercises, "t0_v_047", "v_new"), rotate((4.0, -3.0), -20), 0.01)
     assert_vector(errors, "t0_v_048.F", components(exercises, "t0_v_048", "F"), rotate((5.0, 2.0), -40), 0.01)
     assert_vector(errors, "t0_v_049.F_ramp2", components(exercises, "t0_v_049", "F_ramp2"), rotate(rotate((10.0, 0.0), -30), -15), 0.01)
+    assert_close(errors, "t0_v_050.mod_11", field(exercises, "t0_v_050", "mod_11"), math.sqrt(2), 0.01)
+    assert_close(errors, "t0_v_050.mod_05", field(exercises, "t0_v_050", "mod_05"), math.sqrt(0.5), 0.01)
+    assert_close(errors, "t0_v_051.wrong_modulus", field(exercises, "t0_v_051", "wrong_modulus"), math.sqrt(0.43**2 + 0.57**2), 0.01)
+    assert_close(errors, "t0_v_052.magnitude", field(exercises, "t0_v_052", "magnitude"), math.hypot(-5, 12), 1e-9)
+    assert_vector(errors, "t0_v_053.unit_30", components(exercises, "t0_v_053", "unit_30"), (math.cos(math.radians(30)), math.sin(math.radians(30))), 0.005)
+    assert_vector(errors, "t0_v_054.displacement", components(exercises, "t0_v_054", "displacement"), (6, 8), 1e-9)
+    assert_close(errors, "t0_v_054.distance", field(exercises, "t0_v_054", "distance"), 10, 1e-9)
+    assert_vector(errors, "t0_v_055.force", components(exercises, "t0_v_055", "force"), (-40, 30), 1e-9)
+    assert_close(errors, "t0_v_056.angle", field(exercises, "t0_v_056", "angle"), math.degrees(math.atan2(-16, 12)) % 360, 0.1)
+    assert_close(errors, "t0_v_057.magnitude", field(exercises, "t0_v_057", "magnitude"), math.sqrt(9), 1e-9)
+    assert_vector(errors, "t0_v_057.force", components(exercises, "t0_v_057", "force"), (8, -4, 8), 1e-9)
     return errors
 
 
