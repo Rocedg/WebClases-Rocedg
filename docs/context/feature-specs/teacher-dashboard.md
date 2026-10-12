@@ -44,7 +44,8 @@ Todas las tablas se agrupan por `username`:
 ## Out of scope
 
 - Editar o borrar datos de alumnos desde el panel.
-- Cambiar el sistema de login (sigue siendo el diccionario `USERS`).
+- Cambiar el sistema de login (sigue usando la tabla `users`; `USERS` solo
+  contiene las cuentas de prueba que se siembran al iniciar).
 - Nuevas tablas o migraciones, salvo que una spec posterior lo apruebe.
 
 ## Implementation notes

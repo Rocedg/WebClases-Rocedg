@@ -90,6 +90,8 @@ Repository cleanup on `chore/repository-cleanup`, based on safety checkpoint `5d
 - Letting old design reference locations or placeholder branding leak into review.
 
 ## Update Log
+- 2026-10-12: La lista de seed de `app.py` queda limitada a las cuentas de prueba `Guest` y `Edgar`. Los alumnos reales se conservan en `users` y se crean desde `/teacher/accounts`; los tests aíslan sus cuentas auxiliares sin cambiar el comportamiento aditivo del seed ni la autenticación basada en la base de datos.
+
 - 2026-10-12: Añadida la gestión de cuentas de alumnos para el profesor: creación con contraseña inicial, restablecimiento, desactivación/reactivación, validación de usuarios y navegación protegida por `teacher_required`.
 
 - 2026-10-12: Añadida la tabla `users` como fuente única de autenticación, con contraseñas hash, sembrado inicial idempotente por `USERS` y cambio de contraseña en `/account/password`. La navegación enlaza la cuenta y se añadieron pruebas de roles, validación de contraseñas y persistencia del cambio.

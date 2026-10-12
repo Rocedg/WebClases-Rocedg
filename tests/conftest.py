@@ -13,6 +13,12 @@ from database import db
 from services.account_service import ensure_seed_users
 
 
+TEST_USERS = {
+    "Paul": ["fisica2026", "student"],
+    "Sandro": ["fisica2027", "student"],
+}
+
+
 @pytest.fixture(scope="session", autouse=True)
 def configure_test_database():
     flask_app.config.update(TESTING=True)
@@ -26,6 +32,7 @@ def reset_activity_database():
         db.drop_all()
         db.create_all()
         ensure_seed_users(USERS)
+        ensure_seed_users(TEST_USERS)
 
     yield
 

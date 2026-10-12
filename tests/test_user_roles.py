@@ -36,6 +36,14 @@ def test_teacher_can_log_in_and_sees_student_pages():
     assert "Profesor" in client.get("/topics").get_data(as_text=True)
 
 
+def test_database_password_replaces_the_seed_password_for_teacher_login():
+    set_password("Edgar", "database-teacher-password")
+    client = flask_app.test_client()
+
+    assert login(client, "Edgar", app_module.USERS["Edgar"][0]).status_code == 200
+    assert login(client, "Edgar", "database-teacher-password").status_code == 302
+
+
 def test_student_account_logs_in_as_student():
     set_password("Sandro", "student-pass")
     client = flask_app.test_client()

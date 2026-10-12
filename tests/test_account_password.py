@@ -5,6 +5,7 @@ from app import app as flask_app
 from database import db
 from models import ExerciseAttempt, User
 from services.account_service import ensure_seed_users
+from werkzeug.security import generate_password_hash
 
 
 def login(client, username="Sandro", password="fisica2027"):
@@ -36,6 +37,37 @@ def test_seeded_users_have_hashed_passwords_and_roles():
         assert edgar.password_hash != " "
         assert sandro.role == app_module.ROLE_STUDENT
         assert edgar.role == app_module.ROLE_TEACHER
+
+
+def test_app_seed_only_creates_test_accounts_and_preserves_existing_users():
+    with flask_app.app_context():
+        db.session.query(User).delete()
+        db.session.commit()
+
+        ensure_seed_users(app_module.USERS)
+        assert {
+            user.username for user in db.session.scalars(db.select(User))
+        } == {"Guest", "Edgar"}
+
+        existing_hash = generate_password_hash("existing-password")
+        db.session.add(
+            User(
+                username="Sandro",
+                password_hash=existing_hash,
+                role=app_module.ROLE_STUDENT,
+                is_active=False,
+            )
+        )
+        db.session.commit()
+
+        ensure_seed_users(app_module.USERS)
+        preserved_user = db.session.scalar(
+            db.select(User).where(User.username == "Sandro")
+        )
+
+        assert preserved_user is not None
+        assert preserved_user.password_hash == existing_hash
+        assert preserved_user.is_active is False
 
 
 def test_users_table_is_additive_to_existing_attempts():

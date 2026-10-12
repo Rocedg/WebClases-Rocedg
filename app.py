@@ -85,10 +85,9 @@ ACCOUNT_ERROR_MESSAGES = {
     USER_NOT_FOUND: 'No se ha encontrado esa cuenta.',
 }
 
+# Test accounts only; real students are created from /teacher/accounts.
 USERS = {
-    'Paul': ['fisica2026', ROLE_STUDENT],
     'Guest': ['studentpass', ROLE_STUDENT],
-    'Sandro': ['fisica2027', ROLE_STUDENT],
     'Edgar': [' ', ROLE_TEACHER],
 }
 

@@ -79,7 +79,9 @@ lanzadores del entorno virtual creados antes del cambio de nombre de carpeta.
 La base local sigue en instance/web_clases_rocedg.sqlite, fuera de Git.
 
 La cuenta de demostración existente es Guest con contraseña studentpass.
-La autenticación sigue usando los usuarios de prueba definidos en app.py.
+El código solo siembra las cuentas de prueba Guest y Edgar; los alumnos reales
+se crean desde la página Cuentas del profesor. La autenticación consulta la
+tabla de usuarios.
 
 ## Contenido y validación
 
