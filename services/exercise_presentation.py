@@ -5,6 +5,11 @@ import re
 from markupsafe import Markup, escape
 
 
+def exercise_number(exercise_id):
+    match = re.search(r"_(\d+)$", str(exercise_id))
+    return int(match.group(1)) if match else None
+
+
 def render_exercise_source(source):
     # Keep multiline TeX together before interpreting paragraph/part boundaries.
     source = re.sub(r"\\\[.*?\\\]|\\\(.*?\\\)",

@@ -10,7 +10,7 @@ from app import app, load_exercise_catalogue
 from database import db
 from models import ExerciseAttempt
 from services.exercise_attempt_service import response_fields, start_or_resume_attempt, submit_attempt
-from services.exercise_presentation import render_exercise_source, response_format_notes
+from services.exercise_presentation import exercise_number, render_exercise_source, response_format_notes
 
 
 PILOT_IDS = {'t0_v_018', 't0_c_020', 't1_r_004', 't1_g_011', 't2_h_001', 't2_c_001'}
@@ -22,6 +22,12 @@ ANSWERS = {
     't2_h_001': {'t': '2', 'range': '12', 'v': '(6; -20)', 'speed': '20,9', 'angle': '73,3'},
     't2_c_001': {'f': '1,5', 'period': '0,667', 'omega': '9,42', 'angle': '37,7', 'turns': '6'},
 }
+
+
+def test_exercise_number_extracts_numeric_suffix():
+    assert exercise_number('t0_v_037') == 37
+    assert exercise_number('t0_c_001') == 1
+    assert exercise_number('legacy') is None
 
 
 def test_source_escapes_html_and_preserves_math_and_parts():

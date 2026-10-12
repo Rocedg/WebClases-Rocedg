@@ -57,7 +57,7 @@
         {% set started_attempt = summary.started_attempt %}
         <article class="resource-card exercise-card exercise-card-{{ summary.status }}">
             <div class="resource-meta"><div class="metadata-row exercise-badge-row"><span class="badge-soft badge-course">{{ exercise.course }}</span><span class="badge-soft badge-topic">{{ exercise.topic }}</span><span class="badge-soft badge-status-{{ summary.status }}">{{ summary.label }}</span></div><span class="resource-icon"><i class="fas fa-pen-to-square" aria-hidden="true"></i></span></div>
-            <div><h2 class="resource-card-title">{{ exercise.title }}</h2><p class="resource-card-copy">{{ exercise.concept }}</p></div>
+            <div><h2 class="resource-card-title">{% if exercise_number(exercise.id) is not none %}<span class="exercise-number">{{ exercise_number(exercise.id) }}.</span> {% endif %}{{ exercise.title }}</h2><p class="resource-card-copy">{{ exercise.concept }}</p></div>
             <div class="metadata-row exercise-badge-row mt-auto"><span class="badge-soft badge-type">{{ exercise_type(exercise) }}</span><span class="badge-soft badge-difficulty-{{ exercise.difficulty }}">Dificultad {{ exercise.difficulty }}/5</span>{% if exercise_time(exercise) %}<span class="badge-soft badge-time">{{ exercise_time(exercise) }} min</span>{% endif %}</div>
             <div class="action-row pt-3">
                 {% if started_attempt %}<a href="{{ url_for('exercise_attempt_detail', exercise_id=exercise.id, attempt_id=started_attempt.id) }}" class="btn btn-primary">Continuar ejercicio</a>

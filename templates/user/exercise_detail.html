@@ -8,7 +8,7 @@
         <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 mb-4">
             <div>
                 <span class="eyebrow"><i class="fas fa-pen-to-square" aria-hidden="true"></i>Ejercicio guiado</span>
-                <h1 class="page-title fs-1">{{ exercise.title }}</h1>
+                <h1 class="page-title fs-1">{% if exercise_number(exercise.id) is not none %}<span class="exercise-number">{{ exercise_number(exercise.id) }}.</span> {% endif %}{{ exercise.title }}</h1>
                 <p class="page-copy">{{ exercise.concept }}</p>
             </div>
             <div class="metadata-row exercise-badge-row align-items-start">

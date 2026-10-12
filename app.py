@@ -8,7 +8,7 @@ from sqlalchemy import inspect, text
 from flask import Flask, jsonify, redirect, render_template, request, send_file, session, url_for
 
 from database import db, init_app as init_database
-from services.exercise_presentation import render_exercise_source, response_format_notes, response_placeholder
+from services.exercise_presentation import exercise_number, render_exercise_source, response_format_notes, response_placeholder
 from services.activity_service import (
     get_user_activity_snapshot,
     mark_exercise_worked,
@@ -41,7 +41,11 @@ from services.exercise_attempt_service import (
 
 app = Flask(__name__)
 app.jinja_env.filters['exercise_source'] = render_exercise_source
-app.jinja_env.globals.update(response_format_notes=response_format_notes, response_placeholder=response_placeholder)
+app.jinja_env.globals.update(
+    exercise_number=exercise_number,
+    response_format_notes=response_format_notes,
+    response_placeholder=response_placeholder,
+)
 app.secret_key = os.environ.get('SECRET_KEY', 'dev-secret-key')
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 init_database(app)

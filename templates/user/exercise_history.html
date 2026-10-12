@@ -19,7 +19,7 @@
         <article class="progress-block-row">
             <div class="progress-block-heading">
                 <div>
-                    <h3>{{ exercise_titles.get(attempt.exercise_id, attempt.exercise_id) }}</h3>
+                    <h3>{% if exercise_number(attempt.exercise_id) is not none %}<span class="exercise-number">{{ exercise_number(attempt.exercise_id) }}.</span> {% endif %}{{ exercise_titles.get(attempt.exercise_id, attempt.exercise_id) }}</h3>
                     <p class="resource-card-copy mb-0">Intento #{{ attempt.id }}</p>
                 </div>
                 <span class="badge-soft">
