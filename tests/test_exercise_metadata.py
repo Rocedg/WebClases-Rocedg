@@ -5,7 +5,7 @@ import sys
 from pathlib import Path
 from types import ModuleType
 
-from app import load_exercise_catalogue
+from app import exercise_filter_options, load_exercise_catalogue
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -84,3 +84,24 @@ def test_exercise_catalogue_loads_t0_t1_and_t2_as_separate_banks():
         topic_exercises = [exercise for exercise in exercises if exercise["topic"] == topic]
         assert topic_exercises
         assert all(exercise["id"].startswith(f"{topic}_") for exercise in topic_exercises)
+
+
+def test_exercise_type_filter_follows_topic_and_lesson_order():
+    exercises = load_exercise_catalogue()["exercises"]
+
+    grouped_types = exercise_filter_options(exercises)["types"]
+    flattened = [
+        (topic_title, type_key)
+        for topic_title, topic_types in grouped_types
+        for type_key, _ in topic_types
+    ]
+
+    t0_keys = [type_key for topic_title, type_key in flattened if topic_title.startswith("T0 ·")]
+    assert t0_keys == [
+        "1bach:t0:units",
+        "1bach:t0:vectors",
+        "1bach:t0:measurement",
+        "1bach:t0:calculus_graphs",
+    ]
+    first_t1 = next(index for index, (_, type_key) in enumerate(flattened) if ":t1:" in type_key)
+    assert all(":t0:" in type_key for _, type_key in flattened[:first_t1])

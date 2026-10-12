@@ -373,15 +373,28 @@ def exercise_status_filter(summary):
 
 
 def exercise_filter_options(exercises):
-    types = {}
     topics = {}
+    type_groups = {}
+    for summary in build_exercise_type_summaries(exercises, {}):
+        topic_key = summary['topic']
+        group = type_groups.setdefault(
+            topic_key,
+            {
+                'title': summary['topic_title'],
+                'types': [],
+            },
+        )
+        group['types'].append((summary['key'], summary['title']))
+
     for exercise in exercises:
-        types.setdefault(exercise_type_key(exercise), exercise_type(exercise))
         topics.setdefault(str(exercise.get('topic')), exercise_topic_title(exercise))
     return {
         'courses': sorted({exercise.get('course') for exercise in exercises if exercise.get('course')}),
         'topics': sorted(topics.items(), key=lambda item: item[0]),
-        'types': sorted(types.items(), key=lambda item: (item[1], item[0])),
+        'types': [
+            (group['title'], group['types'])
+            for group in type_groups.values()
+        ],
         'difficulties': sorted({str(exercise.get('difficulty')) for exercise in exercises if exercise.get('difficulty')}),
         'statuses': [
             ('new', 'Nuevo'),
