@@ -1,12 +1,16 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage{webclases-lesson}
-\lessonSetup{T0}{v0.6}{T0 - Herramientas para empezar Fisica}
+\lessonSetup{T0}{v0.7}{T0 - Herramientas para empezar Fisica}
 \begin{document}
 \shorthandoff{<>}
 \color{Ink}
 \coverHeader{T0 --- Herramientas para empezar F\'isica}{Unidades, vectores, medida y c\'alculo para dar sentido a un resultado.}
 Antes de calcular conviene saber qu\'e buscamos, en qu\'e unidades debe salir y qu\'e
-direcci\'on o tama\~no ser\'ia razonable. Estas herramientas se reutilizar\'an en T1--T6.
+direcci\'on o tama\~no ser\'ia razonable.
+T0 es la caja de herramientas de toda la F\'isica de Bachillerato: re\'une las
+herramientas que reutilizar\'as en T1--T6 y en 2.\textordmasculine.
+Las cajas \textbf{\textcolor{ToolLine}{Herramienta}} y
+\textbf{\textcolor{DefLine}{Definici\'on}} marcan lo que debes tener siempre a mano.
 \begin{lessonindex}
 \indexentry{sec:b1}{1. Medir y comprobar unidades}
 \indexentry{sec:b2}{2. Pensar con vectores}
@@ -16,10 +20,18 @@ direcci\'on o tama\~no ser\'ia razonable. Estas herramientas se reutilizar\'an e
 \end{lessonindex}
 
 \block{1}{Medir y comprobar unidades}{sec:b1}
+\begin{defbox}{magnitud f\'isica}
+Propiedad de un cuerpo o de un fen\'omeno que se puede medir y expresar como un
+n\'umero acompa\~nado de una unidad.
+\end{defbox}
 Medir es comparar una magnitud con una unidad acordada. La longitud de una mesa no
-cambia al expresarla como $1,20\units{m}$ o $120\units{cm}$: cambia el n\'umero porque
+cambia al expresarla como $1{,}20\units{m}$ o $120\units{cm}$: cambia el n\'umero porque
 cambia la unidad. Una magnitud no es su unidad: la masa se mide en kilogramos.
 \heading{Un lenguaje com\'un}
+\begin{defbox}{Sistema Internacional de unidades (SI)}
+Sistema de unidades acordado internacionalmente que fija siete unidades base,
+a partir de las cuales se obtienen todas las dem\'as.
+\end{defbox}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{4.6cm}Y@{}}
 \toprule
 Magnitudes base del SI & Unidades y s\'imbolos\\
@@ -32,9 +44,40 @@ Intensidad luminosa & candela (cd)\\
 \end{tabularx}
 Las magnitudes derivadas combinan las anteriores:
 $[v]=LT^{-1}$, $[a]=LT^{-2}$ y $[F]=MLT^{-2}$.
-Por eso $1\N=1\units{kg\,m/s^2}$ y $1\J=1\units{kg\,m^2/s^2}$.
 Los corchetes indican \emph{dimensiones}, no valores num\'ericos.
-Un \'angulo en radianes es una raz\'on entre dos longitudes y no tiene dimensi\'on.
+Algunas unidades derivadas tienen nombre propio:
+
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{3.3cm}>{\raggedright\arraybackslash}p{3.3cm}>{\raggedright\arraybackslash}p{3.2cm}Y@{}}
+\toprule
+Magnitud & Unidad (s\'imbolo) & Sale de & En unidades base SI\\
+\midrule
+Fuerza & newton (N) & $F=ma$ & $\mathrm{kg\,m/s^2}$\\
+Trabajo y energ\'ia & julio (J) & $W=Fd$ & $\mathrm{kg\,m^2/s^2}$\\
+Potencia & vatio (W) & $P=W/t$ & $\mathrm{kg\,m^2/s^3}$\\
+Presi\'on & pascal (Pa) & $p=F/S$ & $\mathrm{kg/(m\,s^2)}$\\
+\bottomrule
+\end{tabularx}
+
+\textbf{La unidad de un resultado.} Sustituye cada magnitud de la f\'ormula por su
+unidad SI y simplifica. En $W=Fd$:
+$\N\cdot\mathrm{m}=\mathrm{kg\,m/s^2}\cdot\mathrm{m}=\mathrm{kg\,m^2/s^2}=\mathrm{J}$.
+Los n\'umeros puros, como el $\tfrac12$, no tienen unidad.
+
+\textbf{Argumentos sin dimensi\'on.} Lo que va dentro de $e^{x}$, $\ln x$, $\sin x$ o
+$\cos x$ debe ser un n\'umero sin dimensi\'on. En $\cos(\omega t)$, $[\omega]=T^{-1}$,
+as\'i que $\omega t$ no tiene dimensi\'on y se expresa en radianes.
+Un \'angulo en radianes es una raz\'on entre dos longitudes (arco entre radio):
+el radi\'an es una unidad \guillemotleft entre comillas\guillemotright. En $e^{-t/\tau}$, $\tau$ es un tiempo.
+
+\begin{toolbox}{an\'alisis dimensional}
+\toolpart{Qu\'e hace} Comprueba si una f\'ormula es posible comparando las dimensiones
+de sus t\'erminos.
+\toolpart{F\'ormula} Si $A=B+C$, entonces $[A]=[B]=[C]$; los argumentos de
+$e^{x}$, $\ln x$, $\sin x$ y $\cos x$ son adimensionales.
+\toolpart{En F\'isica} T1 (ecuaciones del MRUA), T3 (unidades de fuerza),
+T5 (trabajo, energ\'ia y potencia) y cualquier resultado final.
+\toolpart{Ejemplo} $[\tfrac12at^2]=(LT^{-2})\,T^2=L$: puede ser una posici\'on.
+\end{toolbox}
 
 \begin{examplebox}{descartar una ecuaci\'on imposible}
 \origin{Elaboraci\'on propia.}
@@ -48,104 +91,172 @@ En cambio, $[at]=(L/T^2)T=L/T$, de modo que $v=v_0+at$ pasa esta prueba.
 $v=v_0+2at$ tambi\'en es dimensionalmente compatible y no es el MRUA habitual.
 \end{examplebox}
 
+\begin{exercisebox}{deducir la unidad}
+(a) La energ\'ia de un muelle es $E=\tfrac12kx^2$, con $x$ en metros. ¿En qu\'e unidad
+se mide $k$? (b) ¿En qu\'e unidad sale la potencia $P=Fv$?
+\solutionblock
+(a) $k=2E/x^2$: $\mathrm{J/m^2}=\N\cdot\mathrm{m}/\mathrm{m^2}=\mathrm{N/m}=\mathrm{kg/s^2}$.
+(b) $\N\cdot\mathrm{m/s}=\mathrm{J/s}=\mathrm{W}$, vatio.
+\end{exercisebox}
+
 \heading{Convertir es multiplicar por uno}
 Los prefijos cambian la escala: kilo $10^3$, centi $10^{-2}$, mili $10^{-3}$ y
 micro $10^{-6}$. Un factor como $1000\units{m}/1\units{km}$ vale uno.
 Se orienta para cancelar la unidad que sobra:
 \[
-72,0\units{km/h}\,
+72{,}0\units{km/h}\,
 \frac{1000\units{m}}{1\units{km}}\,
-\frac{1\units{h}}{3600\units{s}}=20,0\mps.
+\frac{1\units{h}}{3600\units{s}}=20{,}0\mps.
 \]
 La conversi\'on exacta no limita las cifras significativas. En \'areas y vol\'umenes
 se eleva \emph{todo} el factor: $1\units{cm^2}=(10^{-2}\units{m})^2=10^{-4}\units{m^2}$.
 
 \begin{exercisebox}{una conversi\'on que cambia de escala}
-Una pieza tiene volumen $250\units{cm^3}$ y masa $0,675\kg$.
+Una pieza tiene volumen $250\units{cm^3}$ y masa $0{,}675\kg$.
 Calcula su densidad en $\mathrm{kg/m^3}$ con tres cifras significativas.
 \solutionblock
-$V=250(10^{-2})^3=2,50\cdot10^{-4}\units{m^3}$.
-Por tanto $\rho=m/V=2,70\cdot10^3\units{kg/m^3}$.
+$V=250(10^{-2})^3=2{,}50\cdot10^{-4}\units{m^3}$.
+Por tanto $\rho=m/V=2{,}70\cdot10^3\units{kg/m^3}$.
 Usar $10^{-2}$ en lugar de $10^{-6}$ cambiar\'ia el volumen por un factor $10^4$.
 La densidad debe tener dimensi\'on $ML^{-3}$.
 \end{exercisebox}
 
 \block{2}{Pensar con vectores}{sec:b2}
-La temperatura o la masa son escalares. Un desplazamiento necesita adem\'as
-direcci\'on y sentido. El m\'odulo de un vector es su longitud, siempre no negativa;
-dos flechas paralelas pueden tener sentidos contrarios.
+\begin{defbox}{escalar}
+Magnitud que queda completamente determinada por un n\'umero y su unidad; por ejemplo,
+la masa o la temperatura.
+\end{defbox}
+\begin{defbox}{vector}
+Magnitud que necesita un m\'odulo, una direcci\'on y un sentido; por ejemplo,
+el desplazamiento o la fuerza.
+\end{defbox}
+\begin{defbox}{m\'odulo de un vector}
+Longitud de la flecha que representa a $\vec A$; se escribe $|\vec A|$ y nunca es negativo.
+\end{defbox}
+\textbf{Notaci\'on.} Toda letra con flecha, como $\vec A$ o $\Delta\vec r$, es un vector.
+Una letra sin flecha es un escalar. El m\'odulo se escribe siempre $|\vec A|$.
+Dos flechas paralelas pueden tener sentidos contrarios.
 Como vectores libres, son iguales si coinciden m\'odulo, direcci\'on y sentido,
 aunque los dibujemos en lugares distintos.
 
 \heading{De la flecha a las componentes}
-Una misma informaci\'on puede escribirse como par, columna o combinaci\'on de
-vectores unitarios:
+Un mismo vector puede escribirse de cuatro formas. Las tres primeras son par,
+columna y combinaci\'on de vectores unitarios:
 \[
-\vec A=(4,3)\units{m}
+\vec A=(4;\ 3)\units{m}
 =\begin{pmatrix}4\\3\end{pmatrix}\units{m}
 =(4\ii+3\jj)\units{m}.
 \]
 $\ii$ y $\jj$ tienen m\'odulo uno y se\~nalan los sentidos positivos de los ejes.
 Las componentes son proyecciones con signo; no son las longitudes de dos fuerzas nuevas.
+La cuarta forma, la polar, usa el m\'odulo y el \'angulo de la figura.
 \begin{center}
 \begin{tikzpicture}[x=1cm,y=1cm,font=\small]
 \draw[axis] (-.2,0)--(5.2,0) node[right] {$x$ (m)};
 \draw[axis] (0,-.2)--(0,3.8) node[above] {$y$ (m)};
 \draw[guide] (4,0)--(4,3)--(0,3);
-\draw[vector] (0,0)--(4,3) node[midway,above left] {$A=5\units{m}$};
+\draw[vector] (0,0)--(4,3) node[midway,sloped,above] {$r=|\vec A|=5\units{m}$};
 \draw[vectorgreen] (0,-.35)--(4,-.35) node[midway,below] {$A_x=4\units{m}$};
 \draw[vectoramber] (4.35,0)--(4.35,3) node[midway,right] {$A_y=3\units{m}$};
-\draw (.85,0) arc[start angle=0,end angle=36.869898,radius=.85];
+\draw[-{Latex[length=1.6mm]}] (.85,0) arc[start angle=0,end angle=36.869898,radius=.85];
 \node at (1.3,.4) {$\theta$};
+\node[Muted,font=\scriptsize] at (2,-1.15) {$\theta$ se mide desde $+x$, en sentido antihorario};
 \end{tikzpicture}
 \end{center}
 En el tri\'angulo rect\'angulo, el coseno divide cateto adyacente entre hipotenusa;
 el seno divide cateto opuesto entre hipotenusa, y la tangente divide
 cateto opuesto entre adyacente.
-Si $\theta$ se mide desde $+x$, entonces
+
+\begin{toolbox}{descomposici\'on en componentes}
+\toolpart{Qu\'e hace} Pasa de m\'odulo y \'angulo a componentes, y al rev\'es.
+\toolpart{F\'ormula} \mbox{$A_x=|\vec A|\cos\theta$}, \mbox{$A_y=|\vec A|\sin\theta$};
+al rev\'es, \mbox{$|\vec A|=\sqrt{A_x^2+A_y^2}$} y \mbox{$\tan\theta=A_y/A_x$}
+(mirando los signos). El \'angulo $\theta$ se mide desde $+x$, en sentido antihorario.
+\toolpart{En F\'isica} T2 (tiro oblicuo), T3 y T4 (peso en un plano inclinado),
+T5 (trabajo de una fuerza inclinada).
+\toolpart{Ejemplo} $|\vec v_0|=10\mps$ a $30^\circ$: $v_{0x}=8{,}66\mps$ y
+$v_{0y}=5{,}00\mps$.
+\end{toolbox}
+
+\textbf{Forma polar.} Con $r=|\vec A|$ y $\theta$ medido desde $+x$ en sentido
+antihorario, el vector se escribe
 \[
-A_x=A\cos\theta,\quad A_y=A\sin\theta,\quad
-A=\sqrt{A_x^2+A_y^2}.
+\vec A=(r\cos\theta;\ r\sin\theta).
 \]
-En 3D se a\~nade $A_z\hat k$ y $A=\sqrt{A_x^2+A_y^2+A_z^2}$.
-El vector unitario en la direcci\'on de $\vec A\ne0$ es $\hat u_A=\vec A/A$.
+En la figura, $\vec A=(5\cos36{,}9^\circ;\ 5\sin36{,}9^\circ)\units{m}=(4;\ 3)\units{m}$.
+En 3D se a\~nade $A_z\hat k$ y $|\vec A|=\sqrt{A_x^2+A_y^2+A_z^2}$.
 
 \begin{examplebox}{una fuerza inclinada y su cuadrante}
 \origin{Elaboraci\'on propia sobre la descomposici\'on del original T0.}
-\step{Planteamiento} Una fuerza de $20,0\N$ forma $35^\circ$ sobre $+x$.
-Calcula sus componentes con tres cifras significativas.
+\step{Planteamiento} Una fuerza $\vec F$ de m\'odulo $|\vec F|=20{,}0\N$ forma
+$35^\circ$ con $+x$. Calcula sus componentes con tres cifras significativas.
 \solutionblock
 \step{Modelo} Ambas componentes ser\'an positivas. La horizontal es el cateto
 adyacente al \'angulo dado.
 \step{C\'alculo}
 \[
-F_x=20,0\cos35^\circ=16,4\N,\qquad
-F_y=20,0\sin35^\circ=11,5\N.
+F_x=20{,}0\cos35^\circ=16{,}4\N,\qquad
+F_y=20{,}0\sin35^\circ=11{,}5\N.
 \]
-\step{Interpretaci\'on} Cada componente es menor que el m\'odulo.
-Con las cifras sin redondear, $\sqrt{F_x^2+F_y^2}=20,0\N$.
+\step{Interpretaci\'on} Cada componente es menor que $|\vec F|$.
+Con las cifras sin redondear, $\sqrt{F_x^2+F_y^2}=20{,}0\N$.
 Sobre una mesa lisa, $F_x$ interviene en el movimiento horizontal;
 el efecto vertical se estudiar\'a con Newton en T3.
-\variation{A $145^\circ$, $F_x=-16,4\N$ y $F_y=+11,5\N$.
+\variation{A $145^\circ$, $F_x=-16{,}4\N$ y $F_y=+11{,}5\N$.
 La arcotangente sola dar\'ia $-35^\circ$; los signos sit\'uan el vector en el segundo
 cuadrante. Si $F_x=0$, la direcci\'on vertical se decide sin dividir por cero.}
+\end{examplebox}
+
+\heading{Vector unitario: solo la direcci\'on}
+Un vector unitario tiene m\'odulo 1. Indica una direcci\'on y un sentido sin hablar
+de tama\~no. Se obtiene dividiendo cada componente entre el m\'odulo.
+
+\begin{toolbox}{vector unitario}
+\toolpart{Qu\'e hace} Conserva la direcci\'on y el sentido de $\vec A\ne\vec 0$ y
+cambia su m\'odulo a 1.
+\toolpart{F\'ormula}
+$\displaystyle\hat u_A=\frac{\vec A}{|\vec A|}
+=\left(\frac{A_x}{\sqrt{A_x^2+A_y^2}};\ \frac{A_y}{\sqrt{A_x^2+A_y^2}}\right)$.
+\toolpart{En F\'isica} T2 (direcci\'on de la velocidad), T3 (direcci\'on de una
+fuerza, $\vec F=|\vec F|\,\hat u$) y 2.\textordmasculine\ (campos, $\hat u_r$).
+\toolpart{Ejemplo} $(3;\ 4)/5=(0{,}6;\ 0{,}8)$.
+\end{toolbox}
+
+\begin{examplebox}{el unitario de $\vec A=(6;\ -8)$}
+\origin{Elaboraci\'on propia.}
+\step{Planteamiento} Halla el vector unitario en la direcci\'on de $\vec A=(6;\ -8)$
+y comprueba que su m\'odulo es 1.
+\solutionblock
+\step{C\'alculo} $|\vec A|=\sqrt{6^2+(-8)^2}=\sqrt{100}=10$, luego
+$\hat u_A=\left(\tfrac{6}{10};\ \tfrac{-8}{10}\right)=(0{,}6;\ -0{,}8)$.
+\step{Comprobaci\'on} $|\hat u_A|^2=0{,}6^2+(-0{,}8)^2=0{,}36+0{,}64=1$.
+Los signos se conservan: $\hat u_A$ apunta al cuarto cuadrante, como $\vec A$.
+\step{Error t\'ipico} Dividir entre la suma de las componentes, $6+(-8)=-2$, da
+$(-3;\ 4)$: su m\'odulo es 5 y adem\'as tiene el sentido contrario.
+Se divide siempre entre el m\'odulo.
 \end{examplebox}
 
 \heading{Sumar, restar y cambiar la escala}
 Para sumar gr\'aficamente, coloca la cola del segundo vector en la punta del primero:
 la resultante une el inicio con el final. El paralelogramo expresa la misma suma.
-Por componentes se operan por separado los ejes:
-\[
-\vec A+\vec B=(A_x+B_x)\ii+(A_y+B_y)\jj,\quad
-\vec A-\vec B=\vec A+(-\vec B).
-\]
+Por componentes se operan por separado los ejes.
+
+\begin{toolbox}{suma de vectores}
+\toolpart{Qu\'e hace} Combina varios vectores en uno solo, la resultante.
+\toolpart{F\'ormula} $\vec A+\vec B=(A_x+B_x;\ A_y+B_y)$,
+$\vec A-\vec B=\vec A+(-\vec B)$ y $\lambda\vec A=(\lambda A_x;\ \lambda A_y)$.
+\toolpart{En F\'isica} T1 y T2 (desplazamientos, composici\'on de velocidades),
+T3 (fuerza resultante $\sum\vec F$), T6 (momento lineal total).
+\toolpart{Ejemplo} $(4;\ 3)+(-1;\ 2)=(3;\ 5)$.
+\end{toolbox}
+
 Multiplicar por $\lambda$ cambia el m\'odulo por $|\lambda|$; si $\lambda<0$ invierte el
-sentido. Con $\vec A=(4,3)$ y $\vec B=(-1,2)$ en metros:
-$\vec A+\vec B=(3,5)$, $\vec A-\vec B=(5,1)$ y $-2\vec B=(2,-4)$.
+sentido. Con $\vec A=(4;\ 3)$ y $\vec B=(-1;\ 2)$ en metros:
+$\vec A-\vec B=(5;\ 1)$ y $-2\vec B=(2;\ -4)$.
 
 \begin{examplebox}{el recorrido y la flecha final}
 \origin{Elaboraci\'on propia.}
-\step{Planteamiento} Se caminan $30,0\units{m}$ al este y luego $40,0\units{m}$ al norte.
+\step{Planteamiento} Se caminan $30{,}0\units{m}$ al este y luego $40{,}0\units{m}$ al norte.
 Halla distancia, desplazamiento y direcci\'on; usa tres cifras significativas.
 \solutionblock
 \step{Modelo} El recorrido suma longitudes; el desplazamiento suma vectores.
@@ -153,63 +264,162 @@ Halla distancia, desplazamiento y direcci\'on; usa tres cifras significativas.
 \begin{tikzpicture}[x=.085cm,y=.085cm,font=\small]
 \draw[axis] (0,0)--(43,0) node[right] {este (m)};
 \draw[axis] (0,0)--(0,48) node[above] {norte (m)};
-\draw[vectorgreen] (0,0)--(30,0) node[midway,below] {$30,0$};
-\draw[vectorgreen] (30,0)--(30,40) node[midway,right] {$40,0$};
+\draw[vectorgreen] (0,0)--(30,0) node[midway,below] {$30{,}0$};
+\draw[vectorgreen] (30,0)--(30,40) node[midway,right] {$40{,}0$};
 \draw[vector] (0,0)--(30,40) node[midway,above left] {$\Delta\vec r$};
 \end{tikzpicture}
 \end{center}
-\step{C\'alculo} $d=30+40=70,0\units{m}$,
+\step{C\'alculo} $d=30+40=70{,}0\units{m}$,
 $\Delta\vec r=(30\ii+40\jj)\units{m}$,
-$|\Delta\vec r|=50,0\units{m}$ y $\theta=\arctan(40/30)=53,1^\circ$ al norte del este.
+$|\Delta\vec r|=50{,}0\units{m}$ y $\theta=\arctan(40/30)=53{,}1^\circ$ al norte del este.
 \step{Interpretaci\'on} $|\Delta\vec r|\le d$. Volver por la diagonal a la salida
-a\~nadir\'ia $50,0\units{m}$ al recorrido, pero dejar\'ia desplazamiento total cero.
+a\~nadir\'ia $50{,}0\units{m}$ al recorrido, pero dejar\'ia desplazamiento total cero.
 \end{examplebox}
 
 \heading{Dos productos con significados distintos}
-El \textbf{producto escalar} mide alineaci\'on:
-\[
-\vec A\cdot\vec B=AB\cos\theta=A_xB_x+A_yB_y+A_zB_z.
-\]
-Da un n\'umero con signo. Es cero para vectores perpendiculares y negativo si
-forman un \'angulo mayor que $90^\circ$. En T5 el trabajo selecciona as\'i la parte
-de la fuerza alineada con el desplazamiento.
+El \textbf{producto escalar} mide alineaci\'on. Da un n\'umero con signo.
+Es cero para vectores perpendiculares y negativo si forman un \'angulo mayor que $90^\circ$.
+
+\begin{toolbox}{producto escalar}
+\toolpart{Qu\'e hace} Mide cu\'anto apunta un vector en la direcci\'on de otro;
+da un escalar.
+\toolpart{F\'ormula}
+$\vec A\cdot\vec B=|\vec A||\vec B|\cos\theta=A_xB_x+A_yB_y+A_zB_z$.
+\toolpart{En F\'isica} T5 (trabajo, $W=\vec F\cdot\Delta\vec r$, y potencia,
+$P=\vec F\cdot\vec v$); en 2.\textordmasculine, flujo de un campo.
+\toolpart{Ejemplo} $(4;\ 3)\cdot(-1;\ 2)=-4+6=2$.
+\end{toolbox}
 
 El \textbf{producto vectorial} da un vector perpendicular al plano de los dos
-vectores. Su m\'odulo $AB\sin\theta$ es el \'area del paralelogramo.
-El sentido sigue la mano derecha: al girar los dedos desde $\vec A$ hacia $\vec B$
-por el \'angulo menor, el pulgar se\~nala $\vec A\times\vec B$.
+vectores. El sentido sigue la mano derecha: al girar los dedos desde $\vec A$ hacia
+$\vec B$ por el \'angulo menor, el pulgar se\~nala $\vec A\times\vec B$.
 Invertir el orden invierte el resultado.
+
+\begin{toolbox}{producto vectorial}
+\toolpart{Qu\'e hace} Da un vector perpendicular a $\vec A$ y $\vec B$ cuyo m\'odulo
+es el \'area del paralelogramo que forman.
+\toolpart{F\'ormula} $|\vec A\times\vec B|=|\vec A||\vec B|\sin\theta$;
+las componentes salen del determinante de abajo.
+\toolpart{En F\'isica} Momento de una fuerza y momento angular; en
+2.\textordmasculine, fuerza magn\'etica $\vec F=q\,\vec v\times\vec B$.
+\toolpart{Ejemplo} $\ii\times\jj=\hat k$, pero $\jj\times\ii=-\hat k$.
+\end{toolbox}
+
+Si los dos vectores est\'an en el plano $xy$, solo queda la componente $\hat k$:
 \[
-(A_x,A_y,0)\times(B_x,B_y,0)=(A_xB_y-A_yB_x)\hat k.
+(A_x;\ A_y;\ 0)\times(B_x;\ B_y;\ 0)=(A_xB_y-A_yB_x)\hat k.
 \]
-Con $\vec A=(2,0,0)\units{m}$ y $\vec B=(0,3,0)\units{m}$,
+Con $\vec A=(2;\ 0;\ 0)\units{m}$ y $\vec B=(0;\ 3;\ 0)\units{m}$,
 $\vec A\cdot\vec B=0\units{m^2}$, pero
 $\vec A\times\vec B=6\hat k\units{m^2}$: no son operaciones intercambiables.
 En ejes $x$ derecha, $y$ arriba, $+\hat k$ sale del papel ($\odot$);
 $-\hat k$ entra ($\otimes$).
 
+\heading{El producto vectorial en 3D: Sarrus y determinante}
+En 3D las componentes salen de un determinante $3\times3$ cuya primera fila son los
+vectores unitarios:
+\[
+\vec A\times\vec B=
+\begin{vmatrix}\ii&\jj&\hat k\\A_x&A_y&A_z\\B_x&B_y&B_z\end{vmatrix}.
+\]
+\textbf{M\'etodo 1: regla de Sarrus.} Copia las dos primeras columnas a la derecha.
+Suma los tres productos que bajan hacia la derecha y resta los tres que bajan hacia
+la izquierda:
+\begin{center}
+\begin{tikzpicture}[x=1.15cm,y=.8cm,font=\small]
+\foreach \c in {0,1,2} {
+  \draw[GreenLine!80!black,thick] ($(\c,2)+(.18,-.22)$)--($(\c+2,0)+(-.18,.22)$);
+  \node[GreenLine!70!black,font=\footnotesize\bfseries] at ($(\c+2,0)+(.3,-.5)$) {$+$};
+}
+\foreach \c in {2,3,4} {
+  \draw[RedLine,thick,dashed] ($(\c,2)+(-.18,-.22)$)--($(\c-2,0)+(.18,.22)$);
+  \node[RedLine,font=\footnotesize\bfseries] at ($(\c-2,0)+(-.3,-.5)$) {$-$};
+}
+\draw[thick] (-.4,-.3)--(-.4,2.3) (2.4,-.3)--(2.4,2.3);
+\tikzset{entry/.style={fill=white,inner sep=1.5pt}}
+\node[entry] at (0,2) {$\ii$}; \node[entry] at (1,2) {$\jj$}; \node[entry] at (2,2) {$\hat k$};
+\node[entry,text=Muted] at (3,2) {$\ii$}; \node[entry,text=Muted] at (4,2) {$\jj$};
+\node[entry] at (0,1) {$A_x$}; \node[entry] at (1,1) {$A_y$}; \node[entry] at (2,1) {$A_z$};
+\node[entry,text=Muted] at (3,1) {$A_x$}; \node[entry,text=Muted] at (4,1) {$A_y$};
+\node[entry] at (0,0) {$B_x$}; \node[entry] at (1,0) {$B_y$}; \node[entry] at (2,0) {$B_z$};
+\node[entry,text=Muted] at (3,0) {$B_x$}; \node[entry,text=Muted] at (4,0) {$B_y$};
+\node[right,align=left,font=\scriptsize] at (4.7,1)
+  {\textcolor{GreenLine!70!black}{continua: bajan a la derecha, suman}\\[2pt]
+   \textcolor{RedLine}{discontinua: bajan a la izquierda, restan}\\[2pt]
+   \textcolor{Muted}{gris: columnas copiadas}};
+\end{tikzpicture}
+\end{center}
+\[
+\vec A\times\vec B=A_yB_z\,\ii+A_zB_x\,\jj+A_xB_y\,\hat k
+-\left(A_yB_x\,\hat k+A_zB_y\,\ii+A_xB_z\,\jj\right).
+\]
+\textbf{M\'etodo 2: desarrollo por la primera fila.} Los signos alternan
+$+\,-\,+$; cada determinante $2\times2$ vale
+$\left|\begin{smallmatrix}a&b\\c&d\end{smallmatrix}\right|=ad-bc$:
+\[
+\vec A\times\vec B=
+\ii\begin{vmatrix}A_y&A_z\\B_y&B_z\end{vmatrix}
+-\jj\begin{vmatrix}A_x&A_z\\B_x&B_z\end{vmatrix}
++\hat k\begin{vmatrix}A_x&A_y\\B_x&B_y\end{vmatrix}.
+\]
+El error cl\'asico es olvidar el signo menos delante de $\jj$.
+
+\begin{examplebox}{el mismo producto por dos caminos}
+\origin{Elaboraci\'on propia.}
+\step{Planteamiento} Calcula $\vec A\times\vec B$ para $\vec A=(2;\ 1;\ -1)$ y
+$\vec B=(1;\ 3;\ 2)$ por Sarrus y por la primera fila. Comprueba el resultado.
+\solutionblock
+\step{Sarrus} Hacia la derecha: $(1)(2)\,\ii=2\ii$, $(-1)(1)\,\jj=-\jj$ y
+$(2)(3)\,\hat k=6\hat k$. Hacia la izquierda: $(1)(1)\,\hat k=\hat k$,
+$(-1)(3)\,\ii=-3\ii$ y $(2)(2)\,\jj=4\jj$.
+\[
+\vec A\times\vec B=(2\ii-\jj+6\hat k)-(\hat k-3\ii+4\jj)=5\ii-5\jj+5\hat k.
+\]
+\step{Primera fila}
+\[
+\vec A\times\vec B=\ii\,(1\cdot2-(-1)\cdot3)-\jj\,(2\cdot2-(-1)\cdot1)
++\hat k\,(2\cdot3-1\cdot1)=5\ii-5\jj+5\hat k.
+\]
+Los dos m\'etodos dan $\vec A\times\vec B=(5;\ -5;\ 5)$.
+\step{Comprobaci\'on} El resultado debe ser perpendicular a $\vec A$:
+$\vec A\cdot(\vec A\times\vec B)=2\cdot5+1\cdot(-5)+(-1)\cdot5=0$.
+Si se olvida el menos de $\jj$, sale $(5;\ 5;\ 5)$ y el producto escalar con $\vec A$
+da $10\ne0$: el error se detecta.
+\end{examplebox}
+
 \block{3}{Cu\'anto confiar en una medida}{sec:b3}
+\begin{defbox}{precisi\'on}
+Grado de concordancia entre medidas repetidas de la misma magnitud: cuanto menor es su
+dispersi\'on, m\'as precisa es la medida.
+\end{defbox}
+\begin{defbox}{exactitud}
+Grado de cercan\'ia entre el resultado de una medida, o la media de varias, y el valor
+de referencia.
+\end{defbox}
+\begin{defbox}{error}
+Diferencia entre el valor medido y el valor de referencia,
+$e=x_{\mathrm{med}}-x_{\mathrm{ref}}$.
+\end{defbox}
+Otros dos conceptos completan la descripci\'on de una medida:
+
 \begin{tabularx}{\linewidth}{@{}p{2.8cm}Y@{}}
 \toprule
 Concepto & Qu\'e informa\\
 \midrule
 Resoluci\'on & Menor cambio distinguible por el instrumento.\\
-Precisi\'on & Poca dispersi\'on al repetir medidas.\\
-Exactitud & Cercan\'ia al valor de referencia.\\
-Error & Diferencia respecto a una referencia conocida.\\
 Incertidumbre & Duda cuantificada que acompa\~na al resultado.\\
 \bottomrule
 \end{tabularx}
 Una balanza mal ajustada puede dar resultados muy agrupados y alejados de la
-referencia: es precisa, pero tiene un sesgo. Repetir medidas ayuda a valorar la
-dispersi\'on; no corrige por s\'i solo una mala calibraci\'on.
+referencia: es precisa, pero no exacta, porque tiene un sesgo. Repetir medidas ayuda a
+valorar la dispersi\'on; no corrige por s\'i solo una mala calibraci\'on.
 La resoluci\'on tampoco equivale autom\'aticamente a la incertidumbre total.
 
 \heading{Error, intervalo y porcentaje}
-Si se conoce $x_{\mathrm{ref}}$, el error con signo es $e=x_{\mathrm{med}}-x_{\mathrm{ref}}$;
+El error $e$ de la definici\'on lleva signo;
 su m\'odulo es $|e|$ y el error relativo es $|e|/|x_{\mathrm{ref}}|$ cuando la
-referencia no es cero. Medir $9,90\units{m}$ frente a $10,00\units{m}$ da
-$e=-0,10\units{m}$ y error relativo del $1,00\,\text{\%}$.
+referencia no es cero. Medir $9{,}90\units{m}$ frente a $10{,}00\units{m}$ da
+$e=-0{,}10\units{m}$ y error relativo del $1{,}00\,\text{\%}$.
 Sin referencia no podemos conocer ese error: comunicamos $x\pm\Delta x$ y
 el criterio usado para estimar $\Delta x$.
 La incertidumbre relativa $\Delta x/|x|$ compara calidad entre escalas.
@@ -232,20 +442,20 @@ comprobar si cae dentro de ese intervalo.
 \begin{examplebox}{medidas repetidas}
 \origin{Elaboraci\'on propia.}
 \step{Planteamiento} Cinco longitudes en cm:
-$12,41;\ 12,43;\ 12,42;\ 12,44;\ 12,40$. Resoluci\'on $0,01\units{cm}$.
+$12{,}41;\ 12{,}43;\ 12{,}42;\ 12{,}44;\ 12{,}40$. Resoluci\'on $0{,}01\units{cm}$.
 Expresa un resultado con una incertidumbre did\'actica.
 \solutionblock
 \step{Modelo} Usamos la media y, como estimaci\'on sencilla de la dispersi\'on,
 la mitad del recorrido de las medidas. Suponemos despreciable el sesgo de calibraci\'on.
 \step{C\'alculo}
 \[
-\bar L=\frac{62,10}{5}=12,42\units{cm},\quad
-\Delta L=\frac{12,44-12,40}{2}=0,02\units{cm}.
+\bar L=\frac{62{,}10}{5}=12{,}42\units{cm},\quad
+\Delta L=\frac{12{,}44-12{,}40}{2}=0{,}02\units{cm}.
 \]
-\step{Interpretaci\'on} $L=(12,42\pm0,02)\units{cm}$ resume esta serie bajo el criterio
+\step{Interpretaci\'on} $L=(12{,}42\pm0{,}02)\units{cm}$ resume esta serie bajo el criterio
 declarado. No es una incertidumbre estad\'istica de la media ni un intervalo con una
 probabilidad de cobertura especificada. Su incertidumbre relativa es
-$0,02/12,42=0,00161$, aproximadamente $0,16\,\text{\%}$.
+$0{,}02/12{,}42=0{,}00161$, aproximadamente $0{,}16\,\text{\%}$.
 \end{examplebox}
 
 \heading{Propagar una incertidumbre peque\~na}
@@ -261,16 +471,16 @@ Son aproximaciones de primer orden, v\'alidas para incertidumbres relativas pequ
 y lejos de divisiones por cero; no sustituyen un an\'alisis estad\'istico de correlaciones.
 
 \begin{exercisebox}{rapidez con incertidumbre}
-$t=(2,36\pm0,04)\units{s}$ y $d=(1,20\pm0,01)\units{m}$.
+$t=(2{,}36\pm0{,}04)\units{s}$ y $d=(1{,}20\pm0{,}01)\units{m}$.
 Estima $v=d/t$ con el criterio anterior; conserva dos cifras en $\Delta v$.
 \solutionblock
 \[
-v=0,508474\ldots\mps,\qquad
-\frac{\Delta v}{v}\approx\frac{0,01}{1,20}+\frac{0,04}{2,36}=0,02528\ldots
+v=0{,}508474\ldots\mps,\qquad
+\frac{\Delta v}{v}\approx\frac{0{,}01}{1{,}20}+\frac{0{,}04}{2{,}36}=0{,}02528\ldots
 \]
-$\Delta v\approx0,01285\mps$, luego $v=(0,508\pm0,013)\mps$.
+$\Delta v\approx0{,}01285\mps$, luego $v=(0{,}508\pm0{,}013)\mps$.
 Como contraste, los extremos
-$1,19/2,40=0,4958$ y $1,21/2,32=0,5216\mps$ dan un intervalo parecido.
+$1{,}19/2{,}40=0{,}4958$ y $1{,}21/2{,}32=0{,}5216\mps$ dan un intervalo parecido.
 La contribuci\'on relativa del tiempo es la mayor; mejorar solo la regla ayudar\'ia menos.
 \end{exercisebox}
 
@@ -306,10 +516,10 @@ Por tanto, la m\'axima desviaci\'on es $\Delta x=0{,}03\units{cm}$.
 \end{center}
 $L=(12{,}42\pm0{,}03)\units{cm}$ construye un intervalo que contiene todas las
 medidas. Tambi\'en puede escribirse
-$[x_{\min},x_{\max}]=[12{,}40;\ 12{,}45]\units{cm}$. En esta segunda notaci\'on,
+$[x_{\min};\ x_{\max}]=[12{,}40;\ 12{,}45]\units{cm}$. En esta segunda notaci\'on,
 $c=(x_{\min}+x_{\max})/2=12{,}425$ y
 $\Delta=(x_{\max}-x_{\min})/2=0{,}025\units{cm}$, la semidispersi\'on.
-Los corchetes $[a;b]$ y $c\pm\Delta$ son dos formas de nombrar un mismo
+Los corchetes $[a;\ b]$ y $c\pm\Delta$ son dos formas de nombrar un mismo
 intervalo; en F\'isica suele preferirse $\pm$. Centrar en la media y usar la
 m\'axima desviaci\'on da un intervalo algo m\'as ancho que sigue conteniendo
 todas las medidas.
@@ -328,7 +538,7 @@ $305$ tiene 3 cifras significativas.\\
 Ceros iniciales no cuentan. & $0{,}00450$ tiene 3.\\
 Ceros finales tras la coma cuentan. & $12{,}30$ tiene 4.\\
 Ceros finales de un entero son ambiguos: usa notaci\'on cient\'ifica. &
-$1200$: $1,2\cdot10^3$ tiene 2; $1,200\cdot10^3$ tiene 4.\\
+$1200$: $1{,}2\cdot10^3$ tiene 2; $1{,}200\cdot10^3$ tiene 4.\\
 Conteos exactos y conversiones definidas no limitan las cifras. &
 $1\units{m}=100\units{cm}$ es exacta.\\
 \bottomrule
@@ -385,7 +595,7 @@ v_{\mathrm{med}}=\frac{x(3)-x(1)}{3-1}=\frac{20-6}{2}=7\mps.
 \foreach \t in {1,2,3} \fill (\t,{2+3*\t+\t*\t}) circle[x radius=.04,y radius=.4];
 \end{tikzpicture}
 \end{center}
-L\'inea continua recta: secante. Discontinua: tangente en $(2,12)$.
+L\'inea continua recta: secante. Discontinua: tangente en $(2;\ 12)$.
 Ambas tienen pendiente $7\mps$ en este caso sim\'etrico, pero no son la misma recta.
 \step{C\'alculo local}
 \[
@@ -430,11 +640,11 @@ En $a(t)$, el \'area entrega $\Delta v$, en $\mathrm{m/s}$.
 \end{examplebox}
 
 \begin{exercisebox}{\'area con signo}
-Una velocidad vale $+2,00\mps$ durante $3,00\units{s}$ y luego
-$-1,00\mps$ durante $2,00\units{s}$. Calcula desplazamiento y distancia con tres
+Una velocidad vale $+2{,}00\mps$ durante $3{,}00\units{s}$ y luego
+$-1{,}00\mps$ durante $2{,}00\units{s}$. Calcula desplazamiento y distancia con tres
 cifras significativas. El cambio instant\'aneo se idealiza al separar los tramos.
 \solutionblock
-$\Delta x=+6,00-2,00=+4,00\units{m}$, mientras $d=6,00+2,00=8,00\units{m}$.
+$\Delta x=+6{,}00-2{,}00=+4{,}00\units{m}$, mientras $d=6{,}00+2{,}00=8{,}00\units{m}$.
 El \'area negativa corresponde a volver, no a una distancia negativa.
 T1 conectar\'a esta lectura con posiciones, velocidades y aceleraciones del mismo m\'ovil.
 \end{exercisebox}

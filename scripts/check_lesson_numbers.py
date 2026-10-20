@@ -35,6 +35,19 @@ for name, value, shown, tol in [
     ('speed uncertainty',(1.2/2.36)*(.01/1.2+.04/2.36),.013,.0005),
     ('secant',((2+3*3+3**2)-(2+3*1+1**2))/2,7,1e-10),
     ('integral',3*2+2**2,10,1e-10), ('signed area',2*3-1*2,4,1e-10),
+    ('polar angle',math.degrees(math.atan2(3,4)),36.9,.05),
+    ('polar x',5*cos(36.9),4,.005), ('polar y',5*sin(36.9),3,.005),
+    ('tool v0x',10*cos(30),8.66,.005), ('tool v0y',10*sin(30),5,.005),
+    ('tool unit x',3/5,.6,1e-10), ('tool unit y',4/5,.8,1e-10),
+    ('unit modulus',math.hypot(6,-8),10,1e-10),
+    ('unit x',6/10,.6,1e-10), ('unit y',-8/10,-.8,1e-10),
+    ('unit check',.6**2+.8**2,1,1e-10),
+    ('sum by components wrong unit modulus',math.hypot(6/-2,-8/-2),5,1e-10),
+    ('vector sum x',4-1,3,0), ('vector sum y',3+2,5,0),
+    ('dot product',4*-1+3*2,2,0),
+    ('cross x',1*2-(-1)*3,5,0), ('cross y',-(2*2-(-1)*1),-5,0),
+    ('cross z',2*3-1*1,5,0), ('cross check',2*5+1*-5+(-1)*5,0,0),
+    ('missing minus check',2*5+1*5+(-1)*5,10,0),
 ]: check('T0',name,value,shown,tol)
 
 for name, value, shown, tol in [

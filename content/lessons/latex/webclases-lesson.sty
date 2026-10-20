@@ -38,6 +38,10 @@
 \definecolor{RedLine}{HTML}{EF4444}
 \definecolor{Border}{HTML}{D9E2F1}
 \definecolor{Panel}{HTML}{F8FAFC}
+\definecolor{ToolSoft}{HTML}{F5F3FF}
+\definecolor{ToolLine}{HTML}{7C3AED}
+\definecolor{DefSoft}{HTML}{F8FAFC}
+\definecolor{DefLine}{HTML}{475569}
 
 \newcommand{\LessonCode}{T}
 \newcommand{\LessonVersion}{v0.1}
@@ -146,6 +150,23 @@
   attach boxed title to top left={xshift=1.8mm,yshift=-1.8mm},
   boxed title style={boxrule=0pt,colback=white,arc=1.5mm,left=1.2mm,right=1.2mm,top=0.4mm,bottom=0.4mm},#1}
 
+% Herramienta: que hace, formula, uso en Fisica y ejemplo. No se parte entre paginas.
+\newtcolorbox{toolbox}[2][]{enhanced,colback=ToolSoft,colframe=ToolLine!38,
+  borderline west={3.2pt}{0pt}{ToolLine},boxrule=0.45pt,arc=3mm,
+  left=3.1mm,right=2.8mm,top=2.6mm,bottom=1.8mm,
+  title={Herramienta: #2},
+  fonttitle=\bfseries\small\color{white},coltitle=white,colbacktitle=ToolLine,
+  attach boxed title to top left={xshift=2mm,yshift=-2mm},
+  boxed title style={boxrule=0pt,colback=ToolLine,arc=2mm,left=1.4mm,right=1.4mm,top=0.5mm,bottom=0.5mm},
+  before upper={\setlength{\parskip}{0.22em}},#1}
+\newcommand{\toolpart}[1]{\par\textbf{\textcolor{ToolLine!75!black}{#1.}}\enspace}
+
+% Definicion: una frase formal, como mucho dos lineas. Esquinas rectas.
+\newtcolorbox{defbox}[2][]{enhanced,colback=DefSoft,colframe=DefLine!32,
+  borderline west={2.4pt}{0pt}{DefLine},boxrule=0.35pt,sharp corners,
+  left=2.7mm,right=2.7mm,top=1.3mm,bottom=1.3mm,
+  before upper={\textbf{\textcolor{DefLine}{Definici\'on: #2.}}\enspace},#1}
+
 \newcommand{\blockIntro}[2]{\begin{datobox}\textbf{Idea del bloque.} #1\par\textbf{Uso en problemas.} #2\end{datobox}}
 \newcommand{\subtopic}[3]{\phantomsection\label{#3}{\small\bfseries\textcolor{BrandBlueDark}{#1.} \textcolor{Ink}{#2}}\par}
 \newcommand{\tocBlock}[2]{\addlinespace[0.25em]\multicolumn{3}{@{}l}{\textbf{\textcolor{BrandBlueDark}{#1}} --- \textcolor{Ink}{#2}}\\}
@@ -182,6 +203,8 @@
 \newcommand{\mpss}{\units{m/s^2}}
 \newcommand{\N}{\units{N}}
 \newcommand{\J}{\units{J}}
+\newcommand{\W}{\units{W}}
+\newcommand{\Pa}{\units{Pa}}
 \newcommand{\kg}{\units{kg}}
 \newcommand{\ii}{\hat{\imath}}
 \newcommand{\jj}{\hat{\jmath}}
