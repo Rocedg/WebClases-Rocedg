@@ -1,0 +1,203 @@
+{
+  "exercises": [
+    {
+      "id": "t0_c_025",
+      "title": "Primeras derivadas: la regla de la potencia",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "function_plus_numeric",
+      "difficulty": 1,
+      "estimated_minutes": 7,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "d_a",
+          "label": "\\(f'(x)\\) de \\(x^3\\)",
+          "required": true,
+          "type": "function",
+          "response_kind": "function",
+          "variable": "x",
+          "canonical_expression": "3*x^2",
+          "accepted_forms": [],
+          "prompt": "Escribe la expresión usando * para multiplicar y ^ para las potencias; por ejemplo 4*x^5-2*x.",
+          "part": "a"
+        },
+        {
+          "id": "d_b",
+          "label": "\\(f'(x)\\) de \\(5x^2-3x+2\\)",
+          "required": true,
+          "type": "function",
+          "response_kind": "function",
+          "variable": "x",
+          "canonical_expression": "10*x-3",
+          "accepted_forms": [],
+          "prompt": "Escribe la expresión usando * para multiplicar y ^ para las potencias; por ejemplo 4*x^5-2*x.",
+          "part": "b"
+        },
+        {
+          "id": "d_c",
+          "label": "\\(f'(x)\\) de \\(2x^4-x\\)",
+          "required": true,
+          "type": "function",
+          "response_kind": "function",
+          "variable": "x",
+          "canonical_expression": "8*x^3-1",
+          "accepted_forms": [],
+          "prompt": "Escribe la expresión usando * para multiplicar y ^ para las potencias; por ejemplo 4*x^5-2*x.",
+          "part": "c"
+        },
+        {
+          "id": "d_d",
+          "label": "\\(f'(x)\\) de \\(6/x^2\\)",
+          "required": true,
+          "type": "function",
+          "response_kind": "function",
+          "variable": "x",
+          "canonical_expression": "-12*x^(-3)",
+          "accepted_forms": [
+            "-12/x^3"
+          ],
+          "prompt": "Escribe la expresión usando * para multiplicar y ^ para las potencias; por ejemplo 4*x^5-2*x.",
+          "part": "d"
+        },
+        {
+          "id": "value_b",
+          "label": "\\(f'(1)\\) para (b)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 7.0,
+          "tolerance": 0.01,
+          "part": "e"
+        },
+        {
+          "id": "value_d",
+          "label": "\\(f'(2)\\) para (d)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -1.5,
+          "tolerance": 0.01,
+          "part": "f"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "derivative",
+        "power_rule",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "t0_determinant_normal_calculus_extension",
+        "source": "Prompt 8: Banco T0, determinantes, vector normal y primeras derivadas e integrales"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Derivar polinomios y potencias negativas con la regla de la potencia y evaluar la derivada.",
+      "common_mistakes": [
+        "olvidar restar 1 al exponente",
+        "derivar la constante como si fuera ella misma en lugar de 0",
+        "con exponente negativo, restar 1 y obtener -1 en lugar de -3"
+      ],
+      "statement_source": "Practicamos la regla más útil para derivar.\n\nIdea: \\(\\frac{d}{dx}(c\\,x^n)=c\\,n\\,x^{n-1}\\); una constante sola deriva a 0, y la derivada de una suma es la suma de las derivadas.\n\n(a) Deriva \\(f(x)=x^3\\).\n(b) Deriva \\(f(x)=5x^2-3x+2\\).\n(c) Deriva \\(f(x)=2x^4-x\\).\n(d) Deriva \\(f(x)=6/x^2\\). Primero reescríbela como \\(6x^{-2}\\).\n(e) Con la derivada de (b), calcula \\(f'(1)\\). Sin unidades.\n(f) Con la derivada de (d), calcula \\(f'(2)\\). Sin unidades.",
+      "solution_source": "(a) \\(3x^2\\): baja el 3 y el exponente pasa a 2.\n(b) \\(10x-3\\): \\(5\\cdot2x=10x\\), \\(-3x\\) da \\(-3\\) y la constante 2 da 0.\n(c) \\(8x^3-1\\).\n(d) \\(6x^{-2}\\) da \\(6\\cdot(-2)\\,x^{-3}=-12x^{-3}=-12/x^3\\).\n(e) \\(10\\cdot1-3=7\\).\n(f) \\(-12/2^3=-12/8=-1{,}5\\).\nError típico: con exponentes negativos, \\(-2-1=-3\\), no \\(-1\\)."
+    },
+    {
+      "id": "t0_c_026",
+      "title": "Primeras primitivas e integral definida",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "calculus_graphs",
+      "subtype": "function_plus_numeric",
+      "difficulty": 1,
+      "estimated_minutes": 8,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "prim_a",
+          "label": "Primitiva de \\(3x^2\\)",
+          "required": true,
+          "type": "function",
+          "response_kind": "function",
+          "variable": "x",
+          "canonical_expression": "x^3",
+          "accepted_forms": [],
+          "prompt": "Escribe la primitiva con C = 0, usando * para multiplicar y ^ para las potencias.",
+          "part": "a"
+        },
+        {
+          "id": "prim_b",
+          "label": "Primitiva de \\(4x+1\\)",
+          "required": true,
+          "type": "function",
+          "response_kind": "function",
+          "variable": "x",
+          "canonical_expression": "2*x^2+x",
+          "accepted_forms": [],
+          "prompt": "Escribe la primitiva con C = 0, usando * para multiplicar y ^ para las potencias.",
+          "part": "b"
+        },
+        {
+          "id": "integral_c",
+          "label": "\\(\\int_1^2(2x+3)\\,dx\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 6.0,
+          "tolerance": 0.01,
+          "part": "c"
+        },
+        {
+          "id": "x_t",
+          "label": "Posición \\(x(t)\\)",
+          "required": true,
+          "type": "function",
+          "response_kind": "function",
+          "variable": "t",
+          "canonical_expression": "2*t^2+1",
+          "accepted_forms": [],
+          "prompt": "Escribe x(t) en metros usando la variable t, * para multiplicar y ^ para las potencias.",
+          "part": "d"
+        },
+        {
+          "id": "x_2",
+          "label": "\\(x(2\\ \\mathrm{s})\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 9.0,
+          "tolerance": 0.01,
+          "unit": "m",
+          "part": "e"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "antiderivative",
+        "integral",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "t0_determinant_normal_calculus_extension",
+        "source": "Prompt 8: Banco T0, determinantes, vector normal y primeras derivadas e integrales"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Calcular primitivas sencillas, una integral definida y recuperar una posición desde la velocidad.",
+      "common_mistakes": [
+        "olvidar dividir entre el nuevo exponente",
+        "evaluar la integral definida como principio menos final",
+        "olvidar la posición inicial x(0) al recuperar x(t)"
+      ],
+      "statement_source": "Integrar es el camino inverso de derivar: buscamos una función cuya derivada sea la dada.\n\nIdea: \\(\\int c\\,x^n\\,dx=\\frac{c\\,x^{n+1}}{n+1}+C\\); compruébalo siempre derivando.\n\n(a) Escribe una primitiva de \\(3x^2\\), con \\(C=0\\).\n(b) Escribe una primitiva de \\(4x+1\\), con \\(C=0\\).\n(c) Calcula \\(\\int_1^2(2x+3)\\,dx\\): evalúa la primitiva al final menos al principio. Sin unidades.\n(d) Un carrito tiene \\(v(t)=4t\\) m/s y \\(x(0)=1\\) m. Escribe \\(x(t)\\) en metros.\n(e) Calcula \\(x(2\\ \\mathrm{s})\\) en metros.",
+      "solution_source": "(a) \\(x^3\\): al derivar sale \\(3x^2\\).\n(b) \\(2x^2+x\\): al derivar sale \\(4x+1\\).\n(c) Primitiva \\(x^2+3x\\): \\((4+6)-(1+3)=6\\).\n(d) Primitiva de \\(4t\\): \\(2t^2+C\\). Con \\(x(0)=1\\) m, \\(C=1\\) m, así que \\(x(t)=2t^2+1\\).\n(e) \\(x(2)=2\\cdot4+1=9\\) m.\nError típico: olvidar dividir entre el nuevo exponente, o dejar fuera la posición inicial."
+    }
+  ]
+}

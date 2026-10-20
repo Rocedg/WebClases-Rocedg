@@ -1,7 +1,7 @@
 {
   "version": 1,
   "generated": true,
-  "generated_at": "2026-10-12T17:47:40Z",
+  "generated_at": "2026-10-20T11:31:26Z",
   "source": "content/exercises",
   "exercises": [
     {
@@ -1086,6 +1086,157 @@
       }
     },
     {
+      "id": "t0_v_058",
+      "version": 5,
+      "title": "Determinantes 2×2",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Vectores y elección de ejes",
+      "subtype": "numeric_choice_multi",
+      "difficulty": 1,
+      "estimated_time_min": 6,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "vectors",
+        "determinant",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_v_059",
+      "version": 5,
+      "title": "Determinante 3×3: Sarrus y primera fila",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Vectores y elección de ejes",
+      "subtype": "numeric_choice_multi",
+      "difficulty": 2,
+      "estimated_time_min": 8,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "vectors",
+        "determinant",
+        "sarrus",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_v_060",
+      "version": 5,
+      "title": "Producto vectorial con determinante",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Vectores y elección de ejes",
+      "subtype": "numeric_vector_multi",
+      "difficulty": 2,
+      "estimated_time_min": 9,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "vectors",
+        "determinant",
+        "cross_product",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_v_061",
+      "version": 5,
+      "title": "Vector normal en el plano",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Vectores y elección de ejes",
+      "subtype": "numeric_vector_multi",
+      "difficulty": 1,
+      "estimated_time_min": 7,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "vectors",
+        "normal_vector",
+        "unit_vector",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_v_062",
+      "version": 5,
+      "title": "Vector normal a dos vectores (3D)",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Vectores y elección de ejes",
+      "subtype": "numeric_vector_multi",
+      "difficulty": 3,
+      "estimated_time_min": 9,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "vectors",
+        "normal_vector",
+        "cross_product",
+        "determinant",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_v_063",
+      "version": 5,
+      "title": "Momento de una fuerza sobre una llave",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Vectores y elección de ejes",
+      "subtype": "numeric_vector_multi",
+      "difficulty": 2,
+      "estimated_time_min": 8,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "vectors",
+        "cross_product",
+        "determinant",
+        "torque",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
       "id": "t0_v_044",
       "version": 5,
       "title": "Descomponer vectores con ángulos no medidos desde +x",
@@ -1984,6 +2135,56 @@
       "tags": [
         "t0",
         "measurement",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_c_025",
+      "version": 5,
+      "title": "Primeras derivadas: la regla de la potencia",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Funciones, gráficas, derivadas e integrales",
+      "subtype": "function_plus_numeric",
+      "difficulty": 1,
+      "estimated_time_min": 7,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "derivative",
+        "power_rule",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_c_026",
+      "version": 5,
+      "title": "Primeras primitivas e integral definida",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Funciones, gráficas, derivadas e integrales",
+      "subtype": "function_plus_numeric",
+      "difficulty": 1,
+      "estimated_time_min": 8,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "antiderivative",
+        "integral",
         "version_5"
       ],
       "workflow": {

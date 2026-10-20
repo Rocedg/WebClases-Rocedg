@@ -574,6 +574,679 @@
       ],
       "statement_source": "Sean \\(\\vec A=(1,\\,2,\\,2)\\) y \\(\\vec B=(2,\\,-1,\\,2)\\).\n\n(a) Calcula \\(\\vec A\\cdot\\vec B\\).\n(b) Calcula \\(\\vec A\\times\\vec B\\).\n(c) Calcula \\(|\\vec A\\times\\vec B|^2\\) y la suma \\(|\\vec A\\times\\vec B|^2+(\\vec A\\cdot\\vec B)^2\\). Compárala con \\(|\\vec A|^2|\\vec B|^2\\).\n(d) Calcula el ángulo entre los vectores.",
       "solution_source": "(a) \\(2-2+4=4\\).\n(b) \\((2\\cdot2-2\\cdot(-1),\\;2\\cdot2-1\\cdot2,\\;1\\cdot(-1)-2\\cdot2)=(6,\\,2,\\,-5)\\).\n(c) \\(36+4+25=65\\) y \\(65+16=81\\). Como \\(|\\vec A|=|\\vec B|=3\\), \\(|\\vec A|^2|\\vec B|^2=81\\): coincide, porque \\(\\sin^2\\theta+\\cos^2\\theta=1\\).\n(d) \\(\\cos\\theta=4/9\\), así que \\(\\theta=63{,}6^\\circ\\)."
+    },
+    {
+      "id": "t0_v_058",
+      "title": "Determinantes 2×2",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_choice_multi",
+      "difficulty": 1,
+      "estimated_minutes": 6,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "det_a",
+          "label": "Determinante de (a)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 10.0,
+          "tolerance": 0.01,
+          "part": "a"
+        },
+        {
+          "id": "det_b",
+          "label": "Determinante de (b)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -13.0,
+          "tolerance": 0.01,
+          "part": "b"
+        },
+        {
+          "id": "det_c",
+          "label": "Determinante de (c)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.0,
+          "tolerance": 0.01,
+          "part": "c"
+        },
+        {
+          "id": "why_c",
+          "label": "¿Por qué sale ese valor en (c)?",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "proportional",
+              "label": "Las filas son proporcionales: \\((4;\\ 2)\\) es \\(\\tfrac23\\) de \\((6;\\ 3)\\)"
+            },
+            {
+              "id": "zero_entry",
+              "label": "Porque tiene algún cero"
+            },
+            {
+              "id": "chance",
+              "label": "Es casualidad"
+            }
+          ],
+          "correct_option_id": "proportional",
+          "part": "c"
+        },
+        {
+          "id": "area",
+          "label": "Área del paralelogramo",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 11.0,
+          "tolerance": 0.01,
+          "part": "d"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "determinant",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "t0_determinant_normal_calculus_extension",
+        "source": "Prompt 8: Banco T0, determinantes, vector normal y primeras derivadas e integrales"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Calcular determinantes 2×2 con la regla ad−bc y relacionarlos con el área de un paralelogramo.",
+      "common_mistakes": [
+        "sumar las dos diagonales en lugar de restarlas",
+        "perder el signo al multiplicar dos números negativos",
+        "dar el área negativa en lugar de su valor absoluto"
+      ],
+      "statement_source": "Un determinante 2×2 es un número que se calcula con cuatro números colocados en un cuadrado. Lo usaremos para el producto vectorial.\n\nIdea: \\(\\begin{vmatrix}a&b\\\\c&d\\end{vmatrix}=ad-bc\\): diagonal principal menos diagonal secundaria.\n\n(a) Calcula \\(\\begin{vmatrix}3&2\\\\1&4\\end{vmatrix}\\). Sin unidades.\n(b) Calcula \\(\\begin{vmatrix}-2&5\\\\3&-1\\end{vmatrix}\\). Sin unidades.\n(c) Calcula \\(\\begin{vmatrix}6&3\\\\4&2\\end{vmatrix}\\) y elige por qué sale ese valor.\n(d) El área del paralelogramo formado por \\((3;\\ 1)\\) y \\((1;\\ 4)\\) es el valor absoluto del determinante que tiene esos vectores como filas. Calcula esa área, sin unidades.",
+      "solution_source": "(a) \\(3\\cdot4-2\\cdot1=12-2=10\\).\n(b) \\((-2)(-1)-5\\cdot3=2-15=-13\\). Cuidado: \\((-2)(-1)=+2\\).\n(c) \\(6\\cdot2-3\\cdot4=12-12=0\\). Las filas son proporcionales: los dos vectores son paralelos y el paralelogramo queda aplastado, con área cero. No hace falta ningún cero en la matriz.\n(d) \\(\\begin{vmatrix}3&1\\\\1&4\\end{vmatrix}=12-1=11\\); el área es \\(|11|=11\\).\nError típico: sumar las diagonales (\\(12+2\\)) en lugar de restarlas."
+    },
+    {
+      "id": "t0_v_059",
+      "title": "Determinante 3×3: Sarrus y primera fila",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_choice_multi",
+      "difficulty": 2,
+      "estimated_minutes": 8,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "sarrus_right",
+          "label": "Suma de los productos hacia la derecha",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 8.0,
+          "tolerance": 0.01,
+          "part": "a"
+        },
+        {
+          "id": "sarrus_left",
+          "label": "Suma de los productos hacia la izquierda",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 2.0,
+          "tolerance": 0.01,
+          "part": "a"
+        },
+        {
+          "id": "det_M",
+          "label": "\\(\\det M\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 6.0,
+          "tolerance": 0.01,
+          "part": "b"
+        },
+        {
+          "id": "minor_11",
+          "label": "Menor \\(M_{11}\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 6.0,
+          "tolerance": 0.01,
+          "part": "c"
+        },
+        {
+          "id": "minor_12",
+          "label": "Menor \\(M_{12}\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 6.0,
+          "tolerance": 0.01,
+          "part": "c"
+        },
+        {
+          "id": "minor_13",
+          "label": "Menor \\(M_{13}\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": -12.0,
+          "tolerance": 0.01,
+          "part": "c"
+        },
+        {
+          "id": "det_d",
+          "label": "Determinante de (d)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.0,
+          "tolerance": 0.01,
+          "part": "d"
+        },
+        {
+          "id": "why_d",
+          "label": "¿Por qué sale ese valor en (d)?",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "rows_12",
+              "label": "Las filas 1 y 2 son proporcionales: la fila 2 es el doble de la fila 1"
+            },
+            {
+              "id": "zero",
+              "label": "Porque la fila 3 empieza por 0"
+            },
+            {
+              "id": "big",
+              "label": "Porque los números son grandes"
+            }
+          ],
+          "correct_option_id": "rows_12",
+          "part": "d"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "determinant",
+        "sarrus",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "t0_determinant_normal_calculus_extension",
+        "source": "Prompt 8: Banco T0, determinantes, vector normal y primeras derivadas e integrales"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Calcular un determinante 3×3 por Sarrus y por la primera fila, y comprobar que coinciden.",
+      "common_mistakes": [
+        "olvidar el signo menos del segundo término al desarrollar por la primera fila",
+        "perder el signo de los elementos negativos en los productos",
+        "restar las sumas en el orden contrario (izquierda menos derecha)"
+      ],
+      "statement_source": "Un determinante 3×3 se puede calcular de dos maneras. Las dos deben dar el mismo número.\n\nIdea: con Sarrus se suman los tres productos que bajan hacia la derecha y se restan los tres que bajan hacia la izquierda. Por la primera fila, cada elemento multiplica a su menor 2×2, con signos \\(+\\,-\\,+\\).\n\n\\[M=\\begin{vmatrix}2&1&0\\\\1&3&-1\\\\4&0&2\\end{vmatrix}\\]\n\n(a) Por Sarrus: da la suma de los tres productos que bajan hacia la derecha y la suma de los tres que bajan hacia la izquierda. Sin unidades.\n(b) Calcula \\(\\det M\\). Sin unidades.\n(c) Desarrolla por la primera fila. Da los tres menores \\(M_{11}\\), \\(M_{12}\\) y \\(M_{13}\\): cada uno es el determinante 2×2 que queda al tachar la fila 1 y la columna del elemento. Comprueba que \\(2M_{11}-1\\cdot M_{12}+0\\cdot M_{13}\\) da lo mismo que en (b).\n(d) Calcula \\(\\begin{vmatrix}1&2&3\\\\2&4&6\\\\0&1&5\\end{vmatrix}\\) y elige por qué sale ese valor.",
+      "solution_source": "(a) Hacia la derecha: \\(2\\cdot3\\cdot2=12\\), \\(1\\cdot(-1)\\cdot4=-4\\) y \\(0\\cdot1\\cdot0=0\\); suman \\(8\\). Hacia la izquierda: \\(0\\cdot3\\cdot4=0\\), \\(2\\cdot(-1)\\cdot0=0\\) y \\(1\\cdot1\\cdot2=2\\); suman \\(2\\).\n(b) \\(\\det M=8-2=6\\).\n(c) \\(M_{11}=\\begin{vmatrix}3&-1\\\\0&2\\end{vmatrix}=6\\), \\(M_{12}=\\begin{vmatrix}1&-1\\\\4&2\\end{vmatrix}=2+4=6\\) y \\(M_{13}=\\begin{vmatrix}1&3\\\\4&0\\end{vmatrix}=-12\\). Entonces \\(2\\cdot6-1\\cdot6+0\\cdot(-12)=6\\), igual que con Sarrus.\n(d) La fila 2 es el doble de la fila 1, así que el determinante vale \\(0\\). Por la primera fila: \\(1\\cdot14-2\\cdot10+3\\cdot2=0\\).\nError típico: olvidar el signo menos delante del segundo término."
+    },
+    {
+      "id": "t0_v_060",
+      "title": "Producto vectorial con determinante",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_vector_multi",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "AxB",
+          "label": "\\(\\vec A\\times\\vec B\\)",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            1.0,
+            5.0,
+            3.0
+          ],
+          "component_order": [
+            "x",
+            "y",
+            "z"
+          ],
+          "tolerance": 0.01,
+          "prompt": "Escribe (x; y; z), sin unidades.",
+          "part": "a"
+        },
+        {
+          "id": "check",
+          "label": "\\(\\vec A\\cdot(\\vec A\\times\\vec B)\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.0,
+          "tolerance": 0.01,
+          "part": "b"
+        },
+        {
+          "id": "modulus",
+          "label": "\\(|\\vec A\\times\\vec B|\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 5.92,
+          "tolerance": 0.01,
+          "part": "c"
+        },
+        {
+          "id": "wrong_dot",
+          "label": "\\(\\vec A\\cdot(1;\\ -5;\\ 3)\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 10.0,
+          "tolerance": 0.01,
+          "part": "d"
+        },
+        {
+          "id": "wrong_meaning",
+          "label": "¿Qué te dice ese resultado?",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "wrong",
+              "label": "No es perpendicular a \\(\\vec A\\): ese producto vectorial está mal"
+            },
+            {
+              "id": "right",
+              "label": "Es perpendicular a \\(\\vec A\\): ese producto vectorial está bien"
+            },
+            {
+              "id": "useless",
+              "label": "El producto escalar no sirve para comprobarlo"
+            }
+          ],
+          "correct_option_id": "wrong",
+          "part": "d"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "determinant",
+        "cross_product",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "t0_determinant_normal_calculus_extension",
+        "source": "Prompt 8: Banco T0, determinantes, vector normal y primeras derivadas e integrales"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Calcular un producto vectorial como determinante y comprobarlo con el producto escalar.",
+      "common_mistakes": [
+        "olvidar el signo menos delante de la componente \\(\\hat\\jmath\\)",
+        "no comprobar que el resultado es perpendicular a los dos vectores"
+      ],
+      "statement_source": "Calculamos un producto vectorial escribiéndolo como un determinante, como en la lección.\n\nIdea: \\(\\vec A\\times\\vec B=\\begin{vmatrix}\\hat\\imath&\\hat\\jmath&\\hat k\\\\A_x&A_y&A_z\\\\B_x&B_y&B_z\\end{vmatrix}\\); al desarrollar por la primera fila, los signos son \\(+\\,-\\,+\\).\n\nDatos: \\(\\vec A=(2;\\ -1;\\ 1)\\) y \\(\\vec B=(1;\\ 1;\\ -2)\\), sin unidades.\n\n(a) Calcula \\(\\vec A\\times\\vec B\\).\n(b) Comprueba el resultado: calcula \\(\\vec A\\cdot(\\vec A\\times\\vec B)\\). Sin unidades.\n(c) Calcula \\(|\\vec A\\times\\vec B|\\) con 3 cifras significativas. Sin unidades.\n(d) Un compañero olvidó el signo menos de \\(\\hat\\jmath\\) y obtuvo \\((1;\\ -5;\\ 3)\\). Calcula \\(\\vec A\\cdot(1;\\ -5;\\ 3)\\) y elige qué te dice ese resultado.",
+      "solution_source": "(a) \\(\\hat\\imath\\,[(-1)(-2)-1\\cdot1]-\\hat\\jmath\\,[2\\cdot(-2)-1\\cdot1]+\\hat k\\,[2\\cdot1-(-1)\\cdot1]=\\hat\\imath\\,(1)-\\hat\\jmath\\,(-5)+\\hat k\\,(3)\\), es decir, \\((1;\\ 5;\\ 3)\\).\n(b) \\(2\\cdot1+(-1)\\cdot5+1\\cdot3=0\\): el resultado es perpendicular a \\(\\vec A\\), como debe ser.\n(c) \\(\\sqrt{1^2+5^2+3^2}=\\sqrt{35}=5{,}92\\).\n(d) \\(2\\cdot1+(-1)(-5)+1\\cdot3=10\\ne0\\). Ese vector no es perpendicular a \\(\\vec A\\), así que no puede ser \\(\\vec A\\times\\vec B\\).\nError típico: olvidar el signo menos de \\(\\hat\\jmath\\). La comprobación con el producto escalar lo detecta."
+    },
+    {
+      "id": "t0_v_061",
+      "title": "Vector normal en el plano",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_vector_multi",
+      "difficulty": 1,
+      "estimated_minutes": 7,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "normal",
+          "label": "Vector normal \\(\\vec n\\)",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            4.0,
+            3.0
+          ],
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "tolerance": 0.01,
+          "prompt": "Escribe (x; y), sin unidades.",
+          "part": "a"
+        },
+        {
+          "id": "dot",
+          "label": "\\(\\vec A\\cdot\\vec n\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.0,
+          "tolerance": 0.01,
+          "part": "b"
+        },
+        {
+          "id": "unit_normal",
+          "label": "Vector unitario \\(\\hat n\\)",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            0.8,
+            0.6
+          ],
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "tolerance": 0.005,
+          "prompt": "Escribe (x; y), sin unidades y con 3 cifras significativas.",
+          "part": "c"
+        },
+        {
+          "id": "other_unit",
+          "label": "El otro vector normal unitario",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            -0.8,
+            -0.6
+          ],
+          "component_order": [
+            "x",
+            "y"
+          ],
+          "tolerance": 0.005,
+          "prompt": "Escribe (x; y), sin unidades y con 3 cifras significativas.",
+          "part": "d"
+        },
+        {
+          "id": "how_many",
+          "label": "¿Cuántos vectores normales unitarios tiene un vector en el plano?",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "two",
+              "label": "Dos, de sentidos opuestos"
+            },
+            {
+              "id": "one",
+              "label": "Uno"
+            },
+            {
+              "id": "infinite",
+              "label": "Infinitos"
+            }
+          ],
+          "correct_option_id": "two",
+          "part": "e"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "normal_vector",
+        "unit_vector",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "t0_determinant_normal_calculus_extension",
+        "source": "Prompt 8: Banco T0, determinantes, vector normal y primeras derivadas e integrales"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Construir un vector normal en el plano, comprobarlo con el producto escalar y hacerlo unitario.",
+      "common_mistakes": [
+        "cambiar el orden de las componentes sin cambiar ningún signo",
+        "olvidar que hay dos normales unitarios de sentidos opuestos"
+      ],
+      "statement_source": "Un vector normal a \\(\\vec A\\) es un vector perpendicular a \\(\\vec A\\). En el plano se construye intercambiando las componentes y cambiando un signo.\n\nIdea: \\(\\vec n\\) es normal a \\(\\vec A\\) si \\(\\vec A\\cdot\\vec n=0\\); en el plano, de \\((a;\\ b)\\) salen \\((-b;\\ a)\\) y \\((b;\\ -a)\\).\n\nDato: \\(\\vec A=(3;\\ -4)\\), sin unidades.\n\n(a) Con esa regla, escribe el vector normal \\(\\vec n\\) cuya componente \\(x\\) es positiva.\n(b) Comprueba: calcula \\(\\vec A\\cdot\\vec n\\). Sin unidades.\n(c) Calcula el vector unitario \\(\\hat n=\\vec n/|\\vec n|\\), con 3 cifras significativas.\n(d) Escribe el otro vector normal unitario, con 3 cifras significativas.\n(e) Elige cuántos vectores normales unitarios tiene un vector en el plano.",
+      "solution_source": "(a) Con \\(a=3\\) y \\(b=-4\\): \\((-b;\\ a)=(4;\\ 3)\\), con \\(x\\) positiva. La otra opción, \\((b;\\ -a)=(-4;\\ -3)\\), tiene \\(x\\) negativa.\n(b) \\(3\\cdot4+(-4)\\cdot3=0\\): son perpendiculares.\n(c) \\(|\\vec n|=\\sqrt{16+9}=5\\), así que \\(\\hat n=(0{,}800;\\ 0{,}600)\\).\n(d) El opuesto: \\((-0{,}800;\\ -0{,}600)\\).\n(e) Dos: uno a cada lado de \\(\\vec A\\).\nError típico: escribir \\((-4;\\ 3)\\) o \\((4;\\ -3)\\). Al girar hay que intercambiar y cambiar exactamente un signo; compruébalo siempre con el producto escalar."
+    },
+    {
+      "id": "t0_v_062",
+      "title": "Vector normal a dos vectores (3D)",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_vector_multi",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "normal",
+          "label": "\\(\\vec n=\\vec A\\times\\vec B\\)",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            1.0,
+            -1.0,
+            1.0
+          ],
+          "component_order": [
+            "x",
+            "y",
+            "z"
+          ],
+          "tolerance": 0.01,
+          "prompt": "Escribe (x; y; z), sin unidades.",
+          "part": "a"
+        },
+        {
+          "id": "dot_A",
+          "label": "\\(\\vec A\\cdot\\vec n\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.0,
+          "tolerance": 0.01,
+          "part": "b"
+        },
+        {
+          "id": "dot_B",
+          "label": "\\(\\vec B\\cdot\\vec n\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.0,
+          "tolerance": 0.01,
+          "part": "b"
+        },
+        {
+          "id": "modulus",
+          "label": "\\(|\\vec n|\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.73,
+          "tolerance": 0.01,
+          "part": "c"
+        },
+        {
+          "id": "unit_normal",
+          "label": "Vector unitario \\(\\hat n\\)",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            0.577,
+            -0.577,
+            0.577
+          ],
+          "component_order": [
+            "x",
+            "y",
+            "z"
+          ],
+          "tolerance": 0.005,
+          "prompt": "Escribe (x; y; z), sin unidades y con 3 cifras significativas.",
+          "part": "d"
+        },
+        {
+          "id": "reverse",
+          "label": "¿Qué da \\(\\vec B\\times\\vec A\\)?",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "opposite",
+              "label": "El normal opuesto, \\(-\\vec n\\)"
+            },
+            {
+              "id": "same",
+              "label": "El mismo vector \\(\\vec n\\)"
+            },
+            {
+              "id": "zero",
+              "label": "El vector cero"
+            }
+          ],
+          "correct_option_id": "opposite",
+          "part": "e"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "normal_vector",
+        "cross_product",
+        "determinant",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "t0_determinant_normal_calculus_extension",
+        "source": "Prompt 8: Banco T0, determinantes, vector normal y primeras derivadas e integrales"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Obtener un vector normal a dos vectores con el producto vectorial y hacerlo unitario.",
+      "common_mistakes": [
+        "olvidar el signo menos de \\(\\hat\\jmath\\) en el determinante",
+        "comprobar la perpendicularidad solo con uno de los dos vectores",
+        "pensar que el producto vectorial es conmutativo"
+      ],
+      "statement_source": "En 3D, un vector perpendicular a dos vectores a la vez se obtiene con el producto vectorial.\n\nIdea: \\(\\vec n=\\vec A\\times\\vec B\\) es perpendicular a \\(\\vec A\\) y a \\(\\vec B\\).\n\nDatos: \\(\\vec A=(1;\\ 1;\\ 0)\\) y \\(\\vec B=(0;\\ 1;\\ 1)\\), sin unidades.\n\n(a) Calcula \\(\\vec n=\\vec A\\times\\vec B\\) con el determinante.\n(b) Comprueba: calcula \\(\\vec A\\cdot\\vec n\\) y \\(\\vec B\\cdot\\vec n\\). Sin unidades.\n(c) Calcula \\(|\\vec n|\\) con 3 cifras significativas. Sin unidades.\n(d) Calcula el vector unitario \\(\\hat n\\), con 3 cifras significativas.\n(e) Elige qué da \\(\\vec B\\times\\vec A\\).",
+      "solution_source": "(a) \\(\\hat\\imath\\,(1\\cdot1-0\\cdot1)-\\hat\\jmath\\,(1\\cdot1-0\\cdot0)+\\hat k\\,(1\\cdot1-1\\cdot0)=(1;\\ -1;\\ 1)\\).\n(b) \\(\\vec A\\cdot\\vec n=1-1+0=0\\) y \\(\\vec B\\cdot\\vec n=0-1+1=0\\): es perpendicular a los dos.\n(c) \\(|\\vec n|=\\sqrt3=1{,}73\\).\n(d) \\(\\hat n=(1;\\ -1;\\ 1)/\\sqrt3=(0{,}577;\\ -0{,}577;\\ 0{,}577)\\).\n(e) Cambiar el orden cambia el sentido: \\(\\vec B\\times\\vec A=-\\vec n=(-1;\\ 1;\\ -1)\\).\nError típico: olvidar el signo menos de \\(\\hat\\jmath\\), que daría \\((1;\\ 1;\\ 1)\\); la comprobación con \\(\\vec A\\) lo detecta (\\(\\vec A\\cdot\\vec n=2\\))."
+    },
+    {
+      "id": "t0_v_063",
+      "title": "Momento de una fuerza sobre una llave",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_vector_multi",
+      "difficulty": 2,
+      "estimated_minutes": 8,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "M",
+          "label": "Momento \\(\\vec M\\)",
+          "required": true,
+          "type": "vector",
+          "expected_components": [
+            0.0,
+            0.0,
+            -4.0
+          ],
+          "component_order": [
+            "x",
+            "y",
+            "z"
+          ],
+          "tolerance": 0.01,
+          "prompt": "Escribe (x; y; z) en N·m.",
+          "unit": "N·m",
+          "part": "a"
+        },
+        {
+          "id": "modulus",
+          "label": "\\(|\\vec M|\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 4.0,
+          "tolerance": 0.01,
+          "unit": "N·m",
+          "part": "b"
+        },
+        {
+          "id": "direction",
+          "label": "Sentido de \\(\\vec M\\)",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "into",
+              "label": "Entra en el papel (\\(-z\\))"
+            },
+            {
+              "id": "out",
+              "label": "Sale del papel (\\(+z\\))"
+            }
+          ],
+          "correct_option_id": "into",
+          "part": "c"
+        },
+        {
+          "id": "turn",
+          "label": "Giro del tornillo visto desde arriba",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "clockwise",
+              "label": "En sentido horario"
+            },
+            {
+              "id": "anticlockwise",
+              "label": "En sentido antihorario"
+            }
+          ],
+          "correct_option_id": "clockwise",
+          "part": "d"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "vectors",
+        "cross_product",
+        "determinant",
+        "torque",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "t0_determinant_normal_calculus_extension",
+        "source": "Prompt 8: Banco T0, determinantes, vector normal y primeras derivadas e integrales"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Calcular el momento de una fuerza como producto vectorial e interpretar su sentido.",
+      "common_mistakes": [
+        "calcular \\(\\vec F\\times\\vec r\\) en lugar de \\(\\vec r\\times\\vec F\\)",
+        "perder el signo de la componente \\(z\\)",
+        "confundir el sentido del vector con el sentido de giro"
+      ],
+      "statement_source": "Una llave fija gira un tornillo. Aplicamos la fuerza \\(\\vec F=(10;\\ -5;\\ 0)\\) N en un punto situado en \\(\\vec r=(0{,}20;\\ 0{,}30;\\ 0)\\) m respecto del tornillo. El eje \\(+z\\) sale del papel.\n\nIdea: el momento de la fuerza es \\(\\vec M=\\vec r\\times\\vec F\\), y se calcula con el determinante. Lo usarás en 2.º de Bachillerato.\n\n(a) Calcula \\(\\vec M\\) en N·m.\n(b) Calcula \\(|\\vec M|\\) en N·m, con 2 cifras significativas.\n(c) Elige si \\(\\vec M\\) entra en el papel o sale de él.\n(d) Elige hacia dónde gira el tornillo visto desde arriba, es decir, desde \\(+z\\).",
+      "solution_source": "(a) \\(\\hat\\imath\\,(0{,}30\\cdot0-0\\cdot(-5))-\\hat\\jmath\\,(0{,}20\\cdot0-0\\cdot10)+\\hat k\\,(0{,}20\\cdot(-5)-0{,}30\\cdot10)=(0;\\ 0;\\ -4{,}0)\\) N·m.\n(b) \\(|\\vec M|=4{,}0\\) N·m.\n(c) La componente \\(z\\) es negativa: \\(\\vec M\\) entra en el papel.\n(d) Con la regla de la mano derecha, el pulgar hacia \\(-z\\) hace girar los dedos en sentido horario visto desde arriba.\nError típico: calcular \\(\\vec F\\times\\vec r\\), que da el sentido contrario."
     }
   ]
 }

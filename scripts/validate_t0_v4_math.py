@@ -132,6 +132,80 @@ def validate_math() -> list[str]:
     assert_close(errors, "t0_v_056.angle", field(exercises, "t0_v_056", "angle"), math.degrees(math.atan2(-16, 12)) % 360, 0.1)
     assert_close(errors, "t0_v_057.magnitude", field(exercises, "t0_v_057", "magnitude"), math.sqrt(9), 1e-9)
     assert_vector(errors, "t0_v_057.force", components(exercises, "t0_v_057", "force"), (8, -4, 8), 1e-9)
+
+    # Prompt 8: determinants, normal vectors, cross product as a determinant, first calculus drills.
+    def det2(m):
+        return m[0][0] * m[1][1] - m[0][1] * m[1][0]
+
+    def det3(m):
+        return sum(m[0][j] * (-1) ** j * det2([[m[1][k] for k in range(3) if k != j],
+                                                 [m[2][k] for k in range(3) if k != j]]) for j in range(3))
+
+    def cross(a, b):
+        return (a[1] * b[2] - a[2] * b[1], a[2] * b[0] - a[0] * b[2], a[0] * b[1] - a[1] * b[0])
+
+    def dot(a, b):
+        return sum(x * y for x, y in zip(a, b))
+
+    assert_close(errors, "t0_v_058.det_a", field(exercises, "t0_v_058", "det_a"), det2([[3, 2], [1, 4]]))
+    assert_close(errors, "t0_v_058.det_b", field(exercises, "t0_v_058", "det_b"), det2([[-2, 5], [3, -1]]))
+    assert_close(errors, "t0_v_058.det_c", field(exercises, "t0_v_058", "det_c"), det2([[6, 3], [4, 2]]))
+    assert_close(errors, "t0_v_058.area", field(exercises, "t0_v_058", "area"), abs(det2([[3, 1], [1, 4]])))
+    m059 = [[2, 1, 0], [1, 3, -1], [4, 0, 2]]
+    right = sum(math.prod(m059[i][(i + j) % 3] for i in range(3)) for j in range(3))
+    left = sum(math.prod(m059[i][(j - i) % 3] for i in range(3)) for j in range(3))
+    assert_close(errors, "t0_v_059.sarrus_right", field(exercises, "t0_v_059", "sarrus_right"), right)
+    assert_close(errors, "t0_v_059.sarrus_left", field(exercises, "t0_v_059", "sarrus_left"), left)
+    assert_close(errors, "t0_v_059.det_M", field(exercises, "t0_v_059", "det_M"), det3(m059))
+    assert_close(errors, "t0_v_059.sarrus_vs_row", right - left, det3(m059))
+    for j, field_id in enumerate(("minor_11", "minor_12", "minor_13")):
+        minor = det2([[m059[1][k] for k in range(3) if k != j], [m059[2][k] for k in range(3) if k != j]])
+        assert_close(errors, f"t0_v_059.{field_id}", field(exercises, "t0_v_059", field_id), minor)
+    assert_close(errors, "t0_v_059.det_d", field(exercises, "t0_v_059", "det_d"), det3([[1, 2, 3], [2, 4, 6], [0, 1, 5]]))
+    a060, b060 = (2, -1, 1), (1, 1, -2)
+    axb060 = cross(a060, b060)
+    assert_vector(errors, "t0_v_060.AxB", components(exercises, "t0_v_060", "AxB"), axb060, 1e-9)
+    assert_close(errors, "t0_v_060.check", field(exercises, "t0_v_060", "check"), dot(a060, axb060))
+    assert_close(errors, "t0_v_060.modulus", field(exercises, "t0_v_060", "modulus"), math.sqrt(dot(axb060, axb060)), 0.005)
+    assert_close(errors, "t0_v_060.wrong_dot", field(exercises, "t0_v_060", "wrong_dot"), dot(a060, (axb060[0], -axb060[1], axb060[2])))
+    a061 = (3, -4)
+    n061 = (-a061[1], a061[0])
+    assert_vector(errors, "t0_v_061.normal", components(exercises, "t0_v_061", "normal"), n061, 1e-9)
+    assert_close(errors, "t0_v_061.dot", field(exercises, "t0_v_061", "dot"), dot(a061, n061))
+    unit061 = tuple(c / math.hypot(*n061) for c in n061)
+    assert_vector(errors, "t0_v_061.unit_normal", components(exercises, "t0_v_061", "unit_normal"), unit061, 0.001)
+    assert_vector(errors, "t0_v_061.other_unit", components(exercises, "t0_v_061", "other_unit"), tuple(-c for c in unit061), 0.001)
+    a062, b062 = (1, 1, 0), (0, 1, 1)
+    n062 = cross(a062, b062)
+    assert_vector(errors, "t0_v_062.normal", components(exercises, "t0_v_062", "normal"), n062, 1e-9)
+    assert_close(errors, "t0_v_062.dot_A", field(exercises, "t0_v_062", "dot_A"), dot(a062, n062))
+    assert_close(errors, "t0_v_062.dot_B", field(exercises, "t0_v_062", "dot_B"), dot(b062, n062))
+    assert_close(errors, "t0_v_062.modulus", field(exercises, "t0_v_062", "modulus"), math.sqrt(dot(n062, n062)), 0.005)
+    assert_vector(errors, "t0_v_062.unit_normal", components(exercises, "t0_v_062", "unit_normal"),
+                  tuple(c / math.sqrt(dot(n062, n062)) for c in n062), 0.001)
+    m063 = cross((0.20, 0.30, 0), (10, -5, 0))
+    assert_vector(errors, "t0_v_063.M", components(exercises, "t0_v_063", "M"), m063, 1e-9)
+    assert_close(errors, "t0_v_063.modulus", field(exercises, "t0_v_063", "modulus"), math.sqrt(dot(m063, m063)), 0.05)
+    def assert_function(label, exercise_id, field_id, reference, points=(0.5, 1.0, 1.5, 2.0, 3.0)):
+        exercise = next(item for item in exercises if item["id"] == exercise_id)
+        response_field = next(item for item in exercise["response_fields"] if item["id"] == field_id)
+        expression = response_field["canonical_expression"].replace("^", "**")
+        variable = response_field.get("variable", "x")
+        for point in points:
+            value = eval(expression, {"__builtins__": {}}, {variable: point})  # trusted repo content
+            assert_close(errors, f"{label}({point})", value, reference(point), 1e-4)
+
+    assert_function("t0_c_025.d_a", "t0_c_025", "d_a", lambda x: num_derivative(lambda u: u**3, x))
+    assert_function("t0_c_025.d_b", "t0_c_025", "d_b", lambda x: num_derivative(lambda u: 5 * u**2 - 3 * u + 2, x))
+    assert_function("t0_c_025.d_c", "t0_c_025", "d_c", lambda x: num_derivative(lambda u: 2 * u**4 - u, x))
+    assert_function("t0_c_025.d_d", "t0_c_025", "d_d", lambda x: num_derivative(lambda u: 6 / u**2, x))
+    assert_function("t0_c_026.prim_a", "t0_c_026", "prim_a", lambda x: num_integral(lambda u: 3 * u**2, 0, x))
+    assert_function("t0_c_026.prim_b", "t0_c_026", "prim_b", lambda x: num_integral(lambda u: 4 * u + 1, 0, x))
+    assert_function("t0_c_026.x_t", "t0_c_026", "x_t", lambda t: 1 + num_integral(lambda u: 4 * u, 0, t))
+    assert_close(errors, "t0_c_025.value_b", field(exercises, "t0_c_025", "value_b"), num_derivative(lambda x: 5 * x**2 - 3 * x + 2, 1.0), 1e-6)
+    assert_close(errors, "t0_c_025.value_d", field(exercises, "t0_c_025", "value_d"), num_derivative(lambda x: 6 / x**2, 2.0), 1e-6)
+    assert_close(errors, "t0_c_026.integral_c", field(exercises, "t0_c_026", "integral_c"), num_integral(lambda x: 2 * x + 3, 1, 2), 1e-6)
+    assert_close(errors, "t0_c_026.x_2", field(exercises, "t0_c_026", "x_2"), 1 + num_integral(lambda t: 4 * t, 0, 2), 1e-6)
     return errors
 
 

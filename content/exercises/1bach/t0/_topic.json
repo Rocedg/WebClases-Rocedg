@@ -161,6 +161,7 @@
     "vectors_unit_vectors.json",
     "measurement_accuracy.json",
     "measurement_uncertainty.json",
+    "calculus_basics.json",
     "calculus_graphs.json"
   ]
 }

@@ -17,9 +17,9 @@ BANK_PATH = ROOT / "content" / "exercises" / "1bach" / "t0"
 
 EXPECTED_DISTRIBUTION = {
     "units": 16,
-    "vectors": 45,
+    "vectors": 51,
     "measurement": 25,
-    "calculus_graphs": 18,
+    "calculus_graphs": 20,
 }
 
 LEGACY_RETIRED_IDS = {
@@ -56,10 +56,10 @@ def validate_bank(root: Path | None = None) -> list[str]:
     ids = [exercise.get("id") for exercise in exercises]
 
     published = [exercise for exercise in exercises if exercise.get("status") != "retired"]
-    if len(exercises) != 106:
-        errors.append(f"Expected 106 ordered T0 records, found {len(exercises)}.")
-    if len(published) != 104:
-        errors.append(f"Expected 104 published T0 exercises, found {len(published)}.")
+    if len(exercises) != 114:
+        errors.append(f"Expected 114 ordered T0 records, found {len(exercises)}.")
+    if len(published) != 112:
+        errors.append(f"Expected 112 published T0 exercises, found {len(published)}.")
     duplicates = [exercise_id for exercise_id, count in Counter(ids).items() if count > 1]
     if duplicates:
         errors.append(f"Duplicated IDs: {', '.join(sorted(duplicates))}.")
@@ -70,8 +70,8 @@ def validate_bank(root: Path | None = None) -> list[str]:
         exercise_id = str(exercise.get("id"))
         if exercise.get("version") not in ALLOWED_VERSIONS:
             errors.append(f"{exercise_id}: version must be 4 or 5.")
-        if exercise.get("difficulty") == 1:
-            errors.append(f"{exercise_id}: difficulty 1 is not allowed in active v4.")
+        if exercise.get("difficulty") == 1 and exercise.get("version") != 5:
+            errors.append(f"{exercise_id}: difficulty 1 is only allowed in v5 first-contact exercises.")
         if exercise_id in LEGACY_RETIRED_IDS:
             errors.append(f"{exercise_id}: legacy retired ID appears in the ordered v4 records.")
         if exercise.get("status") == "retired":

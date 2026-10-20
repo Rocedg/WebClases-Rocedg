@@ -59,14 +59,14 @@ def test_t0_v4_active_distribution_and_retired_ids():
     exercises = bank["exercises"]
     ids = {exercise["id"] for exercise in exercises}
 
-    assert len(exercises) == 106
-    assert len(ids) == 106
+    assert len(exercises) == 114
+    assert len(ids) == 114
     assert sum(1 for exercise in exercises if exercise["family"] == "units") == 16
-    assert sum(1 for exercise in exercises if exercise["family"] == "vectors") == 45
+    assert sum(1 for exercise in exercises if exercise["family"] == "vectors") == 51
     assert sum(1 for exercise in exercises if exercise["family"] == "measurement") == 25
-    assert sum(1 for exercise in exercises if exercise["family"] == "calculus_graphs") == 20
+    assert sum(1 for exercise in exercises if exercise["family"] == "calculus_graphs") == 22
     assert {exercise["version"] for exercise in exercises} == {4, 5}
-    assert all(exercise["difficulty"] != 1 for exercise in exercises)
+    assert all(exercise["difficulty"] != 1 for exercise in exercises if exercise["version"] == 4)
     assert not (ids & set(bank["retired_ids"]))
 
 
