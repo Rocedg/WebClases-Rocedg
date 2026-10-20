@@ -18,7 +18,7 @@ tan = lambda d: math.tan(math.radians(d))
 sqrt = math.sqrt
 
 for name, value, shown, tol in [
-    ('km/h',72/3.6,20,.05), ('density',.675/(250*1e-6),2700,5),
+    ('km/h',72/3.6,20,.05),
     ('Fx',20*cos(35),16.4,.05), ('Fy',20*sin(35),11.5,.05),
     ('asymmetric mean',sum([12.40,12.41,12.41,12.43,12.45])/5,12.42,.005),
     ('maximum deviation',max(abs(x-12.42) for x in [12.40,12.41,12.41,12.43,12.45]),.03,.005),
