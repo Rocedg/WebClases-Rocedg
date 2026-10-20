@@ -202,6 +202,40 @@ def validate_math() -> list[str]:
     assert_function("t0_c_026.prim_a", "t0_c_026", "prim_a", lambda x: num_integral(lambda u: 3 * u**2, 0, x))
     assert_function("t0_c_026.prim_b", "t0_c_026", "prim_b", lambda x: num_integral(lambda u: 4 * u + 1, 0, x))
     assert_function("t0_c_026.x_t", "t0_c_026", "x_t", lambda t: 1 + num_integral(lambda u: 4 * u, 0, t))
+    # Prompt 12: slopes, average and instantaneous velocity, extrema.
+    vertices = [(0, 0), (2, 4), (5, 4), (7, 0), (8, 3)]
+    slopes = [(x2 - x1) / (t2 - t1) for (t1, x1), (t2, x2) in zip(vertices, vertices[1:])]
+    for stretch, slope in zip("ABCD", slopes):
+        assert_close(errors, f"t0_c_027.v_{stretch}", field(exercises, "t0_c_027", f"v_{stretch}"), slope)
+    x029 = lambda t: 4 * t - t**2
+    assert_close(errors, "t0_c_029.v_Q", field(exercises, "t0_c_029", "v_Q"), num_derivative(x029, 2.0), 1e-6)
+    x030 = lambda t: t**2 + 1
+    assert_close(errors, "t0_c_030.x_1", field(exercises, "t0_c_030", "x_1"), x030(1))
+    assert_close(errors, "t0_c_030.x_3", field(exercises, "t0_c_030", "x_3"), x030(3))
+    assert_close(errors, "t0_c_030.vmed_13", field(exercises, "t0_c_030", "vmed_13"), (x030(3) - x030(1)) / 2)
+    assert_close(errors, "t0_c_030.vmed_02", field(exercises, "t0_c_030", "vmed_02"), (x030(2) - x030(0)) / 2)
+    x031 = lambda t: 3 * t**2 - 2 * t
+    assert_close(errors, "t0_c_031.v_1", field(exercises, "t0_c_031", "v_1"), num_derivative(x031, 1.0), 1e-6)
+    assert_close(errors, "t0_c_031.v_2", field(exercises, "t0_c_031", "v_2"), num_derivative(x031, 2.0), 1e-6)
+    for field_id, end in (("vmed_4", 4), ("vmed_35", 3.5), ("vmed_31", 3.1), ("vmed_301", 3.01)):
+        assert_close(errors, f"t0_c_032.{field_id}", field(exercises, "t0_c_032", field_id), (end**2 - 9) / (end - 3), 1e-9)
+    assert_close(errors, "t0_c_032.v_3", field(exercises, "t0_c_032", "v_3"), num_derivative(lambda t: t**2, 3.0), 1e-6)
+    x033 = lambda t: t**3 - 6 * t**2 + 9 * t
+    v033 = lambda t: num_derivative(x033, t)
+    discriminant = 12**2 - 4 * 3 * 9  # roots of v(t) = 3t^2 - 12t + 9
+    roots = ((12 - math.sqrt(discriminant)) / 6, (12 + math.sqrt(discriminant)) / 6)
+    assert_close(errors, "t0_c_033.t_first", field(exercises, "t0_c_033", "t_first"), roots[0], 1e-9)
+    assert_close(errors, "t0_c_033.t_second", field(exercises, "t0_c_033", "t_second"), roots[1], 1e-9)
+    assert_close(errors, "t0_c_033.x_first", field(exercises, "t0_c_033", "x_first"), x033(roots[0]), 1e-9)
+    assert_close(errors, "t0_c_033.x_second", field(exercises, "t0_c_033", "x_second"), x033(roots[1]), 1e-9)
+    if not (v033(roots[0] - 0.1) > 0 > v033(roots[0] + 0.1) and v033(roots[1] - 0.1) < 0 < v033(roots[1] + 0.1)):
+        errors.append("t0_c_033: expected a maximum at the first root and a minimum at the second")
+    assert_close(errors, "t0_c_034.g_zero", field(exercises, "t0_c_034", "g_zero"), 4 / 2)
+    assert_close(errors, "t0_c_034.g_value", field(exercises, "t0_c_034", "g_value"), 2**2 - 4 * 2)
+    assert_close(errors, "t0_c_034.f_prime_0", field(exercises, "t0_c_034", "f_prime_0"), num_derivative(lambda x: x**3, 0.0), 1e-6)
+    assert_function("t0_c_031.v", "t0_c_031", "v", lambda t: num_derivative(x031, t))
+    assert_function("t0_c_033.v", "t0_c_033", "v", v033)
+
     assert_close(errors, "t0_c_025.value_b", field(exercises, "t0_c_025", "value_b"), num_derivative(lambda x: 5 * x**2 - 3 * x + 2, 1.0), 1e-6)
     assert_close(errors, "t0_c_025.value_d", field(exercises, "t0_c_025", "value_d"), num_derivative(lambda x: 6 / x**2, 2.0), 1e-6)
     assert_close(errors, "t0_c_026.integral_c", field(exercises, "t0_c_026", "integral_c"), num_integral(lambda x: 2 * x + 3, 1, 2), 1e-6)

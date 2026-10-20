@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" role="img" aria-labelledby="title desc">
+  <title id="title">Curva x(t) = 4t - t² con tres tangentes</title>
+  <desc id="desc">Posición x en metros frente al tiempo t en segundos, de 0 a 4 s. La curva sube hasta x = 4 m en t = 2 s y vuelve a bajar. En P (t = 1 s), Q (t = 2 s) y R (t = 3 s) hay trocitos de recta tangente: en P sube, en Q es horizontal y en R baja.</desc>
+  <defs>
+    <marker markerUnits="userSpaceOnUse" id="axis-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#475569"/>
+    </marker>
+  </defs>
+  <rect width="400" height="250" fill="#fff"/>
+  <g transform="translate(56 206)">
+    <g stroke="#e2e8f0" stroke-width="1">
+      <path d="M70 0 V-160 M140 0 V-160 M210 0 V-160 M280 0 V-160"/>
+      <path d="M0 -35 H300 M0 -70 H300 M0 -105 H300 M0 -140 H300"/>
+    </g>
+    <path d="M0 0 H304" stroke="#475569" stroke-width="2" marker-end="url(#axis-arrow)"/>
+    <path d="M0 0 V-174" stroke="#475569" stroke-width="2" marker-end="url(#axis-arrow)"/>
+    <path d="M0 0 Q140 -280 280 0" stroke="#2563eb" stroke-width="3" fill="none"/>
+    <g stroke="#f97316" stroke-width="3" stroke-linecap="round">
+      <path d="M45.5 -80.5 L94.5 -129.5"/>
+      <path d="M115.5 -140 L164.5 -140"/>
+      <path d="M185.5 -129.5 L234.5 -80.5"/>
+    </g>
+    <g fill="#111827"><circle cx="70" cy="-105" r="4.5"/><circle cx="140" cy="-140" r="4.5"/><circle cx="210" cy="-105" r="4.5"/></g>
+    <g font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#111827"
+       stroke="#fff" stroke-width="4" paint-order="stroke">
+      <text x="78" y="-86">P</text>
+      <text x="134" y="-152">Q</text>
+      <text x="190" y="-86">R</text>
+    </g>
+    <g fill="#111827" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" text-anchor="middle">
+      <text x="0" y="18">0</text><text x="70" y="18">1</text><text x="140" y="18">2</text><text x="210" y="18">3</text><text x="280" y="18">4</text>
+      <text x="318" y="34">t (s)</text>
+    </g>
+    <g fill="#111827" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" text-anchor="end">
+      <text x="-8" y="-31">1</text><text x="-8" y="-66">2</text><text x="-8" y="-101">3</text><text x="-8" y="-136">4</text>
+      <text x="22" y="-180">x (m)</text>
+    </g>
+  </g>
+</svg>

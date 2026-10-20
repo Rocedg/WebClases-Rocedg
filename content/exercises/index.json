@@ -1,7 +1,7 @@
 {
   "version": 1,
   "generated": true,
-  "generated_at": "2026-10-20T11:31:26Z",
+  "generated_at": "2026-10-20T11:50:58Z",
   "source": "content/exercises",
   "exercises": [
     {
@@ -2185,6 +2185,208 @@
         "calculus_graphs",
         "antiderivative",
         "integral",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_c_027",
+      "version": 5,
+      "title": "Pendiente positiva, negativa o nula",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Funciones, gráficas, derivadas e integrales",
+      "subtype": "choice_numeric_multi",
+      "difficulty": 1,
+      "estimated_time_min": 5,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "graph",
+        "slope",
+        "average_velocity",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_c_028",
+      "version": 5,
+      "title": "Elige la gráfica",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Funciones, gráficas, derivadas e integrales",
+      "subtype": "single_choice_multi",
+      "difficulty": 1,
+      "estimated_time_min": 4,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "graph",
+        "slope",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_c_029",
+      "version": 5,
+      "title": "La pendiente en una curva",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Funciones, gráficas, derivadas e integrales",
+      "subtype": "choice_numeric_multi",
+      "difficulty": 2,
+      "estimated_time_min": 6,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "graph",
+        "slope",
+        "derivative",
+        "extrema",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_c_030",
+      "version": 5,
+      "title": "Velocidad media entre dos instantes",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Funciones, gráficas, derivadas e integrales",
+      "subtype": "numeric_multi",
+      "difficulty": 1,
+      "estimated_time_min": 4,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "average_velocity",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_c_031",
+      "version": 5,
+      "title": "Velocidad instantánea en un punto",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Funciones, gráficas, derivadas e integrales",
+      "subtype": "function_plus_numeric",
+      "difficulty": 1,
+      "estimated_time_min": 4,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "derivative",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_c_032",
+      "version": 5,
+      "title": "Acercarse a la velocidad instantánea",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Funciones, gráficas, derivadas e integrales",
+      "subtype": "numeric_choice_multi",
+      "difficulty": 2,
+      "estimated_time_min": 7,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "average_velocity",
+        "derivative",
+        "limit",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_c_033",
+      "version": 5,
+      "title": "Futbolín: máximos y mínimos",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Funciones, gráficas, derivadas e integrales",
+      "subtype": "function_plus_numeric",
+      "difficulty": 2,
+      "estimated_time_min": 8,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "derivative",
+        "extrema",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_c_034",
+      "version": 5,
+      "title": "¿Derivada nula es siempre un extremo?",
+      "course": "1bach",
+      "block": "Funciones, gráficas, derivadas e integrales",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Funciones, gráficas, derivadas e integrales",
+      "subtype": "numeric_choice_multi",
+      "difficulty": 2,
+      "estimated_time_min": 5,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "calculus_graphs",
+        "derivative",
+        "extrema",
         "version_5"
       ],
       "workflow": {

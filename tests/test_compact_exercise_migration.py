@@ -40,7 +40,7 @@ def test_all_published_t0_t1_t2_records_use_compact_safe_structured_content():
             assert exercise["response_fields"]
             assert all(field["type"] in ALLOWED_TYPES and field.get("part") for field in exercise["response_fields"])
             assert "Indicaciones de formato" not in source
-    assert counts == {"t0": 112, "t1": 60, "t2": 60}
+    assert counts == {"t0": 120, "t1": 60, "t2": 60}
 
 
 def test_retired_records_keep_order_ids_and_history_titles_but_are_not_published():
@@ -48,8 +48,8 @@ def test_retired_records_keep_order_ids_and_history_titles_but_are_not_published
     assert not (RETIRED & catalogue_ids)
     assert RETIRED.issubset(exercise_titles_by_id())
     t0_ids = [e["id"] for e in load_topic_bank(BANKS[0])["exercises"]]
-    assert t0_ids.index("t0_c_007") == 100
-    assert t0_ids.index("t0_c_018") == 111
+    assert t0_ids.index("t0_c_007") == 108
+    assert t0_ids.index("t0_c_018") == 119
 
 
 def test_migration_check_is_read_only_and_idempotent():

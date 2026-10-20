@@ -19,7 +19,7 @@ EXPECTED_DISTRIBUTION = {
     "units": 16,
     "vectors": 51,
     "measurement": 25,
-    "calculus_graphs": 20,
+    "calculus_graphs": 28,
 }
 
 LEGACY_RETIRED_IDS = {
@@ -41,6 +41,9 @@ MANDATORY_ASSET_IDS = {
     "t0_c_016",
     "t0_c_019",
     "t0_c_020",
+    "t0_c_027",
+    "t0_c_028",
+    "t0_c_029",
 }
 
 
@@ -56,10 +59,10 @@ def validate_bank(root: Path | None = None) -> list[str]:
     ids = [exercise.get("id") for exercise in exercises]
 
     published = [exercise for exercise in exercises if exercise.get("status") != "retired"]
-    if len(exercises) != 114:
-        errors.append(f"Expected 114 ordered T0 records, found {len(exercises)}.")
-    if len(published) != 112:
-        errors.append(f"Expected 112 published T0 exercises, found {len(published)}.")
+    if len(exercises) != 122:
+        errors.append(f"Expected 122 ordered T0 records, found {len(exercises)}.")
+    if len(published) != 120:
+        errors.append(f"Expected 120 published T0 exercises, found {len(published)}.")
     duplicates = [exercise_id for exercise_id, count in Counter(ids).items() if count > 1]
     if duplicates:
         errors.append(f"Duplicated IDs: {', '.join(sorted(duplicates))}.")
