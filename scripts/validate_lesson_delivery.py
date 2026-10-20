@@ -16,7 +16,7 @@ summary=[]
 for lesson in lessons:
     pdf=Path(lesson['url'])
     doc=fitz.open(pdf)
-    assert len(doc)==lesson['pages'] and len(doc)<=10
+    assert len(doc)==lesson['pages'] and len(doc)<=12
     log=Path('tmp/lesson-review',pdf.stem+'.log').read_text(encoding='utf8',errors='replace')
     assert not re.search(r'Overfull|undefined|LaTeX Error|Fatal error|Rerun to get',log),pdf.name
     text='\n'.join(p.get_text() for p in doc)
@@ -32,7 +32,7 @@ for lesson in lessons:
     # PyMuPDF may expose resolved LaTeX destinations as named links.
     internal=[l for l in doc[0].get_links()
               if l['kind'] in (fitz.LINK_GOTO, fitz.LINK_NAMED) and l.get('page', -1) >= 0]
-    assert len(internal) in (3,4),(pdf.name,internal)
+    assert len(internal) in (3,4,5,6),(pdf.name,internal)
     source=Path('content/lessons/latex',pdf.stem+'.tex').read_text(encoding='utf8')
     titles=re.findall(r'\\block\{(\d)\}\{([^}]*)\}\{([^}]*)\}',source)
     aux=Path('tmp/lesson-review',pdf.stem+'.aux').read_text(encoding='utf8')

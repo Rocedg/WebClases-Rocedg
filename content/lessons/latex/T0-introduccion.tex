@@ -1,6 +1,6 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage{webclases-lesson}
-\lessonSetup{T0}{v0.7}{T0 - Herramientas para empezar Fisica}
+\lessonSetup{T0}{v0.8}{T0 - Herramientas para empezar Fisica}
 \begin{document}
 \shorthandoff{<>}
 \color{Ink}
@@ -254,28 +254,6 @@ Multiplicar por $\lambda$ cambia el m\'odulo por $|\lambda|$; si $\lambda<0$ inv
 sentido. Con $\vec A=(4;\ 3)$ y $\vec B=(-1;\ 2)$ en metros:
 $\vec A-\vec B=(5;\ 1)$ y $-2\vec B=(2;\ -4)$.
 
-\begin{examplebox}{el recorrido y la flecha final}
-\origin{Elaboraci\'on propia.}
-\step{Planteamiento} Se caminan $30{,}0\units{m}$ al este y luego $40{,}0\units{m}$ al norte.
-Halla distancia, desplazamiento y direcci\'on; usa tres cifras significativas.
-\solutionblock
-\step{Modelo} El recorrido suma longitudes; el desplazamiento suma vectores.
-\begin{center}
-\begin{tikzpicture}[x=.085cm,y=.085cm,font=\small]
-\draw[axis] (0,0)--(43,0) node[right] {este (m)};
-\draw[axis] (0,0)--(0,48) node[above] {norte (m)};
-\draw[vectorgreen] (0,0)--(30,0) node[midway,below] {$30{,}0$};
-\draw[vectorgreen] (30,0)--(30,40) node[midway,right] {$40{,}0$};
-\draw[vector] (0,0)--(30,40) node[midway,above left] {$\Delta\vec r$};
-\end{tikzpicture}
-\end{center}
-\step{C\'alculo} $d=30+40=70{,}0\units{m}$,
-$\Delta\vec r=(30\ii+40\jj)\units{m}$,
-$|\Delta\vec r|=50{,}0\units{m}$ y $\theta=\arctan(40/30)=53{,}1^\circ$ al norte del este.
-\step{Interpretaci\'on} $|\Delta\vec r|\le d$. Volver por la diagonal a la salida
-a\~nadir\'ia $50{,}0\units{m}$ al recorrido, pero dejar\'ia desplazamiento total cero.
-\end{examplebox}
-
 \heading{Dos productos con significados distintos}
 El \textbf{producto escalar} mide alineaci\'on. Da un n\'umero con signo.
 Es cero para vectores perpendiculares y negativo si forman un \'angulo mayor que $90^\circ$.
@@ -300,8 +278,8 @@ Invertir el orden invierte el resultado.
 es el \'area del paralelogramo que forman.
 \toolpart{F\'ormula} $|\vec A\times\vec B|=|\vec A||\vec B|\sin\theta$;
 las componentes salen del determinante de abajo.
-\toolpart{En F\'isica} Momento de una fuerza y momento angular; en
-2.\textordmasculine, fuerza magn\'etica $\vec F=q\,\vec v\times\vec B$.
+\toolpart{En F\'isica} En 2.\textordmasculine\ Bachillerato: momento de una fuerza,
+momento angular y fuerza magn\'etica $\vec F=q\,\vec v\times\vec B$.
 \toolpart{Ejemplo} $\ii\times\jj=\hat k$, pero $\jj\times\ii=-\hat k$.
 \end{toolbox}
 
@@ -329,11 +307,9 @@ la izquierda:
 \begin{tikzpicture}[x=1.15cm,y=.8cm,font=\small]
 \foreach \c in {0,1,2} {
   \draw[GreenLine!80!black,thick] ($(\c,2)+(.18,-.22)$)--($(\c+2,0)+(-.18,.22)$);
-  \node[GreenLine!70!black,font=\footnotesize\bfseries] at ($(\c+2,0)+(.3,-.5)$) {$+$};
 }
 \foreach \c in {2,3,4} {
   \draw[RedLine,thick,dashed] ($(\c,2)+(-.18,-.22)$)--($(\c-2,0)+(.18,.22)$);
-  \node[RedLine,font=\footnotesize\bfseries] at ($(\c-2,0)+(-.3,-.5)$) {$-$};
 }
 \draw[thick] (-.4,-.3)--(-.4,2.3) (2.4,-.3)--(2.4,2.3);
 \tikzset{entry/.style={fill=white,inner sep=1.5pt}}
@@ -439,25 +415,6 @@ en la medida, $\bar x\pm\Delta x$; el valor esperado sirve para calcular el erro
 comprobar si cae dentro de ese intervalo.
 \end{keybox}
 
-\begin{examplebox}{medidas repetidas}
-\origin{Elaboraci\'on propia.}
-\step{Planteamiento} Cinco longitudes en cm:
-$12{,}41;\ 12{,}43;\ 12{,}42;\ 12{,}44;\ 12{,}40$. Resoluci\'on $0{,}01\units{cm}$.
-Expresa un resultado con una incertidumbre did\'actica.
-\solutionblock
-\step{Modelo} Usamos la media y, como estimaci\'on sencilla de la dispersi\'on,
-la mitad del recorrido de las medidas. Suponemos despreciable el sesgo de calibraci\'on.
-\step{C\'alculo}
-\[
-\bar L=\frac{62{,}10}{5}=12{,}42\units{cm},\quad
-\Delta L=\frac{12{,}44-12{,}40}{2}=0{,}02\units{cm}.
-\]
-\step{Interpretaci\'on} $L=(12{,}42\pm0{,}02)\units{cm}$ resume esta serie bajo el criterio
-declarado. No es una incertidumbre estad\'istica de la media ni un intervalo con una
-probabilidad de cobertura especificada. Su incertidumbre relativa es
-$0{,}02/12{,}42=0{,}00161$, aproximadamente $0{,}16\,\text{\%}$.
-\end{examplebox}
-
 \heading{Propagar una incertidumbre peque\~na}
 Como estimaci\'on lineal conservadora, se suman incertidumbres absolutas al sumar o
 restar, y relativas al multiplicar o dividir cantidades positivas:
@@ -515,7 +472,8 @@ Por tanto, la m\'axima desviaci\'on es $\Delta x=0{,}03\units{cm}$.
 \end{tikzpicture}
 \end{center}
 $L=(12{,}42\pm0{,}03)\units{cm}$ construye un intervalo que contiene todas las
-medidas. Tambi\'en puede escribirse
+medidas. Su incertidumbre relativa es $\Delta x/|\bar x|=0{,}03/12{,}42\approx0{,}24\,\text{\%}$.
+Tambi\'en puede escribirse
 $[x_{\min};\ x_{\max}]=[12{,}40;\ 12{,}45]\units{cm}$. En esta segunda notaci\'on,
 $c=(x_{\min}+x_{\max})/2=12{,}425$ y
 $\Delta=(x_{\max}-x_{\min})/2=0{,}025\units{cm}$, la semidispersi\'on.
@@ -574,45 +532,157 @@ Una gr\'afica temporal no dibuja el camino en el espacio: el eje horizontal es e
 tiempo. La pendiente compara el cambio vertical con el horizontal y conserva unidades.
 En $x(t)$, $\Delta x/\Delta t$ es una velocidad media; la derivada da la instant\'anea.
 
-\begin{examplebox}{de una secante a una tangente}
-\origin{Elaboraci\'on propia.}
-\step{Planteamiento} $x(t)=2+3t+t^2$ en SI, para $t\ge0$.
-Halla la velocidad media entre $1$ y $3\units{s}$ y la instant\'anea en $2\units{s}$.
-\solutionblock
-\step{Modelo} La secante une dos posiciones. La tangente describe el cambio local.
-\[
-v_{\mathrm{med}}=\frac{x(3)-x(1)}{3-1}=\frac{20-6}{2}=7\mps.
-\]
-\begin{center}
-\begin{tikzpicture}[x=1.5cm,y=.15cm,font=\small]
-\draw[axis] (0,0)--(3.8,0) node[right] {$t$ (s)};
-\draw[axis] (0,0)--(0,26) node[above] {$x$ (m)};
-\foreach \t in {1,2,3} \draw (\t,0)--(\t,-.5) node[below] {$\t$};
-\foreach \p in {6,12,20} \draw (0,\p)--(-.06,\p) node[left] {$\p$};
-\draw[BrandBlue,thick,domain=0:3.4,samples=60] plot(\x,{2+3*\x+\x*\x});
-\draw[AmberLine!80!black,thick] (1,6)--(3,20);
-\draw[GreenLine!70!black,dashed,thick] (.8,3.6)--(3.2,20.4);
-\foreach \t in {1,2,3} \fill (\t,{2+3*\t+\t*\t}) circle[x radius=.04,y radius=.4];
+\heading{De la velocidad media a la instant\'anea}
+Sea $x(t)=t^2/4$, con $x$ en metros y $t$ en segundos. Queremos la velocidad en
+$t=2\units{s}$, que todav\'ia no sabemos calcular. S\'i sabemos calcular una media:
+$v_{\mathrm{med}}=\Delta x/\Delta t$. Como $x(2)=1\units{m}$, tomamos intervalos que
+empiezan en $2\units{s}$ y los hacemos cada vez m\'as cortos.
+
+\begin{minipage}[c]{.36\linewidth}
+\centering\small
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Intervalo & $\Delta t$ (s) & $v_{\mathrm{med}}$ (m/s)\\
+\midrule
+$[2;\ 4]$ & $2$ & $1{,}5$\\
+$[2;\ 3]$ & $1$ & $1{,}25$\\
+$[2;\ 2{,}5]$ & $0{,}5$ & $1{,}125$\\
+$[2;\ 2{,}25]$ & $0{,}25$ & $1{,}0625$\\
+$[2;\ 2{,}1]$ & $0{,}1$ & $1{,}025$\\
+$[2;\ 2{,}01]$ & $0{,}01$ & $1{,}0025$\\
+\bottomrule
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[c]{.62\linewidth}
+\centering
+\begin{tikzpicture}[x=1.25cm,y=.95cm,font=\small]
+\draw[axis] (0,0)--(4.75,0) node[right] {$t$ (s)};
+\draw[axis] (0,0)--(0,5.2) node[above] {$x$ (m)};
+\foreach \t in {1,2,3,4} \draw (\t,0)--(\t,-.08) node[below] {$\t$};
+\foreach \p in {1,2,3,4} \draw (0,\p)--(-.06,\p) node[left] {$\p$};
+\draw[guide] (2,0)--(2,1)--(0,1);
+\draw[AmberLine!45,thick] (2,1)--(4.6,4.9);
+\draw[AmberLine!85!black,thick] (2,1)--(4.6,4.25);
+\draw[AmberLine!55!black,thick] (2,1)--(4.6,3.925);
+\draw[GreenLine!80!black,dashed,thick] (1,0)--(4.6,3.6);
+\draw[BrandBlue,thick,domain=0:4.2,samples=60] plot(\x,{\x*\x/4});
+\foreach \t in {2.5,3,4} \fill[AmberLine!70!black] (\t,{\t*\t/4}) circle (1.6pt);
+\fill[BrandBlue] (2,1) circle (2pt) node[above left] {$(2;\ 1)$};
+\node[right,font=\scriptsize,AmberLine!70!black] at (4.6,4.9) {pendiente $1{,}5$};
+\node[right,font=\scriptsize,AmberLine!85!black] at (4.6,4.25) [yshift=1.5pt] {$1{,}25$};
+\node[right,font=\scriptsize,AmberLine!55!black] at (4.6,3.925) [yshift=-1pt] {$1{,}125$};
+\node[right,font=\scriptsize,GreenLine!70!black] at (4.6,3.45) [yshift=-2pt] {tangente: $1$};
 \end{tikzpicture}
-\end{center}
-L\'inea continua recta: secante. Discontinua: tangente en $(2;\ 12)$.
-Ambas tienen pendiente $7\mps$ en este caso sim\'etrico, pero no son la misma recta.
-\step{C\'alculo local}
+\end{minipage}
+
+\smallskip
+Cada vez que el intervalo se hace m\'as peque\~no, la media se acerca m\'as a
+$1\mps$. En la gr\'afica, cada secante (naranja, cada vez m\'as oscura) se acerca a la
+recta tangente en $(2;\ 1)$, discontinua.
+
+\textbf{El paso general.} Con un intervalo de duraci\'on $h$:
 \[
-\frac{x(2+h)-x(2)}{h}=\frac{7h+h^2}{h}=7+h
-\quad\longrightarrow\quad v(2)=7\mps\quad(h\to0).
+v_{\mathrm{med}}=\frac{x(2+h)-x(2)}{h}=\frac{(2+h)^2/4-1}{h}=\frac{4h+h^2}{4h}=1+\frac h4 .
 \]
-\step{Interpretaci\'on} En general no coincide una media con cualquier valor
-instant\'aneo. Aqu\'i $v(t)=3+2t$, as\'i que en $t=1\units{s}$ vale $5\mps$.
-\end{examplebox}
+Cuando $h$ se hace infinitamente peque\~no (un intervalo infinitesimal),
+\[
+v(2)=\lim_{h\to0}\left(1+\frac h4\right)=1\mps.
+\]
+¿Por qu\'e un l\'imite? Un solo instante tiene $\Delta t=0$, y no se puede dividir
+entre cero. Pero s\'i podemos ver hacia d\'onde se dirigen las medias.
+
+\begin{defbox}{derivada}
+La derivada de $x(t)$ en $t$ es el l\'imite de $[x(t+h)-x(t)]/h$ cuando $h\to0$;
+gr\'aficamente, es la pendiente de la recta tangente en ese punto.
+\end{defbox}
 
 \heading{Reglas m\'inimas de c\'alculo}
 Una constante deriva a cero; $\frac{d}{dt}(ct^n)=cnt^{n-1}$.
-La derivada de una suma es la suma de las derivadas. Por ejemplo,
-$x(t)=2+3t+t^2$ da $v=0+3+2t$ y $a=dv/dt=2\mpss$.
+La derivada de una suma es la suma de las derivadas.
+\textbf{Comprobaci\'on:} $\frac{d}{dt}(t^2/4)=t/2$, y en $t=2\units{s}$ da
+$1\mps$, lo mismo que la tabla.
+Otro ejemplo: $x(t)=2+3t+t^2$ da $v=0+3+2t$ y $a=dv/dt=2\mpss$.
 Los coeficientes llevan las unidades necesarias: en $t^2$ el coeficiente es
 $1\units{m/s^2}$, no un n\'umero sin unidades.
 
+\begin{toolbox}{derivada}
+\toolpart{Qu\'e hace} Da el ritmo de cambio instant\'aneo de una magnitud.
+\toolpart{F\'ormula} $\frac{d}{dt}(ct^n)=cnt^{n-1}$; $v=dx/dt$ y $a=dv/dt$.
+\toolpart{En F\'isica} T1 y T2 (de $x$ a $v$ y de $v$ a $a$) y m\'aximos y m\'inimos,
+como la altura m\'axima o el punto de retorno.
+\toolpart{Ejemplo} $x=t^2/4\ \Rightarrow\ v=t/2$.
+\end{toolbox}
+
+\heading{Una barra de futbol\'in: avanzar, retroceder y chutar}
+La barra de un futbol\'in se mueve en una sola dimensi\'on, a lo largo de su eje.
+El jugador empuja hacia delante, retrocede un poco y despu\'es chuta. Un modelo es
+\[
+x(t)=2t^3-9t^2+12t\quad(x\text{ en cm},\ t\text{ en s},\ 0\le t\le3),
+\]
+con $x(0)=0$, $x(1)=5$, $x(2)=4$ y $x(3)=9\units{cm}$. Su velocidad es
+\[
+v(t)=6t^2-18t+12=6(t-1)(t-2)\units{cm/s}.
+\]
+
+\begin{minipage}[c]{.4\linewidth}
+\centering\small
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Tramo (s) & Signo de $v$ & La barra\\
+\midrule
+$(0;\ 1)$ & $+$ & avanza\\
+$t=1$ & $0$ & se para\\
+$(1;\ 2)$ & $-$ & retrocede\\
+$t=2$ & $0$ & se para\\
+$(2;\ 3)$ & $+$ & avanza\\
+\bottomrule
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[c]{.58\linewidth}
+\centering
+\begin{tikzpicture}[x=2cm,y=.42cm,font=\small]
+\draw[axis] (0,0)--(3.35,0) node[right] {$t$ (s)};
+\draw[axis] (0,0)--(0,10) node[above] {$x$ (cm)};
+\foreach \t in {1,2,3} \draw (\t,0)--(\t,-.2) node[below] {$\t$};
+\foreach \p in {4,5,9} \draw (0,\p)--(-.04,\p) node[left] {$\p$};
+\draw[guide] (1,0)--(1,5)--(0,5) (2,0)--(2,4)--(0,4) (3,0)--(3,9)--(0,9);
+\draw[BrandBlue,thick,domain=0:3,samples=80] plot(\x,{2*\x^3-9*\x^2+12*\x});
+\draw[GreenLine!80!black,thick] (.6,5)--(1.4,5);
+\draw[GreenLine!80!black,thick] (1.6,4)--(2.4,4);
+\fill[BrandBlue] (1,5) circle (2pt) node[above=3pt,font=\scriptsize] {m\'aximo, $v=0$};
+\fill[BrandBlue] (2,4) circle (2pt) node[below=4pt,font=\scriptsize,fill=white,inner sep=1pt] {m\'inimo, $v=0$};
+\node[font=\scriptsize,Muted] at (.5,1) {avanza $\rightarrow$};
+\node[font=\scriptsize,Muted] at (1.5,1) {$\leftarrow$ retrocede};
+\node[font=\scriptsize,Muted] at (2.5,1) {avanza $\rightarrow$};
+\end{tikzpicture}
+\end{minipage}
+
+\smallskip
+\textbf{La l\'ogica.} Para cambiar de sentido, la barra tiene que pararse un instante:
+ah\'i $v=0$. \textbf{La definici\'on lo confirma.} Cerca de $t=1\units{s}$, las
+secantes pasan de subir a bajar: entre $0{,}9$ y $1\units{s}$ la pendiente media es
+$+0{,}32\units{cm/s}$, y entre $1$ y $1{,}1\units{s}$ es $-0{,}28\units{cm/s}$.
+La tangente, que queda entre ambas, es horizontal: $v(1)=0$. Ah\'i la posici\'on es
+m\'axima ($5\units{cm}$). En $t=2\units{s}$ ocurre lo contrario: m\'inimo de $4\units{cm}$.
+
+\heading{M\'aximos y m\'inimos}
+En un m\'aximo o un m\'inimo la derivada vale cero \textbf{y cambia de signo}.
+Si pasa de $+$ a $-$, hay un m\'aximo; si pasa de $-$ a $+$, hay un m\'inimo.
+
+\begin{warnbox}
+$f'=0$ no siempre indica un extremo. $f(x)=x^3$ tiene $f'(x)=3x^2$, que vale cero en
+$x=0$; pero $f'\ge0$ a ambos lados, no cambia de signo y $x^3$ sigue creciendo.
+\end{warnbox}
+
+\begin{exercisebox}{buscar y clasificar extremos}
+Para $f(x)=x^3-3x^2$, halla d\'onde $f'=0$ y clasifica cada punto.
+\solutionblock
+$f'(x)=3x^2-6x=3x(x-2)$, que se anula en $x=0$ y $x=2$.
+$f'$ pasa de $+$ a $-$ en $x=0$: m\'aximo, con $f(0)=0$.
+Pasa de $-$ a $+$ en $x=2$: m\'inimo, con $f(2)=8-12=-4$.
+\end{exercisebox}
+
+\heading{Acumular: la integral}
 Integrar suma peque\~nas contribuciones: velocidad por intervalo de tiempo da
 desplazamiento. Una primitiva de $ct^n$ es $ct^{n+1}/(n+1)$ si $n\ne-1$.
 La integral definida se calcula evaluando al final \emph{menos} al principio:
@@ -622,6 +692,15 @@ La integral definida se calcula evaluando al final \emph{menos} al principio:
 La integral indefinida incluye una constante $C$; una condici\'on inicial la fija.
 Para $v=3+2t$, una posici\'on posible es $3t+t^2+C$.
 Si $x(0)=2\units{m}$, entonces $C=2\units{m}$.
+
+\begin{toolbox}{integral}
+\toolpart{Qu\'e hace} Acumula peque\~nas contribuciones: es el \'area bajo la curva.
+\toolpart{F\'ormula} $\int_{t_1}^{t_2}v\,dt=\Delta x$; una primitiva de $ct^n$ es
+$ct^{n+1}/(n+1)$.
+\toolpart{En F\'isica} T1 (de $v$ a $x$) y T5 (trabajo de una fuerza variable,
+$W=\int F\,dx$).
+\toolpart{Ejemplo} Con $v=t$ (SI) entre $0$ y $2\units{s}$: $\Delta x=[t^2/2]_0^2=2\units{m}$.
+\end{toolbox}
 
 \begin{examplebox}{integrar y recuperar la posici\'on}
 \origin{Elaboraci\'on propia; continuaci\'on del mismo movimiento.}

@@ -20,20 +20,15 @@ sqrt = math.sqrt
 for name, value, shown, tol in [
     ('km/h',72/3.6,20,.05), ('density',.675/(250*1e-6),2700,5),
     ('Fx',20*cos(35),16.4,.05), ('Fy',20*sin(35),11.5,.05),
-    ('displacement',math.hypot(30,40),50,.05),
-    ('angle',math.degrees(math.atan2(40,30)),53.1,.05),
-    ('mean',sum([12.41,12.43,12.42,12.44,12.40])/5,12.42,.005),
-    ('semirange',(12.44-12.4)/2,.02,.005),
     ('asymmetric mean',sum([12.40,12.41,12.41,12.43,12.45])/5,12.42,.005),
     ('maximum deviation',max(abs(x-12.42) for x in [12.40,12.41,12.41,12.43,12.45]),.03,.005),
     ('interval lower endpoint',12.42-.03,12.39,.005),
     ('interval upper endpoint',12.42+.03,12.45,.005),
     ('endpoint midpoint',(12.40+12.45)/2,12.425,.0005),
     ('endpoint semirange',(12.45-12.40)/2,.025,.0005),
-    ('relative uncertainty',.02/12.42,.00161,.000005),
+    ('ruler relative uncertainty',.03/12.42,.0024,.00005),
     ('speed',1.2/2.36,.508,.0005),
     ('speed uncertainty',(1.2/2.36)*(.01/1.2+.04/2.36),.013,.0005),
-    ('secant',((2+3*3+3**2)-(2+3*1+1**2))/2,7,1e-10),
     ('integral',3*2+2**2,10,1e-10), ('signed area',2*3-1*2,4,1e-10),
     ('polar angle',math.degrees(math.atan2(3,4)),36.9,.05),
     ('polar x',5*cos(36.9),4,.005), ('polar y',5*sin(36.9),3,.005),
@@ -48,6 +43,15 @@ for name, value, shown, tol in [
     ('cross x',1*2-(-1)*3,5,0), ('cross y',-(2*2-(-1)*1),-5,0),
     ('cross z',2*3-1*1,5,0), ('cross check',2*5+1*-5+(-1)*5,0,0),
     ('missing minus check',2*5+1*5+(-1)*5,10,0),
+    *[(f'secant [2;{b}]',(b*b/4-1)/(b-2),shown,1e-9) for b,shown in
+      [(4,1.5),(3,1.25),(2.5,1.125),(2.25,1.0625),(2.1,1.025),(2.01,1.0025)]],
+    ('tangent slope t/2 at 2',2/2,1,0),
+    *[(f'rod x({t})',2*t**3-9*t**2+12*t,shown,0) for t,shown in [(0,0),(1,5),(2,4),(3,9)]],
+    *[(f'rod v({t})',6*t**2-18*t+12,0,0) for t in (1,2)],
+    ('rod secant [0,9;1]',(5-(2*.9**3-9*.9**2+12*.9))/.1,.32,1e-9),
+    ('rod secant [1;1,1]',((2*1.1**3-9*1.1**2+12*1.1)-5)/.1,-.28,1e-9),
+    ('extremum f(0)',0**3-3*0**2,0,0), ('extremum f(2)',2**3-3*2**2,-4,0),
+    ('integral tool',2**2/2,2,0),
 ]: check('T0',name,value,shown,tol)
 
 for name, value, shown, tol in [
