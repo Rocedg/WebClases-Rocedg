@@ -233,6 +233,27 @@ def validate_math() -> list[str]:
     assert_close(errors, "t0_c_034.g_zero", field(exercises, "t0_c_034", "g_zero"), 4 / 2)
     assert_close(errors, "t0_c_034.g_value", field(exercises, "t0_c_034", "g_value"), 2**2 - 4 * 2)
     assert_close(errors, "t0_c_034.f_prime_0", field(exercises, "t0_c_034", "f_prime_0"), num_derivative(lambda x: x**3, 0.0), 1e-6)
+    assert_close(errors, "t0_u_021.omega_t", field(exercises, "t0_u_021", "omega_t"), 2 * 0.5)
+    polar = lambda r, degrees: (r * math.cos(math.radians(degrees)), r * math.sin(math.radians(degrees)))
+    assert_vector(errors, "t0_v_064.v_components", components(exercises, "t0_v_064", "v_components"), polar(10, 30), 0.005)
+    assert_vector(errors, "t0_v_064.d_components", components(exercises, "t0_v_064", "d_components"), polar(4, 120), 0.005)
+    assert_close(errors, "t0_v_064.A_modulus", field(exercises, "t0_v_064", "A_modulus"), math.hypot(3, 4))
+    assert_close(errors, "t0_v_064.A_angle", field(exercises, "t0_v_064", "A_angle"), math.degrees(math.atan2(4, 3)), 0.05)
+    frame = 1 / 30
+    dt026, dx026 = 15 * frame, 57.0 - 12.0
+    dt_unc026, dx_unc026 = frame, 0.5 + 0.5
+    rel026 = dx_unc026 / dx026 + dt_unc026 / dt026
+    v026 = dx026 / 100 / dt026
+    assert_close(errors, "t0_m_026.frame_time", field(exercises, "t0_m_026", "frame_time"), frame, 0.0001)
+    assert_close(errors, "t0_m_026.delta_t", field(exercises, "t0_m_026", "delta_t"), dt026)
+    assert_close(errors, "t0_m_026.delta_t_unc", field(exercises, "t0_m_026", "delta_t_unc"), dt_unc026, 0.0005)
+    assert_close(errors, "t0_m_026.delta_x", field(exercises, "t0_m_026", "delta_x"), dx026)
+    assert_close(errors, "t0_m_026.delta_x_unc", field(exercises, "t0_m_026", "delta_x_unc"), dx_unc026)
+    assert_close(errors, "t0_m_026.v", field(exercises, "t0_m_026", "v"), v026, 1e-9)
+    assert_close(errors, "t0_m_026.rel_unc", field(exercises, "t0_m_026", "rel_unc"), rel026, 0.0005)
+    assert_close(errors, "t0_m_026.delta_v", field(exercises, "t0_m_026", "delta_v"), float(f"{v026 * rel026:.1g}"), 1e-9)
+    if not dt_unc026 / dt026 > dx_unc026 / dx026:
+        errors.append("t0_m_026: the time uncertainty should dominate (answer to part g)")
     assert_function("t0_c_031.v", "t0_c_031", "v", lambda t: num_derivative(x031, t))
     assert_function("t0_c_033.v", "t0_c_033", "v", v033)
 

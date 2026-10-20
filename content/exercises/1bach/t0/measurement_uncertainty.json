@@ -1198,6 +1198,173 @@
       ],
       "statement_source": "Un termómetro se introduce en agua hirviendo a presión normal, donde el valor esperado es 100,0 °C. Da cuatro lecturas: 101,4; 101,6; 101,5; 101,5 °C.\n\n(a) Calcula la media de las lecturas.\n(b) Calcula el error con signo de la media, \\(\\bar T-T_{esp}\\).\n(c) Calcula la desviación máxima de las lecturas respecto a su media.\n(d) Indica qué describe mejor al termómetro.\n(e) Supón que el sesgo es el mismo en todo el rango (solo error de cero). Corrige una lectura de 38,2 °C.",
       "solution_source": "(a) 406,0/4 = 101,5 °C.\n(b) 101,5 − 100,0 = +1,5 °C: marca 1,5 °C de más.\n(c) Todas están a 0,1 °C o menos de 101,5: desviación máxima 0,1 °C.\n(d) Dispersión pequeña (0,1 °C) pero media desplazada 1,5 °C: preciso pero no exacto.\n(e) Se resta el sesgo: 38,2 − 1,5 = 36,7 °C. La media sirvió para medir la dispersión; el valor esperado, para medir el sesgo."
+    },
+    {
+      "id": "t0_m_026",
+      "title": "Velocidad medida con los fotogramas de un vídeo",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "measurement",
+      "subtype": "numeric_choice_multi",
+      "difficulty": 3,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "frame_time",
+          "label": "Tiempo entre fotogramas seguidos",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.0333,
+          "tolerance": 0.0005,
+          "unit": "s",
+          "part": "a"
+        },
+        {
+          "id": "delta_t",
+          "label": "\\(\\Delta t\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.5,
+          "tolerance": 0.001,
+          "unit": "s",
+          "part": "b"
+        },
+        {
+          "id": "delta_t_unc",
+          "label": "Incertidumbre de \\(\\Delta t\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.033,
+          "tolerance": 0.001,
+          "unit": "s",
+          "part": "b"
+        },
+        {
+          "id": "delta_x",
+          "label": "\\(\\Delta x\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 45.0,
+          "tolerance": 0.05,
+          "unit": "cm",
+          "part": "c"
+        },
+        {
+          "id": "delta_x_unc",
+          "label": "Incertidumbre de \\(\\Delta x\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.0,
+          "tolerance": 0.05,
+          "unit": "cm",
+          "part": "c"
+        },
+        {
+          "id": "v",
+          "label": "Velocidad \\(v\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.9,
+          "tolerance": 0.005,
+          "unit": "m/s",
+          "part": "d"
+        },
+        {
+          "id": "rel_unc",
+          "label": "Incertidumbre relativa de \\(v\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.089,
+          "tolerance": 0.002,
+          "part": "e"
+        },
+        {
+          "id": "delta_v",
+          "label": "\\(\\Delta v\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 0.08,
+          "tolerance": 0.005,
+          "unit": "m/s",
+          "part": "f"
+        },
+        {
+          "id": "result",
+          "label": "Resultado bien escrito",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "ok",
+              "label": "\\((0{,}90\\pm0{,}08)\\) m/s"
+            },
+            {
+              "id": "too_many",
+              "label": "\\((0{,}900\\pm0{,}08)\\) m/s"
+            },
+            {
+              "id": "mixed",
+              "label": "\\((0{,}9\\pm0{,}080)\\) m/s"
+            }
+          ],
+          "correct_option_id": "ok",
+          "part": "f"
+        },
+        {
+          "id": "improve",
+          "label": "¿Qué mejoraría más el resultado?",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "more_frames",
+              "label": "Separar más los dos fotogramas, con más fotogramas entre las dos posiciones"
+            },
+            {
+              "id": "finer_ruler",
+              "label": "Usar una regla con marcas más finas"
+            },
+            {
+              "id": "diameter",
+              "label": "Medir el diámetro de la bola"
+            }
+          ],
+          "correct_option_id": "more_frames",
+          "part": "g"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t0/assets/m026_frames.svg",
+          "alt": "Tres fotogramas de un vídeo a 30 fotogramas por segundo con la misma regla de 0 a 70 cm: la bola está en 12,0 cm en el fotograma 0, en 33,0 cm en el fotograma 7 y en 57,0 cm en el fotograma 15."
+        }
+      ],
+      "tags": [
+        "t0",
+        "measurement",
+        "video_frames",
+        "uncertainty",
+        "average_velocity",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "t0_graphs_units_video_extension",
+        "source": "Prompt 12: Banco T0, gráficas, velocidad media e instantánea, extremos, unidades, forma polar y fotogramas de vídeo"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Propagar incertidumbres de posición y de tiempo leídas en un vídeo y decidir cuál domina.",
+      "common_mistakes": [
+        "olvidar que la incertidumbre de Δx suma las de las dos lecturas",
+        "contar 16 fotogramas en lugar de 15 intervalos",
+        "dar el valor con más decimales que la incertidumbre"
+      ],
+      "statement_source": "Una bola rueda junto a una regla y la grabamos a 30 fotogramas por segundo. En el fotograma 0 está en \\(x_0=12{,}0\\) cm y en el fotograma 15, en \\(x_{15}=57{,}0\\) cm. Cada posición se lee con \\(\\pm0{,}5\\) cm. Además, no estamos seguros del fotograma exacto: el intervalo tiene una incertidumbre de \\(\\pm1\\) fotograma.\n\nIdea: al restar dos lecturas se suman sus incertidumbres absolutas; al dividir se suman las incertidumbres relativas.\n\n(a) Calcula el tiempo entre dos fotogramas seguidos, en s, con 3 cifras significativas.\n(b) Calcula \\(\\Delta t\\) entre los fotogramas 0 y 15 y su incertidumbre (1 fotograma), en s.\n(c) Calcula \\(\\Delta x\\) y su incertidumbre, en cm, sumando las incertidumbres absolutas de las dos lecturas.\n(d) Calcula la velocidad \\(v=\\Delta x/\\Delta t\\), en m/s, con 3 cifras significativas.\n(e) Calcula la incertidumbre relativa de \\(v\\), sin unidades, sumando las relativas de \\(\\Delta x\\) y \\(\\Delta t\\).\n(f) Calcula \\(\\Delta v\\) en m/s, redondeada a una cifra significativa, y elige el resultado bien escrito.\n(g) Elige qué mejoraría más el resultado.",
+      "solution_source": "(a) \\(1/30=0{,}0333\\) s.\n(b) Entre los fotogramas 0 y 15 hay 15 intervalos: \\(\\Delta t=15/30=0{,}500\\) s, con \\(\\pm0{,}033\\) s.\n(c) \\(\\Delta x=57{,}0-12{,}0=45{,}0\\) cm, con \\(0{,}5+0{,}5=1{,}0\\) cm.\n(d) \\(v=0{,}450\\ \\mathrm{m}/0{,}500\\ \\mathrm{s}=0{,}900\\) m/s.\n(e) \\(1{,}0/45{,}0+0{,}033/0{,}500=0{,}022+0{,}067=0{,}089\\), un 8,9 %.\n(f) \\(\\Delta v=0{,}900\\cdot0{,}089=0{,}080\\to0{,}08\\) m/s. El valor se redondea al mismo decimal: \\(v=(0{,}90\\pm0{,}08)\\) m/s.\n(g) El tiempo aporta un 6,7 % y la posición solo un 2,2 %. Separar más los fotogramas alarga \\(\\Delta t\\) y reduce su parte relativa; una regla más fina solo mejora la parte pequeña.\nError típico: contar 16 fotogramas en lugar de 15 intervalos, o escribir \\(0{,}900\\pm0{,}08\\) con más decimales en el valor que en la incertidumbre."
     }
   ]
 }

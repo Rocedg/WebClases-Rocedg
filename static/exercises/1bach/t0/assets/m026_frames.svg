@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 252" role="img" aria-labelledby="title desc">
+  <title id="title">Tres fotogramas de una bola que rueda junto a una regla</title>
+  <desc id="desc">Tres fotogramas de un vídeo grabado a 30 fotogramas por segundo. Una regla de 0 a 70 cm aparece en todos. En el fotograma 0 la bola está en 12,0 cm, en el fotograma 7 en 33,0 cm y en el fotograma 15 en 57,0 cm.</desc>
+  <rect width="460" height="252" fill="#fff"/>
+  <g font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+    <g id="frame-0" transform="translate(0 6)">
+      <rect x="8" y="0" width="444" height="74" rx="8" fill="#f8fafc" stroke="#475569" stroke-width="1.5"/>
+      <text x="20" y="18" font-size="13" font-weight="700" fill="#111827">Fotograma 0</text>
+      <circle cx="100" cy="38" r="9" fill="#f97316"/>
+      <path d="M100 47 V54" stroke="#f97316" stroke-width="2"/>
+    </g>
+    <g transform="translate(0 88)">
+      <rect x="8" y="0" width="444" height="74" rx="8" fill="#f8fafc" stroke="#475569" stroke-width="1.5"/>
+      <text x="20" y="18" font-size="13" font-weight="700" fill="#111827">Fotograma 7</text>
+      <circle cx="205" cy="38" r="9" fill="#f97316"/>
+      <path d="M205 47 V54" stroke="#f97316" stroke-width="2"/>
+    </g>
+    <g transform="translate(0 170)">
+      <rect x="8" y="0" width="444" height="74" rx="8" fill="#f8fafc" stroke="#475569" stroke-width="1.5"/>
+      <text x="20" y="18" font-size="13" font-weight="700" fill="#111827">Fotograma 15</text>
+      <circle cx="325" cy="38" r="9" fill="#f97316"/>
+      <path d="M325 47 V54" stroke="#f97316" stroke-width="2"/>
+    </g>
+    <!-- la misma regla en los tres fotogramas: 0 cm en x = 40, 5 px por cm -->
+    <g id="ruler" stroke="#475569">
+      <path d="M40 54 H390" stroke-width="1.5"/>
+      <path d="M40 54 V62 M90 54 V62 M140 54 V62 M190 54 V62 M240 54 V62 M290 54 V62 M340 54 V62 M390 54 V62" stroke-width="1.5"/>
+      <path d="M65 54 V58 M115 54 V58 M165 54 V58 M215 54 V58 M265 54 V58 M315 54 V58 M365 54 V58" stroke-width="1"/>
+    </g>
+    <g id="ruler-labels" font-size="10" fill="#475569" text-anchor="middle">
+      <text x="40" y="74">0</text><text x="90" y="74">10</text><text x="140" y="74">20</text><text x="190" y="74">30</text>
+      <text x="240" y="74">40</text><text x="290" y="74">50</text><text x="340" y="74">60</text><text x="404" y="74">70 cm</text>
+    </g>
+    <use href="#ruler" y="82"/><use href="#ruler-labels" y="82"/>
+    <use href="#ruler" y="164"/><use href="#ruler-labels" y="164"/>
+  </g>
+</svg>

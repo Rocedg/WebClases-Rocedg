@@ -238,6 +238,36 @@
       "common_mistakes": ["olvidar la componente z", "usar la suma de componentes", "perder el signo negativo de y"],
       "statement_source": "Una fuerza está dada por \\(\\vec A=2\\hat\\imath-\\hat\\jmath+2\\hat k\\) N.\n\nIdea: en 3D el módulo se calcula con las tres componentes: \\(|\\vec A|=\\sqrt{A_x^2+A_y^2+A_z^2}\\). El unitario se obtiene dividiendo las tres componentes entre ese módulo.\n\n(a) Calcula \\(|\\vec A|\\), en N.\n(b) Calcula \\(\\hat u_A\\), sin unidades y con 3 cifras significativas.\n(c) Comprueba que su módulo es 1.\n(d) Calcula una fuerza de 12,0 N en el mismo sentido, en N.",
       "solution_source": "El módulo es \\(\\sqrt{2^2+(-1)^2+2^2}=3{,}00\\) N. Al dividir cada componente entre 3, \\(\\hat u_A=(0{,}667;-0{,}333;0{,}667)\\), cuyo módulo es 1. Una fuerza de 12,0 N en el mismo sentido es \\(12\\hat u_A=(8{,}00;-4{,}00;8{,}00)\\) N."
+    },
+    {
+      "id": "t0_v_064",
+      "title": "Módulo y ángulo: la forma polar",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "vectors",
+      "subtype": "numeric_vector_multi",
+      "difficulty": 1,
+      "estimated_minutes": 6,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {"id": "v_components", "label": "Componentes de \\(\\vec v\\)", "required": true, "type": "vector", "expected_components": [8.66, 5.0], "component_order": ["x", "y"], "tolerance": 0.01, "prompt": "Escribe (x; y) en m/s, con 3 cifras significativas.", "unit": "m/s", "part": "a"},
+        {"id": "d_components", "label": "Componentes del desplazamiento", "required": true, "type": "vector", "expected_components": [-2.0, 3.46], "component_order": ["x", "y"], "tolerance": 0.01, "prompt": "Escribe (x; y) en m, con 3 cifras significativas.", "unit": "m", "part": "b"},
+        {"id": "quadrant", "label": "Cuadrante del desplazamiento", "required": true, "type": "single_choice", "options": [{"id": "I", "label": "Primero"}, {"id": "II", "label": "Segundo"}, {"id": "III", "label": "Tercero"}, {"id": "IV", "label": "Cuarto"}], "correct_option_id": "II", "part": "b"},
+        {"id": "A_modulus", "label": "\\(|\\vec A|\\)", "required": true, "type": "numeric", "expected_value": 5.0, "tolerance": 0.01, "part": "c"},
+        {"id": "A_angle", "label": "Ángulo \\(\\theta\\) de \\(\\vec A\\)", "required": true, "type": "numeric", "expected_value": 53.1, "tolerance": 0.1, "unit": "°", "part": "c"}
+      ],
+      "assets": [{"path": "static/exercises/1bach/t0/assets/v064_polar.svg", "alt": "Un vector de longitud r forma un ángulo θ con el semieje +x, medido en sentido antihorario; sus proyecciones son r cos θ en el eje x y r sin θ en el eje y."}],
+      "tags": ["t0", "vectors", "polar_form", "components", "version_5"],
+      "origin": {"kind": "t0_graphs_units_video_extension", "source": "Prompt 12: Banco T0, gráficas, velocidad media e instantánea, extremos, unidades, forma polar y fotogramas de vídeo"},
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Pasar de la forma polar (módulo y ángulo) a componentes y al revés.",
+      "common_mistakes": ["intercambiar seno y coseno", "perder el signo negativo del coseno en el segundo cuadrante", "calcular el ángulo con la calculadora en radianes"],
+      "statement_source": "Un vector se puede dar con sus componentes o con su módulo y su ángulo.\n\nIdea: \\(\\vec v=(r\\cos\\theta;\\ r\\sin\\theta)\\), con \\(r=|\\vec v|\\) y \\(\\theta\\) medido desde el semieje \\(+x\\) en sentido antihorario.\n\n(a) Una velocidad tiene \\(r=10\\) m/s y \\(\\theta=30^\\circ\\). Calcula sus componentes, en m/s.\n(b) Un desplazamiento tiene \\(r=4\\) m y \\(\\theta=120^\\circ\\). Calcula sus componentes, en m, y elige en qué cuadrante está.\n(c) El camino de vuelta: para \\(\\vec A=(3;\\ 4)\\), sin unidades, calcula \\(|\\vec A|\\) y \\(\\theta\\) en grados, con 3 cifras significativas.",
+      "solution_source": "(a) \\(10\\cos30^\\circ=8{,}66\\) y \\(10\\sin30^\\circ=5{,}00\\): \\(\\vec v=(8{,}66;\\ 5{,}00)\\) m/s.\n(b) \\(4\\cos120^\\circ=-2{,}00\\) y \\(4\\sin120^\\circ=3{,}46\\): \\((-2{,}00;\\ 3{,}46)\\) m. \\(x<0\\) e \\(y>0\\): segundo cuadrante.\n(c) \\(|\\vec A|=\\sqrt{9+16}=5\\) y \\(\\tan\\theta=4/3\\), así que \\(\\theta=53{,}1^\\circ\\) (primer cuadrante, porque las dos componentes son positivas).\nError típico: olvidar el signo negativo del coseno entre \\(90^\\circ\\) y \\(180^\\circ\\)."
     }
   ]
 }

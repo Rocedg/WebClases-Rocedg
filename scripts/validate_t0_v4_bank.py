@@ -16,9 +16,9 @@ ROOT = Path(__file__).resolve().parents[1]
 BANK_PATH = ROOT / "content" / "exercises" / "1bach" / "t0"
 
 EXPECTED_DISTRIBUTION = {
-    "units": 16,
-    "vectors": 51,
-    "measurement": 25,
+    "units": 19,
+    "vectors": 52,
+    "measurement": 26,
     "calculus_graphs": 28,
 }
 
@@ -44,6 +44,8 @@ MANDATORY_ASSET_IDS = {
     "t0_c_027",
     "t0_c_028",
     "t0_c_029",
+    "t0_v_064",
+    "t0_m_026",
 }
 
 
@@ -59,10 +61,10 @@ def validate_bank(root: Path | None = None) -> list[str]:
     ids = [exercise.get("id") for exercise in exercises]
 
     published = [exercise for exercise in exercises if exercise.get("status") != "retired"]
-    if len(exercises) != 122:
-        errors.append(f"Expected 122 ordered T0 records, found {len(exercises)}.")
-    if len(published) != 120:
-        errors.append(f"Expected 120 published T0 exercises, found {len(published)}.")
+    if len(exercises) != 127:
+        errors.append(f"Expected 127 ordered T0 records, found {len(exercises)}.")
+    if len(published) != 125:
+        errors.append(f"Expected 125 published T0 exercises, found {len(published)}.")
     duplicates = [exercise_id for exercise_id, count in Counter(ids).items() if count > 1]
     if duplicates:
         errors.append(f"Duplicated IDs: {', '.join(sorted(duplicates))}.")

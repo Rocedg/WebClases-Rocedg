@@ -59,11 +59,11 @@ def test_t0_v4_active_distribution_and_retired_ids():
     exercises = bank["exercises"]
     ids = {exercise["id"] for exercise in exercises}
 
-    assert len(exercises) == 122
-    assert len(ids) == 122
-    assert sum(1 for exercise in exercises if exercise["family"] == "units") == 16
-    assert sum(1 for exercise in exercises if exercise["family"] == "vectors") == 51
-    assert sum(1 for exercise in exercises if exercise["family"] == "measurement") == 25
+    assert len(exercises) == 127
+    assert len(ids) == 127
+    assert sum(1 for exercise in exercises if exercise["family"] == "units") == 19
+    assert sum(1 for exercise in exercises if exercise["family"] == "vectors") == 52
+    assert sum(1 for exercise in exercises if exercise["family"] == "measurement") == 26
     assert sum(1 for exercise in exercises if exercise["family"] == "calculus_graphs") == 30
     assert {exercise["version"] for exercise in exercises} == {4, 5}
     assert all(exercise["difficulty"] != 1 for exercise in exercises if exercise["version"] == 4)
@@ -72,7 +72,7 @@ def test_t0_v4_active_distribution_and_retired_ids():
 
 def test_t0_v4_required_svg_assets_exist_and_are_accessible():
     bank = load_t0_bank()
-    mandatory_ids = {"t0_v_012", "t0_v_017", "t0_v_018", "t0_v_024", "t0_c_016", "t0_c_019", "t0_c_020", "t0_c_027", "t0_c_028", "t0_c_029"}
+    mandatory_ids = {"t0_v_012", "t0_v_017", "t0_v_018", "t0_v_024", "t0_c_016", "t0_c_019", "t0_c_020", "t0_c_027", "t0_c_028", "t0_c_029", "t0_v_064", "t0_m_026"}
 
     for exercise in bank["exercises"]:
         if exercise["id"] not in mandatory_ids:

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 260" role="img" aria-labelledby="title desc">
+  <title id="title">Forma polar de un vector: módulo r y ángulo θ</title>
+  <desc id="desc">Un vector sale del origen con longitud r y forma un ángulo θ con el semieje +x, medido en sentido antihorario. Sus proyecciones sobre los ejes son r cos θ en x y r sin θ en y.</desc>
+  <defs>
+    <marker markerUnits="userSpaceOnUse" id="axis-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#475569"/>
+    </marker>
+    <marker markerUnits="userSpaceOnUse" id="arrow-blue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#2563eb"/>
+    </marker>
+    <marker markerUnits="userSpaceOnUse" id="arrow-coral" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#f97316"/>
+    </marker>
+  </defs>
+  <rect width="380" height="260" fill="#fff"/>
+  <g transform="translate(64 212)">
+    <path d="M-20 0 H270" stroke="#475569" stroke-width="2" marker-end="url(#axis-arrow)"/>
+    <path d="M0 20 V-184" stroke="#475569" stroke-width="2" marker-end="url(#axis-arrow)"/>
+    <path d="M153 0 V-128.6 H0" stroke="#64748b" stroke-width="1.5" stroke-dasharray="6 5" fill="none"/>
+    <path d="M0 0 L150 -126" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-blue)"/>
+    <path d="M56 0 A56 56 0 0 0 44.4 -34.1" stroke="#f97316" stroke-width="2.5" fill="none" marker-end="url(#arrow-coral)"/>
+    <g font-family="system-ui, -apple-system, Segoe UI, sans-serif" fill="#111827">
+      <text x="64" y="-14" font-size="17" fill="#f97316" font-style="italic">θ</text>
+      <text x="58" y="-78" font-size="17" font-weight="700" fill="#2563eb" font-style="italic">r</text>
+      <text x="153" y="20" font-size="13" text-anchor="middle">r cos θ</text>
+      <text x="-8" y="-124" font-size="13" text-anchor="end">r sin θ</text>
+      <text x="276" y="5" font-size="13">+x</text>
+      <text x="8" y="-188" font-size="13">+y</text>
+    </g>
+  </g>
+</svg>

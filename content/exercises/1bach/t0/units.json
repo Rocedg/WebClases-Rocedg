@@ -1205,6 +1205,385 @@
       "statement_source": "Una magnitud se define como \\(S=\\sqrt{\\alpha x^2+\\beta y}/t\\), con \\(S\\) en m·s⁻¹, \\(x\\) e \\(y\\) en m y \\(t\\) en s. Regla: dentro de una suma, todos los términos deben tener las mismas unidades.\n(a) Deduce las unidades de \\(\\alpha\\) y \\(\\beta\\).\n(b) Para \\(\\alpha=0,50\\), \\(\\beta=4,0\\) m, \\(x=3,0\\) m, \\(y=2,0\\) m y \\(t=2,0\\) s, calcula \\(S\\).\n(c) Redondea el resultado a 2 cifras significativas.",
       "solution_source": "\\(\\alpha x^2\\) exige \\([\\alpha]=1\\) y \\(\\beta y\\) exige \\([\\beta]=\\mathrm m\\); ambos términos son m² y se pueden sumar.\n\nEl valor de calculadora es \\(S=\\sqrt{4,5+8,0}/2,0=1,768\\ldots\\,\\mathrm{m\\,s^{-1}}\\) y se informa \\(1,8\\,\\mathrm{m\\,s^{-1}}\\) por los datos de 2 cifras significativas.",
       "solution_reference": "exercise-bank-t0-v4-spec.md"
+    },
+    {
+      "id": "t0_u_019",
+      "title": "Unidades derivadas: N, J, W y Pa",
+      "course": "1bach",
+      "block": "Lenguaje físico, unidades y análisis dimensional",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "units",
+      "subtype": "single_choice_multi",
+      "difficulty": 1,
+      "estimated_minutes": 5,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "newton",
+          "label": "Newton (N)",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "a",
+              "label": "\\(\\mathrm{kg\\,m/s^2}\\)"
+            },
+            {
+              "id": "b",
+              "label": "\\(\\mathrm{kg\\,m^2/s^2}\\)"
+            },
+            {
+              "id": "c",
+              "label": "\\(\\mathrm{kg\\,m^2/s^3}\\)"
+            },
+            {
+              "id": "d",
+              "label": "\\(\\mathrm{kg/(m\\,s^2)}\\)"
+            }
+          ],
+          "correct_option_id": "a",
+          "part": "a"
+        },
+        {
+          "id": "joule",
+          "label": "Julio (J)",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "a",
+              "label": "\\(\\mathrm{kg\\,m/s^2}\\)"
+            },
+            {
+              "id": "b",
+              "label": "\\(\\mathrm{kg\\,m^2/s^2}\\)"
+            },
+            {
+              "id": "c",
+              "label": "\\(\\mathrm{kg\\,m^2/s^3}\\)"
+            },
+            {
+              "id": "d",
+              "label": "\\(\\mathrm{kg/(m\\,s^2)}\\)"
+            }
+          ],
+          "correct_option_id": "b",
+          "part": "b"
+        },
+        {
+          "id": "watt",
+          "label": "Vatio (W)",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "a",
+              "label": "\\(\\mathrm{kg\\,m/s^2}\\)"
+            },
+            {
+              "id": "b",
+              "label": "\\(\\mathrm{kg\\,m^2/s^2}\\)"
+            },
+            {
+              "id": "c",
+              "label": "\\(\\mathrm{kg\\,m^2/s^3}\\)"
+            },
+            {
+              "id": "d",
+              "label": "\\(\\mathrm{kg/(m\\,s^2)}\\)"
+            }
+          ],
+          "correct_option_id": "c",
+          "part": "c"
+        },
+        {
+          "id": "pascal",
+          "label": "Pascal (Pa)",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "a",
+              "label": "\\(\\mathrm{kg\\,m/s^2}\\)"
+            },
+            {
+              "id": "b",
+              "label": "\\(\\mathrm{kg\\,m^2/s^2}\\)"
+            },
+            {
+              "id": "c",
+              "label": "\\(\\mathrm{kg\\,m^2/s^3}\\)"
+            },
+            {
+              "id": "d",
+              "label": "\\(\\mathrm{kg/(m\\,s^2)}\\)"
+            }
+          ],
+          "correct_option_id": "d",
+          "part": "d"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "units",
+        "units",
+        "derived_units",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "t0_graphs_units_video_extension",
+        "source": "Prompt 12: Banco T0, gráficas, velocidad media e instantánea, extremos, unidades, forma polar y fotogramas de vídeo"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Expresar las unidades derivadas N, J, W y Pa en unidades base del SI a partir de su fórmula.",
+      "common_mistakes": [
+        "confundir el julio con el vatio",
+        "olvidar que en el pascal se divide entre una superficie"
+      ],
+      "statement_source": "Las unidades derivadas tienen nombre propio, pero siempre se pueden escribir con kg, m y s.\n\nIdea: cada unidad sale de una fórmula: \\(F=ma\\) (newton), \\(W=Fd\\) (julio), \\(P=W/t\\) (vatio) y \\(p=F/S\\) (pascal).\n\nElige la expresión en unidades base del SI de cada unidad:\n(a) newton; (b) julio; (c) vatio; (d) pascal.",
+      "solution_source": "(a) \\(\\mathrm{N}=\\mathrm{kg}\\cdot\\mathrm{m/s^2}\\), de \\(F=ma\\).\n(b) \\(\\mathrm{J}=\\mathrm{N\\,m}=\\mathrm{kg\\,m^2/s^2}\\), de \\(W=Fd\\).\n(c) \\(\\mathrm{W}=\\mathrm{J/s}=\\mathrm{kg\\,m^2/s^3}\\), de \\(P=W/t\\).\n(d) \\(\\mathrm{Pa}=\\mathrm{N/m^2}=\\mathrm{kg/(m\\,s^2)}\\), de \\(p=F/S\\).\nError típico: confundir J y W. El vatio es un julio por segundo."
+    },
+    {
+      "id": "t0_u_020",
+      "title": "¿Qué unidad sale?",
+      "course": "1bach",
+      "block": "Lenguaje físico, unidades y análisis dimensional",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "units",
+      "subtype": "single_choice_multi",
+      "difficulty": 1,
+      "estimated_minutes": 5,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "power",
+          "label": "Unidad de \\(P=Fv\\)",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "W",
+              "label": "W"
+            },
+            {
+              "id": "J",
+              "label": "J"
+            },
+            {
+              "id": "N",
+              "label": "N"
+            }
+          ],
+          "correct_option_id": "W",
+          "part": "a"
+        },
+        {
+          "id": "pressure",
+          "label": "Unidad de \\(p=F/S\\)",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "Pa",
+              "label": "Pa"
+            },
+            {
+              "id": "N",
+              "label": "N"
+            },
+            {
+              "id": "J",
+              "label": "J"
+            }
+          ],
+          "correct_option_id": "Pa",
+          "part": "b"
+        },
+        {
+          "id": "work",
+          "label": "Unidad de \\(W=Fd\\)",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "J",
+              "label": "J"
+            },
+            {
+              "id": "W",
+              "label": "W"
+            },
+            {
+              "id": "Pa",
+              "label": "Pa"
+            }
+          ],
+          "correct_option_id": "J",
+          "part": "c"
+        },
+        {
+          "id": "spring",
+          "label": "Unidad de \\(k\\) en \\(E=\\tfrac12kx^2\\)",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "N_per_m",
+              "label": "N/m"
+            },
+            {
+              "id": "N_m",
+              "label": "N·m"
+            },
+            {
+              "id": "J_m",
+              "label": "J·m"
+            }
+          ],
+          "correct_option_id": "N_per_m",
+          "part": "d"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "units",
+        "units",
+        "derived_units",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "t0_graphs_units_video_extension",
+        "source": "Prompt 12: Banco T0, gráficas, velocidad media e instantánea, extremos, unidades, forma polar y fotogramas de vídeo"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Deducir la unidad de un resultado sustituyendo unidades en la fórmula y simplificando.",
+      "common_mistakes": [
+        "multiplicar en lugar de dividir al despejar k",
+        "dar a ½ una unidad"
+      ],
+      "statement_source": "Para saber en qué unidad sale un resultado no hace falta memorizarla: se deduce de la fórmula.\n\nIdea: sustituye cada magnitud por su unidad SI y simplifica; los números como \\(\\tfrac12\\) no tienen unidad.\n\nElige la unidad de:\n(a) \\(P=Fv\\); (b) \\(p=F/S\\); (c) \\(W=Fd\\); (d) \\(k\\) en \\(E=\\tfrac12kx^2\\), con \\(x\\) en m.",
+      "solution_source": "(a) \\(\\mathrm{N\\cdot m/s}=\\mathrm{J/s}=\\mathrm{W}\\).\n(b) \\(\\mathrm{N/m^2}=\\mathrm{Pa}\\).\n(c) \\(\\mathrm{N\\cdot m}=\\mathrm{J}\\).\n(d) \\(k=2E/x^2\\): \\(\\mathrm{J/m^2}=\\mathrm{N\\cdot m/m^2}=\\mathrm{N/m}\\).\nError típico: despejar mal \\(k\\) y multiplicar por \\(x^2\\) en lugar de dividir."
+    },
+    {
+      "id": "t0_u_021",
+      "title": "Lo que va dentro de cos y de e",
+      "course": "1bach",
+      "block": "Lenguaje físico, unidades y análisis dimensional",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "family": "units",
+      "subtype": "numeric_choice_multi",
+      "difficulty": 2,
+      "estimated_minutes": 6,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "omega_unit",
+          "label": "Unidad de \\(\\omega\\)",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "per_s",
+              "label": "\\(\\mathrm{s^{-1}}\\) (rad/s)"
+            },
+            {
+              "id": "s",
+              "label": "s"
+            },
+            {
+              "id": "m",
+              "label": "m"
+            }
+          ],
+          "correct_option_id": "per_s",
+          "part": "a"
+        },
+        {
+          "id": "omega_t",
+          "label": "\\(\\omega t\\)",
+          "required": true,
+          "type": "numeric",
+          "expected_value": 1.0,
+          "tolerance": 0.01,
+          "unit": "rad",
+          "part": "b"
+        },
+        {
+          "id": "tau_unit",
+          "label": "Unidad de \\(\\tau\\)",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "s",
+              "label": "s"
+            },
+            {
+              "id": "per_s",
+              "label": "\\(\\mathrm{s^{-1}}\\)"
+            },
+            {
+              "id": "m",
+              "label": "m"
+            }
+          ],
+          "correct_option_id": "s",
+          "part": "c"
+        },
+        {
+          "id": "cos_metres",
+          "label": "¿Tiene sentido \\(\\cos(3\\ \\mathrm{m})\\)?",
+          "required": true,
+          "type": "single_choice",
+          "options": [
+            {
+              "id": "no",
+              "label": "No: el argumento del coseno debe ser un número sin dimensiones"
+            },
+            {
+              "id": "yes",
+              "label": "Sí: el coseno admite cualquier unidad"
+            },
+            {
+              "id": "cm",
+              "label": "Sí, si antes se pasan los metros a centímetros"
+            }
+          ],
+          "correct_option_id": "no",
+          "part": "d"
+        }
+      ],
+      "assets": [],
+      "tags": [
+        "t0",
+        "units",
+        "units",
+        "dimensionless_argument",
+        "version_5"
+      ],
+      "origin": {
+        "kind": "t0_graphs_units_video_extension",
+        "source": "Prompt 12: Banco T0, gráficas, velocidad media e instantánea, extremos, unidades, forma polar y fotogramas de vídeo"
+      },
+      "status": "active",
+      "version": 5,
+      "learning_objective": "Comprobar que los argumentos de las funciones seno, coseno y exponencial no tienen dimensiones.",
+      "common_mistakes": [
+        "pensar que el radián es una unidad como el metro",
+        "creer que basta cambiar de unidad para que el argumento tenga sentido"
+      ],
+      "statement_source": "Dentro de funciones como \\(\\cos\\) o \\(e^{x}\\) solo puede ir un número sin dimensiones.\n\nIdea: en \\(\\cos(\\omega t)\\) y en \\(e^{-t/\\tau}\\), las unidades del argumento deben cancelarse por completo. El radián es una unidad «entre comillas»: es el cociente de dos longitudes.\n\n(a) En \\(x(t)=A\\cos(\\omega t)\\), con \\(t\\) en s, elige la unidad de \\(\\omega\\).\n(b) Con \\(\\omega=2\\) rad/s y \\(t=0{,}5\\) s, calcula \\(\\omega t\\). No tiene dimensiones: son radianes.\n(c) En \\(N(t)=N_0e^{-t/\\tau}\\), elige la unidad de \\(\\tau\\).\n(d) Elige si \\(\\cos(3\\ \\mathrm{m})\\) tiene sentido, y por qué.",
+      "solution_source": "(a) Para que \\(\\omega t\\) no tenga dimensiones, \\([\\omega]=T^{-1}\\): \\(\\omega\\) se mide en \\(\\mathrm{s^{-1}}\\), que se suele escribir rad/s.\n(b) \\(\\omega t=2\\cdot0{,}5=1\\) rad.\n(c) \\(t/\\tau\\) no debe tener dimensiones, así que \\(\\tau\\) es un tiempo: se mide en s.\n(d) No: el argumento tiene unidades de longitud. Cambiar a centímetros no lo arregla, solo cambia el número.\nError típico: pensar que el radián es una unidad como el metro."
     }
   ]
 }

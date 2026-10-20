@@ -1,7 +1,7 @@
 {
   "version": 1,
   "generated": true,
-  "generated_at": "2026-10-20T11:50:58Z",
+  "generated_at": "2026-10-20T11:57:51Z",
   "source": "content/exercises",
   "exercises": [
     {
@@ -367,6 +367,81 @@
         "t0",
         "units",
         "version_4"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_u_019",
+      "version": 5,
+      "title": "Unidades derivadas: N, J, W y Pa",
+      "course": "1bach",
+      "block": "Lenguaje físico, unidades y análisis dimensional",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Lenguaje físico, unidades y análisis dimensional",
+      "subtype": "single_choice_multi",
+      "difficulty": 1,
+      "estimated_time_min": 5,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "units",
+        "units",
+        "derived_units",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_u_020",
+      "version": 5,
+      "title": "¿Qué unidad sale?",
+      "course": "1bach",
+      "block": "Lenguaje físico, unidades y análisis dimensional",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Lenguaje físico, unidades y análisis dimensional",
+      "subtype": "single_choice_multi",
+      "difficulty": 1,
+      "estimated_time_min": 5,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "units",
+        "units",
+        "derived_units",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_u_021",
+      "version": 5,
+      "title": "Lo que va dentro de cos y de e",
+      "course": "1bach",
+      "block": "Lenguaje físico, unidades y análisis dimensional",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Lenguaje físico, unidades y análisis dimensional",
+      "subtype": "numeric_choice_multi",
+      "difficulty": 2,
+      "estimated_time_min": 6,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "units",
+        "units",
+        "dimensionless_argument",
+        "version_5"
       ],
       "workflow": {
         "status": "active"
@@ -1567,6 +1642,31 @@
       }
     },
     {
+      "id": "t0_v_064",
+      "version": 5,
+      "title": "Módulo y ángulo: la forma polar",
+      "course": "1bach",
+      "block": "Vectores y elección de ejes",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Vectores y elección de ejes",
+      "subtype": "numeric_vector_multi",
+      "difficulty": 1,
+      "estimated_time_min": 6,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "vectors",
+        "polar_form",
+        "components",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
       "id": "t0_m_001",
       "version": 5,
       "title": "Error absoluto, relativo y signo",
@@ -2135,6 +2235,32 @@
       "tags": [
         "t0",
         "measurement",
+        "version_5"
+      ],
+      "workflow": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "t0_m_026",
+      "version": 5,
+      "title": "Velocidad medida con los fotogramas de un vídeo",
+      "course": "1bach",
+      "block": "Medida, error, incertidumbre y cifras significativas",
+      "topic": "t0",
+      "concept": "Tema 0",
+      "exercise_type": "Medida, error, incertidumbre y cifras significativas",
+      "subtype": "numeric_choice_multi",
+      "difficulty": 3,
+      "estimated_time_min": 10,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t0",
+        "measurement",
+        "video_frames",
+        "uncertainty",
+        "average_velocity",
         "version_5"
       ],
       "workflow": {
