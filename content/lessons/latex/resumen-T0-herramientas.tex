@@ -180,13 +180,33 @@ Da un \textbf{n\'umero}.\enspace $\vec A\cdot\vec B=0\iff$ perpendiculares.\ensp
 \end{vecbox}
 
 \begin{vecbox}{7 \textperiodcentered\ Producto vectorial}
-\hspace*{1.2em}$\vec A\times\vec B=
-\begin{vmatrix}\ii&\jj&\hat k\\A_x&A_y&A_z\\B_x&B_y&B_z\end{vmatrix}$\par\vspace{0.2em}
-\hspace*{1.2em}$=\ii\begin{vmatrix}A_y&A_z\\B_y&B_z\end{vmatrix}
-\minus\jj\begin{vmatrix}A_x&A_z\\B_x&B_z\end{vmatrix}
-+\hat k\begin{vmatrix}A_x&A_y\\B_x&B_y\end{vmatrix}$\par\vspace{0.2em}
-\hspace*{0.6em}$=(A_yB_z-A_zB_y)\ii\minus(A_xB_z-A_zB_x)\jj+(A_xB_y-A_yB_x)\hat k$\par\vspace{0.2em}
-Primera fila con signos $+\;\textcolor{RedLine}{\boldsymbol{-}}\;+$: \textcolor{RedLine}{\textbf{ojo al menos de $\jj$}}.\par
+$\vec A\times\vec B=
+\begin{vmatrix}\ii&\jj&\hat k\\A_x&A_y&A_z\\B_x&B_y&B_z\end{vmatrix}$\par\vspace{0.1em}
+\lbl{Sarrus} copia las dos primeras columnas a la derecha.\par\vspace{0.15em}
+\begin{tikzpicture}[x=0.78cm,y=0.5cm,font=\small]
+\foreach \c in {0,1,2} {
+  \draw[GreenLine!80!black,thick] ($(\c,2)+(.17,-.22)$)--($(\c+2,0)+(-.17,.22)$);
+}
+\foreach \c in {2,3,4} {
+  \draw[RedLine,thick,dashed] ($(\c,2)+(-.17,-.22)$)--($(\c-2,0)+(.17,.22)$);
+}
+\draw[thick] (-.4,-.35)--(-.4,2.35) (2.4,-.35)--(2.4,2.35);
+\tikzset{entry/.style={fill=ToolSoft,inner sep=1pt}}
+\node[entry] at (0,2) {$\ii$}; \node[entry] at (1,2) {$\jj$}; \node[entry] at (2,2) {$\hat k$};
+\node[entry,text=Muted] at (3,2) {$\ii$}; \node[entry,text=Muted] at (4,2) {$\jj$};
+\node[entry] at (0,1) {$A_x$}; \node[entry] at (1,1) {$A_y$}; \node[entry] at (2,1) {$A_z$};
+\node[entry,text=Muted] at (3,1) {$A_x$}; \node[entry,text=Muted] at (4,1) {$A_y$};
+\node[entry] at (0,0) {$B_x$}; \node[entry] at (1,0) {$B_y$}; \node[entry] at (2,0) {$B_z$};
+\node[entry,text=Muted] at (3,0) {$B_x$}; \node[entry,text=Muted] at (4,0) {$B_y$};
+\node[right,align=left,font=\footnotesize] at (4.5,1)
+  {\textcolor{GreenLine!70!black}{continua ($\searrow$): suman}\\[1pt]
+   \textcolor{RedLine}{discontinua ($\swarrow$): restan}\\[1pt]
+   \textcolor{Muted}{gris: columnas copiadas}};
+\end{tikzpicture}\par\vspace{0.15em}
+$\vec A\times\vec B=A_yB_z\,\ii+A_zB_x\,\jj+A_xB_y\,\hat k$\par
+\hspace*{3.2em}$-\left(A_yB_x\,\hat k+A_zB_y\,\ii+A_xB_z\,\jj\right)$\par\vspace{0.1em}
+\lbl{Componente a componente}\par
+\hspace*{0.6em}$=(A_yB_z-A_zB_y)\,\ii+(A_zB_x-A_xB_z)\,\jj+(A_xB_y-A_yB_x)\,\hat k$\par\vspace{0.2em}
 \begin{minipage}[c]{0.55\linewidth}
 \raggedright
 $|\vec A\times\vec B|=|\vec A||\vec B|\sin\theta$ $=$ \'area del paralelogramo.\par
