@@ -28,6 +28,8 @@ def test_exercise_number_extracts_numeric_suffix():
     assert exercise_number('t0_v_037') == 37
     assert exercise_number('t0_c_001') == 1
     assert exercise_number('legacy') is None
+    assert exercise_number({'id': 't1_i_003', 'number': 59}) == 59
+    assert exercise_number({'id': 't0_v_037'}) == 37
 
 
 def test_source_escapes_html_and_preserves_math_and_parts():

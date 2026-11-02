@@ -1,7 +1,7 @@
 {
   "version": 1,
   "generated": true,
-  "generated_at": "2026-10-20T11:57:51Z",
+  "generated_at": "2026-11-02T21:49:05Z",
   "source": "content/exercises",
   "exercises": [
     {
@@ -2943,7 +2943,7 @@
       "concept": "Movimiento rectilíneo",
       "exercise_type": "Referencia y posición",
       "subtype": "multi_step",
-      "difficulty": 2,
+      "difficulty": 1,
       "estimated_time_min": 7,
       "statement_pdf": null,
       "solution_pdf": null,
@@ -2966,7 +2966,7 @@
       "concept": "Movimiento rectilíneo",
       "exercise_type": "Referencia y posición",
       "subtype": "multi_step",
-      "difficulty": 2,
+      "difficulty": 1,
       "estimated_time_min": 8,
       "statement_pdf": null,
       "solution_pdf": null,
@@ -2989,7 +2989,7 @@
       "concept": "Movimiento rectilíneo",
       "exercise_type": "Referencia y posición",
       "subtype": "written_upload",
-      "difficulty": 3,
+      "difficulty": 2,
       "estimated_time_min": 10,
       "statement_pdf": null,
       "solution_pdf": null,
@@ -3026,29 +3026,6 @@
       }
     },
     {
-      "id": "t1_r_005",
-      "version": 1,
-      "title": "Trasladar e invertir un eje",
-      "course": "1bach",
-      "block": "Referencia y posición",
-      "topic": "t1",
-      "concept": "Movimiento rectilíneo",
-      "exercise_type": "Referencia y posición",
-      "subtype": "written_upload",
-      "difficulty": 4,
-      "estimated_time_min": 12,
-      "statement_pdf": null,
-      "solution_pdf": null,
-      "tags": [
-        "t1",
-        "r",
-        "cinematica"
-      ],
-      "workflow": {
-        "status": "draft"
-      }
-    },
-    {
       "id": "t1_r_006",
       "version": 1,
       "title": "Tres signos, tres informaciones",
@@ -3058,7 +3035,7 @@
       "concept": "Movimiento rectilíneo",
       "exercise_type": "Referencia y posición",
       "subtype": "multi_step",
-      "difficulty": 3,
+      "difficulty": 2,
       "estimated_time_min": 9,
       "statement_pdf": null,
       "solution_pdf": null,
@@ -3081,8 +3058,31 @@
       "concept": "Movimiento rectilíneo",
       "exercise_type": "Referencia y posición",
       "subtype": "written_upload",
-      "difficulty": 3,
+      "difficulty": 2,
       "estimated_time_min": 10,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "r",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_r_005",
+      "version": 1,
+      "title": "Trasladar e invertir un eje",
+      "course": "1bach",
+      "block": "Referencia y posición",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "Referencia y posición",
+      "subtype": "written_upload",
+      "difficulty": 3,
+      "estimated_time_min": 12,
       "statement_pdf": null,
       "solution_pdf": null,
       "tags": [
@@ -3127,7 +3127,7 @@
       "concept": "Movimiento rectilíneo",
       "exercise_type": "MRU y movimiento relativo",
       "subtype": "multi_step",
-      "difficulty": 3,
+      "difficulty": 1,
       "estimated_time_min": 9,
       "statement_pdf": null,
       "solution_pdf": null,
@@ -3150,7 +3150,7 @@
       "concept": "Movimiento rectilíneo",
       "exercise_type": "MRU y movimiento relativo",
       "subtype": "multi_step",
-      "difficulty": 3,
+      "difficulty": 2,
       "estimated_time_min": 9,
       "statement_pdf": null,
       "solution_pdf": null,
@@ -3173,7 +3173,7 @@
       "concept": "Movimiento rectilíneo",
       "exercise_type": "MRU y movimiento relativo",
       "subtype": "multi_step",
-      "difficulty": 3,
+      "difficulty": 2,
       "estimated_time_min": 10,
       "statement_pdf": null,
       "solution_pdf": null,
@@ -3187,17 +3187,17 @@
       }
     },
     {
-      "id": "t1_u_004",
+      "id": "t1_u_008",
       "version": 1,
-      "title": "Salida retardada y alcance",
+      "title": "Datos en kilómetros y minutos",
       "course": "1bach",
       "block": "MRU y movimiento relativo",
       "topic": "t1",
       "concept": "Movimiento rectilíneo",
       "exercise_type": "MRU y movimiento relativo",
-      "subtype": "written_upload",
-      "difficulty": 4,
-      "estimated_time_min": 14,
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_time_min": 8,
       "statement_pdf": null,
       "solution_pdf": null,
       "tags": [
@@ -3256,52 +3256,6 @@
       }
     },
     {
-      "id": "t1_u_007",
-      "version": 1,
-      "title": "Programar una llegada",
-      "course": "1bach",
-      "block": "MRU y movimiento relativo",
-      "topic": "t1",
-      "concept": "Movimiento rectilíneo",
-      "exercise_type": "MRU y movimiento relativo",
-      "subtype": "multi_step",
-      "difficulty": 3,
-      "estimated_time_min": 10,
-      "statement_pdf": null,
-      "solution_pdf": null,
-      "tags": [
-        "t1",
-        "u",
-        "cinematica"
-      ],
-      "workflow": {
-        "status": "draft"
-      }
-    },
-    {
-      "id": "t1_u_008",
-      "version": 1,
-      "title": "Datos en kilómetros y minutos",
-      "course": "1bach",
-      "block": "MRU y movimiento relativo",
-      "topic": "t1",
-      "concept": "Movimiento rectilíneo",
-      "exercise_type": "MRU y movimiento relativo",
-      "subtype": "multi_step",
-      "difficulty": 2,
-      "estimated_time_min": 8,
-      "statement_pdf": null,
-      "solution_pdf": null,
-      "tags": [
-        "t1",
-        "u",
-        "cinematica"
-      ],
-      "workflow": {
-        "status": "draft"
-      }
-    },
-    {
       "id": "t1_u_009",
       "version": 1,
       "title": "Cuándo sale el último vagón",
@@ -3311,7 +3265,7 @@
       "concept": "Movimiento rectilíneo",
       "exercise_type": "MRU y movimiento relativo",
       "subtype": "written_upload",
-      "difficulty": 4,
+      "difficulty": 3,
       "estimated_time_min": 13,
       "statement_pdf": null,
       "solution_pdf": null,
@@ -3334,7 +3288,7 @@
       "concept": "Movimiento rectilíneo",
       "exercise_type": "MRU y movimiento relativo",
       "subtype": "written_upload",
-      "difficulty": 4,
+      "difficulty": 3,
       "estimated_time_min": 13,
       "statement_pdf": null,
       "solution_pdf": null,
@@ -3371,6 +3325,52 @@
       }
     },
     {
+      "id": "t1_u_004",
+      "version": 1,
+      "title": "Salida retardada y alcance",
+      "course": "1bach",
+      "block": "MRU y movimiento relativo",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "MRU y movimiento relativo",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 14,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "u",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_u_007",
+      "version": 1,
+      "title": "Programar una llegada",
+      "course": "1bach",
+      "block": "MRU y movimiento relativo",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "MRU y movimiento relativo",
+      "subtype": "multi_step",
+      "difficulty": 4,
+      "estimated_time_min": 10,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "u",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
       "id": "t1_u_012",
       "version": 1,
       "title": "Diseñar la velocidad de un alcance",
@@ -3394,6 +3394,29 @@
       }
     },
     {
+      "id": "t1_a_004",
+      "version": 1,
+      "title": "Los segundos no aportan igual distancia",
+      "course": "1bach",
+      "block": "MRUA y movimiento vertical",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "MRUA y movimiento vertical",
+      "subtype": "multi_step",
+      "difficulty": 1,
+      "estimated_time_min": 8,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "a",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
       "id": "t1_a_001",
       "version": 1,
       "title": "MRUA que empieza hacia atrás",
@@ -3403,7 +3426,7 @@
       "concept": "Movimiento rectilíneo",
       "exercise_type": "MRUA y movimiento vertical",
       "subtype": "multi_step",
-      "difficulty": 3,
+      "difficulty": 2,
       "estimated_time_min": 9,
       "statement_pdf": null,
       "solution_pdf": null,
@@ -3440,6 +3463,75 @@
       }
     },
     {
+      "id": "t1_a_007",
+      "version": 1,
+      "title": "Caída desde una plataforma",
+      "course": "1bach",
+      "block": "MRUA y movimiento vertical",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "MRUA y movimiento vertical",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_time_min": 10,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "a",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_a_011",
+      "version": 1,
+      "title": "Leer los coeficientes con sus unidades",
+      "course": "1bach",
+      "block": "MRUA y movimiento vertical",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "MRUA y movimiento vertical",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_time_min": 9,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "a",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_a_012",
+      "version": 1,
+      "title": "Elegir un modelo con condiciones iniciales",
+      "course": "1bach",
+      "block": "MRUA y movimiento vertical",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "MRUA y movimiento vertical",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_time_min": 10,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "a",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
       "id": "t1_a_003",
       "version": 1,
       "title": "Hasta detenerse, y no más allá",
@@ -3463,29 +3555,6 @@
       }
     },
     {
-      "id": "t1_a_004",
-      "version": 1,
-      "title": "Los segundos no aportan igual distancia",
-      "course": "1bach",
-      "block": "MRUA y movimiento vertical",
-      "topic": "t1",
-      "concept": "Movimiento rectilíneo",
-      "exercise_type": "MRUA y movimiento vertical",
-      "subtype": "multi_step",
-      "difficulty": 2,
-      "estimated_time_min": 8,
-      "statement_pdf": null,
-      "solution_pdf": null,
-      "tags": [
-        "t1",
-        "a",
-        "cinematica"
-      ],
-      "workflow": {
-        "status": "draft"
-      }
-    },
-    {
       "id": "t1_a_005",
       "version": 1,
       "title": "Desplazamiento tras dar la vuelta",
@@ -3495,7 +3564,7 @@
       "concept": "Movimiento rectilíneo",
       "exercise_type": "MRUA y movimiento vertical",
       "subtype": "written_upload",
-      "difficulty": 4,
+      "difficulty": 3,
       "estimated_time_min": 13,
       "statement_pdf": null,
       "solution_pdf": null,
@@ -3512,29 +3581,6 @@
       "id": "t1_a_006",
       "version": 1,
       "title": "Reconstruir la velocidad inicial",
-      "course": "1bach",
-      "block": "MRUA y movimiento vertical",
-      "topic": "t1",
-      "concept": "Movimiento rectilíneo",
-      "exercise_type": "MRUA y movimiento vertical",
-      "subtype": "multi_step",
-      "difficulty": 3,
-      "estimated_time_min": 10,
-      "statement_pdf": null,
-      "solution_pdf": null,
-      "tags": [
-        "t1",
-        "a",
-        "cinematica"
-      ],
-      "workflow": {
-        "status": "draft"
-      }
-    },
-    {
-      "id": "t1_a_007",
-      "version": 1,
-      "title": "Caída desde una plataforma",
       "course": "1bach",
       "block": "MRUA y movimiento vertical",
       "topic": "t1",
@@ -3578,29 +3624,6 @@
       }
     },
     {
-      "id": "t1_a_009",
-      "version": 1,
-      "title": "Dos lanzamientos y un único reloj",
-      "course": "1bach",
-      "block": "MRUA y movimiento vertical",
-      "topic": "t1",
-      "concept": "Movimiento rectilíneo",
-      "exercise_type": "MRUA y movimiento vertical",
-      "subtype": "written_upload",
-      "difficulty": 5,
-      "estimated_time_min": 18,
-      "statement_pdf": null,
-      "solution_pdf": null,
-      "tags": [
-        "t1",
-        "a",
-        "cinematica"
-      ],
-      "workflow": {
-        "status": "draft"
-      }
-    },
-    {
       "id": "t1_a_010",
       "version": 1,
       "title": "Ascensor que deja de acelerar",
@@ -3610,54 +3633,8 @@
       "concept": "Movimiento rectilíneo",
       "exercise_type": "MRUA y movimiento vertical",
       "subtype": "written_upload",
-      "difficulty": 4,
+      "difficulty": 3,
       "estimated_time_min": 14,
-      "statement_pdf": null,
-      "solution_pdf": null,
-      "tags": [
-        "t1",
-        "a",
-        "cinematica"
-      ],
-      "workflow": {
-        "status": "draft"
-      }
-    },
-    {
-      "id": "t1_a_011",
-      "version": 1,
-      "title": "Leer los coeficientes con sus unidades",
-      "course": "1bach",
-      "block": "MRUA y movimiento vertical",
-      "topic": "t1",
-      "concept": "Movimiento rectilíneo",
-      "exercise_type": "MRUA y movimiento vertical",
-      "subtype": "multi_step",
-      "difficulty": 3,
-      "estimated_time_min": 9,
-      "statement_pdf": null,
-      "solution_pdf": null,
-      "tags": [
-        "t1",
-        "a",
-        "cinematica"
-      ],
-      "workflow": {
-        "status": "draft"
-      }
-    },
-    {
-      "id": "t1_a_012",
-      "version": 1,
-      "title": "Elegir un modelo con condiciones iniciales",
-      "course": "1bach",
-      "block": "MRUA y movimiento vertical",
-      "topic": "t1",
-      "concept": "Movimiento rectilíneo",
-      "exercise_type": "MRUA y movimiento vertical",
-      "subtype": "multi_step",
-      "difficulty": 3,
-      "estimated_time_min": 10,
       "statement_pdf": null,
       "solution_pdf": null,
       "tags": [
@@ -3681,6 +3658,29 @@
       "subtype": "written_upload",
       "difficulty": 4,
       "estimated_time_min": 14,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "a",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_a_009",
+      "version": 1,
+      "title": "Dos lanzamientos y un único reloj",
+      "course": "1bach",
+      "block": "MRUA y movimiento vertical",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "MRUA y movimiento vertical",
+      "subtype": "written_upload",
+      "difficulty": 5,
+      "estimated_time_min": 18,
       "statement_pdf": null,
       "solution_pdf": null,
       "tags": [
@@ -3725,7 +3725,7 @@
       "concept": "Movimiento rectilíneo",
       "exercise_type": "Funciones y gráficas",
       "subtype": "multi_step",
-      "difficulty": 3,
+      "difficulty": 1,
       "estimated_time_min": 10,
       "statement_pdf": null,
       "solution_pdf": null,
@@ -3748,7 +3748,53 @@
       "concept": "Movimiento rectilíneo",
       "exercise_type": "Funciones y gráficas",
       "subtype": "multi_step",
-      "difficulty": 3,
+      "difficulty": 2,
+      "estimated_time_min": 10,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "g",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_g_007",
+      "version": 1,
+      "title": "Tres representaciones compatibles",
+      "course": "1bach",
+      "block": "Funciones y gráficas",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "Funciones y gráficas",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_time_min": 11,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "g",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_g_008",
+      "version": 1,
+      "title": "Reposo, retroceso y regreso",
+      "course": "1bach",
+      "block": "Funciones y gráficas",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "Funciones y gráficas",
+      "subtype": "multi_step",
+      "difficulty": 2,
       "estimated_time_min": 10,
       "statement_pdf": null,
       "solution_pdf": null,
@@ -3771,7 +3817,7 @@
       "concept": "Movimiento rectilíneo",
       "exercise_type": "Funciones y gráficas",
       "subtype": "written_upload",
-      "difficulty": 4,
+      "difficulty": 3,
       "estimated_time_min": 12,
       "statement_pdf": null,
       "solution_pdf": null,
@@ -3817,7 +3863,7 @@
       "concept": "Movimiento rectilíneo",
       "exercise_type": "Funciones y gráficas",
       "subtype": "written_upload",
-      "difficulty": 4,
+      "difficulty": 3,
       "estimated_time_min": 13,
       "statement_pdf": null,
       "solution_pdf": null,
@@ -3840,7 +3886,7 @@
       "concept": "Movimiento rectilíneo",
       "exercise_type": "Funciones y gráficas",
       "subtype": "written_upload",
-      "difficulty": 4,
+      "difficulty": 3,
       "estimated_time_min": 13,
       "statement_pdf": null,
       "solution_pdf": null,
@@ -3854,39 +3900,16 @@
       }
     },
     {
-      "id": "t1_g_007",
+      "id": "t1_g_012",
       "version": 1,
-      "title": "Tres representaciones compatibles",
+      "title": "Aceleración negativa antes y después del giro",
       "course": "1bach",
       "block": "Funciones y gráficas",
       "topic": "t1",
       "concept": "Movimiento rectilíneo",
       "exercise_type": "Funciones y gráficas",
       "subtype": "multi_step",
-      "difficulty": 3,
-      "estimated_time_min": 11,
-      "statement_pdf": null,
-      "solution_pdf": null,
-      "tags": [
-        "t1",
-        "g",
-        "cinematica"
-      ],
-      "workflow": {
-        "status": "draft"
-      }
-    },
-    {
-      "id": "t1_g_008",
-      "version": 1,
-      "title": "Reposo, retroceso y regreso",
-      "course": "1bach",
-      "block": "Funciones y gráficas",
-      "topic": "t1",
-      "concept": "Movimiento rectilíneo",
-      "exercise_type": "Funciones y gráficas",
-      "subtype": "multi_step",
-      "difficulty": 3,
+      "difficulty": 1,
       "estimated_time_min": 10,
       "statement_pdf": null,
       "solution_pdf": null,
@@ -3909,7 +3932,30 @@
       "concept": "Movimiento rectilíneo",
       "exercise_type": "Funciones y gráficas",
       "subtype": "multi_step",
-      "difficulty": 3,
+      "difficulty": 2,
+      "estimated_time_min": 10,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "g",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_g_015",
+      "version": 1,
+      "title": "Intersección frente a cruce del origen",
+      "course": "1bach",
+      "block": "Funciones y gráficas",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "Funciones y gráficas",
+      "subtype": "multi_step",
+      "difficulty": 2,
       "estimated_time_min": 10,
       "statement_pdf": null,
       "solution_pdf": null,
@@ -3932,7 +3978,7 @@
       "concept": "Movimiento rectilíneo",
       "exercise_type": "Funciones y gráficas",
       "subtype": "written_upload",
-      "difficulty": 4,
+      "difficulty": 3,
       "estimated_time_min": 13,
       "statement_pdf": null,
       "solution_pdf": null,
@@ -3955,54 +4001,8 @@
       "concept": "Movimiento rectilíneo",
       "exercise_type": "Funciones y gráficas",
       "subtype": "written_upload",
-      "difficulty": 4,
-      "estimated_time_min": 12,
-      "statement_pdf": null,
-      "solution_pdf": null,
-      "tags": [
-        "t1",
-        "g",
-        "cinematica"
-      ],
-      "workflow": {
-        "status": "draft"
-      }
-    },
-    {
-      "id": "t1_g_012",
-      "version": 1,
-      "title": "Aceleración negativa antes y después del giro",
-      "course": "1bach",
-      "block": "Funciones y gráficas",
-      "topic": "t1",
-      "concept": "Movimiento rectilíneo",
-      "exercise_type": "Funciones y gráficas",
-      "subtype": "multi_step",
       "difficulty": 3,
-      "estimated_time_min": 10,
-      "statement_pdf": null,
-      "solution_pdf": null,
-      "tags": [
-        "t1",
-        "g",
-        "cinematica"
-      ],
-      "workflow": {
-        "status": "draft"
-      }
-    },
-    {
-      "id": "t1_g_013",
-      "version": 1,
-      "title": "Cuatro etapas y tres gráficas",
-      "course": "1bach",
-      "block": "Funciones y gráficas",
-      "topic": "t1",
-      "concept": "Movimiento rectilíneo",
-      "exercise_type": "Funciones y gráficas",
-      "subtype": "written_upload",
-      "difficulty": 5,
-      "estimated_time_min": 18,
+      "estimated_time_min": 12,
       "statement_pdf": null,
       "solution_pdf": null,
       "tags": [
@@ -4024,7 +4024,7 @@
       "concept": "Movimiento rectilíneo",
       "exercise_type": "Funciones y gráficas",
       "subtype": "written_upload",
-      "difficulty": 4,
+      "difficulty": 3,
       "estimated_time_min": 12,
       "statement_pdf": null,
       "solution_pdf": null,
@@ -4038,17 +4038,17 @@
       }
     },
     {
-      "id": "t1_g_015",
+      "id": "t1_g_013",
       "version": 1,
-      "title": "Intersección frente a cruce del origen",
+      "title": "Cuatro etapas y tres gráficas",
       "course": "1bach",
       "block": "Funciones y gráficas",
       "topic": "t1",
       "concept": "Movimiento rectilíneo",
       "exercise_type": "Funciones y gráficas",
-      "subtype": "multi_step",
-      "difficulty": 3,
-      "estimated_time_min": 10,
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 18,
       "statement_pdf": null,
       "solution_pdf": null,
       "tags": [
@@ -4084,6 +4084,29 @@
       }
     },
     {
+      "id": "t1_i_009",
+      "version": 1,
+      "title": "Comparación argumentada de dos frenadas",
+      "course": "1bach",
+      "block": "Problemas integradores",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "Problemas integradores",
+      "subtype": "written_upload",
+      "difficulty": 2,
+      "estimated_time_min": 16,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "i",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
       "id": "t1_i_001",
       "version": 1,
       "title": "Viaje de tren con horario completo",
@@ -4093,7 +4116,7 @@
       "concept": "Movimiento rectilíneo",
       "exercise_type": "Problemas integradores",
       "subtype": "written_upload",
-      "difficulty": 5,
+      "difficulty": 3,
       "estimated_time_min": 20,
       "statement_pdf": null,
       "solution_pdf": null,
@@ -4116,8 +4139,123 @@
       "concept": "Movimiento rectilíneo",
       "exercise_type": "Problemas integradores",
       "subtype": "written_upload",
-      "difficulty": 4,
+      "difficulty": 3,
       "estimated_time_min": 16,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "i",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_i_005",
+      "version": 1,
+      "title": "Ascensor con destino fijado por áreas",
+      "course": "1bach",
+      "block": "Problemas integradores",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "Problemas integradores",
+      "subtype": "written_upload",
+      "difficulty": 3,
+      "estimated_time_min": 18,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "i",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_i_007",
+      "version": 1,
+      "title": "Diseñar una gráfica para comparar recorridos",
+      "course": "1bach",
+      "block": "Problemas integradores",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "Problemas integradores",
+      "subtype": "written_upload",
+      "difficulty": 3,
+      "estimated_time_min": 18,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "i",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_i_010",
+      "version": 1,
+      "title": "Simulacro: un reparto de ida y vuelta",
+      "course": "1bach",
+      "block": "Problemas integradores",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "Problemas integradores",
+      "subtype": "written_upload",
+      "difficulty": 3,
+      "estimated_time_min": 20,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "i",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_i_004",
+      "version": 1,
+      "title": "Lanzamiento desde una azotea",
+      "course": "1bach",
+      "block": "Problemas integradores",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "Problemas integradores",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 18,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "i",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_i_006",
+      "version": 1,
+      "title": "Informe de un sensor con una medida incoherente",
+      "course": "1bach",
+      "block": "Problemas integradores",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "Problemas integradores",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 20,
       "statement_pdf": null,
       "solution_pdf": null,
       "tags": [
@@ -4153,147 +4291,9 @@
       }
     },
     {
-      "id": "t1_i_004",
-      "version": 1,
-      "title": "Lanzamiento desde una azotea",
-      "course": "1bach",
-      "block": "Problemas integradores",
-      "topic": "t1",
-      "concept": "Movimiento rectilíneo",
-      "exercise_type": "Problemas integradores",
-      "subtype": "written_upload",
-      "difficulty": 5,
-      "estimated_time_min": 18,
-      "statement_pdf": null,
-      "solution_pdf": null,
-      "tags": [
-        "t1",
-        "i",
-        "cinematica"
-      ],
-      "workflow": {
-        "status": "draft"
-      }
-    },
-    {
-      "id": "t1_i_005",
-      "version": 1,
-      "title": "Ascensor con destino fijado por áreas",
-      "course": "1bach",
-      "block": "Problemas integradores",
-      "topic": "t1",
-      "concept": "Movimiento rectilíneo",
-      "exercise_type": "Problemas integradores",
-      "subtype": "written_upload",
-      "difficulty": 5,
-      "estimated_time_min": 18,
-      "statement_pdf": null,
-      "solution_pdf": null,
-      "tags": [
-        "t1",
-        "i",
-        "cinematica"
-      ],
-      "workflow": {
-        "status": "draft"
-      }
-    },
-    {
-      "id": "t1_i_006",
-      "version": 1,
-      "title": "Informe de un sensor con una medida incoherente",
-      "course": "1bach",
-      "block": "Problemas integradores",
-      "topic": "t1",
-      "concept": "Movimiento rectilíneo",
-      "exercise_type": "Problemas integradores",
-      "subtype": "written_upload",
-      "difficulty": 5,
-      "estimated_time_min": 20,
-      "statement_pdf": null,
-      "solution_pdf": null,
-      "tags": [
-        "t1",
-        "i",
-        "cinematica"
-      ],
-      "workflow": {
-        "status": "draft"
-      }
-    },
-    {
-      "id": "t1_i_007",
-      "version": 1,
-      "title": "Diseñar una gráfica para comparar recorridos",
-      "course": "1bach",
-      "block": "Problemas integradores",
-      "topic": "t1",
-      "concept": "Movimiento rectilíneo",
-      "exercise_type": "Problemas integradores",
-      "subtype": "written_upload",
-      "difficulty": 5,
-      "estimated_time_min": 18,
-      "statement_pdf": null,
-      "solution_pdf": null,
-      "tags": [
-        "t1",
-        "i",
-        "cinematica"
-      ],
-      "workflow": {
-        "status": "draft"
-      }
-    },
-    {
       "id": "t1_i_008",
       "version": 1,
       "title": "Alcance durante una frenada",
-      "course": "1bach",
-      "block": "Problemas integradores",
-      "topic": "t1",
-      "concept": "Movimiento rectilíneo",
-      "exercise_type": "Problemas integradores",
-      "subtype": "written_upload",
-      "difficulty": 5,
-      "estimated_time_min": 20,
-      "statement_pdf": null,
-      "solution_pdf": null,
-      "tags": [
-        "t1",
-        "i",
-        "cinematica"
-      ],
-      "workflow": {
-        "status": "draft"
-      }
-    },
-    {
-      "id": "t1_i_009",
-      "version": 1,
-      "title": "Comparación argumentada de dos frenadas",
-      "course": "1bach",
-      "block": "Problemas integradores",
-      "topic": "t1",
-      "concept": "Movimiento rectilíneo",
-      "exercise_type": "Problemas integradores",
-      "subtype": "written_upload",
-      "difficulty": 4,
-      "estimated_time_min": 16,
-      "statement_pdf": null,
-      "solution_pdf": null,
-      "tags": [
-        "t1",
-        "i",
-        "cinematica"
-      ],
-      "workflow": {
-        "status": "draft"
-      }
-    },
-    {
-      "id": "t1_i_010",
-      "version": 1,
-      "title": "Simulacro: un reparto de ida y vuelta",
       "course": "1bach",
       "block": "Problemas integradores",
       "topic": "t1",

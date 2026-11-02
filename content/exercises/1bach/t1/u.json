@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t1_u_001",
+      "number": 9,
       "version": 1,
       "title": "Paso por una baliza",
       "course": "1bach",
@@ -10,7 +11,7 @@
       "block": "MRU y movimiento relativo",
       "family": "u",
       "subtype": "multi_step",
-      "difficulty": 3,
+      "difficulty": 1,
       "estimated_minutes": 9,
       "response_mode": "structured",
       "response_prompt": "Responde los apartados en sus campos.",
@@ -80,7 +81,7 @@
         "T0: unidades, signos y álgebra",
         "MRU y movimiento relativo"
       ],
-      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar usar x/v cuando x_0 no es cero.",
+      "difficulty_reason": "Escribir la ecuación de la posición del MRU, sustituir y resolver una ecuación de primer grado.",
       "common_mistakes": [
         "Usar x/v cuando x_0 no es cero",
         "Confundir instante y posición"
@@ -92,6 +93,7 @@
     },
     {
       "id": "t1_u_002",
+      "number": 10,
       "version": 1,
       "title": "Pendiente desde dos registros",
       "course": "1bach",
@@ -100,7 +102,7 @@
       "block": "MRU y movimiento relativo",
       "family": "u",
       "subtype": "multi_step",
-      "difficulty": 3,
+      "difficulty": 2,
       "estimated_minutes": 9,
       "response_mode": "structured",
       "response_prompt": "Responde los apartados en sus campos.",
@@ -182,7 +184,7 @@
         "T0: unidades, signos y álgebra",
         "MRU y movimiento relativo"
       ],
-      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar tomar el primer dato como x_0.",
+      "difficulty_reason": "Obtiene v como pendiente entre dos datos y reconstruye x0.",
       "common_mistakes": [
         "Tomar el primer dato como x_0",
         "Perder el intervalo de seis segundos"
@@ -194,6 +196,7 @@
     },
     {
       "id": "t1_u_003",
+      "number": 11,
       "version": 1,
       "title": "Encuentro desde dos extremos",
       "course": "1bach",
@@ -202,7 +205,7 @@
       "block": "MRU y movimiento relativo",
       "family": "u",
       "subtype": "multi_step",
-      "difficulty": 3,
+      "difficulty": 2,
       "estimated_minutes": 10,
       "response_mode": "structured",
       "response_prompt": "Responde los apartados en sus campos.",
@@ -302,7 +305,7 @@
         "T0: unidades, signos y álgebra",
         "MRU y movimiento relativo"
       ],
-      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar restar módulos para móviles opuestos.",
+      "difficulty_reason": "Encuentro de dos MRU en sentidos opuestos: igualar dos ecuaciones de primer grado.",
       "common_mistakes": [
         "Restar módulos para móviles opuestos",
         "Exigir que ambos recorran igual distancia"
@@ -313,63 +316,65 @@
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
-      "id": "t1_u_004",
+      "id": "t1_u_008",
+      "number": 12,
       "version": 1,
-      "title": "Salida retardada y alcance",
+      "title": "Datos en kilómetros y minutos",
       "course": "1bach",
       "topic": "t1",
       "concept": "Movimiento rectilíneo",
       "block": "MRU y movimiento relativo",
       "family": "u",
-      "subtype": "written_upload",
-      "difficulty": 4,
-      "estimated_minutes": 14,
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 8,
       "response_mode": "structured",
       "response_prompt": "Responde los apartados en sus campos.",
       "response_fields": [
         {
-          "id": "t",
-          "label": "Instante global de alcance",
+          "id": "v",
+          "label": "Velocidad",
           "type": "numeric",
           "required": true,
-          "expected_value": 20,
-          "unit": "s",
+          "expected_value": -10,
+          "unit": "m/s",
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
           "part": "a"
         },
         {
-          "id": "tb",
-          "label": "Tiempo de marcha de B",
-          "type": "numeric",
+          "id": "x",
+          "label": "Posición SI",
+          "type": "function",
+          "response_kind": "function",
           "required": true,
-          "expected_value": 12,
-          "unit": "s",
-          "tolerance": 0.01,
-          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
-          "significant_figures": 3,
+          "accepted_forms": [
+            "2400-10*t"
+          ],
+          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
+          "grading": "pending_review",
+          "variable": "t",
+          "variable_unit": "s",
+          "unit": "m",
+          "domain": "t ≥ 0",
+          "canonical_expression": "2400-10*t",
           "part": "b"
         },
         {
-          "id": "x",
-          "label": "Posición de alcance",
+          "id": "t",
+          "label": "Paso por el origen",
           "type": "numeric",
           "required": true,
-          "expected_value": 60,
-          "unit": "m",
-          "tolerance": 0.01,
+          "expected_value": 240,
+          "unit": "s",
+          "tolerance": 0.1,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
           "part": "b"
         }
       ],
-      "assets": [
-        {
-          "path": "static/exercises/1bach/t1/assets/t1_u_004.svg",
-          "alt": "Reloj común: B espera hasta 8 s"
-        }
-      ],
+      "assets": [],
       "tags": [
         "t1",
         "u",
@@ -381,23 +386,24 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Salida retardada y alcance. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Datos en kilómetros y minutos. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "MRU y movimiento relativo"
       ],
-      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar omitir el retraso en la función de b.",
+      "difficulty_reason": "MRU con datos en km y min: el paso clave es pasar a SI.",
       "common_mistakes": [
-        "Omitir el retraso en la función de B",
-        "Confundir 12 s con el instante global"
+        "Mantener minutos en una función SI",
+        "Calcular rapidez y olvidar el sentido"
       ],
-      "parts_count": 3,
-      "statement_source": "\\(+x\\) a la derecha. A sale del origen a 3 m/s en \\(t=0\\). B espera allí hasta \\(t=8 s\\) y sale a 5 m/s. \n(a) Completa: Instante global de alcance.\n(b) Halla cuándo B alcanza a A, tiempo que B lleva moviéndose y posición.",
-      "solution_source": "\\(x_A=3t\\); \\(x_B=0\\) si \\(0≤t≤8\\) y \\(x_B=5(t−8)\\) si t≥8.\n\n3t=5(t−8) da \\(t=20 s\\); B viaja 12 s; \\(x=60 m\\).\n\nEn \\(t=8\\) la ventaja es 24 m; cerrarla a 2 m/s tarda 12 s, consistente con el reloj global.",
+      "parts_count": 2,
+      "statement_source": "\\(+x\\) hacia el norte. Un vehículo pasa por el km 2,4 en \\(t=0\\) y por el km 0,9 a los 2,5 min, con MRU. \n(a) Deduce v en SI.\n(b) Escribe \\(x(t)\\) en metros y calcula cuándo cruza el km 0.",
+      "solution_source": "\\(Δx=900−2400=−1500 m\\) y \\(Δt=150 s\\): \\(v=−10 m/s\\).\n\n\\(x=2400−10t\\); \\(x=0\\) exige \\(t=240 s\\)=4 min.\n\nCruza después del segundo registro, coherente con avanzar hacia posiciones menores.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t1_u_005",
+      "number": 13,
       "version": 1,
       "title": "Ciclistas con unidades distintas",
       "course": "1bach",
@@ -482,7 +488,7 @@
         "T0: unidades, signos y álgebra",
         "MRU y movimiento relativo"
       ],
-      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar dar a b velocidad positiva.",
+      "difficulty_reason": "Encuentro con cambio de unidades y signos de velocidad.",
       "common_mistakes": [
         "Dar a B velocidad positiva",
         "Redondear prematuramente 10/3"
@@ -494,6 +500,7 @@
     },
     {
       "id": "t1_u_006",
+      "number": 14,
       "version": 1,
       "title": "Lo que observa un pasajero",
       "course": "1bach",
@@ -573,7 +580,7 @@
         "T0: unidades, signos y álgebra",
         "MRU y movimiento relativo"
       ],
-      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar sumar velocidades en el mismo sentido.",
+      "difficulty_reason": "Trabaja con la separación con signo entre dos MRU y su derivada.",
       "common_mistakes": [
         "Sumar velocidades en el mismo sentido",
         "Confundir posición relativa y absoluta"
@@ -584,7 +591,348 @@
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
+      "id": "t1_u_009",
+      "number": 15,
+      "version": 1,
+      "title": "Cuándo sale el último vagón",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "MRU y movimiento relativo",
+      "family": "u",
+      "subtype": "written_upload",
+      "difficulty": 3,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "front",
+          "label": "Posición del frente",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [
+            "15*t"
+          ],
+          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
+          "grading": "pending_review",
+          "variable": "t",
+          "variable_unit": "s",
+          "unit": "m",
+          "domain": "t ≥ 0",
+          "canonical_expression": "15*t",
+          "part": "a"
+        },
+        {
+          "id": "rear",
+          "label": "Posición de la cola",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [
+            "15*t-120"
+          ],
+          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
+          "grading": "pending_review",
+          "variable": "t",
+          "variable_unit": "s",
+          "unit": "m",
+          "domain": "t ≥ 0",
+          "canonical_expression": "15*t-120",
+          "part": "a"
+        },
+        {
+          "id": "t",
+          "label": "Salida completa",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 20,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_u_009.svg",
+          "alt": "Tren en t=0; andén entre 0 y 180 m"
+        }
+      ],
+      "tags": [
+        "t1",
+        "u",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Cuándo sale el último vagón. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "MRU y movimiento relativo"
+      ],
+      "difficulty_reason": "Sigue dos puntos de un objeto largo; hay que identificar que sale cuando sale la cola.",
+      "common_mistakes": [
+        "Ignorar la longitud del tren",
+        "Usar la condición del frente para salida completa"
+      ],
+      "parts_count": 2,
+      "statement_source": "Un tren de 120 m avanza a 15 m/s hacia \\(+x\\). El andén ocupa \\(0≤x≤180\\) m. En \\(t=0\\) el frente del tren llega a \\(x=0\\). \n(a) Escribe x del frente y de la cola.\n(b) Calcula cuándo todo el tren abandona el andén y cuánto tiempo hay alguna parte del tren junto a él.",
+      "solution_source": "El frente sigue \\(x_f=15t\\) y la cola \\(x_c=15t−120 m\\).\n\nSalir completamente exige \\(x_c=180\\): 15t=300, \\(t=20 s\\).\n\nDesde el primer contacto hasta la salida transcurren 20 s. Usar solo 180/15=12 s calcula cuándo sale el frente, no la cola.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_u_010",
+      "number": 16,
+      "version": 1,
+      "title": "Paseo, parada y regreso",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "MRU y movimiento relativo",
+      "family": "u",
+      "subtype": "written_upload",
+      "difficulty": 3,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "tt",
+          "label": "Tiempo total",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 90,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "vm",
+          "label": "Velocidad media",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "um",
+          "label": "Rapidez media",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.3333333333333333,
+          "unit": "m/s",
+          "tolerance": 0.005,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_u_010.svg",
+          "alt": "Casa y biblioteca; ida y vuelta"
+        }
+      ],
+      "tags": [
+        "t1",
+        "u",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Paseo, parada y regreso. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "MRU y movimiento relativo"
+      ],
+      "difficulty_reason": "Tres tramos encadenados con reloj desplazado en el regreso.",
+      "common_mistakes": [
+        "Promediar velocidades sin ponderar tiempos",
+        "Borrar la posición durante la parada"
+      ],
+      "parts_count": 2,
+      "statement_source": "Con origen en casa y \\(+x\\) hacia la biblioteca: caminas a 2 m/s durante 30 s, paras 20 s y vuelves a 1,5 m/s hasta casa. \n(b) Completa: Tiempo total, Velocidad media, Rapidez media.",
+      "solution_source": "Ida: \\(x=2t\\) para \\(0≤t≤30\\). Parada: \\(x=60\\) para \\(30≤t≤50\\).\n\nRegreso: \\(x=60−1,5(t−50)\\); \\(x=0\\) da \\(t=90 s\\). Velocidades: +2,0,−1,5 m/s en los interiores de los tramos.\n\n\\(Δx=0\\); \\(d=120 m\\). \\(v_media=0/90=0\\) y rapidez \\(media=120/90=1,33 m/s\\). Las tres piezas de x enlazan.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_u_011",
+      "number": 17,
+      "version": 1,
+      "title": "Una raíz que no anuncia un encuentro",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "MRU y movimiento relativo",
+      "family": "u",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "root",
+          "label": "Raíz algebraica",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -15,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "sep",
+          "label": "Separación B−A a 5 s",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 40,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_u_011.svg",
+          "alt": "Dos móviles que se separan"
+        }
+      ],
+      "tags": [
+        "t1",
+        "u",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Una raíz que no anuncia un encuentro. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "MRU y movimiento relativo"
+      ],
+      "difficulty_reason": "Interpreta una raíz negativa al igualar dos ecuaciones de la posición.",
+      "common_mistakes": [
+        "Aceptar tiempos negativos sin discutir dominio",
+        "Interpretar una extrapolación como un suceso observado"
+      ],
+      "parts_count": 2,
+      "statement_source": "\\(+x\\) a la derecha. Desde \\(t=0,\\) A parte de \\(x=0\\) a +4 m/s y B de \\(x=30 m\\) a +6 m/s. \n(a) Resuelve \\(x_A=x_B\\).\n(b) Decide si hay encuentro en el movimiento descrito y calcula la separación a los 5 s.",
+      "solution_source": "4t=\\(30+6t\\) implica \\(t=−15 s\\).\n\nEl dominio físico empieza en 0; la raíz no pertenece a él.\n\nLa separación es \\(30+2t\\): a 5 s vale 40 m y crece.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_u_004",
+      "number": 18,
+      "version": 1,
+      "title": "Salida retardada y alcance",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "MRU y movimiento relativo",
+      "family": "u",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "t",
+          "label": "Instante global de alcance",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 20,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "tb",
+          "label": "Tiempo de marcha de B",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 12,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "x",
+          "label": "Posición de alcance",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 60,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_u_004.svg",
+          "alt": "Reloj común: B espera hasta 8 s"
+        }
+      ],
+      "tags": [
+        "t1",
+        "u",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Salida retardada y alcance. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "MRU y movimiento relativo"
+      ],
+      "difficulty_reason": "La ecuación de la posición de B empieza en t = 8 s: hay que escribir t − 8 y distinguir reloj común y tiempo de marcha.",
+      "common_mistakes": [
+        "Omitir el retraso en la función de B",
+        "Confundir 12 s con el instante global"
+      ],
+      "parts_count": 3,
+      "statement_source": "\\(+x\\) a la derecha. A sale del origen a 3 m/s en \\(t=0\\). B espera allí hasta \\(t=8 s\\) y sale a 5 m/s. \n(a) Completa: Instante global de alcance.\n(b) Halla cuándo B alcanza a A, tiempo que B lleva moviéndose y posición.",
+      "solution_source": "\\(x_A=3t\\); \\(x_B=0\\) si \\(0≤t≤8\\) y \\(x_B=5(t−8)\\) si t≥8.\n\n3t=5(t−8) da \\(t=20 s\\); B viaja 12 s; \\(x=60 m\\).\n\nEn \\(t=8\\) la ventaja es 24 m; cerrarla a 2 m/s tarda 12 s, consistente con el reloj global.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
       "id": "t1_u_007",
+      "number": 19,
       "version": 1,
       "title": "Programar una llegada",
       "course": "1bach",
@@ -593,7 +941,7 @@
       "block": "MRU y movimiento relativo",
       "family": "u",
       "subtype": "multi_step",
-      "difficulty": 3,
+      "difficulty": 4,
       "estimated_minutes": 10,
       "response_mode": "structured",
       "response_prompt": "Responde los apartados en sus campos.",
@@ -689,7 +1037,7 @@
         "T0: unidades, signos y álgebra",
         "MRU y movimiento relativo"
       ],
-      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar forzar t_s=0 aunque el reloj esté fijado.",
+      "difficulty_reason": "El reloj empieza antes de la salida: aparecen instantes negativos y una ecuación con t + 180.",
       "common_mistakes": [
         "Forzar t_s=0 aunque el reloj esté fijado",
         "Confundir ocho minutos con 480 minutos"
@@ -700,344 +1048,8 @@
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
-      "id": "t1_u_008",
-      "version": 1,
-      "title": "Datos en kilómetros y minutos",
-      "course": "1bach",
-      "topic": "t1",
-      "concept": "Movimiento rectilíneo",
-      "block": "MRU y movimiento relativo",
-      "family": "u",
-      "subtype": "multi_step",
-      "difficulty": 2,
-      "estimated_minutes": 8,
-      "response_mode": "structured",
-      "response_prompt": "Responde los apartados en sus campos.",
-      "response_fields": [
-        {
-          "id": "v",
-          "label": "Velocidad",
-          "type": "numeric",
-          "required": true,
-          "expected_value": -10,
-          "unit": "m/s",
-          "tolerance": 0.01,
-          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
-          "significant_figures": 3,
-          "part": "a"
-        },
-        {
-          "id": "x",
-          "label": "Posición SI",
-          "type": "function",
-          "response_kind": "function",
-          "required": true,
-          "accepted_forms": [
-            "2400-10*t"
-          ],
-          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
-          "grading": "pending_review",
-          "variable": "t",
-          "variable_unit": "s",
-          "unit": "m",
-          "domain": "t ≥ 0",
-          "canonical_expression": "2400-10*t",
-          "part": "b"
-        },
-        {
-          "id": "t",
-          "label": "Paso por el origen",
-          "type": "numeric",
-          "required": true,
-          "expected_value": 240,
-          "unit": "s",
-          "tolerance": 0.1,
-          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
-          "significant_figures": 3,
-          "part": "b"
-        }
-      ],
-      "assets": [],
-      "tags": [
-        "t1",
-        "u",
-        "cinematica"
-      ],
-      "origin": {
-        "kind": "original_teacher_bank",
-        "reference": null,
-        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
-      },
-      "status": "draft",
-      "learning_objective": "Datos en kilómetros y minutos. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
-      "prerequisites": [
-        "T0: unidades, signos y álgebra",
-        "MRU y movimiento relativo"
-      ],
-      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar mantener minutos en una función si.",
-      "common_mistakes": [
-        "Mantener minutos en una función SI",
-        "Calcular rapidez y olvidar el sentido"
-      ],
-      "parts_count": 2,
-      "statement_source": "\\(+x\\) hacia el norte. Un vehículo pasa por el km 2,4 en \\(t=0\\) y por el km 0,9 a los 2,5 min, con MRU. \n(a) Deduce v en SI.\n(b) Escribe \\(x(t)\\) en metros y calcula cuándo cruza el km 0.",
-      "solution_source": "\\(Δx=900−2400=−1500 m\\) y \\(Δt=150 s\\): \\(v=−10 m/s\\).\n\n\\(x=2400−10t\\); \\(x=0\\) exige \\(t=240 s\\)=4 min.\n\nCruza después del segundo registro, coherente con avanzar hacia posiciones menores.",
-      "solution_reference": "Elaboración propia; revisión matemática documentada."
-    },
-    {
-      "id": "t1_u_009",
-      "version": 1,
-      "title": "Cuándo sale el último vagón",
-      "course": "1bach",
-      "topic": "t1",
-      "concept": "Movimiento rectilíneo",
-      "block": "MRU y movimiento relativo",
-      "family": "u",
-      "subtype": "written_upload",
-      "difficulty": 4,
-      "estimated_minutes": 13,
-      "response_mode": "structured",
-      "response_prompt": "Responde los apartados en sus campos.",
-      "response_fields": [
-        {
-          "id": "front",
-          "label": "Posición del frente",
-          "type": "function",
-          "response_kind": "function",
-          "required": true,
-          "accepted_forms": [
-            "15*t"
-          ],
-          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
-          "grading": "pending_review",
-          "variable": "t",
-          "variable_unit": "s",
-          "unit": "m",
-          "domain": "t ≥ 0",
-          "canonical_expression": "15*t",
-          "part": "a"
-        },
-        {
-          "id": "rear",
-          "label": "Posición de la cola",
-          "type": "function",
-          "response_kind": "function",
-          "required": true,
-          "accepted_forms": [
-            "15*t-120"
-          ],
-          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
-          "grading": "pending_review",
-          "variable": "t",
-          "variable_unit": "s",
-          "unit": "m",
-          "domain": "t ≥ 0",
-          "canonical_expression": "15*t-120",
-          "part": "a"
-        },
-        {
-          "id": "t",
-          "label": "Salida completa",
-          "type": "numeric",
-          "required": true,
-          "expected_value": 20,
-          "unit": "s",
-          "tolerance": 0.01,
-          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
-          "significant_figures": 3,
-          "part": "b"
-        }
-      ],
-      "assets": [
-        {
-          "path": "static/exercises/1bach/t1/assets/t1_u_009.svg",
-          "alt": "Tren en t=0; andén entre 0 y 180 m"
-        }
-      ],
-      "tags": [
-        "t1",
-        "u",
-        "cinematica"
-      ],
-      "origin": {
-        "kind": "original_teacher_bank",
-        "reference": null,
-        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
-      },
-      "status": "draft",
-      "learning_objective": "Cuándo sale el último vagón. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
-      "prerequisites": [
-        "T0: unidades, signos y álgebra",
-        "MRU y movimiento relativo"
-      ],
-      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar ignorar la longitud del tren.",
-      "common_mistakes": [
-        "Ignorar la longitud del tren",
-        "Usar la condición del frente para salida completa"
-      ],
-      "parts_count": 2,
-      "statement_source": "Un tren de 120 m avanza a 15 m/s hacia \\(+x\\). El andén ocupa \\(0≤x≤180\\) m. En \\(t=0\\) el frente del tren llega a \\(x=0\\). \n(a) Escribe x del frente y de la cola.\n(b) Calcula cuándo todo el tren abandona el andén y cuánto tiempo hay alguna parte del tren junto a él.",
-      "solution_source": "El frente sigue \\(x_f=15t\\) y la cola \\(x_c=15t−120 m\\).\n\nSalir completamente exige \\(x_c=180\\): 15t=300, \\(t=20 s\\).\n\nDesde el primer contacto hasta la salida transcurren 20 s. Usar solo 180/15=12 s calcula cuándo sale el frente, no la cola.",
-      "solution_reference": "Elaboración propia; revisión matemática documentada."
-    },
-    {
-      "id": "t1_u_010",
-      "version": 1,
-      "title": "Paseo, parada y regreso",
-      "course": "1bach",
-      "topic": "t1",
-      "concept": "Movimiento rectilíneo",
-      "block": "MRU y movimiento relativo",
-      "family": "u",
-      "subtype": "written_upload",
-      "difficulty": 4,
-      "estimated_minutes": 13,
-      "response_mode": "structured",
-      "response_prompt": "Responde los apartados en sus campos.",
-      "response_fields": [
-        {
-          "id": "tt",
-          "label": "Tiempo total",
-          "type": "numeric",
-          "required": true,
-          "expected_value": 90,
-          "unit": "s",
-          "tolerance": 0.01,
-          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
-          "significant_figures": 3,
-          "part": "b"
-        },
-        {
-          "id": "vm",
-          "label": "Velocidad media",
-          "type": "numeric",
-          "required": true,
-          "expected_value": 0,
-          "unit": "m/s",
-          "tolerance": 0.01,
-          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
-          "significant_figures": 3,
-          "part": "b"
-        },
-        {
-          "id": "um",
-          "label": "Rapidez media",
-          "type": "numeric",
-          "required": true,
-          "expected_value": 1.3333333333333333,
-          "unit": "m/s",
-          "tolerance": 0.005,
-          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
-          "significant_figures": 3,
-          "part": "b"
-        }
-      ],
-      "assets": [
-        {
-          "path": "static/exercises/1bach/t1/assets/t1_u_010.svg",
-          "alt": "Casa y biblioteca; ida y vuelta"
-        }
-      ],
-      "tags": [
-        "t1",
-        "u",
-        "cinematica"
-      ],
-      "origin": {
-        "kind": "original_teacher_bank",
-        "reference": null,
-        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
-      },
-      "status": "draft",
-      "learning_objective": "Paseo, parada y regreso. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
-      "prerequisites": [
-        "T0: unidades, signos y álgebra",
-        "MRU y movimiento relativo"
-      ],
-      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar promediar velocidades sin ponderar tiempos.",
-      "common_mistakes": [
-        "Promediar velocidades sin ponderar tiempos",
-        "Borrar la posición durante la parada"
-      ],
-      "parts_count": 2,
-      "statement_source": "Con origen en casa y \\(+x\\) hacia la biblioteca: caminas a 2 m/s durante 30 s, paras 20 s y vuelves a 1,5 m/s hasta casa. \n(b) Completa: Tiempo total, Velocidad media, Rapidez media.",
-      "solution_source": "Ida: \\(x=2t\\) para \\(0≤t≤30\\). Parada: \\(x=60\\) para \\(30≤t≤50\\).\n\nRegreso: \\(x=60−1,5(t−50)\\); \\(x=0\\) da \\(t=90 s\\). Velocidades: +2,0,−1,5 m/s en los interiores de los tramos.\n\n\\(Δx=0\\); \\(d=120 m\\). \\(v_media=0/90=0\\) y rapidez \\(media=120/90=1,33 m/s\\). Las tres piezas de x enlazan.",
-      "solution_reference": "Elaboración propia; revisión matemática documentada."
-    },
-    {
-      "id": "t1_u_011",
-      "version": 1,
-      "title": "Una raíz que no anuncia un encuentro",
-      "course": "1bach",
-      "topic": "t1",
-      "concept": "Movimiento rectilíneo",
-      "block": "MRU y movimiento relativo",
-      "family": "u",
-      "subtype": "multi_step",
-      "difficulty": 3,
-      "estimated_minutes": 9,
-      "response_mode": "structured",
-      "response_prompt": "Responde los apartados en sus campos.",
-      "response_fields": [
-        {
-          "id": "root",
-          "label": "Raíz algebraica",
-          "type": "numeric",
-          "required": true,
-          "expected_value": -15,
-          "unit": "s",
-          "tolerance": 0.01,
-          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
-          "significant_figures": 3,
-          "part": "a"
-        },
-        {
-          "id": "sep",
-          "label": "Separación B−A a 5 s",
-          "type": "numeric",
-          "required": true,
-          "expected_value": 40,
-          "unit": "m",
-          "tolerance": 0.01,
-          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
-          "significant_figures": 3,
-          "part": "b"
-        }
-      ],
-      "assets": [
-        {
-          "path": "static/exercises/1bach/t1/assets/t1_u_011.svg",
-          "alt": "Dos móviles que se separan"
-        }
-      ],
-      "tags": [
-        "t1",
-        "u",
-        "cinematica"
-      ],
-      "origin": {
-        "kind": "original_teacher_bank",
-        "reference": null,
-        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
-      },
-      "status": "draft",
-      "learning_objective": "Una raíz que no anuncia un encuentro. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
-      "prerequisites": [
-        "T0: unidades, signos y álgebra",
-        "MRU y movimiento relativo"
-      ],
-      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar aceptar tiempos negativos sin discutir dominio.",
-      "common_mistakes": [
-        "Aceptar tiempos negativos sin discutir dominio",
-        "Interpretar una extrapolación como un suceso observado"
-      ],
-      "parts_count": 2,
-      "statement_source": "\\(+x\\) a la derecha. Desde \\(t=0,\\) A parte de \\(x=0\\) a +4 m/s y B de \\(x=30 m\\) a +6 m/s. \n(a) Resuelve \\(x_A=x_B\\).\n(b) Decide si hay encuentro en el movimiento descrito y calcula la separación a los 5 s.",
-      "solution_source": "4t=\\(30+6t\\) implica \\(t=−15 s\\).\n\nEl dominio físico empieza en 0; la raíz no pertenece a él.\n\nLa separación es \\(30+2t\\): a 5 s vale 40 m y crece.",
-      "solution_reference": "Elaboración propia; revisión matemática documentada."
-    },
-    {
       "id": "t1_u_012",
+      "number": 20,
       "version": 1,
       "title": "Diseñar la velocidad de un alcance",
       "course": "1bach",
@@ -1116,7 +1128,7 @@
         "T0: unidades, signos y álgebra",
         "MRU y movimiento relativo"
       ],
-      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar usar todo el tiempo global como tiempo de marcha.",
+      "difficulty_reason": "Diseño inverso: la incógnita es la velocidad, con una ecuación de la posición que empieza en t = 5 s.",
       "common_mistakes": [
         "Usar todo el tiempo global como tiempo de marcha",
         "Resolver un alcance sin imponer el instante requerido"

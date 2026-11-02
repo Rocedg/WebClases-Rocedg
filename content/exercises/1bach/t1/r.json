@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t1_r_001",
+      "number": 1,
       "version": 1,
       "title": "La estación como origen",
       "course": "1bach",
@@ -10,7 +11,7 @@
       "block": "Referencia y posición",
       "family": "r",
       "subtype": "multi_step",
-      "difficulty": 2,
+      "difficulty": 1,
       "estimated_minutes": 7,
       "response_mode": "structured",
       "response_prompt": "Responde los apartados en sus campos.",
@@ -86,7 +87,7 @@
         "T0: unidades, signos y álgebra",
         "Referencia y posición"
       ],
-      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar asignar signo positivo a ambos lados del origen.",
+      "difficulty_reason": "Solo exige leer posiciones con signo y distinguir desplazamiento de distancia.",
       "common_mistakes": [
         "Asignar signo positivo a ambos lados del origen",
         "Confundir desplazamiento con distancia"
@@ -98,6 +99,7 @@
     },
     {
       "id": "t1_r_002",
+      "number": 2,
       "version": 1,
       "title": "Ida, vuelta y avance neto",
       "course": "1bach",
@@ -106,7 +108,7 @@
       "block": "Referencia y posición",
       "family": "r",
       "subtype": "multi_step",
-      "difficulty": 2,
+      "difficulty": 1,
       "estimated_minutes": 8,
       "response_mode": "structured",
       "response_prompt": "Responde los apartados en sus campos.",
@@ -182,7 +184,7 @@
         "T0: unidades, signos y álgebra",
         "Referencia y posición"
       ],
-      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar sumar posiciones en vez de longitudes de tramos.",
+      "difficulty_reason": "Tres posiciones dadas; basta restar extremos y sumar tramos.",
       "common_mistakes": [
         "Sumar posiciones en vez de longitudes de tramos",
         "Usar distancia para la velocidad media"
@@ -194,6 +196,7 @@
     },
     {
       "id": "t1_r_003",
+      "number": 3,
       "version": 1,
       "title": "De tabla a ley de posición",
       "course": "1bach",
@@ -202,7 +205,7 @@
       "block": "Referencia y posición",
       "family": "r",
       "subtype": "written_upload",
-      "difficulty": 3,
+      "difficulty": 2,
       "estimated_minutes": 10,
       "response_mode": "structured",
       "response_prompt": "Responde los apartados en sus campos.",
@@ -261,7 +264,7 @@
         "T0: unidades, signos y álgebra",
         "Referencia y posición"
       ],
-      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar calcular x/t con origen desplazado.",
+      "difficulty_reason": "Construye la ecuación de la posición del MRU a partir de una tabla y la usa para predecir.",
       "common_mistakes": [
         "Calcular x/t con origen desplazado",
         "Tratar la extrapolación como un hecho medido"
@@ -273,6 +276,7 @@
     },
     {
       "id": "t1_r_004",
+      "number": 4,
       "version": 1,
       "title": "Una función también se puede leer al revés",
       "course": "1bach",
@@ -369,7 +373,7 @@
         "T0: unidades, signos y álgebra",
         "Referencia y posición"
       ],
-      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar identificar x=0 con detenerse.",
+      "difficulty_reason": "Sustituir en la ecuación, resolver x = 0 y derivar; exige no confundir x = 0 con detenerse.",
       "common_mistakes": [
         "Identificar x=0 con detenerse",
         "Perder el signo de la pendiente"
@@ -379,7 +383,174 @@
       "solution_source": "Sustituyendo los tiempos se obtiene \\(x(0)=18\\,\\mathrm{m}\\), \\(x(4)=10\\,\\mathrm{m}\\) y \\(x(10)=-2\\,\\mathrm{m}\\).\n\n\\[0=18-2t\\quad\\Rightarrow\\quad t=9\\,\\mathrm{s}\\]\n\nLa velocidad es la pendiente: \\(v=dx/dt=-2\\,\\mathrm{m/s}\\). Pasar por el origen no significa detenerse."
     },
     {
+      "id": "t1_r_006",
+      "number": 5,
+      "version": 1,
+      "title": "Tres signos, tres informaciones",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "Referencia y posición",
+      "family": "r",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "signa",
+          "label": "Signos de A",
+          "type": "short_text",
+          "response_kind": "text",
+          "required": true,
+          "accepted_forms": [
+            "x<0, v>0, a<0"
+          ],
+          "correction_criteria": "x<0, v>0, a<0",
+          "grading": "pending_review",
+          "part": "a"
+        },
+        {
+          "id": "va",
+          "label": "Velocidad A a 1 s",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "vb",
+          "label": "Velocidad B a 1 s",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -3,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_r_006.svg",
+          "alt": "A a la izquierda; B a la derecha"
+        }
+      ],
+      "tags": [
+        "t1",
+        "r",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Tres signos, tres informaciones. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Referencia y posición"
+      ],
+      "difficulty_reason": "Interpreta la tabla de signos de v y a y deriva dos ecuaciones de la posición sencillas.",
+      "common_mistakes": [
+        "Interpretar a negativa como frenada siempre",
+        "Inferir velocidad a partir del signo de posición"
+      ],
+      "parts_count": 2,
+      "statement_source": "\\(+x\\) hacia la derecha. A está en \\(x=−5 m\\), se mueve a +3 m/s y frena con \\(a=−1 m/s²\\); B está en \\(x=4 m\\), se mueve a −2 m/s y tiene \\(a=−1 m/s²\\). \n(a) Clasifica el signo de x,v,a de cada móvil.\n(b) Completa: Velocidad A a 1 s, Velocidad B a 1 s.",
+      "solution_source": "La posición no fija el signo de v ni de a. A: (x<0,v>0,a<0); B: (x>0,v<0,a<0).\n\n\\(v_A(1)=3−1=2 m/s\\); \\(v_B(1)=−2−1=−3 m/s\\).\n\nA frena porque v·a<0; B aumenta rapidez porque v·a>0.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_r_007",
+      "number": 6,
+      "version": 1,
+      "title": "Completar la representación que falta",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "Referencia y posición",
+      "family": "r",
+      "subtype": "written_upload",
+      "difficulty": 2,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "func",
+          "label": "Posición por tramos",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [
+            "2+3*t (0<=t<=4); 14 (4<t<=6)"
+          ],
+          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
+          "grading": "pending_review",
+          "variable": "t",
+          "variable_unit": "s",
+          "unit": "m",
+          "domain": "0≤t≤6",
+          "canonical_expression": "2+3*t (0<=t<=4); 14 (4<t<=6)",
+          "part": "b"
+        },
+        {
+          "id": "tabla",
+          "label": "Tabla de posiciones",
+          "type": "short_text",
+          "response_kind": "text",
+          "required": true,
+          "accepted_forms": [
+            "2; 8; 14; 14 m"
+          ],
+          "correction_criteria": "2; 8; 14; 14 m",
+          "grading": "pending_review",
+          "part": "a"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_r_007.svg",
+          "alt": "Datos para completar el movimiento"
+        }
+      ],
+      "tags": [
+        "t1",
+        "r",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Completar la representación que falta. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Referencia y posición"
+      ],
+      "difficulty_reason": "Dos tramos sencillos; la dificultad es mantener la posición al pararse.",
+      "common_mistakes": [
+        "Dibujar x=0 durante la parada",
+        "Introducir un salto de posición"
+      ],
+      "parts_count": 2,
+      "statement_source": "Un carrito parte de \\(x=2 m\\) con \\(+x\\) a la derecha, avanza uniformemente 3 m cada segundo durante 4 s y permanece quieto hasta \\(t=6 s\\). \n(a) Completa la tabla para \\(t=0,2,4,6 s\\).\n(b) Completa: Posición por tramos.",
+      "solution_source": "En marcha \\(x=2+3t\\); al llegar a \\(t=4,\\) \\(x=14 m\\).\n\nEn reposo \\(x=14 m\\), no \\(x=0\\). Tabla: 2,8,14,14 m.\n\nx-t es continua con cambio de pendiente; v-t salta idealmente de 3 a 0 m/s en \\(t=4\\).",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
       "id": "t1_r_005",
+      "number": 7,
       "version": 1,
       "title": "Trasladar e invertir un eje",
       "course": "1bach",
@@ -388,7 +559,7 @@
       "block": "Referencia y posición",
       "family": "r",
       "subtype": "written_upload",
-      "difficulty": 4,
+      "difficulty": 3,
       "estimated_minutes": 12,
       "response_mode": "structured",
       "response_prompt": "Responde los apartados en sus campos.",
@@ -483,7 +654,7 @@
         "T0: unidades, signos y álgebra",
         "Referencia y posición"
       ],
-      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar cambiar origen sin invertir el sentido.",
+      "difficulty_reason": "Cambia de sistema de referencia (traslación e inversión) y compara magnitudes que cambian de signo con las que no.",
       "common_mistakes": [
         "Cambiar origen sin invertir el sentido",
         "Afirmar que cambia la distancia"
@@ -494,171 +665,8 @@
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
-      "id": "t1_r_006",
-      "version": 1,
-      "title": "Tres signos, tres informaciones",
-      "course": "1bach",
-      "topic": "t1",
-      "concept": "Movimiento rectilíneo",
-      "block": "Referencia y posición",
-      "family": "r",
-      "subtype": "multi_step",
-      "difficulty": 3,
-      "estimated_minutes": 9,
-      "response_mode": "structured",
-      "response_prompt": "Responde los apartados en sus campos.",
-      "response_fields": [
-        {
-          "id": "signa",
-          "label": "Signos de A",
-          "type": "short_text",
-          "response_kind": "text",
-          "required": true,
-          "accepted_forms": [
-            "x<0, v>0, a<0"
-          ],
-          "correction_criteria": "x<0, v>0, a<0",
-          "grading": "pending_review",
-          "part": "a"
-        },
-        {
-          "id": "va",
-          "label": "Velocidad A a 1 s",
-          "type": "numeric",
-          "required": true,
-          "expected_value": 2,
-          "unit": "m/s",
-          "tolerance": 0.01,
-          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
-          "significant_figures": 3,
-          "part": "b"
-        },
-        {
-          "id": "vb",
-          "label": "Velocidad B a 1 s",
-          "type": "numeric",
-          "required": true,
-          "expected_value": -3,
-          "unit": "m/s",
-          "tolerance": 0.01,
-          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
-          "significant_figures": 3,
-          "part": "b"
-        }
-      ],
-      "assets": [
-        {
-          "path": "static/exercises/1bach/t1/assets/t1_r_006.svg",
-          "alt": "A a la izquierda; B a la derecha"
-        }
-      ],
-      "tags": [
-        "t1",
-        "r",
-        "cinematica"
-      ],
-      "origin": {
-        "kind": "original_teacher_bank",
-        "reference": null,
-        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
-      },
-      "status": "draft",
-      "learning_objective": "Tres signos, tres informaciones. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
-      "prerequisites": [
-        "T0: unidades, signos y álgebra",
-        "Referencia y posición"
-      ],
-      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar interpretar a negativa como frenada siempre.",
-      "common_mistakes": [
-        "Interpretar a negativa como frenada siempre",
-        "Inferir velocidad a partir del signo de posición"
-      ],
-      "parts_count": 2,
-      "statement_source": "\\(+x\\) hacia la derecha. A está en \\(x=−5 m\\), se mueve a +3 m/s y frena con \\(a=−1 m/s²\\); B está en \\(x=4 m\\), se mueve a −2 m/s y tiene \\(a=−1 m/s²\\). \n(a) Clasifica el signo de x,v,a de cada móvil.\n(b) Completa: Velocidad A a 1 s, Velocidad B a 1 s.",
-      "solution_source": "La posición no fija el signo de v ni de a. A: (x<0,v>0,a<0); B: (x>0,v<0,a<0).\n\n\\(v_A(1)=3−1=2 m/s\\); \\(v_B(1)=−2−1=−3 m/s\\).\n\nA frena porque v·a<0; B aumenta rapidez porque v·a>0.",
-      "solution_reference": "Elaboración propia; revisión matemática documentada."
-    },
-    {
-      "id": "t1_r_007",
-      "version": 1,
-      "title": "Completar la representación que falta",
-      "course": "1bach",
-      "topic": "t1",
-      "concept": "Movimiento rectilíneo",
-      "block": "Referencia y posición",
-      "family": "r",
-      "subtype": "written_upload",
-      "difficulty": 3,
-      "estimated_minutes": 10,
-      "response_mode": "structured",
-      "response_prompt": "Responde los apartados en sus campos.",
-      "response_fields": [
-        {
-          "id": "func",
-          "label": "Posición por tramos",
-          "type": "function",
-          "response_kind": "function",
-          "required": true,
-          "accepted_forms": [
-            "2+3*t (0<=t<=4); 14 (4<t<=6)"
-          ],
-          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
-          "grading": "pending_review",
-          "variable": "t",
-          "variable_unit": "s",
-          "unit": "m",
-          "domain": "0≤t≤6",
-          "canonical_expression": "2+3*t (0<=t<=4); 14 (4<t<=6)",
-          "part": "b"
-        },
-        {
-          "id": "tabla",
-          "label": "Tabla de posiciones",
-          "type": "short_text",
-          "response_kind": "text",
-          "required": true,
-          "accepted_forms": [
-            "2; 8; 14; 14 m"
-          ],
-          "correction_criteria": "2; 8; 14; 14 m",
-          "grading": "pending_review",
-          "part": "a"
-        }
-      ],
-      "assets": [
-        {
-          "path": "static/exercises/1bach/t1/assets/t1_r_007.svg",
-          "alt": "Datos para completar el movimiento"
-        }
-      ],
-      "tags": [
-        "t1",
-        "r",
-        "cinematica"
-      ],
-      "origin": {
-        "kind": "original_teacher_bank",
-        "reference": null,
-        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
-      },
-      "status": "draft",
-      "learning_objective": "Completar la representación que falta. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
-      "prerequisites": [
-        "T0: unidades, signos y álgebra",
-        "Referencia y posición"
-      ],
-      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar dibujar x=0 durante la parada.",
-      "common_mistakes": [
-        "Dibujar x=0 durante la parada",
-        "Introducir un salto de posición"
-      ],
-      "parts_count": 2,
-      "statement_source": "Un carrito parte de \\(x=2 m\\) con \\(+x\\) a la derecha, avanza uniformemente 3 m cada segundo durante 4 s y permanece quieto hasta \\(t=6 s\\). \n(a) Completa la tabla para \\(t=0,2,4,6 s\\).\n(b) Completa: Posición por tramos.",
-      "solution_source": "En marcha \\(x=2+3t\\); al llegar a \\(t=4,\\) \\(x=14 m\\).\n\nEn reposo \\(x=14 m\\), no \\(x=0\\). Tabla: 2,8,14,14 m.\n\nx-t es continua con cambio de pendiente; v-t salta idealmente de 3 a 0 m/s en \\(t=4\\).",
-      "solution_reference": "Elaboración propia; revisión matemática documentada."
-    },
-    {
       "id": "t1_r_008",
+      "number": 8,
       "version": 1,
       "title": "Auditoría de una gráfica",
       "course": "1bach",
@@ -737,7 +745,7 @@
         "T0: unidades, signos y álgebra",
         "Referencia y posición"
       ],
-      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar modificar el eje para salvar una gráfica incorrecta.",
+      "difficulty_reason": "Revisa una gráfica ajena: hay que detectar un error de signo en la pendiente.",
       "common_mistakes": [
         "Modificar el eje para salvar una gráfica incorrecta",
         "Usar rapidez positiva como velocidad"

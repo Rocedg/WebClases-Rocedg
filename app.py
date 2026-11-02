@@ -460,6 +460,13 @@ def exercise_titles_by_id():
     return titles
 
 
+def exercise_numbers_by_id():
+    return {
+        str(exercise.get('id')): exercise_number(exercise)
+        for exercise in load_exercise_catalogue().get('exercises', [])
+    }
+
+
 def active_exercise_ids():
     return {
         str(exercise.get('id'))
@@ -1163,6 +1170,7 @@ def exercise_attempt_history():
         'user/exercise_history.html',
         attempts=attempts,
         exercise_titles=exercise_titles_by_id(),
+        exercise_numbers=exercise_numbers_by_id(),
         active_exercise_ids=active_exercise_ids(),
     )
 

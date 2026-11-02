@@ -329,7 +329,7 @@ def test_homework_filter_by_course_topic_difficulty_status_and_invalid_value():
 
     course = client.get("/homework?course=1bach")
     topic = client.get("/homework?topic=t1")
-    difficulty = client.get("/homework?difficulty=2")
+    difficulty = client.get("/homework?difficulty=1")
     status = client.get("/homework?status=started")
     invalid = client.get("/homework?course=nope")
 
