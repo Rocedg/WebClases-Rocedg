@@ -1,7 +1,7 @@
 {
   "version": 1,
   "generated": true,
-  "generated_at": "2026-11-02T21:52:31Z",
+  "generated_at": "2026-11-02T21:52:33Z",
   "source": "content/exercises",
   "exercises": [
     {
@@ -4154,7 +4154,7 @@
     },
     {
       "id": "t1_i_005",
-      "version": 1,
+      "version": 2,
       "title": "Ascensor con destino fijado por áreas",
       "course": "1bach",
       "block": "Problemas integradores",

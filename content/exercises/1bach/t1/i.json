@@ -18,7 +18,7 @@
       "response_fields": [
         {
           "id": "da",
-          "label": "Distancia A",
+          "label": "Distancia de frenada de A",
           "type": "numeric",
           "required": true,
           "expected_value": 18,
@@ -30,7 +30,7 @@
         },
         {
           "id": "db",
-          "label": "Distancia B",
+          "label": "Distancia de frenada de B",
           "type": "numeric",
           "required": true,
           "expected_value": 36,
@@ -38,11 +38,11 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "b"
+          "part": "a"
         },
         {
           "id": "xa4",
-          "label": "X A(4)",
+          "label": "Posición de A en \\(t=4\\,\\mathrm{s}\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 18,
@@ -50,11 +50,11 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "c"
+          "part": "b"
         },
         {
           "id": "xb4",
-          "label": "X B(4)",
+          "label": "Posición de B en \\(t=4\\,\\mathrm{s}\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 32,
@@ -62,13 +62,13 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "c"
+          "part": "b"
         }
       ],
       "assets": [
         {
           "path": "static/exercises/1bach/t1/assets/t1_i_009.svg",
-          "alt": "Dos frenadas desde 12 m/s"
+          "alt": "Gráfica v–t: A frena de 12 m/s a 0 en 3 s y B de 12 m/s a 0 en 6 s."
         }
       ],
       "tags": [
@@ -92,9 +92,9 @@
         "Aplicar la parábola de A después de 3 s",
         "Comparar distancias usando solo la rapidez inicial"
       ],
-      "parts_count": 3,
-      "statement_source": "Dos pruebas independientes comienzan en \\(x=0\\) con \\(+x\\) hacia delante y \\(v_0=12 m/s\\). A frena uniformemente hasta parar en 3 s; B hasta parar en 6 s. \n(a) Completa: Distancia A.\n(b) Escribe sus posiciones con reposo posterior.\n(c) Completa: X A(4), X B(4).",
-      "solution_source": "A tiene \\(a=−4 m/s²\\) y área 12·3/2=18 m; B \\(a=−2 m/s²\\) y área 12·6/2=36 m.\n\nA: \\(x=12t−2t²\\) hasta 3 s y 18 m después. B: \\(x=12t−t²\\) hasta 6 s y 36 m después.\n\nEn \\(t=4,\\) \\(x_A=18 m\\),\\(x_B=48−16=32 m\\). A ya está parado; B sigue a 4 m/s. Igual rapidez inicial no implica igual distancia de parada.",
+      "parts_count": 2,
+      "statement_source": "Dos coches de prueba frenan en una pista recta. En los dos casos el origen es el punto donde empiezan a frenar, \\(+x\\) hacia delante, \\(t=0\\) al empezar a frenar y \\(v_0=12\\,\\mathrm{m/s}\\). A frena de manera uniforme hasta pararse en \\(3\\,\\mathrm{s}\\); B, en \\(6\\,\\mathrm{s}\\). Una vez parados, se quedan quietos.\n\nDerivando la ecuación de la posición, la velocidad de cada coche es \\(v=12+at\\) y vale cero en su instante de parada: de ahí sale su aceleración.\n\n(a) Calcula la distancia de frenada de A y la de B.\n(b) Calcula la posición de cada coche en \\(t=4\\,\\mathrm{s}\\).",
+      "solution_source": "(a) A: \\(12+3a=0\\Rightarrow a=-4\\,\\mathrm{m/s^2}\\), \\(x_A=12t-2t^2\\) y \\(x_A(3)=36-18=18{,}0\\,\\mathrm{m}\\). B: \\(a=-2\\,\\mathrm{m/s^2}\\), \\(x_B=12t-t^2\\) y \\(x_B(6)=72-36=36{,}0\\,\\mathrm{m}\\).\n(b) A lleva parado desde \\(t=3\\,\\mathrm{s}\\): \\(x_A(4)=18{,}0\\,\\mathrm{m}\\). B sigue frenando: \\(x_B(4)=48-16=32{,}0\\,\\mathrm{m}\\), y aún va a \\(12-8=4\\,\\mathrm{m/s}\\). Con la misma velocidad inicial, la frenada más suave necesita el doble de distancia.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -115,7 +115,7 @@
       "response_fields": [
         {
           "id": "time",
-          "label": "Duración",
+          "label": "Duración total",
           "type": "numeric",
           "required": true,
           "expected_value": 165,
@@ -123,11 +123,11 @@
           "tolerance": 0.1,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "b"
+          "part": "a"
         },
         {
           "id": "d",
-          "label": "Distancia",
+          "label": "Distancia entre estaciones",
           "type": "numeric",
           "required": true,
           "expected_value": 2850,
@@ -153,7 +153,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t1/assets/t1_i_001.svg",
-          "alt": "Programa de aceleraciones del tren"
+          "alt": "Esquema de tres tramos: acelera a 0,8 m/s² durante 25 s, mantiene la velocidad 120 s y frena a −1 m/s² hasta parar."
         }
       ],
       "tags": [
@@ -174,12 +174,12 @@
       ],
       "difficulty_reason": "Tres ecuaciones de la posición encadenadas con parada final; medias del viaje.",
       "common_mistakes": [
-        "Usar tiempo global dentro de una ley de tramo local",
+        "Usar tiempo global dentro de la ecuación de un tramo con su reloj local",
         "Omitir las distancias de arranque y frenada"
       ],
-      "parts_count": 3,
-      "statement_source": "Origen en la estación de salida, \\(+x\\) hacia destino, \\(t=0\\) al arrancar. Tren en reposo: acelera a 0,8 m/s² durante 25 s, mantiene la velocidad 120 s y frena a −1 m/s² hasta parar. \n(b) Calcula duración, distancia y rapidez media.",
-      "solution_source": "Arranque: \\(v=0,8t,x=0,4t²\\); en 25 s, \\(v=20 m/s\\),\\(x=250 m\\). Crucero hasta \\(t=145\\): \\(x=250+20(t−25),v=20\\); \\(x=2650 m\\).\n\nFrenada \\(τ=t−145\\): \\(v=20−τ,x=2650+20τ−0,5τ²\\); \\(τ_f=20 s\\). Final \\(t=165 s\\),\\(x=2850 m\\); después queda en reposo.\n\nÁreas: \\(250+2400+200\\)=2850 m. Rapidez \\(media=2850/165=17,3 m/s\\). x y v enlazan en cada cambio; la rapidez media es menor que 20 m/s.",
+      "parts_count": 2,
+      "statement_source": "Un tren de cercanías sale de una estación por una vía recta. El origen está en la estación, \\(+x\\) hacia el destino y \\(t=0\\) al arrancar desde el reposo. Acelera a \\(0{,}8\\,\\mathrm{m/s^2}\\) durante \\(25\\,\\mathrm{s}\\), mantiene la velocidad alcanzada durante \\(120\\,\\mathrm{s}\\) y frena a \\(-1\\,\\mathrm{m/s^2}\\) hasta pararse en la estación siguiente.\n\nSon tres tramos con tres ecuaciones de la posición encadenadas: cada una empieza con la posición y la velocidad finales de la anterior.\n\n(a) Calcula la duración total del viaje. Primer paso: calcula la velocidad de crucero y, derivando la ecuación de la posición de la frenada, cuánto dura esta.\n(b) Calcula la distancia entre las estaciones y la rapidez media del viaje, con tres cifras significativas.",
+      "solution_source": "(a) Arranque: \\(x=0{,}4t^2\\), \\(v=0{,}8t\\); en \\(t=25\\,\\mathrm{s}\\), \\(v=20\\,\\mathrm{m/s}\\) y \\(x=250\\,\\mathrm{m}\\). Crucero hasta \\(t=145\\,\\mathrm{s}\\): \\(x=250+20(t-25)\\), que acaba en \\(2650\\,\\mathrm{m}\\). Frenada con \\(\\tau=t-145\\): \\(x=2650+20\\tau-0{,}5\\tau^2\\), \\(v=20-\\tau=0\\Rightarrow\\tau=20\\,\\mathrm{s}\\). Duración: \\(145+20=165\\,\\mathrm{s}\\).\n(b) \\(x(\\tau=20)=2650+400-200=2850\\,\\mathrm{m}\\). Rapidez media: \\(\\dfrac{2850}{165}=17{,}3\\,\\mathrm{m/s}\\), menor que la de crucero.\n\nComprobación con áreas bajo \\(v(t)\\): \\(250+2400+200=2850\\,\\mathrm{m}\\).",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -200,7 +200,7 @@
       "response_fields": [
         {
           "id": "t",
-          "label": "Instante global",
+          "label": "Instante del alcance",
           "type": "numeric",
           "required": true,
           "expected_value": 40,
@@ -212,7 +212,7 @@
         },
         {
           "id": "x",
-          "label": "Posición de alcance",
+          "label": "Posición del alcance",
           "type": "numeric",
           "required": true,
           "expected_value": 60,
@@ -224,7 +224,7 @@
         },
         {
           "id": "dc",
-          "label": "Distancia de la ciclista",
+          "label": "Distancia recorrida por la ciclista",
           "type": "numeric",
           "required": true,
           "expected_value": 150,
@@ -238,7 +238,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t1/assets/t1_i_002.svg",
-          "alt": "Posiciones desde antes de la salida de la ciclista"
+          "alt": "En t = 0 el peatón pasa por el portal (x = 0) a 1,5 m/s; la ciclista está parada en x = −90 m y sale en t = 20 s a 7,5 m/s."
         }
       ],
       "tags": [
@@ -262,15 +262,15 @@
         "Olvidar la posición negativa de la ciclista",
         "Confundir distancia recorrida y coordenada de alcance"
       ],
-      "parts_count": 3,
-      "statement_source": "\\(+x\\) al este y \\(t=0\\) cuando un peatón pasa por el portal \\(x=0\\) a 1,5 m/s. Una ciclista está en \\(x=−90 m\\), espera hasta \\(t=20 s\\) y sale a 7,5 m/s. \n(a) Modela ambos movimientos y represéntalos.\n(b) Halla alcance, posición y distancia de la ciclista.",
-      "solution_source": "Peatón: \\(x_P=1,5t\\). Ciclista: \\(x_C=−90\\) hasta 20 s y \\(x_C=−90+7,5(t−20)\\) después.\n\n1,5t=\\(7,5t−240 da\\) \\(t=40 s\\), \\(x=60 m\\). La ciclista recorre 60−(−90)=150 m en 20 s.\n\nEn \\(t=20\\) el peatón está en 30 m, con separación 120 m; a 6 m/s de cierre tarda 20 s adicionales.",
+      "parts_count": 2,
+      "statement_source": "Un peatón camina por una acera recta a \\(1{,}5\\,\\mathrm{m/s}\\). El origen está en un portal, \\(+x\\) hacia el este y \\(t=0\\) cuando el peatón pasa por el portal. Una ciclista mensajera está parada en \\(x=-90\\,\\mathrm{m}\\); espera hasta \\(t=20\\,\\mathrm{s}\\) y entonces sale hacia el este a \\(7{,}5\\,\\mathrm{m/s}\\).\n\nLa ecuación de la posición de la ciclista para \\(t\\ge20\\,\\mathrm{s}\\) es \\(x_C=-90+7{,}5\\,(t-20)\\). El alcance es \\(x_P(t)=x_C(t)\\).\n\n(a) Calcula el instante del alcance.\n(b) Calcula la posición del alcance y la distancia que recorre la ciclista hasta él.",
+      "solution_source": "(a) \\(x_P=1{,}5t\\). Igualando: \\(1{,}5t=-90+7{,}5t-150\\Rightarrow 6t=240\\Rightarrow t=40{,}0\\,\\mathrm{s}\\), que cumple \\(t\\ge20\\,\\mathrm{s}\\).\n(b) \\(x=1{,}5\\cdot40=60{,}0\\,\\mathrm{m}\\). La ciclista va de \\(-90\\) a \\(60\\,\\mathrm{m}\\): recorre \\(150\\,\\mathrm{m}\\) en \\(20\\,\\mathrm{s}\\).\n\nComprobación: cuando sale la ciclista, el peatón está en \\(30\\,\\mathrm{m}\\), \\(120\\,\\mathrm{m}\\) por delante, y ella se acerca a \\(6\\,\\mathrm{m/s}\\): \\(20\\,\\mathrm{s}\\) más.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t1_i_005",
       "number": 54,
-      "version": 1,
+      "version": 2,
       "title": "Ascensor con destino fijado por áreas",
       "course": "1bach",
       "topic": "t1",
@@ -284,8 +284,20 @@
       "response_prompt": "Responde los apartados en sus campos.",
       "response_fields": [
         {
+          "id": "vmax",
+          "label": "Velocidad máxima",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3.6,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
           "id": "duration",
-          "label": "Duración",
+          "label": "Duración total",
           "type": "numeric",
           "required": true,
           "expected_value": 11,
@@ -309,7 +321,7 @@
         },
         {
           "id": "v",
-          "label": "Velocidad final",
+          "label": "Velocidad al final del trayecto",
           "type": "numeric",
           "required": true,
           "expected_value": 0,
@@ -323,7 +335,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t1/assets/t1_i_005.svg",
-          "alt": "Aceleración programada del ascensor"
+          "alt": "Ascensor en la planta baja; tres tramos: a = 1,2 m/s² durante 3 s, velocidad constante 4 s y a = −0,9 m/s² hasta parar."
         }
       ],
       "tags": [
@@ -348,8 +360,8 @@
         "Prolongar el frenado como descenso"
       ],
       "parts_count": 3,
-      "statement_source": "\\(+y\\) arriba, \\(y_0=0,\\) \\(v_0=0\\). \\(a_y=1,2 m/s²\\) durante 3 s, cero durante los 4 s siguientes y −0,9 m/s² hasta detenerse. \n(b) Calcula duración y altura final.\n(c) Completa: Velocidad final.",
-      "solution_source": "0–3: \\(v=1,2t,y=0,6t²\\); final \\(v=3,6 m/s\\),\\(y=5,4 m\\). 3–7: \\(v=3,6,y=5,4+3,6(t−3)\\); \\(y(7)=19,8 m\\).\n\nCon \\(τ=t−7\\): \\(v=3,6−0,9τ,y=19,8+3,6τ−0,45τ²\\). Parada a \\(τ=4 s\\): \\(t=11 s\\),\\(y=27 m\\).\n\nÁreas v-t: \\(5,4+14,4+7,2\\)=27 m. Después \\(v=0,y=27\\): prolongar a<0 inventaría un descenso.",
+      "statement_source": "Un ascensor arranca desde el reposo en la planta baja. El origen está en la planta baja, \\(+y\\) hacia arriba y \\(t=0\\) al arrancar. Sube con \\(a=1{,}2\\,\\mathrm{m/s^2}\\) durante \\(3\\,\\mathrm{s}\\), sigue con velocidad constante durante los \\(4\\,\\mathrm{s}\\) siguientes y luego frena con \\(a=-0{,}9\\,\\mathrm{m/s^2}\\) hasta detenerse.\n\nEncadena tres ecuaciones de la posición: cada una empieza con la altura y la velocidad finales de la anterior. Para comprobar, suma las áreas bajo \\(v(t)\\).\n\n(a) Calcula la velocidad máxima del ascensor.\n(b) Calcula la duración total del trayecto y la altura a la que se detiene.\n(c) Comprobación: sustituye la duración obtenida en la velocidad del último tramo y da el resultado.",
+      "solution_source": "(a) 0–3 s: \\(y=0{,}6t^2\\) y, derivando, \\(v=1{,}2t\\). La velocidad máxima es \\(v(3)=3{,}60\\,\\mathrm{m/s}\\), con \\(y(3)=5{,}4\\,\\mathrm{m}\\).\n(b) 3–7 s: \\(y=5{,}4+3{,}6(t-3)\\), que acaba en \\(19{,}8\\,\\mathrm{m}\\). Frenada con \\(\\tau=t-7\\): \\(y=19{,}8+3{,}6\\tau-0{,}45\\tau^2\\) y \\(v=3{,}6-0{,}9\\tau\\). \\(v=0\\Rightarrow\\tau=4\\,\\mathrm{s}\\): duración \\(11{,}0\\,\\mathrm{s}\\) y altura \\(19{,}8+14{,}4-7{,}2=27{,}0\\,\\mathrm{m}\\).\n(c) \\(v(\\tau=4)=3{,}6-3{,}6=0\\). Áreas bajo \\(v(t)\\): \\(5{,}4+14{,}4+7{,}2=27\\,\\mathrm{m}\\). Después el ascensor se queda en \\(27\\,\\mathrm{m}\\); prolongar \\(a<0\\) inventaría una bajada.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -370,7 +382,7 @@
       "response_fields": [
         {
           "id": "arr",
-          "label": "Recorrido de arranque",
+          "label": "Distancia al arrancar",
           "type": "numeric",
           "required": true,
           "expected_value": 24,
@@ -378,11 +390,11 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "c"
+          "part": "a"
         },
         {
           "id": "brake",
-          "label": "Recorrido de frenado",
+          "label": "Distancia al frenar",
           "type": "numeric",
           "required": true,
           "expected_value": 36,
@@ -390,11 +402,11 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "c"
+          "part": "a"
         },
         {
           "id": "xf",
-          "label": "Posición final",
+          "label": "Posición \\(x(16)\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 132,
@@ -406,7 +418,7 @@
         },
         {
           "id": "equal",
-          "label": "Duración de frenado para igual recorrido",
+          "label": "Duración de la nueva frenada",
           "type": "numeric",
           "required": true,
           "expected_value": 4,
@@ -420,7 +432,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t1/assets/t1_i_007.svg",
-          "alt": "Arranque y frenado de distinta duración"
+          "alt": "Gráfica v–t del tranvía: de (0; 0) a (4; 12), de (4; 12) a (10; 12) y de (10; 12) a (16; 0), con t en s y v en m/s."
         }
       ],
       "tags": [
@@ -445,8 +457,8 @@
         "Confundir mayor pendiente con mayor área"
       ],
       "parts_count": 3,
-      "statement_source": "\\(+x\\) derecha y \\(x_0=0\\). v-t une \\((0,0)\\),\\((4,12)\\),\\((10,12)\\),\\((16,0)\\), en SI. \n(b) Completa: Posición final.\n(c) ¿Qué duración de frenado daría el mismo recorrido que el arranque si comienza a 12 m/s y termina en reposo?",
-      "solution_source": "Las áreas triangulares dan 12·4/2=24 m y 12·6/2=36 m; frenar ocupa 1,5 veces la distancia de arrancar.\n\n0–4: \\(x=1,5t²\\). 4–10: \\(x=24+12(t−4)\\). 10–16: \\(x=96+12τ−τ²,\\) \\(τ=t−10\\). \\(x(16)=132 m\\).\n\nPara igualar 24 m: 12T/2=24, \\(T=4 s\\) y \\(a=−3 m/s²\\). Las áreas dependen de la duración, no solo de la velocidad máxima.",
+      "statement_source": "Un tranvía recorre un tramo recto entre dos paradas. El origen está en la primera parada, \\(+x\\) hacia la segunda y \\(x_0=0\\). Su gráfica \\(v(t)\\) une con segmentos rectos \\((0\\,\\mathrm{s};\\,0)\\), \\((4\\,\\mathrm{s};\\,12\\,\\mathrm{m/s})\\), \\((10\\,\\mathrm{s};\\,12\\,\\mathrm{m/s})\\) y \\((16\\,\\mathrm{s};\\,0)\\).\n\nLas áreas bajo \\(v(t)\\) son los desplazamientos de cada tramo.\n\n(a) Calcula la distancia recorrida al arrancar (de \\(0\\) a \\(4\\,\\mathrm{s}\\)) y al frenar (de \\(10\\) a \\(16\\,\\mathrm{s}\\)).\n(b) Calcula la posición de la segunda parada, es decir, la posición en \\(t=16\\,\\mathrm{s}\\).\n(c) Si el tranvía frenase desde \\(12\\,\\mathrm{m/s}\\) hasta pararse recorriendo la misma distancia que usó para arrancar, ¿cuánto duraría la frenada?",
+      "solution_source": "(a) Triángulos: arranque \\(\\tfrac12\\cdot4\\cdot12=24{,}0\\,\\mathrm{m}\\); frenada \\(\\tfrac12\\cdot6\\cdot12=36{,}0\\,\\mathrm{m}\\).\n(b) El tramo central es un rectángulo de \\(12\\cdot6=72\\,\\mathrm{m}\\): \\(x(16)=24+72+36=132\\,\\mathrm{m}\\).\n(c) Un triángulo de altura \\(12\\,\\mathrm{m/s}\\) y área \\(24\\,\\mathrm{m}\\): \\(\\tfrac12\\cdot12\\cdot T=24\\Rightarrow T=4{,}00\\,\\mathrm{s}\\), con \\(a=-3\\,\\mathrm{m/s^2}\\). Las áreas dependen de la duración, no solo de la velocidad máxima.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -467,7 +479,7 @@
       "response_fields": [
         {
           "id": "delivery",
-          "label": "Posición de entrega",
+          "label": "Posición del punto de entrega",
           "type": "numeric",
           "required": true,
           "expected_value": 32,
@@ -476,6 +488,18 @@
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
           "part": "a"
+        },
+        {
+          "id": "distance",
+          "label": "Distancia total",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 64,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
         },
         {
           "id": "time",
@@ -488,18 +512,6 @@
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
           "part": "c"
-        },
-        {
-          "id": "distance",
-          "label": "Distancia",
-          "type": "numeric",
-          "required": true,
-          "expected_value": 64,
-          "unit": "m",
-          "tolerance": 0.01,
-          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
-          "significant_figures": 3,
-          "part": "b"
         },
         {
           "id": "mean",
@@ -515,7 +527,7 @@
         },
         {
           "id": "velocity",
-          "label": "Velocidad media",
+          "label": "Velocidad media \\(v_{\\mathrm{med}}\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 0,
@@ -529,7 +541,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t1/assets/t1_i_010.svg",
-          "alt": "Reparto: almacén y punto de entrega"
+          "alt": "Esquema del reparto: ida acelerando 1 m/s² durante 4 s y después a velocidad constante 6 s, espera de 5 s y vuelta a 2 m/s."
         }
       ],
       "tags": [
@@ -553,9 +565,9 @@
         "Usar velocidad de crucero durante el arranque",
         "Ignorar los cambios instantáneos del modelo"
       ],
-      "parts_count": 4,
-      "statement_source": "Origen en el almacén, \\(+x\\) al este, \\(t=0\\) al salir. Un robot parte del reposo, acelera a 1 m/s² durante 4 s, continúa a velocidad constante 6 s, espera 5 s y regresa directamente al almacén a 2 m/s. Los cambios de velocidad en la espera y al regresar se idealizan instantáneos. \n(a) Obtén posición de entrega.\n(b) Completa: Distancia.\n(c) Calcula tiempo total, recorrido y dos medias.",
-      "solution_source": "0–4: \\(x=t²/2,v=t\\); llega a \\(x=8 m\\),\\(v=4 m/s\\). 4–10: \\(x=8+4(t−4)\\); entrega en \\(x=32 m\\).\n\n10–15: \\(x=32,v=0\\). Regreso: \\(x=32−2(t−15)\\); \\(x=0\\) a \\(t=31 s\\).\n\n\\(Recorrido=64 m\\); \\(desplazamiento=0\\); rapidez \\(media=64/31=2,06 m/s\\) y \\(v_media=0\\). Hay saltos idealizados de v en 10,15 y 31 s; x se mantiene continua.",
+      "parts_count": 3,
+      "statement_source": "Un robot reparte un paquete por un pasillo recto. El origen está en el almacén, \\(+x\\) hacia el este y \\(t=0\\) al salir. Parte del reposo y acelera a \\(1\\,\\mathrm{m/s^2}\\) durante \\(4\\,\\mathrm{s}\\); sigue a velocidad constante \\(6\\,\\mathrm{s}\\) más y llega al punto de entrega; espera allí \\(5\\,\\mathrm{s}\\) y regresa directamente al almacén a \\(2\\,\\mathrm{m/s}\\). Los cambios bruscos de velocidad al parar y al arrancar de vuelta se consideran instantáneos.\n\nEncadena las ecuaciones de la posición de los cuatro tramos: cada una empieza donde acabó la anterior.\n\n(a) Calcula la posición del punto de entrega.\n(b) Calcula la distancia total recorrida, ida y vuelta.\n(c) Calcula la duración total, la rapidez media y la velocidad media, con tres cifras significativas.",
+      "solution_source": "(a) 0–4 s: \\(x=\\tfrac12t^2\\) y, derivando, \\(v=t\\); llega a \\(x=8\\,\\mathrm{m}\\) con \\(v=4\\,\\mathrm{m/s}\\). 4–10 s: \\(x=8+4(t-4)\\), así que la entrega está en \\(x=32{,}0\\,\\mathrm{m}\\).\n(b) Ida \\(32\\,\\mathrm{m}\\) y vuelta \\(32\\,\\mathrm{m}\\): \\(d=64{,}0\\,\\mathrm{m}\\).\n(c) Espera de \\(10\\) a \\(15\\,\\mathrm{s}\\); regreso: \\(x=32-2(t-15)=0\\Rightarrow t=31{,}0\\,\\mathrm{s}\\). Rapidez media: \\(\\dfrac{64}{31}=2{,}06\\,\\mathrm{m/s}\\). Vuelve al almacén, \\(\\Delta x=0\\): \\(v_{\\mathrm{med}}=0\\).",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -588,7 +600,7 @@
         },
         {
           "id": "t",
-          "label": "Tiempo de impacto",
+          "label": "Instante de llegada al suelo",
           "type": "numeric",
           "required": true,
           "expected_value": 4.192582403567252,
@@ -600,7 +612,7 @@
         },
         {
           "id": "v",
-          "label": "Velocidad de impacto",
+          "label": "Velocidad al llegar al suelo",
           "type": "numeric",
           "required": true,
           "expected_value": -26.92582403567252,
@@ -612,7 +624,7 @@
         },
         {
           "id": "distance",
-          "label": "Distancia",
+          "label": "Distancia total recorrida",
           "type": "numeric",
           "required": true,
           "expected_value": 47.5,
@@ -626,7 +638,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t1/assets/t1_i_004.svg",
-          "alt": "Altura de la bola desde la azotea"
+          "alt": "Azotea a 25 m del suelo; la bola sale hacia arriba a 15 m/s; +y hacia arriba con origen en el suelo."
         }
       ],
       "tags": [
@@ -651,8 +663,8 @@
         "Confundir altura máxima y elevación"
       ],
       "parts_count": 3,
-      "statement_source": "Suelo \\(y=0\\) y \\(+y\\) arriba. Desde \\(y_0=25 m\\) se lanza una bola hacia arriba a 15 m/s en \\(t=0,\\) sin aire, \\(a_y=−g=−10 m/s²\\). \n(a) Completa: Altura máxima.\n(b) Halla impacto y velocidad.\n(c) Completa: Distancia.",
-      "solution_source": "\\(y=25+15t−5t²,\\) \\(v_y=15−10t\\); máximo a 1,50 s en \\(y=36,25 m\\).\n\nImpacto: \\(5t²−15t−25\\)=0; \\(t=(15±√725)/10\\). La positiva es 4,193 s; la negativa −1,193 s queda fuera. \\(v_y=−√725=−26,9 m/s\\).\n\n\\(Δy=−25 m\\); \\(recorrido=11,25+36,25=47,5 m\\). El impacto tiene mayor rapidez que la salida por llegar a un nivel inferior; en la cima la aceleración sigue negativa.",
+      "statement_source": "Suelo \\(y=0\\) y \\(+y\\) hacia arriba. Desde una azotea, en \\(y_0=25\\,\\mathrm{m}\\), se lanza una bola hacia arriba a \\(15\\,\\mathrm{m/s}\\) en \\(t=0\\), sin aire y con \\(a=-g=-10\\,\\mathrm{m/s^2}\\).\n\n(a) Calcula la altura máxima.\n(b) Calcula el instante en que llega al suelo y su velocidad en ese momento.\n(c) Calcula la distancia total recorrida por la bola.",
+      "solution_source": "(a) \\(y(t)=25+15t-5t^2\\) y, derivando, \\(v(t)=15-10t\\). \\(v=0\\Rightarrow t=1{,}50\\,\\mathrm{s}\\), e \\(y(1{,}5)=25+22{,}5-11{,}25=36{,}25\\,\\mathrm{m}\\approx36{,}3\\,\\mathrm{m}\\).\n(b) \\(y=0\\Rightarrow -5t^2+15t+25=0\\), con discriminante \\(225+500=725\\):\n\\[t=\\frac{-15\\pm\\sqrt{725}}{-10}\\ \\Rightarrow\\ t=4{,}19\\,\\mathrm{s}\\ \\text{o}\\ t=-1{,}19\\,\\mathrm{s}.\\]\nLa raíz negativa es anterior al lanzamiento. \\(v(4{,}193)=15-41{,}93=-26{,}9\\,\\mathrm{m/s}\\).\n(c) Sube \\(36{,}25-25=11{,}25\\,\\mathrm{m}\\) y baja \\(36{,}25\\,\\mathrm{m}\\): \\(d=47{,}5\\,\\mathrm{m}\\), aunque \\(\\Delta y=-25\\,\\mathrm{m}\\).",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -673,7 +685,7 @@
       "response_fields": [
         {
           "id": "v0",
-          "label": "Velocidad inicial ajustada",
+          "label": "Velocidad inicial \\(v_0\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 2,
@@ -685,7 +697,7 @@
         },
         {
           "id": "a",
-          "label": "Aceleración ajustada",
+          "label": "Aceleración \\(a\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 2,
@@ -696,8 +708,23 @@
           "part": "a"
         },
         {
+          "id": "model",
+          "label": "Ecuación de la posición ajustada \\(x(t)\\)",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [],
+          "variable": "t",
+          "variable_unit": "s",
+          "unit": "m",
+          "domain": "t ≥ 0",
+          "canonical_expression": "2+2*t+t^2",
+          "part": "b",
+          "prompt": "Escribe la expresión en función de t usando * para multiplicar y ^ para las potencias; por ejemplo 3+2*t-0.5*t^2."
+        },
+        {
           "id": "res3",
-          "label": "Residuo a 3 s",
+          "label": "Residuo en \\(t=3\\,\\mathrm{s}\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 1,
@@ -705,11 +732,11 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "b"
+          "part": "c"
         },
         {
           "id": "res4",
-          "label": "Residuo a 4 s",
+          "label": "Residuo en \\(t=4\\,\\mathrm{s}\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 0,
@@ -717,31 +744,13 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "b"
-        },
-        {
-          "id": "model",
-          "label": "Modelo cuadrático",
-          "type": "function",
-          "response_kind": "function",
-          "required": true,
-          "accepted_forms": [
-            "2+2*t+t**2"
-          ],
-          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
-          "grading": "pending_review",
-          "variable": "t",
-          "variable_unit": "s",
-          "unit": "m",
-          "domain": "t ≥ 0",
-          "canonical_expression": "2+2*t+t**2",
           "part": "c"
         }
       ],
       "assets": [
         {
           "path": "static/exercises/1bach/t1/assets/t1_i_006.svg",
-          "alt": "Datos del sensor; contraste de modelos"
+          "alt": "Gráfica x–t con los cinco datos del sensor: (0; 2), (1; 5), (2; 10), (3; 18) y (4; 26), con t en s y x en m."
         }
       ],
       "tags": [
@@ -766,8 +775,8 @@
         "Borrar un dato sin justificar el desacuerdo"
       ],
       "parts_count": 3,
-      "statement_source": "\\(+x\\) a la derecha. Un sensor registra \\(t=(0,1,2,3,4) s\\) y \\(x=(2,5,10,18,26) m\\). Cada posición tiene incertidumbre ±0,1 m. Se contrastan MRU y \\(x=x_0+v_0t+at²/2\\). \n(a) Usa los tres primeros datos nominales para ajustar ambos criterios.\n(b) Completa: Residuo a 3 s, Residuo a 4 s.\n(c) Completa: Modelo cuadrático.",
-      "solution_source": "Incrementos nominales 3 y 5 m por segundo descartan un único MRU exacto. Con \\(x_0=2\\): \\(v_0\\)+a/2=3 y 2v_0+2a=8; resulta \\(a=2 m/s²\\),\\(v_0=2 m/s\\).\n\nEl modelo \\(x=2+2t+t²\\) predice \\(x(3)=17\\) y \\(x(4)=26 m\\); residuos medido−modelo: +1 y 0 m.\n\nAl propagar cotas de ±0,1 m del ajuste, \\(x(3)=x(0)−3x(1)+3x(2)\\) tiene cota ±0,7 m; junto al dato ±0,1, el residuo 1 m aún supera 0,8 m. Revisar \\(t=3\\) o el modelo; una tabla no garantiza extrapolación.",
+      "statement_source": "Un sensor registra la posición de un carrito que se mueve en línea recta; el origen está en el sensor, \\(+x\\) hacia la derecha y \\(t=0\\) al empezar a medir. Las medidas son: \\(x=2\\,\\mathrm{m}\\) en \\(t=0\\); \\(5\\,\\mathrm{m}\\) en \\(t=1\\,\\mathrm{s}\\); \\(10\\,\\mathrm{m}\\) en \\(t=2\\,\\mathrm{s}\\); \\(18\\,\\mathrm{m}\\) en \\(t=3\\,\\mathrm{s}\\); y \\(26\\,\\mathrm{m}\\) en \\(t=4\\,\\mathrm{s}\\).\n\nLos avances de cada segundo no son iguales, así que no es un MRU. Ajusta un MRUA, \\(x=x_0+v_0t+\\tfrac12at^2\\), con los tres primeros datos y usa los otros dos como control (residuo = medido − previsto).\n\n(a) Calcula \\(v_0\\) y \\(a\\) con los datos de \\(t=0\\), \\(1\\) y \\(2\\,\\mathrm{s}\\).\n(b) Escribe la ecuación de la posición ajustada \\(x(t)\\).\n(c) Calcula los residuos en \\(t=3\\,\\mathrm{s}\\) y en \\(t=4\\,\\mathrm{s}\\).",
+      "solution_source": "(a) \\(x_0=2\\,\\mathrm{m}\\). En \\(t=1\\): \\(2+v_0+\\tfrac12a=5\\Rightarrow v_0+\\tfrac12a=3\\). En \\(t=2\\): \\(2+2v_0+2a=10\\Rightarrow v_0+a=4\\). Restando: \\(\\tfrac12a=1\\Rightarrow a=2{,}00\\,\\mathrm{m/s^2}\\) y \\(v_0=2{,}00\\,\\mathrm{m/s}\\).\n(b) \\(x(t)=2+2t+t^2\\).\n(c) El modelo predice \\(x(3)=17\\,\\mathrm{m}\\) y \\(x(4)=26\\,\\mathrm{m}\\). Residuos: \\(18-17=+1{,}00\\,\\mathrm{m}\\) y \\(26-26=0\\). El dato de \\(t=3\\,\\mathrm{s}\\) se separa del modelo mientras que el de \\(4\\,\\mathrm{s}\\) encaja: conviene revisar esa medida antes de descartar el MRUA.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -788,7 +797,7 @@
       "response_fields": [
         {
           "id": "stop",
-          "label": "Posición teórica de parada",
+          "label": "Posición de parada sin obstáculo",
           "type": "numeric",
           "required": true,
           "expected_value": 60,
@@ -796,11 +805,11 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "c"
+          "part": "a"
         },
         {
           "id": "impact_time",
-          "label": "Instante de impacto",
+          "label": "Instante del choque",
           "type": "numeric",
           "required": true,
           "expected_value": 3.26393202250021,
@@ -812,7 +821,7 @@
         },
         {
           "id": "impact_v",
-          "label": "Velocidad de impacto",
+          "label": "Velocidad en el choque",
           "type": "numeric",
           "required": true,
           "expected_value": 8.94427190999916,
@@ -820,13 +829,13 @@
           "tolerance": 0.02,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "c"
+          "part": "b"
         }
       ],
       "assets": [
         {
           "path": "static/exercises/1bach/t1/assets/t1_i_003.svg",
-          "alt": "Obstáculo antes de la parada teórica"
+          "alt": "El coche pasa por x = 0 a 20 m/s cuando ve un obstáculo fijo en x = 50 m; reacciona 0,5 s y luego frena con −4 m/s²."
         }
       ],
       "tags": [
@@ -850,9 +859,9 @@
         "Elegir automáticamente la raíz mayor",
         "Continuar el modelo después del contacto"
       ],
-      "parts_count": 3,
-      "statement_source": "Modelo ideal con \\(+x\\) hacia un obstáculo en \\(x=50 m\\). Un vehículo en \\(x=0\\) lleva 20 m/s, tarda 0,5 s en reaccionar y luego frena a −4 m/s². \n(b) Decide si choca y calcula instante y velocidad en el primer contacto.\n(c) Completa: Posición teórica de parada, Velocidad de impacto.",
-      "solution_source": "Reacción: \\(d_r=20·0,5=10 m\\). Frenado completo: \\(τ_f=5 s\\),\\(d_f=20²/8=50 m\\); pararía en \\(x=60 m\\), más allá del obstáculo.\n\nCon \\(τ=t−0,5,\\) \\(x=10+20τ−2τ²\\). En \\(x=50\\): τ²−10τ+20=0, \\(τ=5±√5 s\\).\n\nPrimer contacto: \\(τ=2,764 s\\),\\(t=3,264 s\\); \\(v=20−4τ=4√5=8,94 m/s\\). La otra raíz ocurre después de la parada teórica y prolonga indebidamente el modelo tras el choque.",
+      "parts_count": 2,
+      "statement_source": "Modelo ideal: un coche circula a \\(20\\,\\mathrm{m/s}\\) por una recta y, en \\(t=0\\), al pasar por \\(x=0\\), su conductor ve un obstáculo fijo en \\(x=50\\,\\mathrm{m}\\) (\\(+x\\) hacia el obstáculo). Tarda \\(0{,}5\\,\\mathrm{s}\\) en reaccionar, sin cambiar de velocidad, y después frena con \\(a=-4\\,\\mathrm{m/s^2}\\).\n\nPrimero mira dónde se pararía si no hubiera obstáculo (\\(v=0\\)). Si eso queda más allá de \\(50\\,\\mathrm{m}\\), choca: resuelve \\(x=50\\) en la ecuación de la posición de la frenada y elige la raíz con sentido físico.\n\n(a) Calcula la posición en la que se pararía si no hubiera obstáculo.\n(b) Calcula el instante del choque, contado desde \\(t=0\\), y la velocidad en ese momento, con tres cifras significativas.",
+      "solution_source": "(a) Reacción: \\(x=20t\\), que en \\(0{,}5\\,\\mathrm{s}\\) da \\(10\\,\\mathrm{m}\\). Frenada con \\(\\tau=t-0{,}5\\): \\(x=10+20\\tau-2\\tau^2\\) y, derivando, \\(v=20-4\\tau\\). \\(v=0\\Rightarrow\\tau=5\\,\\mathrm{s}\\), en \\(x=10+100-50=60{,}0\\,\\mathrm{m}\\): más allá del obstáculo, así que choca.\n(b) \\(10+20\\tau-2\\tau^2=50\\Rightarrow\\tau^2-10\\tau+20=0\\). Discriminante \\(100-80=20>0\\): \\(\\tau=5\\pm\\sqrt5\\), es decir, \\(2{,}764\\) o \\(7{,}236\\,\\mathrm{s}\\). La segunda es posterior a la parada teórica (\\(\\tau=5\\)) y no tiene sentido: el primer contacto es \\(\\tau=2{,}764\\,\\mathrm{s}\\), o sea \\(t=3{,}26\\,\\mathrm{s}\\). Velocidad: \\(v=20-4\\cdot2{,}764=8{,}94\\,\\mathrm{m/s}\\).",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -873,7 +882,7 @@
       "response_fields": [
         {
           "id": "t",
-          "label": "Instante de alcance",
+          "label": "Instante del alcance",
           "type": "numeric",
           "required": true,
           "expected_value": 8.090169943749475,
@@ -881,11 +890,11 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "b"
+          "part": "a"
         },
         {
           "id": "x",
-          "label": "Posición de alcance",
+          "label": "Posición del alcance",
           "type": "numeric",
           "required": true,
           "expected_value": 96.35254915624212,
@@ -897,7 +906,7 @@
         },
         {
           "id": "va",
-          "label": "Velocidad A al alcance",
+          "label": "Velocidad de A en el alcance",
           "type": "numeric",
           "required": true,
           "expected_value": 3.819660112501051,
@@ -911,7 +920,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t1/assets/t1_i_008.svg",
-          "alt": "A frena mientras B se aproxima"
+          "alt": "En t = 0 el coche A pasa por x = 0 a 20 m/s y frena a −2 m/s²; la moto B está en x = −25 m a 15 m/s constantes."
         }
       ],
       "tags": [
@@ -935,9 +944,9 @@
         "Usar una velocidad relativa inicial para todo el proceso",
         "Aceptar una raíz sin verificar el tramo"
       ],
-      "parts_count": 3,
-      "statement_source": "\\(+x\\) al este. En \\(t=0\\) un vehículo A pasa por \\(x=0\\) a 20 m/s y frena a −2 m/s² hasta parar. B está en \\(x=−25 m\\) y sigue en MRU a 15 m/s. \n(b) Halla instante y posición de alcance y velocidades.",
-      "solution_source": "A: \\(x_A=20t−t²\\) hasta \\(t=10 s\\). B: \\(x_B=−25+15t\\). Igualdad: t²−\\(5t−25\\)=0.\n\nRaíces (5±√125)/2; la positiva \\(t=8,090 s\\) da \\(x=96,35 m\\). \\(v_A=20−2t=3,820 m/s\\); \\(v_B=15 m/s\\).\n\nLa otra raíz es negativa; 8,090<10 confirma el tramo de frenado. Primero la separación aumenta (A es más rápido); luego disminuye hasta el alcance. El modelo acaba en el contacto.",
+      "parts_count": 2,
+      "statement_source": "Por un carril recto, con \\(+x\\) hacia el este, el coche A pasa por \\(x=0\\) en \\(t=0\\) a \\(20\\,\\mathrm{m/s}\\) y frena con \\(a=-2\\,\\mathrm{m/s^2}\\) hasta pararse. La moto B está en \\(x=-25\\,\\mathrm{m}\\) en \\(t=0\\) y sigue a \\(15\\,\\mathrm{m/s}\\) constantes.\n\nAl principio A es más rápido y se aleja; después frena y B lo alcanza. Iguala las ecuaciones de la posición, resuelve el polinomio de segundo grado y comprueba que la raíz elegida es positiva y anterior a la parada de A.\n\n(a) Calcula el instante del alcance, con tres cifras significativas.\n(b) Calcula la posición del alcance y la velocidad de A en ese momento.",
+      "solution_source": "(a) \\(x_A=20t-t^2\\) y, derivando, \\(v_A=20-2t\\), que se anula en \\(t=10\\,\\mathrm{s}\\). \\(x_B=-25+15t\\). Igualando: \\(t^2-5t-25=0\\), con discriminante \\(25+100=125\\): \\(t=\\dfrac{5\\pm\\sqrt{125}}{2}=8{,}09\\ \\text{o}\\ -3{,}09\\,\\mathrm{s}\\). La negativa es anterior a \\(t=0\\); \\(8{,}09\\,\\mathrm{s}<10\\,\\mathrm{s}\\), así que A aún no se ha parado: \\(t=8{,}09\\,\\mathrm{s}\\).\n(b) \\(x=-25+15\\cdot8{,}090=96{,}4\\,\\mathrm{m}\\) y \\(v_A=20-2\\cdot8{,}090=3{,}82\\,\\mathrm{m/s}\\), frente a los \\(15\\,\\mathrm{m/s}\\) de B.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     }
   ]
