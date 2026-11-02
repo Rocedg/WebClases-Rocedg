@@ -1,7 +1,7 @@
 {
   "version": 1,
   "generated": true,
-  "generated_at": "2026-11-02T21:49:05Z",
+  "generated_at": "2026-11-02T21:52:21Z",
   "source": "content/exercises",
   "exercises": [
     {
@@ -2982,7 +2982,7 @@
     {
       "id": "t1_r_003",
       "version": 1,
-      "title": "De tabla a ley de posición",
+      "title": "De la tabla a la ecuación de la posición",
       "course": "1bach",
       "block": "Referencia y posición",
       "topic": "t1",
@@ -3027,7 +3027,7 @@
     },
     {
       "id": "t1_r_006",
-      "version": 1,
+      "version": 2,
       "title": "Tres signos, tres informaciones",
       "course": "1bach",
       "block": "Referencia y posición",
@@ -3050,7 +3050,7 @@
     },
     {
       "id": "t1_r_007",
-      "version": 1,
+      "version": 2,
       "title": "Completar la representación que falta",
       "course": "1bach",
       "block": "Referencia y posición",

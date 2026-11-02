@@ -384,7 +384,7 @@ def test_submitted_retry_creates_new_attempt_and_guided_solution_is_submission_o
     )
     assert submitted.status_code == 200
     assert b"Ver solucion guiada" in submitted.data
-    assert "Con origen".encode("utf-8") in submitted.data
+    assert "A está al oeste del origen".encode("utf-8") in submitted.data
 
     client.post(f"/exercise/{EXERCISE_ID}/start")
     with flask_app.app_context():
