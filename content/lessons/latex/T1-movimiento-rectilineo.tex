@@ -1,23 +1,37 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage{webclases-lesson}
-\lessonSetup{T1}{v0.3}{T1 - Movimiento rectilineo}
+\lessonSetup{T1}{v0.4}{T1 - Movimiento rectilineo}
 \begin{document}
 \shorthandoff{<>}
 \color{Ink}
-\coverHeader{T1 --- Movimiento rectil\'ineo}{Describir, representar y predecir movimientos en una dimensi\'on.}
-La cinem\'atica empieza eligiendo un eje, un origen y un reloj. Despu\'es buscamos
-un modelo que explique los datos y permita predecir lo que ocurre dentro de sus condiciones.
+\coverHeader{T1 --- Movimiento rectil\'ineo}{Una coordenada, dos f\'ormulas y todas las preguntas que se les pueden hacer.}
+La cinem\'atica empieza eligiendo un eje, un origen y un reloj. En esta lecci\'on el
+movimiento ocurre sobre una recta, as\'i que basta un solo n\'umero para saber d\'onde est\'a
+el objeto. Con las integrales de T0 obtendremos dos f\'ormulas de la posici\'on, los
+\textbf{santos griales}, y de ellas sacaremos todo lo dem\'as.
 \begin{lessonindex}
-\indexentry{sec:b1}{1. Posici\'on, movimiento y signos}
-\indexentry{sec:b2}{2. Moverse a velocidad constante}
-\indexentry{sec:b3}{3. Acelerar, frenar y cambiar de tramo}
+\indexentry{sec:b1}{1. Una sola coordenada}
+\indexentry{sec:b2}{2. Los santos griales: de la aceleraci\'on a la posici\'on}
+\indexentry{sec:b3}{3. Qu\'e se le puede preguntar a la f\'ormula}
 \indexentry{sec:b4}{4. Lo que cuentan las gr\'aficas}
 \end{lessonindex}
 \precisionnote
 
-\block{1}{Posici\'on, movimiento y signos}{sec:b1}
-Fijamos un origen $x=0$, el sentido positivo y el instante $t=0$.
-La posici\'on $x$ puede ser negativa; la distancia al origen es $|x|$.
+\block{1}{Una sola coordenada}{sec:b1}
+Un movimiento es \textbf{rectil\'ineo} o \textbf{unidimensional} cuando el objeto se mueve
+siempre sobre la misma recta. Sobre esa recta elegimos un eje: un origen $x=0$, un sentido
+positivo y un instante $t=0$. La elecci\'on es libre (el origen puede estar en la salida,
+en el suelo o en una farola), pero una vez hecha se mantiene en todo el problema.
+
+\begin{keybox}
+\textbf{Por qu\'e aqu\'i basta una f\'ormula.} En general la posici\'on es un vector con
+varias componentes. Si el movimiento ocurre sobre una recta y ponemos el eje sobre ella,
+todas las componentes salvo una valen siempre cero: hacemos una \textbf{reducci\'on
+dimensional}. Solo queda una magnitud, la posici\'on $x$ (o $y$ si el eje es vertical), y su
+evoluci\'on se describe con una \'unica funci\'on $x(t)$. En T2 habr\'a una funci\'on por componente.
+\end{keybox}
+
+La posici\'on $x$ lleva signo: puede ser negativa, y la distancia al origen es $|x|$.
 El desplazamiento $\Delta x=x_f-x_i$ depende solo de los extremos.
 La distancia recorrida $d$ suma las longitudes de todos los tramos.
 
@@ -47,10 +61,14 @@ recorrido. Si terminase en $x=2\units{m}$, su velocidad media ser\'ia cero,
 aunque hubiese caminado.
 \end{examplebox}
 
-\heading{Velocidad y aceleraci\'on instant\'aneas}
-$v(t)=dx/dt$ es la pendiente local de $x(t)$, no el cociente $x/t$ en general.
-$a(t)=dv/dt$ indica c\'omo cambia la velocidad; su media es $\Delta v/\Delta t$.
-La rapidez es $|v|$.
+\heading{Velocidad y aceleraci\'on: dos derivadas}
+Como en T0, la velocidad es la derivada de la posici\'on y la aceleraci\'on, la derivada
+de la velocidad:
+\[
+v(t)=\frac{dx}{dt},\qquad a(t)=\frac{dv}{dt}.
+\]
+$v$ es la pendiente de $x(t)$ en cada instante, no el cociente $x/t$.
+La rapidez es $|v|$. Los signos de $v$ y $a$ dicen qu\'e ocurre:
 \par\medskip
 \begin{tabularx}{\linewidth}{@{}p{2.5cm}Y Y@{}}
 \toprule
@@ -63,33 +81,190 @@ $v<0,\ a<0$ & Avanza hacia $-x$ & Aumenta\\
 \bottomrule
 \end{tabularx}
 \par\medskip
-Por ejemplo, pasar de $-6$ a $-2\mps$ en $2\units{s}$ da
-$a_{\mathrm{med}}=+2\mpss$: acelera hacia $+x$ mientras pierde rapidez.
-En un instante con $v=0$ hay que mirar lo que ocurre antes y despu\'es.
+Una pelota lanzada hacia arriba que despu\'es vuelve a caer tambi\'en es un movimiento
+unidimensional: se mueve sobre una recta vertical. Con $+y$ hacia arriba, su aceleraci\'on
+es negativa todo el rato, $a=-g$. Al subir, $v>0$ y $a<0$: pierde rapidez. Al bajar,
+$v<0$ y $a<0$: gana rapidez. La resolveremos entera en el bloque 3.
 
-\block{2}{Moverse a velocidad constante}{sec:b2}
-En movimiento rectil\'ineo uniforme (MRU), $a=0$ y $v$ es constante:
+\block{2}{Los santos griales: de la aceleraci\'on a la posici\'on}{sec:b2}
+Si conocemos la aceleraci\'on, \textbf{integrando} obtenemos la velocidad, e
+integrando otra vez, la posici\'on. Cada integral deja una constante, y esa constante es
+un dato inicial: la posici\'on o la velocidad en $t=0$. Tomamos $t=0$ al empezar a contar.
+
+\heading{Velocidad constante (MRU): una integral}
+En el movimiento rectil\'ineo uniforme, $a=0$ y la velocidad $v$ no cambia. Integramos
+una vez:
 \[
-x(t)=x_0+v(t-t_0).
+x(t)=x_0+\int_0^t v\,d\tau=x_0+vt.
 \]
-$t-t_0$ es el tiempo transcurrido desde el estado inicial elegido. Si $t_0=0$,
-se escribe $x=x_0+vt$. La gr\'afica $x(t)$ es una recta cuya ordenada inicial es
-$x_0$ y cuya pendiente es $v$. Una recta horizontal significa reposo,
-no necesariamente estar en el origen.
+Para que la f\'ormula quede totalmente definida hacen falta \textbf{dos datos}:
+la posici\'on inicial $x_0$ y la velocidad $v$.
+La integral es el \'area del rect\'angulo de altura $v$ y base $t$ bajo $v(t)$.
 
-\heading{Paso por un punto}
-Con $x_0=-12,0\units{m}$ y $v=+5,00\mps$, el paso por el origen se impone como
-$0=-12+5t$: ocurre a $t=2,40\units{s}$.
-La posici\'on negativa inicial no impide una velocidad positiva:
-el m\'ovil se acerca al origen desde la izquierda.
+\heading{Aceleraci\'on constante (MRUA): dos integrales}
+En el movimiento rectil\'ineo uniformemente acelerado, $a$ es constante. La primera integral
+da la velocidad y la segunda, la posici\'on:
+\[
+v(t)=v_0+\int_0^t a\,d\tau=v_0+at,\qquad
+x(t)=x_0+\int_0^t (v_0+a\tau)\,d\tau=x_0+v_0t+\tfrac12at^2.
+\]
+Ahora hacen falta \textbf{tres datos}: la posici\'on inicial $x_0$, la velocidad inicial $v_0$
+y la aceleraci\'on $a$. La segunda integral es el \'area del trapecio bajo $v(t)$:
+un rect\'angulo $v_0t$ m\'as un tri\'angulo $\tfrac12at^2$.
+
+\begin{formulabox}
+\textbf{Los santos griales: la posici\'on en funci\'on del tiempo.}
+\[
+\text{MRU:}\quad x(t)=x_0+vt
+\qquad\qquad
+\text{MRUA:}\quad x(t)=x_0+v_0t+\tfrac12at^2
+\]
+La deducci\'on con integrales explica de d\'onde salen. En el examen no hace falta
+deducirlas: basta con recordarlas y saber sacarles todo lo que contienen.
+\end{formulabox}
+
+\heading{La velocidad no se memoriza: se deriva}
+Cada vez que necesitemos la velocidad en un MRUA, derivamos el santo grial:
+\[
+v(t)=\frac{dx}{dt}=\frac{d}{dt}\Big(x_0+v_0t+\tfrac12at^2\Big)=v_0+at,
+\qquad a(t)=\frac{dv}{dt}=a.
+\]
+As\'i no hace falta recordar una segunda f\'ormula: sale en una l\'inea con la regla de
+la potencia de T0. En un MRU, derivar $x_0+vt$ da la velocidad constante $v$.
+Si el reloj empieza en $t_0\ne0$, se escribe $t-t_0$ en lugar de $t$.
+
+\heading{Qu\'e significa cada coeficiente}
+El santo grial del MRUA es un polinomio de segundo grado en $t$. Cada coeficiente tiene
+un significado f\'isico y uno gr\'afico:
+\par\medskip
+\begin{tabularx}{\linewidth}{@{}p{1.9cm}p{3.9cm}Y@{}}
+\toprule
+T\'ermino & Significa & En la gr\'afica $x(t)$\\
+\midrule
+$x_0$ (sin $t$) & D\'onde est\'a en $t=0$ & Donde la curva corta el eje vertical\\
+$v_0\,t$ & Velocidad inicial & Pendiente de la curva en $t=0$; su signo da el sentido inicial\\
+$\tfrac12a\,t^2$ & Mitad de la aceleraci\'on & Curvatura: $a>0$ abre hacia arriba ($\cup$), $a<0$ hacia abajo ($\cap$)\\
+\bottomrule
+\end{tabularx}
+\par\medskip
+\textbf{Trampa t\'ipica:} el n\'umero que acompa\~na a $t^2$ es $a/2$, no $a$.
+En una recta (MRU) no hay t\'ermino en $t^2$: la gr\'afica no se curva.
+
+\begin{exercisebox}{leer un santo grial}
+Un m\'ovil cumple $x(t)=4+8t-2t^2$ en SI. Identifica $x_0$, $v_0$ y $a$, escribe
+$v(t)$ derivando y halla d\'onde da la vuelta.
+\solutionblock
+$x_0=4\units{m}$, $v_0=8\mps$ y $\tfrac12a=-2$, luego $a=-4\mpss$.
+$v=dx/dt=8-4t$, que se anula en $t=2,00\units{s}$. Ah\'i $x(2)=4+16-8=12,0\units{m}$:
+es el punto m\'as alejado, porque $a<0$ y la par\'abola abre hacia abajo.
+\end{exercisebox}
+
+\block{3}{Qu\'e se le puede preguntar a la f\'ormula}{sec:b3}
+Con el santo grial escrito, casi todas las preguntas de un problema son una de estas.
+Solo las dos marcadas con $\bigstar$ tienen algo de dificultad.
+\par\medskip
+\begin{tabularx}{\linewidth}{@{}Y Y@{}}
+\toprule
+Pregunta & C\'omo se responde\\
+\midrule
+\textquestiondown D\'onde est\'a en el instante $t_1$? & Sustituir: $x(t_1)$\\
+\textquestiondown Qu\'e velocidad lleva en $t_1$? & Derivar y sustituir: $v(t_1)$\\
+\textquestiondown Cu\'ando pasa por la posici\'on $x_1$? & Resolver $x(t)=x_1$: primer grado en MRU, segundo en MRUA\\
+$\bigstar$ \textquestiondown Cu\'ando se para? \textquestiondown Altura m\'axima o posici\'on m\'inima? & Imponer $v(t)=0$; despu\'es sustituir ese $t$ en $x(t)$\\
+$\bigstar$ \textquestiondown Cu\'ando llega al suelo y con qu\'e velocidad? & Resolver $x(t)=0$ (o $y=0$), un polinomio de grado 2; elegir la ra\'iz y sustituirla en $v(t)$\\
+\textquestiondown Cu\'ando y d\'onde se encuentran dos m\'oviles? & Igualar sus santos griales: $x_A(t)=x_B(t)$\\
+\bottomrule
+\end{tabularx}
+\par\medskip
+\textbf{Parar no es llegar al origen.} El punto de giro es donde $v=0$, que es justo
+donde $x(t)$ tiene un m\'aximo o un m\'inimo, como en T0. Llegar al suelo o al origen es
+$x=0$, otra condici\'on distinta.
+
+\begin{toolbox}[breakable]{resolver el polinomio de segundo grado}
+\toolpart{Qu\'e hace} Encuentra los instantes en que un MRUA pasa por una posici\'on dada.
+\toolpart{C\'omo} Pasa todo a un lado y ordena: $At^2+Bt+C=0$ (en may\'usculas, para no
+confundir $A$ con la aceleraci\'on). Entonces
+\[
+t=\frac{-B\pm\sqrt{B^2-4AC}}{2A}.
+\]
+\toolpart{Qu\'e dice el discriminante} Si $B^2-4AC<0$, nunca llega a esa posici\'on
+(por ejemplo, la altura pedida est\'a por encima del m\'aximo). Si vale $0$, la toca justo
+una vez: es el punto de giro. Si es positivo, hay dos instantes.
+\toolpart{Elegir la ra\'iz} Descarta los $t<0$ (son antes de empezar) y los que caen fuera
+del tramo descrito. Si quedan dos positivas, las dos pueden ser f\'isicas: una al subir y
+otra al bajar. Comprueba sustituyendo en $x(t)$.
+\toolpart{Atajo} Si $C=0$, saca factor com\'un: $t(At+B)=0$ da $t=0$ y $t=-B/A$.
+\end{toolbox}
+
+\begin{examplebox}{la pelota que sube y vuelve a caer}
+\origin{Adaptaci\'on del tiro vertical del original T1 con datos propios.}
+\step{Planteamiento} Una pelota sale hacia arriba a $18,0\mps$ desde la mano, a
+$1,50\units{m}$ del suelo. Sin aire y con $g=10\mpss$, calcula la altura m\'axima, cu\'ando
+llega al suelo y con qu\'e velocidad.
+\solutionblock
+\step{F\'isicamente} La pelota sube cada vez m\'as despacio, se para un instante arriba y
+baja cada vez m\'as deprisa. Todo ocurre sobre la misma vertical: es unidimensional.
+La gravedad tira hacia abajo durante todo el vuelo, tambi\'en arriba: la aceleraci\'on no
+cambia de sentido.
+\step{Matem\'aticamente} Eje $+y$ hacia arriba con origen en el suelo: $y_0=1,5\units{m}$,
+$v_0=+18\mps$ y $a=-10\mpss$. El santo grial y su derivada son
+\[
+y(t)=1,5+18t-5t^2,\qquad v(t)=\frac{dy}{dt}=18-10t.
+\]
+El coeficiente $-5$ es $a/2$.
+\step{Altura m\'axima ($\bigstar$)} $v=0$ da $18-10t=0$, $t=1,80\units{s}$, y
+$y(1,8)=1,5+32,4-16,2=17,7\units{m}$. Sobre la mano ha subido $16,2\units{m}$.
+\step{Llegada al suelo ($\bigstar$)} $y=0$ da $-5t^2+18t+1,5=0$, con
+$A=-5$, $B=18$ y $C=1,5$:
+\[
+t=\frac{-18\pm\sqrt{18^2-4(-5)(1,5)}}{2(-5)}=\frac{-18\pm\sqrt{354}}{-10}
+\quad\Rightarrow\quad t=3,68\units{s}\ \text{o}\ t=-0,0815\units{s}.
+\]
+La ra\'iz negativa es anterior al lanzamiento y se descarta. Entonces
+$v(3,68)=18-36,8=-18,8\mps$: el signo menos indica que baja.
+\step{Gr\'aficamente} Las tres gr\'aficas comparten reloj. La l\'inea discontinua marca
+$t=1,80\units{s}$: m\'aximo de $y$, cero de $v$, y la aceleraci\'on sigue valiendo $-10\mpss$.
+\begin{center}
+\begin{tikzpicture}[font=\small]
+\begin{scope}[x=.9cm,y=.1cm]
+\draw[axis] (0,0)--(4.2,0) node[right] {$t$ (s)};
+\draw[axis] (0,0)--(0,21) node[above] {$y$ (m)};
+\draw[BrandBlue,thick,domain=0:3.6815,samples=60] plot(\x,{1.5+18*\x-5*\x*\x});
+\draw[guide] (1.8,0)--(1.8,17.7)--(0,17.7);
+\node[left] at (0,17.7) {$17,7$}; \node[left] at (0,1.5) {$1,5$};
+\node[below] at (1.8,0) {$1,8$}; \node[below] at (3.68,0) {$3,68$};
+\end{scope}
+\begin{scope}[xshift=5.6cm,yshift=1.05cm,x=.9cm,y=.05cm]
+\draw[axis] (0,0)--(4.2,0) node[right] {$t$ (s)};
+\draw[axis] (0,-21)--(0,21) node[above] {$v$ (m/s)};
+\draw[BrandBlue,thick] (0,18)--(3.6815,-18.815);
+\draw[guide] (1.8,-21)--(1.8,21);
+\node[left] at (0,18) {$18$}; \node[right] at (3.68,-18.8) {$-18,8$};
+\node[above right] at (1.8,0) {$1,8$};
+\end{scope}
+\begin{scope}[xshift=11.1cm,yshift=1.95cm,x=.9cm,y=.13cm]
+\draw[axis] (0,0)--(4.2,0) node[right] {$t$ (s)};
+\draw[axis] (0,-12)--(0,4) node[above] {$a$ (m/s$^2$)};
+\draw[BrandBlue,thick] (0,-10)--(3.6815,-10);
+\draw[guide] (1.8,-12)--(1.8,4);
+\node[left] at (0,-10) {$-10$};
+\end{scope}
+\end{tikzpicture}
+\end{center}
+$y(t)$ es una par\'abola que abre hacia abajo porque $a<0$; $v(t)$ es una recta de
+pendiente $-10$; $a(t)$ es una recta horizontal.
+\step{Interpretaci\'on} En lo m\'as alto $v=0$, pero $a\ne0$: si la aceleraci\'on fuese cero
+all\'i, la pelota se quedar\'ia flotando. A los $3,60\units{s}$ vuelve a la altura de la mano
+con $-18,0\mps$, la misma rapidez con la que sali\'o. Llega al suelo algo despu\'es y m\'as
+r\'apida porque cae $1,50\units{m}$ m\'as.
+\end{examplebox}
 
 \begin{examplebox}{encuentro en el mismo eje}
 \origin{Elaboraci\'on propia, con el m\'etodo del encuentro del original T1.}
 \step{Planteamiento} A sale de $-20,0\units{m}$ a $+2,00\mps$ y B de
 $40,0\units{m}$ a $-1,00\mps$, simult\'aneamente. Halla cu\'ando y d\'onde coinciden.
 \solutionblock
-\step{Modelo} Ambos llevan MRU. La separaci\'on inicial es $60\units{m}$ y se
-cierra a $3\mps$: esperamos un encuentro futuro.
+\step{Modelo} Ambos llevan MRU, as\'i que cada uno tiene su santo grial:
 \[
 x_A=-20+2t,\qquad x_B=40-t,\qquad x_A(t)=x_B(t).
 \]
@@ -112,28 +287,9 @@ Sustituir en cualquiera de las dos leyes da $x=20,0\units{m}$.
 \step{Interpretaci\'on} A recorre $40,0\units{m}$ y B $20,0\units{m}$:
 coincidir no exige igual distancia recorrida. La intersecci\'on de las rectas
 representa una misma posici\'on al mismo tiempo.
-\variation{Si B avanza a $+1,00\mps$, A lo alcanza a los $60,0\units{s}$
-en $100\units{m}$. Si B va a $+3,00\mps$, la soluci\'on algebraica es
-$t=-60,0\units{s}$: no hay encuentro despu\'es de la salida descrita.}
+\variation{Si B va a $+3,00\mps$, la soluci\'on es $t=-60,0\units{s}$: es anterior a la
+salida, as\'i que no hay encuentro.}
 \end{examplebox}
-
-\block{3}{Acelerar, frenar y cambiar de tramo}{sec:b3}
-En MRUA la aceleraci\'on es constante durante el intervalo estudiado:
-\[
-v=v_0+a\Delta t,\qquad
-x=x_0+v_0\Delta t+\frac12a\Delta t^2,\qquad
-v^2=v_0^2+2a(x-x_0).
-\]
-La primera relaci\'on expresa que $v$ cambia la misma cantidad cada segundo.
-La segunda suma al avance inicial $v_0\Delta t$ la contribuci\'on del cambio
-de velocidad. Gr\'aficamente, el \'area bajo $v(t)$ es un trapecio:
-\[
-\Delta x=\frac{v_0+v}{2}\Delta t
-=v_0\Delta t+\frac12a\Delta t^2.
-\]
-La ecuaci\'on sin tiempo resulta al eliminar $\Delta t$.
-Es \'util si conocemos posiciones y velocidades, pero al extraer una ra\'iz
-no decide el signo de $v$: hay que usar el sentido del movimiento.
 
 \begin{examplebox}{frenar y cambiar de sentido}
 \origin{Adaptaci\'on del MRUA del original T1 con los datos de la versi\'on actual.}
@@ -141,45 +297,17 @@ no decide el signo de $v$: hay que usar el sentido del movimiento.
 $v_0=12,0\mps$ y $a=-3,00\mpss$. Halla instante y posici\'on de parada,
 y su estado a los $6,00\units{s}$ si se mantiene la misma aceleraci\'on.
 \solutionblock
-\step{Modelo} Inicialmente $v$ y $a$ son opuestos: pierde rapidez.
-La parada es la condici\'on $v=0$, no $x=0$.
-\step{C\'alculo}
+\step{Modelo} Santo grial y derivada:
 \[
-0=12-3t\Rightarrow t=4,00\units{s},\qquad
-x(4)=100+12(4)-1,5(4)^2=124\units{m}.
+x(t)=100+12t-1,5t^2,\qquad v(t)=\frac{dx}{dt}=12-3t.
 \]
-A los $6,00\units{s}$, $v=-6,00\mps$ y $x=118\units{m}$.
+Inicialmente $v$ y $a$ son opuestos: pierde rapidez. La parada es $v=0$, no $x=0$.
+\step{C\'alculo} $12-3t=0$ da $t=4,00\units{s}$ y $x(4)=100+48-24=124\units{m}$.
+A los $6,00\units{s}$: $v(6)=-6,00\mps$ y $x(6)=100+72-54=118\units{m}$.
 \step{Interpretaci\'on} Ha avanzado $24,0\units{m}$ y vuelto $6,00\units{m}$:
 desplazamiento $18,0\units{m}$, recorrido $30,0\units{m}$.
-\variation{Un coche que frena y permanece parado cambia de modelo al detenerse:
-despu\'es, $v=0$ y $x=124\units{m}$. Prolongar $a=-3$ indefinidamente
-inventar\'ia una marcha atr\'as que el enunciado no autoriza.}
-\end{examplebox}
-
-\heading{Ca\'ida libre y lanzamiento vertical}
-Cerca de la superficie terrestre, sin aire y con gravedad uniforme,
-tomamos $+y$ hacia arriba y $a_y=-g$. Usamos $g=10\mpss$ como aproximaci\'on
-did\'actica; el valor habitual aproximado es $9,8\mpss$.
-Subida y bajada comparten la misma aceleraci\'on: la gravedad no cambia de sentido.
-
-\begin{examplebox}{altura m\'axima y regreso}
-\origin{Adaptaci\'on del tiro vertical del original T1 con datos propios.}
-\step{Planteamiento} Una pelota sale hacia arriba a $18,0\mps$ desde
-$y_0=1,50\units{m}$. Calcula altura m\'axima y tiempo hasta el suelo.
-\solutionblock
-\step{Modelo} $y=1,5+18t-5t^2$, $v_y=18-10t$.
-El m\'aximo exige $v_y=0$; el suelo exige $y=0$.
-\step{C\'alculo} $t_{\max}=1,80\units{s}$ y $y_{\max}=17,7\units{m}$.
-La elevaci\'on desde la mano es $17,7-1,5=16,2\units{m}$.
-\[
-t_{\mathrm{suelo}}=\frac{18+\sqrt{18^2+4(5)(1,5)}}{10}
-=3,68\units{s},\qquad v_y=-18,8\mps.
-\]
-\step{Interpretaci\'on} En lo m\'as alto $v_y=0$, pero $a_y=-10\mpss$.
-Al volver a la altura de la mano, a los $3,60\units{s}$, lleva $-18,0\mps$.
-Llega al suelo algo despu\'es y con mayor rapidez porque cae $1,50\units{m}$ m\'as.
-La ra\'iz negativa de $y=0$ queda fuera del intervalo de lanzamiento; el modelo
-termina en el primer contacto con el suelo.
+\variation{Un coche que frena y se queda parado cambia de modelo al detenerse:
+despu\'es, $v=0$ y $x=124\units{m}$. Prolongar $a=-3$ inventar\'ia una marcha atr\'as.}
 \end{examplebox}
 
 \begin{examplebox}{reacci\'on y frenado}
@@ -188,36 +316,16 @@ termina en el primer contacto con el suelo.
 Mantiene esa velocidad durante $0,800\units{s}$ de reacci\'on y luego
 frena con $a=-5,00\mpss$. Halla tiempo y distancia totales de parada.
 \solutionblock
-\step{Modelo} En la reacci\'on hay MRU. En la frenada hay MRUA.
-El segundo tramo comienza donde acaba el primero, con reloj local $\tau=t-0,8$:
+\step{Modelo} Dos tramos, dos santos griales. En la reacci\'on hay MRU: $x=20t$, que acaba
+en $x=16,0\units{m}$. En la frenada hay MRUA con reloj propio $\tau=t-0,8$, empezando
+donde acab\'o el primero:
 \[
-x(t)=
-\begin{cases}
-20t,&0\le t\le0,8,\\
-16+20\tau-2,5\tau^2,&0,8\le t\le4,8.
-\end{cases}
+x=16+20\tau-2,5\tau^2,\qquad v=\frac{dx}{d\tau}=20-5\tau.
 \]
-\step{C\'alculo} $d_r=16,0\units{m}$; $\tau_f=20/5=4,00\units{s}$.
-La ecuaci\'on sin tiempo da $d_f=(0-20^2)/(2(-5))=40,0\units{m}$.
-Total: $t=4,80\units{s}$ y $d=56,0\units{m}$.
-\begin{center}
-\begin{tikzpicture}[x=1.2cm,y=.12cm,font=\small]
-\fill[GreenLine!18] (0,0) rectangle (.8,20);
-\fill[AmberLine!20] (.8,0)--(.8,20)--(4.8,0)--cycle;
-\draw[axis] (0,0)--(5.5,0) node[right] {$t$ (s)};
-\draw[axis] (0,0)--(0,25) node[above] {$v$ (m/s)};
-\draw[BrandBlue,thick] (0,20)--(.8,20)--(4.8,0);
-\draw[guide] (.8,0)--(.8,20);
-\node[below] at (.8,0) {$0,8$}; \node[below] at (4.8,0) {$4,8$};
-\node[left] at (0,20) {$20$};
-\node[right] at (1.6,21) {\'areas: $16+40=56\units{m}$};
-\end{tikzpicture}
-\end{center}
-\step{Interpretaci\'on} La posici\'on y la velocidad enlazan sin saltos.
-Despu\'es de parar, $x=56\units{m}$ si queda en reposo.
+\step{C\'alculo} $v=0$ da $\tau=4,00\units{s}$ y $x=16+80-40=56,0\units{m}$.
+Total: $t=4,80\units{s}$ y $d=56,0\units{m}$, de los que $40,0\units{m}$ son de frenada.
 \variation{A $40,0\mps$, la reacci\'on ocupa $32,0\units{m}$ y la frenada
-$160\units{m}$: total $192\units{m}$. Solo la frenada se cuadruplica.
-Son comparaciones del modelo, no una predicci\'on de conducci\'on real.}
+$160\units{m}$: duplicar la velocidad cuadruplica la frenada.}
 \end{examplebox}
 
 \block{4}{Lo que cuentan las gr\'aficas}{sec:b4}
@@ -225,14 +333,13 @@ Son comparaciones del modelo, no una predicci\'on de conducci\'on real.}
 \toprule
 Representaci\'on & Lectura f\'isica\\
 \midrule
-$x(t)$ & Pendiente $v$; un m\'aximo puede ser un cambio de sentido.\\
+$x(t)$ & Pendiente $v$; un m\'aximo o un m\'inimo es un cambio de sentido.\\
 $v(t)$ & Pendiente $a$; \'area con signo $\Delta x$.\\
 $a(t)$ & \'Area con signo $\Delta v$; hace falta $v_0$ para hallar $v$.\\
 \bottomrule
 \end{tabularx}
-Las operaciones de T0 conectan estas lecturas:
-$x(t)=x_0+\int_0^t v(\tau)\,d\tau$ y
-$v(t)=v_0+\int_0^t a(\tau)\,d\tau$.
+Las \'areas son las mismas integrales del bloque 2:
+$x(t)=x_0+\int_0^t v(\tau)\,d\tau$ y $v(t)=v_0+\int_0^t a(\tau)\,d\tau$.
 Una pendiente negativa en $x(t)$ significa $v<0$, no necesariamente $a<0$.
 
 \begin{examplebox}{desplazamiento cero, recorrido positivo}
@@ -251,7 +358,7 @@ Halla cambio de sentido, posici\'on final y recorrido.
 \node[left] at (0,4) {$4$}; \node[below] at (2,0) {$2$};
 \node[below] at (4,0) {$4$};
 \end{scope}
-\begin{scope}[yshift=-4cm]
+\begin{scope}[xshift=7.2cm]
 \fill[GreenLine!20] (0,0)--(0,4)--(2,0)--cycle;
 \fill[AmberLine!20] (2,0)--(4,-4)--(4,0)--cycle;
 \draw[axis] (0,0)--(4.7,0) node[right] {$t$ (s)};
@@ -266,10 +373,11 @@ Halla cambio de sentido, posici\'on final y recorrido.
 \end{center}
 \step{C\'alculo}
 $\Delta x=4-4=0\units{m}$, $d=4+4=8,00\units{m}$.
-Integrando, $x(t)=4t-t^2$; el m\'aximo es $x(2)=4,00\units{m}$ y $x(4)=0$.
+Integrando, $x(t)=4t-t^2$: es el santo grial con $x_0=0$, $v_0=4\mps$ y $a=-2\mpss$.
+El m\'aximo es $x(2)=4,00\units{m}$ y $x(4)=0$.
 \step{Interpretaci\'on} Las gr\'aficas comparten reloj: $v=0$ coincide con el
-m\'aximo de $x$, no con su paso por el origen. La aceleraci\'on es siempre
-$-2,00\mpss$. La velocidad media es cero y la rapidez media $2,00\mps$.
+m\'aximo de $x$, no con su paso por el origen. La velocidad media es cero y la rapidez
+media $2,00\mps$.
 \end{examplebox}
 
 \begin{exercisebox}{qu\'e permite afirmar una tabla}
@@ -285,10 +393,7 @@ pero no demuestra que la aceleraci\'on siga constante fuera de lo observado.
 \end{exercisebox}
 
 \heading{Fuentes y procedencia}
-Redacci\'on y gr\'aficas propias. Paso por el origen: datos adaptados del original
-T1, p.\ 5. MRUA y tiro vertical: m\'etodos del original, con los datos de la
-versi\'on actual. Ida y vuelta, encuentro, frenado por tramos y \'areas: propuestas propias.
+Redacci\'on y gr\'aficas propias; MRUA y tiro vertical siguen los m\'etodos del original T1.
 \source{https://fisquiweb.es/Apuntes/apun1B.htm}{FisQuiWeb / IES La Magdalena: inspiraci\'on y material original de 1.\textordmasculine.}
-El enfoque de elegir ecuaciones seg\'un datos e intervalo se ha contrastado con:
 \source{https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration}{OpenStax, University Physics 1, 3.4: Motion with Constant Acceleration.}
 \end{document}
