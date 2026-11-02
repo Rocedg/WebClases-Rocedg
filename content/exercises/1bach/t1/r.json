@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t1_r_001",
+      "number": 1,
       "version": 1,
       "title": "La estación como origen",
       "course": "1bach",
@@ -10,14 +11,14 @@
       "block": "Referencia y posición",
       "family": "r",
       "subtype": "multi_step",
-      "difficulty": 2,
+      "difficulty": 1,
       "estimated_minutes": 7,
       "response_mode": "structured",
       "response_prompt": "Responde los apartados en sus campos.",
       "response_fields": [
         {
           "id": "xa",
-          "label": "Posición de A",
+          "label": "Posición de A, \\(x_A\\)",
           "type": "numeric",
           "required": true,
           "expected_value": -300,
@@ -29,7 +30,7 @@
         },
         {
           "id": "xb",
-          "label": "Posición de B",
+          "label": "Posición de B, \\(x_B\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 500,
@@ -37,11 +38,11 @@
           "tolerance": 1,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "b"
+          "part": "a"
         },
         {
           "id": "dx",
-          "label": "Desplazamiento B→A",
+          "label": "Desplazamiento \\(\\Delta x\\) de B a A",
           "type": "numeric",
           "required": true,
           "expected_value": -800,
@@ -53,7 +54,7 @@
         },
         {
           "id": "d",
-          "label": "Distancia recorrida",
+          "label": "Distancia recorrida \\(d\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 800,
@@ -67,7 +68,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t1/assets/t1_r_001.svg",
-          "alt": "Vía: O=0; +x hacia el este"
+          "alt": "Vía recta con la estación O en el origen, el apeadero A 300 m al oeste y B 500 m al este; el vagón va de B a A."
         }
       ],
       "tags": [
@@ -86,18 +87,19 @@
         "T0: unidades, signos y álgebra",
         "Referencia y posición"
       ],
-      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar asignar signo positivo a ambos lados del origen.",
+      "difficulty_reason": "Solo exige leer posiciones con signo y distinguir desplazamiento de distancia.",
       "common_mistakes": [
         "Asignar signo positivo a ambos lados del origen",
         "Confundir desplazamiento con distancia"
       ],
       "parts_count": 2,
-      "statement_source": "Una vía va de oeste a este. La estación O está entre A, a 300 m al oeste, y B, a 500 m al este. \n(a) Elige O como origen y \\(+x\\) al este; escribe las posiciones.\n(b) Un vagón va de B a A: calcula desplazamiento y distancia.",
-      "solution_source": "Con origen O y \\(+x\\) al este, \\(x_A=−300 m\\) y \\(x_B=+500 m\\).\n\n\\(Δx=x_A−x_B=−300−500=−800 m\\).\n\nEl trayecto es directo: \\(d=|−800|=800 m\\). El signo negativo solo indica avance al oeste.",
+      "statement_source": "Una vía de tren recta va de oeste a este. La estación O está entre dos apeaderos: A, a \\(300\\,\\mathrm{m}\\) al oeste de O, y B, a \\(500\\,\\mathrm{m}\\) al este de O. Tomamos la estación como origen, \\(x=0\\), y el sentido positivo hacia el este.\n\nPractica la idea básica del bloque 1: la posición \\(x\\) lleva signo según el lado del origen; el desplazamiento \\(\\Delta x=x_f-x_i\\) depende solo del principio y del final, y la distancia recorrida \\(d\\) suma las longitudes de todos los tramos.\n\n(a) Escribe la posición de A y la de B, con su signo.\n(b) Un vagón va directamente de B a A, sin dar la vuelta. Calcula su desplazamiento y la distancia que recorre.",
+      "solution_source": "(a) A está al oeste del origen, en el lado negativo: \\(x_A=-300\\,\\mathrm{m}\\). B está al este: \\(x_B=+500\\,\\mathrm{m}\\).\n(b) El vagón empieza en B y acaba en A: \\(\\Delta x=x_A-x_B=-300-500=-800\\,\\mathrm{m}\\). Como va directo, la distancia es la longitud del único tramo: \\(d=|-800|=800\\,\\mathrm{m}\\). El signo negativo solo indica que avanza hacia el oeste.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t1_r_002",
+      "number": 2,
       "version": 1,
       "title": "Ida, vuelta y avance neto",
       "course": "1bach",
@@ -106,14 +108,14 @@
       "block": "Referencia y posición",
       "family": "r",
       "subtype": "multi_step",
-      "difficulty": 2,
+      "difficulty": 1,
       "estimated_minutes": 8,
       "response_mode": "structured",
       "response_prompt": "Responde los apartados en sus campos.",
       "response_fields": [
         {
           "id": "dx",
-          "label": "Desplazamiento",
+          "label": "Desplazamiento \\(\\Delta x\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 5,
@@ -125,7 +127,7 @@
         },
         {
           "id": "d",
-          "label": "Recorrido",
+          "label": "Recorrido \\(d\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 21,
@@ -137,7 +139,7 @@
         },
         {
           "id": "vm",
-          "label": "Velocidad media",
+          "label": "Velocidad media \\(v_{\\mathrm{med}}\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 0.7142857142857143,
@@ -163,7 +165,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t1/assets/t1_r_002.svg",
-          "alt": "Recorrido temporal: −4 → 9 → 1 m"
+          "alt": "Recta con marcas en −4, 0, 1 y 9 m; flecha de ida de −4 a 9 m y de vuelta de 9 a 1 m."
         }
       ],
       "tags": [
@@ -182,53 +184,52 @@
         "T0: unidades, signos y álgebra",
         "Referencia y posición"
       ],
-      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar sumar posiciones en vez de longitudes de tramos.",
+      "difficulty_reason": "Tres posiciones dadas; basta restar extremos y sumar tramos.",
       "common_mistakes": [
         "Sumar posiciones en vez de longitudes de tramos",
         "Usar distancia para la velocidad media"
       ],
       "parts_count": 2,
-      "statement_source": "En una recta con \\(+x\\) hacia la derecha, un robot pasa sucesivamente por −4 m, 9 m y 1 m en 7 s. \n(a) Calcula desplazamiento y recorrido.\n(b) Completa: Velocidad media, Rapidez media.",
-      "solution_source": "\\(Δx=1−(−4)=5 m\\); \\(d=|9−(−4)|+|1−9|=13+8=21 m\\).\n\n\\(v_media=5/7=0,714 m/s\\); rapidez \\(media=21/7=3,00 m/s\\).\n\nAmbas son positivas, pero la vuelta resta en el desplazamiento y suma en el recorrido.",
+      "statement_source": "En una recta con el sentido positivo hacia la derecha, un robot pasa sucesivamente por \\(x=-4\\,\\mathrm{m}\\), \\(x=9\\,\\mathrm{m}\\) y \\(x=1\\,\\mathrm{m}\\) en un total de \\(7\\,\\mathrm{s}\\).\n\n(a) Calcula el desplazamiento y el recorrido.\n(b) Calcula la velocidad media y la rapidez media, con tres cifras significativas.",
+      "solution_source": "(a) \\(\\Delta x=x_f-x_i=1-(-4)=5{,}00\\,\\mathrm{m}\\). El recorrido suma los dos tramos: \\(d=|9-(-4)|+|1-9|=13+8=21{,}0\\,\\mathrm{m}\\).\n(b) \\(v_{\\mathrm{med}}=\\dfrac{\\Delta x}{\\Delta t}=\\dfrac{5}{7}=0{,}714\\,\\mathrm{m/s}\\). Rapidez media \\(=\\dfrac{d}{\\Delta t}=\\dfrac{21}{7}=3{,}00\\,\\mathrm{m/s}\\).\n\nLas dos son positivas, pero la vuelta resta en el desplazamiento y suma en el recorrido.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t1_r_003",
+      "number": 3,
       "version": 1,
-      "title": "De tabla a ley de posición",
+      "title": "De la tabla a la ecuación de la posición",
       "course": "1bach",
       "topic": "t1",
       "concept": "Movimiento rectilíneo",
       "block": "Referencia y posición",
       "family": "r",
       "subtype": "written_upload",
-      "difficulty": 3,
+      "difficulty": 2,
       "estimated_minutes": 10,
       "response_mode": "structured",
       "response_prompt": "Responde los apartados en sus campos.",
       "response_fields": [
         {
           "id": "func",
-          "label": "Función de posición",
+          "label": "Ecuación de la posición \\(x(t)\\)",
           "type": "function",
           "response_kind": "function",
           "required": true,
           "accepted_forms": [
-            "-6+3*t",
             "3*(t-2)"
           ],
-          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
-          "grading": "pending_review",
           "variable": "t",
           "variable_unit": "s",
           "unit": "m",
           "domain": "t ≥ 0",
           "canonical_expression": "-6+3*t",
-          "part": "a"
+          "part": "a",
+          "prompt": "Escribe la expresión en función de t usando * para multiplicar y ^ para las potencias; por ejemplo 3+2*t-0.5*t^2."
         },
         {
           "id": "x8",
-          "label": "Posición a 8 s",
+          "label": "Posición \\(x(8)\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 18,
@@ -242,7 +243,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t1/assets/t1_r_003.svg",
-          "alt": "Datos de posición; construir la recta"
+          "alt": "Gráfica x–t con los tres datos medidos: (0 s; −6 m), (2 s; 0 m) y (5 s; 9 m)."
         }
       ],
       "tags": [
@@ -256,23 +257,24 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "De tabla a ley de posición. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "De la tabla a la ecuación de la posición. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Referencia y posición"
       ],
-      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar calcular x/t con origen desplazado.",
+      "difficulty_reason": "Construye la ecuación de la posición del MRU a partir de una tabla y la usa para predecir.",
       "common_mistakes": [
         "Calcular x/t con origen desplazado",
         "Tratar la extrapolación como un hecho medido"
       ],
-      "parts_count": 3,
-      "statement_source": "Origen en una baliza y \\(+x\\) al este. Se mide \\(t=(0,2,5) s\\) y \\(x=(−6,0,9) m\\); suponemos MRU. \n(a) Deduce \\(x(t)\\).\n(b) Completa: Posición a 8 s.",
-      "solution_source": "\\(v=(0+6)/(2−0)=3 m/s\\); \\(x_0=−6 m\\), luego \\(x=−6+3t\\) en SI.\n\n\\(x(8)=−6+3·8=18 m\\). La recta cruza \\(x=0\\) en \\(t=2 s\\).\n\nEl tercer dato satisface \\(x(5)=9 m\\); la extrapolación a 8 s depende del modelo supuesto.",
+      "parts_count": 2,
+      "statement_source": "Una baliza marca el origen de una carretera recta y el sentido positivo es hacia el este. Un sensor registra la posición de una bicicleta, con \\(t=0\\) al empezar a medir: en \\(t=0\\) está en \\(x=-6\\,\\mathrm{m}\\); en \\(t=2\\,\\mathrm{s}\\), en \\(x=0\\); y en \\(t=5\\,\\mathrm{s}\\), en \\(x=9\\,\\mathrm{m}\\).\n\nSuponemos que lleva velocidad constante (MRU), así que su posición sigue la ecuación \\(x=x_0+vt\\). Lee \\(x_0\\) en el primer dato y obtén \\(v\\) como la pendiente entre dos datos.\n\n(a) Escribe la ecuación de la posición \\(x(t)\\) en unidades SI.\n(b) Comprueba que el tercer dato cumple tu ecuación y calcula la posición que predice para \\(t=8\\,\\mathrm{s}\\).",
+      "solution_source": "(a) En \\(t=0\\) la bicicleta está en \\(x_0=-6\\,\\mathrm{m}\\). Pendiente entre los dos primeros datos: \\(v=\\dfrac{0-(-6)}{2-0}=3\\,\\mathrm{m/s}\\). Ecuación de la posición: \\(x(t)=-6+3t\\).\n(b) Comprobación: \\(x(5)=-6+15=9\\,\\mathrm{m}\\), igual que el tercer dato. Predicción: \\(x(8)=-6+24=18{,}0\\,\\mathrm{m}\\). Es una extrapolación: solo vale si sigue con la misma velocidad.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t1_r_004",
+      "number": 4,
       "version": 1,
       "title": "Una función también se puede leer al revés",
       "course": "1bach",
@@ -288,7 +290,7 @@
       "response_fields": [
         {
           "id": "x0",
-          "label": "x(0)",
+          "label": "\\(x(0)\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 18,
@@ -300,7 +302,7 @@
         },
         {
           "id": "x4",
-          "label": "x(4)",
+          "label": "\\(x(4)\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 10,
@@ -312,7 +314,7 @@
         },
         {
           "id": "x10",
-          "label": "x(10)",
+          "label": "\\(x(10)\\)",
           "type": "numeric",
           "required": true,
           "expected_value": -2,
@@ -324,7 +326,7 @@
         },
         {
           "id": "t0",
-          "label": "Paso por el origen",
+          "label": "Instante de paso por el origen",
           "type": "numeric",
           "required": true,
           "expected_value": 9,
@@ -336,7 +338,7 @@
         },
         {
           "id": "v",
-          "label": "Velocidad",
+          "label": "Velocidad \\(v\\)",
           "type": "numeric",
           "required": true,
           "expected_value": -2,
@@ -350,7 +352,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t1/assets/t1_r_004.svg",
-          "alt": "Recta x=18−2t, 0–12 s"
+          "alt": "Posición x igual a 18 menos 2t entre 0 y 12 segundos."
         }
       ],
       "tags": [
@@ -369,133 +371,19 @@
         "T0: unidades, signos y álgebra",
         "Referencia y posición"
       ],
-      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar identificar x=0 con detenerse.",
+      "difficulty_reason": "Sustituir en la ecuación, resolver x = 0 y derivar; exige no confundir x = 0 con detenerse.",
       "common_mistakes": [
         "Identificar x=0 con detenerse",
         "Perder el signo de la pendiente"
       ],
       "parts_count": 2,
       "statement_source": "Con \\(+x\\) hacia la derecha, la posición de un móvil viene dada en unidades SI por:\n\n\\[x(t)=18-2t,\\qquad 0\\leq t\\leq12\\,\\mathrm{s}.\\]\n\n(a) Calcula \\(x(0)\\), \\(x(4)\\) y \\(x(10)\\).\n\n(b) Halla el instante en que pasa por el origen y su velocidad.",
-      "solution_source": "Sustituyendo los tiempos se obtiene \\(x(0)=18\\,\\mathrm{m}\\), \\(x(4)=10\\,\\mathrm{m}\\) y \\(x(10)=-2\\,\\mathrm{m}\\).\n\n\\[0=18-2t\\quad\\Rightarrow\\quad t=9\\,\\mathrm{s}\\]\n\nLa velocidad es la pendiente: \\(v=dx/dt=-2\\,\\mathrm{m/s}\\). Pasar por el origen no significa detenerse."
-    },
-    {
-      "id": "t1_r_005",
-      "version": 1,
-      "title": "Trasladar e invertir un eje",
-      "course": "1bach",
-      "topic": "t1",
-      "concept": "Movimiento rectilíneo",
-      "block": "Referencia y posición",
-      "family": "r",
-      "subtype": "written_upload",
-      "difficulty": 4,
-      "estimated_minutes": 12,
-      "response_mode": "structured",
-      "response_prompt": "Responde los apartados en sus campos.",
-      "response_fields": [
-        {
-          "id": "xp",
-          "label": "Posición en S prima",
-          "type": "function",
-          "response_kind": "function",
-          "required": true,
-          "accepted_forms": [
-            "20-4*t",
-            "30-(10+4*t)"
-          ],
-          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
-          "grading": "pending_review",
-          "variable": "t",
-          "variable_unit": "s",
-          "unit": "m",
-          "domain": "t ≥ 0",
-          "canonical_expression": "20-4*t",
-          "part": "b"
-        },
-        {
-          "id": "vp",
-          "label": "Velocidad en S prima",
-          "type": "numeric",
-          "required": true,
-          "expected_value": -4,
-          "unit": "m/s",
-          "tolerance": 0.01,
-          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
-          "significant_figures": 3,
-          "part": "b"
-        },
-        {
-          "id": "dx",
-          "label": "Desplazamiento en S",
-          "type": "numeric",
-          "required": true,
-          "expected_value": 20,
-          "unit": "m",
-          "tolerance": 0.01,
-          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
-          "significant_figures": 3,
-          "part": "b"
-        },
-        {
-          "id": "dxp",
-          "label": "Desplazamiento en S prima",
-          "type": "numeric",
-          "required": true,
-          "expected_value": -20,
-          "unit": "m",
-          "tolerance": 0.01,
-          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
-          "significant_figures": 3,
-          "part": "b"
-        },
-        {
-          "id": "d",
-          "label": "Distancia en ambos",
-          "type": "numeric",
-          "required": true,
-          "expected_value": 20,
-          "unit": "m",
-          "tolerance": 0.01,
-          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
-          "significant_figures": 3,
-          "part": "b"
-        }
-      ],
-      "assets": [
-        {
-          "path": "static/exercises/1bach/t1/assets/t1_r_005.svg",
-          "alt": "Dos orígenes: S +este; S′ +oeste"
-        }
-      ],
-      "tags": [
-        "t1",
-        "r",
-        "cinematica"
-      ],
-      "origin": {
-        "kind": "original_teacher_bank",
-        "reference": null,
-        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
-      },
-      "status": "draft",
-      "learning_objective": "Trasladar e invertir un eje. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
-      "prerequisites": [
-        "T0: unidades, signos y álgebra",
-        "Referencia y posición"
-      ],
-      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar cambiar origen sin invertir el sentido.",
-      "common_mistakes": [
-        "Cambiar origen sin invertir el sentido",
-        "Afirmar que cambia la distancia"
-      ],
-      "parts_count": 3,
-      "statement_source": "En S, \\(+x\\) al este, \\(x(t)=10+4t m\\), t en s. S′ tiene su origen en \\(x=30 m\\) y \\(+x′\\) al oeste. \n(b) Compara desplazamiento y distancia de 0 a 5 s en ambos sistemas.",
-      "solution_source": "La transformación es x′=30−x, por traslado e inversión: x′=\\(20−4t\\).\n\nv′=−4 m/s. En S, \\(Δx=30−10=20 m\\); en S′, Δx′=\\(0−20\\)=−20 m.\n\nLa distancia es 20 m en ambos. No cambia el movimiento real, solo las coordenadas y sus signos.",
-      "solution_reference": "Elaboración propia; revisión matemática documentada."
+      "solution_source": "(a) Sustituyendo los tiempos: \\(x(0)=18\\,\\mathrm{m}\\), \\(x(4)=18-8=10\\,\\mathrm{m}\\) y \\(x(10)=18-20=-2\\,\\mathrm{m}\\).\n(b) Pasar por el origen es \\(x=0\\):\n\\[0=18-2t\\quad\\Rightarrow\\quad t=9\\,\\mathrm{s}.\\]\nLa velocidad se obtiene derivando: \\(v=\\dfrac{dx}{dt}=-2\\,\\mathrm{m/s}\\), la misma en todo instante. Pasar por el origen no significa detenerse."
     },
     {
       "id": "t1_r_006",
-      "version": 1,
+      "number": 5,
+      "version": 2,
       "title": "Tres signos, tres informaciones",
       "course": "1bach",
       "topic": "t1",
@@ -503,27 +391,66 @@
       "block": "Referencia y posición",
       "family": "r",
       "subtype": "multi_step",
-      "difficulty": 3,
+      "difficulty": 2,
       "estimated_minutes": 9,
       "response_mode": "structured",
       "response_prompt": "Responde los apartados en sus campos.",
       "response_fields": [
         {
-          "id": "signa",
-          "label": "Signos de A",
-          "type": "short_text",
-          "response_kind": "text",
+          "id": "motion_a",
+          "label": "Movimiento de A",
+          "type": "single_choice",
           "required": true,
-          "accepted_forms": [
-            "x<0, v>0, a<0"
+          "options": [
+            {
+              "id": "forward_slower",
+              "label": "Avanza hacia \\(+x\\) y su rapidez disminuye"
+            },
+            {
+              "id": "forward_faster",
+              "label": "Avanza hacia \\(+x\\) y su rapidez aumenta"
+            },
+            {
+              "id": "back_slower",
+              "label": "Avanza hacia \\(-x\\) y su rapidez disminuye"
+            },
+            {
+              "id": "back_faster",
+              "label": "Avanza hacia \\(-x\\) y su rapidez aumenta"
+            }
           ],
-          "correction_criteria": "x<0, v>0, a<0",
-          "grading": "pending_review",
+          "correct_option_id": "forward_slower",
           "part": "a"
         },
         {
+          "id": "motion_b",
+          "label": "Movimiento de B",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "forward_slower",
+              "label": "Avanza hacia \\(+x\\) y su rapidez disminuye"
+            },
+            {
+              "id": "forward_faster",
+              "label": "Avanza hacia \\(+x\\) y su rapidez aumenta"
+            },
+            {
+              "id": "back_slower",
+              "label": "Avanza hacia \\(-x\\) y su rapidez disminuye"
+            },
+            {
+              "id": "back_faster",
+              "label": "Avanza hacia \\(-x\\) y su rapidez aumenta"
+            }
+          ],
+          "correct_option_id": "back_faster",
+          "part": "b"
+        },
+        {
           "id": "va",
-          "label": "Velocidad A a 1 s",
+          "label": "Velocidad de A en \\(t=1\\,\\mathrm{s}\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 2,
@@ -531,11 +458,11 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "b"
+          "part": "c"
         },
         {
           "id": "vb",
-          "label": "Velocidad B a 1 s",
+          "label": "Velocidad de B en \\(t=1\\,\\mathrm{s}\\)",
           "type": "numeric",
           "required": true,
           "expected_value": -3,
@@ -543,13 +470,13 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "b"
+          "part": "c"
         }
       ],
       "assets": [
         {
           "path": "static/exercises/1bach/t1/assets/t1_r_006.svg",
-          "alt": "A a la izquierda; B a la derecha"
+          "alt": "A en x = −5 m con velocidad +3 m/s y aceleración hacia −x; B en x = 4 m con velocidad −2 m/s y aceleración hacia −x."
         }
       ],
       "tags": [
@@ -568,19 +495,20 @@
         "T0: unidades, signos y álgebra",
         "Referencia y posición"
       ],
-      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar interpretar a negativa como frenada siempre.",
+      "difficulty_reason": "Interpreta la tabla de signos de v y a y deriva dos ecuaciones de la posición sencillas.",
       "common_mistakes": [
         "Interpretar a negativa como frenada siempre",
         "Inferir velocidad a partir del signo de posición"
       ],
-      "parts_count": 2,
-      "statement_source": "\\(+x\\) hacia la derecha. A está en \\(x=−5 m\\), se mueve a +3 m/s y frena con \\(a=−1 m/s²\\); B está en \\(x=4 m\\), se mueve a −2 m/s y tiene \\(a=−1 m/s²\\). \n(a) Clasifica el signo de x,v,a de cada móvil.\n(b) Completa: Velocidad A a 1 s, Velocidad B a 1 s.",
-      "solution_source": "La posición no fija el signo de v ni de a. A: (x<0,v>0,a<0); B: (x>0,v<0,a<0).\n\n\\(v_A(1)=3−1=2 m/s\\); \\(v_B(1)=−2−1=−3 m/s\\).\n\nA frena porque v·a<0; B aumenta rapidez porque v·a>0.",
+      "parts_count": 3,
+      "statement_source": "Dos carritos se mueven sobre la misma pista recta, con el origen en el centro de la pista y \\(+x\\) hacia la derecha. En \\(t=0\\), el carrito A está en \\(x=-5\\,\\mathrm{m}\\), se mueve a \\(+3\\,\\mathrm{m/s}\\) y tiene aceleración \\(a=-1\\,\\mathrm{m/s^2}\\). El carrito B está en \\(x=4\\,\\mathrm{m}\\), se mueve a \\(-2\\,\\mathrm{m/s}\\) y tiene \\(a=-1\\,\\mathrm{m/s^2}\\).\n\nLos signos de \\(x\\), \\(v\\) y \\(a\\) dan tres informaciones distintas: dónde está, hacia dónde va y, comparando \\(v\\) con \\(a\\), si su rapidez aumenta o disminuye (tabla de signos de la lección).\n\n(a) Elige qué le pasa a A justo después de \\(t=0\\).\n(b) Elige qué le pasa a B justo después de \\(t=0\\).\n(c) Escribe la ecuación de la posición del MRUA de cada carrito, deriva y calcula la velocidad de cada uno en \\(t=1\\,\\mathrm{s}\\).",
+      "solution_source": "(a) A tiene \\(v>0\\) y \\(a<0\\): avanza hacia \\(+x\\), pero \\(v\\) y \\(a\\) tienen signos opuestos, así que su rapidez disminuye. Que esté en \\(x<0\\) no dice nada sobre su movimiento.\n(b) B tiene \\(v<0\\) y \\(a<0\\): avanza hacia \\(-x\\) y, como \\(v\\) y \\(a\\) tienen el mismo signo, su rapidez aumenta.\n(c) \\(x_A=-5+3t-0{,}5t^2\\), luego \\(v_A=\\dfrac{dx_A}{dt}=3-t\\) y \\(v_A(1)=2{,}00\\,\\mathrm{m/s}\\). \\(x_B=4-2t-0{,}5t^2\\), luego \\(v_B=-2-t\\) y \\(v_B(1)=-3{,}00\\,\\mathrm{m/s}\\). A ha perdido rapidez y B la ha ganado, como predecían los signos.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t1_r_007",
-      "version": 1,
+      "number": 6,
+      "version": 2,
       "title": "Completar la representación que falta",
       "course": "1bach",
       "topic": "t1",
@@ -588,47 +516,79 @@
       "block": "Referencia y posición",
       "family": "r",
       "subtype": "written_upload",
-      "difficulty": 3,
+      "difficulty": 2,
       "estimated_minutes": 10,
       "response_mode": "structured",
       "response_prompt": "Responde los apartados en sus campos.",
       "response_fields": [
         {
           "id": "func",
-          "label": "Posición por tramos",
+          "label": "Ecuación de la posición \\(x(t)\\) del primer tramo",
           "type": "function",
           "response_kind": "function",
           "required": true,
-          "accepted_forms": [
-            "2+3*t (0<=t<=4); 14 (4<t<=6)"
-          ],
-          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
-          "grading": "pending_review",
           "variable": "t",
           "variable_unit": "s",
           "unit": "m",
-          "domain": "0≤t≤6",
-          "canonical_expression": "2+3*t (0<=t<=4); 14 (4<t<=6)",
+          "domain": "0 ≤ t ≤ 4 s",
+          "canonical_expression": "2+3*t",
+          "accepted_forms": [],
+          "prompt": "Escribe la expresión en función de t usando * para multiplicar y ^ para las potencias; por ejemplo 3+2*t-0.5*t^2.",
+          "part": "a"
+        },
+        {
+          "id": "x_t0",
+          "label": "\\(x(0)\\)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
           "part": "b"
         },
         {
-          "id": "tabla",
-          "label": "Tabla de posiciones",
-          "type": "short_text",
-          "response_kind": "text",
+          "id": "x_t2",
+          "label": "\\(x(2)\\)",
+          "type": "numeric",
           "required": true,
-          "accepted_forms": [
-            "2; 8; 14; 14 m"
-          ],
-          "correction_criteria": "2; 8; 14; 14 m",
-          "grading": "pending_review",
-          "part": "a"
+          "expected_value": 8,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "x_t4",
+          "label": "\\(x(4)\\)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 14,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "x_t6",
+          "label": "\\(x(6)\\)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 14,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
         }
       ],
       "assets": [
         {
           "path": "static/exercises/1bach/t1/assets/t1_r_007.svg",
-          "alt": "Datos para completar el movimiento"
+          "alt": "Carrito sobre una mesa en x = 2 m, con +x hacia la derecha; avanza a 3 m/s durante 4 s y después se queda quieto."
         }
       ],
       "tags": [
@@ -647,18 +607,133 @@
         "T0: unidades, signos y álgebra",
         "Referencia y posición"
       ],
-      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar dibujar x=0 durante la parada.",
+      "difficulty_reason": "Dos tramos sencillos; la dificultad es mantener la posición al pararse.",
       "common_mistakes": [
         "Dibujar x=0 durante la parada",
         "Introducir un salto de posición"
       ],
       "parts_count": 2,
-      "statement_source": "Un carrito parte de \\(x=2 m\\) con \\(+x\\) a la derecha, avanza uniformemente 3 m cada segundo durante 4 s y permanece quieto hasta \\(t=6 s\\). \n(a) Completa la tabla para \\(t=0,2,4,6 s\\).\n(b) Completa: Posición por tramos.",
-      "solution_source": "En marcha \\(x=2+3t\\); al llegar a \\(t=4,\\) \\(x=14 m\\).\n\nEn reposo \\(x=14 m\\), no \\(x=0\\). Tabla: 2,8,14,14 m.\n\nx-t es continua con cambio de pendiente; v-t salta idealmente de 3 a 0 m/s en \\(t=4\\).",
+      "statement_source": "Un carrito de juguete está sobre una mesa larga, con el origen en el borde izquierdo y \\(+x\\) hacia la derecha. En \\(t=0\\) está en \\(x=2\\,\\mathrm{m}\\). Avanza con velocidad constante \\(3\\,\\mathrm{m/s}\\) durante \\(4\\,\\mathrm{s}\\) y después se queda quieto hasta \\(t=6\\,\\mathrm{s}\\).\n\nSon dos tramos, cada uno con su ecuación de la posición. Al pararse, la posición se queda donde acabó el primer tramo: no vuelve a cero.\n\n(a) Escribe la ecuación de la posición \\(x(t)\\) del primer tramo, válida para \\(0\\le t\\le4\\,\\mathrm{s}\\).\n(b) Calcula la posición del carrito en \\(t=0\\), \\(2\\), \\(4\\) y \\(6\\,\\mathrm{s}\\).",
+      "solution_source": "(a) Primer tramo, MRU con \\(x_0=2\\,\\mathrm{m}\\) y \\(v=3\\,\\mathrm{m/s}\\): \\(x(t)=2+3t\\) para \\(0\\le t\\le4\\,\\mathrm{s}\\).\n(b) \\(x(0)=2{,}00\\,\\mathrm{m}\\), \\(x(2)=8{,}00\\,\\mathrm{m}\\) y \\(x(4)=14{,}0\\,\\mathrm{m}\\). En el segundo tramo está parado donde acabó: \\(x=14\\,\\mathrm{m}\\) para \\(4\\le t\\le6\\,\\mathrm{s}\\), así que \\(x(6)=14{,}0\\,\\mathrm{m}\\), no \\(0\\).\n\nEn la gráfica \\(x(t)\\), la recta de pendiente \\(3\\) se convierte en una recta horizontal; la velocidad pasa de \\(3\\) a \\(0\\,\\mathrm{m/s}\\).",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_r_005",
+      "number": 7,
+      "version": 1,
+      "title": "Trasladar e invertir un eje",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "Referencia y posición",
+      "family": "r",
+      "subtype": "written_upload",
+      "difficulty": 3,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "xp",
+          "label": "Ecuación de la posición \\(x'(t)\\) de Benito",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [
+            "30-(10+4*t)"
+          ],
+          "variable": "t",
+          "variable_unit": "s",
+          "unit": "m",
+          "domain": "t ≥ 0",
+          "canonical_expression": "20-4*t",
+          "part": "a",
+          "prompt": "Escribe la expresión en función de t usando * para multiplicar y ^ para las potencias; por ejemplo 3+2*t-0.5*t^2."
+        },
+        {
+          "id": "vp",
+          "label": "Velocidad \\(v'\\) para Benito",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -4,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "dx",
+          "label": "Desplazamiento \\(\\Delta x\\) para Ana",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 20,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "dxp",
+          "label": "Desplazamiento \\(\\Delta x'\\) para Benito",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -20,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "d",
+          "label": "Distancia recorrida \\(d\\)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 20,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_r_005.svg",
+          "alt": "Dos ejes paralelos: el de Ana con origen en el portal y +x al este; el de Benito con origen en la farola (x = 30 m de Ana) y +x′ al oeste. El coche está en x = 10 m en t = 0."
+        }
+      ],
+      "tags": [
+        "t1",
+        "r",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Trasladar e invertir un eje. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Referencia y posición"
+      ],
+      "difficulty_reason": "Cambia de sistema de referencia (traslación e inversión) y compara magnitudes que cambian de signo con las que no.",
+      "common_mistakes": [
+        "Cambiar origen sin invertir el sentido",
+        "Afirmar que cambia la distancia"
+      ],
+      "parts_count": 2,
+      "statement_source": "Dos observadores describen el mismo coche en una calle recta y usan el mismo reloj. Para Ana (sistema S) el origen está en su portal y \\(+x\\) apunta al este; para ella, \\(x(t)=10+4t\\) en SI. Benito (sistema S′) pone su origen en una farola situada en \\(x=30\\,\\mathrm{m}\\) del sistema de Ana y elige \\(+x'\\) hacia el oeste.\n\nEl movimiento es el mismo; solo cambian los números con que se describe. Como el eje de Benito está trasladado e invertido, un punto que para Ana está en \\(x\\) está, para Benito, en \\(x'=30-x\\).\n\n(a) Escribe la ecuación de la posición \\(x'(t)\\) del coche para Benito y deriva para obtener su velocidad \\(v'\\).\n(b) Entre \\(t=0\\) y \\(t=5\\,\\mathrm{s}\\), calcula el desplazamiento para Ana, el desplazamiento para Benito y la distancia recorrida (que es la misma para los dos).",
+      "solution_source": "(a) Sustituyendo la ecuación de Ana: \\(x'(t)=30-(10+4t)=20-4t\\). Derivando, \\(v'=\\dfrac{dx'}{dt}=-4\\,\\mathrm{m/s}\\): para Benito el coche avanza hacia su sentido negativo.\n(b) Ana: \\(x(0)=10\\,\\mathrm{m}\\) y \\(x(5)=30\\,\\mathrm{m}\\), así que \\(\\Delta x=+20{,}0\\,\\mathrm{m}\\). Benito: \\(x'(0)=20\\,\\mathrm{m}\\) y \\(x'(5)=0\\), así que \\(\\Delta x'=-20{,}0\\,\\mathrm{m}\\). El coche no da la vuelta: la distancia es \\(20{,}0\\,\\mathrm{m}\\) para ambos.\n\nCambiar el eje cambia el signo del desplazamiento y de la velocidad, no el movimiento.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t1_r_008",
+      "number": 8,
       "version": 1,
       "title": "Auditoría de una gráfica",
       "course": "1bach",
@@ -674,7 +749,7 @@
       "response_fields": [
         {
           "id": "vg",
-          "label": "Velocidad del gráfico",
+          "label": "Velocidad de la gráfica dibujada",
           "type": "numeric",
           "required": true,
           "expected_value": 2,
@@ -686,25 +761,22 @@
         },
         {
           "id": "correct",
-          "label": "Función corregida",
+          "label": "Ecuación de la posición correcta \\(x(t)\\)",
           "type": "function",
           "response_kind": "function",
           "required": true,
-          "accepted_forms": [
-            "8-2*t"
-          ],
-          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
-          "grading": "pending_review",
+          "accepted_forms": [],
           "variable": "t",
           "variable_unit": "s",
           "unit": "m",
           "domain": "0≤t≤4",
           "canonical_expression": "8-2*t",
-          "part": "b"
+          "part": "b",
+          "prompt": "Escribe la expresión en función de t usando * para multiplicar y ^ para las potencias; por ejemplo 3+2*t-0.5*t^2."
         },
         {
           "id": "xf",
-          "label": "Posición final correcta",
+          "label": "Posición correcta en \\(t=4\\,\\mathrm{s}\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 0,
@@ -718,7 +790,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t1/assets/t1_r_008.svg",
-          "alt": "Gráfica propuesta: comprobar su coherencia"
+          "alt": "Gráfica x–t propuesta por un compañero: recta de (0 s; 8 m) a (4 s; 16 m)."
         }
       ],
       "tags": [
@@ -737,14 +809,14 @@
         "T0: unidades, signos y álgebra",
         "Referencia y posición"
       ],
-      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar modificar el eje para salvar una gráfica incorrecta.",
+      "difficulty_reason": "Revisa una gráfica ajena: hay que detectar un error de signo en la pendiente.",
       "common_mistakes": [
         "Modificar el eje para salvar una gráfica incorrecta",
         "Usar rapidez positiva como velocidad"
       ],
       "parts_count": 2,
-      "statement_source": "Texto: «Con \\(+x\\) al este, el móvil parte de \\(x=8 m\\) y se mueve al oeste a 2 m/s durante 4 s». El gráfico propuesto une (0 s,8 m) con (4 s,16 m). \n(a) Completa: Velocidad del gráfico.\n(b) Da la función y el extremo correctos.",
-      "solution_source": "El gráfico tiene pendiente (\\(16−8\\))/4=+2 m/s.\n\nEl texto exige \\(v=−2 m/s\\); por tanto \\(x=8−2t\\) y \\(x(4)=0 m\\).\n\nDebe descender hasta el origen sin cambiar el sistema de referencia.",
+      "statement_source": "Un compañero ha dibujado la gráfica \\(x(t)\\) de este enunciado: «Con \\(+x\\) hacia el este, un perro parte de \\(x=8\\,\\mathrm{m}\\) y corre hacia el oeste a \\(2\\,\\mathrm{m/s}\\) durante \\(4\\,\\mathrm{s}\\)». Su gráfica es la recta que une \\((0\\,\\mathrm{s};\\,8\\,\\mathrm{m})\\) con \\((4\\,\\mathrm{s};\\,16\\,\\mathrm{m})\\), como en la figura.\n\nPara revisarla, compara la pendiente de la gráfica con la velocidad que dice el texto, incluido su signo.\n\n(a) Calcula la velocidad que indica la gráfica dibujada (su pendiente).\n(b) Escribe la ecuación de la posición correcta \\(x(t)\\) y calcula dónde está el perro en \\(t=4\\,\\mathrm{s}\\).",
+      "solution_source": "(a) Pendiente: \\(\\dfrac{16-8}{4-0}=+2{,}00\\,\\mathrm{m/s}\\). La gráfica describe un movimiento hacia el este.\n(b) Hacia el oeste la velocidad es negativa, \\(v=-2\\,\\mathrm{m/s}\\). Ecuación de la posición: \\(x(t)=8-2t\\), y \\(x(4)=8-8=0\\): llega justo al origen.\n\nLa gráfica correcta baja de \\(8\\,\\mathrm{m}\\) a \\(0\\); el error estaba en el signo de \\(v\\), no en el eje.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     }
   ]

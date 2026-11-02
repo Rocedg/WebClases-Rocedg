@@ -5,8 +5,13 @@ import re
 from markupsafe import Markup, escape
 
 
-def exercise_number(exercise_id):
-    match = re.search(r"_(\d+)$", str(exercise_id))
+def exercise_number(exercise):
+    """Explicit `number` of an exercise record, else the numeric suffix of its ID."""
+    if isinstance(exercise, dict):
+        if exercise.get('number') is not None:
+            return int(exercise['number'])
+        exercise = exercise.get('id')
+    match = re.search(r"_(\d+)$", str(exercise))
     return int(match.group(1)) if match else None
 
 

@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t1_g_001",
+      "number": 35,
       "version": 1,
       "title": "Tres pendientes, tres velocidades",
       "course": "1bach",
@@ -10,14 +11,14 @@
       "block": "Funciones y gráficas",
       "family": "g",
       "subtype": "multi_step",
-      "difficulty": 3,
+      "difficulty": 1,
       "estimated_minutes": 10,
       "response_mode": "structured",
       "response_prompt": "Responde los apartados en sus campos.",
       "response_fields": [
         {
           "id": "v1",
-          "label": "Velocidad 0–3 s",
+          "label": "Velocidad entre \\(0\\) y \\(3\\,\\mathrm{s}\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 4,
@@ -29,7 +30,7 @@
         },
         {
           "id": "v2",
-          "label": "Velocidad 3–5 s",
+          "label": "Velocidad entre \\(3\\) y \\(5\\,\\mathrm{s}\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 0,
@@ -41,7 +42,7 @@
         },
         {
           "id": "v3",
-          "label": "Velocidad 5–9 s",
+          "label": "Velocidad entre \\(5\\) y \\(9\\,\\mathrm{s}\\)",
           "type": "numeric",
           "required": true,
           "expected_value": -2,
@@ -49,11 +50,11 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "b"
+          "part": "a"
         },
         {
           "id": "dx",
-          "label": "Desplazamiento",
+          "label": "Desplazamiento \\(\\Delta x\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 4,
@@ -65,7 +66,7 @@
         },
         {
           "id": "d",
-          "label": "Distancia",
+          "label": "Distancia \\(d\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 20,
@@ -79,7 +80,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t1/assets/t1_g_001.svg",
-          "alt": "Posición lineal por tres tramos"
+          "alt": "Gráfica x–t formada por tres segmentos que unen (0; −2), (3; 10), (5; 10) y (9; 2), con t en s y x en m."
         }
       ],
       "tags": [
@@ -98,18 +99,19 @@
         "T0: unidades, signos y álgebra",
         "Funciones y gráficas"
       ],
-      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar leer x como velocidad.",
+      "difficulty_reason": "Pendientes de segmentos rectos de una gráfica x(t).",
       "common_mistakes": [
         "Leer x como velocidad",
         "Contar la parada como regreso al origen"
       ],
       "parts_count": 2,
-      "statement_source": "\\(+x\\) al este. x-t une linealmente \\((0,−2)\\),\\((3,10)\\),\\((5,10)\\),\\((9,2)\\), con t en s y x en m. \n(a) Obtén v en cada tramo abierto.\n(b) Completa: Velocidad 5–9 s, Desplazamiento, Distancia.",
-      "solution_source": "Pendientes: (\\(10+2\\))/3=4 m/s; 0/2=0; (\\(2−10\\))/4=−2 m/s.\n\n\\(Δx=2−(−2)=4 m\\); \\(d=12+0+8=20 m\\).\n\nEstá parado entre 3 y 5 s en \\(x=10 m\\). Los vértices representan cambios instantáneos idealizados de v.",
+      "statement_source": "Un repartidor en bicicleta recorre una calle recta. El origen está en una esquina y \\(+x\\) hacia el este. Su gráfica \\(x(t)\\) está formada por tres segmentos rectos que unen los puntos \\((0\\,\\mathrm{s};\\,-2\\,\\mathrm{m})\\), \\((3\\,\\mathrm{s};\\,10\\,\\mathrm{m})\\), \\((5\\,\\mathrm{s};\\,10\\,\\mathrm{m})\\) y \\((9\\,\\mathrm{s};\\,2\\,\\mathrm{m})\\).\n\nEn una gráfica \\(x(t)\\), la pendiente de cada tramo es la velocidad. El desplazamiento solo mira el principio y el final; la distancia suma lo que recorre en cada tramo.\n\n(a) Calcula la velocidad en cada uno de los tres tramos.\n(b) Calcula el desplazamiento y la distancia recorrida entre \\(0\\) y \\(9\\,\\mathrm{s}\\).",
+      "solution_source": "(a) Pendientes: \\(\\dfrac{10-(-2)}{3}=4{,}00\\,\\mathrm{m/s}\\); \\(\\dfrac{0}{2}=0\\) (parado en \\(x=10\\,\\mathrm{m}\\)); \\(\\dfrac{2-10}{4}=-2{,}00\\,\\mathrm{m/s}\\).\n(b) \\(\\Delta x=2-(-2)=4{,}00\\,\\mathrm{m}\\). Distancia: \\(12+0+8=20{,}0\\,\\mathrm{m}\\). Los vértices son cambios bruscos de velocidad idealizados.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t1_g_002",
+      "number": 36,
       "version": 1,
       "title": "Rectángulo y triángulo bajo la velocidad",
       "course": "1bach",
@@ -118,14 +120,14 @@
       "block": "Funciones y gráficas",
       "family": "g",
       "subtype": "multi_step",
-      "difficulty": 3,
+      "difficulty": 2,
       "estimated_minutes": 10,
       "response_mode": "structured",
       "response_prompt": "Responde los apartados en sus campos.",
       "response_fields": [
         {
           "id": "d1",
-          "label": "Desplazamiento 0–4 s",
+          "label": "Desplazamiento entre \\(0\\) y \\(4\\,\\mathrm{s}\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 8,
@@ -137,7 +139,7 @@
         },
         {
           "id": "d2",
-          "label": "Desplazamiento 4–8 s",
+          "label": "Desplazamiento entre \\(4\\) y \\(8\\,\\mathrm{s}\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 16,
@@ -145,11 +147,11 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "b"
+          "part": "a"
         },
         {
           "id": "x8",
-          "label": "Posición final",
+          "label": "Posición \\(x(8)\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 19,
@@ -161,7 +163,7 @@
         },
         {
           "id": "a",
-          "label": "Aceleración segundo tramo",
+          "label": "Aceleración entre \\(4\\) y \\(8\\,\\mathrm{s}\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 1,
@@ -175,7 +177,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t1/assets/t1_g_002.svg",
-          "alt": "Velocidad constante seguida de aumento lineal"
+          "alt": "Gráfica v–t: segmentos de (0; 2) a (4; 2) y de (4; 2) a (8; 6), con t en s y v en m/s."
         }
       ],
       "tags": [
@@ -194,403 +196,20 @@
         "T0: unidades, signos y álgebra",
         "Funciones y gráficas"
       ],
-      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar confundir área con pendiente.",
+      "difficulty_reason": "Áreas bajo v(t) (rectángulo y trapecio) y pendiente como aceleración.",
       "common_mistakes": [
         "Confundir área con pendiente",
         "Olvidar x_0"
       ],
       "parts_count": 2,
-      "statement_source": "\\(+x\\) a la derecha; \\(x_0=−5 m\\). v-t une \\((0,2)\\),\\((4,2)\\),\\((8,6)\\), en SI. \n(a) Calcula desplazamiento de cada tramo por áreas.\n(b) Obtén \\(x(8)\\) y la aceleración en 4",
-      "solution_source": "Área 0–4: 2·4=8 m. Área 4–8: rectángulo 2·4 más triángulo (\\(6−2\\))·4/2, total 16 m.\n\n\\(Δx=24 m\\); \\(x(8)=−5+24=19 m\\).\n\n\\(a=(6−2)/(8−4)=1 m/s²\\); el área mide desplazamiento y la pendiente aceleración.",
-      "solution_reference": "Elaboración propia; revisión matemática documentada."
-    },
-    {
-      "id": "t1_g_003",
-      "version": 1,
-      "title": "Áreas que se cancelan parcialmente",
-      "course": "1bach",
-      "topic": "t1",
-      "concept": "Movimiento rectilíneo",
-      "block": "Funciones y gráficas",
-      "family": "g",
-      "subtype": "written_upload",
-      "difficulty": 4,
-      "estimated_minutes": 12,
-      "response_mode": "structured",
-      "response_prompt": "Responde los apartados en sus campos.",
-      "response_fields": [
-        {
-          "id": "turn",
-          "label": "Giro",
-          "type": "numeric",
-          "required": true,
-          "expected_value": 3,
-          "unit": "s",
-          "tolerance": 0.01,
-          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
-          "significant_figures": 3,
-          "part": "a"
-        },
-        {
-          "id": "dx",
-          "label": "Desplazamiento",
-          "type": "numeric",
-          "required": true,
-          "expected_value": 5,
-          "unit": "m",
-          "tolerance": 0.01,
-          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
-          "significant_figures": 3,
-          "part": "b"
-        },
-        {
-          "id": "d",
-          "label": "Recorrido",
-          "type": "numeric",
-          "required": true,
-          "expected_value": 13,
-          "unit": "m",
-          "tolerance": 0.01,
-          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
-          "significant_figures": 3,
-          "part": "b"
-        },
-        {
-          "id": "x5",
-          "label": "Posición final",
-          "type": "numeric",
-          "required": true,
-          "expected_value": 8,
-          "unit": "m",
-          "tolerance": 0.01,
-          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
-          "significant_figures": 3,
-          "part": "b"
-        },
-        {
-          "id": "x",
-          "label": "Posición",
-          "type": "function",
-          "response_kind": "function",
-          "required": true,
-          "accepted_forms": [
-            "3+6*t-t**2"
-          ],
-          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
-          "grading": "pending_review",
-          "variable": "t",
-          "variable_unit": "s",
-          "unit": "m",
-          "domain": "0≤t≤5",
-          "canonical_expression": "3+6*t-t**2",
-          "part": "b"
-        }
-      ],
-      "assets": [
-        {
-          "path": "static/exercises/1bach/t1/assets/t1_g_003.svg",
-          "alt": "v=6−2t: área positiva y negativa"
-        }
-      ],
-      "tags": [
-        "t1",
-        "g",
-        "cinematica"
-      ],
-      "origin": {
-        "kind": "original_teacher_bank",
-        "reference": null,
-        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
-      },
-      "status": "draft",
-      "learning_objective": "Áreas que se cancelan parcialmente. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
-      "prerequisites": [
-        "T0: unidades, signos y álgebra",
-        "Funciones y gráficas"
-      ],
-      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar cancelar áreas al calcular distancia.",
-      "common_mistakes": [
-        "Cancelar áreas al calcular distancia",
-        "Perder la constante de integración"
-      ],
-      "parts_count": 3,
-      "statement_source": "\\(+x\\) al este, \\(x(0)=3 m\\). \\(v(t)=6−2t m/s\\) en \\(0≤t≤5\\) s. \n(a) Determina el giro y separa las áreas.\n(b) Calcula desplazamiento, distancia y posición final.",
-      "solution_source": "\\(v=0\\) en 3 s. Área \\(positiva=6·3/2=9 m\\); \\(negativa=−4·2/2=−4 m\\).\n\n\\(Δx=9−4=5 m\\); \\(d=9+4=13 m\\); \\(x_f=3+5=8 m\\).\n\nIntegrando \\(x=3+6t−t²\\): \\(x(5)=8 m\\). El extremo es \\(x(3)=12 m\\) y el regreso mide 4 m.",
-      "solution_reference": "Elaboración propia; revisión matemática documentada."
-    },
-    {
-      "id": "t1_g_004",
-      "version": 1,
-      "title": "El área de aceleración no da posición",
-      "course": "1bach",
-      "topic": "t1",
-      "concept": "Movimiento rectilíneo",
-      "block": "Funciones y gráficas",
-      "family": "g",
-      "subtype": "multi_step",
-      "difficulty": 3,
-      "estimated_minutes": 10,
-      "response_mode": "structured",
-      "response_prompt": "Responde los apartados en sus campos.",
-      "response_fields": [
-        {
-          "id": "v2",
-          "label": "V(2)",
-          "type": "numeric",
-          "required": true,
-          "expected_value": 1,
-          "unit": "m/s",
-          "tolerance": 0.01,
-          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
-          "significant_figures": 3,
-          "part": "a"
-        },
-        {
-          "id": "v5",
-          "label": "V(5)",
-          "type": "numeric",
-          "required": true,
-          "expected_value": -2,
-          "unit": "m/s",
-          "tolerance": 0.01,
-          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
-          "significant_figures": 3,
-          "part": "a"
-        },
-        {
-          "id": "t1",
-          "label": "Primer cero",
-          "type": "numeric",
-          "required": true,
-          "expected_value": 1.5,
-          "unit": "s",
-          "tolerance": 0.01,
-          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
-          "significant_figures": 3,
-          "part": "b"
-        },
-        {
-          "id": "t2",
-          "label": "Segundo cero",
-          "type": "numeric",
-          "required": true,
-          "expected_value": 3,
-          "unit": "s",
-          "tolerance": 0.01,
-          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
-          "significant_figures": 3,
-          "part": "b"
-        }
-      ],
-      "assets": [
-        {
-          "path": "static/exercises/1bach/t1/assets/t1_g_004.svg",
-          "alt": "Dos aceleraciones y velocidad inicial negativa"
-        }
-      ],
-      "tags": [
-        "t1",
-        "g",
-        "cinematica"
-      ],
-      "origin": {
-        "kind": "original_teacher_bank",
-        "reference": null,
-        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
-      },
-      "status": "draft",
-      "learning_objective": "El área de aceleración no da posición. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
-      "prerequisites": [
-        "T0: unidades, signos y álgebra",
-        "Funciones y gráficas"
-      ],
-      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar usar el área de a-t como desplazamiento.",
-      "common_mistakes": [
-        "Usar el área de a-t como desplazamiento",
-        "Reiniciar v=0 al cambiar a"
-      ],
-      "parts_count": 2,
-      "statement_source": "\\(+x\\) a la derecha; \\(v_0=−3 m/s\\). \\(a=2 m/s²\\) de 0 a 2 s y \\(a=−1 m/s²\\) de 2 a 5 s. \n(a) Calcula \\(v(2)\\),\\(v(5)\\).\n(b) Localiza todos los instantes de velocidad nula dentro del intervalo.",
-      "solution_source": "\\(Δv_1=2·2=4 m/s\\): \\(v(2)=−3+4=1 m/s\\). \\(Δv_2=−1·3=−3 m/s\\): \\(v(5)=−2 m/s\\).\n\nEn el primer tramo \\(v=−3+2t\\): cero a 1,5 s. En el segundo \\(v=1−(t−2)\\): cero a 3 s.\n\nLos dos ceros pertenecen a sus tramos y producen cambios de sentido. No puede hallarse posición absoluta sin \\(x_0\\).",
-      "solution_reference": "Elaboración propia; revisión matemática documentada."
-    },
-    {
-      "id": "t1_g_005",
-      "version": 1,
-      "title": "Dibujar la velocidad desde la posición",
-      "course": "1bach",
-      "topic": "t1",
-      "concept": "Movimiento rectilíneo",
-      "block": "Funciones y gráficas",
-      "family": "g",
-      "subtype": "written_upload",
-      "difficulty": 4,
-      "estimated_minutes": 13,
-      "response_mode": "structured",
-      "response_prompt": "Responde los apartados en sus campos.",
-      "response_fields": [
-        {
-          "id": "v",
-          "label": "Velocidad por tramos",
-          "type": "function",
-          "response_kind": "function",
-          "required": true,
-          "accepted_forms": [
-            "2*t (0<t<2); 0 (2<t<4); -2 (4<t<6)"
-          ],
-          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
-          "grading": "pending_review",
-          "variable": "t",
-          "variable_unit": "s",
-          "unit": "m/s",
-          "domain": "0<t<6, t≠2,4",
-          "canonical_expression": "2*t (0<t<2); 0 (2<t<4); -2 (4<t<6)",
-          "part": "a"
-        },
-        {
-          "id": "d",
-          "label": "Recorrido total",
-          "type": "numeric",
-          "required": true,
-          "expected_value": 8,
-          "unit": "m",
-          "tolerance": 0.01,
-          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
-          "significant_figures": 3,
-          "part": "b"
-        }
-      ],
-      "assets": [
-        {
-          "path": "static/exercises/1bach/t1/assets/t1_g_005.svg",
-          "alt": "Posición dada; construir v-t"
-        }
-      ],
-      "tags": [
-        "t1",
-        "g",
-        "cinematica"
-      ],
-      "origin": {
-        "kind": "original_teacher_bank",
-        "reference": null,
-        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
-      },
-      "status": "draft",
-      "learning_objective": "Dibujar la velocidad desde la posición. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
-      "prerequisites": [
-        "T0: unidades, signos y álgebra",
-        "Funciones y gráficas"
-      ],
-      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar dibujar v continua por obligación.",
-      "common_mistakes": [
-        "Dibujar v continua por obligación",
-        "Asignar aceleración finita al salto instantáneo"
-      ],
-      "parts_count": 2,
-      "statement_source": "\\(+x\\) al este. \\(x(t)=t²\\) para \\(0≤t≤2\\), \\(x=4\\) para \\(2≤t≤4\\) y \\(x=4−2(t−4)\\) para \\(4≤t≤6\\), en SI. \n(a) Completa: Velocidad por tramos.\n(b) Completa: Recorrido total.",
-      "solution_source": "Las derivadas son 2t, \\(0 y −2 m/s\\) en los interiores.\n\nx recorre de 0 a 4, permanece en 4 y vuelve a 0: \\(d=4+4=8 m\\).\n\nx enlaza pero v no; los saltos idealizan cambios muy breves y no una aceleración finita en el instante exacto.",
-      "solution_reference": "Elaboración propia; revisión matemática documentada."
-    },
-    {
-      "id": "t1_g_006",
-      "version": 1,
-      "title": "Dibujar aceleración desde velocidad",
-      "course": "1bach",
-      "topic": "t1",
-      "concept": "Movimiento rectilíneo",
-      "block": "Funciones y gráficas",
-      "family": "g",
-      "subtype": "written_upload",
-      "difficulty": 4,
-      "estimated_minutes": 13,
-      "response_mode": "structured",
-      "response_prompt": "Responde los apartados en sus campos.",
-      "response_fields": [
-        {
-          "id": "a1",
-          "label": "A en 0–2 s",
-          "type": "numeric",
-          "required": true,
-          "expected_value": 3,
-          "unit": "m/s²",
-          "tolerance": 0.01,
-          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
-          "significant_figures": 3,
-          "part": "a"
-        },
-        {
-          "id": "a2",
-          "label": "A en 2–5 s",
-          "type": "numeric",
-          "required": true,
-          "expected_value": 0,
-          "unit": "m/s²",
-          "tolerance": 0.01,
-          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
-          "significant_figures": 3,
-          "part": "a"
-        },
-        {
-          "id": "a3",
-          "label": "A en 5–7 s",
-          "type": "numeric",
-          "required": true,
-          "expected_value": -2,
-          "unit": "m/s²",
-          "tolerance": 0.01,
-          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
-          "significant_figures": 3,
-          "part": "b"
-        },
-        {
-          "id": "x7",
-          "label": "Posición final",
-          "type": "numeric",
-          "required": true,
-          "expected_value": 18,
-          "unit": "m",
-          "tolerance": 0.01,
-          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
-          "significant_figures": 3,
-          "part": "b"
-        }
-      ],
-      "assets": [
-        {
-          "path": "static/exercises/1bach/t1/assets/t1_g_006.svg",
-          "alt": "Velocidad continua con tres pendientes"
-        }
-      ],
-      "tags": [
-        "t1",
-        "g",
-        "cinematica"
-      ],
-      "origin": {
-        "kind": "original_teacher_bank",
-        "reference": null,
-        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
-      },
-      "status": "draft",
-      "learning_objective": "Dibujar aceleración desde velocidad. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
-      "prerequisites": [
-        "T0: unidades, signos y álgebra",
-        "Funciones y gráficas"
-      ],
-      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar tomar módulo de toda el área para hallar posición.",
-      "common_mistakes": [
-        "Tomar módulo de toda el área para hallar posición",
-        "Confundir vértice continuo con salto de velocidad"
-      ],
-      "parts_count": 2,
-      "statement_source": "\\(+x\\) a la derecha. v-t une \\((0,−2)\\),\\((2,4)\\),\\((5,4)\\),\\((7,0)\\), en SI; \\(x_0=0\\). \n(a) Completa: A en 0–2 s, A en 2–5 s.\n(b) Completa: A en 5–7 s, Posición final.",
-      "solution_source": "Pendientes: (\\(4+2\\))/2=3; 0; (\\(0−4\\))/2=−2 m/s².\n\nÁreas con signo: (\\(−2+4\\))·2/2=2 m; 4·3=12 m; 4·2/2=4 m. \\(x(7)=18 m\\).\n\nLa velocidad enlaza en 2 y 5 s; su pendiente cambia bruscamente, por lo que a no tiene valor clásico único en esos instantes.",
+      "statement_source": "Un patinete parte de \\(x_0=-5\\,\\mathrm{m}\\); el origen está en un banco y \\(+x\\) hacia la derecha. Su gráfica \\(v(t)\\) une con segmentos rectos los puntos \\((0\\,\\mathrm{s};\\,2\\,\\mathrm{m/s})\\), \\((4\\,\\mathrm{s};\\,2\\,\\mathrm{m/s})\\) y \\((8\\,\\mathrm{s};\\,6\\,\\mathrm{m/s})\\).\n\nEn una gráfica \\(v(t)\\), el área bajo la curva es el desplazamiento y la pendiente es la aceleración.\n\n(a) Calcula, como áreas, el desplazamiento entre \\(0\\) y \\(4\\,\\mathrm{s}\\) y el desplazamiento entre \\(4\\) y \\(8\\,\\mathrm{s}\\).\n(b) Calcula la posición en \\(t=8\\,\\mathrm{s}\\) y la aceleración entre \\(4\\) y \\(8\\,\\mathrm{s}\\).",
+      "solution_source": "(a) De 0 a 4 s, rectángulo: \\(2\\cdot4=8{,}00\\,\\mathrm{m}\\). De 4 a 8 s, rectángulo más triángulo: \\(2\\cdot4+\\tfrac12\\cdot4\\cdot4=16{,}0\\,\\mathrm{m}\\).\n(b) El área da el cambio de posición, no la posición: \\(x(8)=-5+8+16=19{,}0\\,\\mathrm{m}\\). Aceleración: pendiente \\(\\dfrac{6-2}{8-4}=1{,}00\\,\\mathrm{m/s^2}\\).",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t1_g_007",
-      "version": 1,
+      "number": 37,
+      "version": 2,
       "title": "Tres representaciones compatibles",
       "course": "1bach",
       "topic": "t1",
@@ -598,14 +217,36 @@
       "block": "Funciones y gráficas",
       "family": "g",
       "subtype": "multi_step",
-      "difficulty": 3,
+      "difficulty": 2,
       "estimated_minutes": 11,
       "response_mode": "structured",
       "response_prompt": "Responde los apartados en sus campos.",
       "response_fields": [
         {
+          "id": "trio",
+          "label": "Trío coherente",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "A",
+              "label": "A"
+            },
+            {
+              "id": "B",
+              "label": "B"
+            },
+            {
+              "id": "C",
+              "label": "C"
+            }
+          ],
+          "correct_option_id": "A",
+          "part": "a"
+        },
+        {
           "id": "x3",
-          "label": "Posición a 3 s",
+          "label": "Posición \\(x(3)\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 16,
@@ -619,7 +260,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t1/assets/t1_g_007.svg",
-          "alt": "A y B proponen esta posición; Velocidades propuestas; A y C proponen a=2; C propone x lineal; B propone a=1"
+          "alt": "Tabla con los tríos A, B y C de funciones x(t), v(t) y a(t) propuestos; datos x₀ = 1 m y v₀ = 2 m/s."
         }
       ],
       "tags": [
@@ -638,18 +279,19 @@
         "T0: unidades, signos y álgebra",
         "Funciones y gráficas"
       ],
-      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar comparar solo las formas de los dibujos.",
+      "difficulty_reason": "Comprueba por derivación qué trío x, v, a es coherente.",
       "common_mistakes": [
         "Comparar solo las formas de los dibujos",
         "Omitir la posición inicial al integrar"
       ],
       "parts_count": 2,
-      "statement_source": "SI, \\(+x\\) derecha, \\(x_0=1 m\\) y \\(v_0=2 m/s\\). Para \\(0≤t≤3\\) s se ofrecen tríos: A: \\(x=1+2t+t²,\\) \\(v=2+2t,\\) \\(a=2\\); B: \\(x=1+2t+t²,\\) \\(v=2+t,\\) \\(a=1\\); C: \\(x=1+2t,\\) \\(v=2+2t,\\) \\(a=2\\). \n(b) Completa: Posición a 3 s.",
-      "solution_source": "A satisface ambas derivadas y las condiciones iniciales. B atribuye a x una derivada incorrecta; C propone una x lineal con v creciente.\n\nEn A, \\(Δx=(2+8)·3/2=15 m\\), de modo que \\(x(3)=1+15=16 m\\).\n\nEl área da incremento, no la posición absoluta; hay que añadir \\(x_0\\).",
+      "statement_source": "Un móvil empieza en \\(x_0=1\\,\\mathrm{m}\\) con \\(v_0=2\\,\\mathrm{m/s}\\), con \\(+x\\) hacia la derecha, unidades SI y \\(0\\le t\\le3\\,\\mathrm{s}\\). Tres alumnos proponen las funciones \\(x(t)\\), \\(v(t)\\) y \\(a(t)\\) del movimiento:\n\nA: \\(x=1+2t+t^2\\), \\(v=2+2t\\), \\(a=2\\). B: \\(x=1+2t+t^2\\), \\(v=2+t\\), \\(a=1\\). C: \\(x=1+2t\\), \\(v=2+2t\\), \\(a=2\\).\n\nUn trío es coherente si \\(v\\) es la derivada de \\(x\\), \\(a\\) es la derivada de \\(v\\) y se cumplen \\(x_0\\) y \\(v_0\\).\n\n(a) Elige el trío coherente.\n(b) Con ese trío, calcula la posición en \\(t=3\\,\\mathrm{s}\\).",
+      "solution_source": "(a) A. Derivando \\(x=1+2t+t^2\\) se obtiene \\(v=2+2t\\), y derivando otra vez, \\(a=2\\); además \\(x(0)=1\\) y \\(v(0)=2\\). En B, la derivada de \\(x\\) no es \\(2+t\\). En C, \\(x\\) es una recta, así que su derivada sería \\(2\\), no \\(2+2t\\).\n(b) \\(x(3)=1+6+9=16{,}0\\,\\mathrm{m}\\). Comprobación con el área bajo \\(v\\): trapecio \\(\\tfrac12(2+8)\\cdot3=15\\,\\mathrm{m}\\), más \\(x_0=1\\,\\mathrm{m}\\).",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t1_g_008",
+      "number": 38,
       "version": 1,
       "title": "Reposo, retroceso y regreso",
       "course": "1bach",
@@ -658,14 +300,14 @@
       "block": "Funciones y gráficas",
       "family": "g",
       "subtype": "multi_step",
-      "difficulty": 3,
+      "difficulty": 2,
       "estimated_minutes": 10,
       "response_mode": "structured",
       "response_prompt": "Responde los apartados en sus campos.",
       "response_fields": [
         {
           "id": "v1",
-          "label": "Velocidad 0–2",
+          "label": "Velocidad entre \\(0\\) y \\(2\\,\\mathrm{s}\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 0,
@@ -673,11 +315,11 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "b"
+          "part": "a"
         },
         {
           "id": "v2",
-          "label": "Velocidad 2–4",
+          "label": "Velocidad entre \\(2\\) y \\(4\\,\\mathrm{s}\\)",
           "type": "numeric",
           "required": true,
           "expected_value": -2,
@@ -685,11 +327,11 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "b"
+          "part": "a"
         },
         {
           "id": "v3",
-          "label": "Velocidad 4–6",
+          "label": "Velocidad entre \\(4\\) y \\(6\\,\\mathrm{s}\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 2,
@@ -697,11 +339,11 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "b"
+          "part": "a"
         },
         {
           "id": "d",
-          "label": "Distancia",
+          "label": "Distancia \\(d\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 8,
@@ -713,7 +355,7 @@
         },
         {
           "id": "dx",
-          "label": "Desplazamiento",
+          "label": "Desplazamiento \\(\\Delta x\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 0,
@@ -727,7 +369,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t1/assets/t1_g_008.svg",
-          "alt": "Lectura física de posición por tramos"
+          "alt": "Gráfica x–t que une (0; 5), (2; 5), (4; 1) y (6; 5), con t en s y x en m."
         }
       ],
       "tags": [
@@ -746,14 +388,420 @@
         "T0: unidades, signos y álgebra",
         "Funciones y gráficas"
       ],
-      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar confundir posición mínima con origen.",
+      "difficulty_reason": "Pendientes de x(t) con reposo y retroceso; desplazamiento nulo con distancia no nula.",
       "common_mistakes": [
         "Confundir posición mínima con origen",
         "Afirmar reposo porque desplazamiento total es cero"
       ],
       "parts_count": 2,
-      "statement_source": "\\(+x\\) al este. x-t une \\((0,5)\\),\\((2,5)\\),\\((4,1)\\),\\((6,5)\\), en SI. \n(b) Halla velocidades, recorrido y desplazamiento; diferencia pasar por \\(x=0\\) de cambiar sentido.",
-      "solution_source": "Reposo 0–2, retroceso 2–4, avance 4–6. Pendientes 0,−2,+2 m/s.\n\n\\(d=0+4+4=8 m\\) y \\(Δx=5−5=0\\).\n\nEl giro ocurre en \\(x=1 m\\), no en el origen; es un vértice idealizado con cambio brusco de velocidad.",
+      "statement_source": "Un gato pasea por el borde de una valla recta. El origen está en un poste y \\(+x\\) hacia el este. Su gráfica \\(x(t)\\) une con segmentos rectos los puntos \\((0\\,\\mathrm{s};\\,5\\,\\mathrm{m})\\), \\((2\\,\\mathrm{s};\\,5\\,\\mathrm{m})\\), \\((4\\,\\mathrm{s};\\,1\\,\\mathrm{m})\\) y \\((6\\,\\mathrm{s};\\,5\\,\\mathrm{m})\\).\n\nLa pendiente de cada tramo es la velocidad. Cambiar de sentido (un mínimo de \\(x\\)) no es lo mismo que pasar por el origen.\n\n(a) Calcula la velocidad en cada tramo: de \\(0\\) a \\(2\\,\\mathrm{s}\\), de \\(2\\) a \\(4\\,\\mathrm{s}\\) y de \\(4\\) a \\(6\\,\\mathrm{s}\\).\n(b) Calcula la distancia recorrida y el desplazamiento entre \\(0\\) y \\(6\\,\\mathrm{s}\\).",
+      "solution_source": "(a) Pendientes: \\(0\\) (quieto), \\(\\dfrac{1-5}{2}=-2{,}00\\,\\mathrm{m/s}\\) (retrocede) y \\(\\dfrac{5-1}{2}=+2{,}00\\,\\mathrm{m/s}\\) (vuelve).\n(b) \\(d=0+4+4=8{,}00\\,\\mathrm{m}\\) y \\(\\Delta x=5-5=0\\). El giro ocurre en \\(x=1\\,\\mathrm{m}\\), no en el origen; es un vértice idealizado con cambio brusco de velocidad.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_g_003",
+      "number": 39,
+      "version": 1,
+      "title": "Áreas que se cancelan parcialmente",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "Funciones y gráficas",
+      "family": "g",
+      "subtype": "written_upload",
+      "difficulty": 3,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "turn",
+          "label": "Instante del giro",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "dx",
+          "label": "Desplazamiento \\(\\Delta x\\)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 5,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "d",
+          "label": "Distancia \\(d\\)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 13,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "x5",
+          "label": "Posición \\(x(5)\\)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 8,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "x",
+          "label": "Ecuación de la posición \\(x(t)\\)",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [],
+          "variable": "t",
+          "variable_unit": "s",
+          "unit": "m",
+          "domain": "0≤t≤5",
+          "canonical_expression": "3+6*t-t^2",
+          "part": "c",
+          "prompt": "Escribe la expresión en función de t usando * para multiplicar y ^ para las potencias; por ejemplo 3+2*t-0.5*t^2."
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_g_003.svg",
+          "alt": "Gráfica v–t de la recta v = 6 − 2t entre 0 y 5 s."
+        }
+      ],
+      "tags": [
+        "t1",
+        "g",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Áreas que se cancelan parcialmente. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Funciones y gráficas"
+      ],
+      "difficulty_reason": "Áreas con signo bajo v(t) separadas en el giro, y ecuación de la posición obtenida integrando.",
+      "common_mistakes": [
+        "Cancelar áreas al calcular distancia",
+        "Perder la constante de integración"
+      ],
+      "parts_count": 3,
+      "statement_source": "Una boya se mueve a lo largo de un canal recto. El origen está en un muelle y \\(+x\\) hacia el este; en \\(t=0\\) la boya está en \\(x_0=3\\,\\mathrm{m}\\). Su velocidad es \\(v(t)=6-2t\\) en SI, entre \\(0\\) y \\(5\\,\\mathrm{s}\\).\n\nSi la velocidad cambia de signo, el área con signo bajo \\(v(t)\\) da el desplazamiento, pero para la distancia hay que separar las áreas en el instante del giro (\\(v=0\\)).\n\n(a) Calcula el instante en que la boya da la vuelta.\n(b) Calcula el desplazamiento, la distancia recorrida y la posición final entre \\(0\\) y \\(5\\,\\mathrm{s}\\).\n(c) Escribe la ecuación de la posición \\(x(t)\\), que corresponde a un MRUA: lee \\(v_0\\) y \\(a\\) en \\(v(t)\\).",
+      "solution_source": "(a) \\(6-2t=0\\Rightarrow t=3{,}00\\,\\mathrm{s}\\).\n(b) De 0 a 3 s, triángulo positivo: \\(\\tfrac12\\cdot3\\cdot6=9\\,\\mathrm{m}\\). De 3 a 5 s, triángulo negativo: \\(-\\tfrac12\\cdot2\\cdot4=-4\\,\\mathrm{m}\\). \\(\\Delta x=9-4=5{,}00\\,\\mathrm{m}\\), \\(d=9+4=13{,}0\\,\\mathrm{m}\\) y \\(x(5)=3+5=8{,}00\\,\\mathrm{m}\\).\n(c) \\(v_0=6\\,\\mathrm{m/s}\\) y \\(a=-2\\,\\mathrm{m/s^2}\\): \\(x(t)=3+6t-t^2\\). Comprobación: \\(x(5)=3+30-25=8\\,\\mathrm{m}\\) y el punto más alejado es \\(x(3)=12\\,\\mathrm{m}\\).",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_g_004",
+      "number": 40,
+      "version": 1,
+      "title": "El área de aceleración no da posición",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "Funciones y gráficas",
+      "family": "g",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 10,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "v2",
+          "label": "Velocidad \\(v(2)\\)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "v5",
+          "label": "Velocidad \\(v(5)\\)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -2,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "t1",
+          "label": "Primer instante con \\(v=0\\)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.5,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "t2",
+          "label": "Segundo instante con \\(v=0\\)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_g_004.svg",
+          "alt": "Gráfica a–t: 2 m/s² entre 0 y 2 s, y −1 m/s² entre 2 y 5 s; velocidad inicial −3 m/s."
+        }
+      ],
+      "tags": [
+        "t1",
+        "g",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "El área de aceleración no da posición. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Funciones y gráficas"
+      ],
+      "difficulty_reason": "Del área de a(t) a la velocidad, con dos tramos y dos cambios de sentido.",
+      "common_mistakes": [
+        "Usar el área de a-t como desplazamiento",
+        "Reiniciar v=0 al cambiar a"
+      ],
+      "parts_count": 2,
+      "statement_source": "Un carrito parte con \\(v_0=-3\\,\\mathrm{m/s}\\) sobre un raíl recto con \\(+x\\) hacia la derecha y \\(t=0\\) al empezar. Su gráfica \\(a(t)\\) tiene dos tramos horizontales: \\(a=2\\,\\mathrm{m/s^2}\\) entre \\(0\\) y \\(2\\,\\mathrm{s}\\), y \\(a=-1\\,\\mathrm{m/s^2}\\) entre \\(2\\) y \\(5\\,\\mathrm{s}\\).\n\nEn una gráfica \\(a(t)\\), el área es el cambio de velocidad \\(\\Delta v\\); para saber \\(v\\) hace falta \\(v_0\\). En cambio, sin \\(x_0\\) no se puede saber la posición.\n\n(a) Calcula la velocidad en \\(t=2\\,\\mathrm{s}\\) y en \\(t=5\\,\\mathrm{s}\\).\n(b) Escribe \\(v(t)\\) en cada tramo y calcula los dos instantes en que la velocidad se anula.",
+      "solution_source": "(a) Primer tramo: \\(\\Delta v=2\\cdot2=4\\,\\mathrm{m/s}\\), así que \\(v(2)=-3+4=1{,}00\\,\\mathrm{m/s}\\). Segundo tramo: \\(\\Delta v=-1\\cdot3=-3\\,\\mathrm{m/s}\\), así que \\(v(5)=1-3=-2{,}00\\,\\mathrm{m/s}\\).\n(b) Primer tramo: \\(v=-3+2t=0\\Rightarrow t=1{,}50\\,\\mathrm{s}\\). Segundo tramo, con reloj desde \\(t=2\\): \\(v=1-(t-2)=0\\Rightarrow t=3{,}00\\,\\mathrm{s}\\). Los dos ceros caen dentro de su tramo y son cambios de sentido.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_g_005",
+      "number": 41,
+      "version": 2,
+      "title": "Dibujar la velocidad desde la posición",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "Funciones y gráficas",
+      "family": "g",
+      "subtype": "written_upload",
+      "difficulty": 3,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "v",
+          "label": "Ecuación de la velocidad \\(v(t)\\) del primer tramo",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "variable": "t",
+          "variable_unit": "s",
+          "unit": "m/s",
+          "domain": "0 < t < 2 s",
+          "canonical_expression": "2*t",
+          "accepted_forms": [],
+          "prompt": "Escribe la expresión en función de t usando * para multiplicar y ^ para las potencias; por ejemplo 3+2*t-0.5*t^2.",
+          "part": "a"
+        },
+        {
+          "id": "v_mid",
+          "label": "Velocidad entre \\(2\\) y \\(4\\,\\mathrm{s}\\)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "v_last",
+          "label": "Velocidad entre \\(4\\) y \\(6\\,\\mathrm{s}\\)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -2,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "d",
+          "label": "Distancia total \\(d\\)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 8,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_g_005.svg",
+          "alt": "Gráfica x–t por tramos: x = t² de 0 a 2 s, x = 4 de 2 a 4 s y x = 4 − 2(t − 4) de 4 a 6 s."
+        }
+      ],
+      "tags": [
+        "t1",
+        "g",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Dibujar la velocidad desde la posición. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Funciones y gráficas"
+      ],
+      "difficulty_reason": "Derivar una posición definida por tramos, incluido un tramo cuadrático.",
+      "common_mistakes": [
+        "Dibujar v continua por obligación",
+        "Asignar aceleración finita al salto instantáneo"
+      ],
+      "parts_count": 3,
+      "statement_source": "Una plataforma de carga se mueve por un raíl recto; el origen está en el muelle y \\(+x\\) hacia el este. Su posición, en SI, viene dada por tramos:\n\\[x(t)=t^2\\ \\ (0\\le t\\le2),\\qquad x=4\\ \\ (2\\le t\\le4),\\qquad x=4-2\\,(t-4)\\ \\ (4\\le t\\le6).\\]\nLa velocidad de cada tramo se obtiene derivando su ecuación de la posición; la distancia, sumando lo que recorre en cada tramo.\n\n(a) Deriva el primer tramo y escribe la ecuación de la velocidad \\(v(t)\\) para \\(0<t<2\\,\\mathrm{s}\\).\n(b) Calcula la velocidad en el segundo tramo y en el tercero.\n(c) Calcula la distancia total recorrida entre \\(0\\) y \\(6\\,\\mathrm{s}\\).",
+      "solution_source": "(a) \\(v=\\dfrac{d}{dt}(t^2)=2t\\).\n(b) Segundo tramo: \\(x\\) constante, \\(v=0\\). Tercer tramo: \\(v=\\dfrac{d}{dt}\\big(4-2(t-4)\\big)=-2{,}00\\,\\mathrm{m/s}\\).\n(c) Va de \\(0\\) a \\(4\\,\\mathrm{m}\\), se queda en \\(4\\,\\mathrm{m}\\) y vuelve a \\(0\\): \\(d=4+0+4=8{,}00\\,\\mathrm{m}\\).\n\n\\(x\\) enlaza en todos los cambios de tramo, pero \\(v\\) salta: \\(4\\to0\\) en \\(t=2\\,\\mathrm{s}\\) y \\(0\\to-2\\) en \\(t=4\\,\\mathrm{s}\\). Son saltos idealizados.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_g_006",
+      "number": 42,
+      "version": 1,
+      "title": "Dibujar aceleración desde velocidad",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "Funciones y gráficas",
+      "family": "g",
+      "subtype": "written_upload",
+      "difficulty": 3,
+      "estimated_minutes": 13,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "a1",
+          "label": "Aceleración entre \\(0\\) y \\(2\\,\\mathrm{s}\\)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3,
+          "unit": "m/s²",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "a2",
+          "label": "Aceleración entre \\(2\\) y \\(5\\,\\mathrm{s}\\)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0,
+          "unit": "m/s²",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "a3",
+          "label": "Aceleración entre \\(5\\) y \\(7\\,\\mathrm{s}\\)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -2,
+          "unit": "m/s²",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "x7",
+          "label": "Posición \\(x(7)\\)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 18,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_g_006.svg",
+          "alt": "Gráfica v–t que une (0; −2), (2; 4), (5; 4) y (7; 0), con t en s y v en m/s."
+        }
+      ],
+      "tags": [
+        "t1",
+        "g",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Dibujar aceleración desde velocidad. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Funciones y gráficas"
+      ],
+      "difficulty_reason": "Pendientes de v(t) y áreas con signo, con un tramo que cruza el eje.",
+      "common_mistakes": [
+        "Tomar módulo de toda el área para hallar posición",
+        "Confundir vértice continuo con salto de velocidad"
+      ],
+      "parts_count": 2,
+      "statement_source": "Un tren de juguete se mueve por una vía recta, con \\(+x\\) hacia la derecha y \\(x_0=0\\). Su gráfica \\(v(t)\\) une con segmentos rectos los puntos \\((0\\,\\mathrm{s};\\,-2\\,\\mathrm{m/s})\\), \\((2\\,\\mathrm{s};\\,4\\,\\mathrm{m/s})\\), \\((5\\,\\mathrm{s};\\,4\\,\\mathrm{m/s})\\) y \\((7\\,\\mathrm{s};\\,0)\\).\n\nLa pendiente de \\(v(t)\\) es la aceleración; el área con signo bajo \\(v(t)\\) es el desplazamiento.\n\n(a) Calcula la aceleración en los tramos de \\(0\\) a \\(2\\,\\mathrm{s}\\) y de \\(2\\) a \\(5\\,\\mathrm{s}\\).\n(b) Calcula la aceleración en el tramo de \\(5\\) a \\(7\\,\\mathrm{s}\\) y la posición en \\(t=7\\,\\mathrm{s}\\).",
+      "solution_source": "(a) \\(\\dfrac{4-(-2)}{2}=3{,}00\\,\\mathrm{m/s^2}\\) y \\(\\dfrac{4-4}{3}=0\\).\n(b) \\(\\dfrac{0-4}{2}=-2{,}00\\,\\mathrm{m/s^2}\\). Áreas con signo: de 0 a 2 s, trapecio \\(\\tfrac12(-2+4)\\cdot2=2\\,\\mathrm{m}\\) (una parte negativa y otra positiva); de 2 a 5 s, \\(4\\cdot3=12\\,\\mathrm{m}\\); de 5 a 7 s, \\(\\tfrac12\\cdot2\\cdot4=4\\,\\mathrm{m}\\). \\(x(7)=0+2+12+4=18{,}0\\,\\mathrm{m}\\).",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     }
   ]
