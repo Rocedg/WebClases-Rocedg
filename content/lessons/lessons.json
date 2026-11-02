@@ -34,15 +34,15 @@
       "course": "1\u00ba Bachillerato",
       "category": "Cinem\u00e1tica",
       "format": "PDF",
-      "pages": 5,
-      "summary": "Primera lecci\u00f3n de cinem\u00e1tica: sistema de referencia, posici\u00f3n, desplazamiento, distancia, velocidad, MRU, MRUA, lanzamiento vertical, frenadas y lectura de gr\u00e1ficas.",
+      "pages": 6,
+      "summary": "Primera lecci\u00f3n de cinem\u00e1tica: movimiento unidimensional, posici\u00f3n, desplazamiento y distancia, los \u00absantos griales\u00bb del MRU y del MRUA deducidos con integrales, la velocidad como derivada, altura m\u00e1xima e impacto con el suelo, encuentros, frenadas y lectura de gr\u00e1ficas.",
       "key_contents": [
-        "Sistema de referencia",
+        "Movimiento unidimensional",
         "Posici\u00f3n, desplazamiento y distancia",
-        "MRU y encuentros",
-        "MRUA y frenadas",
-        "Lanzamiento vertical",
-        "Gr\u00e1ficas v-t y x-t"
+        "Santos griales: MRU y MRUA con integrales",
+        "Velocidad como derivada",
+        "Altura m\u00e1xima e impacto con el suelo",
+        "Gr\u00e1ficas x-t, v-t y a-t"
       ]
     },
     {
