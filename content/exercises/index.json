@@ -1,7 +1,7 @@
 {
   "version": 1,
   "generated": true,
-  "generated_at": "2026-11-02T21:52:28Z",
+  "generated_at": "2026-11-02T21:52:31Z",
   "source": "content/exercises",
   "exercises": [
     {
@@ -3901,7 +3901,7 @@
     },
     {
       "id": "t1_g_012",
-      "version": 1,
+      "version": 2,
       "title": "Aceleración negativa antes y después del giro",
       "course": "1bach",
       "block": "Funciones y gráficas",
@@ -3924,7 +3924,7 @@
     },
     {
       "id": "t1_g_009",
-      "version": 1,
+      "version": 2,
       "title": "Ajuste lineal con un dato de control",
       "course": "1bach",
       "block": "Funciones y gráficas",
