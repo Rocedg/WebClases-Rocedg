@@ -1,7 +1,7 @@
 {
   "version": 1,
   "generated": true,
-  "generated_at": "2026-11-02T21:52:26Z",
+  "generated_at": "2026-11-02T21:52:28Z",
   "source": "content/exercises",
   "exercises": [
     {
@@ -3763,7 +3763,7 @@
     },
     {
       "id": "t1_g_007",
-      "version": 1,
+      "version": 2,
       "title": "Tres representaciones compatibles",
       "course": "1bach",
       "block": "Funciones y gráficas",
@@ -3855,7 +3855,7 @@
     },
     {
       "id": "t1_g_005",
-      "version": 1,
+      "version": 2,
       "title": "Dibujar la velocidad desde la posición",
       "course": "1bach",
       "block": "Funciones y gráficas",
