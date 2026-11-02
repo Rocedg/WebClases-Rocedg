@@ -1,7 +1,7 @@
 {
   "version": 1,
   "generated": true,
-  "generated_at": "2026-11-02T21:52:24Z",
+  "generated_at": "2026-11-02T21:52:26Z",
   "source": "content/exercises",
   "exercises": [
     {
@@ -3510,7 +3510,7 @@
     },
     {
       "id": "t1_a_012",
-      "version": 1,
+      "version": 2,
       "title": "Elegir un modelo con condiciones iniciales",
       "course": "1bach",
       "block": "MRUA y movimiento vertical",
@@ -3533,7 +3533,7 @@
     },
     {
       "id": "t1_a_003",
-      "version": 1,
+      "version": 2,
       "title": "Hasta detenerse, y no más allá",
       "course": "1bach",
       "block": "MRUA y movimiento vertical",
@@ -3625,7 +3625,7 @@
     },
     {
       "id": "t1_a_010",
-      "version": 1,
+      "version": 2,
       "title": "Ascensor que deja de acelerar",
       "course": "1bach",
       "block": "MRUA y movimiento vertical",
