@@ -13,6 +13,13 @@
       "description": "Resumen completo del tema de gravitación, incluyendo leyes fundamentales, fórmulas y conceptos clave.",
       "url": "static/pdfs/resumenes/Resumen-Gravitación.pdf",
       "year": "y2"
+    },
+    {
+      "id": 3,
+      "title": "T0 · Herramientas",
+      "description": "Formulario en una página: derivadas, integrales, vectores, unidades SI, cifras significativas e incertidumbre.",
+      "url": "static/pdfs/resumenes/Resumen-T0-Herramientas.pdf",
+      "year": "y1"
     }
   ]
 }
