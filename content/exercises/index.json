@@ -1,7 +1,7 @@
 {
   "version": 1,
   "generated": true,
-  "generated_at": "2026-11-02T21:52:21Z",
+  "generated_at": "2026-11-02T21:52:24Z",
   "source": "content/exercises",
   "exercises": [
     {
@@ -3235,7 +3235,7 @@
     {
       "id": "t1_u_006",
       "version": 1,
-      "title": "Lo que observa un pasajero",
+      "title": "La separación entre dos coches",
       "course": "1bach",
       "block": "MRU y movimiento relativo",
       "topic": "t1",
@@ -3303,7 +3303,7 @@
     },
     {
       "id": "t1_u_011",
-      "version": 1,
+      "version": 2,
       "title": "Una raíz que no anuncia un encuentro",
       "course": "1bach",
       "block": "MRU y movimiento relativo",
@@ -3349,7 +3349,7 @@
     },
     {
       "id": "t1_u_007",
-      "version": 1,
+      "version": 2,
       "title": "Programar una llegada",
       "course": "1bach",
       "block": "MRU y movimiento relativo",
@@ -3372,7 +3372,7 @@
     },
     {
       "id": "t1_u_012",
-      "version": 1,
+      "version": 2,
       "title": "Diseñar la velocidad de un alcance",
       "course": "1bach",
       "block": "MRU y movimiento relativo",

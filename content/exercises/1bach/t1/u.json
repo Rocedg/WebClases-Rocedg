@@ -18,25 +18,22 @@
       "response_fields": [
         {
           "id": "x",
-          "label": "Posición",
+          "label": "Ecuación de la posición \\(x(t)\\)",
           "type": "function",
           "response_kind": "function",
           "required": true,
-          "accepted_forms": [
-            "-24+6*t"
-          ],
-          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
-          "grading": "pending_review",
+          "accepted_forms": [],
           "variable": "t",
           "variable_unit": "s",
           "unit": "m",
           "domain": "t ≥ 0",
           "canonical_expression": "-24+6*t",
-          "part": "a"
+          "part": "a",
+          "prompt": "Escribe la expresión en función de t usando * para multiplicar y ^ para las potencias; por ejemplo 3+2*t-0.5*t^2."
         },
         {
           "id": "x7",
-          "label": "Posición a 7 s",
+          "label": "Posición \\(x(7)\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 18,
@@ -48,7 +45,7 @@
         },
         {
           "id": "t",
-          "label": "Llegada a 90 m",
+          "label": "Instante de paso por la baliza",
           "type": "numeric",
           "required": true,
           "expected_value": 19,
@@ -62,7 +59,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t1/assets/t1_u_001.svg",
-          "alt": "Salida y baliza con +x al este"
+          "alt": "Recta con el quiosco en el origen, la patinadora en x = −24 m con velocidad 6 m/s hacia +x y una baliza en x = 90 m."
         }
       ],
       "tags": [
@@ -87,8 +84,8 @@
         "Confundir instante y posición"
       ],
       "parts_count": 2,
-      "statement_source": "\\(+x\\) al este; un patinador está en \\(x=−24 m\\) a \\(t=0\\) y lleva MRU a +6 m/s. \n(a) Escribe \\(x(t)\\) y calcula \\(x(7)\\).\n(b) Completa: Llegada a 90 m.",
-      "solution_source": "\\(x=x_0+vt=−24+6t\\) en SI.\n\n\\(x(7)=−24+42=18 m\\); 90=\\(−24+6t\\) implica \\(t=114/6=19 s\\).\n\nSustituyendo: \\(x(19)=90 m\\); recorre 114 m, no 90 m desde la salida.",
+      "statement_source": "Una patinadora recorre un paseo marítimo recto. Tomamos el origen en un quiosco y \\(+x\\) hacia el este. En \\(t=0\\) la patinadora está en \\(x_0=-24\\,\\mathrm{m}\\) (al oeste del quiosco) y lleva velocidad constante \\(+6\\,\\mathrm{m/s}\\). Más adelante hay una baliza en \\(x=90\\,\\mathrm{m}\\).\n\nEs un MRU: su ecuación de la posición es \\(x=x_0+vt\\). Con ella se responde a «¿dónde está en tal instante?» (sustituir) y a «¿cuándo pasa por tal posición?» (resolver una ecuación de primer grado).\n\n(a) Escribe \\(x(t)\\) en SI y calcula su posición a los \\(7\\,\\mathrm{s}\\).\n(b) Calcula en qué instante pasa por la baliza.",
+      "solution_source": "(a) \\(x(t)=x_0+vt=-24+6t\\). En \\(t=7\\,\\mathrm{s}\\): \\(x(7)=-24+42=18{,}0\\,\\mathrm{m}\\).\n(b) \\(90=-24+6t\\Rightarrow 6t=114\\Rightarrow t=19{,}0\\,\\mathrm{s}\\). Comprobación: \\(x(19)=-24+114=90\\,\\mathrm{m}\\). Ha recorrido \\(114\\,\\mathrm{m}\\), no \\(90\\), porque salió del lado negativo.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -109,7 +106,7 @@
       "response_fields": [
         {
           "id": "v",
-          "label": "Velocidad",
+          "label": "Velocidad \\(v\\)",
           "type": "numeric",
           "required": true,
           "expected_value": -4,
@@ -121,7 +118,7 @@
         },
         {
           "id": "x0",
-          "label": "Posición inicial",
+          "label": "Posición inicial \\(x_0\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 38,
@@ -133,25 +130,22 @@
         },
         {
           "id": "x",
-          "label": "Ley horaria",
+          "label": "Ecuación de la posición \\(x(t)\\)",
           "type": "function",
           "response_kind": "function",
           "required": true,
-          "accepted_forms": [
-            "38-4*t"
-          ],
-          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
-          "grading": "pending_review",
+          "accepted_forms": [],
           "variable": "t",
           "variable_unit": "s",
           "unit": "m",
           "domain": "t ≥ 0",
           "canonical_expression": "38-4*t",
-          "part": "b"
+          "part": "b",
+          "prompt": "Escribe la expresión en función de t usando * para multiplicar y ^ para las potencias; por ejemplo 3+2*t-0.5*t^2."
         },
         {
           "id": "x10",
-          "label": "Posición a 10 s",
+          "label": "Posición \\(x(10)\\)",
           "type": "numeric",
           "required": true,
           "expected_value": -2,
@@ -165,7 +159,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t1/assets/t1_u_002.svg",
-          "alt": "MRU observado entre 2 y 8 segundos"
+          "alt": "Gráfica x–t con los dos registros del dron, (2 s; 30 m) y (8 s; 6 m), unidos por un tramo discontinuo."
         }
       ],
       "tags": [
@@ -190,8 +184,8 @@
         "Perder el intervalo de seis segundos"
       ],
       "parts_count": 2,
-      "statement_source": "En un eje positivo al norte, un MRU pasa por \\((t,x)=(2 s,30 m)\\) y (8 s,6 m). \n(a) Deduce v y \\(x(0)\\).\n(b) Completa: Ley horaria, Posición a 10 s.",
-      "solution_source": "\\(v=(6−30)/(8−2)=−4 m/s\\); \\(x_0=30−(−4)·2=38 m\\).\n\n\\(x=38−4t\\); \\(x(10)=−2 m\\).\n\nCruza el origen a 9,50 s y después está al sur, manteniendo el sentido de movimiento.",
+      "statement_source": "Un dron vuela en línea recta sobre una carretera norte–sur. El origen es un cruce y el sentido positivo es hacia el norte. Dos fotografías con hora registran su posición: en \\(t=2\\,\\mathrm{s}\\) está en \\(x=30\\,\\mathrm{m}\\) y en \\(t=8\\,\\mathrm{s}\\), en \\(x=6\\,\\mathrm{m}\\). Vuela con velocidad constante.\n\nCon dos puntos de un MRU se obtiene la velocidad como pendiente; después, sustituyendo uno de los puntos en \\(x=x_0+vt\\), se obtiene \\(x_0\\).\n\n(a) Calcula la velocidad \\(v\\) y la posición inicial \\(x_0=x(0)\\).\n(b) Escribe la ecuación de la posición \\(x(t)\\) y calcula la posición a los \\(10\\,\\mathrm{s}\\).",
+      "solution_source": "(a) \\(v=\\dfrac{6-30}{8-2}=-4{,}00\\,\\mathrm{m/s}\\): vuela hacia el sur. Con el primer punto, \\(30=x_0+(-4)(2)\\Rightarrow x_0=38{,}0\\,\\mathrm{m}\\).\n(b) \\(x(t)=38-4t\\) y \\(x(10)=38-40=-2{,}00\\,\\mathrm{m}\\). El signo negativo indica que a los \\(10\\,\\mathrm{s}\\) ya está al sur del cruce: lo cruzó en \\(t=9{,}5\\,\\mathrm{s}\\), sin cambiar de sentido.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -212,43 +206,37 @@
       "response_fields": [
         {
           "id": "a",
-          "label": "X A(t)",
+          "label": "Ecuación de la posición \\(x_A(t)\\) de Ana",
           "type": "function",
           "response_kind": "function",
           "required": true,
-          "accepted_forms": [
-            "4*t"
-          ],
-          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
-          "grading": "pending_review",
+          "accepted_forms": [],
           "variable": "t",
           "variable_unit": "s",
           "unit": "m",
           "domain": "t ≥ 0",
           "canonical_expression": "4*t",
-          "part": "c"
+          "part": "a",
+          "prompt": "Escribe la expresión en función de t usando * para multiplicar y ^ para las potencias; por ejemplo 3+2*t-0.5*t^2."
         },
         {
           "id": "b",
-          "label": "X B(t)",
+          "label": "Ecuación de la posición \\(x_B(t)\\) de Berta",
           "type": "function",
           "response_kind": "function",
           "required": true,
-          "accepted_forms": [
-            "90-2*t"
-          ],
-          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
-          "grading": "pending_review",
+          "accepted_forms": [],
           "variable": "t",
           "variable_unit": "s",
           "unit": "m",
           "domain": "t ≥ 0",
           "canonical_expression": "90-2*t",
-          "part": "c"
+          "part": "a",
+          "prompt": "Escribe la expresión en función de t usando * para multiplicar y ^ para las potencias; por ejemplo 3+2*t-0.5*t^2."
         },
         {
           "id": "t",
-          "label": "Instante de encuentro",
+          "label": "Instante del encuentro",
           "type": "numeric",
           "required": true,
           "expected_value": 15,
@@ -268,11 +256,11 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "c"
+          "part": "b"
         },
         {
           "id": "db",
-          "label": "Distancia de B",
+          "label": "Distancia caminada por Berta",
           "type": "numeric",
           "required": true,
           "expected_value": 30,
@@ -280,13 +268,13 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "b"
+          "part": "c"
         }
       ],
       "assets": [
         {
           "path": "static/exercises/1bach/t1/assets/t1_u_003.svg",
-          "alt": "Encuentro: rectas A y B"
+          "alt": "Ana en x = 0 con 4 m/s hacia +x y Berta en x = 90 m con 2 m/s hacia −x, separadas 90 m."
         }
       ],
       "tags": [
@@ -311,8 +299,8 @@
         "Exigir que ambos recorran igual distancia"
       ],
       "parts_count": 3,
-      "statement_source": "\\(+x\\) hacia B. A parte de \\(x=0\\) a +4 m/s y B de \\(x=90 m\\) a −2 m/s, ambos en \\(t=0\\). \n(b) Calcula encuentro y distancias individuales.\n(c) Completa: X A(t), X B(t), Posición del encuentro.",
-      "solution_source": "\\(x_A=4t\\) y \\(x_B=90−2t\\). La separación se cierra a 4−(−2)=6 m/s.\n\n4t=\\(90−2t\\): \\(t=15 s\\) y \\(x=60 m\\). A recorre 60 m; B, 30 m.\n\nLas distancias suman 90 m y ambas rectas coinciden en (15 s,60 m).",
+      "statement_source": "Dos amigas caminan una hacia la otra por un camino recto de \\(90\\,\\mathrm{m}\\). Tomamos el origen donde sale Ana y \\(+x\\) hacia Berta. En \\(t=0\\) salen a la vez: Ana desde \\(x=0\\) a \\(+4\\,\\mathrm{m/s}\\) y Berta desde \\(x=90\\,\\mathrm{m}\\) a \\(-2\\,\\mathrm{m/s}\\).\n\nCada una tiene su ecuación de la posición; se encuentran cuando están en el mismo sitio a la vez: \\(x_A(t)=x_B(t)\\).\n\n(a) Escribe las ecuaciones de la posición \\(x_A(t)\\) y \\(x_B(t)\\).\n(b) Calcula el instante y la posición del encuentro.\n(c) Calcula la distancia que ha caminado Berta hasta el encuentro.",
+      "solution_source": "(a) \\(x_A=4t\\) y \\(x_B=90-2t\\), en SI.\n(b) \\(4t=90-2t\\Rightarrow 6t=90\\Rightarrow t=15{,}0\\,\\mathrm{s}\\). Sustituyendo, \\(x=4\\cdot15=60{,}0\\,\\mathrm{m}\\) (y también \\(90-30=60\\)).\n(c) Berta pasa de \\(90\\) a \\(60\\,\\mathrm{m}\\): camina \\(30{,}0\\,\\mathrm{m}\\). Ana camina \\(60\\,\\mathrm{m}\\); entre las dos suman los \\(90\\,\\mathrm{m}\\) que las separaban.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -333,7 +321,7 @@
       "response_fields": [
         {
           "id": "v",
-          "label": "Velocidad",
+          "label": "Velocidad \\(v\\)",
           "type": "numeric",
           "required": true,
           "expected_value": -10,
@@ -345,25 +333,22 @@
         },
         {
           "id": "x",
-          "label": "Posición SI",
+          "label": "Ecuación de la posición \\(x(t)\\)",
           "type": "function",
           "response_kind": "function",
           "required": true,
-          "accepted_forms": [
-            "2400-10*t"
-          ],
-          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
-          "grading": "pending_review",
+          "accepted_forms": [],
           "variable": "t",
           "variable_unit": "s",
           "unit": "m",
           "domain": "t ≥ 0",
           "canonical_expression": "2400-10*t",
-          "part": "b"
+          "part": "b",
+          "prompt": "Escribe la expresión en función de t usando * para multiplicar y ^ para las potencias; por ejemplo 3+2*t-0.5*t^2."
         },
         {
           "id": "t",
-          "label": "Paso por el origen",
+          "label": "Instante de paso por el km 0",
           "type": "numeric",
           "required": true,
           "expected_value": 240,
@@ -374,7 +359,12 @@
           "part": "b"
         }
       ],
-      "assets": [],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_u_008.svg",
+          "alt": "Carretera con +x hacia el norte: el autobús pasa por el km 2,4 en t = 0 y por el km 0,9 a los 2,5 min."
+        }
+      ],
       "tags": [
         "t1",
         "u",
@@ -397,8 +387,8 @@
         "Calcular rapidez y olvidar el sentido"
       ],
       "parts_count": 2,
-      "statement_source": "\\(+x\\) hacia el norte. Un vehículo pasa por el km 2,4 en \\(t=0\\) y por el km 0,9 a los 2,5 min, con MRU. \n(a) Deduce v en SI.\n(b) Escribe \\(x(t)\\) en metros y calcula cuándo cruza el km 0.",
-      "solution_source": "\\(Δx=900−2400=−1500 m\\) y \\(Δt=150 s\\): \\(v=−10 m/s\\).\n\n\\(x=2400−10t\\); \\(x=0\\) exige \\(t=240 s\\)=4 min.\n\nCruza después del segundo registro, coherente con avanzar hacia posiciones menores.",
+      "statement_source": "Un autobús recorre una carretera recta hacia el sur. Tomamos el origen en el punto kilométrico 0 y \\(+x\\) hacia el norte. En \\(t=0\\) pasa por el punto kilométrico 2,4 y, \\(2{,}5\\,\\mathrm{min}\\) después, por el punto kilométrico 0,9. Lleva velocidad constante.\n\nAntes de usar la ecuación de la posición \\(x=x_0+vt\\), pasa todos los datos a unidades SI: metros y segundos.\n\n(a) Calcula la velocidad \\(v\\) en m/s, con su signo.\n(b) Escribe \\(x(t)\\) en metros y segundos y calcula en qué instante pasa por el punto kilométrico 0.",
+      "solution_source": "(a) En SI: \\(x(0)=2400\\,\\mathrm{m}\\), \\(x(150\\,\\mathrm{s})=900\\,\\mathrm{m}\\). \\(v=\\dfrac{900-2400}{150}=-10{,}0\\,\\mathrm{m/s}\\): negativa porque va hacia el sur.\n(b) \\(x(t)=2400-10t\\). Pasa por el km 0 cuando \\(x=0\\): \\(t=240\\,\\mathrm{s}=4\\,\\mathrm{min}\\), después del segundo registro, como corresponde a un autobús que se acerca al km 0.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -419,7 +409,7 @@
       "response_fields": [
         {
           "id": "va",
-          "label": "Velocidad A",
+          "label": "Velocidad de A, \\(v_A\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 5,
@@ -431,7 +421,7 @@
         },
         {
           "id": "vb",
-          "label": "Velocidad B",
+          "label": "Velocidad de B, \\(v_B\\)",
           "type": "numeric",
           "required": true,
           "expected_value": -3.3333333333333335,
@@ -443,7 +433,7 @@
         },
         {
           "id": "t",
-          "label": "Tiempo de cruce",
+          "label": "Instante del cruce",
           "type": "numeric",
           "required": true,
           "expected_value": 144,
@@ -469,7 +459,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t1/assets/t1_u_005.svg",
-          "alt": "A →     ← B: separación 1200 m"
+          "alt": "Ciclista A en el origen hacia el este a 18 km/h y ciclista B a 1,2 km hacia el oeste a 12 km/h."
         }
       ],
       "tags": [
@@ -494,15 +484,15 @@
         "Redondear prematuramente 10/3"
       ],
       "parts_count": 2,
-      "statement_source": "Origen en la salida oeste y \\(+x\\) al este. Dos ciclistas separados 1,2 km salen simultáneamente uno hacia el otro: A a 18 km/h y B a 12 km/h. \n(a) Convierte velocidades y asigna signos.\n(b) Halla tiempo y posición de cruce.",
-      "solution_source": "\\(v_A=18/3,6=5 m/s\\); \\(v_B=−12/3,6=−3,333… m/s\\).\n\n\\(x_A=5t\\); \\(x_B=1200−(10/3)t\\). Igualando: (25/3)\\(t=1200,\\) \\(t=144 s\\).\n\n\\(x=720 m\\); B recorre 480 m; \\(720+480\\)=1200 m.",
+      "statement_source": "Origen en la salida oeste y \\(+x\\) hacia el este. Dos ciclistas separados \\(1{,}2\\,\\mathrm{km}\\) salen simultáneamente uno hacia el otro: A, desde el origen, a \\(18\\,\\mathrm{km/h}\\), y B, desde el extremo este, a \\(12\\,\\mathrm{km/h}\\).\n\n(a) Convierte las velocidades a m/s y asígnales su signo.\n(b) Halla el instante y la posición del cruce.",
+      "solution_source": "(a) \\(v_A=\\dfrac{18}{3{,}6}=+5{,}00\\,\\mathrm{m/s}\\); B va hacia el oeste: \\(v_B=-\\dfrac{12}{3{,}6}=-3{,}33\\,\\mathrm{m/s}\\).\n(b) Ecuaciones de la posición: \\(x_A=5t\\) y \\(x_B=1200-\\tfrac{10}{3}t\\). Igualando: \\(\\tfrac{25}{3}t=1200\\Rightarrow t=144\\,\\mathrm{s}\\). Posición: \\(x=5\\cdot144=720\\,\\mathrm{m}\\).\n\nComprobación: B recorre \\(1200-720=480\\,\\mathrm{m}\\) y \\(720+480=1200\\,\\mathrm{m}\\).",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t1_u_006",
       "number": 14,
       "version": 1,
-      "title": "Lo que observa un pasajero",
+      "title": "La separación entre dos coches",
       "course": "1bach",
       "topic": "t1",
       "concept": "Movimiento rectilíneo",
@@ -516,26 +506,24 @@
       "response_fields": [
         {
           "id": "rel",
-          "label": "Posición de B respecto a A",
+          "label": "Separación \\(s(t)=x_B-x_A\\)",
           "type": "function",
           "response_kind": "function",
           "required": true,
           "accepted_forms": [
-            "-30+4*t",
             "(-10+10*t)-(20+6*t)"
           ],
-          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
-          "grading": "pending_review",
           "variable": "t",
           "variable_unit": "s",
           "unit": "m",
           "domain": "t ≥ 0",
           "canonical_expression": "-30+4*t",
-          "part": "a"
+          "part": "a",
+          "prompt": "Escribe la expresión en función de t usando * para multiplicar y ^ para las potencias; por ejemplo 3+2*t-0.5*t^2."
         },
         {
           "id": "vrel",
-          "label": "Velocidad relativa",
+          "label": "Velocidad de B respecto de A, \\(ds/dt\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 4,
@@ -547,7 +535,7 @@
         },
         {
           "id": "t",
-          "label": "Cruce",
+          "label": "Instante del adelantamiento",
           "type": "numeric",
           "required": true,
           "expected_value": 7.5,
@@ -561,7 +549,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t1/assets/t1_u_006.svg",
-          "alt": "Separación orientada B respecto a A"
+          "alt": "En t = 0 el coche B está en x = −10 m a 10 m/s y el coche A en x = 20 m a 6 m/s, ambos hacia +x."
         }
       ],
       "tags": [
@@ -586,8 +574,8 @@
         "Confundir posición relativa y absoluta"
       ],
       "parts_count": 2,
-      "statement_source": "En el eje del suelo \\(+x\\) al este, \\(x_A=20+6t\\) y \\(x_B=−10+10t,\\) en SI. \n(a) Obtén \\(x_B\\)/A y \\(v_B\\)/A.\n(b) Completa: Velocidad relativa, Cruce.",
-      "solution_source": "\\(x_B\\)/\\(A=x_B−x_A=−30+4t m\\); \\(v_B\\)/\\(A=10−6=+4 m/s\\).\n\nEn el cruce \\(x_B\\)/\\(A=0\\): \\(t=30/4=7,50 s\\).\n\nAntes B está detrás (coordenada relativa negativa); después está delante. No necesita cambiar su velocidad para cambiar su posición relativa.",
+      "statement_source": "Dos coches circulan en el mismo sentido por el mismo carril recto de una autopista. Con el origen en un peaje y \\(+x\\) hacia el este, sus ecuaciones de la posición en SI son \\(x_A=20+6t\\) y \\(x_B=-10+10t\\).\n\nLa separación con signo \\(s(t)=x_B(t)-x_A(t)\\) dice dónde está B visto desde A: negativa si B va detrás, positiva si va delante. Su derivada es la velocidad con que B se acerca o se aleja de A.\n\n(a) Escribe \\(s(t)=x_B-x_A\\) simplificada.\n(b) Deriva \\(s(t)\\) para obtener la velocidad de B respecto de A y calcula en qué instante B adelanta a A (\\(s=0\\)).",
+      "solution_source": "(a) \\(s(t)=(-10+10t)-(20+6t)=-30+4t\\), en metros.\n(b) \\(\\dfrac{ds}{dt}=10-6=+4{,}00\\,\\mathrm{m/s}\\): B se acerca a A a \\(4\\,\\mathrm{m/s}\\). Adelanta cuando \\(s=0\\): \\(-30+4t=0\\Rightarrow t=7{,}50\\,\\mathrm{s}\\).\n\nAntes de \\(7{,}5\\,\\mathrm{s}\\), \\(s<0\\) (B va detrás); después, \\(s>0\\) (B va delante). B cambia de posición relativa sin cambiar su velocidad.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -608,43 +596,37 @@
       "response_fields": [
         {
           "id": "front",
-          "label": "Posición del frente",
+          "label": "Ecuación de la posición de la parte delantera \\(x_D(t)\\)",
           "type": "function",
           "response_kind": "function",
           "required": true,
-          "accepted_forms": [
-            "15*t"
-          ],
-          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
-          "grading": "pending_review",
+          "accepted_forms": [],
           "variable": "t",
           "variable_unit": "s",
           "unit": "m",
           "domain": "t ≥ 0",
           "canonical_expression": "15*t",
-          "part": "a"
+          "part": "a",
+          "prompt": "Escribe la expresión en función de t usando * para multiplicar y ^ para las potencias; por ejemplo 3+2*t-0.5*t^2."
         },
         {
           "id": "rear",
-          "label": "Posición de la cola",
+          "label": "Ecuación de la posición de la cola \\(x_C(t)\\)",
           "type": "function",
           "response_kind": "function",
           "required": true,
-          "accepted_forms": [
-            "15*t-120"
-          ],
-          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
-          "grading": "pending_review",
+          "accepted_forms": [],
           "variable": "t",
           "variable_unit": "s",
           "unit": "m",
           "domain": "t ≥ 0",
           "canonical_expression": "15*t-120",
-          "part": "a"
+          "part": "a",
+          "prompt": "Escribe la expresión en función de t usando * para multiplicar y ^ para las potencias; por ejemplo 3+2*t-0.5*t^2."
         },
         {
           "id": "t",
-          "label": "Salida completa",
+          "label": "Instante en que sale la cola",
           "type": "numeric",
           "required": true,
           "expected_value": 20,
@@ -658,7 +640,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t1/assets/t1_u_009.svg",
-          "alt": "Tren en t=0; andén entre 0 y 180 m"
+          "alt": "Andén entre x = 0 y x = 180 m; en t = 0 la parte delantera del tren de 120 m llega a x = 0 a 15 m/s."
         }
       ],
       "tags": [
@@ -683,8 +665,8 @@
         "Usar la condición del frente para salida completa"
       ],
       "parts_count": 2,
-      "statement_source": "Un tren de 120 m avanza a 15 m/s hacia \\(+x\\). El andén ocupa \\(0≤x≤180\\) m. En \\(t=0\\) el frente del tren llega a \\(x=0\\). \n(a) Escribe x del frente y de la cola.\n(b) Calcula cuándo todo el tren abandona el andén y cuánto tiempo hay alguna parte del tren junto a él.",
-      "solution_source": "El frente sigue \\(x_f=15t\\) y la cola \\(x_c=15t−120 m\\).\n\nSalir completamente exige \\(x_c=180\\): 15t=300, \\(t=20 s\\).\n\nDesde el primer contacto hasta la salida transcurren 20 s. Usar solo 180/15=12 s calcula cuándo sale el frente, no la cola.",
+      "statement_source": "Un tren de \\(120\\,\\mathrm{m}\\) de largo atraviesa sin parar una estación a \\(15\\,\\mathrm{m/s}\\). El andén ocupa \\(0\\le x\\le180\\,\\mathrm{m}\\), con \\(+x\\) en el sentido de la marcha. En \\(t=0\\) la parte delantera del tren llega al principio del andén, \\(x=0\\).\n\nUn objeto largo no está en un solo punto: aquí seguimos dos puntos del tren, la parte delantera y la cola, que va siempre \\(120\\,\\mathrm{m}\\) por detrás. Los dos llevan el mismo MRU.\n\n(a) Escribe las ecuaciones de la posición de la parte delantera, \\(x_D(t)\\), y de la cola, \\(x_C(t)\\).\n(b) Calcula el instante en que la cola abandona el andén, es decir, cuando todo el tren ha salido.",
+      "solution_source": "(a) \\(x_D=15t\\) y \\(x_C=15t-120\\), en SI.\n(b) Todo el tren ha salido cuando la cola llega al final del andén: \\(15t-120=180\\Rightarrow t=20{,}0\\,\\mathrm{s}\\). Usar solo \\(180/15=12\\,\\mathrm{s}\\) da el instante en que sale la parte delantera, no la cola.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -705,7 +687,7 @@
       "response_fields": [
         {
           "id": "tt",
-          "label": "Tiempo total",
+          "label": "Instante de llegada a casa",
           "type": "numeric",
           "required": true,
           "expected_value": 90,
@@ -713,11 +695,11 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "b"
+          "part": "a"
         },
         {
           "id": "vm",
-          "label": "Velocidad media",
+          "label": "Velocidad media \\(v_{\\mathrm{med}}\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 0,
@@ -743,7 +725,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t1/assets/t1_u_010.svg",
-          "alt": "Casa y biblioteca; ida y vuelta"
+          "alt": "Esquema de tres tramos: ida a 2 m/s durante 30 s, parada de 20 s y vuelta a casa a 1,5 m/s."
         }
       ],
       "tags": [
@@ -768,14 +750,14 @@
         "Borrar la posición durante la parada"
       ],
       "parts_count": 2,
-      "statement_source": "Con origen en casa y \\(+x\\) hacia la biblioteca: caminas a 2 m/s durante 30 s, paras 20 s y vuelves a 1,5 m/s hasta casa. \n(b) Completa: Tiempo total, Velocidad media, Rapidez media.",
-      "solution_source": "Ida: \\(x=2t\\) para \\(0≤t≤30\\). Parada: \\(x=60\\) para \\(30≤t≤50\\).\n\nRegreso: \\(x=60−1,5(t−50)\\); \\(x=0\\) da \\(t=90 s\\). Velocidades: +2,0,−1,5 m/s en los interiores de los tramos.\n\n\\(Δx=0\\); \\(d=120 m\\). \\(v_media=0/90=0\\) y rapidez \\(media=120/90=1,33 m/s\\). Las tres piezas de x enlazan.",
+      "statement_source": "Sales de casa hacia la biblioteca por una calle recta. Origen en casa, \\(+x\\) hacia la biblioteca y \\(t=0\\) al salir. Caminas a \\(2\\,\\mathrm{m/s}\\) durante \\(30\\,\\mathrm{s}\\), te paras \\(20\\,\\mathrm{s}\\) a hablar con alguien y vuelves a casa a \\(1{,}5\\,\\mathrm{m/s}\\).\n\nCada tramo es un MRU con su propia ecuación de la posición, que empieza donde acabó el anterior. En el regreso, el reloj del tramo empieza en \\(t=50\\,\\mathrm{s}\\), así que aparece \\(t-50\\).\n\n(a) Calcula en qué instante vuelves a estar en casa.\n(b) Calcula la velocidad media y la rapidez media del paseo completo, con tres cifras significativas.",
+      "solution_source": "(a) Ida: \\(x=2t\\), que acaba en \\(x(30)=60\\,\\mathrm{m}\\). Parada: \\(x=60\\,\\mathrm{m}\\) hasta \\(t=50\\,\\mathrm{s}\\). Regreso: \\(x=60-1{,}5\\,(t-50)\\). En casa \\(x=0\\): \\(t-50=40\\Rightarrow t=90{,}0\\,\\mathrm{s}\\).\n(b) Acabas donde empezaste: \\(\\Delta x=0\\) y \\(v_{\\mathrm{med}}=0\\). La distancia es \\(60+60=120\\,\\mathrm{m}\\), así que la rapidez media es \\(\\dfrac{120}{90}=1{,}33\\,\\mathrm{m/s}\\).",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t1_u_011",
       "number": 17,
-      "version": 1,
+      "version": 2,
       "title": "Una raíz que no anuncia un encuentro",
       "course": "1bach",
       "topic": "t1",
@@ -790,7 +772,7 @@
       "response_fields": [
         {
           "id": "root",
-          "label": "Raíz algebraica",
+          "label": "Raíz de \\(x_A=x_B\\)",
           "type": "numeric",
           "required": true,
           "expected_value": -15,
@@ -801,8 +783,30 @@
           "part": "a"
         },
         {
+          "id": "meeting",
+          "label": "¿Hay encuentro para \\(t\\ge0\\)?",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "no",
+              "label": "No: la raíz es anterior a la salida y B se aleja cada vez más"
+            },
+            {
+              "id": "yes_root",
+              "label": "Sí: se encuentran en el instante de la raíz"
+            },
+            {
+              "id": "yes_later",
+              "label": "Sí: A acabará alcanzando a B porque sale detrás"
+            }
+          ],
+          "correct_option_id": "no",
+          "part": "b"
+        },
+        {
           "id": "sep",
-          "label": "Separación B−A a 5 s",
+          "label": "Separación \\(x_B-x_A\\) en \\(t=5\\,\\mathrm{s}\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 40,
@@ -816,7 +820,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t1/assets/t1_u_011.svg",
-          "alt": "Dos móviles que se separan"
+          "alt": "En t = 0 A está en x = 0 a 4 m/s y B en x = 30 m a 6 m/s, ambos hacia +x."
         }
       ],
       "tags": [
@@ -841,8 +845,8 @@
         "Interpretar una extrapolación como un suceso observado"
       ],
       "parts_count": 2,
-      "statement_source": "\\(+x\\) a la derecha. Desde \\(t=0,\\) A parte de \\(x=0\\) a +4 m/s y B de \\(x=30 m\\) a +6 m/s. \n(a) Resuelve \\(x_A=x_B\\).\n(b) Decide si hay encuentro en el movimiento descrito y calcula la separación a los 5 s.",
-      "solution_source": "4t=\\(30+6t\\) implica \\(t=−15 s\\).\n\nEl dominio físico empieza en 0; la raíz no pertenece a él.\n\nLa separación es \\(30+2t\\): a 5 s vale 40 m y crece.",
+      "statement_source": "Dos ciclistas van por un carril bici recto en el mismo sentido. El origen está en un semáforo y \\(+x\\) en el sentido de la marcha. En \\(t=0\\), A pasa por el semáforo a \\(4\\,\\mathrm{m/s}\\) y B va \\(30\\,\\mathrm{m}\\) por delante, a \\(6\\,\\mathrm{m/s}\\).\n\nIgualar las ecuaciones de la posición siempre da un número, pero solo es un encuentro si ese instante pertenece al movimiento descrito (\\(t\\ge0\\)).\n\n(a) Resuelve \\(x_A(t)=x_B(t)\\) y da la raíz que obtienes.\n(b) Decide si hay encuentro y calcula la separación \\(x_B-x_A\\) a los \\(5\\,\\mathrm{s}\\).",
+      "solution_source": "(a) \\(x_A=4t\\) y \\(x_B=30+6t\\). \\(4t=30+6t\\Rightarrow t=-15{,}0\\,\\mathrm{s}\\).\n(b) La raíz es anterior a \\(t=0\\): describe dónde habrían coincidido si las ecuaciones valiesen antes, no un encuentro. La separación \\(x_B-x_A=30+2t\\) crece: en \\(t=5\\,\\mathrm{s}\\) vale \\(40{,}0\\,\\mathrm{m}\\). B va delante y más rápido, así que no hay encuentro.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -863,7 +867,7 @@
       "response_fields": [
         {
           "id": "t",
-          "label": "Instante global de alcance",
+          "label": "Instante del alcance (reloj común)",
           "type": "numeric",
           "required": true,
           "expected_value": 20,
@@ -875,7 +879,7 @@
         },
         {
           "id": "tb",
-          "label": "Tiempo de marcha de B",
+          "label": "Tiempo que lleva B corriendo",
           "type": "numeric",
           "required": true,
           "expected_value": 12,
@@ -887,7 +891,7 @@
         },
         {
           "id": "x",
-          "label": "Posición de alcance",
+          "label": "Posición del alcance",
           "type": "numeric",
           "required": true,
           "expected_value": 60,
@@ -901,7 +905,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t1/assets/t1_u_004.svg",
-          "alt": "Reloj común: B espera hasta 8 s"
+          "alt": "Línea de salida en x = 0; A sale en t = 0 a 3 m/s y B sale del mismo punto en t = 8 s a 5 m/s."
         }
       ],
       "tags": [
@@ -925,15 +929,15 @@
         "Omitir el retraso en la función de B",
         "Confundir 12 s con el instante global"
       ],
-      "parts_count": 3,
-      "statement_source": "\\(+x\\) a la derecha. A sale del origen a 3 m/s en \\(t=0\\). B espera allí hasta \\(t=8 s\\) y sale a 5 m/s. \n(a) Completa: Instante global de alcance.\n(b) Halla cuándo B alcanza a A, tiempo que B lleva moviéndose y posición.",
-      "solution_source": "\\(x_A=3t\\); \\(x_B=0\\) si \\(0≤t≤8\\) y \\(x_B=5(t−8)\\) si t≥8.\n\n3t=5(t−8) da \\(t=20 s\\); B viaja 12 s; \\(x=60 m\\).\n\nEn \\(t=8\\) la ventaja es 24 m; cerrarla a 2 m/s tarda 12 s, consistente con el reloj global.",
+      "parts_count": 2,
+      "statement_source": "Dos corredores entrenan en una pista recta. El origen está en la línea de salida, \\(+x\\) en el sentido de la carrera y el reloj se pone en marcha (\\(t=0\\)) cuando sale A, que corre a \\(3\\,\\mathrm{m/s}\\). B espera en la salida hasta \\(t=8\\,\\mathrm{s}\\) y entonces sale a \\(5\\,\\mathrm{m/s}\\).\n\nComo el movimiento de B no empieza en \\(t=0\\), en su ecuación de la posición aparece \\(t-8\\) en lugar de \\(t\\) (lección, bloque 2): \\(x_B=5\\,(t-8)\\) para \\(t\\ge8\\,\\mathrm{s}\\).\n\n(a) Iguala \\(x_A(t)\\) y \\(x_B(t)\\) y calcula el instante, en el reloj común, en que B alcanza a A.\n(b) Calcula cuánto tiempo lleva B corriendo en ese momento y la posición del alcance.",
+      "solution_source": "(a) \\(x_A=3t\\) y \\(x_B=5(t-8)\\). Igualando: \\(3t=5t-40\\Rightarrow t=20{,}0\\,\\mathrm{s}\\), que cumple \\(t\\ge8\\,\\mathrm{s}\\).\n(b) B salió en \\(t=8\\,\\mathrm{s}\\): lleva \\(20-8=12{,}0\\,\\mathrm{s}\\) corriendo. Posición: \\(x=3\\cdot20=60{,}0\\,\\mathrm{m}\\) (y \\(5\\cdot12=60\\)).\n\nComprobación: cuando sale B, A le lleva \\(24\\,\\mathrm{m}\\) y B recupera \\(2\\,\\mathrm{m}\\) cada segundo, así que tarda \\(12\\,\\mathrm{s}\\).",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t1_u_007",
       "number": 19,
-      "version": 1,
+      "version": 2,
       "title": "Programar una llegada",
       "course": "1bach",
       "topic": "t1",
@@ -948,7 +952,7 @@
       "response_fields": [
         {
           "id": "dur",
-          "label": "Duración",
+          "label": "Duración del trayecto",
           "type": "numeric",
           "required": true,
           "expected_value": 480,
@@ -959,8 +963,34 @@
           "part": "a"
         },
         {
+          "id": "hora",
+          "label": "Hora de salida",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "h0957",
+              "label": "09:57:00"
+            },
+            {
+              "id": "h0956",
+              "label": "09:56:00"
+            },
+            {
+              "id": "h1000",
+              "label": "10:00:00"
+            },
+            {
+              "id": "h1013",
+              "label": "10:13:00"
+            }
+          ],
+          "correct_option_id": "h0957",
+          "part": "a"
+        },
+        {
           "id": "ts",
-          "label": "Instante de salida respecto a las 10:00",
+          "label": "Instante de salida \\(t_s\\)",
           "type": "numeric",
           "required": true,
           "expected_value": -180,
@@ -972,26 +1002,24 @@
         },
         {
           "id": "x",
-          "label": "Función durante el trayecto",
+          "label": "Ecuación de la posición \\(x(t)\\) durante el trayecto",
           "type": "function",
           "response_kind": "function",
           "required": true,
           "accepted_forms": [
-            "1.75*(t+180)",
             "315+1.75*t"
           ],
-          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
-          "grading": "pending_review",
           "variable": "t",
           "variable_unit": "s",
           "unit": "m",
           "domain": "−180≤t≤300",
           "canonical_expression": "1.75*(t+180)",
-          "part": "b"
+          "part": "b",
+          "prompt": "Escribe la expresión en función de t usando * para multiplicar y ^ para las potencias; por ejemplo 3+2*t-0.5*t^2."
         },
         {
           "id": "x0",
-          "label": "Posición a las 10:00",
+          "label": "Posición en \\(t=0\\) (10:00:00)",
           "type": "numeric",
           "required": true,
           "expected_value": 315,
@@ -1000,25 +1028,12 @@
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
           "part": "b"
-        },
-        {
-          "id": "hora",
-          "label": "Hora de salida",
-          "type": "short_text",
-          "response_kind": "text",
-          "required": true,
-          "accepted_forms": [
-            "09:57:00"
-          ],
-          "correction_criteria": "09:57:00",
-          "grading": "pending_review",
-          "part": "a"
         }
       ],
       "assets": [
         {
           "path": "static/exercises/1bach/t1/assets/t1_u_007.svg",
-          "alt": "Horario: t=0 a las 10:00"
+          "alt": "Arriba, el pasillo con el almacén en x = 0 y la puerta en x = 840 m. Abajo, el eje de tiempo con t = 0 a las 10:00:00 y la llegada a las 10:05:00 (t = 300 s); la hora de salida es la incógnita."
         }
       ],
       "tags": [
@@ -1043,14 +1058,14 @@
         "Confundir ocho minutos con 480 minutos"
       ],
       "parts_count": 2,
-      "statement_source": "Un robot debe llegar a una puerta situada 840 m al este del almacén a las 10:05:00. Desde que sale mantiene 1,75 m/s. \n(a) Calcula duración y hora límite de salida.\n(b) Con \\(t=0\\) a las 10:00:00 y \\(x=0\\) en el almacén, escribe su función durante el trayecto y calcula dónde está a \\(t=0\\).",
-      "solution_source": "Duración=840/1,75=480 \\(s=8\\) min; salida 09:57:00.\n\nCon el reloj pedido \\(t_s=−180 s\\); \\(x=1,75(t+180)\\) para −\\(180≤t≤300\\).\n\nEn \\(t=0\\) está en \\(x=315 m\\); en \\(t=300,\\) \\(x=840 m\\). Un instante negativo no es una duración negativa.",
+      "statement_source": "Un robot de reparto debe llegar a una puerta situada \\(840\\,\\mathrm{m}\\) al este del almacén exactamente a las 10:05:00. Va en línea recta y, desde que sale, mantiene \\(1{,}75\\,\\mathrm{m/s}\\).\n\nAquí el reloj no empieza cuando sale el robot: tomamos \\(t=0\\) a las 10:00:00 y \\(x=0\\) en el almacén, con \\(+x\\) hacia el este. Un instante negativo significa «antes de las 10:00:00», no una duración negativa.\n\n(a) Calcula cuánto dura el trayecto y elige a qué hora debe salir el robot.\n(b) Con ese reloj, da el instante de salida \\(t_s\\), escribe la ecuación de la posición durante el trayecto y calcula dónde está el robot a las 10:00:00 (\\(t=0\\)).",
+      "solution_source": "(a) Duración: \\(\\dfrac{840}{1{,}75}=480\\,\\mathrm{s}=8\\,\\mathrm{min}\\). Para llegar a las 10:05:00 debe salir 8 minutos antes: a las 09:57:00.\n(b) Las 09:57:00 son 3 minutos antes de \\(t=0\\): \\(t_s=-180\\,\\mathrm{s}\\). La ecuación de la posición con reloj desplazado es \\(x(t)=1{,}75\\,(t+180)\\), válido para \\(-180\\le t\\le300\\,\\mathrm{s}\\). En \\(t=0\\): \\(x=1{,}75\\cdot180=315\\,\\mathrm{m}\\). Comprobación: \\(x(300)=1{,}75\\cdot480=840\\,\\mathrm{m}\\).",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t1_u_012",
       "number": 20,
-      "version": 1,
+      "version": 2,
       "title": "Diseñar la velocidad de un alcance",
       "course": "1bach",
       "topic": "t1",
@@ -1064,20 +1079,8 @@
       "response_prompt": "Responde los apartados en sus campos.",
       "response_fields": [
         {
-          "id": "vb",
-          "label": "Velocidad requerida",
-          "type": "numeric",
-          "required": true,
-          "expected_value": 5.5,
-          "unit": "m/s",
-          "tolerance": 0.01,
-          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
-          "significant_figures": 3,
-          "part": "a"
-        },
-        {
           "id": "x",
-          "label": "Lugar de encuentro",
+          "label": "Posición del encuentro",
           "type": "numeric",
           "required": true,
           "expected_value": 110,
@@ -1085,31 +1088,42 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "vb",
+          "label": "Velocidad necesaria \\(v_B\\)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 5.5,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
           "part": "b"
         },
         {
           "id": "b",
-          "label": "X B(t)",
+          "label": "Ecuación de la posición \\(x_B(t)\\) para \\(t\\ge5\\,\\mathrm{s}\\)",
           "type": "function",
           "response_kind": "function",
           "required": true,
-          "accepted_forms": [
-            "0 (0<=t<=5); 5.5*(t-5) (t>=5)"
-          ],
-          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
-          "grading": "pending_review",
           "variable": "t",
           "variable_unit": "s",
           "unit": "m",
-          "domain": "t ≥ 0",
-          "canonical_expression": "0 (0<=t<=5); 5.5*(t-5) (t>=5)",
-          "part": "a"
+          "domain": "t ≥ 5 s",
+          "canonical_expression": "5.5*(t-5)",
+          "accepted_forms": [
+            "5.5*t-27.5"
+          ],
+          "prompt": "Escribe la expresión en función de t usando * para multiplicar y ^ para las potencias; por ejemplo 3+2*t-0.5*t^2.",
+          "part": "b"
         }
       ],
       "assets": [
         {
           "path": "static/exercises/1bach/t1/assets/t1_u_012.svg",
-          "alt": "Condición de encuentro en t=25 s"
+          "alt": "En t = 0 el perro está en x = 60 m a 2 m/s hacia +x; su dueña está en la fuente (x = 0) y sale en t = 5 s con velocidad desconocida."
         }
       ],
       "tags": [
@@ -1134,8 +1148,8 @@
         "Resolver un alcance sin imponer el instante requerido"
       ],
       "parts_count": 2,
-      "statement_source": "\\(+x\\) hacia el este. A lleva \\(x_A=60+2t m\\). B parte del origen en \\(t=5 s\\) a velocidad constante desconocida y debe alcanzarlo en \\(t=25 s\\). \n(a) Determina \\(v_B\\) y sus funciones por tramos.\n(b) Completa: Lugar de encuentro.",
-      "solution_source": "A estará en \\(x_A(25)=60+2·25=110 m\\).\n\nB dispone de \\(25−5\\)=20 s: \\(v_B=110/20=5,50 m/s\\); \\(x_B=5,5(t−5)\\) tras salir.\n\nB llega a 110 m en \\(t=25\\); usar 110/25 incluye cinco segundos que estuvo parado.",
+      "statement_source": "Un perro camina por un sendero recto: con el origen en una fuente y \\(+x\\) hacia el este, su posición es \\(x_A=60+2t\\) en SI. Su dueña, B, está en la fuente y sale tras él en \\(t=5\\,\\mathrm{s}\\), con una velocidad constante que debe elegir para alcanzarlo justo en \\(t=25\\,\\mathrm{s}\\).\n\nPrimero calcula dónde estará el perro en el momento del alcance; después usa la ecuación de B, que empieza a contar en \\(t=5\\,\\mathrm{s}\\): \\(x_B=v_B\\,(t-5)\\).\n\n(a) Calcula la posición del encuentro.\n(b) Calcula la velocidad \\(v_B\\) necesaria y escribe la ecuación de la posición \\(x_B(t)\\) válida para \\(t\\ge5\\,\\mathrm{s}\\).",
+      "solution_source": "(a) El perro estará en \\(x_A(25)=60+2\\cdot25=110\\,\\mathrm{m}\\).\n(b) B tiene que llegar a \\(110\\,\\mathrm{m}\\) en \\(25-5=20\\,\\mathrm{s}\\): \\(v_B=\\dfrac{110}{20}=5{,}50\\,\\mathrm{m/s}\\). Su ecuación de la posición es \\(x_B=5{,}5\\,(t-5)\\) para \\(t\\ge5\\,\\mathrm{s}\\) (antes está parada en \\(x=0\\)).\n\nUsar \\(110/25\\) sería un error: incluye los cinco segundos en que B estuvo parada.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     }
   ]
