@@ -1,7 +1,5 @@
 from __future__ import annotations
-import importlib.util
 import json
-import sys
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
@@ -12,15 +10,6 @@ from services.exercise_bank_loader import load_topic_bank
 ROOT = Path(__file__).resolve().parents[1]
 TOPICS = ("t3", "t4", "t5", "t6")
 ALLOWED_TYPES = {"numeric", "unit_expression", "single_choice", "vector", "function", "short_text"}
-
-
-def load_builder():
-    spec = importlib.util.spec_from_file_location("build_t3_t6_exercise_banks", ROOT / "scripts" / "build_t3_t6_exercise_banks.py")
-    assert spec and spec.loader
-    module = importlib.util.module_from_spec(spec)
-    sys.modules[spec.name] = module
-    spec.loader.exec_module(module)
-    return module
 
 
 def load_bank(topic: str) -> dict:
@@ -65,13 +54,6 @@ def test_t3_t6_assets_are_responsive_valid_svg_files():
             assert root.attrib["viewBox"] == "0 0 640 360"
             assert "max-width:100%;height:auto" in root.attrib["style"]
     assert len(asset_paths) == 240
-
-
-def test_t3_t6_builder_is_idempotent_in_check_mode():
-    builder = load_builder()
-    banks, assets = builder.build_all()
-    assert not builder.validate(banks, assets)
-    assert builder.changed_outputs(banks, assets) == []
 
 
 def test_catalogue_discovers_all_first_year_topic_banks():

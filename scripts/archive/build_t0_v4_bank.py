@@ -8,12 +8,12 @@ from pathlib import Path
 import sys
 from typing import Any
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
 from services.exercise_bank_loader import serialize_topic_bank
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 SPEC_PATH = ROOT / "content" / "exercises" / "1bach" / "t0" / "exercise-bank-t0-v4-spec.md"
 OUTPUT_DIR = ROOT / "content" / "exercises" / "1bach" / "t0"
 
