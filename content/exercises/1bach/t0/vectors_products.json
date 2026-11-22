@@ -62,7 +62,9 @@
         "version_5"
       ],
       "origin": {
-        "kind": "t0_bank_v5_extension",
+        "kind": "original_teacher_bank",
+        "batch": "t0_bank_v5_extension",
+        "reference": null,
         "source": "Revisión T0 v5 (errores y vectores)"
       },
       "status": "active",
@@ -127,7 +129,9 @@
         "version_5"
       ],
       "origin": {
-        "kind": "t0_bank_v5_extension",
+        "kind": "original_teacher_bank",
+        "batch": "t0_bank_v5_extension",
+        "reference": null,
         "source": "Revisión T0 v5 (errores y vectores)"
       },
       "status": "active",
@@ -194,7 +198,9 @@
         "version_5"
       ],
       "origin": {
-        "kind": "t0_bank_v5_extension",
+        "kind": "original_teacher_bank",
+        "batch": "t0_bank_v5_extension",
+        "reference": null,
         "source": "Revisión T0 v5 (errores y vectores)"
       },
       "status": "active",
@@ -287,7 +293,9 @@
         "version_5"
       ],
       "origin": {
-        "kind": "t0_bank_v5_extension",
+        "kind": "original_teacher_bank",
+        "batch": "t0_bank_v5_extension",
+        "reference": null,
         "source": "Revisión T0 v5 (errores y vectores)"
       },
       "status": "active",
@@ -390,7 +398,9 @@
         "version_5"
       ],
       "origin": {
-        "kind": "t0_bank_v5_extension",
+        "kind": "original_teacher_bank",
+        "batch": "t0_bank_v5_extension",
+        "reference": null,
         "source": "Revisión T0 v5 (errores y vectores)"
       },
       "status": "active",
@@ -468,7 +478,9 @@
         "version_5"
       ],
       "origin": {
-        "kind": "t0_bank_v5_extension",
+        "kind": "original_teacher_bank",
+        "batch": "t0_bank_v5_extension",
+        "reference": null,
         "source": "Revisión T0 v5 (errores y vectores)"
       },
       "status": "active",
@@ -561,7 +573,9 @@
         "version_5"
       ],
       "origin": {
-        "kind": "t0_bank_v5_extension",
+        "kind": "original_teacher_bank",
+        "batch": "t0_bank_v5_extension",
+        "reference": null,
         "source": "Revisión T0 v5 (errores y vectores)"
       },
       "status": "active",
@@ -656,7 +670,9 @@
         "version_5"
       ],
       "origin": {
-        "kind": "t0_determinant_normal_calculus_extension",
+        "kind": "original_teacher_bank",
+        "batch": "t0_determinant_normal_calculus_extension",
+        "reference": null,
         "source": "Prompt 8: Banco T0, determinantes, vector normal y primeras derivadas e integrales"
       },
       "status": "active",
@@ -779,7 +795,9 @@
         "version_5"
       ],
       "origin": {
-        "kind": "t0_determinant_normal_calculus_extension",
+        "kind": "original_teacher_bank",
+        "batch": "t0_determinant_normal_calculus_extension",
+        "reference": null,
         "source": "Prompt 8: Banco T0, determinantes, vector normal y primeras derivadas e integrales"
       },
       "status": "active",
@@ -885,7 +903,9 @@
         "version_5"
       ],
       "origin": {
-        "kind": "t0_determinant_normal_calculus_extension",
+        "kind": "original_teacher_bank",
+        "batch": "t0_determinant_normal_calculus_extension",
+        "reference": null,
         "source": "Prompt 8: Banco T0, determinantes, vector normal y primeras derivadas e integrales"
       },
       "status": "active",
@@ -1004,7 +1024,9 @@
         "version_5"
       ],
       "origin": {
-        "kind": "t0_determinant_normal_calculus_extension",
+        "kind": "original_teacher_bank",
+        "batch": "t0_determinant_normal_calculus_extension",
+        "reference": null,
         "source": "Prompt 8: Banco T0, determinantes, vector normal y primeras derivadas e integrales"
       },
       "status": "active",
@@ -1129,7 +1151,9 @@
         "version_5"
       ],
       "origin": {
-        "kind": "t0_determinant_normal_calculus_extension",
+        "kind": "original_teacher_bank",
+        "batch": "t0_determinant_normal_calculus_extension",
+        "reference": null,
         "source": "Prompt 8: Banco T0, determinantes, vector normal y primeras derivadas e integrales"
       },
       "status": "active",
@@ -1234,7 +1258,9 @@
         "version_5"
       ],
       "origin": {
-        "kind": "t0_determinant_normal_calculus_extension",
+        "kind": "original_teacher_bank",
+        "batch": "t0_determinant_normal_calculus_extension",
+        "reference": null,
         "source": "Prompt 8: Banco T0, determinantes, vector normal y primeras derivadas e integrales"
       },
       "status": "active",

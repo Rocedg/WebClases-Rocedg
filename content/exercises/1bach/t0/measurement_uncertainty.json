@@ -52,8 +52,10 @@
         "version_4"
       ],
       "origin": {
-        "kind": "exercise_bank_t0_v4_spec",
-        "source": "exercise-bank-t0-v4-spec.md"
+        "kind": "original_teacher_bank",
+        "batch": "exercise_bank_t0_v4_spec",
+        "reference": null,
+        "source": "content/exercises/1bach/t0/exercise-bank-t0-v4-spec.md"
       },
       "status": "active",
       "version": 4,
@@ -121,8 +123,10 @@
         "version_4"
       ],
       "origin": {
-        "kind": "exercise_bank_t0_v4_spec",
-        "source": "exercise-bank-t0-v4-spec.md"
+        "kind": "original_teacher_bank",
+        "batch": "exercise_bank_t0_v4_spec",
+        "reference": null,
+        "source": "content/exercises/1bach/t0/exercise-bank-t0-v4-spec.md"
       },
       "status": "active",
       "version": 4,
@@ -184,8 +188,10 @@
         "version_4"
       ],
       "origin": {
-        "kind": "exercise_bank_t0_v4_spec",
-        "source": "exercise-bank-t0-v4-spec.md"
+        "kind": "original_teacher_bank",
+        "batch": "exercise_bank_t0_v4_spec",
+        "reference": null,
+        "source": "content/exercises/1bach/t0/exercise-bank-t0-v4-spec.md"
       },
       "status": "active",
       "version": 4,
@@ -243,8 +249,10 @@
         "version_4"
       ],
       "origin": {
-        "kind": "exercise_bank_t0_v4_spec",
-        "source": "exercise-bank-t0-v4-spec.md"
+        "kind": "original_teacher_bank",
+        "batch": "exercise_bank_t0_v4_spec",
+        "reference": null,
+        "source": "content/exercises/1bach/t0/exercise-bank-t0-v4-spec.md"
       },
       "status": "active",
       "version": 4,
@@ -332,8 +340,10 @@
         "version_5"
       ],
       "origin": {
-        "kind": "exercise_bank_t0_v4_spec",
-        "source": "exercise-bank-t0-v4-spec.md"
+        "kind": "original_teacher_bank",
+        "batch": "exercise_bank_t0_v4_spec",
+        "reference": null,
+        "source": "content/exercises/1bach/t0/exercise-bank-t0-v4-spec.md"
       },
       "status": "active",
       "version": 5,
@@ -440,8 +450,10 @@
         "version_5"
       ],
       "origin": {
-        "kind": "exercise_bank_t0_v4_spec",
-        "source": "exercise-bank-t0-v4-spec.md"
+        "kind": "original_teacher_bank",
+        "batch": "exercise_bank_t0_v4_spec",
+        "reference": null,
+        "source": "content/exercises/1bach/t0/exercise-bank-t0-v4-spec.md"
       },
       "status": "active",
       "version": 5,
@@ -527,8 +539,10 @@
         "version_5"
       ],
       "origin": {
-        "kind": "exercise_bank_t0_v4_spec",
-        "source": "exercise-bank-t0-v4-spec.md"
+        "kind": "original_teacher_bank",
+        "batch": "exercise_bank_t0_v4_spec",
+        "reference": null,
+        "source": "content/exercises/1bach/t0/exercise-bank-t0-v4-spec.md"
       },
       "status": "active",
       "version": 5,
@@ -665,7 +679,9 @@
         "version_5"
       ],
       "origin": {
-        "kind": "t0_bank_v5_extension",
+        "kind": "original_teacher_bank",
+        "batch": "t0_bank_v5_extension",
+        "reference": null,
         "source": "Revisión T0 v5 (errores y vectores)"
       },
       "status": "active",
@@ -775,7 +791,9 @@
         "version_5"
       ],
       "origin": {
-        "kind": "t0_bank_v5_extension",
+        "kind": "original_teacher_bank",
+        "batch": "t0_bank_v5_extension",
+        "reference": null,
         "source": "Revisión T0 v5 (errores y vectores)"
       },
       "status": "active",
@@ -945,7 +963,9 @@
         "version_5"
       ],
       "origin": {
-        "kind": "t0_bank_v5_extension",
+        "kind": "original_teacher_bank",
+        "batch": "t0_bank_v5_extension",
+        "reference": null,
         "source": "Revisión T0 v5 (errores y vectores)"
       },
       "status": "active",
@@ -1082,7 +1102,9 @@
         "version_5"
       ],
       "origin": {
-        "kind": "t0_bank_v5_extension",
+        "kind": "original_teacher_bank",
+        "batch": "t0_bank_v5_extension",
+        "reference": null,
         "source": "Revisión T0 v5 (errores y vectores)"
       },
       "status": "active",
@@ -1185,7 +1207,9 @@
         "version_5"
       ],
       "origin": {
-        "kind": "t0_bank_v5_extension",
+        "kind": "original_teacher_bank",
+        "batch": "t0_bank_v5_extension",
+        "reference": null,
         "source": "Revisión T0 v5 (errores y vectores)"
       },
       "status": "active",
@@ -1352,7 +1376,9 @@
         "version_5"
       ],
       "origin": {
-        "kind": "t0_graphs_units_video_extension",
+        "kind": "original_teacher_bank",
+        "batch": "t0_graphs_units_video_extension",
+        "reference": null,
         "source": "Prompt 12: Banco T0, gráficas, velocidad media e instantánea, extremos, unidades, forma polar y fotogramas de vídeo"
       },
       "status": "active",
