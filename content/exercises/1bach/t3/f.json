@@ -45,7 +45,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -63,7 +63,7 @@
       "parts_count": 1,
       "statement_source": "Libro en reposo sobre mesa: identificar interacciones Tierra-libro y mesa-libro.\n\n(a) Calcula: Resultante.",
       "solution_source": "Selección múltiple cerrada: peso y normal; resultante \\(0 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_f_002",
@@ -110,7 +110,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -128,7 +128,7 @@
       "parts_count": 1,
       "statement_source": "Lámpara colgada de un cable vertical, \\(m=3 kg\\), \\(g=9,81 m/s²\\).\n\n(a) Calcula: Tensión.",
       "solution_source": "\\(T=29,4 N\\); par de reacción de la tensión: lámpara sobre cable.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_f_003",
@@ -175,7 +175,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -193,7 +193,7 @@
       "parts_count": 1,
       "statement_source": "Caja empujada horizontalmente sin rozamiento con \\(F=18 N\\), \\(m=6 kg\\).\n\n(a) Calcula: Aceleración.",
       "solution_source": "Fuerzas: peso, normal y empuje; \\(a=3 m/s²\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_f_004",
@@ -240,7 +240,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -258,7 +258,7 @@
       "parts_count": 1,
       "statement_source": "Ascensor que sube a velocidad constante con persona de \\(60 kg\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Normal.",
       "solution_source": "\\(N=589 N\\); selección: aceleración nula aunque se mueve.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_f_005",
@@ -326,7 +326,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -344,7 +344,7 @@
       "parts_count": 2,
       "statement_source": "Ascensor acelera hacia arriba a \\(1,5 m/s²\\), persona \\(60 kg\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Normal.\n(b) Calcula: Vector.",
       "solution_source": "\\(N=679 N\\); vector resultante \\((0;90) N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_f_006",
@@ -391,7 +391,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -409,7 +409,7 @@
       "parts_count": 1,
       "statement_source": "Misma persona con aceleración descendente \\(2 m/s²\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Normal.",
       "solution_source": "\\(N=469 N\\); selección \\(N<P\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_f_007",
@@ -480,7 +480,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -498,7 +498,7 @@
       "parts_count": 3,
       "statement_source": "Bloque sobre plano de \\(30°\\), sin rozamiento. Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Componentes del peso: paralela.\n(b) Calcula: Peso: paralela , normal.\n(c) Calcula: m.",
       "solution_source": "Componentes del peso: paralela \\(24,5 N\\), normal \\(42,5 N\\) para \\(m=5 kg\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_f_008",
@@ -545,7 +545,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -563,7 +563,7 @@
       "parts_count": 1,
       "statement_source": "Dos patinadores se empujan con \\(80 N\\).\n\n(a) Calcula: Fuerzas mutuas.",
       "solution_source": "Fuerzas mutuas \\(80 N\\) y sentidos opuestos; selección del par correcto.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_f_009",
@@ -620,7 +620,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -638,7 +638,7 @@
       "parts_count": 1,
       "statement_source": "Caballo tira de carro: distinguir par acción-reacción y fuerza que acelera el sistema.\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Selección: suelo sobre caballo; par cuerda-carro/carro-cuerda.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_f_010",
@@ -694,7 +694,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -712,7 +712,7 @@
       "parts_count": 1,
       "statement_source": "Pelota ascendiendo tras abandonar la mano, sin aire. Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Vector.",
       "solution_source": "Selección: solo peso; aceleración \\((0;-9,81) m/s²\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_f_011",
@@ -769,7 +769,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -787,7 +787,7 @@
       "parts_count": 1,
       "statement_source": "Satélite ideal en órbita: fuerza y velocidad en un punto.\n\n(a) Selecciona: Dirección vectorial.",
       "solution_source": "Selección: fuerza radial, velocidad tangente, perpendiculares.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_f_012",
@@ -834,7 +834,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -852,7 +852,7 @@
       "parts_count": 1,
       "statement_source": "Auditar un DCL con “fuerza del movimiento” y resultante añadida.\n\n(a) Calcula: Número de fuerzas reales.",
       "solution_source": "Selección de dos flechas que deben eliminarse; número de fuerzas reales \\(2\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     }
   ]
 }

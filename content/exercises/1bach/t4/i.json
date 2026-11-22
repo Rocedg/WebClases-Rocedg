@@ -55,7 +55,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -73,7 +73,7 @@
       "parts_count": 1,
       "statement_source": "Identificar \\(μ_s\\) y \\(μ_k\\) desde gráfica fuerza-tiempo al tirar de una caja.\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Pico/N y meseta/N; regímenes seleccionados.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_i_002",
@@ -120,7 +120,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -138,7 +138,7 @@
       "parts_count": 1,
       "statement_source": "La recta experimental \\(f_k(μ)\\) tiene pendiente \\(49,05 N\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Masa.",
       "solution_source": "Función \\(f_k=mgμ\\); masa \\(5,00 kg\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_i_003",
@@ -195,7 +195,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -213,7 +213,7 @@
       "parts_count": 1,
       "statement_source": "Caja-muelle sobre mesa rugosa: hallar deformación mínima para iniciar movimiento. Usa \\(g=9,81 m/s²\\).\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "\\(x_min=μ_smg/k\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_i_004",
@@ -260,7 +260,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -278,7 +278,7 @@
       "parts_count": 1,
       "statement_source": "Tras iniciarse el movimiento, un muelle \\(k=120 N/m\\) está deformado \\(0,08 m\\); \\(m=1,5 kg\\), \\(μ_k=0,20\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Aceleración.",
       "solution_source": "\\(a=(kx-μ_kmg)/m=4,44 m/s²\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_i_005",
@@ -335,7 +335,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -353,7 +353,7 @@
       "parts_count": 1,
       "statement_source": "Vehículo toma curva y frena a la vez: límite de adherencia. Usa \\(g=9,81 m/s²\\).\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Composición vectorial; comprobar \\(sqrt(a_t²+a_r²)≤μ_sg\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_i_006",
@@ -410,7 +410,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -428,7 +428,7 @@
       "parts_count": 1,
       "statement_source": "Seleccionar modelo para cuatro escenas: cinta, pared, plano, curva.\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Clasificación cerrada de sentido y régimen.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_i_007",
@@ -485,7 +485,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -503,7 +503,7 @@
       "parts_count": 1,
       "statement_source": "Ajuste de muelle con intercepto no nulo por precarga.\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "\\(F=kx+F_0\\); extraer \\(k\\) e \\(F_0\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_i_008",
@@ -560,7 +560,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -578,7 +578,7 @@
       "parts_count": 1,
       "statement_source": "Comparar trabajo posterior sin calcularlo aún: misma distancia, rozamientos distintos.\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Orden cerrado de fuerzas y aceleraciones.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_i_009",
@@ -635,7 +635,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -653,7 +653,7 @@
       "parts_count": 1,
       "statement_source": "Auditoría completa de curva peraltada con rozamiento mal orientado.\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Elegir sentido, ecuaciones correctas y rango de velocidad.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_i_010",
@@ -736,7 +736,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -754,7 +754,7 @@
       "parts_count": 4,
       "statement_source": "Plano variable con \\(μ_s=0,30\\), \\(μ_k=0,20\\): predecir inicio y calcular al bajar para \\(20°\\), \\(30°\\), \\(45°\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: θ c.\n(b) Calcula: Aceleracione 2.\n(c) Calcula: Aceleracione 3.\n(d) Calcula: Aceleracione 4.",
       "solution_source": "\\(θ_c=16,7°\\); aceleraciones \\(1,51\\), \\(3,21\\), \\(5,55 m/s²\\); seleccionar la curva creciente compatible.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     }
   ]
 }

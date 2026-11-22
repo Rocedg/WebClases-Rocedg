@@ -55,7 +55,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -73,7 +73,7 @@
       "parts_count": 1,
       "statement_source": "Elegir sistema útil: dos bloques y cuerda sobre mesa ideal.\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Selección sistema conjunto para \\(a\\), cuerpo individual para \\(T\\); valores de \\(p_006\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_i_002",
@@ -132,7 +132,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -150,7 +150,7 @@
       "parts_count": 2,
       "statement_source": "Del vídeo \\(x(t)=0,75t²\\) de un carro \\(2 kg\\), inferir fuerza neta.\n\n(a) Calcula: Aceleración.\n(b) Calcula: Fuerza resultante.",
       "solution_source": "\\(a=1,5 m/s²\\); \\(F_R=3 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_i_003",
@@ -197,7 +197,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -215,7 +215,7 @@
       "parts_count": 1,
       "statement_source": "Datos de \\(F\\) y \\(a\\) con una medida atípica.\n\n(a) Calcula: Masa por ajuste.",
       "solution_source": "Masa por ajuste \\(2 kg\\); seleccionar punto atípico \\((8 N,2 m/s²)\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_i_004",
@@ -272,7 +272,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -290,7 +290,7 @@
       "parts_count": 1,
       "statement_source": "Caja en camión que acelera: identificar interacción que acelera la caja.\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Selección rozamiento estático hacia delante; mínimo requerido \\(ma\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_i_005",
@@ -347,7 +347,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -365,7 +365,7 @@
       "parts_count": 1,
       "statement_source": "Globo en coche acelerado como diagnóstico conceptual.\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Selección de inclinación hacia delante; dirección del gradiente de presión.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_i_006",
@@ -412,7 +412,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -430,7 +430,7 @@
       "parts_count": 1,
       "statement_source": "Persona de \\(60 kg\\) sobre una báscula tira de una cuerda que pasa por una polea fija; la tensión es \\(100 N\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Normal.",
       "solution_source": "Relación \\(N+T=mg\\); lectura \\(N=489 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_i_007",
@@ -487,7 +487,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -505,7 +505,7 @@
       "parts_count": 1,
       "statement_source": "Comparar bajar y subir el mismo plano con igual rapidez instantánea.\n\n(a) Selecciona: Sentido.",
       "solution_source": "Aceleración idéntica cuesta abajo \\(g sinθ\\); elección de signos según eje.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_i_008",
@@ -576,7 +576,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -594,7 +594,7 @@
       "parts_count": 3,
       "statement_source": "Para \\(m=4 kg\\), \\(a(t)\\) vale \\(1 m/s²\\) entre \\(0–2 s\\), \\(-0,5 m/s²\\) entre \\(2–4 s\\) y \\(0\\) después.\n\n(a) Calcula: Por tramos 1.\n(b) Calcula: Por tramos 2.\n(c) Calcula: Por tramos 3.",
       "solution_source": "\\(F_R(t)\\) por tramos: \\(4 N\\), \\(-2 N\\), \\(0 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_i_009",
@@ -653,7 +653,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -671,7 +671,7 @@
       "parts_count": 2,
       "statement_source": "Diseñar fuerza para que un bloque recorra \\(8 m\\) desde reposo en \\(4 s\\), \\(m=5 kg\\).\n\n(a) Calcula: Aceleración.\n(b) Calcula: Fuerza resultante.",
       "solution_source": "\\(a=1 m/s²\\); \\(F_R=5 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_i_010",
@@ -728,7 +728,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -746,7 +746,7 @@
       "parts_count": 1,
       "statement_source": "Diagrama de interacción de libro-mesa-Tierra y selección de pares de tercera ley.\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Tres pares correctos en selección cerrada.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_i_011",
@@ -803,7 +803,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -821,7 +821,7 @@
       "parts_count": 1,
       "statement_source": "Caso mixto plano-polea: decidir primero el sentido sin asumirlo por la masa mayor. Usa \\(g=9,81 m/s²\\).\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Comparar \\(m_2g\\) con \\(m_1g sinθ\\); selección del sentido y aceleración numérica.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_i_012",
@@ -878,7 +878,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -896,7 +896,7 @@
       "parts_count": 1,
       "statement_source": "Miniinvestigación cerrada: cuatro DCL candidatos para un péndulo cónico y tres resultados. Usa \\(g=9,81 m/s²\\).\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Elegir DCL; \\(T\\), \\(v\\) y periodo con tolerancias.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     }
   ]
 }

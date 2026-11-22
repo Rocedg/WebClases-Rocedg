@@ -6,9 +6,9 @@ coincide con el código, manda el código: `services/exercise_bank_loader.py`
 `services/exercise_attempt_service.py` (corrección).
 
 Los JSON son la **única fuente de verdad** de los ejercicios de todos los temas
-(T0-T6). Se editan a mano. Los generadores antiguos están en `scripts/archive/`
-y no se ejecutan con `--write`. Las tablas `referencia-ejercicios-tN.md` son
-solo un resumen histórico.
+(T0-T6). Se editan a mano. Las tablas orientativas iniciales
+(`referencia-ejercicios-tN.md`) y los generadores de bancos se borraron el
+22/11/2026. Siguen en el historial de Git.
 
 > La sección 3 de `docs/context/feature-specs/02-interactive-exercise-system.md`
 > describe un modelo anterior (`exercise_type`, `estimated_time_min`,
@@ -22,8 +22,7 @@ content/exercises/
 ├── 1bach/
 │   ├── t0/ … t6/
 │   │   ├── _topic.json          # manifiesto del tema
-│   │   ├── <bloque>.json        # ejercicios de un bloque, en orden
-│   │   └── referencia-ejercicios-tN.md   # resumen histórico, no se edita
+│   │   └── <bloque>.json        # ejercicios de un bloque, en orden
 ├── 2bach/electromagnetismo/induccion/exercises.json   # piloto antiguo, fuera del catálogo
 ├── index.json                   # generado; no se edita a mano
 └── quizzes.json
@@ -80,7 +79,7 @@ Ejemplo recortado (`t1_u_001`):
   "response_fields": [ … ],
   "assets": [{"path": "static/exercises/1bach/t1/assets/t1_u_001.svg", "alt": "…"}],
   "tags": ["t1", "u", "cinematica"],
-  "origin": {"kind": "original_teacher_bank", "reference": null, "source": "content/exercises/1bach/t1/referencia-ejercicios-t1.md", "adaptation_note": "…"},
+  "origin": {"kind": "original_teacher_bank", "reference": null, "source": "Tabla orientativa inicial del T1 (eliminada el 2026-11-22; el JSON es la fuente)", "adaptation_note": "…"},
   "status": "draft",
   "learning_objective": "…",
   "prerequisites": ["…"],
@@ -149,7 +148,7 @@ comprueba así:
 | --- | --- | --- |
 | `kind` | sí | `original_teacher_bank` (propio), `adapted_from_pau` (adaptado de un examen PAU) u `official_pau` (enunciado oficial PAU). |
 | `reference` | sí, la clave siempre presente | `null` en los propios. En `adapted_from_pau` y `official_pau` es obligatoria: la fuente externa (convocatoria, año, número de ejercicio). |
-| `source` | sí | El documento interno del que sale el ejercicio: la especificación, el prompt o la revisión. Por ejemplo `content/exercises/1bach/t1/referencia-ejercicios-t1.md`. |
+| `source` | sí | El documento interno del que sale el ejercicio: la especificación, el prompt o la revisión. Puede ser una ruta del repo o una descripción si el documento ya no existe. |
 | `batch` | no | Lote de trabajo que lo produjo. Lo usa T0 (`exercise_bank_t0_v4_spec`, `t0_unit_vector_extension`...). |
 | `adaptation_note` | no | Qué se ha cambiado respecto a la fuente, o "propio". Lo usan T1-T6. |
 

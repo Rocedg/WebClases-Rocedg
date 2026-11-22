@@ -79,7 +79,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -97,7 +97,7 @@
       "parts_count": 3,
       "statement_source": "Bloque \\(4 kg\\) en plano \\(30°\\) sin rozamiento. Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Aceleración.\n(b) Calcula: Normal.\n(c) Selecciona: Sentido.",
       "solution_source": "\\(a=4,91 m/s²\\) cuesta abajo; \\(N=34,0 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_p_002",
@@ -178,7 +178,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -196,7 +196,7 @@
       "parts_count": 3,
       "statement_source": "Fuerza paralela de \\(30 N\\) sube el bloque anterior. Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Resultante paralela.\n(b) Calcula: Aceleración.\n(c) Selecciona: Sentido.",
       "solution_source": "Resultante paralela \\(10,4 N\\); \\(a=2,60 m/s²\\) arriba.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_p_003",
@@ -267,7 +267,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -285,7 +285,7 @@
       "parts_count": 3,
       "statement_source": "Fuerza horizontal \\(40 N\\) sobre bloque \\(5 kg\\) en plano \\(30°\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Componentes locales.\n(b) Calcula: Componentes locales y.\n(c) Calcula: Normal.",
       "solution_source": "Componentes locales \\(34,6 N\\) y \\(-20 N\\); \\(N=62,5 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_p_004",
@@ -332,7 +332,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -350,7 +350,7 @@
       "parts_count": 1,
       "statement_source": "Masa colgante \\(3 kg\\) en equilibrio sostenida por dos cuerdas simétricas a \\(45°\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Cada tensión.",
       "solution_source": "Cada tensión \\(20,8 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_p_005",
@@ -409,7 +409,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -427,7 +427,7 @@
       "parts_count": 2,
       "statement_source": "Nudo con cable horizontal y cable a \\(30°\\), carga \\(100 N\\).\n\n(a) Calcula: Cable inclinado.\n(b) Calcula: Horizontal.",
       "solution_source": "Cable inclinado \\(200 N\\); horizontal \\(173,2 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_p_006",
@@ -486,7 +486,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -504,7 +504,7 @@
       "parts_count": 2,
       "statement_source": "Dos bloques \\(2\\) y \\(3 kg\\) unidos, tirados con \\(20 N\\), mesa ideal.\n\n(a) Calcula: Aceleración.\n(b) Calcula: Tensión.",
       "solution_source": "\\(a=4 m/s²\\); tensión \\(12 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_p_007",
@@ -563,7 +563,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -581,7 +581,7 @@
       "parts_count": 2,
       "statement_source": "Misma cadena tirada desde el bloque de \\(2 kg\\).\n\n(a) Calcula: Aceleración.\n(b) Calcula: Tensión.",
       "solution_source": "\\(a=4 m/s²\\); tensión \\(8 N\\); selección: tensión cambia.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_p_008",
@@ -640,7 +640,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -658,7 +658,7 @@
       "parts_count": 2,
       "statement_source": "Máquina de Atwood ideal \\(m_1=2\\), \\(m_2=3 kg\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Aceleración.\n(b) Calcula: Tensión.",
       "solution_source": "\\(a=1,96 m/s²\\); \\(T=23,5 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_p_009",
@@ -705,7 +705,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -723,7 +723,7 @@
       "parts_count": 1,
       "statement_source": "Atwood con masas iguales y velocidad inicial no nula.\n\n(a) Calcula: Aceleración.",
       "solution_source": "\\(a=0\\); selección: mantiene velocidad, no se detiene necesariamente.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_p_010",
@@ -782,7 +782,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -800,7 +800,7 @@
       "parts_count": 2,
       "statement_source": "Bloque \\(4 kg\\) en mesa unido a masa colgante \\(1 kg\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Aceleración.\n(b) Calcula: Tensión.",
       "solution_source": "\\(a=1,96 m/s²\\); \\(T=7,85 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_p_011",
@@ -859,7 +859,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -877,7 +877,7 @@
       "parts_count": 2,
       "statement_source": "Bloque \\(3 kg\\) en plano \\(30°\\) unido a colgante \\(2 kg\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Aceleración.\n(b) Calcula: Tensión.",
       "solution_source": "\\(a=0,981 m/s²\\) hacia el colgante; \\(T=17,7 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_p_012",
@@ -948,7 +948,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -966,7 +966,7 @@
       "parts_count": 3,
       "statement_source": "Tres bloques \\(1,2,3 kg\\) tirados por \\(24 N\\).\n\n(a) Calcula: Aceleración.\n(b) Calcula: T 12.\n(c) Calcula: T 23.",
       "solution_source": "\\(a=4 m/s²\\); tensiones \\(T_12=4 N\\), \\(T_23=12 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_p_013",
@@ -1025,7 +1025,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -1043,7 +1043,7 @@
       "parts_count": 2,
       "statement_source": "Polea móvil ideal que sostiene una carga de \\(200 N\\).\n\n(a) Calcula: Tensión por tramo.\n(b) Calcula: Fuerza aplicada.",
       "solution_source": "Tensión por tramo \\(100 N\\); fuerza aplicada \\(100 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_p_014",
@@ -1090,7 +1090,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -1108,7 +1108,7 @@
       "parts_count": 1,
       "statement_source": "Auditar solución que usa una única ecuación para dos cuerpos y obtiene tensión incorrecta.\n\n(a) Calcula: Tensión.",
       "solution_source": "Selección del sistema para \\(a\\); ecuación individual correcta; \\(T=12 N\\) para datos de \\(p_006\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     }
   ]
 }

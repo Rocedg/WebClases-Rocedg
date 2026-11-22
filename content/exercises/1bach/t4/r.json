@@ -79,7 +79,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -97,7 +97,7 @@
       "parts_count": 3,
       "statement_source": "Caja \\(10 kg\\), \\(μ_s=0,4\\), empuje \\(20 N\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Rozamiento estático.\n(b) Calcula: Rozamiento estático máximo.\n(c) Selecciona: Estado.",
       "solution_source": "Reposo; \\(f_s=20 N\\); \\(f_s,max=39,2 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_r_002",
@@ -178,7 +178,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -196,7 +196,7 @@
       "parts_count": 3,
       "statement_source": "Misma caja con empuje \\(45 N\\), \\(μ_k=0,3\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Rozamiento cinético.\n(b) Calcula: Aceleración.\n(c) Selecciona: Estado.",
       "solution_source": "Desliza; \\(f_k=29,4 N\\); \\(a=1,56 m/s²\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_r_003",
@@ -243,7 +243,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -261,7 +261,7 @@
       "parts_count": 1,
       "statement_source": "Barrido \\(F\\) de \\(0\\) a \\(60 N\\) en caja anterior. Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Tramos de y umbral.",
       "solution_source": "Función por tramos de \\(f(F)\\) y umbral \\(39,2 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_r_004",
@@ -332,7 +332,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -350,7 +350,7 @@
       "parts_count": 3,
       "statement_source": "Bloque \\(5 kg\\), tirón \\(30 N\\) a \\(25°\\), \\(μ_k=0,2\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Normal.\n(b) Calcula: Rozamiento cinético.\n(c) Calcula: Aceleración.",
       "solution_source": "\\(N=36,4 N\\); \\(f_k=7,27 N\\); \\(a=3,98 m/s²\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_r_005",
@@ -421,7 +421,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -439,7 +439,7 @@
       "parts_count": 3,
       "statement_source": "Mismos datos empujando \\(25°\\) hacia abajo. Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Normal.\n(b) Calcula: Rozamiento cinético.\n(c) Calcula: Aceleración.",
       "solution_source": "\\(N=61,7 N\\); \\(f_k=12,3 N\\); \\(a=2,97 m/s²\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_r_006",
@@ -486,7 +486,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -504,7 +504,7 @@
       "parts_count": 1,
       "statement_source": "Hallar fuerza horizontal mínima para mover \\(m=12 kg\\), \\(μ_s=0,35\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: F min.",
       "solution_source": "\\(F_min=41,2 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_r_007",
@@ -551,7 +551,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -569,7 +569,7 @@
       "parts_count": 1,
       "statement_source": "Dos superficies con mismo \\(μ\\), masas \\(4\\) y \\(8 kg\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: f k2/f k1.",
       "solution_source": "Razón \\(f_k2/f_k1=2\\); misma desaceleración \\(μg\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_r_008",
@@ -640,7 +640,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -658,7 +658,7 @@
       "parts_count": 3,
       "statement_source": "Bloque lanzado a \\(6 m/s\\), \\(μ_k=0,25\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Aceleración.\n(b) Calcula: Parada.\n(c) Calcula: Distancia.",
       "solution_source": "\\(a=-2,45 m/s²\\); parada \\(2,45 s\\); distancia \\(7,34 m\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_r_009",
@@ -705,7 +705,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -723,7 +723,7 @@
       "parts_count": 1,
       "statement_source": "Determinar \\(μ_k\\) desde parada: \\(v_0=8 m/s\\), \\(d=10 m\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: μ k.",
       "solution_source": "\\(μ_k=0,326\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_r_010",
@@ -792,7 +792,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -810,7 +810,7 @@
       "parts_count": 2,
       "statement_source": "Caja sobre camión acelera \\(2 m/s²\\), \\(μ_s=0,25\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Límite de aceleración.\n(b) Selecciona: Estado.",
       "solution_source": "No desliza; \\(f_s=ma\\); límite de aceleración \\(2,45 m/s²\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_r_011",
@@ -879,7 +879,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -897,7 +897,7 @@
       "parts_count": 2,
       "statement_source": "Camión frena a \\(4 m/s²\\), \\(μ_s=0,3\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Máximo.\n(b) Selecciona: Estado.",
       "solution_source": "Desliza; dirección del rozamiento sobre caja hacia atrás; máximo \\(2,94 m/s²\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_r_012",
@@ -978,7 +978,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -996,7 +996,7 @@
       "parts_count": 3,
       "statement_source": "Dos bloques apilados, superior \\(2 kg\\), inferior acelerado a \\(3 m/s²\\), \\(μ_s=0,4\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Rozamiento estático.\n(b) Calcula: Umbral.\n(c) Selecciona: Estado.",
       "solution_source": "\\(f_s=6 N\\); no desliza; umbral \\(3,92 m/s²\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_r_013",
@@ -1055,7 +1055,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -1073,7 +1073,7 @@
       "parts_count": 2,
       "statement_source": "Empuje horizontal sobre pared mantiene bloque \\(1 kg\\), \\(μ_s=0,5\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Empuje mínimo.\n(b) Calcula: Rozamiento vertical.",
       "solution_source": "Empuje mínimo \\(19,6 N\\); rozamiento vertical \\(9,81 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_r_014",
@@ -1130,7 +1130,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -1148,7 +1148,7 @@
       "parts_count": 1,
       "statement_source": "Comparar área de contacto doble con misma masa/material.\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Selección: modelo seco ideal da mismo rozamiento.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_r_015",
@@ -1195,7 +1195,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -1213,7 +1213,7 @@
       "parts_count": 1,
       "statement_source": "Tabla experimental \\(N-f_k\\) lineal.\n\n(a) Calcula: μ k.",
       "solution_source": "Pendiente \\(μ_k\\); con datos \\((20,6),(40,12),(60,18)\\), \\(μ_k=0,30\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_r_016",
@@ -1270,7 +1270,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -1288,7 +1288,7 @@
       "parts_count": 1,
       "statement_source": "Auditar solución que usa \\(μ_sN\\) aunque el cuerpo está en reposo con fuerza pequeña.\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Error seleccionado; valor correcto de \\(f_s\\) igual a fuerza aplicada.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     }
   ]
 }

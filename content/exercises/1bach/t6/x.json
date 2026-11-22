@@ -45,7 +45,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
+        "source": "Tabla orientativa inicial del T6 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -63,7 +63,7 @@
       "parts_count": 1,
       "statement_source": "Patinadores \\(50\\) y \\(75 kg\\); primero sale a \\(3 m/s\\).\n\n(a) Calcula: Segundo.",
       "solution_source": "Segundo \\(-2 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t6_x_002",
@@ -110,7 +110,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
+        "source": "Tabla orientativa inicial del T6 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -128,7 +128,7 @@
       "parts_count": 1,
       "statement_source": "Cañón \\(500 kg\\), proyectil \\(5 kg\\) a \\(100 m/s\\).\n\n(a) Calcula: Retroceso.",
       "solution_source": "Retroceso \\(-1 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t6_x_003",
@@ -175,7 +175,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
+        "source": "Tabla orientativa inicial del T6 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -193,7 +193,7 @@
       "parts_count": 1,
       "statement_source": "Carro \\(6 kg\\) se divide en \\(2\\) y \\(4 kg\\); fragmento ligero \\(+8\\).\n\n(a) Calcula: Fragmento pesado.",
       "solution_source": "Fragmento pesado \\(-4 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t6_x_004",
@@ -240,7 +240,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
+        "source": "Tabla orientativa inicial del T6 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -258,7 +258,7 @@
       "parts_count": 1,
       "statement_source": "Objeto en movimiento \\(M=10\\), \\(v=4\\) se separa en \\(4\\) y \\(6 kg\\); uno queda en reposo.\n\n(a) Calcula: Otro.",
       "solution_source": "Otro \\(6,67 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t6_x_005",
@@ -315,7 +315,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
+        "source": "Tabla orientativa inicial del T6 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -333,7 +333,7 @@
       "parts_count": 1,
       "statement_source": "Dos fragmentos salen perpendiculares desde reposo imposible sin tercero.\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Selección: momento vectorial no suma cero; vector tercero requerido.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t6_x_006",
@@ -401,7 +401,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
+        "source": "Tabla orientativa inicial del T6 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -419,7 +419,7 @@
       "parts_count": 2,
       "statement_source": "Explosión 2D: \\(p_1=(6;0)\\), \\(p_2=(0;8)\\), inicial cero.\n\n(a) Calcula: p_3.\n(b) Calcula: Módulo.",
       "solution_source": "\\(p_3=(-6;-8)\\); módulo \\(10\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t6_x_007",
@@ -476,7 +476,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
+        "source": "Tabla orientativa inicial del T6 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -494,7 +494,7 @@
       "parts_count": 1,
       "statement_source": "Energía aumenta en separación desde reposo.\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Selección: energía interna se transforma; \\(\\Delta K\\) numérico.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t6_x_008",
@@ -551,7 +551,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
+        "source": "Tabla orientativa inicial del T6 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -569,7 +569,7 @@
       "parts_count": 1,
       "statement_source": "Auditar signos de retroceso cuando ambos resultados se dan positivos.\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Velocidad con signo corregida y comprobación de suma cero.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     }
   ]
 }

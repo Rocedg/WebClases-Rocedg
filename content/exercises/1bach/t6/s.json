@@ -45,7 +45,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
+        "source": "Tabla orientativa inicial del T6 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -63,7 +63,7 @@
       "parts_count": 1,
       "statement_source": "Dos patinadores se empujan desde reposo.\n\n(a) Calcula: Momento total inicial/final.",
       "solution_source": "Momento total inicial/final \\(0\\); relación \\(m_1v_1=-m_2v_2\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t6_s_002",
@@ -120,7 +120,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
+        "source": "Tabla orientativa inicial del T6 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -138,7 +138,7 @@
       "parts_count": 1,
       "statement_source": "Elegir sistema para choque de dos carros durante \\(0,05 s\\).\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Selección conjunto de carros; impulso externo despreciable.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t6_s_003",
@@ -195,7 +195,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
+        "source": "Tabla orientativa inicial del T6 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -213,7 +213,7 @@
       "parts_count": 1,
       "statement_source": "Persona camina dentro de barca inicialmente en reposo.\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Centro de masas fijo; velocidades opuestas con relación de masas.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t6_s_004",
@@ -270,7 +270,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
+        "source": "Tabla orientativa inicial del T6 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -288,7 +288,7 @@
       "parts_count": 1,
       "statement_source": "Dos masas con fuerza interna variable.\n\n(a) Selecciona: Conclusión.",
       "solution_source": "Momento total constante; momentos individuales cambian.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t6_s_005",
@@ -347,7 +347,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
+        "source": "Tabla orientativa inicial del T6 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -365,7 +365,7 @@
       "parts_count": 2,
       "statement_source": "Carro de \\(2 kg\\) tiene \\(p_i=4 kg·m/s\\) y recibe \\(J_ext=-1,5 N·s\\).\n\n(a) Calcula: p f.\n(b) Calcula: v f.",
       "solution_source": "\\(p_f=2,5 kg·m/s\\); \\(v_f=1,25 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t6_s_006",
@@ -422,7 +422,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
+        "source": "Tabla orientativa inicial del T6 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -440,7 +440,7 @@
       "parts_count": 1,
       "statement_source": "Explosión durante caída: componente horizontal. Usa \\(g=9,81 m/s²\\).\n\n(a) Selecciona: Conclusión.",
       "solution_source": "\\(p_x\\) se conserva; \\(p_y\\) cambia por gravedad.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t6_s_007",
@@ -497,7 +497,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
+        "source": "Tabla orientativa inicial del T6 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -515,7 +515,7 @@
       "parts_count": 1,
       "statement_source": "Comparar intervalo muy corto y largo bajo el mismo peso. Usa \\(g=9,81 m/s²\\).\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Selección cuándo despreciar impulso externo; valores de \\(mg\\Delta t\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t6_s_008",
@@ -574,7 +574,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
+        "source": "Tabla orientativa inicial del T6 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -592,7 +592,7 @@
       "parts_count": 2,
       "statement_source": "Carros de \\(2\\) y \\(3 kg\\) llevan velocidades \\(4\\) y \\(-1 m/s\\) antes de interactuar.\n\n(a) Calcula: p total.\n(b) Calcula: v CM.",
       "solution_source": "\\(p_total=5 kg·m/s\\); \\(v_CM=1 m/s\\), igual antes y después.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t6_s_009",
@@ -649,7 +649,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
+        "source": "Tabla orientativa inicial del T6 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -667,7 +667,7 @@
       "parts_count": 1,
       "statement_source": "Sistema abierto expulsa masa de forma discreta.\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Balance de momento para dos fragmentos, no fórmula continua.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t6_s_010",
@@ -724,7 +724,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
+        "source": "Tabla orientativa inicial del T6 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -742,7 +742,7 @@
       "parts_count": 1,
       "statement_source": "Auditar conservación aplicada a un solo objeto durante choque.\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Sistema correcto seleccionado; fuerza interna identificada.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     }
   ]
 }
