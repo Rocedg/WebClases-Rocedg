@@ -76,7 +76,7 @@ database and must not replace the user's `instance/` database.
 
 `docs/` is the documentation root. `docs/context/` holds agent context, feature
 specifications and the chronological progress tracker; `docs/design/` holds
-visual references. `README.md` and `AGENTS.md` remain discoverable entry points.
+visual references; `docs/archive/` holds finished one-off reports. `README.md` and `AGENTS.md` remain discoverable entry points.
 Older planning documents retain historical paths, with a current-path note.
 
 ## Invariants
