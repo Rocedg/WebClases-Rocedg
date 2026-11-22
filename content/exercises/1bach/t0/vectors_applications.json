@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t0_v_017",
+      "number": 36,
       "title": "Cambio a ejes girados",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -66,6 +67,7 @@
     },
     {
       "id": "t0_v_018",
+      "number": 37,
       "title": "Peso en un plano inclinado",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -154,6 +156,7 @@
     },
     {
       "id": "t0_v_019",
+      "number": 38,
       "title": "Distancia recorrida y desplazamiento",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -263,6 +266,7 @@
     },
     {
       "id": "t0_v_020",
+      "number": 39,
       "title": "Resultante y fuerza equilibrante",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -360,6 +364,7 @@
     },
     {
       "id": "t0_v_021",
+      "number": 40,
       "title": "Barca que quiere cruzar sin deriva",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -437,6 +442,7 @@
     },
     {
       "id": "t0_v_022",
+      "number": 41,
       "title": "Desplazamiento de un dron",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -526,6 +532,7 @@
     },
     {
       "id": "t0_v_023",
+      "number": 42,
       "title": "Producto escalar y proyección",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -614,6 +621,7 @@
     },
     {
       "id": "t0_v_024",
+      "number": 43,
       "title": "Producto vectorial y carga negativa",
       "course": "1bach",
       "block": "Vectores y elección de ejes",

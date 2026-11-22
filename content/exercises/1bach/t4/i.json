@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t4_i_001",
+      "number": 51,
       "version": 1,
       "title": "Identificar μ_s y μ_k desde gráfica fuerza-tiempo al tirar de una caja",
       "course": "1bach",
@@ -76,6 +77,7 @@
     },
     {
       "id": "t4_i_002",
+      "number": 52,
       "version": 1,
       "title": "La recta experimental f_k(μ) tiene pendiente 49,05 N",
       "course": "1bach",
@@ -140,6 +142,7 @@
     },
     {
       "id": "t4_i_003",
+      "number": 53,
       "version": 1,
       "title": "Caja-muelle sobre mesa rugosa",
       "course": "1bach",
@@ -214,6 +217,7 @@
     },
     {
       "id": "t4_i_004",
+      "number": 54,
       "version": 1,
       "title": "Tras iniciarse el movimiento, un muelle  está deformado 0,08 m",
       "course": "1bach",
@@ -278,6 +282,7 @@
     },
     {
       "id": "t4_i_005",
+      "number": 55,
       "version": 1,
       "title": "Vehículo toma curva y frena a la vez",
       "course": "1bach",
@@ -352,6 +357,7 @@
     },
     {
       "id": "t4_i_006",
+      "number": 56,
       "version": 1,
       "title": "Seleccionar modelo para cuatro escenas",
       "course": "1bach",
@@ -426,6 +432,7 @@
     },
     {
       "id": "t4_i_007",
+      "number": 57,
       "version": 1,
       "title": "Ajuste de muelle con intercepto no nulo por precarga",
       "course": "1bach",
@@ -500,6 +507,7 @@
     },
     {
       "id": "t4_i_008",
+      "number": 58,
       "version": 1,
       "title": "Comparar trabajo posterior sin calcularlo aún",
       "course": "1bach",
@@ -574,6 +582,7 @@
     },
     {
       "id": "t4_i_009",
+      "number": 59,
       "version": 1,
       "title": "Auditoría completa de curva peraltada con rozamiento mal orientado",
       "course": "1bach",
@@ -648,6 +657,7 @@
     },
     {
       "id": "t4_i_010",
+      "number": 60,
       "version": 1,
       "title": "Plano variable con",
       "course": "1bach",

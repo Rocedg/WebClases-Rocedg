@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t2_f_001",
+      "number": 11,
       "version": 1,
       "title": "Dos funciones y un punto del plano",
       "course": "1bach",
@@ -151,6 +152,7 @@
     },
     {
       "id": "t2_f_002",
+      "number": 12,
       "version": 1,
       "title": "Derivar una posición vectorial",
       "course": "1bach",
@@ -298,6 +300,7 @@
     },
     {
       "id": "t2_f_003",
+      "number": 13,
       "version": 1,
       "title": "De coordenadas a trayectoria",
       "course": "1bach",
@@ -434,6 +437,7 @@
     },
     {
       "id": "t2_f_004",
+      "number": 14,
       "version": 1,
       "title": "Trayectoria recta con rapidez variable",
       "course": "1bach",
@@ -551,6 +555,7 @@
     },
     {
       "id": "t2_f_005",
+      "number": 15,
       "version": 1,
       "title": "Eliminar tiempo sin perder el dominio físico",
       "course": "1bach",
@@ -655,6 +660,7 @@
     },
     {
       "id": "t2_f_006",
+      "number": 16,
       "version": 1,
       "title": "Una parábola espacial y cuatro gráficas",
       "course": "1bach",
@@ -782,6 +788,7 @@
     },
     {
       "id": "t2_f_007",
+      "number": 17,
       "version": 1,
       "title": "Misma curva, distinto ritmo",
       "course": "1bach",
@@ -923,6 +930,7 @@
     },
     {
       "id": "t2_f_008",
+      "number": 18,
       "version": 1,
       "title": "Integrar dos componentes de velocidad",
       "course": "1bach",
@@ -1070,6 +1078,7 @@
     },
     {
       "id": "t2_f_009",
+      "number": 19,
       "version": 1,
       "title": "Cruzar una altura no es acertar en un punto",
       "course": "1bach",
@@ -1192,6 +1201,7 @@
     },
     {
       "id": "t2_f_010",
+      "number": 20,
       "version": 2,
       "title": "Auditoría de una parametrización",
       "course": "1bach",

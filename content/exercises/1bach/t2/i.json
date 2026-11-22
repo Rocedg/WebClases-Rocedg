@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t2_i_001",
+      "number": 53,
       "version": 1,
       "title": "Rumbo de un dron para llegar exactamente al norte",
       "course": "1bach",
@@ -125,6 +126,7 @@
     },
     {
       "id": "t2_i_002",
+      "number": 54,
       "version": 1,
       "title": "Pelota desde una grada",
       "course": "1bach",
@@ -259,6 +261,7 @@
     },
     {
       "id": "t2_i_003",
+      "number": 55,
       "version": 1,
       "title": "Diana elevada y techo limitante",
       "course": "1bach",
@@ -368,6 +371,7 @@
     },
     {
       "id": "t2_i_004",
+      "number": 56,
       "version": 1,
       "title": "Lanzamiento horizontal hacia una rampa descendente",
       "course": "1bach",
@@ -503,6 +507,7 @@
     },
     {
       "id": "t2_i_005",
+      "number": 57,
       "version": 1,
       "title": "Movimiento paramétrico con instante de rapidez mínima",
       "course": "1bach",
@@ -669,6 +674,7 @@
     },
     {
       "id": "t2_i_006",
+      "number": 58,
       "version": 1,
       "title": "Reconstruir un tiro desde el impacto",
       "course": "1bach",
@@ -778,6 +784,7 @@
     },
     {
       "id": "t2_i_007",
+      "number": 59,
       "version": 1,
       "title": "De una gráfica angular al vector aceleración",
       "course": "1bach",
@@ -899,6 +906,7 @@
     },
     {
       "id": "t2_i_008",
+      "number": 60,
       "version": 1,
       "title": "Simulacro: salida tangente desde una rueda",
       "course": "1bach",

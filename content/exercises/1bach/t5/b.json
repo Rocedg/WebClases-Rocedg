@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t5_b_001",
+      "number": 47,
       "version": 1,
       "title": "Bloque baja 4 m de altura con rozamiento que hace -30 J",
       "course": "1bach",
@@ -78,6 +79,7 @@
     },
     {
       "id": "t5_b_002",
+      "number": 48,
       "version": 1,
       "title": "Rampa rugosa, hallar μ_k desde rapidez final",
       "course": "1bach",
@@ -152,6 +154,7 @@
     },
     {
       "id": "t5_b_003",
+      "number": 49,
       "version": 1,
       "title": "Muelle impulsa bloque por zona rugosa hasta detenerse",
       "course": "1bach",
@@ -226,6 +229,7 @@
     },
     {
       "id": "t5_b_004",
+      "number": 50,
       "version": 1,
       "title": "Bloque cae sobre muelle vertical",
       "course": "1bach",
@@ -300,6 +304,7 @@
     },
     {
       "id": "t5_b_005",
+      "number": 51,
       "version": 1,
       "title": "Montaña rusa con bucle",
       "course": "1bach",
@@ -374,6 +379,7 @@
     },
     {
       "id": "t5_b_006",
+      "number": 52,
       "version": 1,
       "title": "Péndulo soltado desde ángulo 60°, longitud 1 m",
       "course": "1bach",
@@ -460,6 +466,7 @@
     },
     {
       "id": "t5_b_007",
+      "number": 53,
       "version": 1,
       "title": "Columpio pierde 15% de energía por oscilación",
       "course": "1bach",
@@ -524,6 +531,7 @@
     },
     {
       "id": "t5_b_008",
+      "number": 54,
       "version": 1,
       "title": "Motor sube carga con rendimiento 80%",
       "course": "1bach",
@@ -598,6 +606,7 @@
     },
     {
       "id": "t5_b_009",
+      "number": 55,
       "version": 1,
       "title": "Comparar tres sistemas para el mismo descenso con rozamiento",
       "course": "1bach",
@@ -672,6 +681,7 @@
     },
     {
       "id": "t5_b_010",
+      "number": 56,
       "version": 1,
       "title": "Gráfica de energía potencial U(x) con mínimos y máximos",
       "course": "1bach",
@@ -746,6 +756,7 @@
     },
     {
       "id": "t5_b_011",
+      "number": 57,
       "version": 1,
       "title": "Dada energía total horizontal, hallar regiones permitidas",
       "course": "1bach",
@@ -820,6 +831,7 @@
     },
     {
       "id": "t5_b_012",
+      "number": 58,
       "version": 1,
       "title": "Fuerza conservativa desde",
       "course": "1bach",
@@ -884,6 +896,7 @@
     },
     {
       "id": "t5_b_013",
+      "number": 59,
       "version": 1,
       "title": "Auditoría de balance que suma simultáneamente trabajo del peso y ΔU_g",
       "course": "1bach",
@@ -958,6 +971,7 @@
     },
     {
       "id": "t5_b_014",
+      "number": 60,
       "version": 1,
       "title": "Investigación cerrada de carrito",
       "course": "1bach",

@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t5_e_001",
+      "number": 37,
       "version": 1,
       "title": "Muelle , deformación 0,10 m",
       "course": "1bach",
@@ -66,6 +67,7 @@
     },
     {
       "id": "t5_e_002",
+      "number": 38,
       "version": 1,
       "title": "Duplicar deformación",
       "course": "1bach",
@@ -130,6 +132,7 @@
     },
     {
       "id": "t5_e_003",
+      "number": 39,
       "version": 1,
       "title": "Trabajo del muelle de  a 0",
       "course": "1bach",
@@ -194,6 +197,7 @@
     },
     {
       "id": "t5_e_004",
+      "number": 40,
       "version": 1,
       "title": "Trabajo externo cuasiestático al comprimir 0→0,08",
       "course": "1bach",
@@ -258,6 +262,7 @@
     },
     {
       "id": "t5_e_005",
+      "number": 41,
       "version": 1,
       "title": "Muelle lanza bloque 0,5 kg, , , sin rozamiento",
       "course": "1bach",
@@ -322,6 +327,7 @@
     },
     {
       "id": "t5_e_006",
+      "number": 42,
       "version": 1,
       "title": "Muelle vertical",
       "course": "1bach",
@@ -396,6 +402,7 @@
     },
     {
       "id": "t5_e_007",
+      "number": 43,
       "version": 1,
       "title": "Dos muelles en paralelo almacenan energía",
       "course": "1bach",
@@ -470,6 +477,7 @@
     },
     {
       "id": "t5_e_008",
+      "number": 44,
       "version": 1,
       "title": "Muelles en serie ,  sometidos a",
       "course": "1bach",
@@ -582,6 +590,7 @@
     },
     {
       "id": "t5_e_009",
+      "number": 45,
       "version": 1,
       "title": "La curva da  cuando",
       "course": "1bach",
@@ -646,6 +655,7 @@
     },
     {
       "id": "t5_e_010",
+      "number": 46,
       "version": 1,
       "title": "Auditar  para",
       "course": "1bach",

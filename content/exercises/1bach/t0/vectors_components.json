@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t0_v_013",
+      "number": 32,
       "title": "Componentes y proyección horizontal",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -85,6 +86,7 @@
     },
     {
       "id": "t0_v_014",
+      "number": 33,
       "title": "Dos cuadrantes y una resultante",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -204,6 +206,7 @@
     },
     {
       "id": "t0_v_015",
+      "number": 34,
       "title": "Ángulo medido desde el eje y",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -277,6 +280,7 @@
     },
     {
       "id": "t0_v_016",
+      "number": 35,
       "title": "La ambigüedad de la arctangente",
       "course": "1bach",
       "block": "Vectores y elección de ejes",

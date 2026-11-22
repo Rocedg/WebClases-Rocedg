@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t2_v_001",
+      "number": 1,
       "version": 1,
       "title": "Una posición en el segundo cuadrante",
       "course": "1bach",
@@ -100,6 +101,7 @@
     },
     {
       "id": "t2_v_002",
+      "number": 2,
       "version": 1,
       "title": "Desplazarse no es medir desde el origen",
       "course": "1bach",
@@ -198,6 +200,7 @@
     },
     {
       "id": "t2_v_003",
+      "number": 3,
       "version": 1,
       "title": "Velocidad media y datos insuficientes para rapidez",
       "course": "1bach",
@@ -296,6 +299,7 @@
     },
     {
       "id": "t2_v_004",
+      "number": 4,
       "version": 1,
       "title": "Aceleración media de un giro",
       "course": "1bach",
@@ -394,6 +398,7 @@
     },
     {
       "id": "t2_v_005",
+      "number": 5,
       "version": 1,
       "title": "Camino quebrado y cuerda entre extremos",
       "course": "1bach",
@@ -504,6 +509,7 @@
     },
     {
       "id": "t2_v_006",
+      "number": 6,
       "version": 1,
       "title": "Componentes de una velocidad oblicua",
       "course": "1bach",
@@ -615,6 +621,7 @@
     },
     {
       "id": "t2_v_007",
+      "number": 7,
       "version": 1,
       "title": "Tangente y aceleración en un vuelo",
       "course": "1bach",
@@ -739,6 +746,7 @@
     },
     {
       "id": "t2_v_008",
+      "number": 8,
       "version": 1,
       "title": "Barca que apunta a la otra orilla",
       "course": "1bach",
@@ -861,6 +869,7 @@
     },
     {
       "id": "t2_v_009",
+      "number": 9,
       "version": 1,
       "title": "Elegir ejes sin cambiar la física",
       "course": "1bach",
@@ -984,6 +993,7 @@
     },
     {
       "id": "t2_v_010",
+      "number": 10,
       "version": 1,
       "title": "Reconstruir el viento",
       "course": "1bach",

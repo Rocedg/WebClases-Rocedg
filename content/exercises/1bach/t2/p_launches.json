@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t2_p_001",
+      "number": 31,
       "version": 1,
       "title": "Un lanzamiento hacia la izquierda",
       "course": "1bach",
@@ -101,6 +102,7 @@
     },
     {
       "id": "t2_p_002",
+      "number": 32,
       "version": 1,
       "title": "Ecuaciones con origen no situado en la salida",
       "course": "1bach",
@@ -236,6 +238,7 @@
     },
     {
       "id": "t2_p_003",
+      "number": 33,
       "version": 1,
       "title": "Raíces de regreso al mismo nivel",
       "course": "1bach",
@@ -309,6 +312,7 @@
     },
     {
       "id": "t2_p_004",
+      "number": 34,
       "version": 1,
       "title": "Alcance y condición de igual altura",
       "course": "1bach",
@@ -400,6 +404,7 @@
     },
     {
       "id": "t2_p_005",
+      "number": 35,
       "version": 1,
       "title": "Altura máxima sin reposo total",
       "course": "1bach",
@@ -548,6 +553,7 @@
     },
     {
       "id": "t2_p_006",
+      "number": 36,
       "version": 1,
       "title": "Velocidad de impacto con ángulo y sentido",
       "course": "1bach",
@@ -658,6 +664,7 @@
     },
     {
       "id": "t2_p_007",
+      "number": 37,
       "version": 1,
       "title": "Vuelo desde un balcón y cambio de origen",
       "course": "1bach",

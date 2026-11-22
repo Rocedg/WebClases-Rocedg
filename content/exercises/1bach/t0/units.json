@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t0_u_001",
+      "number": 1,
       "title": "Rapidez media con conversión doble",
       "course": "1bach",
       "block": "Lenguaje físico, unidades y análisis dimensional",
@@ -86,6 +87,7 @@
     },
     {
       "id": "t0_u_002",
+      "number": 2,
       "title": "Densidad y cambio de sistema de unidades",
       "course": "1bach",
       "block": "Lenguaje físico, unidades y análisis dimensional",
@@ -165,6 +167,7 @@
     },
     {
       "id": "t0_u_003",
+      "number": 3,
       "title": "Constante de una ley de acumulación",
       "course": "1bach",
       "block": "Lenguaje físico, unidades y análisis dimensional",
@@ -236,6 +239,7 @@
     },
     {
       "id": "t0_u_004",
+      "number": 4,
       "title": "Constante elástica desde energía",
       "course": "1bach",
       "block": "Lenguaje físico, unidades y análisis dimensional",
@@ -310,6 +314,7 @@
     },
     {
       "id": "t0_u_005",
+      "number": 5,
       "title": "Elegir una ley dimensionalmente posible",
       "course": "1bach",
       "block": "Lenguaje físico, unidades y análisis dimensional",
@@ -398,6 +403,7 @@
     },
     {
       "id": "t0_u_006",
+      "number": 6,
       "title": "Parámetros de un decaimiento exponencial",
       "course": "1bach",
       "block": "Lenguaje físico, unidades y análisis dimensional",
@@ -476,6 +482,7 @@
     },
     {
       "id": "t0_u_007",
+      "number": 7,
       "title": "Fase inicial y periodo",
       "course": "1bach",
       "block": "Lenguaje físico, unidades y análisis dimensional",
@@ -563,6 +570,7 @@
     },
     {
       "id": "t0_u_008",
+      "number": 8,
       "title": "Exponentes desconocidos por análisis dimensional",
       "course": "1bach",
       "block": "Lenguaje físico, unidades y análisis dimensional",
@@ -629,6 +637,7 @@
     },
     {
       "id": "t0_u_009",
+      "number": 9,
       "title": "Constante gravitatoria en unidades básicas",
       "course": "1bach",
       "block": "Lenguaje físico, unidades y análisis dimensional",
@@ -697,6 +706,7 @@
     },
     {
       "id": "t0_u_010",
+      "number": 10,
       "title": "Exponente radial en una ley de Coulomb",
       "course": "1bach",
       "block": "Lenguaje físico, unidades y análisis dimensional",
@@ -758,6 +768,7 @@
     },
     {
       "id": "t0_u_011",
+      "number": 11,
       "title": "Resistividad de un hilo real",
       "course": "1bach",
       "block": "Lenguaje físico, unidades y análisis dimensional",
@@ -829,6 +840,7 @@
     },
     {
       "id": "t0_u_012",
+      "number": 12,
       "title": "Ley cúbica y sensibilidad a la velocidad",
       "course": "1bach",
       "block": "Lenguaje físico, unidades y análisis dimensional",
@@ -898,6 +910,7 @@
     },
     {
       "id": "t0_u_013",
+      "number": 13,
       "title": "Coherencia dimensional de van der Waals",
       "course": "1bach",
       "block": "Lenguaje físico, unidades y análisis dimensional",
@@ -961,6 +974,7 @@
     },
     {
       "id": "t0_u_014",
+      "number": 14,
       "title": "Bernoulli: unidades y orden de magnitud",
       "course": "1bach",
       "block": "Lenguaje físico, unidades y análisis dimensional",
@@ -1064,6 +1078,7 @@
     },
     {
       "id": "t0_u_015",
+      "number": 15,
       "title": "Oscilación amortiguada y tiempo característico",
       "course": "1bach",
       "block": "Lenguaje físico, unidades y análisis dimensional",
@@ -1156,6 +1171,7 @@
     },
     {
       "id": "t0_u_016",
+      "number": 16,
       "title": "Suma bajo una raíz",
       "course": "1bach",
       "block": "Lenguaje físico, unidades y análisis dimensional",
@@ -1240,6 +1256,7 @@
     },
     {
       "id": "t0_u_019",
+      "number": 17,
       "title": "Unidades derivadas: N, J, W y Pa",
       "course": "1bach",
       "block": "Lenguaje físico, unidades y análisis dimensional",
@@ -1383,6 +1400,7 @@
     },
     {
       "id": "t0_u_020",
+      "number": 18,
       "title": "¿Qué unidad sale?",
       "course": "1bach",
       "block": "Lenguaje físico, unidades y análisis dimensional",
@@ -1510,6 +1528,7 @@
     },
     {
       "id": "t0_u_021",
+      "number": 19,
       "title": "Lo que va dentro de cos y de e",
       "course": "1bach",
       "block": "Lenguaje físico, unidades y análisis dimensional",

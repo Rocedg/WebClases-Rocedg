@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t5_w_001",
+      "number": 1,
       "version": 1,
       "title": "Fuerza 20 N paralela durante 5 m",
       "course": "1bach",
@@ -66,6 +67,7 @@
     },
     {
       "id": "t5_w_002",
+      "number": 2,
       "version": 1,
       "title": "Fuerza 30 N a 60°, desplazamiento 4 m",
       "course": "1bach",
@@ -130,6 +132,7 @@
     },
     {
       "id": "t5_w_003",
+      "number": 3,
       "version": 1,
       "title": "Rozamiento 12 N opuesto durante 7 m",
       "course": "1bach",
@@ -194,6 +197,7 @@
     },
     {
       "id": "t5_w_004",
+      "number": 4,
       "version": 1,
       "title": "Peso en desplazamiento horizontal",
       "course": "1bach",
@@ -258,6 +262,7 @@
     },
     {
       "id": "t5_w_005",
+      "number": 5,
       "version": 1,
       "title": "Elevar 3 kg verticalmente 2 m a velocidad constante",
       "course": "1bach",
@@ -346,6 +351,7 @@
     },
     {
       "id": "t5_w_006",
+      "number": 6,
       "version": 1,
       "title": "Fuerza constante vectorial (4",
       "course": "1bach",
@@ -410,6 +416,7 @@
     },
     {
       "id": "t5_w_007",
+      "number": 7,
       "version": 1,
       "title": "Gráfica rectangular , 0–3 m",
       "course": "1bach",
@@ -474,6 +481,7 @@
     },
     {
       "id": "t5_w_008",
+      "number": 8,
       "version": 1,
       "title": "Fuerza crece linealmente 0→12 N en 4 m",
       "course": "1bach",
@@ -550,6 +558,7 @@
     },
     {
       "id": "t5_w_009",
+      "number": 9,
       "version": 1,
       "title": "F-x cruza eje",
       "course": "1bach",
@@ -638,6 +647,7 @@
     },
     {
       "id": "t5_w_010",
+      "number": 10,
       "version": 1,
       "title": "Función , 0≤x≤2",
       "course": "1bach",
@@ -702,6 +712,7 @@
     },
     {
       "id": "t5_w_011",
+      "number": 11,
       "version": 1,
       "title": "Fuerza por tramos triangular-trapezoidal",
       "course": "1bach",
@@ -776,6 +787,7 @@
     },
     {
       "id": "t5_w_012",
+      "number": 12,
       "version": 1,
       "title": "Comparar dos caminos bajo fuerza uniforme gravitatoria entre mismas alturas",
       "course": "1bach",
@@ -850,6 +862,7 @@
     },
     {
       "id": "t5_w_013",
+      "number": 13,
       "version": 1,
       "title": "Fuerza radial en movimiento circular uniforme",
       "course": "1bach",
@@ -914,6 +927,7 @@
     },
     {
       "id": "t5_w_014",
+      "number": 14,
       "version": 1,
       "title": "Auditar  para ,  y 60° entre ambos",
       "course": "1bach",

@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t4_m_001",
+      "number": 39,
       "version": 1,
       "title": "Muelle  estirado 3 cm",
       "course": "1bach",
@@ -66,6 +67,7 @@
     },
     {
       "id": "t4_m_002",
+      "number": 40,
       "version": 1,
       "title": "Compresión 5 cm, eje positivo a la derecha",
       "course": "1bach",
@@ -154,6 +156,7 @@
     },
     {
       "id": "t4_m_003",
+      "number": 41,
       "version": 1,
       "title": "Masa colgada 0,5 kg",
       "course": "1bach",
@@ -218,6 +221,7 @@
     },
     {
       "id": "t4_m_004",
+      "number": 42,
       "version": 1,
       "title": "Añadir 0,2 kg a la masa anterior",
       "course": "1bach",
@@ -294,6 +298,7 @@
     },
     {
       "id": "t4_m_005",
+      "number": 43,
       "version": 1,
       "title": "Gráfica F-x experimental",
       "course": "1bach",
@@ -358,6 +363,7 @@
     },
     {
       "id": "t4_m_006",
+      "number": 44,
       "version": 1,
       "title": "Dos muelles en paralelo",
       "course": "1bach",
@@ -446,6 +452,7 @@
     },
     {
       "id": "t4_m_007",
+      "number": 45,
       "version": 1,
       "title": "Dos muelles en serie con mismos valores",
       "course": "1bach",
@@ -534,6 +541,7 @@
     },
     {
       "id": "t4_m_008",
+      "number": 46,
       "version": 1,
       "title": "Bloque horizontal unido a muelle, posición , , sin rozamiento",
       "course": "1bach",
@@ -610,6 +618,7 @@
     },
     {
       "id": "t4_m_009",
+      "number": 47,
       "version": 1,
       "title": "Muelle vertical",
       "course": "1bach",
@@ -684,6 +693,7 @@
     },
     {
       "id": "t4_m_010",
+      "number": 48,
       "version": 1,
       "title": "Calibrar dinamómetro con masas 0,1–0,5 kg",
       "course": "1bach",
@@ -758,6 +768,7 @@
     },
     {
       "id": "t4_m_011",
+      "number": 49,
       "version": 1,
       "title": "Muelle real deja de ser lineal tras 8 cm",
       "course": "1bach",
@@ -832,6 +843,7 @@
     },
     {
       "id": "t4_m_012",
+      "number": 50,
       "version": 1,
       "title": "Auditar confusión entre longitud L y deformación",
       "course": "1bach",

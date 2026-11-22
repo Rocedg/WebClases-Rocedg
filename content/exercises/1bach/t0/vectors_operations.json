@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t0_v_007",
+      "number": 26,
       "title": "Suma, resta y significado geométrico",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -97,6 +98,7 @@
     },
     {
       "id": "t0_v_008",
+      "number": 27,
       "title": "Combinación lineal y vector equilibrante",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -176,6 +178,7 @@
     },
     {
       "id": "t0_v_009",
+      "number": 28,
       "title": "Tres desplazamientos y dirección final",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -268,6 +271,7 @@
     },
     {
       "id": "t0_v_010",
+      "number": 29,
       "title": "Combinación en tres dimensiones",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -346,6 +350,7 @@
     },
     {
       "id": "t0_v_011",
+      "number": 30,
       "title": "Ecuación vectorial con comprobación",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -413,6 +418,7 @@
     },
     {
       "id": "t0_v_012",
+      "number": 31,
       "title": "Construcción punta-cola",
       "course": "1bach",
       "block": "Vectores y elección de ejes",

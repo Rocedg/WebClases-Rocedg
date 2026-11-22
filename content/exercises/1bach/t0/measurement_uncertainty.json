@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t0_m_014",
+      "number": 85,
       "title": "Pendiente experimental y unidades",
       "course": "1bach",
       "block": "Medida, error, incertidumbre y cifras significativas",
@@ -71,6 +72,7 @@
     },
     {
       "id": "t0_m_015",
+      "number": 86,
       "title": "Incertidumbre de una potencia",
       "course": "1bach",
       "block": "Medida, error, incertidumbre y cifras significativas",
@@ -142,6 +144,7 @@
     },
     {
       "id": "t0_m_016",
+      "number": 87,
       "title": "Escritura correcta de un resultado",
       "course": "1bach",
       "block": "Medida, error, incertidumbre y cifras significativas",
@@ -207,6 +210,7 @@
     },
     {
       "id": "t0_m_017",
+      "number": 88,
       "title": "Conversión de una medida con incertidumbre",
       "course": "1bach",
       "block": "Medida, error, incertidumbre y cifras significativas",
@@ -268,6 +272,7 @@
     },
     {
       "id": "t0_m_018",
+      "number": 89,
       "title": "Calibración lineal de un termómetro",
       "course": "1bach",
       "block": "Medida, error, incertidumbre y cifras significativas",
@@ -359,6 +364,7 @@
     },
     {
       "id": "t0_m_019",
+      "number": 90,
       "title": "Compatibilidad de dos medidas",
       "course": "1bach",
       "block": "Medida, error, incertidumbre y cifras significativas",
@@ -469,6 +475,7 @@
     },
     {
       "id": "t0_m_020",
+      "number": 91,
       "title": "Medir varias oscilaciones",
       "course": "1bach",
       "block": "Medida, error, incertidumbre y cifras significativas",
@@ -558,6 +565,7 @@
     },
     {
       "id": "t0_m_021",
+      "number": 92,
       "title": "Valor esperado frente a media calculada",
       "course": "1bach",
       "block": "Medida, error, incertidumbre y cifras significativas",
@@ -697,6 +705,7 @@
     },
     {
       "id": "t0_m_022",
+      "number": 93,
       "title": "El dato más alejado como estimación del error",
       "course": "1bach",
       "block": "Medida, error, incertidumbre y cifras significativas",
@@ -809,6 +818,7 @@
     },
     {
       "id": "t0_m_023",
+      "number": 94,
       "title": "Preciso pero no exacto: dos cronometradores",
       "course": "1bach",
       "block": "Medida, error, incertidumbre y cifras significativas",
@@ -981,6 +991,7 @@
     },
     {
       "id": "t0_m_024",
+      "number": 95,
       "title": "¿Respecto a qué valor calculo el error?",
       "course": "1bach",
       "block": "Medida, error, incertidumbre y cifras significativas",
@@ -1120,6 +1131,7 @@
     },
     {
       "id": "t0_m_025",
+      "number": 96,
       "title": "Detectar y corregir un sesgo con el valor esperado",
       "course": "1bach",
       "block": "Medida, error, incertidumbre y cifras significativas",
@@ -1225,6 +1237,7 @@
     },
     {
       "id": "t0_m_026",
+      "number": 97,
       "title": "Velocidad medida con los fotogramas de un vídeo",
       "course": "1bach",
       "block": "Medida, error, incertidumbre y cifras significativas",

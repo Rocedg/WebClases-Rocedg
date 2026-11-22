@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t0_v_037",
+      "number": 44,
       "title": "Producto escalar por componentes y ángulo",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -80,6 +81,7 @@
     },
     {
       "id": "t0_v_038",
+      "number": 45,
       "title": "Producto escalar con una componente desconocida",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -147,6 +149,7 @@
     },
     {
       "id": "t0_v_039",
+      "number": 46,
       "title": "El trabajo como producto escalar",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -216,6 +219,7 @@
     },
     {
       "id": "t0_v_040",
+      "number": 47,
       "title": "Producto vectorial por componentes",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -311,6 +315,7 @@
     },
     {
       "id": "t0_v_041",
+      "number": 48,
       "title": "Área de un triángulo con el producto vectorial",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -416,6 +421,7 @@
     },
     {
       "id": "t0_v_042",
+      "number": 49,
       "title": "Regla de la mano derecha en el plano",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -496,6 +502,7 @@
     },
     {
       "id": "t0_v_043",
+      "number": 50,
       "title": "Escalar y vectorial del mismo par",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -591,6 +598,7 @@
     },
     {
       "id": "t0_v_058",
+      "number": 51,
       "title": "Determinantes 2×2",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -688,6 +696,7 @@
     },
     {
       "id": "t0_v_059",
+      "number": 52,
       "title": "Determinante 3×3: Sarrus y primera fila",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -813,6 +822,7 @@
     },
     {
       "id": "t0_v_060",
+      "number": 53,
       "title": "Producto vectorial con determinante",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -920,6 +930,7 @@
     },
     {
       "id": "t0_v_061",
+      "number": 54,
       "title": "Vector normal en el plano",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -1041,6 +1052,7 @@
     },
     {
       "id": "t0_v_062",
+      "number": 55,
       "title": "Vector normal a dos vectores (3D)",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -1169,6 +1181,7 @@
     },
     {
       "id": "t0_v_063",
+      "number": 56,
       "title": "Momento de una fuerza sobre una llave",
       "course": "1bach",
       "block": "Vectores y elección de ejes",

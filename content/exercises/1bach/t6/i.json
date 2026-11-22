@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t6_i_001",
+      "number": 1,
       "version": 1,
       "title": "Pelota 0,4 kg a 5 m/s hacia +x",
       "course": "1bach",
@@ -66,6 +67,7 @@
     },
     {
       "id": "t6_i_002",
+      "number": 2,
       "version": 1,
       "title": "Dos objetos",
       "course": "1bach",
@@ -154,6 +156,7 @@
     },
     {
       "id": "t6_i_003",
+      "number": 3,
       "version": 1,
       "title": "Cambiar velocidad de -2 a +6 m/s",
       "course": "1bach",
@@ -218,6 +221,7 @@
     },
     {
       "id": "t6_i_004",
+      "number": 4,
       "version": 1,
       "title": "Fuerza constante 20 N durante 0,3 s",
       "course": "1bach",
@@ -282,6 +286,7 @@
     },
     {
       "id": "t6_i_005",
+      "number": 5,
       "version": 1,
       "title": "Pulso triangular, pico 100 N, duración 0,04 s",
       "course": "1bach",
@@ -358,6 +363,7 @@
     },
     {
       "id": "t6_i_006",
+      "number": 6,
       "version": 1,
       "title": "Fuerza cambia de signo en dos tramos",
       "course": "1bach",
@@ -432,6 +438,7 @@
     },
     {
       "id": "t6_i_007",
+      "number": 7,
       "version": 1,
       "title": "Misma variación de momento con 0,02 y 0,10 s",
       "course": "1bach",
@@ -496,6 +503,7 @@
     },
     {
       "id": "t6_i_008",
+      "number": 8,
       "version": 1,
       "title": "Airbag alarga impacto de 0,03 a 0,15 s",
       "course": "1bach",
@@ -560,6 +568,7 @@
     },
     {
       "id": "t6_i_009",
+      "number": 9,
       "version": 1,
       "title": "Pelota llega a pared a +8 y sale a -6 m/s",
       "course": "1bach",
@@ -636,6 +645,7 @@
     },
     {
       "id": "t6_i_010",
+      "number": 10,
       "version": 1,
       "title": "Hallar velocidad final desde impulso -12 N·s",
       "course": "1bach",
@@ -700,6 +710,7 @@
     },
     {
       "id": "t6_i_011",
+      "number": 11,
       "version": 1,
       "title": "Fuerza , 0–2 s, cuerpo 2 kg desde reposo",
       "course": "1bach",
@@ -776,6 +787,7 @@
     },
     {
       "id": "t6_i_012",
+      "number": 12,
       "version": 1,
       "title": "Auditar,15 s",
       "course": "1bach",

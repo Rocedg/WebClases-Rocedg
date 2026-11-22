@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t0_v_046",
+      "number": 59,
       "title": "Cambio de ejes descomponiendo paso a paso",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -105,6 +106,7 @@
     },
     {
       "id": "t0_v_047",
+      "number": 60,
       "title": "Cambio a ejes girados en sentido horario",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -207,6 +209,7 @@
     },
     {
       "id": "t0_v_048",
+      "number": 61,
       "title": "Volver de los ejes girados a los habituales",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -310,6 +313,7 @@
     },
     {
       "id": "t0_v_049",
+      "number": 62,
       "title": "De una rampa a otra pasando por los ejes habituales",
       "course": "1bach",
       "block": "Vectores y elección de ejes",

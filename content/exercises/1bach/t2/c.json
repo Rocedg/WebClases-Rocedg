@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t2_c_001",
+      "number": 45,
       "version": 1,
       "title": "De revoluciones por minuto a periodo",
       "course": "1bach",
@@ -110,6 +111,7 @@
     },
     {
       "id": "t2_c_002",
+      "number": 46,
       "version": 1,
       "title": "La rapidez del borde y el arco recorrido",
       "course": "1bach",
@@ -220,6 +222,7 @@
     },
     {
       "id": "t2_c_003",
+      "number": 47,
       "version": 1,
       "title": "Cuatro tangentes de un mismo MCU",
       "course": "1bach",
@@ -381,6 +384,7 @@
     },
     {
       "id": "t2_c_004",
+      "number": 48,
       "version": 1,
       "title": "Aceleración al centro en dos puntos",
       "course": "1bach",
@@ -542,6 +546,7 @@
     },
     {
       "id": "t2_c_005",
+      "number": 49,
       "version": 1,
       "title": "Parametrizar un giro horario",
       "course": "1bach",
@@ -697,6 +702,7 @@
     },
     {
       "id": "t2_c_006",
+      "number": 50,
       "version": 1,
       "title": "Las componentes oscilan aunque la rapidez sea fija",
       "course": "1bach",
@@ -806,6 +812,7 @@
     },
     {
       "id": "t2_c_007",
+      "number": 51,
       "version": 1,
       "title": "Comparar radios exige decir qué permanece fijo",
       "course": "1bach",
@@ -939,6 +946,7 @@
     },
     {
       "id": "t2_c_008",
+      "number": 52,
       "version": 1,
       "title": "Rueda frenada: aceleración total variable",
       "course": "1bach",

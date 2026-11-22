@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t2_p_008",
+      "number": 38,
       "version": 1,
       "title": "Dos ángulos para una diana elevada",
       "course": "1bach",
@@ -99,6 +100,7 @@
     },
     {
       "id": "t2_p_009",
+      "number": 39,
       "version": 1,
       "title": "Ángulos complementarios: mismo alcance",
       "course": "1bach",
@@ -208,6 +210,7 @@
     },
     {
       "id": "t2_p_010",
+      "number": 40,
       "version": 1,
       "title": "Velocidad mínima para una condición de ángulo fijo",
       "course": "1bach",
@@ -306,6 +309,7 @@
     },
     {
       "id": "t2_p_011",
+      "number": 41,
       "version": 1,
       "title": "Qué cambia al duplicar la componente horizontal",
       "course": "1bach",
@@ -403,6 +407,7 @@
     },
     {
       "id": "t2_p_012",
+      "number": 42,
       "version": 1,
       "title": "Proyecto de cuatro gráficas desde una trayectoria",
       "course": "1bach",
@@ -538,6 +543,7 @@
     },
     {
       "id": "t2_p_013",
+      "number": 43,
       "version": 1,
       "title": "Tiro sobre un plano inclinado",
       "course": "1bach",
@@ -673,6 +679,7 @@
     },
     {
       "id": "t2_p_014",
+      "number": 44,
       "version": 1,
       "title": "Auditar signos, raíces y unidades",
       "course": "1bach",

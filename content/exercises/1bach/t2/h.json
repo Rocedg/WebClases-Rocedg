@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t2_h_001",
+      "number": 21,
       "version": 1,
       "title": "Salida horizontal y dirección de impacto",
       "course": "1bach",
@@ -116,6 +117,7 @@
     },
     {
       "id": "t2_h_002",
+      "number": 22,
       "version": 1,
       "title": "Velocidad necesaria para una marca",
       "course": "1bach",
@@ -232,6 +234,7 @@
     },
     {
       "id": "t2_h_003",
+      "number": 23,
       "version": 1,
       "title": "Altura inferida desde el alcance",
       "course": "1bach",
@@ -317,6 +320,7 @@
     },
     {
       "id": "t2_h_004",
+      "number": 24,
       "version": 1,
       "title": "Dos velocidades desde la misma plataforma",
       "course": "1bach",
@@ -452,6 +456,7 @@
     },
     {
       "id": "t2_h_005",
+      "number": 25,
       "version": 1,
       "title": "Cambiar la altura: una ley de raíz cuadrada",
       "course": "1bach",
@@ -561,6 +566,7 @@
     },
     {
       "id": "t2_h_006",
+      "number": 26,
       "version": 1,
       "title": "Cuatro gráficas de una salida horizontal",
       "course": "1bach",
@@ -684,6 +690,7 @@
     },
     {
       "id": "t2_h_007",
+      "number": 27,
       "version": 2,
       "title": "Elegir trayectoria y componentes compatibles",
       "course": "1bach",
@@ -805,6 +812,7 @@
     },
     {
       "id": "t2_h_008",
+      "number": 28,
       "version": 1,
       "title": "Contacto con una rampa ascendente",
       "course": "1bach",
@@ -916,6 +924,7 @@
     },
     {
       "id": "t2_h_009",
+      "number": 29,
       "version": 1,
       "title": "Lanzamiento desde una plataforma móvil",
       "course": "1bach",
@@ -1051,6 +1060,7 @@
     },
     {
       "id": "t2_h_010",
+      "number": 30,
       "version": 1,
       "title": "Laboratorio: estimar la velocidad de salida",
       "course": "1bach",
