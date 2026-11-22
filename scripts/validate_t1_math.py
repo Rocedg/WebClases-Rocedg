@@ -18,6 +18,7 @@ from services.exercise_bank_loader import load_topic_bank
 
 ROOT = Path(__file__).resolve().parents[1]
 BANK_PATH = ROOT / "content" / "exercises" / "1bach" / "t1"
+G = 9.81  # m/s², the value used in every lesson and exercise
 
 
 def quadratic_roots(a: float, b: float, c: float) -> list[float]:
@@ -96,15 +97,15 @@ def expected_values() -> dict[tuple[str, str], float]:
     put("t1_a_005", tg=tg, xg=x(tg), xf=x(7), dx=x(7) - x(0), d=(x(tg) - x(0)) + (x(tg) - x(7)))
     v0 = (28 - 4 - 0.5 * (-1) * 16) / 4
     put("t1_a_006", v0=v0, vf=v0 - 4, dx=28 - 4)
-    t = max(quadratic_roots(-5, 0, 45))
-    put("t1_a_007", t=t, v=-10 * t, speed=10 * t)
-    y = mrua(0, 16, -10)
-    up = turning_time(16, -10)
-    flight = max(quadratic_roots(-5, 16, 0))
-    put("t1_a_008", up=up, h=y(up), flight=flight, v=16 - 10 * flight, d=2 * y(up))
-    # y_A - y_B = 20 - 5 (2t - 1) = 0
-    t = 25 / 10
-    put("t1_a_009", t=t, y=mrua(0, 20, -10)(t), va=20 - 10 * t, vb=20 - 10 * (t - 1))
+    t = max(quadratic_roots(-G / 2, 0, 45))
+    put("t1_a_007", t=t, v=-G * t, speed=G * t)
+    y = mrua(0, 16, -G)
+    up = turning_time(16, -G)
+    flight = max(quadratic_roots(-G / 2, 16, 0))
+    put("t1_a_008", up=up, h=y(up), flight=flight, v=16 - G * flight, d=2 * y(up))
+    # y_A - y_B = 20 - (G/2) (2t - 1) = 0
+    t = (20 + G / 2) / G
+    put("t1_a_009", t=t, y=mrua(0, 20, -G)(t), va=20 - G * t, vb=20 - G * (t - 1))
     put("t1_a_010", v2=2 * 2, v5=2 * 2, y5=mrua(0, 0, 2)(2) + 4 * 3)
     put("t1_a_011", x0=7, v0=-6, a=2 * 1.5, t=turning_time(-6, 3), x=mrua(7, -6, 3)(turning_time(-6, 3)))
     put("t1_a_012", x2=mrua(-3, 2, 4)(2))
@@ -156,9 +157,10 @@ def expected_values() -> dict[tuple[str, str], float]:
     brake = mrua(10, 20, -4)
     tau = min(r for r in quadratic_roots(-2, 20, 10 - 50) if 0 <= r <= turning_time(20, -4))
     put("t1_i_003", stop=brake(turning_time(20, -4)), impact_time=0.5 + tau, impact_v=20 - 4 * tau)
-    y = mrua(25, 15, -10)
-    t = max(quadratic_roots(-5, 15, 25))
-    put("t1_i_004", max=y(1.5), t=t, v=15 - 10 * t, distance=(y(1.5) - 25) + y(1.5))
+    y = mrua(25, 15, -G)
+    t = max(quadratic_roots(-G / 2, 15, 25))
+    top = turning_time(15, -G)
+    put("t1_i_004", max=y(top), t=t, v=15 - G * t, distance=(y(top) - 25) + y(top))
     vmax = 1.2 * 3
     tau = turning_time(vmax, -0.9)
     put("t1_i_005", vmax=vmax, duration=7 + tau,
@@ -199,7 +201,7 @@ FUNCTIONS = {
     ("t1_a_001", "x"): mrua(5, -4, 2),
     ("t1_a_001", "v"): lambda t: -4 + 2 * t,
     ("t1_a_003", "x"): mrua(0, 24, -6),
-    ("t1_a_007", "y"): mrua(45, 0, -10),
+    ("t1_a_007", "y"): mrua(45, 0, -G),
     ("t1_a_010", "y"): mrua(0, 0, 2),
     ("t1_g_003", "x"): mrua(3, 6, -2),
     ("t1_g_005", "v"): lambda t: 2 * t,

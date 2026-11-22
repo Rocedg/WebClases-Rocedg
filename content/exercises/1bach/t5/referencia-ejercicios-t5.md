@@ -41,14 +41,14 @@ Todos usarán `course: 1bach`, `topic: t5`, `status: draft`, `version: 1`, `resp
 | `t5_w_002` | Fuerza `30 N` a `60°`, desplazamiento `4 m`. | `W=60 J`. | Triángulo y proyección útil. |
 | `t5_w_003` | Rozamiento `12 N` opuesto durante `7 m`. | `W=-84 J`. | Flechas opuestas y barra de transferencia. |
 | `t5_w_004` | Peso en desplazamiento horizontal. | `W_P=0 J`; selección por perpendicularidad. | Ángulo `90°`. |
-| `t5_w_005` | Elevar `3 kg` verticalmente `2 m` a velocidad constante. | `W_P=-58,8 J`; `W_ap=+58,8 J`; neto `0`. | Estados inicial/final. |
+| `t5_w_005` | Elevar `3 kg` verticalmente `2 m` a velocidad constante. Usa `g=9,81 m/s²`. | `W_P=-58,9 J`; `W_ap=+58,9 J`; neto `0`. | Estados inicial/final. |
 | `t5_w_006` | Fuerza constante vectorial `(4;3) N`, desplazamiento `(5;-2) m`. | Producto escalar `14 J`. | Vectores en plano. |
 | `t5_w_007` | Gráfica rectangular `F=10 N`, `0–3 m`. | Área/trabajo `30 J`. | `F-x` sombreada. |
 | `t5_w_008` | Fuerza crece linealmente `0→12 N` en `4 m`. | Trabajo `24 J`; fuerza media `6 N`. | Triángulo bajo `F-x`. |
 | `t5_w_009` | `F-x` cruza eje: `+8 N` dos metros y `-4 N` tres metros. | Trabajos `16`, `-12`; neto `4 J`. | Áreas con colores de signo. |
 | `t5_w_010` | Función `F(x)=3x²`, `0≤x≤2`. | `W=8 J`; unidad del coeficiente `N/m²`. | Curva y área. |
 | `t5_w_011` | Fuerza por tramos triangular-trapezoidal. | Tres áreas y suma numérica. | Panel con vértices etiquetados. |
-| `t5_w_012` | Comparar dos caminos bajo fuerza uniforme gravitatoria entre mismas alturas. | Selección: mismo trabajo; valor `-mgΔh`. | Dos trayectorias. |
+| `t5_w_012` | Comparar dos caminos bajo fuerza uniforme gravitatoria entre mismas alturas. Usa `g=9,81 m/s²`. | Selección: mismo trabajo; valor `-mgΔh`. | Dos trayectorias. |
 | `t5_w_013` | Fuerza radial en movimiento circular uniforme. | Trabajo instantáneo/total `0 J`. | Tangente y radio perpendiculares. |
 | `t5_w_014` | Auditar `W=Fd` para `F=50 N`, `d=3 m` y `60°` entre ambos. | Seleccionar `W=Fd cosθ`; resultado `75 J`. | Resolución ficticia y proyección. |
 
@@ -63,7 +63,7 @@ Todos usarán `course: 1bach`, `topic: t5`, `status: draft`, `version: 1`, `resp
 | `t5_k_005` | Frenada con fuerza constante `6000 N` del coche anterior. | Distancia `25 m`. | Trayectoria de frenada. |
 | `t5_k_006` | Fuerza neta variable dada por `F-x`; partir con `v_0=2`. | Trabajo por área y rapidez final. | Gráfica más estados. |
 | `t5_k_007` | Máquina hace `12 kJ` en `8 s`. | Potencia media `1,5 kW`. | Línea temporal. |
-| `t5_k_008` | Elevador `500 kg` sube a `2 m/s` constante. | Potencia `9,8 kW`. | Ascensor y flujo energético. |
+| `t5_k_008` | Elevador `500 kg` sube a `2 m/s` constante. Usa `g=9,81 m/s²`. | Potencia `9,81 kW`. | Ascensor y flujo energético. |
 | `t5_k_009` | Vehículo `F=800 N` a `v=15 m/s`. | Potencia instantánea `12 kW`. | Vectores paralelos. |
 | `t5_k_010` | Fuerza a `60°` respecto de `v`, `F=100`, `v=4`. | `P=200 W`. | Ángulo fuerza-velocidad. |
 | `t5_k_011` | Gráfica `P(t)` escalonada. | Energía transferida por áreas; resultado en J. | `P-t` con áreas. |
@@ -73,13 +73,13 @@ Todos usarán `course: 1bach`, `topic: t5`, `status: draft`, `version: 1`, `resp
 
 | ID | Actividad y datos | Clave estructurada | SVG/gráfica |
 |---|---|---|---|
-| `t5_g_001` | `m=3 kg`, subir `5 m`. | `ΔU_g=147 J`; trabajo del peso `-147 J`. | Dos niveles. |
+| `t5_g_001` | `m=3 kg`, subir `5 m`. Usa `g=9,81 m/s²`. | `ΔU_g=147 J`; trabajo del peso `-147 J`. | Dos niveles. |
 | `t5_g_002` | Cambiar referencia de suelo a mesa. | Dos valores absolutos, misma `ΔU`. | Ejes de energía con ceros distintos. |
-| `t5_g_003` | Caída desde `20 m`, sin aire. | Rapidez `19,8 m/s`; barras inicial/final. | Torre y energía. |
-| `t5_g_004` | Rampa sin rozamiento con desnivel `3 m`. | Rapidez final `7,67 m/s`, independiente de forma. | Dos rampas. |
-| `t5_g_005` | Lanzamiento vertical `v_0=14 m/s`. | Altura adicional `10 m`. | Estados salida/cima. |
-| `t5_g_006` | Montaña rusa: alturas `20→5 m`, parte del reposo. | `v=17,1 m/s`. | Perfil con niveles. |
-| `t5_g_007` | Velocidad mínima para superar colina de `8 m`. | `v_min=12,5 m/s`. | Perfil y punto de retorno. |
+| `t5_g_003` | Caída desde `20 m`, sin aire. Usa `g=9,81 m/s²`. | Rapidez `19,8 m/s`; barras inicial/final. | Torre y energía. |
+| `t5_g_004` | Rampa sin rozamiento con desnivel `3 m`. Usa `g=9,81 m/s²`. | Rapidez final `7,67 m/s`, independiente de forma. | Dos rampas. |
+| `t5_g_005` | Lanzamiento vertical `v_0=14 m/s`. Usa `g=9,81 m/s²`. | Altura adicional `9,99 m`. | Estados salida/cima. |
+| `t5_g_006` | Montaña rusa: alturas `20→5 m`, parte del reposo. Usa `g=9,81 m/s²`. | `v=17,2 m/s`. | Perfil con niveles. |
+| `t5_g_007` | Velocidad mínima para superar colina de `8 m`. Usa `g=9,81 m/s²`. | `v_min=12,5 m/s`. | Perfil y punto de retorno. |
 | `t5_g_008` | Elegir gráfico `U_g(h)` para varios ceros. | Pendiente `mg`; opciones equivalentes por constante. | Tres rectas paralelas. |
 | `t5_g_009` | Plano inclinado: relacionar recorrido `s` y altura `s sinθ`. | Función `U(s)=mg s sinθ+C`. | Geometría de rampa. |
 | `t5_g_010` | Auditar afirmación “la energía potencial pertenece al objeto”. | Selección: pertenece al sistema de interacción; `ΔU` numérico. | Fronteras objeto/Tierra. |
@@ -103,12 +103,12 @@ Todos usarán `course: 1bach`, `topic: t5`, `status: draft`, `version: 1`, `resp
 
 | ID | Actividad y datos | Clave estructurada | SVG/gráfica |
 |---|---|---|---|
-| `t5_b_001` | Bloque baja `4 m` de altura con rozamiento que hace `-30 J`, `m=2`. | `K_f=48,4 J`; `v=6,96 m/s`. | Barras `U`, térmica y `K`. |
-| `t5_b_002` | Rampa rugosa, hallar `μ_k` desde rapidez final. | Balance cerrado y `μ_k` numérico. | Perfil y frontera del sistema. |
-| `t5_b_003` | Muelle impulsa bloque por zona rugosa hasta detenerse. | Distancia `d=kx²/(2μmg)`. | Muelle-zona rugosa. |
-| `t5_b_004` | Bloque cae sobre muelle vertical: compresión máxima. | Ecuación cuadrática y raíz física seleccionada. | Tres estados verticales. |
-| `t5_b_005` | Montaña rusa con bucle: energía + condición dinámica mínima arriba. | `v_top=√(gr)` y altura inicial `2,5r`. | Bucle y barras por estado. |
-| `t5_b_006` | Péndulo soltado desde ángulo `60°`, longitud `1 m`. | Rapidez abajo `3,13 m/s`. | Arco y niveles. |
+| `t5_b_001` | Bloque baja `4 m` de altura con rozamiento que hace `-30 J`, `m=2`. Usa `g=9,81 m/s²`. | `K_f=48,5 J`; `v=6,96 m/s`. | Barras `U`, térmica y `K`. |
+| `t5_b_002` | Rampa rugosa, hallar `μ_k` desde rapidez final. Usa `g=9,81 m/s²`. | Balance cerrado y `μ_k` numérico. | Perfil y frontera del sistema. |
+| `t5_b_003` | Muelle impulsa bloque por zona rugosa hasta detenerse. Usa `g=9,81 m/s²`. | Distancia `d=kx²/(2μmg)`. | Muelle-zona rugosa. |
+| `t5_b_004` | Bloque cae sobre muelle vertical: compresión máxima. Usa `g=9,81 m/s²`. | Ecuación cuadrática y raíz física seleccionada. | Tres estados verticales. |
+| `t5_b_005` | Montaña rusa con bucle: energía + condición dinámica mínima arriba. Usa `g=9,81 m/s²`. | `v_top=√(gr)` y altura inicial `2,5r`. | Bucle y barras por estado. |
+| `t5_b_006` | Péndulo soltado desde ángulo `60°`, longitud `1 m`. Usa `g=9,81 m/s²`. | Rapidez abajo `3,13 m/s`. | Arco y niveles. |
 | `t5_b_007` | Columpio pierde `15%` de energía por oscilación. | Factor de altura `0,85`; tras 3, `0,85³`. | Barras decrecientes. |
 | `t5_b_008` | Motor sube carga con rendimiento `80%`. | Potencia de entrada `P_útil/0,8`. | Diagrama de Sankey simple. |
 | `t5_b_009` | Comparar tres sistemas para el mismo descenso con rozamiento. | Selección de términos internos/externos. | Fronteras superpuestas. |
@@ -116,7 +116,7 @@ Todos usarán `course: 1bach`, `topic: t5`, `status: draft`, `version: 1`, `resp
 | `t5_b_011` | Dada energía total horizontal, hallar regiones permitidas. | Intervalo de `x` donde `E≥U(x)`. | `U(x)` y línea `E`. |
 | `t5_b_012` | Fuerza conservativa desde `U(x)=2x²-4x`. | `F(x)=-4x+4`; equilibrio `x=1`. | Panel `U`/`F`. |
 | `t5_b_013` | Auditoría de balance que suma simultáneamente trabajo del peso y `ΔU_g`. | Seleccionar doble conteo; ecuación corregida. | Libro mayor de energía. |
-| `t5_b_014` | Investigación cerrada de carrito: datos de altura/rapidez estiman pérdida y eficiencia. | `E_i`, `E_f`, pérdida y porcentaje. | Datos, perfil y barras. |
+| `t5_b_014` | Investigación cerrada de carrito: datos de altura/rapidez estiman pérdida y eficiencia. Usa `g=9,81 m/s²`. | `E_i`, `E_f`, pérdida y porcentaje. | Datos, perfil y barras. |
 
 ## 4. Sistema visual
 

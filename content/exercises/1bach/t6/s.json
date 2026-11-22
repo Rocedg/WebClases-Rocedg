@@ -44,6 +44,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -117,6 +118,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -190,6 +192,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -263,6 +266,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -338,6 +342,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -411,6 +416,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -426,7 +432,7 @@
         "ignorar la representación específica de la familia s"
       ],
       "parts_count": 1,
-      "statement_source": "Explosión durante caída: componente horizontal.\n\n(a) Selecciona: Conclusión.",
+      "statement_source": "Explosión durante caída: componente horizontal. Usa \\(g=9,81 m/s²\\).\n\n(a) Selecciona: Conclusión.",
       "solution_source": "\\(p_x\\) se conserva; \\(p_y\\) cambia por gravedad.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
     },
@@ -484,6 +490,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -499,7 +506,7 @@
         "ignorar la representación específica de la familia s"
       ],
       "parts_count": 1,
-      "statement_source": "Comparar intervalo muy corto y largo bajo el mismo peso.\n\n(a) Selecciona: Conclusión física.",
+      "statement_source": "Comparar intervalo muy corto y largo bajo el mismo peso. Usa \\(g=9,81 m/s²\\).\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Selección cuándo despreciar impulso externo; valores de \\(mg\\Delta t\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
     },
@@ -559,6 +566,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -632,6 +640,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -705,6 +714,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",

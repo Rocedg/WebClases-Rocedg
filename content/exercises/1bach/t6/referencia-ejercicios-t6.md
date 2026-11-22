@@ -60,8 +60,8 @@ Todos usarán `course: 1bach`, `topic: t6`, `status: draft`, `version: 1`, `resp
 | `t6_s_003` | Persona camina dentro de barca inicialmente en reposo. | Centro de masas fijo; velocidades opuestas con relación de masas. | Persona/barca y orilla. |
 | `t6_s_004` | Dos masas con fuerza interna variable. | Momento total constante; momentos individuales cambian. | Gráficas `p_1`, `p_2`, `p_total`. |
 | `t6_s_005` | Carro de `2 kg` tiene `p_i=4 kg·m/s` y recibe `J_ext=-1,5 N·s`. | `p_f=2,5 kg·m/s`; `v_f=1,25 m/s`. | Frontera y flecha externa. |
-| `t6_s_006` | Explosión durante caída: componente horizontal. | `p_x` se conserva; `p_y` cambia por gravedad. | Vectores 2D y gravedad. |
-| `t6_s_007` | Comparar intervalo muy corto y largo bajo el mismo peso. | Selección cuándo despreciar impulso externo; valores de `mgΔt`. | Dos escalas temporales. |
+| `t6_s_006` | Explosión durante caída: componente horizontal. Usa `g=9,81 m/s²`. | `p_x` se conserva; `p_y` cambia por gravedad. | Vectores 2D y gravedad. |
+| `t6_s_007` | Comparar intervalo muy corto y largo bajo el mismo peso. Usa `g=9,81 m/s²`. | Selección cuándo despreciar impulso externo; valores de `mgΔt`. | Dos escalas temporales. |
 | `t6_s_008` | Carros de `2` y `3 kg` llevan velocidades `4` y `-1 m/s` antes de interactuar. | `p_total=5 kg·m/s`; `v_CM=1 m/s`, igual antes y después. | Eje y marcador CM. |
 | `t6_s_009` | Sistema abierto expulsa masa de forma discreta. | Balance de momento para dos fragmentos, no fórmula continua. | Antes/después con frontera. |
 | `t6_s_010` | Auditar conservación aplicada a un solo objeto durante choque. | Sistema correcto seleccionado; fuerza interna identificada. | Dos soluciones paralelas. |
@@ -108,15 +108,15 @@ Todos usarán `course: 1bach`, `topic: t6`, `status: draft`, `version: 1`, `resp
 |---|---|---|---|
 | `t6_a_001` | Reconstruir velocidad desde sensor `F(t)` de impacto y masa conocida. | Área, `Δp`, velocidad final. | Pulso experimental suavizado. |
 | `t6_a_002` | Comparar dos cascos con igual impulso y picos distintos. | Selección del menor pico/mayor duración; áreas iguales. | Pulsos superpuestos. |
-| `t6_a_003` | Choque pegajoso seguido de frenada por rozamiento. | Etapa 1 momento; etapa 2 energía/cinemática; distancia final. | Línea temporal en dos modelos. |
-| `t6_a_004` | Bala-bloque-péndulo: impacto y ascenso. | Velocidad conjunta por altura; velocidad de bala por momento. | Péndulo balístico en dos etapas. |
+| `t6_a_003` | Choque pegajoso seguido de frenada por rozamiento. Usa `g=9,81 m/s²`. | Etapa 1 momento; etapa 2 energía/cinemática; distancia final. | Línea temporal en dos modelos. |
+| `t6_a_004` | Bala-bloque-péndulo: impacto y ascenso. Usa `g=9,81 m/s²`. | Velocidad conjunta por altura; velocidad de bala por momento. | Péndulo balístico en dos etapas. |
 | `t6_a_005` | Carro `1 kg` a `6 m/s` se pega a otro de `2 kg`; después comprimen un muelle `k=300 N/m` sin rozamiento. | Velocidad conjunta `2 m/s`; energía elástica `6 J`; compresión máxima `0,20 m`. | Choque→muelle comprimido. |
 | `t6_a_006` | Elegir sistema y ley para cinco fases de una interacción. | Secuencia cerrada: impulso, momento, energía. | Diagrama de decisiones. |
 | `t6_a_007` | Gráficas de fuerzas mutuas durante choque. | `F_12(t)=-F_21(t)`; impulsos opuestos. | Dos pulsos especulares. |
 | `t6_a_008` | Datos con incertidumbre: decidir si momento se conserva dentro de tolerancia. | Diferencia relativa y selección sí/no por umbral. | Barras con intervalos. |
 | `t6_a_009` | Hallar masa desconocida desde choque y velocidades medidas. | Ecuación de momento y masa positiva. | Fotogramas con velocidades. |
 | `t6_a_010` | Detectar datos físicamente incompatibles (`e>1` sin aporte energético declarado). | `e` calculado y opción “superelástico/no compatible con modelo pasivo”. | Velocidades relativas. |
-| `t6_a_011` | Movimiento 2D: explosión y caída posterior. | Momento horizontal en explosión; alcance de fragmento con cinemática. | Secuencia vectorial y trayectorias. |
+| `t6_a_011` | Movimiento 2D: explosión y caída posterior. Usa `g=9,81 m/s²`. | Momento horizontal en explosión; alcance de fragmento con cinemática. | Secuencia vectorial y trayectorias. |
 | `t6_a_012` | Miniinvestigación cerrada de choque: clasificar, calcular `e`, pérdida y seleccionar gráfico. | Cuatro campos numéricos/cerrados. | Antes/después, barras y gráfica `F(t)`. |
 
 ## 4. Sistema visual

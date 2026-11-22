@@ -54,6 +54,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -127,6 +128,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -200,6 +202,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -215,7 +218,7 @@
         "ignorar la representación específica de la familia a"
       ],
       "parts_count": 1,
-      "statement_source": "Choque pegajoso seguido de frenada por rozamiento.\n\n(a) Selecciona: Conclusión física.",
+      "statement_source": "Choque pegajoso seguido de frenada por rozamiento. Usa \\(g=9,81 m/s²\\).\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Etapa 1 momento; etapa 2 energía/cinemática; distancia final.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
     },
@@ -273,6 +276,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -288,7 +292,7 @@
         "ignorar la representación específica de la familia a"
       ],
       "parts_count": 1,
-      "statement_source": "Bala-bloque-péndulo: impacto y ascenso.\n\n(a) Selecciona: Conclusión física.",
+      "statement_source": "Bala-bloque-péndulo: impacto y ascenso. Usa \\(g=9,81 m/s²\\).\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Velocidad conjunta por altura; velocidad de bala por momento.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
     },
@@ -360,6 +364,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -433,6 +438,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -506,6 +512,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -579,6 +586,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -652,6 +660,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -729,6 +738,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -802,6 +812,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -817,7 +828,7 @@
         "ignorar la representación específica de la familia a"
       ],
       "parts_count": 1,
-      "statement_source": "Movimiento 2D: explosión y caída posterior.\n\n(a) Selecciona: Conclusión física.",
+      "statement_source": "Movimiento 2D: explosión y caída posterior. Usa \\(g=9,81 m/s²\\).\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Momento horizontal en explosión; alcance de fragmento con cinemática.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
     },
@@ -875,6 +886,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",

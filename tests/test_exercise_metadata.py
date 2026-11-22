@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import importlib.util
+import json
 import sys
 from pathlib import Path
 from types import ModuleType
@@ -105,3 +106,37 @@ def test_exercise_type_filter_follows_topic_and_lesson_order():
     ]
     first_t1 = next(index for index, (_, type_key) in enumerate(flattened) if ":t1:" in type_key)
     assert all(":t0:" in type_key for _, type_key in flattened[:first_t1])
+
+
+def test_first_year_exercises_have_uniform_origin():
+    validate_exercises = load_script("scripts/validate_exercises.py", "validate_exercises")
+    catalogue = [
+        exercise
+        for path in sorted((ROOT / "content/exercises/1bach").glob("t*/*.json"))
+        if path.name != "_topic.json"
+        for exercise in json.loads(path.read_text(encoding="utf-8"))["exercises"]
+    ]
+
+    assert len(catalogue) >= 480
+    for exercise in catalogue:
+        origin = exercise["origin"]
+        assert origin["kind"] in validate_exercises.ORIGIN_KINDS, exercise["id"]
+        assert "reference" in origin, exercise["id"]
+        assert origin["source"], exercise["id"]
+
+
+def test_origin_validation_rejects_missing_reference_and_unknown_kind():
+    validate_exercises = load_script("scripts/validate_exercises.py", "validate_exercises")
+    result = validate_exercises.ValidationResult()
+
+    validate_exercises.validate_lightweight_origin(
+        {"origin": {"kind": "t0_bank_v5_extension", "source": "x"}}, "x_001", result
+    )
+    assert any("origin.kind" in error for error in result.errors)
+    assert any("origin.reference" in error for error in result.errors)
+
+    result = validate_exercises.ValidationResult()
+    validate_exercises.validate_lightweight_origin(
+        {"origin": {"kind": "adapted_from_pau", "reference": None, "source": "x"}}, "x_002", result
+    )
+    assert any("required for adapted_from_pau" in error for error in result.errors)

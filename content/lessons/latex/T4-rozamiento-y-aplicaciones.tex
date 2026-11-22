@@ -13,7 +13,7 @@ el estado del cuerpo.
 \indexentry{sec:b2}{2. Tomar una curva}
 \indexentry{sec:b3}{3. Muelles y medidas}
 \end{lessonindex}
-En los ejemplos mec\'anicos usamos $g=10\mpss$. Las estimaciones experimentales de
+En los ejemplos mec\'anicos usamos $g=9,81\mpss$. Las estimaciones experimentales de
 $g$ se calculan a partir de sus datos.
 \precisionnote
 
@@ -37,9 +37,9 @@ Calcula rozamiento y aceleraci\'on desde reposo y si ya desliza a la derecha.
 \solutionblock
 \step{Modelo} Verticalmente $N=mg$. Horizontalmente, desde reposo se necesita
 $f_s=F$ para equilibrar; si desliza usamos $f_k=\mu_kN$.
-\step{C\'alculo} $N=20,0\N$, $f_{s,\max}=8,00\N$, $f_k=6,00\N$.
-Desde reposo $7<8$: $f_s=7,00\N$ hacia la izquierda y $a=0$.
-Deslizando: $a=(7-6)/2=+0,500\mpss$.
+\step{C\'alculo} $N=19,6\N$, $f_{s,\max}=7,85\N$, $f_k=5,89\N$.
+Desde reposo $7,00<7,85$: $f_s=7,00\N$ hacia la izquierda y $a=0$.
+Deslizando: $a=(7,00-5,89)/2=+0,557\mpss$.
 \step{Interpretaci\'on} El valor de $F$ no decide por s\'i solo el estado.
 Usar siempre $f_s=\mu_sN$ predecir\'ia una fuerza neta hacia la izquierda en un
 bloque que nadie ha puesto en movimiento.
@@ -47,26 +47,26 @@ bloque que nadie ha puesto en movimiento.
 \begin{tikzpicture}[x=.48cm,y=.38cm,font=\small]
 \draw[axis] (0,0)--(13,0) node[right] {$F$ (N)};
 \draw[axis] (0,0)--(0,10) node[above] {$|f|$ (N)};
-\draw[BrandBlue,thick] (0,0)--(8,8);
-\draw[GreenLine!70!black,dashed,thick] (8,6)--(12,6);
-\draw[guide] (8,0)--(8,8);
-\fill[BrandBlue] (8,8) circle (2pt);
-\draw[fill=white,draw=GreenLine!70!black] (8,6) circle (2pt);
+\draw[BrandBlue,thick] (0,0)--(7.848,7.848);
+\draw[GreenLine!70!black,dashed,thick] (7.848,5.886)--(12,5.886);
+\draw[guide] (7.848,0)--(7.848,7.848);
+\fill[BrandBlue] (7.848,7.848) circle (2pt);
+\draw[fill=white,draw=GreenLine!70!black] (7.848,5.886) circle (2pt);
 \foreach \x in {4,8,12} \draw (\x,0)--(\x,-.15) node[below] {$\x$};
-\foreach \y in {6,8} \draw (0,\y)--(-.15,\y) node[left] {$\y$};
+\foreach \y/\lab in {5.886/{5,89},7.848/{7,85}} \draw (0,\y)--(-.15,\y) node[left] {$\lab$};
 \node[above,rotate=38] at (4,4.4) {reposo};
-\node[above] at (10,6.2) {desliza};
+\node[above] at (10,6.1) {desliza};
 \end{tikzpicture}
 \end{center}
 La gr\'afica sigue una fuerza que aumenta lentamente desde reposo.
-Al superar $8\N$ cambia el r\'egimen: el descenso a $6\N$ no representa una
-rama inclinada continua. Un bloque ya deslizante puede tener $f_k=6\N$
+Al superar $7,85\N$ cambia el r\'egimen: el descenso a $5,89\N$ no representa una
+rama inclinada continua. Un bloque ya deslizante puede tener $f_k=5,89\N$
 tambi\'en para fuerzas menores.
 \end{examplebox}
 
 \heading{Qu\'e pasa si se retira la fuerza}
 Si el bloque anterior desliza a $3,00\mps$ y retiramos $F$, queda
-$a=-f_k/m=-3,00\mpss$. Se para en $1,00\units{s}$ tras $1,50\units{m}$.
+$a=-f_k/m=-2,94\mpss$. Se para en $1,02\units{s}$ tras $1,53\units{m}$.
 Desde ese instante el rozamiento est\'atico necesario es cero.
 Prolongar la aceleraci\'on negativa lo har\'ia arrancar hacia atr\'as sin causa.
 
@@ -98,19 +98,19 @@ Dibujo del equilibrio: $f_s=mg\sin\theta$. La longitud de cada fuerza sigue
 sus componentes; la gu\'ia del peso no es una fuerza adicional.
 \step{C\'alculo}
 \[
-mg\sin25^\circ=1,27\N,\quad N=2,72\N,\quad f_{s,\max}=1,36\N.
+mg\sin25^\circ=1,24\N,\quad N=2,67\N,\quad f_{s,\max}=1,33\N.
 \]
-Puede quedar en reposo: $f_s=1,27\N<1,36\N$.
-Si ya baja, $f_k=\mu_kmg\cos25^\circ=0,952\N$ y
+Puede quedar en reposo: $f_s=1,24\N<1,33\N$.
+Si ya baja, $f_k=\mu_kmg\cos25^\circ=0,934\N$ y
 \[
-a=g(\sin25^\circ-\mu_k\cos25^\circ)=1,05\mpss
+a=g(\sin25^\circ-\mu_k\cos25^\circ)=1,03\mpss
 \]
 usando trigonometr\'ia sin redondear.
 \step{Interpretaci\'on} El l\'imite de reposo exige
 $mg\sin\theta\le\mu_smg\cos\theta$, es decir, $\tan\theta\le\mu_s$.
 Aqu\'i $\theta_c=\arctan0,50=26,6^\circ$. Es un equilibrio l\'imite ideal.
 \variation{Si se lanza cuesta arriba, el rozamiento apunta cuesta abajo:
-$a_s=g(\sin25^\circ+\mu_k\cos25^\circ)=7,40\mpss$.
+$a_s=g(\sin25^\circ+\mu_k\cos25^\circ)=7,26\mpss$.
 Al parar, vuelve a ser posible el reposo porque $25^\circ<\theta_c$.}
 \end{examplebox}
 
@@ -166,15 +166,15 @@ est\'a a la izquierda, y la velocidad es perpendicular a este plano.
 \end{tikzpicture}
 \end{center}
 \step{C\'alculo} En la plana:
-$v_{\max}=\sqrt{0,80(10)(30)}=15,5\mps$.
+$v_{\max}=\sqrt{0,80(9,81)(30)}=15,3\mps$.
 En el peralte:
-$v_d=\sqrt{30(10)\tan10^\circ}=7,27\mps$.
+$v_d=\sqrt{30(9,81)\tan10^\circ}=7,20\mps$.
 \step{Interpretaci\'on} En el primer caso limita la adherencia; en el segundo,
 la geometr\'ia fija una rapidez compatible sin ayuda del rozamiento.
 Con rozamiento, un peralte puede admitir un intervalo de velocidades:
 su sentido se decide por la tendencia a deslizar, no se fija siempre cuesta abajo.
 \variation{Si en la curva plana $\mu_s$ baja a $0,50$, el l\'imite es
-$12,2\mps$. Son resultados de un modelo did\'actico, no velocidades recomendadas.}
+$12,1\mps$. Son resultados de un modelo did\'actico, no velocidades recomendadas.}
 \end{examplebox}
 
 \block{3}{Muelles y medidas}{sec:b3}
@@ -197,9 +197,9 @@ la masa $1,00\units{cm}$ m\'as y soltarla.
 \step{Modelo} Con eje positivo hacia abajo, $F_{\mathrm{neta}}=mg-kx$.
 En equilibrio, $x_{\mathrm{eq}}=mg/k$. Despu\'es,
 $x=x_{\mathrm{eq}}+\xi$, donde $\xi$ se mide desde el equilibrio.
-\step{C\'alculo} $x_{\mathrm{eq}}=0,0200\units{m}$.
-Al soltar, $x=0,0300\units{m}$ y $\xi=0,0100\units{m}$:
-$F_{\mathrm{neta}}=2,00-3,00=-1,00\N$ y $a=-5,00\mpss$.
+\step{C\'alculo} $x_{\mathrm{eq}}=0,0196\units{m}$.
+Al soltar, $x=0,0296\units{m}$ y $\xi=0,0100\units{m}$:
+$F_{\mathrm{neta}}=1,96-2,96=-1,00\N$ y $a=-5,00\mpss$.
 \begin{center}
 \begin{tikzpicture}[x=1cm,y=1cm,font=\small]
 \foreach \p/\len/\lab in {0/1.4/natural,4/2.4/equilibrio,8/2.9/al soltar} {
@@ -210,12 +210,12 @@ $F_{\mathrm{neta}}=2,00-3,00=-1,00\N$ y $a=-5,00\mpss$.
 }
 \draw[guide] (-.6,-1.4)--(9,-1.4);
 \draw[guide] (3.3,-2.4)--(9,-2.4);
-\draw[<->] (9.3,-1.4)--(9.3,-2.9) node[midway,right] {$x=3\units{cm}$};
-\node[below] at (4,-2.8) {$x=2\units{cm}$};
+\draw[<->] (9.3,-1.4)--(9.3,-2.9) node[midway,right] {$x=2,96\units{cm}$};
+\node[below] at (4,-2.8) {$x=1,96\units{cm}$};
 \node[below] at (8,-3.35) {$\xi=1\units{cm}$};
 \end{tikzpicture}
 \end{center}
-Esquema de longitudes: las diferencias verticales siguen la proporci\'on $2:1$;
+Esquema de longitudes: las diferencias verticales siguen aproximadamente la proporci\'on $1,96:1$;
 los segmentos representan el muelle, no su forma helicoidal.
 \step{Interpretaci\'on} Sustituyendo $x=x_{\mathrm{eq}}+\xi$ resulta
 $F_{\mathrm{neta}}=-k\xi$. El peso sigue actuando; queda incorporado al elegir
@@ -268,11 +268,11 @@ $m_{\mathrm{ef}}=0,0664/11,7=0,00568\kg$.
 \begin{exercisebox}{comprobar una tabla y un ajuste}
 En la tabla del muelle aparece $T=0,983\units{s}$ junto a
 $T^2=0,0966\units{s^2}$. Recalcula el cuadrado con tres cifras significativas.
-Explica si la diferencia entre $g=9,83$ y $9,80\mpss$ mide la incertidumbre.
+Explica si la diferencia entre $g=9,83$ y $9,81\mpss$ mide la incertidumbre.
 \solutionblock
 $0,983^2=0,966289$, luego $T^2=0,966\units{s^2}$:
 el valor transcrito tiene un factor diez incorrecto.
-La diferencia $0,03\mpss$ es una discrepancia frente a una referencia;
+La diferencia $0,02\mpss$ es una discrepancia frente a una referencia;
 la incertidumbre exige informaci\'on sobre medidas, instrumentos y ajuste.
 \end{exercisebox}
 

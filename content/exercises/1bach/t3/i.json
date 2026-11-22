@@ -54,6 +54,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -129,6 +130,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -192,6 +194,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -265,6 +268,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -338,6 +342,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -377,9 +382,9 @@
           "label": "Normal",
           "type": "numeric",
           "required": true,
-          "expected_value": 488.0,
+          "expected_value": 489.0,
           "unit": "N",
-          "tolerance": 2.44,
+          "tolerance": 2.445,
           "significant_figures": 3,
           "part": "a",
           "rounding": "Tres cifras significativas; conservar precisión intermedia."
@@ -401,6 +406,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -416,8 +422,8 @@
         "ignorar la representación específica de la familia i"
       ],
       "parts_count": 1,
-      "statement_source": "Persona de \\(60 kg\\) sobre una báscula tira de una cuerda que pasa por una polea fija; la tensión es \\(100 N\\).\n\n(a) Calcula: Normal.",
-      "solution_source": "Relación \\(N+T=mg\\); lectura \\(N=488 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "statement_source": "Persona de \\(60 kg\\) sobre una báscula tira de una cuerda que pasa por una polea fija; la tensión es \\(100 N\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Normal.",
+      "solution_source": "Relación \\(N+T=mg\\); lectura \\(N=489 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
     },
     {
@@ -474,6 +480,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -561,6 +568,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -636,6 +644,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -709,6 +718,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -782,6 +792,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -797,7 +808,7 @@
         "ignorar la representación específica de la familia i"
       ],
       "parts_count": 1,
-      "statement_source": "Caso mixto plano-polea: decidir primero el sentido sin asumirlo por la masa mayor.\n\n(a) Selecciona: Conclusión física.",
+      "statement_source": "Caso mixto plano-polea: decidir primero el sentido sin asumirlo por la masa mayor. Usa \\(g=9,81 m/s²\\).\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Comparar \\(m_2g\\) con \\(m_1g sinθ\\); selección del sentido y aceleración numérica.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
     },
@@ -855,6 +866,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -870,7 +882,7 @@
         "ignorar la representación específica de la familia i"
       ],
       "parts_count": 1,
-      "statement_source": "Miniinvestigación cerrada: cuatro DCL candidatos para un péndulo cónico y tres resultados.\n\n(a) Selecciona: Conclusión física.",
+      "statement_source": "Miniinvestigación cerrada: cuatro DCL candidatos para un péndulo cónico y tres resultados. Usa \\(g=9,81 m/s²\\).\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Elegir DCL; \\(T\\), \\(v\\) y periodo con tolerancias.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
     }

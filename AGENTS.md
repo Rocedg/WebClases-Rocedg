@@ -32,7 +32,11 @@ For feature work, also read the relevant spec in `docs/context/feature-specs/`.
   explicit approval because there are no migrations.
 - First-year exercise banks live under `content/exercises/1bach/tN/` as a
   `_topic.json` manifest plus ordered block files. Add new exercises to the
-  corresponding block file. See "Exercise Content" below.
+  corresponding block file.
+- The exercise JSON files are the only source of truth for every topic
+  (T0-T6). Edit them directly. The old bank generators live in
+  `scripts/archive/` and must not be run with `--write`; the
+  `referencia-ejercicios-tN.md` tables are a historical overview only.
 - Keep the project understandable for a non-expert maintainer.
 - Prefer small branches and pull requests.
 

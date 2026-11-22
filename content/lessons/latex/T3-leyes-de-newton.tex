@@ -9,7 +9,7 @@
 \coverHeader{T3 --- Leyes de Newton}{Interacciones, diagramas de cuerpo libre y ecuaciones de movimiento.}
 
 \begin{lessoncard}{Prop\'osito}
-La din\'amica pregunta por qu\'e cambia el movimiento. En esta lecci\'on aislamos cuerpos, nombramos interacciones y traducimos la resultante a aceleraci\'on. Usaremos $g=10\mpss$ como aproximaci\'on did\'actica.
+La din\'amica pregunta por qu\'e cambia el movimiento. En esta lecci\'on aislamos cuerpos, nombramos interacciones y traducimos la resultante a aceleraci\'on. Usaremos $g=9,81\mpss$.
 \begin{keybox}
 \textbf{Clave de lectura.} La resultante no es una fuerza nueva: es la suma vectorial de las fuerzas reales que otros cuerpos ejercen sobre el objeto elegido.
 \end{keybox}
@@ -112,8 +112,8 @@ Calcula la normal si no hay aceleraci\'on vertical.
 \solutionblock
 \step{Modelo} En vertical act\'uan $N$, $F\sin30^\circ$ y $-mg$.
 La componente ascendente de la fuerza reduce el apoyo.
-\step{C\'alculo} $N+10\sin30^\circ-20=0$, luego $N=15,0\N$.
-\step{Interpretaci\'on} Con la misma fuerza hacia abajo a $30^\circ$, $N=25,0\N$.
+\step{C\'alculo} $N+10\sin30^\circ-19,62=0$, luego $N=14,6\N$.
+\step{Interpretaci\'on} Con la misma fuerza hacia abajo a $30^\circ$, $N=24,6\N$.
 Ni el peso ni la masa cambian. El contacto es compatible con $N>0$.
 \end{examplebox}
 
@@ -146,19 +146,19 @@ N=mg\cos\alpha,\qquad \sum F_s=-mg\sin\alpha=ma_s.
 \step{Planteamiento} Plano liso de $20^\circ$. Se lanza un bloque cuesta arriba con $v_0=2,60\mps$ desde $s=0$. Eje positivo hacia arriba del plano. Halla tiempo hasta parar, distancia sobre el plano y ganancia de altura.
 \solutionblock
 
-\step{Modelo} Solo act\'uan peso y normal; la aceleraci\'on paralela es $a_s=-g\sin20^\circ=-3,420\mpss$.
+\step{Modelo} Solo act\'uan peso y normal; la aceleraci\'on paralela es $a_s=-g\sin20^\circ=-3,355\mpss$.
 \[
 v=v_0+a_st,\qquad s=v_0t+\frac12 a_st^2.
 \]
 \step{C\'alculo} En el punto m\'as alto $v=0$:
 $t=-v_0/a_s$, $s=-v_0^2/(2a_s)$ y $h=s\sin20^\circ$. As\'i,
 \[
-t=0,760\units{s},\quad s=0,988\units{m},\quad h=s\sin20^\circ=0,338\units{m}.
+t=0,775\units{s},\quad s=1,01\units{m},\quad h=s\sin20^\circ=0,345\units{m}.
 \]
-Al volver al origen, $v=-2,60\mps$ y el tiempo total es $1,52\units{s}$ si el plano contin\'ua.
+Al volver al origen, $v=-2,60\mps$ y el tiempo total es $1,55\units{s}$ si el plano contin\'ua.
 
 \step{Interpretaci\'on} La aceleraci\'on apunta cuesta abajo tambi\'en mientras sube. En el punto superior $v=0$, pero $a$ no es cero.
-\variation{Duplicar la masa no cambia $a$ ni $h$ en este modelo liso. En un descenso desde reposo por $30^\circ$ durante $0,600\units{m}$: $a=5,00\mpss$, $t=0,490\units{s}$ y $v=2,45\mps$.}
+\variation{Duplicar la masa no cambia $a$ ni $h$ en este modelo liso. En un descenso desde reposo por $30^\circ$ durante $0,600\units{m}$: $a=4,91\mpss$, $t=0,495\units{s}$ y $v=2,43\mps$.}
 \end{examplebox}
 
 \begin{lessoncard}{Cuerdas y poleas}
@@ -195,12 +195,12 @@ T=m_1a,\qquad m_2g-T=m_2a
 \]
 \step{C\'alculo}
 \[
-a=\frac{m_2g}{m_1+m_2}=6,67\mpss,\qquad T=m_1a=0,667\N.
+a=\frac{m_2g}{m_1+m_2}=6,54\mpss,\qquad T=m_1a=0,654\N.
 \]
-\step{Interpretaci\'on} La normal de la mesa sobre $m_1$ es $1,00\N$. $T<m_2g$ porque la fuerza neta sobre la masa colgante debe apuntar hacia abajo.
+\step{Interpretaci\'on} La normal de la mesa sobre $m_1$ es $0,981\N$. $T<m_2g$ porque la fuerza neta sobre la masa colgante debe apuntar hacia abajo.
 Si se impusiera $T=m_2g$, Newton dar\'ia $a=0$ para esa masa.
 El modelo termina cuando una masa toca un tope o se pierde la tensi\'on.
-\variation{Si ambas masas son $0,100\kg$, entonces $a=5,00\mpss$ y $T=0,500\N$. Las tensiones horizontal y vertical no son vectores que se cancelen directamente: se eliminan al sumar ecuaciones escalares compatibles.}
+\variation{Si ambas masas son $0,100\kg$, entonces $a=4,91\mpss$ y $T=0,491\N$. Las tensiones horizontal y vertical no son vectores que se cancelen directamente: se eliminan al sumar ecuaciones escalares compatibles.}
 \end{examplebox}
 
 
@@ -251,8 +251,8 @@ T\cos\theta=mg,\qquad T\sin\theta=\frac{mv^2}{R}.
 \step{C\'alculo} $R=L\sin30^\circ=0,500\units{m}$; al dividir las dos
 ecuaciones, $\tan\theta=v^2/(Rg)$.
 \[
-T=\frac{mg}{\cos30^\circ}=2,31\N,\qquad
-v=\sqrt{Rg\tan30^\circ}=1,70\mps.
+T=\frac{mg}{\cos30^\circ}=2,27\N,\qquad
+v=\sqrt{Rg\tan30^\circ}=1,68\mps.
 \]
 \step{Interpretaci\'on} El radio de la circunferencia no es la longitud de la cuerda: es su proyecci\'on horizontal.
 \variation{Duplicar la masa duplica la tensi\'on, pero no cambia la rapidez para $L$ y $\theta$ fijos.}

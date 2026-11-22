@@ -20,7 +20,7 @@
           "label": "Ángulo bajo",
           "type": "numeric",
           "required": true,
-          "expected_value": 30.36119340482171,
+          "expected_value": 29.979000872921407,
           "unit": "°",
           "tolerance": 0.1,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
@@ -32,7 +32,7 @@
           "label": "Ángulo alto",
           "type": "numeric",
           "required": true,
-          "expected_value": 73.67505006310476,
+          "expected_value": 74.05724259500508,
           "unit": "°",
           "tolerance": 0.1,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
@@ -44,9 +44,9 @@
           "label": "Tiempo con ángulo bajo",
           "type": "numeric",
           "required": true,
-          "expected_value": 1.1589416510366775,
+          "expected_value": 1.1544563316569998,
           "unit": "s",
-          "tolerance": 0.005,
+          "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
           "part": "b"
@@ -56,9 +56,9 @@
           "label": "Tiempo con ángulo alto",
           "type": "numeric",
           "required": true,
-          "expected_value": 3.5576472913278487,
+          "expected_value": 3.6406417345542943,
           "unit": "s",
-          "tolerance": 0.005,
+          "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
           "part": "b"
@@ -78,6 +78,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t2/referencia-ejercicios-t2.md",
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
@@ -92,8 +93,8 @@
         "Eliminar una raíz positiva sin criterio físico"
       ],
       "parts_count": 3,
-      "statement_source": "Origen en el suelo, \\(+x\\) derecha,\\(+y\\) arriba; sin aire, \\(a_y=−g=−10 m/s²\\). Se lanza a 20 m/s hacia una diana en \\((20,5) m\\). \n(b) Calcula ambos ángulos y sus tiempos de llegada.",
-      "solution_source": "\\(x=20\\) cosθ t,\\(y=20\\) senθ t−5t². Eliminando t: \\(y=xu−(x²/80)(1+u²)\\).\n\nEn \\((20,5)\\): 5=\\(20u−5\\)(1+u²), luego u²−\\(4u+2\\)=0; \\(u=2±√2\\). θ≈30,36° y 73,68°.\n\n\\(t=20/(20cosθ)=√(1+u²)\\): 1,159 y 3,558 s. Sustituir da \\(y=5 m\\) en ambos; las componentes verticales y máximos son diferentes, aunque el punto final coincide.",
+      "statement_source": "Origen en el suelo, \\(+x\\) derecha,\\(+y\\) arriba; sin aire, \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). Se lanza a 20 m/s hacia una diana en \\((20,5) m\\). \n(b) Calcula ambos ángulos y sus tiempos de llegada.",
+      "solution_source": "\\(x=20\\cos\\theta\\,t\\), \\(y=20\\sin\\theta\\,t-4{,}905t^2\\). Eliminando \\(t\\), con \\(u=\\tan\\theta\\): \\(y=xu-\\dfrac{9{,}81x^2}{800}(1+u^2)\\).\n\nEn \\((20;5)\\): \\(5=20u-4{,}905(1+u^2)\\), luego \\(4{,}905u^2-20u+9{,}905=0\\); \\(u=0{,}577\\) o \\(u=3{,}501\\). \\(\\theta\\approx29{,}98^\\circ\\) y \\(74{,}06^\\circ\\).\n\n\\(t=20/(20\\cos\\theta)=\\sqrt{1+u^2}\\): \\(1{,}154\\) y \\(3{,}641\\,\\mathrm{s}\\). Sustituir da \\(y=5\\,\\mathrm{m}\\) en ambos; las componentes verticales y los máximos son diferentes, aunque el punto final coincide.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -116,7 +117,7 @@
           "label": "Tiempo a 30°",
           "type": "numeric",
           "required": true,
-          "expected_value": 1,
+          "expected_value": 1.019367991845056,
           "unit": "s",
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
@@ -128,9 +129,9 @@
           "label": "Tiempo a 60°",
           "type": "numeric",
           "required": true,
-          "expected_value": 1.7320508075688772,
+          "expected_value": 1.7655971534850938,
           "unit": "s",
-          "tolerance": 0.005,
+          "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
           "part": "a"
@@ -140,7 +141,7 @@
           "label": "Alcance común",
           "type": "numeric",
           "required": true,
-          "expected_value": 8.660254037844386,
+          "expected_value": 8.827985767425469,
           "unit": "m",
           "tolerance": 0.02,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
@@ -152,7 +153,7 @@
           "label": "Máximo a 30°",
           "type": "numeric",
           "required": true,
-          "expected_value": 1.25,
+          "expected_value": 1.27420998980632,
           "unit": "m",
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
@@ -164,7 +165,7 @@
           "label": "Máximo a 60°",
           "type": "numeric",
           "required": true,
-          "expected_value": 3.75,
+          "expected_value": 3.8226299694189603,
           "unit": "m",
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
@@ -186,6 +187,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t2/referencia-ejercicios-t2.md",
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
@@ -200,8 +202,8 @@
         "Aplicar complementariedad a alturas diferentes"
       ],
       "parts_count": 3,
-      "statement_source": "Origen en el suelo, \\(+x\\) derecha,\\(+y\\) arriba; sin aire, \\(a_y=−g=−10 m/s²\\). Dos lanzamientos a 10 m/s, uno a 30° y otro a 60°, regresan al nivel de salida. \n(a) Compara tiempos, alcances y máximos.\n(b) Completa: Alcance común.",
-      "solution_source": "30°: \\(v_x=5√3,v_y0=5\\); \\(T=1 s\\),\\(R=5√3 m\\),\\(H=25/20=1,25 m\\).\n\n60°: \\(v_x=5,v_y0=5√3\\); \\(T=√3 s\\),\\(R=5√3 m\\),\\(H=75/20=3,75 m\\).\n\nsen60°=sen120° explica \\(R=v_0²\\sin2θ/g\\). Hace falta igual rapidez, gravedad, ausencia de aire y mismo nivel final; no llegan simultáneamente.",
+      "statement_source": "Origen en el suelo, \\(+x\\) derecha,\\(+y\\) arriba; sin aire, \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). Dos lanzamientos a 10 m/s, uno a 30° y otro a 60°, regresan al nivel de salida. \n(a) Compara tiempos, alcances y máximos.\n(b) Completa: Alcance común.",
+      "solution_source": "30°: \\(v_x=5\\sqrt3\\), \\(v_{y0}=5\\); \\(T=10/9{,}81=1{,}019\\,\\mathrm{s}\\), \\(R=5\\sqrt3\\,T=8{,}83\\,\\mathrm{m}\\), \\(H=25/19{,}62=1{,}274\\,\\mathrm{m}\\).\n\n60°: \\(v_x=5\\), \\(v_{y0}=5\\sqrt3\\); \\(T=10\\sqrt3/9{,}81=1{,}766\\,\\mathrm{s}\\), \\(R=5\\,T=8{,}83\\,\\mathrm{m}\\), \\(H=75/19{,}62=3{,}82\\,\\mathrm{m}\\).\n\n\\(\\sin60^\\circ=\\sin120^\\circ\\) explica \\(R=v_0^2\\sin2\\theta/g\\). Hace falta igual rapidez, gravedad, ausencia de aire y mismo nivel final; no llegan simultáneamente.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -224,9 +226,9 @@
           "label": "Rapidez inicial",
           "type": "numeric",
           "required": true,
-          "expected_value": 12.649110640673518,
+          "expected_value": 12.52836781069266,
           "unit": "m/s",
-          "tolerance": 0.05,
+          "tolerance": 0.1,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
           "part": "a"
@@ -236,9 +238,9 @@
           "label": "Tiempo hasta diana",
           "type": "numeric",
           "required": true,
-          "expected_value": 1.3416407864998738,
+          "expected_value": 1.3545709229571927,
           "unit": "s",
-          "tolerance": 0.005,
+          "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
           "part": "b"
@@ -250,8 +252,8 @@
           "response_kind": "vector",
           "required": true,
           "accepted_forms": [
-            "(8.94427190999916; -4.47213595499958)",
-            "8.94427190999916 i + (-4.47213595499958) j"
+            "(8.858893836140041; -4.4294469180700204)",
+            "8.858893836140041 i + (-4.4294469180700204) j"
           ],
           "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
           "grading": "pending_review",
@@ -260,8 +262,8 @@
             "y"
           ],
           "expected_components": [
-            8.94427190999916,
-            -4.47213595499958
+            8.858893836140041,
+            -4.4294469180700204
           ],
           "unit": "m/s",
           "tolerance": 0.02,
@@ -283,6 +285,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t2/referencia-ejercicios-t2.md",
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
@@ -297,8 +300,8 @@
         "Llamar mínima global a una solución con ángulo fijo"
       ],
       "parts_count": 2,
-      "statement_source": "Origen en el suelo, \\(+x\\) derecha,\\(+y\\) arriba; sin aire, \\(a_y=−g=−10 m/s²\\). Un lanzador tiene \\(θ=45°\\) fijo y debe pasar exactamente por \\((12,3) m\\). \n(a) Deduce \\(v_0\\).\n(b) Completa: Tiempo hasta diana, Velocidad en la diana.",
-      "solution_source": "A 45°, \\(v_x=v_y0=v_0/√2\\). Eliminando t: \\(y=x−gx²/v_0²\\).\n\n3=\\(12−10·\\)144/v_0² implica v_0²=160 y \\(v_0=12,65 m/s\\). \\(t=12/√80=1,342 s\\).\n\n\\(v=(√80,√80−10t)=(8,944\\);−4,472) m/s; pasa descendiendo. Para ángulo fijo este valor es único, no una optimización entre ángulos.",
+      "statement_source": "Origen en el suelo, \\(+x\\) derecha,\\(+y\\) arriba; sin aire, \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). Un lanzador tiene \\(θ=45°\\) fijo y debe pasar exactamente por \\((12,3) m\\). \n(a) Deduce \\(v_0\\).\n(b) Completa: Tiempo hasta diana, Velocidad en la diana.",
+      "solution_source": "A 45°, \\(v_x=v_{y0}=v_0/\\sqrt2\\). Eliminando \\(t\\): \\(y=x-gx^2/v_0^2\\).\n\n\\(3=12-9{,}81\\cdot144/v_0^2\\) implica \\(v_0^2=156{,}96\\) y \\(v_0=12{,}53\\,\\mathrm{m/s}\\). \\(t=12/8{,}859=1{,}355\\,\\mathrm{s}\\).\n\n\\(\\vec v=(8{,}859;8{,}859-9{,}81t)=(8{,}859;−4{,}429)\\,\\mathrm{m/s}\\); pasa descendiendo. Para ángulo fijo este valor es único, no una optimización entre ángulos.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -321,7 +324,7 @@
           "label": "Vuelo común",
           "type": "numeric",
           "required": true,
-          "expected_value": 1.6,
+          "expected_value": 1.6309887869520896,
           "unit": "s",
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
@@ -333,7 +336,7 @@
           "label": "Altura máxima común",
           "type": "numeric",
           "required": true,
-          "expected_value": 3.2,
+          "expected_value": 3.261977573904179,
           "unit": "m",
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
@@ -345,7 +348,7 @@
           "label": "Alcance A",
           "type": "numeric",
           "required": true,
-          "expected_value": 9.6,
+          "expected_value": 9.785932721712538,
           "unit": "m",
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
@@ -357,9 +360,9 @@
           "label": "Alcance B",
           "type": "numeric",
           "required": true,
-          "expected_value": 19.2,
+          "expected_value": 19.571865443425075,
           "unit": "m",
-          "tolerance": 0.01,
+          "tolerance": 0.1,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
           "part": "a"
@@ -379,6 +382,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t2/referencia-ejercicios-t2.md",
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
@@ -393,8 +397,8 @@
         "Suponer que se conserva el ángulo inicial"
       ],
       "parts_count": 2,
-      "statement_source": "Origen en el suelo, \\(+x\\) derecha,\\(+y\\) arriba; sin aire, \\(a_y=−g=−10 m/s²\\). A tiene \\(v_0=(6,8),\\) \\(B=(12,8) m/s\\). \n(a) Completa: Vuelo común, Alcance A, Alcance B.\n(b) Calcula vuelo, altura y alcances.",
-      "solution_source": "Para ambas \\(y=8t−5t²,\\) \\(v_y=8−10t\\): \\(T=1,6 s\\) y \\(H=8²/20=3,2 m\\).\n\n\\(x_A=6t,x_B=12t\\): \\(R_A=9,6 m\\),\\(R_B=19,2 m\\).\n\nII es correcta; se modifica \\(v_x\\) y también el ángulo y el módulo iniciales, no la componente vertical.",
+      "statement_source": "Origen en el suelo, \\(+x\\) derecha,\\(+y\\) arriba; sin aire, \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). A tiene \\(v_0=(6,8),\\) \\(B=(12,8) m/s\\). \n(a) Completa: Vuelo común, Alcance A, Alcance B.\n(b) Calcula vuelo, altura y alcances.",
+      "solution_source": "Para ambas \\(y=8t-4{,}905t^2\\) y \\(v_y=8-9{,}81t\\): \\(T=16/9{,}81=1{,}631\\,\\mathrm{s}\\) y \\(H=8^2/19{,}62=3{,}26\\,\\mathrm{m}\\).\n\n\\(x_A=6t\\), \\(x_B=12t\\): \\(R_A=9{,}79\\,\\mathrm{m}\\) y \\(R_B=19{,}6\\,\\mathrm{m}\\).\n\nII es correcta; se modifica \\(v_x\\) y también el ángulo y el módulo iniciales, no la componente vertical.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -417,7 +421,7 @@
           "label": "Tiempo de impacto",
           "type": "numeric",
           "required": true,
-          "expected_value": 2,
+          "expected_value": 2.0322628592356184,
           "unit": "s",
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
@@ -429,7 +433,7 @@
           "label": "Instante de cima",
           "type": "numeric",
           "required": true,
-          "expected_value": 0.8,
+          "expected_value": 0.8154943934760448,
           "unit": "s",
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
@@ -443,8 +447,8 @@
           "response_kind": "vector",
           "required": true,
           "accepted_forms": [
-            "(4.8; 7.2)",
-            "4.8 i + (7.2) j"
+            "(4.892966360856269; 7.261977573904179)",
+            "4.892966360856269 i + (7.261977573904179) j"
           ],
           "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
           "grading": "pending_review",
@@ -453,8 +457,8 @@
             "y"
           ],
           "expected_components": [
-            4.8,
-            7.2
+            4.892966360856269,
+            7.261977573904179
           ],
           "unit": "m",
           "tolerance": 0.02,
@@ -468,8 +472,8 @@
           "response_kind": "vector",
           "required": true,
           "accepted_forms": [
-            "(6; -12)",
-            "6 i + (-12) j"
+            "(6; -11.936498649101416)",
+            "6 i + (-11.936498649101416) j"
           ],
           "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
           "grading": "pending_review",
@@ -479,10 +483,10 @@
           ],
           "expected_components": [
             6,
-            -12
+            -11.936498649101416
           ],
           "unit": "m/s",
-          "tolerance": 0.02,
+          "tolerance": 0.1,
           "rounding": "Tres cifras significativas.",
           "part": "b"
         },
@@ -491,9 +495,9 @@
           "label": "Alcance",
           "type": "numeric",
           "required": true,
-          "expected_value": 12,
+          "expected_value": 12.19357715541371,
           "unit": "m",
-          "tolerance": 0.01,
+          "tolerance": 0.1,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
           "part": "c"
@@ -513,6 +517,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t2/referencia-ejercicios-t2.md",
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
@@ -527,8 +532,8 @@
         "Confundir la parábola espacial con x-t"
       ],
       "parts_count": 3,
-      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−10 m/s²\\). Una pelota sale desde 4 m con \\(v_0=(6,8) m/s\\). \n(a) Completa: Tiempo de impacto.\n(b) Marca salida, cima y suelo con coordenadas y velocidades.\n(c) Completa: Alcance.",
-      "solution_source": "\\(x=6t,y=4+8t−5t²,v_x=6,v_y=8−10t\\). \\(y=0\\) da \\(t=2 s\\) o −0,4 s.\n\nCima \\(t=0,8 s\\),\\(r=(4,8\\);7,2) m,\\(v=(6\\);0) m/s; impacto \\(r=(12\\);0),\\(v=(6\\);−12).\n\nÁrea \\(v_x=6·2=12 m\\). Área \\(v_y=(8−12)·2/2=−4 m\\); sumada a \\(y_0=4\\) da suelo. x es lineal,y parabólica,\\(v_x\\) constante y \\(v_y\\) lineal.",
+      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). Una pelota sale desde 4 m con \\(v_0=(6,8) m/s\\). \n(a) Completa: Tiempo de impacto.\n(b) Marca salida, cima y suelo con coordenadas y velocidades.\n(c) Completa: Alcance.",
+      "solution_source": "\\(x=6t\\), \\(y=4+8t-4{,}905t^2\\), \\(v_x=6\\), \\(v_y=8-9{,}81t\\). \\(y=0\\) da \\(t=2{,}032\\,\\mathrm{s}\\) o \\(−0{,}401\\,\\mathrm{s}\\).\n\nCima en \\(t=0{,}815\\,\\mathrm{s}\\): \\(\\vec r=(4{,}89;7{,}26)\\,\\mathrm{m}\\), \\(\\vec v=(6;0)\\,\\mathrm{m/s}\\); impacto: \\(\\vec r=(12{,}2;0)\\,\\mathrm{m}\\), \\(\\vec v=(6;−11{,}94)\\,\\mathrm{m/s}\\).\n\nÁrea bajo \\(v_x\\): \\(6\\cdot2{,}032=12{,}2\\,\\mathrm{m}\\). Área bajo \\(v_y\\): \\((8−11{,}94)\\cdot2{,}032/2=-4\\,\\mathrm{m}\\); sumada a \\(y_0=4\\) da el suelo. \\(x\\) es lineal, \\(y\\) parabólica, \\(v_x\\) constante y \\(v_y\\) lineal.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -551,7 +556,7 @@
           "label": "Tiempo hasta contacto",
           "type": "numeric",
           "required": true,
-          "expected_value": 2,
+          "expected_value": 2.038735983690112,
           "unit": "s",
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
@@ -565,8 +570,8 @@
           "response_kind": "vector",
           "required": true,
           "accepted_forms": [
-            "(20; 10)",
-            "20 i + (10) j"
+            "(20.38735983690112; 10.19367991845056)",
+            "20.38735983690112 i + (10.19367991845056) j"
           ],
           "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
           "grading": "pending_review",
@@ -575,11 +580,11 @@
             "y"
           ],
           "expected_components": [
-            20,
-            10
+            20.38735983690112,
+            10.19367991845056
           ],
           "unit": "m",
-          "tolerance": 0.02,
+          "tolerance": 0.1,
           "rounding": "Tres cifras significativas.",
           "part": "a"
         },
@@ -588,9 +593,9 @@
           "label": "Distancia sobre la rampa",
           "type": "numeric",
           "required": true,
-          "expected_value": 22.360679774997898,
+          "expected_value": 22.793761238529964,
           "unit": "m",
-          "tolerance": 0.05,
+          "tolerance": 0.1,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
           "part": "b"
@@ -647,6 +652,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t2/referencia-ejercicios-t2.md",
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
@@ -661,8 +667,8 @@
         "Elegir t=0 como nuevo contacto"
       ],
       "parts_count": 3,
-      "statement_source": "Origen en el inicio de una rampa \\(y=0,5x\\) para x≥0; \\(+x\\) derecha,\\(+y\\) arriba. Se lanza con \\(v_0=(10,15) m/s\\), sin aire y \\(a_y=−g=−10 m/s²\\). \n(a) Calcula primer contacto con la rampa tras salir.\n(b) Halla distancia sobre la rampa y velocidad de impacto.\n(c) Obtén el ángulo entre velocidad y rampa.",
-      "solution_source": "\\(x=10t,y=15t−5t²\\). Rampa: \\(15t−5t²\\)=5t, es decir 5t(2−t)=0; excluir \\(t=0,\\) contacto a 2 s.\n\n\\(P=(20,10) m\\); distancia desde origen sobre la rampa √(\\(20²+10²\\))=22,36 m. \\(v=(10,15−20)=(10,−5) m/s\\).\n\nLa rampa forma +26,565° y v forma −26,565° con \\(+x\\): entre ambas hay 53,13°. Antes de 2 s, y−0,5x=5t(2−t)>0, por lo que no hubo contacto previo.",
+      "statement_source": "Origen en el inicio de una rampa \\(y=0,5x\\) para x≥0; \\(+x\\) derecha,\\(+y\\) arriba. Se lanza con \\(v_0=(10,15) m/s\\), sin aire y \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). \n(a) Calcula primer contacto con la rampa tras salir.\n(b) Halla distancia sobre la rampa y velocidad de impacto.\n(c) Obtén el ángulo entre velocidad y rampa.",
+      "solution_source": "\\(x=10t\\), \\(y=15t-4{,}905t^2\\). Rampa: \\(15t-4{,}905t^2=5t\\), es decir, \\(t(10-4{,}905t)=0\\); se excluye \\(t=0\\) y el contacto ocurre a \\(t=10/4{,}905=2{,}039\\,\\mathrm{s}\\).\n\n\\(P=(20{,}39;10{,}19)\\,\\mathrm{m}\\); distancia desde el origen sobre la rampa \\(\\sqrt{20{,}39^2+10{,}19^2}=22{,}79\\,\\mathrm{m}\\). \\(\\vec v=(10;15-9{,}81\\cdot2{,}039)=(10;-5)\\,\\mathrm{m/s}\\).\n\nLa rampa forma \\(+26{,}565^\\circ\\) y \\(\\vec v\\) forma \\(-26{,}565^\\circ\\) con \\(+x\\): entre ambas hay \\(53{,}13^\\circ\\). Antes del contacto, \\(y-0{,}5x=t(10-4{,}905t)>0\\), por lo que no hubo contacto previo.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -685,9 +691,9 @@
           "label": "Tiempo de impacto",
           "type": "numeric",
           "required": true,
-          "expected_value": 2.414213562373095,
+          "expected_value": 2.454108070968546,
           "unit": "s",
-          "tolerance": 0.005,
+          "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
           "part": "b"
@@ -699,8 +705,8 @@
           "response_kind": "vector",
           "required": true,
           "accepted_forms": [
-            "(6; -14.142135623730951)",
-            "6 i + (-14.142135623730951) j"
+            "(6; -14.074800176201435)",
+            "6 i + (-14.074800176201435) j"
           ],
           "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
           "grading": "pending_review",
@@ -710,10 +716,10 @@
           ],
           "expected_components": [
             6,
-            -14.142135623730951
+            -14.074800176201435
           ],
           "unit": "m/s",
-          "tolerance": 0.02,
+          "tolerance": 0.1,
           "rounding": "Tres cifras significativas.",
           "part": "b"
         },
@@ -722,9 +728,9 @@
           "label": "Rapidez final",
           "type": "numeric",
           "required": true,
-          "expected_value": 15.362291495737216,
+          "expected_value": 15.300326793895612,
           "unit": "m/s",
-          "tolerance": 0.05,
+          "tolerance": 0.1,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
           "part": "b"
@@ -734,7 +740,7 @@
           "label": "Altura a 2 s",
           "type": "numeric",
           "required": true,
-          "expected_value": 5,
+          "expected_value": 5.379999999999999,
           "unit": "m",
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
@@ -756,6 +762,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t2/referencia-ejercicios-t2.md",
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
@@ -770,8 +777,8 @@
         "Confundir velocidad vertical con rapidez total"
       ],
       "parts_count": 3,
-      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−10 m/s²\\). Desde \\(y=5 m\\) se lanza con \\(v_0=(6,10) m/s\\). Una solución ficticia propone «\\(x=6t\\); \\(y=5+10t+5t²\\); en la cima \\(a=0\\); \\(T=2 s\\); rapidez \\(final=−10 m/s\\)». \n(b) Obtén tiempo y vector de impacto correctos;\n(c) Completa: Altura a 2 s.",
-      "solution_source": "\\(a_y=−10\\) obliga \\(y=5+10t−5t²\\). En la cima solo \\(v_y=0,\\) \\(a=(0,−10) m/s²\\).\n\n\\(y=0\\) da \\(t=1±√2\\); raíz positiva 2,414 s. \\(v=(6,10−10t)=(6,−14,142) m/s\\).\n\n\\(Rapidez=√236=15,36 m/s\\), nunca negativa. A 2 s, \\(y=5 m\\): regresa a la altura inicial, no al suelo.",
+      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). Desde \\(y=5 m\\) se lanza con \\(v_0=(6,10) m/s\\). Una solución ficticia propone «\\(x=6t\\); \\(y=5+10t+4{,}905t²\\); en la cima \\(a=0\\); \\(T=2 s\\); rapidez \\(final=−10 m/s\\)». \n(b) Obtén tiempo y vector de impacto correctos;\n(c) Completa: Altura a 2 s.",
+      "solution_source": "\\(a_y=-9{,}81\\) obliga a \\(y=5+10t-4{,}905t^2\\). En la cima solo se anula \\(v_y\\): \\(\\vec a=(0;-9{,}81)\\,\\mathrm{m/s^2}\\).\n\n\\(y=0\\) da \\(t=\\dfrac{10\\pm\\sqrt{198{,}1}}{9{,}81}\\); raíz positiva \\(2{,}454\\,\\mathrm{s}\\). \\(\\vec v=(6;10-9{,}81t)=(6;−14{,}07)\\,\\mathrm{m/s}\\).\n\nRapidez \\(=\\sqrt{36+198{,}1}=15{,}30\\,\\mathrm{m/s}\\), nunca negativa. A \\(2\\,\\mathrm{s}\\), \\(y=5{,}38\\,\\mathrm{m}\\): aún está por encima de la altura inicial (vuelve a ella en \\(2{,}04\\,\\mathrm{s}\\)), no en el suelo.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     }
   ]

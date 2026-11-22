@@ -44,6 +44,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -131,6 +132,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -170,7 +172,7 @@
           "label": "Alargamiento de equilibrio",
           "type": "numeric",
           "required": true,
-          "expected_value": 0.049,
+          "expected_value": 0.0491,
           "unit": "m",
           "tolerance": 0.01,
           "significant_figures": 3,
@@ -194,6 +196,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -209,8 +212,8 @@
         "ignorar la representación específica de la familia m"
       ],
       "parts_count": 1,
-      "statement_source": "Masa colgada \\(0,5 kg\\), \\(k=100 N/m\\).\n\n(a) Calcula: Alargamiento de equilibrio.",
-      "solution_source": "Alargamiento de equilibrio \\(0,049 m\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "statement_source": "Masa colgada \\(0,5 kg\\), \\(k=100 N/m\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Alargamiento de equilibrio.",
+      "solution_source": "Alargamiento de equilibrio \\(0,0491 m\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
     },
     {
@@ -245,7 +248,7 @@
           "label": "Total",
           "type": "numeric",
           "required": true,
-          "expected_value": 0.0686,
+          "expected_value": 0.0687,
           "unit": "m",
           "tolerance": 0.01,
           "significant_figures": 3,
@@ -269,6 +272,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -284,8 +288,8 @@
         "ignorar la representación específica de la familia m"
       ],
       "parts_count": 2,
-      "statement_source": "Añadir \\(0,2 kg\\) a la masa anterior.\n\n(a) Calcula: Incremento de alargamiento.\n(b) Calcula: Total.",
-      "solution_source": "Incremento de alargamiento \\(0,0196 m\\); total \\(0,0686 m\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "statement_source": "Añadir \\(0,2 kg\\) a la masa anterior. Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Incremento de alargamiento.\n(b) Calcula: Total.",
+      "solution_source": "Incremento de alargamiento \\(0,0196 m\\); total \\(0,0687 m\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
     },
     {
@@ -332,6 +336,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -419,6 +424,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -506,6 +512,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -581,6 +588,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -654,6 +662,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -727,6 +736,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -742,7 +752,7 @@
         "ignorar la representación específica de la familia m"
       ],
       "parts_count": 1,
-      "statement_source": "Calibrar dinamómetro con masas \\(0,1–0,5 kg\\).\n\n(a) Selecciona: Conclusión física.",
+      "statement_source": "Calibrar dinamómetro con masas \\(0,1–0,5 kg\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Función \\(x=(g/k)m\\); obtener \\(k\\) desde pendiente.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
     },
@@ -800,6 +810,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -863,6 +874,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
+        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
