@@ -179,6 +179,25 @@ def expected_values() -> dict[tuple[str, str], float]:
     delivery = mrua(0, 0, 1)(4) + 4 * 6
     total = 15 + delivery / 2
     put("t1_i_010", delivery=delivery, distance=2 * delivery, time=total, mean=2 * delivery / total, velocity=0)
+
+    # ampliación · exercises 61-66 (added after the audit of 22 November)
+    x = lambda t: 2 + t * t
+    put("t1_g_017", vm=(x(4) - x(0)) / 4, v4=2 * 4, tm=((x(4) - x(0)) / 4) / 2)
+    t = max(quadratic_roots(-G / 2, -5, 20))
+    put("t1_a_015", t=t, v=-5 - G * t, td=max(quadratic_roots(-G / 2, 0, 20)))
+    t1, t2 = quadratic_roots(-G / 2, 12, -5)
+    put("t1_a_016", h=mrua(0, 12, -G)(turning_time(12, -G)), t1=t1, t2=t2, v1=12 - G * t1,
+        disc=12 ** 2 - 4 * (-G / 2) * (-9))
+    # vertex (2; 5): v0 = -2a and -3 + 2 v0 + 2a = 5
+    a = (5 + 3) / (2 * -2 + 2)
+    v0 = -2 * a
+    t1, t2 = quadratic_roots(a / 2, v0, -3)
+    put("t1_g_018", x0=-3, a=a, v0=v0, t1=t1, t2=t2)
+    t = 25 / (2.5 / 2)
+    put("t1_i_011", t=t, x=25 * t, vp=2.5 * t, tmax=turning_time(25, -2.5),
+        smax=mrua(0, 25, -2.5)(turning_time(25, -2.5)))
+    put("t1_i_012", disc=6 ** 2 - 4 * 0.5 * 20, tmin=6 / 1, smin=20 + 0.5 * 36 - 6 * 6,
+        vmin=math.sqrt(4 * 0.5 * 20))
     return E
 
 
@@ -209,6 +228,9 @@ FUNCTIONS = {
     ("t1_g_010", "x"): mrua(2, 2, 2),
     ("t1_g_014", "x"): mrua(2, 4, -2),
     ("t1_i_006", "model"): mrua(2, 2, 2),
+    ("t1_g_017", "v"): lambda t: 2 * t,
+    ("t1_a_015", "y"): mrua(20, -5, -G),
+    ("t1_g_018", "x"): mrua(-3, 8, -4),
 }
 
 CHOICES = {
@@ -221,6 +243,8 @@ CHOICES = {
     ("t1_g_009", "compatible"): "no",
     ("t1_g_011", "correct"): "quadratic",
     ("t1_g_012", "trend"): "up",
+    ("t1_a_016", "reach"): "no",
+    ("t1_i_012", "catch"): "no",
 }
 
 

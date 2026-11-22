@@ -1,0 +1,667 @@
+{
+  "exercises": [
+    {
+      "id": "t1_g_017",
+      "number": 61,
+      "version": 1,
+      "title": "Velocidad media frente a velocidad en un instante",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "Funciones y gráficas",
+      "family": "g",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 8,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "vm",
+          "label": "Velocidad media entre \\(0\\) y \\(4\\,\\mathrm{s}\\)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 4.0,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "v",
+          "label": "Ecuación de la velocidad \\(v(t)\\)",
+          "type": "function",
+          "required": true,
+          "unit": "m/s",
+          "canonical_expression": "2*t",
+          "part": "b"
+        },
+        {
+          "id": "v4",
+          "label": "Velocidad \\(v(4)\\)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 8,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "tm",
+          "label": "Instante en que \\(v\\) vale la velocidad media",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_g_017.svg",
+          "alt": "Gráfica x–t de la parábola x = 2 + t² entre 0 y 4 s, con la recta secante que une (0 s; 2 m) y (4 s; 18 m) y la recta tangente en t = 4 s."
+        }
+      ],
+      "tags": [
+        "t1",
+        "g",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Distinguir la velocidad media (pendiente de la secante) de la velocidad en un instante (derivada, pendiente de la tangente).",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Funciones y gráficas"
+      ],
+      "difficulty_reason": "Dos cálculos directos, pero obliga a no usar x/t ni Δx/Δt como velocidad instantánea.",
+      "common_mistakes": [
+        "Calcular la velocidad en t = 4 s como x(4)/4",
+        "Tomar la velocidad media como la velocidad en el instante final"
+      ],
+      "parts_count": 3,
+      "statement_source": "Un carrito de laboratorio sale de un sensor de posición situado en \\(x=2\\,\\mathrm{m}\\), con el origen en el borde de la mesa y \\(+x\\) hacia la derecha. Su posición en SI es\n\\[x(t)=2+t^2,\\qquad 0\\le t\\le4\\,\\mathrm{s}.\\]\n\nLa velocidad media de un intervalo es la pendiente de la recta que une sus dos extremos en la gráfica \\(x(t)\\): \\(v_{\\mathrm{med}}=\\Delta x/\\Delta t\\). La velocidad en un instante es la derivada, la pendiente de la tangente. No es \\(x/t\\).\n\n(a) Calcula la velocidad media entre \\(t=0\\) y \\(t=4\\,\\mathrm{s}\\).\n(b) Deriva \\(x(t)\\) para obtener la ecuación de la velocidad \\(v(t)\\) y calcula la velocidad en \\(t=4\\,\\mathrm{s}\\).\n(c) Calcula en qué instante la velocidad del carrito es igual a la velocidad media del apartado (a).",
+      "solution_source": "(a) \\(x(0)=2\\,\\mathrm{m}\\) y \\(x(4)=18\\,\\mathrm{m}\\): \\(v_{\\mathrm{med}}=\\dfrac{18-2}{4-0}=4{,}00\\,\\mathrm{m/s}\\).\n(b) \\(v(t)=\\dfrac{dx}{dt}=2t\\), así que \\(v(4)=8{,}00\\,\\mathrm{m/s}\\), el doble de la media. El error típico \\(x(4)/4=4{,}5\\,\\mathrm{m/s}\\) no es ninguna de las dos: mezcla la posición con el origen.\n(c) \\(2t=4\\Rightarrow t=2{,}00\\,\\mathrm{s}\\), justo la mitad del intervalo. En un MRUA la velocidad media de un intervalo coincide con la velocidad en su instante central; en la gráfica, la tangente en \\(t=2\\,\\mathrm{s}\\) es paralela a la secante.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_a_015",
+      "number": 62,
+      "version": 1,
+      "title": "Lanzar hacia abajo desde un puente",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "MRUA y movimiento vertical",
+      "family": "a",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_minutes": 9,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "y",
+          "label": "Ecuación de la posición \\(y(t)\\)",
+          "type": "function",
+          "required": true,
+          "unit": "m",
+          "canonical_expression": "20-5*t-4.905*t^2",
+          "part": "a"
+        },
+        {
+          "id": "t",
+          "label": "Instante en que llega al agua",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.5729224822868766,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "v",
+          "label": "Velocidad al llegar al agua",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -20.43036955123426,
+          "unit": "m/s",
+          "tolerance": 0.1,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "td",
+          "label": "Tiempo de caída si se deja caer",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2.019275109384609,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_a_015.svg",
+          "alt": "Puente a 20 m sobre el agua; la piedra sale hacia abajo a 5 m/s; +y hacia arriba con origen en el agua y aceleración −9,81 m/s²."
+        }
+      ],
+      "tags": [
+        "t1",
+        "a",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Escribir la ecuación de la posición de un lanzamiento vertical hacia abajo con el signo correcto de v₀ y elegir la raíz positiva.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "MRUA y movimiento vertical"
+      ],
+      "difficulty_reason": "Pregunta ★ de llegada al suelo con v₀ negativa; la ecuación de segundo grado no tiene término nulo.",
+      "common_mistakes": [
+        "Escribir v₀ = +5 m/s porque «la velocidad es 5»",
+        "Usar a = +9,81 m/s² porque la piedra baja"
+      ],
+      "parts_count": 3,
+      "statement_source": "Desde un puente, a \\(20\\,\\mathrm{m}\\) sobre el agua, lanzas una piedra verticalmente hacia abajo a \\(5\\,\\mathrm{m/s}\\). Tomamos el origen en la superficie del agua, \\(+y\\) hacia arriba y \\(t=0\\) al soltarla; sin aire, \\(a=-g=-9{,}81\\,\\mathrm{m/s^2}\\).\n\nCon \\(+y\\) hacia arriba, todo lo que apunta hacia abajo lleva signo menos: la velocidad inicial y la aceleración. Llegar al agua es la condición \\(y=0\\), una de las preguntas \\(\\bigstar\\) de la lección.\n\n(a) Escribe la ecuación de la posición \\(y(t)\\) en SI.\n(b) Calcula el instante en que la piedra llega al agua y, derivando, su velocidad en ese momento.\n(c) Calcula cuánto tardaría en llegar al agua si simplemente la dejases caer desde el reposo.",
+      "solution_source": "(a) \\(y_0=20\\,\\mathrm{m}\\), \\(v_0=-5\\,\\mathrm{m/s}\\) y \\(a=-9{,}81\\,\\mathrm{m/s^2}\\): \\(y(t)=20-5t-4{,}905t^2\\).\n(b) \\(y=0\\Rightarrow -4{,}905t^2-5t+20=0\\). Discriminante: \\(25+4\\cdot4{,}905\\cdot20=417{,}4\\).\n\\[t=\\frac{5\\pm\\sqrt{417{,}4}}{-9{,}81}\\ \\Rightarrow\\ t=1{,}57\\,\\mathrm{s}\\ \\text{o}\\ t=-2{,}59\\,\\mathrm{s}.\\]\nLa raíz negativa es anterior al lanzamiento. Derivando, \\(v(t)=-5-9{,}81t\\) y \\(v(1{,}573)=-20{,}4\\,\\mathrm{m/s}\\): baja.\n(c) Con \\(v_0=0\\): \\(20-4{,}905t^2=0\\Rightarrow t=\\sqrt{20/4{,}905}=2{,}02\\,\\mathrm{s}\\). Lanzarla hacia abajo ahorra casi medio segundo; la aceleración es la misma en los dos casos.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_a_016",
+      "number": 63,
+      "version": 1,
+      "title": "Una altura que se alcanza dos veces y otra que nunca",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "MRUA y movimiento vertical",
+      "family": "a",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "h",
+          "label": "Altura máxima sobre la mano",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 7.339449541284403,
+          "unit": "m",
+          "tolerance": 0.1,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "t1",
+          "label": "Primer instante en \\(y=5\\,\\mathrm{m}\\)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.5326244776369289,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "t2",
+          "label": "Segundo instante en \\(y=5\\,\\mathrm{m}\\)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.9138587027912057,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "v1",
+          "label": "Velocidad en el primer paso por \\(y=5\\,\\mathrm{m}\\)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 6.774953874381727,
+          "unit": "m/s",
+          "tolerance": 0.02,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "disc",
+          "label": "Discriminante \\(B^2-4AC\\) para \\(y=9\\,\\mathrm{m}\\)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -32.58000000000001,
+          "tolerance": 0.1,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        },
+        {
+          "id": "reach",
+          "label": "¿Llega la pelota a \\(9\\,\\mathrm{m}\\)?",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "no",
+              "label": "No: el discriminante es negativo y \\(9\\,\\mathrm{m}\\) está por encima de la altura máxima"
+            },
+            {
+              "id": "once",
+              "label": "Sí, una sola vez: es el punto de giro"
+            },
+            {
+              "id": "twice",
+              "label": "Sí, dos veces: una al subir y otra al bajar"
+            }
+          ],
+          "correct_option_id": "no",
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_a_016.svg",
+          "alt": "La pelota sale de la mano (y = 0) hacia arriba a 12 m/s; marcas a 5 m y a 9 m sobre la mano; aceleración −9,81 m/s²."
+        }
+      ],
+      "tags": [
+        "t1",
+        "a",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Interpretar el número de raíces de y(t) = y₁ con el discriminante: dos raíces físicas (subida y bajada) o ninguna.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "MRUA y movimiento vertical"
+      ],
+      "difficulty_reason": "Combina las dos preguntas ★ y la lectura del discriminante de la herramienta del bloque 3.",
+      "common_mistakes": [
+        "Descartar la segunda raíz positiva aunque también es física",
+        "Resolver sin mirar el discriminante y concluir que hay un error de cálculo"
+      ],
+      "parts_count": 3,
+      "statement_source": "Lanzas una pelota verticalmente hacia arriba a \\(12\\,\\mathrm{m/s}\\). El origen está en la mano, \\(+y\\) hacia arriba y \\(t=0\\) al soltarla; sin aire, \\(a=-g=-9{,}81\\,\\mathrm{m/s^2}\\).\n\nPreguntar «¿cuándo está a tal altura?» es resolver \\(y(t)=y_1\\), una ecuación de segundo grado. Ordénala como \\(At^2+Bt+C=0\\) con \\(A=-4{,}905\\). Si el discriminante es positivo hay dos instantes, y aquí los dos pueden ser físicos: uno al subir y otro al bajar. Si es negativo, la pelota nunca llega a esa altura.\n\n(a) Calcula la altura máxima sobre la mano.\n(b) Calcula los dos instantes en que la pelota está a \\(5\\,\\mathrm{m}\\) sobre la mano y, derivando, su velocidad en el primero.\n(c) Calcula el discriminante de la ecuación \\(y(t)=9\\,\\mathrm{m}\\) y elige si la pelota llega a esa altura.",
+      "solution_source": "(a) \\(y(t)=12t-4{,}905t^2\\) y, derivando, \\(v(t)=12-9{,}81t\\). \\(v=0\\Rightarrow t=1{,}22\\,\\mathrm{s}\\), e \\(y(1{,}223)=7{,}34\\,\\mathrm{m}\\).\n(b) \\(-4{,}905t^2+12t-5=0\\), con discriminante \\(144-98{,}1=45{,}9>0\\):\n\\[t=\\frac{-12\\pm\\sqrt{45{,}9}}{-9{,}81}\\ \\Rightarrow\\ t=0{,}533\\,\\mathrm{s}\\ \\text{y}\\ t=1{,}91\\,\\mathrm{s}.\\]\nLas dos son positivas y anteriores a la vuelta a la mano (\\(2{,}45\\,\\mathrm{s}\\)): pasa por \\(5\\,\\mathrm{m}\\) al subir y al bajar. \\(v(0{,}533)=+6{,}77\\,\\mathrm{m/s}\\); en el segundo paso vale \\(-6{,}77\\,\\mathrm{m/s}\\): misma rapidez, sentido opuesto.\n(c) \\(-4{,}905t^2+12t-9=0\\): \\(B^2-4AC=144-4(-4{,}905)(-9)=144-176{,}6=-32{,}6<0\\). No hay solución real: \\(9\\,\\mathrm{m}\\) está por encima de los \\(7{,}34\\,\\mathrm{m}\\) de la altura máxima, así que la pelota nunca llega.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_g_018",
+      "number": 64,
+      "version": 1,
+      "title": "Leer el vértice de una parábola x(t)",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "Funciones y gráficas",
+      "family": "g",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "x0",
+          "label": "Posición inicial \\(x_0\\)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -3,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "a",
+          "label": "Aceleración \\(a\\)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -4,
+          "unit": "m/s²",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "v0",
+          "label": "Velocidad inicial \\(v_0\\)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 8,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "x",
+          "label": "Ecuación de la posición \\(x(t)\\)",
+          "type": "function",
+          "required": true,
+          "unit": "m",
+          "canonical_expression": "-3+8*t-2*t^2",
+          "part": "b"
+        },
+        {
+          "id": "t1",
+          "label": "Primer paso por el origen",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 0.41886116991581024,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        },
+        {
+          "id": "t2",
+          "label": "Segundo paso por el origen",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3.58113883008419,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_g_018.svg",
+          "alt": "Gráfica x–t: parábola que abre hacia abajo, corta el eje vertical en (0 s; −3 m), tiene el vértice en (2 s; 5 m) y vuelve a −3 m en t = 4 s."
+        }
+      ],
+      "tags": [
+        "t1",
+        "g",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Leer x₀, el punto de giro y la curvatura en una gráfica x(t) parabólica y reconstruir la ecuación de la posición.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Funciones y gráficas"
+      ],
+      "difficulty_reason": "Hay que usar dos ideas: el vértice es donde v = 0 y la parábola pasa por un segundo punto conocido.",
+      "common_mistakes": [
+        "Confundir el vértice (giro) con un paso por el origen",
+        "Tomar el coeficiente de t² como a en lugar de a/2"
+      ],
+      "parts_count": 3,
+      "statement_source": "Un vagón de una montaña rusa infantil se mueve por un tramo recto con aceleración constante; el origen está en una señal de la vía y \\(+x\\) hacia delante. Su gráfica \\(x(t)\\) es una parábola que abre hacia abajo: corta el eje vertical en \\((0\\,\\mathrm{s};\\,-3\\,\\mathrm{m})\\) y tiene el vértice en \\((2\\,\\mathrm{s};\\,5\\,\\mathrm{m})\\).\n\nEl vértice de \\(x(t)\\) es el punto de giro: ahí la pendiente, que es la velocidad, vale cero. Escribe \\(x=-3+v_0t+\\tfrac12at^2\\), deriva y usa los dos datos del vértice: \\(v(2)=0\\) y \\(x(2)=5\\,\\mathrm{m}\\).\n\n(a) Calcula la posición inicial \\(x_0\\), la aceleración \\(a\\) y la velocidad inicial \\(v_0\\).\n(b) Escribe la ecuación de la posición \\(x(t)\\).\n(c) Calcula los dos instantes en que el vagón pasa por el origen, \\(x=0\\).",
+      "solution_source": "(a) El corte con el eje vertical es \\(x_0=-3{,}00\\,\\mathrm{m}\\). Derivando, \\(v=v_0+at\\), y \\(v(2)=0\\Rightarrow v_0=-2a\\). Además \\(x(2)=-3+2v_0+2a=5\\). Sustituyendo: \\(-3-4a+2a=5\\Rightarrow a=-4{,}00\\,\\mathrm{m/s^2}\\) y \\(v_0=8{,}00\\,\\mathrm{m/s}\\). \\(a<0\\) cuadra con una parábola que abre hacia abajo.\n(b) \\(x(t)=-3+8t-2t^2\\). Comprobación: \\(x(2)=-3+16-8=5\\,\\mathrm{m}\\).\n(c) \\(-2t^2+8t-3=0\\), con discriminante \\(64-24=40>0\\):\n\\[t=\\frac{-8\\pm\\sqrt{40}}{-4}\\ \\Rightarrow\\ t=0{,}419\\,\\mathrm{s}\\ \\text{y}\\ t=3{,}58\\,\\mathrm{s}.\\]\nLas dos son físicas: pasa por el origen hacia delante y vuelve a pasar tras dar la vuelta en \\(x=5\\,\\mathrm{m}\\). El vértice no es un paso por el origen.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_i_011",
+      "number": 65,
+      "version": 1,
+      "title": "El coche patrulla que arranca",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "Problemas integradores",
+      "family": "i",
+      "subtype": "written_upload",
+      "difficulty": 3,
+      "estimated_minutes": 12,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "t",
+          "label": "Instante del alcance",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 20,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "x",
+          "label": "Posición del alcance",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 500,
+          "unit": "m",
+          "tolerance": 0.5,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "vp",
+          "label": "Velocidad del coche patrulla en el alcance",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 50,
+          "unit": "m/s",
+          "tolerance": 0.05,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "tmax",
+          "label": "Instante de separación máxima",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 10,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        },
+        {
+          "id": "smax",
+          "label": "Separación máxima",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 125,
+          "unit": "m",
+          "tolerance": 0.2,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_i_011.svg",
+          "alt": "En t = 0 el coche pasa a 25 m/s junto al coche patrulla parado en x = 0, que arranca en ese instante con 2,5 m/s²."
+        }
+      ],
+      "tags": [
+        "t1",
+        "i",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Encontrar un encuentro MRU–MRUA desde el reposo y localizar la separación máxima derivando la separación.",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Problemas integradores"
+      ],
+      "difficulty_reason": "Encuentro con ecuación de segundo grado y un máximo de una función nueva, la separación.",
+      "common_mistakes": [
+        "Pensar que la separación es máxima cuando el patrulla arranca",
+        "Igualar velocidades para buscar el alcance"
+      ],
+      "parts_count": 3,
+      "statement_source": "Un coche pasa a \\(25\\,\\mathrm{m/s}\\) constantes junto a un coche patrulla parado en el arcén de una carretera recta. En ese mismo instante, \\(t=0\\), el coche patrulla arranca desde el reposo con \\(a=2{,}5\\,\\mathrm{m/s^2}\\). El origen está donde estaba parado el coche patrulla y \\(+x\\) en el sentido de la marcha.\n\nUno lleva un MRU y el otro un MRUA. El alcance es \\(x_C(t)=x_P(t)\\). La separación \\(s(t)=x_C-x_P\\) es una función más: su máximo está donde su derivada se anula.\n\n(a) Calcula el instante y la posición del alcance.\n(b) Calcula la velocidad del coche patrulla en el alcance.\n(c) Deriva \\(s(t)\\) y calcula el instante en que la separación es máxima y cuánto vale.",
+      "solution_source": "(a) \\(x_C=25t\\) y \\(x_P=1{,}25t^2\\). Igualando: \\(1{,}25t^2-25t=0\\Rightarrow t(1{,}25t-25)=0\\). \\(t=0\\) es la salida; el alcance es en \\(t=20{,}0\\,\\mathrm{s}\\), en \\(x=25\\cdot20=500\\,\\mathrm{m}\\).\n(b) Derivando, \\(v_P=2{,}5t\\) y \\(v_P(20)=50{,}0\\,\\mathrm{m/s}\\): el doble que el coche, porque en \\(20\\,\\mathrm{s}\\) ha recorrido lo mismo partiendo del reposo.\n(c) \\(s(t)=25t-1{,}25t^2\\) y \\(\\dfrac{ds}{dt}=25-2{,}5t=0\\Rightarrow t=10{,}0\\,\\mathrm{s}\\). \\(s(10)=250-125=125\\,\\mathrm{m}\\). En ese instante las dos velocidades son iguales, \\(25\\,\\mathrm{m/s}\\): antes el coche se aleja y después el patrulla recorta distancia.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    },
+    {
+      "id": "t1_i_012",
+      "number": 66,
+      "version": 1,
+      "title": "¿Alcanza el autobús?",
+      "course": "1bach",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "block": "Problemas integradores",
+      "family": "i",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_minutes": 14,
+      "response_mode": "structured",
+      "response_prompt": "Responde los apartados en sus campos.",
+      "response_fields": [
+        {
+          "id": "disc",
+          "label": "Discriminante \\(B^2-4AC\\) con \\(A=0{,}5\\)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": -4,
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "catch",
+          "label": "¿Alcanza la pasajera el autobús?",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "no",
+              "label": "No: la ecuación no tiene soluciones reales"
+            },
+            {
+              "id": "yes_one",
+              "label": "Sí, en un único instante"
+            },
+            {
+              "id": "yes_two",
+              "label": "Sí, en dos instantes"
+            }
+          ],
+          "correct_option_id": "no",
+          "part": "a"
+        },
+        {
+          "id": "tmin",
+          "label": "Instante de separación mínima",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 6,
+          "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "smin",
+          "label": "Separación mínima",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 2,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "b"
+        },
+        {
+          "id": "vmin",
+          "label": "Velocidad mínima para alcanzarlo",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 6.324555320336759,
+          "unit": "m/s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "c"
+        }
+      ],
+      "assets": [
+        {
+          "path": "static/exercises/1bach/t1/assets/t1_i_012.svg",
+          "alt": "En t = 0 la pasajera corre a 6 m/s desde x = 0 y el autobús arranca del reposo en x = 20 m con 1 m/s²."
+        }
+      ],
+      "tags": [
+        "t1",
+        "i",
+        "cinematica"
+      ],
+      "origin": {
+        "kind": "original_teacher_bank",
+        "reference": null,
+        "adaptation_note": "Enunciado, datos, solución y diagramas propios."
+      },
+      "status": "draft",
+      "learning_objective": "Usar el discriminante para decidir si hay encuentro, la separación mínima con la derivada y la condición de tangencia (discriminante cero).",
+      "prerequisites": [
+        "T0: unidades, signos y álgebra",
+        "Problemas integradores"
+      ],
+      "difficulty_reason": "Pide interpretar un discriminante negativo y uno nulo, y trabajar con una velocidad incógnita.",
+      "common_mistakes": [
+        "Concluir que hay un error porque la raíz cuadrada de un negativo no existe",
+        "Buscar la separación mínima en t = 0"
+      ],
+      "parts_count": 3,
+      "statement_source": "Una pasajera corre a \\(6\\,\\mathrm{m/s}\\) constantes por una calle recta para coger un autobús. Cuando está \\(20\\,\\mathrm{m}\\) por detrás de la puerta, en \\(t=0\\), el autobús arranca desde el reposo con \\(a=1\\,\\mathrm{m/s^2}\\). Tomamos el origen donde está la pasajera en \\(t=0\\) y \\(+x\\) en el sentido de la marcha.\n\nIguala las ecuaciones de la posición y ordena el resultado como \\(At^2+Bt+C=0\\) con \\(A=0{,}5\\). El discriminante dice si hay alcance: negativo, nunca; cero, lo alcanza justo una vez; positivo, dos instantes.\n\n(a) Calcula el discriminante y elige si la pasajera alcanza la puerta del autobús.\n(b) Deriva la separación \\(s(t)=x_B-x_P\\) y calcula el instante de separación mínima y cuánto vale.\n(c) Calcula la velocidad constante mínima a la que tendría que correr para alcanzar la puerta (discriminante igual a cero), con tres cifras significativas.",
+      "solution_source": "(a) \\(x_P=6t\\) y \\(x_B=20+0{,}5t^2\\). Igualando: \\(0{,}5t^2-6t+20=0\\), con \\(B^2-4AC=36-40=-4<0\\). No hay solución real: no lo alcanza.\n(b) \\(s(t)=20+0{,}5t^2-6t\\) y \\(\\dfrac{ds}{dt}=t-6=0\\Rightarrow t=6{,}00\\,\\mathrm{s}\\). \\(s(6)=20+18-36=2{,}00\\,\\mathrm{m}\\). Se queda a \\(2\\,\\mathrm{m}\\), justo cuando el autobús alcanza su velocidad, \\(6\\,\\mathrm{m/s}\\); después se aleja.\n(c) Con velocidad \\(v_p\\): \\(0{,}5t^2-v_pt+20=0\\). Discriminante nulo: \\(v_p^2-40=0\\Rightarrow v_p=\\sqrt{40}=6{,}32\\,\\mathrm{m/s}\\) (la raíz negativa no corre hacia el autobús). Entonces lo alcanza justo en \\(t=v_p=6{,}32\\,\\mathrm{s}\\), cuando las dos velocidades son iguales.",
+      "solution_reference": "Elaboración propia; revisión matemática documentada."
+    }
+  ]
+}
