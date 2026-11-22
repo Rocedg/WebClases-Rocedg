@@ -34,7 +34,8 @@ Bachillerato. El formato de cada campo está en
    con `viewBox="0 0 640 360"` y `style="max-width:100%;height:auto"`, y
    añádelo a `assets` con un `alt` que describa el dibujo. Criterios visuales:
    [exercise-diagrams.md](exercise-diagrams.md).
-6. Rellena `origin` (`kind` obligatorio) y deja `status: "draft"` hasta que
+6. Rellena `origin` con `kind`, `reference` (`null` si es propio) y `source`
+   (ver [la tabla de procedencia](exercise-bank-format.md#origin-procedencia)), y deja `status: "draft"` hasta que
    esté revisado. `draft` no oculta el ejercicio: los alumnos lo verán en
    cuanto se publique.
 

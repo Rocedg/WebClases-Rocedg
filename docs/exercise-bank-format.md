@@ -80,7 +80,7 @@ Ejemplo recortado (`t1_u_001`):
   "response_fields": [ … ],
   "assets": [{"path": "static/exercises/1bach/t1/assets/t1_u_001.svg", "alt": "…"}],
   "tags": ["t1", "u", "cinematica"],
-  "origin": {"kind": "original_teacher_bank", "reference": null, "adaptation_note": "…"},
+  "origin": {"kind": "original_teacher_bank", "reference": null, "source": "content/exercises/1bach/t1/referencia-ejercicios-t1.md", "adaptation_note": "…"},
   "status": "draft",
   "learning_objective": "…",
   "prerequisites": ["…"],
@@ -109,7 +109,7 @@ Ejemplo recortado (`t1_u_001`):
 | `solution_source` | sí | Solución, mismo formato. Se muestra al alumno después de entregar. |
 | `assets` | sí | Lista de `{path, alt}`. Puede estar vacía. En T3-T6 cada ejercicio tiene un SVG con `viewBox="0 0 640 360"`. |
 | `tags` | sí | Lista de cadenas. |
-| `origin` | sí | Objeto con `kind` obligatorio (ver abajo). |
+| `origin` | sí | Procedencia: `kind`, `reference` y `source` (ver abajo). |
 | `status` | sí | `draft`, `active` o `retired` (ver abajo). |
 | `learning_objective`, `prerequisites`, `difficulty_reason`, `common_mistakes`, `parts_count` | recomendados | Metadatos didácticos. Hoy la web no los muestra. |
 | `solution_reference` | no | Documento del que sale la solución, si lo hay. |
@@ -140,19 +140,21 @@ ejercicio: el corrector no los mira. La tolerancia tiene que ser lo bastante
 amplia para aceptar la respuesta redondeada a las cifras que pide el
 enunciado.
 
-## `origin`
+## `origin` (procedencia)
 
-`kind` es obligatorio. Valores en uso:
+Obligatorio en todos los ejercicios de 1.º. `validate_exercises.py` lo
+comprueba así:
 
-- `original_teacher_bank`: ejercicio propio (T1-T6). Lleva `reference` y
-  `adaptation_note`.
-- `exercise_bank_t0_v4_spec`, `t0_bank_v5_extension`,
-  `t0_graphs_units_video_extension`, `t0_determinant_normal_calculus_extension`,
-  `t0_unit_vector_extension`: lotes del T0. Llevan `source`.
-- `pilot_adapted`: piloto de 2.º.
+| Clave | Obligatoria | Valores |
+| --- | --- | --- |
+| `kind` | sí | `original_teacher_bank` (propio), `adapted_from_pau` (adaptado de un examen PAU) u `official_pau` (enunciado oficial PAU). |
+| `reference` | sí, la clave siempre presente | `null` en los propios. En `adapted_from_pau` y `official_pau` es obligatoria: la fuente externa (convocatoria, año, número de ejercicio). |
+| `source` | sí | El documento interno del que sale el ejercicio: la especificación, el prompt o la revisión. Por ejemplo `content/exercises/1bach/t1/referencia-ejercicios-t1.md`. |
+| `batch` | no | Lote de trabajo que lo produjo. Lo usa T0 (`exercise_bank_t0_v4_spec`, `t0_unit_vector_extension`...). |
+| `adaptation_note` | no | Qué se ha cambiado respecto a la fuente, o "propio". Lo usan T1-T6. |
 
-> Pendiente (tarea 4.4 del 22/11): añadir `origin.source_kind` y `reference`
-> en T0, T1, T2, T5 y T6. Cuando se haga, documentar aquí los valores.
+Hoy todos los ejercicios de 1.º son `original_teacher_bank`. El piloto de 2.º
+conserva su formato antiguo (`pilot_adapted`) y no pasa por esta regla.
 
 ## `status`
 
