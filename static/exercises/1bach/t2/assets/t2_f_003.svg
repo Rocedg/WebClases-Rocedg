@@ -1,12 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 290" role="img" aria-labelledby="title desc" style="max-width:100%;height:auto"><title id="title">De coordenadas a trayectoria</title><desc id="desc">Segmento recorrido durante cuatro segundos. Todos los datos necesarios se detallan en el enunciado.</desc><defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse"><path d="M0 0 L7 3.5 L0 7Z" fill="context-stroke"/></marker></defs><rect width="100%" height="100%" fill="white"/><g font-family="Arial,sans-serif" font-size="13" fill="#203148">
-<text x="16" y="23" font-size="15" font-weight="bold">Segmento recorrido durante cuatro segundos</text>
-<path d="M79.26 65V225 M65 213.97H450" stroke="#e1e7ee" fill="none"/><text x="79.26" y="245" text-anchor="middle">-2</text><text x="57" y="217.97" text-anchor="end">-3</text>
-<path d="M168.38 65V225 M65 179.48H450" stroke="#e1e7ee" fill="none"/><text x="168.38" y="245" text-anchor="middle">2.81</text><text x="57" y="183.48" text-anchor="end">-1</text>
-<path d="M257.50 65V225 M65 145.00H450" stroke="#e1e7ee" fill="none"/><text x="257.50" y="245" text-anchor="middle">7.62</text><text x="57" y="149.00" text-anchor="end">1</text>
-<path d="M346.62 65V225 M65 110.52H450" stroke="#e1e7ee" fill="none"/><text x="346.62" y="245" text-anchor="middle">12.4</text><text x="57" y="114.52" text-anchor="end">3</text>
-<path d="M435.74 65V225 M65 76.03H450" stroke="#e1e7ee" fill="none"/><text x="435.74" y="245" text-anchor="middle">17.2</text><text x="57" y="80.03" text-anchor="end">5</text>
-<path d="M65 162.24H462 M116.30 225V55" stroke="#516276" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/><text x="450" y="269" text-anchor="end">x (m)</text><text x="65" y="49">y (m)</text>
-<polyline points="79.26,76.03 301.48,213.97" fill="none" stroke="#245b99" stroke-width="2.5"/><text x="185" y="44" fill="#245b99">trayectoria</text>
-<circle cx="79.26" cy="76.03" r="3.5" fill="#245b99"/><text x="84.26" y="69.03">inicio</text>
-<circle cx="301.48" cy="213.97" r="3.5" fill="#245b99"/><text x="306.48" y="206.97">final</text>
-</g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc" style="max-width:100%;height:auto">
+<title id="title">Trayectoria recta entre t = 0 y t = 4 s</title>
+<desc id="desc">Esquema sin escala del plano xy, con +x hacia el este y +y hacia el norte. La trayectoria es un segmento recto que empieza en t = 0 en el punto (−2; 5) m, en el segundo cuadrante, y baja hacia la derecha cruzando los dos ejes hasta el punto final en t = 4 s, en el cuarto cuadrante. No se indican las coordenadas del punto final.</desc>
+<defs><marker id="ah-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#1f5fa8"/></marker><marker id="ah-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#b8432f"/></marker><marker id="ah-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#16756a"/></marker><marker id="ah-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#6d4fb0"/></marker><marker id="ah-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#55657a"/></marker><marker id="ah-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#1f2d44"/></marker></defs>
+<rect width="640" height="360" fill="#ffffff"/>
+<g font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#1f2d44" stroke-linecap="round" stroke-linejoin="round">
+<text x="207.3" y="217.2" text-anchor="end" font-weight="bold">O</text>
+<path d="M116.7 199.2L517.3 199.2" fill="none" stroke="#55657a" stroke-width="1.6" marker-end="url(#ah-muted)"/>
+<path d="M213.3 320.0L213.3 16.0" fill="none" stroke="#55657a" stroke-width="1.6" marker-end="url(#ah-muted)"/>
+<text x="523.3" y="204.2" font-size="14">x (m)</text>
+<text x="221.3" y="24.0" font-size="14">y (m)</text>
+<path d="M165.0 78.3L455.0 271.7" fill="none" stroke="#1f5fa8" stroke-width="2.6" marker-end="url(#ah-blue)"/>
+<circle cx="165.0" cy="78.3" r="5" fill="#1f5fa8"/>
+<text x="175.0" y="68.3" fill="#1f5fa8" font-weight="bold" stroke="#ffffff" stroke-width="4" paint-order="stroke">t = 0: (−2; 5) m</text>
+<text x="449.0" y="293.7" text-anchor="middle" fill="#1f5fa8" font-weight="bold" stroke="#ffffff" stroke-width="4" paint-order="stroke">t = 4 s</text>
+<text x="630.0" y="22.0" text-anchor="end" fill="#55657a" font-size="13">+x: este · +y: norte</text>
+<text x="630.0" y="352.0" text-anchor="end" fill="#55657a" font-size="12" font-style="italic">Esquema sin escala</text>
+</g>
+</svg>

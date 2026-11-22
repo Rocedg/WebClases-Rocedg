@@ -3,7 +3,7 @@
     {
       "id": "t2_v_001",
       "number": 1,
-      "version": 1,
+      "version": 2,
       "title": "Una posición en el segundo cuadrante",
       "course": "1bach",
       "topic": "t2",
@@ -69,7 +69,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_v_001.svg",
-          "alt": "Posición P al noroeste de O"
+          "alt": "Plano xy a escala, en metros, con +x hacia el este y +y hacia el norte. El dron está en el punto P (−6; 8) m, en el segundo cuadrante, al noroeste del origen O. Una flecha va de O a P. No se marca el ángulo."
         }
       ],
       "tags": [
@@ -102,7 +102,7 @@
     {
       "id": "t2_v_002",
       "number": 2,
-      "version": 1,
+      "version": 2,
       "title": "Desplazarse no es medir desde el origen",
       "course": "1bach",
       "topic": "t2",
@@ -168,7 +168,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_v_002.svg",
-          "alt": "Flecha de A hacia B"
+          "alt": "Plano xy a escala, en metros, con +x hacia el este y +y hacia el norte. Están marcados el punto inicial A (2; −1) m, en el cuarto cuadrante, y el punto final B (−4; 7) m, en el segundo cuadrante. No se dibuja el desplazamiento."
         }
       ],
       "tags": [
@@ -201,7 +201,7 @@
     {
       "id": "t2_v_003",
       "number": 3,
-      "version": 1,
+      "version": 2,
       "title": "Velocidad media y datos insuficientes para rapidez",
       "course": "1bach",
       "topic": "t2",
@@ -267,7 +267,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_v_003.svg",
-          "alt": "Dos registros, trayectoria no especificada"
+          "alt": "Plano xy a escala, en metros, con +x hacia el este y +y hacia el norte. Están marcadas dos posiciones del robot: (−3; 2) m en t = 1 s y (9; 7) m en t = 5 s. Entre ellas, una línea discontinua ondulada representa un camino desconocido."
         }
       ],
       "tags": [
@@ -300,7 +300,7 @@
     {
       "id": "t2_v_004",
       "number": 4,
-      "version": 1,
+      "version": 2,
       "title": "Aceleración media de un giro",
       "course": "1bach",
       "topic": "t2",
@@ -366,7 +366,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_v_004.svg",
-          "alt": "Plano de velocidades: resta vectorial"
+          "alt": "Plano de velocidades a escala, con ejes vx y vy en m/s; +x hacia el este y +y hacia el norte. Desde el origen salen dos flechas: la velocidad inicial (6; 0) m/s, sobre el semieje +vx, y la velocidad 2 s después, (0; 8) m/s, sobre el semieje +vy. No se dibuja la variación de velocidad."
         }
       ],
       "tags": [
@@ -399,7 +399,7 @@
     {
       "id": "t2_v_005",
       "number": 5,
-      "version": 1,
+      "version": 2,
       "title": "Camino quebrado y cuerda entre extremos",
       "course": "1bach",
       "topic": "t2",
@@ -477,7 +477,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_v_005.svg",
-          "alt": "Ruta O→A→B y desplazamiento directo"
+          "alt": "Plano xy a escala, en metros, con +x hacia el este y +y hacia el norte. El robot va en línea recta de O (0; 0) a A (6; 0) m, hacia el este, y después de A a B (6; 8) m, hacia el norte. No se dibuja el desplazamiento de O a B."
         }
       ],
       "tags": [
@@ -510,7 +510,7 @@
     {
       "id": "t2_v_006",
       "number": 6,
-      "version": 1,
+      "version": 2,
       "title": "Componentes de una velocidad oblicua",
       "course": "1bach",
       "topic": "t2",
@@ -589,7 +589,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_v_006.svg",
-          "alt": "Triángulo de componentes del rumbo 150°"
+          "alt": "Esquema sin escala. Ejes x e y con +x hacia el este y +y hacia el norte. La velocidad del dron, de 10 m/s, apunta hacia arriba y a la izquierda (hacia el noroeste) y forma 150° con el semieje +x, medidos en sentido antihorario. No se dibujan sus componentes."
         }
       ],
       "tags": [
@@ -622,7 +622,7 @@
     {
       "id": "t2_v_007",
       "number": 7,
-      "version": 1,
+      "version": 2,
       "title": "Tangente y aceleración en un vuelo",
       "course": "1bach",
       "topic": "t2",
@@ -714,7 +714,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_v_007.svg",
-          "alt": "Tres puntos de un vuelo de unos dos segundos"
+          "alt": "Gráfica a escala del plano vertical, con x e y en metros. La trayectoria parabólica sale de O en t = 0, llega a la cima (8,15; 5,10) m en t = 1,02 s y vuelve a y = 0 en (16,31; 0) m en t = 2,04 s. Los tres puntos están marcados; no se dibujan las velocidades."
         }
       ],
       "tags": [
@@ -747,7 +747,7 @@
     {
       "id": "t2_v_008",
       "number": 8,
-      "version": 1,
+      "version": 2,
       "title": "Barca que apunta a la otra orilla",
       "course": "1bach",
       "topic": "t2",
@@ -837,7 +837,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_v_008.svg",
-          "alt": "Vista en planta: barca y corriente"
+          "alt": "Esquema sin escala en vista en planta. El río, de 60 m de ancho, ocupa la franja entre dos orillas paralelas al eje x; +x apunta aguas abajo y +y hacia la otra orilla. El agua fluye hacia +x a 2 m/s respecto a tierra. La barca sale del origen O, en una orilla, y apunta hacia la otra orilla (+y) a 3 m/s respecto al agua. No se dibuja su trayectoria respecto a tierra."
         }
       ],
       "tags": [
@@ -870,7 +870,7 @@
     {
       "id": "t2_v_009",
       "number": 9,
-      "version": 1,
+      "version": 2,
       "title": "Elegir ejes sin cambiar la física",
       "course": "1bach",
       "topic": "t2",
@@ -961,7 +961,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_v_009.svg",
-          "alt": "A: corriente +x; cruce +y"
+          "alt": "Esquema sin escala en dos paneles. Los dos muestran el mismo río, de 40 m de ancho, visto en planta: la corriente va hacia la derecha a 1,5 m/s y la barca apunta perpendicularmente a la otra orilla, a 2,5 m/s respecto al agua. Referencia A: +x hacia la derecha, en el sentido de la corriente, y +y hacia la otra orilla. Referencia B: +x hacia la otra orilla y +y hacia la izquierda, contra la corriente."
         }
       ],
       "tags": [
@@ -994,7 +994,7 @@
     {
       "id": "t2_v_010",
       "number": 10,
-      "version": 1,
+      "version": 2,
       "title": "Reconstruir el viento",
       "course": "1bach",
       "topic": "t2",
@@ -1085,7 +1085,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_v_010.svg",
-          "alt": "Suma que debe cerrar el paralelogramo"
+          "alt": "Dos paneles a escala, con +x hacia el este y +y hacia el norte. Izquierda: plano de posiciones en metros; el dron va en línea recta desde O hasta el punto (160; 100) m en 20 s. Derecha: plano de velocidades en m/s con la velocidad del dron respecto al aire, (6; 8) m/s. No se dibujan la velocidad respecto a tierra ni la del viento."
         }
       ],
       "tags": [

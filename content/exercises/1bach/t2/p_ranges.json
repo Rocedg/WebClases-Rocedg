@@ -3,7 +3,7 @@
     {
       "id": "t2_p_008",
       "number": 38,
-      "version": 1,
+      "version": 2,
       "title": "Dos ángulos para una diana elevada",
       "course": "1bach",
       "topic": "t2",
@@ -68,7 +68,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_p_008.svg",
-          "alt": "Diana (20,5): dos trayectorias posibles"
+          "alt": "Esquema sin escala del plano vertical. Desde O, en el suelo, se lanzan proyectiles a 20 m/s hacia una diana situada en (20; 5) m. Se dibujan dos trayectorias que llegan a la diana: un tiro bajo, casi tendido, y un tiro alto, mucho más curvado. No se indican los ángulos. La gravedad apunta hacia abajo."
         }
       ],
       "tags": [
@@ -101,7 +101,7 @@
     {
       "id": "t2_p_009",
       "number": 39,
-      "version": 1,
+      "version": 2,
       "title": "Ángulos complementarios: mismo alcance",
       "course": "1bach",
       "topic": "t2",
@@ -178,7 +178,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_p_009.svg",
-          "alt": "30° y 60°: mismo punto, diferente vuelo"
+          "alt": "Esquema sin escala del plano vertical. Desde O, en el suelo, salen dos proyectiles a 10 m/s: uno a 30° y otro a 60° sobre la horizontal. El de 60° sube más alto; los dos vuelven al suelo en el mismo punto. La gravedad apunta hacia abajo."
         }
       ],
       "tags": [
@@ -211,7 +211,7 @@
     {
       "id": "t2_p_010",
       "number": 40,
-      "version": 1,
+      "version": 2,
       "title": "Velocidad mínima para una condición de ángulo fijo",
       "course": "1bach",
       "topic": "t2",
@@ -277,7 +277,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_p_010.svg",
-          "alt": "Diana (12,3), salida a 45°"
+          "alt": "Esquema sin escala del plano vertical. Un lanzador en O, en el suelo, dispara a 45° sobre la horizontal con una rapidez v₀ desconocida. La trayectoria parabólica pasa por el punto (12; 3) m, marcado, y sigue hasta el suelo. La gravedad apunta hacia abajo."
         }
       ],
       "tags": [
@@ -310,7 +310,7 @@
     {
       "id": "t2_p_011",
       "number": 41,
-      "version": 1,
+      "version": 2,
       "title": "Qué cambia al duplicar la componente horizontal",
       "course": "1bach",
       "topic": "t2",
@@ -375,7 +375,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_p_011.svg",
-          "alt": "Componentes horizontales distintas; Componente vertical común"
+          "alt": "Esquema sin escala del plano vertical. Desde O, en el suelo, salen dos pelotas: A con velocidad inicial (6; 8) m/s y B con (12; 8) m/s. Las dos describen parábolas que vuelven al suelo; B llega más lejos. La gravedad apunta hacia abajo."
         }
       ],
       "tags": [
@@ -408,7 +408,7 @@
     {
       "id": "t2_p_012",
       "number": 42,
-      "version": 1,
+      "version": 2,
       "title": "Proyecto de cuatro gráficas desde una trayectoria",
       "course": "1bach",
       "topic": "t2",
@@ -511,7 +511,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_p_012.svg",
-          "alt": "Pelota desde 4 m: tres estados a representar"
+          "alt": "Esquema sin escala del plano vertical. La pelota sale de (0; 4) m, en lo alto de una plataforma de 4 m cuya cara derecha está sobre el eje y, con el origen O a su pie. Su velocidad inicial es (6; 8) m/s, hacia arriba y a la derecha. Sube, pasa por la cima y llega al suelo más a la derecha. La gravedad apunta hacia abajo."
         }
       ],
       "tags": [
@@ -544,7 +544,7 @@
     {
       "id": "t2_p_013",
       "number": 43,
-      "version": 1,
+      "version": 2,
       "title": "Tiro sobre un plano inclinado",
       "course": "1bach",
       "topic": "t2",
@@ -647,7 +647,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_p_013.svg",
-          "alt": "Proyectil contra y=0,5x"
+          "alt": "Esquema sin escala del plano vertical. Desde el origen O, al pie de una rampa recta que sube hacia la derecha con superficie y = 0,5x, sale un proyectil con velocidad (10; 15) m/s. Describe una parábola por encima de la rampa y vuelve a tocarla más arriba; el punto de contacto no se indica. La gravedad apunta hacia abajo."
         }
       ],
       "tags": [
@@ -680,7 +680,7 @@
     {
       "id": "t2_p_014",
       "number": 44,
-      "version": 1,
+      "version": 2,
       "title": "Auditar signos, raíces y unidades",
       "course": "1bach",
       "topic": "t2",
@@ -758,7 +758,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_p_014.svg",
-          "alt": "Caso para auditar: salida elevada"
+          "alt": "Esquema sin escala del plano vertical. La pelota sale de (0; 5) m, en lo alto de una plataforma de 5 m cuya cara derecha está sobre el eje y, con el origen O a su pie. Su velocidad inicial es (6; 10) m/s, hacia arriba y a la derecha. Sube, pasa por la cima y llega al suelo más a la derecha. La gravedad apunta hacia abajo."
         }
       ],
       "tags": [

@@ -1,13 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 290" role="img" aria-labelledby="title desc" style="max-width:100%;height:auto"><title id="title">Lanzamiento desde una plataforma móvil</title><desc id="desc">Suelo y plataforma: posiciones en el impacto. Todos los datos necesarios se detallan en el enunciado.</desc><defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse"><path d="M0 0 L7 3.5 L0 7Z" fill="context-stroke"/></marker></defs><rect width="100%" height="100%" fill="white"/><g font-family="Arial,sans-serif" font-size="13" fill="#203148">
-<text x="16" y="23" font-size="15" font-weight="bold">Suelo y plataforma: posiciones en el impacto</text>
-<path d="M79.26 65V225 M65 213.97H450" stroke="#e1e7ee" fill="none"/><text x="79.26" y="245" text-anchor="middle">0</text><text x="57" y="217.97" text-anchor="end">0</text>
-<path d="M168.38 65V225 M65 179.48H450" stroke="#e1e7ee" fill="none"/><text x="168.38" y="245" text-anchor="middle">3.01</text><text x="57" y="183.48" text-anchor="end">1.25</text>
-<path d="M257.50 65V225 M65 145.00H450" stroke="#e1e7ee" fill="none"/><text x="257.50" y="245" text-anchor="middle">6.02</text><text x="57" y="149.00" text-anchor="end">2.5</text>
-<path d="M346.62 65V225 M65 110.52H450" stroke="#e1e7ee" fill="none"/><text x="346.62" y="245" text-anchor="middle">9.02</text><text x="57" y="114.52" text-anchor="end">3.75</text>
-<path d="M435.74 65V225 M65 76.03H450" stroke="#e1e7ee" fill="none"/><text x="435.74" y="245" text-anchor="middle">12</text><text x="57" y="80.03" text-anchor="end">5</text>
-<path d="M65 213.97H462 M79.26 225V55" stroke="#516276" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/><text x="450" y="269" text-anchor="end">x (m)</text><text x="65" y="49">y (m)</text>
-<polyline points="79.26,76.03 82.72,76.07 86.17,76.19 89.63,76.38 93.09,76.65 96.54,76.99 100.00,77.41 103.46,77.91 106.91,78.49 110.37,79.14 113.83,79.87 117.28,80.67 120.74,81.55 124.20,82.51 127.65,83.54 131.11,84.66 134.57,85.84 138.02,87.11 141.48,88.45 144.94,89.87 148.40,91.36 151.85,92.93 155.31,94.58 158.77,96.30 162.22,98.10 165.68,99.98 169.14,101.93 172.59,103.97 176.05,106.07 179.51,108.26 182.96,110.52 186.42,112.85 189.88,115.27 193.33,117.76 196.79,120.33 200.25,122.97 203.70,125.69 207.16,128.49 210.62,131.36 214.07,134.31 217.53,137.34 220.99,140.44 224.44,143.62 227.90,146.88 231.36,150.21 234.81,153.62 238.27,157.11 241.73,160.67 245.19,164.31 248.64,168.03 252.10,171.82 255.56,175.69 259.01,179.64 262.47,183.66 265.93,187.76 269.38,191.93 272.84,196.19 276.30,200.52 279.75,204.92 283.21,209.41 286.67,213.97" fill="none" stroke="#245b99" stroke-width="2.5"/><text x="185" y="44" fill="#245b99">bola</text>
-<polyline points="79.26,76.03 197.78,76.03" fill="none" stroke="#18776b" stroke-width="2.5"/><text x="290" y="44" fill="#18776b">plataforma</text>
-<circle cx="286.67" cy="213.97" r="3.5" fill="#245b99"/><text x="291.67" y="206.97">impacto</text>
-<circle cx="197.78" cy="213.97" r="3.5" fill="#245b99"/><text x="202.78" y="206.97">pie móvil</text>
-</g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc" style="max-width:100%;height:auto">
+<title id="title">Lanzamiento desde una plataforma en movimiento</title>
+<desc id="desc">Esquema sin escala del plano vertical en t = 0. Una plataforma de 5 m de altura avanza hacia la derecha a 4 m/s respecto al suelo; su borde está en x = 0 y el origen O en el suelo, bajo el borde. Desde el borde se lanza una bola horizontalmente hacia delante a 3 m/s respecto a la plataforma. La gravedad apunta hacia abajo. No se dibuja la trayectoria.</desc>
+<defs><marker id="ah-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#1f5fa8"/></marker><marker id="ah-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#b8432f"/></marker><marker id="ah-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#16756a"/></marker><marker id="ah-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#6d4fb0"/></marker><marker id="ah-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#55657a"/></marker><marker id="ah-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#1f2d44"/></marker></defs>
+<rect width="640" height="360" fill="#ffffff"/>
+<g font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#1f2d44" stroke-linecap="round" stroke-linejoin="round">
+<text x="304.0" y="279.0" text-anchor="end" font-weight="bold">O</text>
+<path d="M40.0 261.0L594.0 261.0" fill="none" stroke="#55657a" stroke-width="1.6" marker-end="url(#ah-muted)"/>
+<path d="M310.0 309.0L310.0 37.0" fill="none" stroke="#55657a" stroke-width="1.6" marker-end="url(#ah-muted)"/>
+<text x="600.0" y="266.0" font-size="14">x (m)</text>
+<text x="318.0" y="45.0" font-size="14">y (m)</text>
+<rect x="160.0" y="111.0" width="150" height="132.0" fill="#eef2f7" stroke="#55657a" stroke-width="1.5"/>
+<circle cx="182.0" cy="252.0" r="9" fill="#ffffff" stroke="#55657a" stroke-width="2"/>
+<circle cx="288.0" cy="252.0" r="9" fill="#ffffff" stroke="#55657a" stroke-width="2"/>
+<path d="M190.0 151.0L280.0 151.0" fill="none" stroke="#16756a" stroke-width="3" marker-end="url(#ah-green)"/>
+<text x="235.0" y="175.0" text-anchor="middle" fill="#16756a" font-weight="bold" stroke="#ffffff" stroke-width="4" paint-order="stroke">plataforma: 4 m/s</text>
+<text x="235.0" y="193.0" text-anchor="middle" fill="#16756a" font-size="13" stroke="#ffffff" stroke-width="4" paint-order="stroke">respecto al suelo</text>
+<path d="M146.0 261.0L146.0 111.0" fill="none" stroke="#1f2d44" stroke-width="1.4" marker-start="url(#ah-ink)" marker-end="url(#ah-ink)"/>
+<text x="139.0" y="191.0" text-anchor="end" stroke="#ffffff" stroke-width="4" paint-order="stroke">5 m</text>
+<circle cx="310.0" cy="111.0" r="6" fill="#1f5fa8"/>
+<path d="M310.0 111.0L370.0 111.0" fill="none" stroke="#b8432f" stroke-width="3" marker-end="url(#ah-red)"/>
+<text x="376.0" y="116.0" fill="#b8432f" font-weight="bold" stroke="#ffffff" stroke-width="4" paint-order="stroke">bola: 3 m/s respecto a la plataforma</text>
+<path d="M535.0 171.0L535.0 205.0" fill="none" stroke="#1f2d44" stroke-width="2.2" marker-end="url(#ah-ink)"/>
+<text x="543.0" y="197.0" font-size="16" font-style="italic">g</text>
+<text x="630.0" y="352.0" text-anchor="end" fill="#55657a" font-size="12" font-style="italic">Esquema sin escala</text>
+</g>
+</svg>

@@ -3,7 +3,7 @@
     {
       "id": "t2_i_001",
       "number": 53,
-      "version": 1,
+      "version": 2,
       "title": "Rumbo de un dron para llegar exactamente al norte",
       "course": "1bach",
       "topic": "t2",
@@ -94,7 +94,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_i_001.svg",
-          "alt": "Triángulo de velocidades para anular deriva"
+          "alt": "Esquema sin escala en vista horizontal, con +x hacia el este y +y hacia el norte. El dron sale del origen O y debe llegar al punto (0; 240) m, justo al norte; una línea discontinua marca ese trayecto. Sopla un viento de (6; 0) m/s hacia el este. No se dibuja la velocidad del dron respecto al aire."
         }
       ],
       "tags": [
@@ -127,7 +127,7 @@
     {
       "id": "t2_i_002",
       "number": 54,
-      "version": 1,
+      "version": 2,
       "title": "Pelota desde una grada",
       "course": "1bach",
       "topic": "t2",
@@ -229,7 +229,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_i_002.svg",
-          "alt": "Grada de 7,2 m y componentes (12,9)"
+          "alt": "Esquema sin escala del plano vertical. La pelota sale de (0; 7,2) m, en lo alto de una grada de 7,2 m cuya cara derecha está sobre el eje y, con el origen O a su pie. Su velocidad inicial es (12; 9) m/s, de 15 m/s, hacia arriba y a la derecha. Sube, pasa por la cima y llega al suelo más a la derecha. La gravedad apunta hacia abajo."
         }
       ],
       "tags": [
@@ -262,7 +262,7 @@
     {
       "id": "t2_i_003",
       "number": 55,
-      "version": 1,
+      "version": 2,
       "title": "Diana elevada y techo limitante",
       "course": "1bach",
       "topic": "t2",
@@ -339,7 +339,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_i_003.svg",
-          "alt": "Dos trayectorias y techo a 4 m"
+          "alt": "Esquema sin escala del plano vertical. Un lanzador en O, en el suelo, dispara proyectiles a 10 m/s con un ángulo θ por determinar. Hay una diana en (5; 1,25) m y un techo horizontal a y = 4 m. No se dibujan trayectorias."
         }
       ],
       "tags": [
@@ -372,7 +372,7 @@
     {
       "id": "t2_i_004",
       "number": 56,
-      "version": 1,
+      "version": 2,
       "title": "Lanzamiento horizontal hacia una rampa descendente",
       "course": "1bach",
       "topic": "t2",
@@ -475,7 +475,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_i_004.svg",
-          "alt": "Rampa descendente y=−0,4x"
+          "alt": "Esquema sin escala del plano vertical. La bola sale horizontalmente hacia +x a 5 m/s desde (0; 8) m, en lo alto de una plataforma cuya cara derecha está sobre el eje y. Desde el origen O baja hacia la derecha una rampa recta, y = −0,4x. La bola describe media parábola hasta tocar la rampa; el punto de contacto no se indica. La gravedad apunta hacia abajo."
         }
       ],
       "tags": [
@@ -508,7 +508,7 @@
     {
       "id": "t2_i_005",
       "number": 57,
-      "version": 1,
+      "version": 2,
       "title": "Movimiento paramétrico con instante de rapidez mínima",
       "course": "1bach",
       "topic": "t2",
@@ -642,7 +642,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_i_005.svg",
-          "alt": "Trayectoria del robot y mínimo de rapidez"
+          "alt": "Esquema sin escala del plano xy. La trayectoria del robot empieza en t = 0 en el punto (0; 2) m, sobre el eje y, se desplaza hacia x negativa mientras sube, gira y vuelve al eje y, en el punto que ocupa en t = 4 s, más arriba. Tiene forma de parábola abierta hacia +x. No se marca el punto de giro."
         }
       ],
       "tags": [
@@ -675,7 +675,7 @@
     {
       "id": "t2_i_006",
       "number": 58,
-      "version": 1,
+      "version": 2,
       "title": "Reconstruir un tiro desde el impacto",
       "course": "1bach",
       "topic": "t2",
@@ -752,7 +752,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_i_006.svg",
-          "alt": "Datos de impacto para reconstruir la salida"
+          "alt": "Esquema sin escala del plano vertical. Una bola sale horizontalmente hacia +x desde lo alto de una plataforma de altura h desconocida, con el origen O a su pie. Al llegar al suelo su velocidad tiene módulo 13 m/s y apunta hacia abajo y a la derecha; su componente horizontal es de 5 m/s. La gravedad apunta hacia abajo."
         }
       ],
       "tags": [
@@ -785,7 +785,7 @@
     {
       "id": "t2_i_007",
       "number": 59,
-      "version": 1,
+      "version": 2,
       "title": "De una gráfica angular al vector aceleración",
       "course": "1bach",
       "topic": "t2",
@@ -874,7 +874,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_i_007.svg",
-          "alt": "Disco acelerado de radio 0,5 m; ω=2+2t entre 0 y 3 s"
+          "alt": "Dos paneles. Izquierda: esquema sin escala de un disco de radio 0,5 m que gira alrededor de su centro O en sentido antihorario, con un punto del borde marcado. Derecha: gráfica a escala de la velocidad angular ω(t) = 2 + 2t, en rad/s, entre 0 y 3 s: una recta que sube de 2 rad/s a 8 rad/s."
         }
       ],
       "tags": [
@@ -907,7 +907,7 @@
     {
       "id": "t2_i_008",
       "number": 60,
-      "version": 1,
+      "version": 2,
       "title": "Simulacro: salida tangente desde una rueda",
       "course": "1bach",
       "topic": "t2",
@@ -1047,7 +1047,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_i_008.svg",
-          "alt": "Guía circular y vuelo desde el punto más alto"
+          "alt": "Esquema sin escala del plano vertical. Una guía circular de radio 1 m tiene su centro en (0; 5) m, sobre el eje y, por encima del suelo y = 0. Una bola recorre la guía en sentido horario a 4 m/s y se suelta en t = 0 en el punto más alto de la guía, que está marcado. No se dibuja el vuelo posterior."
         }
       ],
       "tags": [

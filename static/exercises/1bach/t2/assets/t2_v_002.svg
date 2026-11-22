@@ -1,12 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 290" role="img" aria-labelledby="title desc" style="max-width:100%;height:auto"><title id="title">Desplazarse no es medir desde el origen</title><desc id="desc">Flecha de A hacia B. Todos los datos necesarios se detallan en el enunciado.</desc><defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse"><path d="M0 0 L7 3.5 L0 7Z" fill="context-stroke"/></marker></defs><rect width="100%" height="100%" fill="white"/><g font-family="Arial,sans-serif" font-size="13" fill="#203148">
-<text x="16" y="23" font-size="15" font-weight="bold">Flecha de A hacia B</text>
-<path d="M79.26 65V225 M65 213.97H450" stroke="#e1e7ee" fill="none"/><text x="79.26" y="245" text-anchor="middle">-4</text><text x="57" y="217.97" text-anchor="end">-1</text>
-<path d="M168.38 65V225 M65 179.48H450" stroke="#e1e7ee" fill="none"/><text x="168.38" y="245" text-anchor="middle">0.813</text><text x="57" y="183.48" text-anchor="end">1</text>
-<path d="M257.50 65V225 M65 145.00H450" stroke="#e1e7ee" fill="none"/><text x="257.50" y="245" text-anchor="middle">5.62</text><text x="57" y="149.00" text-anchor="end">3</text>
-<path d="M346.62 65V225 M65 110.52H450" stroke="#e1e7ee" fill="none"/><text x="346.62" y="245" text-anchor="middle">10.4</text><text x="57" y="114.52" text-anchor="end">5</text>
-<path d="M435.74 65V225 M65 76.03H450" stroke="#e1e7ee" fill="none"/><text x="435.74" y="245" text-anchor="middle">15.2</text><text x="57" y="80.03" text-anchor="end">7</text>
-<path d="M65 196.72H462 M153.33 225V55" stroke="#516276" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/><text x="450" y="269" text-anchor="end">x (m)</text><text x="65" y="49">y (m)</text>
-<path d="M190.37,213.97 L79.26,76.03" stroke="#ba513c" stroke-width="2.5" marker-end="url(#arrow)"/><text x="84.26" y="69.03">Δr</text>
-<circle cx="190.37" cy="213.97" r="3.5" fill="#245b99"/><text x="195.37" y="206.97">A</text>
-<circle cx="79.26" cy="76.03" r="3.5" fill="#245b99"/><text x="84.26" y="69.03">B</text>
-</g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc" style="max-width:100%;height:auto">
+<title id="title">Puntos inicial y final de un móvil</title>
+<desc id="desc">Plano xy a escala, en metros, con +x hacia el este y +y hacia el norte. Están marcados el punto inicial A (2; −1) m, en el cuarto cuadrante, y el punto final B (−4; 7) m, en el segundo cuadrante. No se dibuja el desplazamiento.</desc>
+<defs><marker id="ah-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#1f5fa8"/></marker><marker id="ah-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#b8432f"/></marker><marker id="ah-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#16756a"/></marker><marker id="ah-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#6d4fb0"/></marker><marker id="ah-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#55657a"/></marker><marker id="ah-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#1f2d44"/></marker></defs>
+<rect width="640" height="360" fill="#ffffff"/>
+<g font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#1f2d44" stroke-linecap="round" stroke-linejoin="round">
+<path d="M165.0 30.0V320.0M223.0 30.0V320.0M281.0 30.0V320.0M339.0 30.0V320.0M397.0 30.0V320.0M455.0 30.0V320.0M165.0 320.0H455.0M165.0 262.0H455.0M165.0 204.0H455.0M165.0 146.0H455.0M165.0 88.0H455.0M165.0 30.0H455.0" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="333.0" y="280.0" text-anchor="end" font-weight="bold">O</text>
+<text x="165.0" y="338.0" text-anchor="middle" fill="#55657a" font-size="13">−6</text>
+<text x="223.0" y="338.0" text-anchor="middle" fill="#55657a" font-size="13">−4</text>
+<text x="281.0" y="338.0" text-anchor="middle" fill="#55657a" font-size="13">−2</text>
+<text x="397.0" y="338.0" text-anchor="middle" fill="#55657a" font-size="13">2</text>
+<text x="455.0" y="338.0" text-anchor="middle" fill="#55657a" font-size="13">4</text>
+<text x="158.0" y="324.5" text-anchor="end" fill="#55657a" font-size="13">−2</text>
+<text x="158.0" y="208.5" text-anchor="end" fill="#55657a" font-size="13">2</text>
+<text x="158.0" y="150.5" text-anchor="end" fill="#55657a" font-size="13">4</text>
+<text x="158.0" y="92.5" text-anchor="end" fill="#55657a" font-size="13">6</text>
+<text x="158.0" y="34.5" text-anchor="end" fill="#55657a" font-size="13">8</text>
+<path d="M165.0 262.0L469.0 262.0" fill="none" stroke="#55657a" stroke-width="1.6" marker-end="url(#ah-muted)"/>
+<path d="M339.0 320.0L339.0 16.0" fill="none" stroke="#55657a" stroke-width="1.6" marker-end="url(#ah-muted)"/>
+<text x="475.0" y="267.0" font-size="14">x (m)</text>
+<text x="347.0" y="24.0" font-size="14">y (m)</text>
+<circle cx="397.0" cy="291.0" r="5.5" fill="#1f5fa8"/>
+<text x="407.0" y="283.0" fill="#1f5fa8" font-weight="bold" stroke="#ffffff" stroke-width="4" paint-order="stroke">A (2; −1) m</text>
+<circle cx="223.0" cy="59.0" r="5.5" fill="#1f5fa8"/>
+<text x="233.0" y="51.0" fill="#1f5fa8" font-weight="bold" stroke="#ffffff" stroke-width="4" paint-order="stroke">B (−4; 7) m</text>
+<text x="630.0" y="22.0" text-anchor="end" fill="#55657a" font-size="13">+x: este · +y: norte</text>
+</g>
+</svg>

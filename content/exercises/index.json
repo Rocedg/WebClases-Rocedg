@@ -1,7 +1,7 @@
 {
   "version": 1,
   "generated": true,
-  "generated_at": "2026-11-22T10:36:41Z",
+  "generated_at": "2026-11-22T19:11:48Z",
   "source": "content/exercises",
   "exercises": [
     {
@@ -4453,7 +4453,7 @@
     },
     {
       "id": "t2_v_001",
-      "version": 1,
+      "version": 2,
       "title": "Una posición en el segundo cuadrante",
       "course": "1bach",
       "block": "Vectores y composición",
@@ -4476,7 +4476,7 @@
     },
     {
       "id": "t2_v_002",
-      "version": 1,
+      "version": 2,
       "title": "Desplazarse no es medir desde el origen",
       "course": "1bach",
       "block": "Vectores y composición",
@@ -4499,7 +4499,7 @@
     },
     {
       "id": "t2_v_003",
-      "version": 1,
+      "version": 2,
       "title": "Velocidad media y datos insuficientes para rapidez",
       "course": "1bach",
       "block": "Vectores y composición",
@@ -4522,7 +4522,7 @@
     },
     {
       "id": "t2_v_004",
-      "version": 1,
+      "version": 2,
       "title": "Aceleración media de un giro",
       "course": "1bach",
       "block": "Vectores y composición",
@@ -4545,7 +4545,7 @@
     },
     {
       "id": "t2_v_005",
-      "version": 1,
+      "version": 2,
       "title": "Camino quebrado y cuerda entre extremos",
       "course": "1bach",
       "block": "Vectores y composición",
@@ -4568,7 +4568,7 @@
     },
     {
       "id": "t2_v_006",
-      "version": 1,
+      "version": 2,
       "title": "Componentes de una velocidad oblicua",
       "course": "1bach",
       "block": "Vectores y composición",
@@ -4591,7 +4591,7 @@
     },
     {
       "id": "t2_v_007",
-      "version": 1,
+      "version": 2,
       "title": "Tangente y aceleración en un vuelo",
       "course": "1bach",
       "block": "Vectores y composición",
@@ -4614,7 +4614,7 @@
     },
     {
       "id": "t2_v_008",
-      "version": 1,
+      "version": 2,
       "title": "Barca que apunta a la otra orilla",
       "course": "1bach",
       "block": "Vectores y composición",
@@ -4637,7 +4637,7 @@
     },
     {
       "id": "t2_v_009",
-      "version": 1,
+      "version": 2,
       "title": "Elegir ejes sin cambiar la física",
       "course": "1bach",
       "block": "Vectores y composición",
@@ -4660,7 +4660,7 @@
     },
     {
       "id": "t2_v_010",
-      "version": 1,
+      "version": 2,
       "title": "Reconstruir el viento",
       "course": "1bach",
       "block": "Vectores y composición",
@@ -4683,7 +4683,7 @@
     },
     {
       "id": "t2_f_001",
-      "version": 1,
+      "version": 2,
       "title": "Dos funciones y un punto del plano",
       "course": "1bach",
       "block": "Funciones paramétricas",
@@ -4706,7 +4706,7 @@
     },
     {
       "id": "t2_f_002",
-      "version": 1,
+      "version": 2,
       "title": "Derivar una posición vectorial",
       "course": "1bach",
       "block": "Funciones paramétricas",
@@ -4729,7 +4729,7 @@
     },
     {
       "id": "t2_f_003",
-      "version": 1,
+      "version": 2,
       "title": "De coordenadas a trayectoria",
       "course": "1bach",
       "block": "Funciones paramétricas",
@@ -4752,7 +4752,7 @@
     },
     {
       "id": "t2_f_004",
-      "version": 1,
+      "version": 2,
       "title": "Trayectoria recta con rapidez variable",
       "course": "1bach",
       "block": "Funciones paramétricas",
@@ -4775,7 +4775,7 @@
     },
     {
       "id": "t2_f_005",
-      "version": 1,
+      "version": 2,
       "title": "Eliminar tiempo sin perder el dominio físico",
       "course": "1bach",
       "block": "Funciones paramétricas",
@@ -4798,7 +4798,7 @@
     },
     {
       "id": "t2_f_006",
-      "version": 1,
+      "version": 2,
       "title": "Una parábola espacial y cuatro gráficas",
       "course": "1bach",
       "block": "Funciones paramétricas",
@@ -4821,7 +4821,7 @@
     },
     {
       "id": "t2_f_007",
-      "version": 1,
+      "version": 2,
       "title": "Misma curva, distinto ritmo",
       "course": "1bach",
       "block": "Funciones paramétricas",
@@ -4844,7 +4844,7 @@
     },
     {
       "id": "t2_f_008",
-      "version": 1,
+      "version": 2,
       "title": "Integrar dos componentes de velocidad",
       "course": "1bach",
       "block": "Funciones paramétricas",
@@ -4867,7 +4867,7 @@
     },
     {
       "id": "t2_f_009",
-      "version": 1,
+      "version": 2,
       "title": "Cruzar una altura no es acertar en un punto",
       "course": "1bach",
       "block": "Funciones paramétricas",
@@ -4890,7 +4890,7 @@
     },
     {
       "id": "t2_f_010",
-      "version": 1,
+      "version": 3,
       "title": "Auditoría de una parametrización",
       "course": "1bach",
       "block": "Funciones paramétricas",
@@ -4913,7 +4913,7 @@
     },
     {
       "id": "t2_h_001",
-      "version": 1,
+      "version": 2,
       "title": "Salida horizontal y dirección de impacto",
       "course": "1bach",
       "block": "Tiro horizontal",
@@ -4936,7 +4936,7 @@
     },
     {
       "id": "t2_h_002",
-      "version": 1,
+      "version": 2,
       "title": "Velocidad necesaria para una marca",
       "course": "1bach",
       "block": "Tiro horizontal",
@@ -4959,7 +4959,7 @@
     },
     {
       "id": "t2_h_003",
-      "version": 1,
+      "version": 2,
       "title": "Altura inferida desde el alcance",
       "course": "1bach",
       "block": "Tiro horizontal",
@@ -4982,7 +4982,7 @@
     },
     {
       "id": "t2_h_004",
-      "version": 1,
+      "version": 2,
       "title": "Dos velocidades desde la misma plataforma",
       "course": "1bach",
       "block": "Tiro horizontal",
@@ -5005,7 +5005,7 @@
     },
     {
       "id": "t2_h_005",
-      "version": 1,
+      "version": 2,
       "title": "Cambiar la altura: una ley de raíz cuadrada",
       "course": "1bach",
       "block": "Tiro horizontal",
@@ -5028,7 +5028,7 @@
     },
     {
       "id": "t2_h_006",
-      "version": 1,
+      "version": 2,
       "title": "Cuatro gráficas de una salida horizontal",
       "course": "1bach",
       "block": "Tiro horizontal",
@@ -5051,7 +5051,7 @@
     },
     {
       "id": "t2_h_007",
-      "version": 1,
+      "version": 3,
       "title": "Elegir trayectoria y componentes compatibles",
       "course": "1bach",
       "block": "Tiro horizontal",
@@ -5074,7 +5074,7 @@
     },
     {
       "id": "t2_h_008",
-      "version": 1,
+      "version": 2,
       "title": "Contacto con una rampa ascendente",
       "course": "1bach",
       "block": "Tiro horizontal",
@@ -5097,7 +5097,7 @@
     },
     {
       "id": "t2_h_009",
-      "version": 1,
+      "version": 2,
       "title": "Lanzamiento desde una plataforma móvil",
       "course": "1bach",
       "block": "Tiro horizontal",
@@ -5120,7 +5120,7 @@
     },
     {
       "id": "t2_h_010",
-      "version": 1,
+      "version": 2,
       "title": "Laboratorio: estimar la velocidad de salida",
       "course": "1bach",
       "block": "Tiro horizontal",
@@ -5143,7 +5143,7 @@
     },
     {
       "id": "t2_p_001",
-      "version": 1,
+      "version": 2,
       "title": "Un lanzamiento hacia la izquierda",
       "course": "1bach",
       "block": "Tiro parabólico",
@@ -5166,7 +5166,7 @@
     },
     {
       "id": "t2_p_002",
-      "version": 1,
+      "version": 2,
       "title": "Ecuaciones con origen no situado en la salida",
       "course": "1bach",
       "block": "Tiro parabólico",
@@ -5189,7 +5189,7 @@
     },
     {
       "id": "t2_p_003",
-      "version": 1,
+      "version": 2,
       "title": "Raíces de regreso al mismo nivel",
       "course": "1bach",
       "block": "Tiro parabólico",
@@ -5212,7 +5212,7 @@
     },
     {
       "id": "t2_p_004",
-      "version": 1,
+      "version": 2,
       "title": "Alcance y condición de igual altura",
       "course": "1bach",
       "block": "Tiro parabólico",
@@ -5235,7 +5235,7 @@
     },
     {
       "id": "t2_p_005",
-      "version": 1,
+      "version": 2,
       "title": "Altura máxima sin reposo total",
       "course": "1bach",
       "block": "Tiro parabólico",
@@ -5258,7 +5258,7 @@
     },
     {
       "id": "t2_p_006",
-      "version": 1,
+      "version": 2,
       "title": "Velocidad de impacto con ángulo y sentido",
       "course": "1bach",
       "block": "Tiro parabólico",
@@ -5281,7 +5281,7 @@
     },
     {
       "id": "t2_p_007",
-      "version": 1,
+      "version": 2,
       "title": "Vuelo desde un balcón y cambio de origen",
       "course": "1bach",
       "block": "Tiro parabólico",
@@ -5304,7 +5304,7 @@
     },
     {
       "id": "t2_p_008",
-      "version": 1,
+      "version": 2,
       "title": "Dos ángulos para una diana elevada",
       "course": "1bach",
       "block": "Tiro parabólico",
@@ -5327,7 +5327,7 @@
     },
     {
       "id": "t2_p_009",
-      "version": 1,
+      "version": 2,
       "title": "Ángulos complementarios: mismo alcance",
       "course": "1bach",
       "block": "Tiro parabólico",
@@ -5350,7 +5350,7 @@
     },
     {
       "id": "t2_p_010",
-      "version": 1,
+      "version": 2,
       "title": "Velocidad mínima para una condición de ángulo fijo",
       "course": "1bach",
       "block": "Tiro parabólico",
@@ -5373,7 +5373,7 @@
     },
     {
       "id": "t2_p_011",
-      "version": 1,
+      "version": 2,
       "title": "Qué cambia al duplicar la componente horizontal",
       "course": "1bach",
       "block": "Tiro parabólico",
@@ -5396,7 +5396,7 @@
     },
     {
       "id": "t2_p_012",
-      "version": 1,
+      "version": 2,
       "title": "Proyecto de cuatro gráficas desde una trayectoria",
       "course": "1bach",
       "block": "Tiro parabólico",
@@ -5419,7 +5419,7 @@
     },
     {
       "id": "t2_p_013",
-      "version": 1,
+      "version": 2,
       "title": "Tiro sobre un plano inclinado",
       "course": "1bach",
       "block": "Tiro parabólico",
@@ -5442,7 +5442,7 @@
     },
     {
       "id": "t2_p_014",
-      "version": 1,
+      "version": 2,
       "title": "Auditar signos, raíces y unidades",
       "course": "1bach",
       "block": "Tiro parabólico",
@@ -5465,7 +5465,7 @@
     },
     {
       "id": "t2_c_001",
-      "version": 1,
+      "version": 2,
       "title": "De revoluciones por minuto a periodo",
       "course": "1bach",
       "block": "Movimiento circular",
@@ -5488,7 +5488,7 @@
     },
     {
       "id": "t2_c_002",
-      "version": 1,
+      "version": 2,
       "title": "La rapidez del borde y el arco recorrido",
       "course": "1bach",
       "block": "Movimiento circular",
@@ -5511,7 +5511,7 @@
     },
     {
       "id": "t2_c_003",
-      "version": 1,
+      "version": 2,
       "title": "Cuatro tangentes de un mismo MCU",
       "course": "1bach",
       "block": "Movimiento circular",
@@ -5534,7 +5534,7 @@
     },
     {
       "id": "t2_c_004",
-      "version": 1,
+      "version": 2,
       "title": "Aceleración al centro en dos puntos",
       "course": "1bach",
       "block": "Movimiento circular",
@@ -5557,7 +5557,7 @@
     },
     {
       "id": "t2_c_005",
-      "version": 1,
+      "version": 2,
       "title": "Parametrizar un giro horario",
       "course": "1bach",
       "block": "Movimiento circular",
@@ -5580,7 +5580,7 @@
     },
     {
       "id": "t2_c_006",
-      "version": 1,
+      "version": 2,
       "title": "Las componentes oscilan aunque la rapidez sea fija",
       "course": "1bach",
       "block": "Movimiento circular",
@@ -5603,7 +5603,7 @@
     },
     {
       "id": "t2_c_007",
-      "version": 1,
+      "version": 2,
       "title": "Comparar radios exige decir qué permanece fijo",
       "course": "1bach",
       "block": "Movimiento circular",
@@ -5626,7 +5626,7 @@
     },
     {
       "id": "t2_c_008",
-      "version": 1,
+      "version": 2,
       "title": "Rueda frenada: aceleración total variable",
       "course": "1bach",
       "block": "Movimiento circular",
@@ -5649,7 +5649,7 @@
     },
     {
       "id": "t2_i_001",
-      "version": 1,
+      "version": 2,
       "title": "Rumbo de un dron para llegar exactamente al norte",
       "course": "1bach",
       "block": "Problemas integradores",
@@ -5672,7 +5672,7 @@
     },
     {
       "id": "t2_i_002",
-      "version": 1,
+      "version": 2,
       "title": "Pelota desde una grada",
       "course": "1bach",
       "block": "Problemas integradores",
@@ -5695,7 +5695,7 @@
     },
     {
       "id": "t2_i_003",
-      "version": 1,
+      "version": 2,
       "title": "Diana elevada y techo limitante",
       "course": "1bach",
       "block": "Problemas integradores",
@@ -5718,7 +5718,7 @@
     },
     {
       "id": "t2_i_004",
-      "version": 1,
+      "version": 2,
       "title": "Lanzamiento horizontal hacia una rampa descendente",
       "course": "1bach",
       "block": "Problemas integradores",
@@ -5741,7 +5741,7 @@
     },
     {
       "id": "t2_i_005",
-      "version": 1,
+      "version": 2,
       "title": "Movimiento paramétrico con instante de rapidez mínima",
       "course": "1bach",
       "block": "Problemas integradores",
@@ -5764,7 +5764,7 @@
     },
     {
       "id": "t2_i_006",
-      "version": 1,
+      "version": 2,
       "title": "Reconstruir un tiro desde el impacto",
       "course": "1bach",
       "block": "Problemas integradores",
@@ -5787,7 +5787,7 @@
     },
     {
       "id": "t2_i_007",
-      "version": 1,
+      "version": 2,
       "title": "De una gráfica angular al vector aceleración",
       "course": "1bach",
       "block": "Problemas integradores",
@@ -5810,7 +5810,7 @@
     },
     {
       "id": "t2_i_008",
-      "version": 1,
+      "version": 2,
       "title": "Simulacro: salida tangente desde una rueda",
       "course": "1bach",
       "block": "Problemas integradores",

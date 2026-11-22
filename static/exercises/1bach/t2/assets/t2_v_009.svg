@@ -1,11 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 290" role="img" aria-labelledby="title desc" style="max-width:100%;height:auto"><title id="title">Elegir ejes sin cambiar la física</title><desc id="desc">A: corriente +x; cruce +y. Todos los datos necesarios se detallan en el enunciado.</desc><defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse"><path d="M0 0 L7 3.5 L0 7Z" fill="context-stroke"/></marker></defs><rect width="100%" height="100%" fill="white"/><g font-family="Arial,sans-serif" font-size="13" fill="#203148">
-<text x="16" y="23" font-size="15" font-weight="bold">A: corriente +x; cruce +y</text>
-<path d="M79.26 65V225 M65 213.97H450" stroke="#e1e7ee" fill="none"/><text x="79.26" y="245" text-anchor="middle">0</text><text x="57" y="217.97" text-anchor="end">0</text>
-<path d="M168.38 65V225 M65 179.48H450" stroke="#e1e7ee" fill="none"/><text x="168.38" y="245" text-anchor="middle">24.1</text><text x="57" y="183.48" text-anchor="end">10</text>
-<path d="M257.50 65V225 M65 145.00H450" stroke="#e1e7ee" fill="none"/><text x="257.50" y="245" text-anchor="middle">48.1</text><text x="57" y="149.00" text-anchor="end">20</text>
-<path d="M346.62 65V225 M65 110.52H450" stroke="#e1e7ee" fill="none"/><text x="346.62" y="245" text-anchor="middle">72.2</text><text x="57" y="114.52" text-anchor="end">30</text>
-<path d="M435.74 65V225 M65 76.03H450" stroke="#e1e7ee" fill="none"/><text x="435.74" y="245" text-anchor="middle">96.2</text><text x="57" y="80.03" text-anchor="end">40</text>
-<path d="M65 213.97H462 M79.26 225V55" stroke="#516276" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/><text x="450" y="269" text-anchor="end">x (m)</text><text x="65" y="49">y (m)</text>
-<polyline points="79.26,76.03 227.41,76.03" fill="none" stroke="#245b99" stroke-width="2.5"/><text x="185" y="44" fill="#245b99">orilla</text>
-<polyline points="79.26,213.97 168.15,76.03" fill="none" stroke="#18776b" stroke-width="2.5"/><text x="290" y="44" fill="#18776b">ruta</text>
-</g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc" style="max-width:100%;height:auto">
+<title id="title">Un mismo cruce descrito con dos referencias</title>
+<desc id="desc">Esquema sin escala en dos paneles. Los dos muestran el mismo río, de 40 m de ancho, visto en planta: la corriente va hacia la derecha a 1,5 m/s y la barca apunta perpendicularmente a la otra orilla, a 2,5 m/s respecto al agua. Referencia A: +x hacia la derecha, en el sentido de la corriente, y +y hacia la otra orilla. Referencia B: +x hacia la otra orilla y +y hacia la izquierda, contra la corriente.</desc>
+<defs><marker id="ah-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#1f5fa8"/></marker><marker id="ah-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#b8432f"/></marker><marker id="ah-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#16756a"/></marker><marker id="ah-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#6d4fb0"/></marker><marker id="ah-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#55657a"/></marker><marker id="ah-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#1f2d44"/></marker></defs>
+<rect width="640" height="360" fill="#ffffff"/>
+<g font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#1f2d44" stroke-linecap="round" stroke-linejoin="round">
+<text x="20.0" y="40.0" font-size="15" font-weight="bold">Referencia A</text>
+<rect x="20" y="70" width="290" height="230" fill="#e6f0fa"/>
+<path d="M20.0 70.0L310.0 70.0" fill="none" stroke="#16756a" stroke-width="3"/>
+<path d="M20.0 300.0L310.0 300.0" fill="none" stroke="#16756a" stroke-width="3"/>
+<path d="M195.0 112.0L265.0 112.0" fill="none" stroke="#1f5fa8" stroke-width="2.6" marker-end="url(#ah-blue)"/>
+<text x="230.0" y="102.0" text-anchor="middle" fill="#1f5fa8" font-weight="bold" stroke="#ffffff" stroke-width="4" paint-order="stroke">1,5 m/s</text>
+<path d="M90.0 300.0L90.0 210.0" fill="none" stroke="#b8432f" stroke-width="3" marker-end="url(#ah-red)"/>
+<text x="100.0" y="230.0" fill="#b8432f" font-weight="bold" stroke="#ffffff" stroke-width="4" paint-order="stroke">2,5 m/s</text>
+<text x="100.0" y="248.0" fill="#b8432f" font-size="12" stroke="#ffffff" stroke-width="4" paint-order="stroke">(resp. agua)</text>
+<path d="M220.0 260.0L270.0 260.0" fill="none" stroke="#1f2d44" stroke-width="2" marker-end="url(#ah-ink)"/>
+<text x="274.0" y="265.0" font-weight="bold">+x</text>
+<path d="M220.0 260.0L220.0 210.0" fill="none" stroke="#1f2d44" stroke-width="2" marker-end="url(#ah-ink)"/>
+<text x="214.0" y="204.0" font-weight="bold">+y</text>
+<text x="310.0" y="320.0" text-anchor="end" fill="#55657a" font-size="13">40 m entre orillas</text>
+<text x="330.0" y="40.0" font-size="15" font-weight="bold">Referencia B</text>
+<rect x="330" y="70" width="290" height="230" fill="#e6f0fa"/>
+<path d="M330.0 70.0L620.0 70.0" fill="none" stroke="#16756a" stroke-width="3"/>
+<path d="M330.0 300.0L620.0 300.0" fill="none" stroke="#16756a" stroke-width="3"/>
+<path d="M505.0 112.0L575.0 112.0" fill="none" stroke="#1f5fa8" stroke-width="2.6" marker-end="url(#ah-blue)"/>
+<text x="540.0" y="102.0" text-anchor="middle" fill="#1f5fa8" font-weight="bold" stroke="#ffffff" stroke-width="4" paint-order="stroke">1,5 m/s</text>
+<path d="M400.0 300.0L400.0 210.0" fill="none" stroke="#b8432f" stroke-width="3" marker-end="url(#ah-red)"/>
+<text x="410.0" y="230.0" fill="#b8432f" font-weight="bold" stroke="#ffffff" stroke-width="4" paint-order="stroke">2,5 m/s</text>
+<text x="410.0" y="248.0" fill="#b8432f" font-size="12" stroke="#ffffff" stroke-width="4" paint-order="stroke">(resp. agua)</text>
+<path d="M530.0 260.0L530.0 210.0" fill="none" stroke="#1f2d44" stroke-width="2" marker-end="url(#ah-ink)"/>
+<text x="524.0" y="204.0" font-weight="bold">+x</text>
+<path d="M530.0 260.0L480.0 260.0" fill="none" stroke="#1f2d44" stroke-width="2" marker-end="url(#ah-ink)"/>
+<text x="456.0" y="265.0" font-weight="bold">+y</text>
+<text x="620.0" y="320.0" text-anchor="end" fill="#55657a" font-size="13">40 m entre orillas</text>
+<text x="630.0" y="352.0" text-anchor="end" fill="#55657a" font-size="12" font-style="italic">Esquema sin escala</text>
+</g>
+</svg>

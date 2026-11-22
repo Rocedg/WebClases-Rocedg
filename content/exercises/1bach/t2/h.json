@@ -3,7 +3,7 @@
     {
       "id": "t2_h_001",
       "number": 21,
-      "version": 1,
+      "version": 2,
       "title": "Salida horizontal y dirección de impacto",
       "course": "1bach",
       "topic": "t2",
@@ -86,7 +86,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_h_001.svg",
-          "alt": "Bola: altura 20 m, salida horizontal 6 m/s"
+          "alt": "Esquema sin escala del plano vertical. Una plataforma de 20 m de altura tiene su cara derecha sobre el eje y y el origen O a su pie. La bola sale horizontalmente hacia +x desde lo alto, a 6 m/s, y describe media parábola hasta el suelo. La gravedad apunta hacia abajo. No se indican el tiempo ni el alcance."
         }
       ],
       "tags": [
@@ -118,7 +118,7 @@
     {
       "id": "t2_h_002",
       "number": 22,
-      "version": 1,
+      "version": 2,
       "title": "Velocidad necesaria para una marca",
       "course": "1bach",
       "topic": "t2",
@@ -202,7 +202,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_h_002.svg",
-          "alt": "Mesa de 1,8 m y marca a 2,4 m"
+          "alt": "Esquema sin escala del plano vertical. Una mesa de 1,8 m de altura tiene su borde sobre el eje y y el origen O a su pie. La bola sale horizontalmente hacia +x con una velocidad v₀ desconocida y cae en una marca del suelo situada a 2,4 m del pie de la mesa. La gravedad apunta hacia abajo."
         }
       ],
       "tags": [
@@ -235,7 +235,7 @@
     {
       "id": "t2_h_003",
       "number": 23,
-      "version": 1,
+      "version": 2,
       "title": "Altura inferida desde el alcance",
       "course": "1bach",
       "topic": "t2",
@@ -288,7 +288,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_h_003.svg",
-          "alt": "Datos de fotografía: alcance 7,5 m"
+          "alt": "Esquema sin escala del plano vertical. Una plataforma de altura h desconocida tiene su cara derecha sobre el eje y y el origen O a su pie. La bola sale horizontalmente hacia +x a 5 m/s y llega al suelo a 7,5 m del pie de la plataforma. La gravedad apunta hacia abajo."
         }
       ],
       "tags": [
@@ -321,7 +321,7 @@
     {
       "id": "t2_h_004",
       "number": 24,
-      "version": 1,
+      "version": 2,
       "title": "Dos velocidades desde la misma plataforma",
       "course": "1bach",
       "topic": "t2",
@@ -424,7 +424,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_h_004.svg",
-          "alt": "Dos trayectorias desde altura 5 m"
+          "alt": "Esquema sin escala del plano vertical. Desde lo alto de una plataforma de 5 m, con el origen O a su pie, salen a la vez dos bolas horizontalmente hacia +x: A a 3 m/s y B a 6 m/s. Las dos describen medias parábolas hasta el suelo; la de B llega más lejos. La gravedad apunta hacia abajo."
         }
       ],
       "tags": [
@@ -457,7 +457,7 @@
     {
       "id": "t2_h_005",
       "number": 25,
-      "version": 1,
+      "version": 2,
       "title": "Cambiar la altura: una ley de raíz cuadrada",
       "course": "1bach",
       "topic": "t2",
@@ -534,7 +534,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_h_005.svg",
-          "alt": "Dos plataformas; salida común 4 m/s"
+          "alt": "Esquema sin escala en dos paneles dibujados con la misma escala. En los dos, la bola sale horizontalmente hacia +x a 4 m/s desde lo alto de una plataforma, con el origen O al pie. Prueba A: plataforma de 5 m. Prueba B: plataforma de 20 m. Cada bola describe media parábola hasta el suelo. La gravedad apunta hacia abajo."
         }
       ],
       "tags": [
@@ -567,7 +567,7 @@
     {
       "id": "t2_h_006",
       "number": 26,
-      "version": 1,
+      "version": 2,
       "title": "Cuatro gráficas de una salida horizontal",
       "course": "1bach",
       "topic": "t2",
@@ -658,7 +658,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_h_006.svg",
-          "alt": "Vuelo desde 12,8 m a 8 m/s"
+          "alt": "Esquema sin escala del plano vertical. Una plataforma de 12,8 m de altura tiene su cara derecha sobre el eje y y el origen O a su pie. La bola sale horizontalmente hacia +x a 8 m/s y describe media parábola hasta el suelo. La gravedad apunta hacia abajo."
         }
       ],
       "tags": [
@@ -691,7 +691,7 @@
     {
       "id": "t2_h_007",
       "number": 27,
-      "version": 2,
+      "version": 3,
       "title": "Elegir trayectoria y componentes compatibles",
       "course": "1bach",
       "topic": "t2",
@@ -780,7 +780,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_h_007.svg",
-          "alt": "Opciones A,C frente a B: coordenada horizontal; Opciones de velocidad vertical"
+          "alt": "Esquema sin escala del plano vertical. Una plataforma de 5 m de altura tiene su cara derecha sobre el eje y y el origen O a su pie. La bola sale horizontalmente hacia +x a 2 m/s y describe media parábola hasta el suelo. La gravedad apunta hacia abajo."
         }
       ],
       "tags": [
@@ -813,7 +813,7 @@
     {
       "id": "t2_h_008",
       "number": 28,
-      "version": 1,
+      "version": 2,
       "title": "Contacto con una rampa ascendente",
       "course": "1bach",
       "topic": "t2",
@@ -892,7 +892,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_h_008.svg",
-          "alt": "Salida horizontal y rampa y=x/2"
+          "alt": "Esquema sin escala del plano vertical. La bola sale horizontalmente hacia +x a 6 m/s desde (0; 10) m, en lo alto de una plataforma cuya cara derecha está sobre el eje y. Desde el origen O sube hacia la derecha una rampa recta, y = x/2. La bola describe media parábola hasta tocar la rampa; el punto de contacto no se indica. La gravedad apunta hacia abajo."
         }
       ],
       "tags": [
@@ -925,7 +925,7 @@
     {
       "id": "t2_h_009",
       "number": 29,
-      "version": 1,
+      "version": 2,
       "title": "Lanzamiento desde una plataforma móvil",
       "course": "1bach",
       "topic": "t2",
@@ -1028,7 +1028,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_h_009.svg",
-          "alt": "Suelo y plataforma: posiciones en el impacto"
+          "alt": "Esquema sin escala del plano vertical en t = 0. Una plataforma de 5 m de altura avanza hacia la derecha a 4 m/s respecto al suelo; su borde está en x = 0 y el origen O en el suelo, bajo el borde. Desde el borde se lanza una bola horizontalmente hacia delante a 3 m/s respecto a la plataforma. La gravedad apunta hacia abajo. No se dibuja la trayectoria."
         }
       ],
       "tags": [
@@ -1061,7 +1061,7 @@
     {
       "id": "t2_h_010",
       "number": 30,
-      "version": 1,
+      "version": 2,
       "title": "Laboratorio: estimar la velocidad de salida",
       "course": "1bach",
       "topic": "t2",
@@ -1126,7 +1126,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_h_010.svg",
-          "alt": "Linealización de datos de laboratorio"
+          "alt": "Gráfica a escala de R² (en m²) frente a h (en m) con los tres puntos medidos: (0,45; 0,81), (0,80; 1,44) y (1,25; 2,25). Los tres puntos parecen alineados. No se dibuja la recta de ajuste."
         }
       ],
       "tags": [

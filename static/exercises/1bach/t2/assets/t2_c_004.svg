@@ -1,19 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 290" role="img" aria-labelledby="title desc" style="max-width:100%;height:auto"><title id="title">Aceleración al centro en dos puntos</title><desc id="desc">Tangentes y centrípetas: R=3 m. Todos los datos necesarios se detallan en el enunciado.</desc><defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse"><path d="M0 0 L7 3.5 L0 7Z" fill="context-stroke"/></marker></defs><rect width="100%" height="100%" fill="white"/><g font-family="Arial,sans-serif" font-size="13" fill="#203148">
-<text x="16" y="23" font-size="15" font-weight="bold">Tangentes y centrípetas: R=3 m</text>
-<path d="M79.26 65V225 M65 213.97H450" stroke="#e1e7ee" fill="none"/><text x="79.26" y="245" text-anchor="middle">-4.5</text><text x="57" y="217.97" text-anchor="end">-4.5</text>
-<path d="M168.38 65V225 M65 179.48H450" stroke="#e1e7ee" fill="none"/><text x="168.38" y="245" text-anchor="middle">0.914</text><text x="57" y="183.48" text-anchor="end">-2.25</text>
-<path d="M257.50 65V225 M65 145.00H450" stroke="#e1e7ee" fill="none"/><text x="257.50" y="245" text-anchor="middle">6.33</text><text x="57" y="149.00" text-anchor="end">0</text>
-<path d="M346.62 65V225 M65 110.52H450" stroke="#e1e7ee" fill="none"/><text x="346.62" y="245" text-anchor="middle">11.7</text><text x="57" y="114.52" text-anchor="end">2.25</text>
-<path d="M435.74 65V225 M65 76.03H450" stroke="#e1e7ee" fill="none"/><text x="435.74" y="245" text-anchor="middle">17.2</text><text x="57" y="80.03" text-anchor="end">4.5</text>
-<path d="M65 145.00H462 M153.33 225V55" stroke="#516276" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/><text x="450" y="269" text-anchor="end">x (m)</text><text x="65" y="49">y (m)</text>
-<polyline points="202.72,145.00 202.56,141.39 202.11,137.81 201.35,134.27 200.30,130.79 198.96,127.41 197.33,124.13 195.44,120.98 193.28,117.98 190.88,115.14 188.25,112.49 185.40,110.04 182.36,107.80 179.14,105.80 175.75,104.03 172.23,102.52 168.59,101.27 164.86,100.29 161.06,99.59 157.21,99.16 153.33,99.02 149.46,99.16 145.61,99.59 141.81,100.29 138.07,101.27 134.44,102.52 130.91,104.03 127.53,105.80 124.31,107.80 121.26,110.04 118.41,112.49 115.78,115.14 113.38,117.98 111.23,120.98 109.33,124.13 107.71,127.41 106.37,130.79 105.32,134.27 104.56,137.81 104.10,141.39 103.95,145.00 104.10,148.61 104.56,152.19 105.32,155.73 106.37,159.21 107.71,162.59 109.33,165.87 111.23,169.02 113.38,172.02 115.78,174.86 118.41,177.51 121.26,179.96 124.31,182.20 127.53,184.20 130.91,185.97 134.44,187.48 138.07,188.73 141.81,189.71 145.61,190.41 149.46,190.84 153.33,190.98 157.21,190.84 161.06,190.41 164.86,189.71 168.59,188.73 172.23,187.48 175.75,185.97 179.14,184.20 182.36,182.20 185.40,179.96 188.25,177.51 190.88,174.86 193.28,172.02 195.44,169.02 197.33,165.87 198.96,162.59 200.30,159.21 201.35,155.73 202.11,152.19 202.56,148.61 202.72,145.00" fill="none" stroke="#245b99" stroke-width="2.5"/><text x="185" y="44" fill="#245b99">circunferencia</text>
-<path d="M202.72,145.00 L202.72,124.31" stroke="#ba513c" stroke-width="2.5" marker-end="url(#arrow)"/><text x="207.72" y="117.31">v</text>
-<path d="M202.72,145.00 L180.49,145.00" stroke="#ba513c" stroke-width="2.5" marker-end="url(#arrow)"/><text x="185.49" y="138.00">aₙ</text>
-<path d="M153.33,99.02 L131.11,99.02" stroke="#ba513c" stroke-width="2.5" marker-end="url(#arrow)"/><text x="136.11" y="92.02">v</text>
-<path d="M153.33,99.02 L153.33,119.71" stroke="#ba513c" stroke-width="2.5" marker-end="url(#arrow)"/><text x="158.33" y="112.71">aₙ</text>
-<path d="M103.95,145.00 L103.95,165.69" stroke="#ba513c" stroke-width="2.5" marker-end="url(#arrow)"/><text x="108.95" y="158.69">v</text>
-<path d="M103.95,145.00 L126.17,145.00" stroke="#ba513c" stroke-width="2.5" marker-end="url(#arrow)"/><text x="131.17" y="138.00">aₙ</text>
-<path d="M153.33,190.98 L175.56,190.98" stroke="#ba513c" stroke-width="2.5" marker-end="url(#arrow)"/><text x="180.56" y="183.98">v</text>
-<path d="M153.33,190.98 L153.33,170.29" stroke="#ba513c" stroke-width="2.5" marker-end="url(#arrow)"/><text x="158.33" y="163.29">aₙ</text>
-<circle cx="153.33" cy="145.00" r="3.5" fill="#245b99"/><text x="158.33" y="138.00">O</text>
-</g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc" style="max-width:100%;height:auto">
+<title id="title">MCU de radio 3 m en sentido antihorario</title>
+<desc id="desc">Circunferencia a escala de radio 3 m centrada en O, con ejes x e y en metros. El móvil gira en sentido antihorario con rapidez constante de 6 m/s. Están marcados los dos puntos del apartado (b): (3; 0) m, sobre el semieje +x, y (0; −3) m, sobre el semieje −y. No se dibujan los vectores velocidad ni aceleración.</desc>
+<defs><marker id="ah-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#1f5fa8"/></marker><marker id="ah-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#b8432f"/></marker><marker id="ah-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#16756a"/></marker><marker id="ah-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#6d4fb0"/></marker><marker id="ah-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#55657a"/></marker><marker id="ah-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#1f2d44"/></marker></defs>
+<rect width="640" height="360" fill="#ffffff"/>
+<g font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#1f2d44" stroke-linecap="round" stroke-linejoin="round">
+<path d="M55.0 34.0V324.0M91.2 34.0V324.0M127.5 34.0V324.0M163.8 34.0V324.0M200.0 34.0V324.0M236.2 34.0V324.0M272.5 34.0V324.0M308.8 34.0V324.0M345.0 34.0V324.0M55.0 324.0H345.0M55.0 287.8H345.0M55.0 251.5H345.0M55.0 215.2H345.0M55.0 179.0H345.0M55.0 142.8H345.0M55.0 106.5H345.0M55.0 70.2H345.0M55.0 34.0H345.0" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="55.0" y="342.0" text-anchor="middle" fill="#55657a" font-size="13">−4</text>
+<text x="91.2" y="342.0" text-anchor="middle" fill="#55657a" font-size="13">−3</text>
+<text x="127.5" y="342.0" text-anchor="middle" fill="#55657a" font-size="13">−2</text>
+<text x="163.8" y="342.0" text-anchor="middle" fill="#55657a" font-size="13">−1</text>
+<text x="200.0" y="342.0" text-anchor="middle" fill="#55657a" font-size="13">0</text>
+<text x="236.2" y="342.0" text-anchor="middle" fill="#55657a" font-size="13">1</text>
+<text x="272.5" y="342.0" text-anchor="middle" fill="#55657a" font-size="13">2</text>
+<text x="308.8" y="342.0" text-anchor="middle" fill="#55657a" font-size="13">3</text>
+<text x="345.0" y="342.0" text-anchor="middle" fill="#55657a" font-size="13">4</text>
+<text x="48.0" y="328.5" text-anchor="end" fill="#55657a" font-size="13">−4</text>
+<text x="48.0" y="292.2" text-anchor="end" fill="#55657a" font-size="13">−3</text>
+<text x="48.0" y="256.0" text-anchor="end" fill="#55657a" font-size="13">−2</text>
+<text x="48.0" y="219.8" text-anchor="end" fill="#55657a" font-size="13">−1</text>
+<text x="48.0" y="183.5" text-anchor="end" fill="#55657a" font-size="13">0</text>
+<text x="48.0" y="147.2" text-anchor="end" fill="#55657a" font-size="13">1</text>
+<text x="48.0" y="111.0" text-anchor="end" fill="#55657a" font-size="13">2</text>
+<text x="48.0" y="74.8" text-anchor="end" fill="#55657a" font-size="13">3</text>
+<text x="48.0" y="38.5" text-anchor="end" fill="#55657a" font-size="13">4</text>
+<path d="M55.0 179.0L359.0 179.0" fill="none" stroke="#55657a" stroke-width="1.6" marker-end="url(#ah-muted)"/>
+<path d="M200.0 324.0L200.0 20.0" fill="none" stroke="#55657a" stroke-width="1.6" marker-end="url(#ah-muted)"/>
+<text x="365.0" y="184.0" font-size="14">x (m)</text>
+<text x="208.0" y="28.0" font-size="14">y (m)</text>
+<text x="194.0" y="197.0" text-anchor="end" font-weight="bold">O</text>
+<polyline points="308.8,179.0 308.7,175.2 308.5,171.4 308.2,167.6 307.7,163.9 307.1,160.1 306.4,156.4 305.5,152.7 304.5,149.0 303.4,145.4 302.2,141.8 300.8,138.3 299.3,134.8 297.7,131.3 296.0,127.9 294.2,124.6 292.2,121.4 290.2,118.2 288.0,115.1 285.7,112.0 283.3,109.1 280.8,106.2 278.2,103.5 275.5,100.8 272.8,98.2 269.9,95.7 267.0,93.3 263.9,91.0 260.8,88.8 257.6,86.8 254.4,84.8 251.1,83.0 247.7,81.3 244.2,79.7 240.7,78.2 237.2,76.8 233.6,75.6 230.0,74.5 226.3,73.5 222.6,72.6 218.9,71.9 215.1,71.3 211.4,70.8 207.6,70.5 203.8,70.3 200.0,70.2 196.2,70.3 192.4,70.5 188.6,70.8 184.9,71.3 181.1,71.9 177.4,72.6 173.7,73.5 170.0,74.5 166.4,75.6 162.8,76.8 159.3,78.2 155.8,79.7 152.3,81.3 148.9,83.0 145.6,84.8 142.4,86.8 139.2,88.8 136.1,91.0 133.0,93.3 130.1,95.7 127.2,98.2 124.5,100.8 121.8,103.5 119.2,106.2 116.7,109.1 114.3,112.0 112.0,115.1 109.8,118.2 107.8,121.4 105.8,124.6 104.0,127.9 102.3,131.3 100.7,134.8 99.2,138.3 97.8,141.8 96.6,145.4 95.5,149.0 94.5,152.7 93.6,156.4 92.9,160.1 92.3,163.9 91.8,167.6 91.5,171.4 91.3,175.2 91.2,179.0 91.3,182.8 91.5,186.6 91.8,190.4 92.3,194.1 92.9,197.9 93.6,201.6 94.5,205.3 95.5,209.0 96.6,212.6 97.8,216.2 99.2,219.7 100.7,223.2 102.3,226.7 104.0,230.1 105.8,233.4 107.8,236.6 109.8,239.8 112.0,242.9 114.3,246.0 116.7,248.9 119.2,251.8 121.8,254.5 124.5,257.2 127.2,259.8 130.1,262.3 133.0,264.7 136.1,267.0 139.2,269.2 142.4,271.2 145.6,273.2 148.9,275.0 152.3,276.7 155.8,278.3 159.3,279.8 162.8,281.2 166.4,282.4 170.0,283.5 173.7,284.5 177.4,285.4 181.1,286.1 184.9,286.7 188.6,287.2 192.4,287.5 196.2,287.7 200.0,287.8 203.8,287.7 207.6,287.5 211.4,287.2 215.1,286.7 218.9,286.1 222.6,285.4 226.3,284.5 230.0,283.5 233.6,282.4 237.2,281.2 240.7,279.8 244.2,278.3 247.7,276.7 251.1,275.0 254.4,273.2 257.6,271.2 260.8,269.2 263.9,267.0 267.0,264.7 269.9,262.3 272.8,259.8 275.5,257.2 278.2,254.5 280.8,251.8 283.3,248.9 285.7,246.0 288.0,242.9 290.2,239.8 292.2,236.6 294.2,233.4 296.0,230.1 297.7,226.7 299.3,223.2 300.8,219.7 302.2,216.2 303.4,212.6 304.5,209.0 305.5,205.3 306.4,201.6 307.1,197.9 307.7,194.1 308.2,190.4 308.5,186.6 308.7,182.8 308.8,179.0" fill="none" stroke="#1f5fa8" stroke-width="2.6"/>
+<path d="M200.0 179.0L123.1 102.1" fill="none" stroke="#55657a" stroke-width="1.6" stroke-dasharray="5 4"/>
+<text x="155.6" y="134.6" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="4" paint-order="stroke">R</text>
+<polyline points="324.3,145.7 323.4,142.6 322.5,139.6 321.5,136.5 320.4,133.5 319.2,130.5 318.0,127.6 316.7,124.7 315.3,121.8 313.8,118.9 312.3,116.1 310.7,113.3 309.0,110.6 307.3,107.9 305.5,105.3 303.6,102.7 301.7,100.1 299.7,97.6 297.6,95.2 295.5,92.8 293.3,90.4 291.1,88.1 288.8,85.9 286.5,83.7 284.1,81.6 281.6,79.5 279.1,77.5 276.6,75.6 274.0,73.7 271.4,71.9 268.7,70.2 265.9,68.5 263.2,66.9 260.4,65.3 257.5,63.9 254.6,62.5 251.7,61.2 248.8,59.9 245.8,58.7 242.8,57.6 239.8,56.6" fill="none" stroke="#6d4fb0" stroke-width="2.4" marker-end="url(#ah-purple)"/>
+<circle cx="308.8" cy="179.0" r="5.5" fill="#1f5fa8"/>
+<text x="318.8" y="169.0" fill="#1f5fa8" font-weight="bold" stroke="#ffffff" stroke-width="4" paint-order="stroke">(3; 0) m</text>
+<circle cx="200.0" cy="287.8" r="5.5" fill="#1f5fa8"/>
+<text x="210.0" y="307.8" fill="#1f5fa8" font-weight="bold" stroke="#ffffff" stroke-width="4" paint-order="stroke">(0; −3) m</text>
+<text x="420.0" y="110.0" font-weight="bold">Datos</text>
+<text x="420.0" y="138.0">R = 3 m</text>
+<text x="420.0" y="166.0">rapidez: 6 m/s (constante)</text>
+<text x="420.0" y="194.0">sentido: antihorario</text>
+</g>
+</svg>

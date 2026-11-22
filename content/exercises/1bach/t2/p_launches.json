@@ -3,7 +3,7 @@
     {
       "id": "t2_p_001",
       "number": 31,
-      "version": 1,
+      "version": 2,
       "title": "Un lanzamiento hacia la izquierda",
       "course": "1bach",
       "topic": "t2",
@@ -70,7 +70,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_p_001.svg",
-          "alt": "Descomposición de v₀ a 120°"
+          "alt": "Esquema sin escala del plano vertical. La pelota sale de O con una velocidad de 20 m/s que apunta hacia arriba y a la izquierda, formando 120° con el semieje +x, medidos en sentido antihorario. La gravedad apunta hacia abajo. No se dibujan las componentes."
         }
       ],
       "tags": [
@@ -103,7 +103,7 @@
     {
       "id": "t2_p_002",
       "number": 32,
-      "version": 1,
+      "version": 2,
       "title": "Ecuaciones con origen no situado en la salida",
       "course": "1bach",
       "topic": "t2",
@@ -206,7 +206,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_p_002.svg",
-          "alt": "Salida desplazada: punto (3,2) m"
+          "alt": "Esquema sin escala del plano vertical. El origen O está en el suelo, y = 0, y la pelota sale del punto (3; 2) m, marcado con líneas discontinuas hasta los ejes. Su velocidad inicial es (8; 6) m/s, hacia arriba y a la derecha. La trayectoria es una parábola que llega al suelo más a la derecha. La gravedad apunta hacia abajo."
         }
       ],
       "tags": [
@@ -239,7 +239,7 @@
     {
       "id": "t2_p_003",
       "number": 33,
-      "version": 1,
+      "version": 2,
       "title": "Raíces de regreso al mismo nivel",
       "course": "1bach",
       "topic": "t2",
@@ -280,7 +280,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_p_003.svg",
-          "alt": "Altura: salida y regreso"
+          "alt": "Esquema sin escala del plano vertical. El balón sale de O, en el suelo, a 18 m/s y con un ángulo de 30° sobre la horizontal, describe una parábola y vuelve al suelo más a la derecha. La gravedad apunta hacia abajo. No se indican el tiempo de vuelo ni el alcance."
         }
       ],
       "tags": [
@@ -313,7 +313,7 @@
     {
       "id": "t2_p_004",
       "number": 34,
-      "version": 1,
+      "version": 2,
       "title": "Alcance y condición de igual altura",
       "course": "1bach",
       "topic": "t2",
@@ -372,7 +372,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_p_004.svg",
-          "alt": "Componentes (20,15) m/s desde el suelo"
+          "alt": "Esquema sin escala del plano vertical. El balón sale de O, en el suelo, con velocidad (20; 15) m/s, de 25 m/s, hacia arriba y a la derecha, describe una parábola y vuelve al suelo más a la derecha. La gravedad apunta hacia abajo."
         }
       ],
       "tags": [
@@ -405,7 +405,7 @@
     {
       "id": "t2_p_005",
       "number": 35,
-      "version": 1,
+      "version": 2,
       "title": "Altura máxima sin reposo total",
       "course": "1bach",
       "topic": "t2",
@@ -521,7 +521,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_p_005.svg",
-          "alt": "El máximo coincide con v_y=0"
+          "alt": "Esquema sin escala del plano vertical. El proyectil sale de O, en el suelo, con velocidad (12; 16) m/s, hacia arriba y a la derecha, sube hasta un punto más alto y vuelve al suelo más a la derecha. La gravedad apunta hacia abajo. No se marca el punto más alto."
         }
       ],
       "tags": [
@@ -554,7 +554,7 @@
     {
       "id": "t2_p_006",
       "number": 36,
-      "version": 1,
+      "version": 2,
       "title": "Velocidad de impacto con ángulo y sentido",
       "course": "1bach",
       "topic": "t2",
@@ -632,7 +632,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_p_006.svg",
-          "alt": "Salida desde 6 m y velocidad (8,5) m/s"
+          "alt": "Esquema sin escala del plano vertical. La pelota sale de (0; 6) m, en lo alto de una plataforma de 6 m cuya cara derecha está sobre el eje y, con el origen O a su pie. Su velocidad inicial es (8; 5) m/s, hacia arriba y a la derecha. Sube un poco, baja y llega al suelo más a la derecha. La gravedad apunta hacia abajo."
         }
       ],
       "tags": [
@@ -665,7 +665,7 @@
     {
       "id": "t2_p_007",
       "number": 37,
-      "version": 1,
+      "version": 2,
       "title": "Vuelo desde un balcón y cambio de origen",
       "course": "1bach",
       "topic": "t2",
@@ -748,7 +748,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_p_007.svg",
-          "alt": "Balcón a 15 m: caída a distinto nivel"
+          "alt": "Esquema sin escala del plano vertical. Un balcón de 15 m de altura tiene su cara sobre el eje y y el origen O en el suelo, a su pie. La pelota sale de (0; 15) m con velocidad (10; 10) m/s, hacia arriba y a la derecha a 45°. Una línea discontinua marca el nivel del balcón. La trayectoria es una parábola que sube por encima de ese nivel, baja y llega al suelo a la derecha del balcón. La gravedad apunta hacia abajo."
         }
       ],
       "tags": [

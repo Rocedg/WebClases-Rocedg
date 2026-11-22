@@ -1,10 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 290" role="img" aria-labelledby="title desc" style="max-width:100%;height:auto"><title id="title">Derivar una posición vectorial</title><desc id="desc">Trayectoria con aceleración horizontal. Todos los datos necesarios se detallan en el enunciado.</desc><defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse"><path d="M0 0 L7 3.5 L0 7Z" fill="context-stroke"/></marker></defs><rect width="100%" height="100%" fill="white"/><g font-family="Arial,sans-serif" font-size="13" fill="#203148">
-<text x="16" y="23" font-size="15" font-weight="bold">Trayectoria con aceleración horizontal</text>
-<path d="M79.26 65V225 M65 213.97H450" stroke="#e1e7ee" fill="none"/><text x="79.26" y="245" text-anchor="middle">-0.125</text><text x="57" y="217.97" text-anchor="end">0</text>
-<path d="M168.38 65V225 M65 179.48H450" stroke="#e1e7ee" fill="none"/><text x="168.38" y="245" text-anchor="middle">5.89</text><text x="57" y="183.48" text-anchor="end">2.5</text>
-<path d="M257.50 65V225 M65 145.00H450" stroke="#e1e7ee" fill="none"/><text x="257.50" y="245" text-anchor="middle">11.9</text><text x="57" y="149.00" text-anchor="end">5</text>
-<path d="M346.62 65V225 M65 110.52H450" stroke="#e1e7ee" fill="none"/><text x="346.62" y="245" text-anchor="middle">17.9</text><text x="57" y="114.52" text-anchor="end">7.5</text>
-<path d="M435.74 65V225 M65 76.03H450" stroke="#e1e7ee" fill="none"/><text x="435.74" y="245" text-anchor="middle">23.9</text><text x="57" y="80.03" text-anchor="end">10</text>
-<path d="M65 213.97H462 M81.11 225V55" stroke="#516276" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/><text x="450" y="269" text-anchor="end">x (m)</text><text x="65" y="49">y (m)</text>
-<polyline points="81.11,200.17 80.44,198.10 79.93,196.03 79.56,193.97 79.33,191.90 79.26,189.83 79.33,187.76 79.56,185.69 79.93,183.62 80.44,181.55 81.11,179.48 81.93,177.41 82.89,175.34 84.00,173.28 85.26,171.21 86.67,169.14 88.22,167.07 89.93,165.00 91.78,162.93 93.78,160.86 95.93,158.79 98.22,156.72 100.67,154.66 103.26,152.59 106.00,150.52 108.89,148.45 111.93,146.38 115.11,144.31 118.44,142.24 121.93,140.17 125.56,138.10 129.33,136.03 133.26,133.97 137.33,131.90 141.56,129.83 145.93,127.76 150.44,125.69 155.11,123.62 159.93,121.55 164.89,119.48 170.00,117.41 175.26,115.34 180.67,113.28 186.22,111.21 191.93,109.14 197.78,107.07 203.78,105.00 209.93,102.93 216.22,100.86 222.67,98.79 229.26,96.72 236.00,94.66 242.89,92.59 249.93,90.52 257.11,88.45 264.44,86.38 271.93,84.31 279.56,82.24 287.33,80.17 295.26,78.10 303.33,76.03" fill="none" stroke="#245b99" stroke-width="2.5"/><text x="185" y="44" fill="#245b99">r(t)</text>
-</g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc" style="max-width:100%;height:auto">
+<title id="title">Trayectoria r(t) = (2t² − t; 3t + 1) entre 0 y 3 s</title>
+<desc id="desc">Gráfica a escala del plano xy, en metros. La trayectoria empieza en (0; 1) m en t = 0, retrocede muy poco hacia x negativa, gira y avanza hacia la derecha y hacia arriba, curvándose, hasta (15; 10) m en t = 3 s.</desc>
+<defs><marker id="ah-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#1f5fa8"/></marker><marker id="ah-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#b8432f"/></marker><marker id="ah-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#16756a"/></marker><marker id="ah-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#6d4fb0"/></marker><marker id="ah-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#55657a"/></marker><marker id="ah-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#1f2d44"/></marker></defs>
+<rect width="640" height="360" fill="#ffffff"/>
+<g font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#1f2d44" stroke-linecap="round" stroke-linejoin="round">
+<path d="M92.5 30.0V320.0M140.8 30.0V320.0M189.2 30.0V320.0M237.5 30.0V320.0M285.8 30.0V320.0M334.2 30.0V320.0M382.5 30.0V320.0M430.8 30.0V320.0M479.2 30.0V320.0M527.5 30.0V320.0M92.5 295.8H527.5M92.5 247.5H527.5M92.5 199.2H527.5M92.5 150.8H527.5M92.5 102.5H527.5M92.5 54.2H527.5" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="134.8" y="313.8" text-anchor="end" font-weight="bold">O</text>
+<text x="92.5" y="338.0" text-anchor="middle" fill="#55657a" font-size="13">−2</text>
+<text x="189.2" y="338.0" text-anchor="middle" fill="#55657a" font-size="13">2</text>
+<text x="237.5" y="338.0" text-anchor="middle" fill="#55657a" font-size="13">4</text>
+<text x="285.8" y="338.0" text-anchor="middle" fill="#55657a" font-size="13">6</text>
+<text x="334.2" y="338.0" text-anchor="middle" fill="#55657a" font-size="13">8</text>
+<text x="382.5" y="338.0" text-anchor="middle" fill="#55657a" font-size="13">10</text>
+<text x="430.8" y="338.0" text-anchor="middle" fill="#55657a" font-size="13">12</text>
+<text x="479.2" y="338.0" text-anchor="middle" fill="#55657a" font-size="13">14</text>
+<text x="527.5" y="338.0" text-anchor="middle" fill="#55657a" font-size="13">16</text>
+<text x="85.5" y="252.0" text-anchor="end" fill="#55657a" font-size="13">2</text>
+<text x="85.5" y="203.7" text-anchor="end" fill="#55657a" font-size="13">4</text>
+<text x="85.5" y="155.3" text-anchor="end" fill="#55657a" font-size="13">6</text>
+<text x="85.5" y="107.0" text-anchor="end" fill="#55657a" font-size="13">8</text>
+<text x="85.5" y="58.7" text-anchor="end" fill="#55657a" font-size="13">10</text>
+<path d="M92.5 295.8L541.5 295.8" fill="none" stroke="#55657a" stroke-width="1.6" marker-end="url(#ah-muted)"/>
+<path d="M140.8 320.0L140.8 16.0" fill="none" stroke="#55657a" stroke-width="1.6" marker-end="url(#ah-muted)"/>
+<text x="547.5" y="300.8" font-size="14">x (m)</text>
+<text x="148.8" y="24.0" font-size="14">y (m)</text>
+<polyline points="140.8,271.7 140.3,269.9 139.7,268.0 139.3,266.2 138.9,264.4 138.6,262.6 138.3,260.8 138.1,259.0 137.9,257.2 137.8,255.4 137.8,253.5 137.8,251.7 137.9,249.9 138.1,248.1 138.3,246.3 138.6,244.5 138.9,242.7 139.3,240.9 139.7,239.0 140.3,237.2 140.8,235.4 141.5,233.6 142.2,231.8 142.9,230.0 143.7,228.2 144.6,226.4 145.5,224.5 146.5,222.7 147.6,220.9 148.7,219.1 149.9,217.3 151.1,215.5 152.4,213.7 153.8,211.9 155.2,210.0 156.7,208.2 158.2,206.4 159.8,204.6 161.5,202.8 163.2,201.0 165.0,199.2 166.8,197.4 168.7,195.5 170.7,193.7 172.7,191.9 174.8,190.1 177.0,188.3 179.2,186.5 181.4,184.7 183.8,182.9 186.1,181.0 188.6,179.2 191.1,177.4 193.7,175.6 196.3,173.8 199.0,172.0 201.7,170.2 204.5,168.4 207.4,166.5 210.3,164.7 213.3,162.9 216.4,161.1 219.5,159.3 222.7,157.5 225.9,155.7 229.2,153.9 232.5,152.0 236.0,150.2 239.4,148.4 243.0,146.6 246.6,144.8 250.2,143.0 253.9,141.2 257.7,139.4 261.5,137.5 265.4,135.7 269.4,133.9 273.4,132.1 277.5,130.3 281.6,128.5 285.8,126.7 290.1,124.9 294.4,123.0 298.8,121.2 303.2,119.4 307.7,117.6 312.3,115.8 316.9,114.0 321.6,112.2 326.3,110.4 331.1,108.5 336.0,106.7 340.9,104.9 345.9,103.1 351.0,101.3 356.1,99.5 361.2,97.7 366.5,95.9 371.7,94.0 377.1,92.2 382.5,90.4 388.0,88.6 393.5,86.8 399.1,85.0 404.7,83.2 410.4,81.4 416.2,79.5 422.0,77.7 427.9,75.9 433.9,74.1 439.9,72.3 446.0,70.5 452.1,68.7 458.3,66.9 464.5,65.0 470.9,63.2 477.2,61.4 483.7,59.6 490.2,57.8 496.7,56.0 503.3,54.2" fill="none" stroke="#1f5fa8" stroke-width="2.6"/>
+<circle cx="140.8" cy="271.7" r="5" fill="#1f5fa8"/>
+<text x="150.8" y="275.7" fill="#1f5fa8" font-weight="bold" stroke="#ffffff" stroke-width="4" paint-order="stroke">t = 0</text>
+<circle cx="503.3" cy="54.2" r="5" fill="#1f5fa8"/>
+<text x="493.3" y="46.2" text-anchor="end" fill="#1f5fa8" font-weight="bold" stroke="#ffffff" stroke-width="4" paint-order="stroke">t = 3 s</text>
+</g>
+</svg>

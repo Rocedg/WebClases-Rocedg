@@ -3,7 +3,7 @@
     {
       "id": "t2_f_001",
       "number": 11,
-      "version": 1,
+      "version": 2,
       "title": "Dos funciones y un punto del plano",
       "course": "1bach",
       "topic": "t2",
@@ -120,7 +120,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_f_001.svg",
-          "alt": "Coordenada horizontal; Coordenada vertical; Trayectoria paramétrica"
+          "alt": "Gráfica a escala del plano xy, en metros. La trayectoria es una parábola que empieza en (1; 4) m en t = 0 y avanza hacia la derecha bajando cada vez más deprisa hasta (7; −5) m en t = 3 s. No se marcan las posiciones en t = 1 s ni en t = 2 s."
         }
       ],
       "tags": [
@@ -153,7 +153,7 @@
     {
       "id": "t2_f_002",
       "number": 12,
-      "version": 1,
+      "version": 2,
       "title": "Derivar una posición vectorial",
       "course": "1bach",
       "topic": "t2",
@@ -268,7 +268,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_f_002.svg",
-          "alt": "Trayectoria con aceleración horizontal"
+          "alt": "Gráfica a escala del plano xy, en metros. La trayectoria empieza en (0; 1) m en t = 0, retrocede muy poco hacia x negativa, gira y avanza hacia la derecha y hacia arriba, curvándose, hasta (15; 10) m en t = 3 s."
         }
       ],
       "tags": [
@@ -301,7 +301,7 @@
     {
       "id": "t2_f_003",
       "number": 13,
-      "version": 1,
+      "version": 2,
       "title": "De coordenadas a trayectoria",
       "course": "1bach",
       "topic": "t2",
@@ -405,7 +405,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_f_003.svg",
-          "alt": "Segmento recorrido durante cuatro segundos"
+          "alt": "Esquema sin escala del plano xy, con +x hacia el este y +y hacia el norte. La trayectoria es un segmento recto que empieza en t = 0 en el punto (−2; 5) m, en el segundo cuadrante, y baja hacia la derecha cruzando los dos ejes hasta el punto final en t = 4 s, en el cuarto cuadrante. No se indican las coordenadas del punto final."
         }
       ],
       "tags": [
@@ -438,7 +438,7 @@
     {
       "id": "t2_f_004",
       "number": 14,
-      "version": 1,
+      "version": 2,
       "title": "Trayectoria recta con rapidez variable",
       "course": "1bach",
       "topic": "t2",
@@ -523,7 +523,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_f_004.svg",
-          "alt": "x(t) cuadrática; y(t) cuadrática; Trayectoria recta pese a funciones cuadráticas"
+          "alt": "Dos gráficas a escala para t entre 0 y 3 s. Izquierda: x(t) = t², una parábola que sube de 0 a 9 m. Derecha: y(t) = 2t² + 1, una parábola que sube de 1 a 19 m. No se dibuja la trayectoria y(x)."
         }
       ],
       "tags": [
@@ -556,7 +556,7 @@
     {
       "id": "t2_f_005",
       "number": 15,
-      "version": 1,
+      "version": 2,
       "title": "Eliminar tiempo sin perder el dominio físico",
       "course": "1bach",
       "topic": "t2",
@@ -628,7 +628,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_f_005.svg",
-          "alt": "Vuelo horizontal desde 20 m"
+          "alt": "Esquema sin escala del plano vertical. Una plataforma de 20 m de altura tiene su cara derecha sobre el eje y y el origen O a su pie. La bola sale horizontalmente hacia +x desde (0; 20) m a 4 m/s y describe media parábola hasta el suelo. Una línea discontinua marca la altura y = 15 m. La gravedad apunta hacia abajo."
         }
       ],
       "tags": [
@@ -661,7 +661,7 @@
     {
       "id": "t2_f_006",
       "number": 16,
-      "version": 1,
+      "version": 2,
       "title": "Una parábola espacial y cuatro gráficas",
       "course": "1bach",
       "topic": "t2",
@@ -756,7 +756,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_f_006.svg",
-          "alt": "Trayectoria para reconstruir las funciones"
+          "alt": "Esquema sin escala del plano vertical. El proyectil sale de O, en el suelo, hacia arriba y a la derecha, describe una parábola y vuelve al suelo (y = 0) más a la derecha. La gravedad apunta hacia abajo. No se indican valores."
         }
       ],
       "tags": [
@@ -789,7 +789,7 @@
     {
       "id": "t2_f_007",
       "number": 17,
-      "version": 1,
+      "version": 2,
       "title": "Misma curva, distinto ritmo",
       "course": "1bach",
       "topic": "t2",
@@ -898,7 +898,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_f_007.svg",
-          "alt": "Curva común: dos leyes de recorrido; Ritmos horizontales diferentes"
+          "alt": "Esquema sin escala del plano xy. Una sola curva sale del origen O y sube hacia la derecha, cada vez más inclinada. Está marcado el punto (1; 1) m. Los móviles A y B parten de O y recorren la curva: A, con r = (t; t²), entre 0 y 2 s; B, con r = (2t; 4t²), entre 0 y 1 s."
         }
       ],
       "tags": [
@@ -931,7 +931,7 @@
     {
       "id": "t2_f_008",
       "number": 18,
-      "version": 1,
+      "version": 2,
       "title": "Integrar dos componentes de velocidad",
       "course": "1bach",
       "topic": "t2",
@@ -1046,7 +1046,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_f_008.svg",
-          "alt": "Componente horizontal constante; Componente vertical creciente"
+          "alt": "Dos gráficas a escala de las componentes de la velocidad entre 0 y 4 s. Izquierda: vx(t), en m/s, es una recta horizontal en 3 m/s. Derecha: vy(t), en m/s, es una recta que sube de −2 m/s en t = 0 a 6 m/s en t = 4 s. En t = 0 el móvil está en (1; −2) m."
         }
       ],
       "tags": [
@@ -1079,7 +1079,7 @@
     {
       "id": "t2_f_009",
       "number": 19,
-      "version": 1,
+      "version": 2,
       "title": "Cruzar una altura no es acertar en un punto",
       "course": "1bach",
       "topic": "t2",
@@ -1169,7 +1169,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_f_009.svg",
-          "alt": "Dos cruces de altura, una diana"
+          "alt": "Esquema sin escala del plano vertical. La trayectoria es una parábola que sale de O, sube hasta una altura máxima mayor que 6 m y vuelve a y = 0. Una línea horizontal discontinua marca la altura y = 6 m, que la parábola cruza dos veces: una al subir y otra al bajar. La diana, en (9; 6) m, está en el cruce de bajada."
         }
       ],
       "tags": [
@@ -1202,7 +1202,7 @@
     {
       "id": "t2_f_010",
       "number": 20,
-      "version": 2,
+      "version": 3,
       "title": "Auditoría de una parametrización",
       "course": "1bach",
       "topic": "t2",
@@ -1290,7 +1290,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_f_010.svg",
-          "alt": "Trayectoria declarada: derecha y abajo"
+          "alt": "Esquema sin escala del dibujo animado, en el plano xy. El objeto parte del punto (0; 4) m, sobre el eje y, sale horizontalmente hacia la derecha y baja curvándose hasta el suelo, y = 0."
         }
       ],
       "tags": [
