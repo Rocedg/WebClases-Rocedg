@@ -71,7 +71,7 @@
         "ignorar la representación específica de la familia g"
       ],
       "parts_count": 2,
-      "statement_source": "\\(m=3 kg\\), subir \\(5 m\\).\n\n(a) Calcula: ΔU g.\n(b) Calcula: Trabajo del peso.",
+      "statement_source": "\\(m=3 kg\\), subir \\(5 m\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: ΔU g.\n(b) Calcula: Trabajo del peso.",
       "solution_source": "\\(\\Delta U_g=147 J\\); trabajo del peso \\(-147 J\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
     },
@@ -207,7 +207,7 @@
         "ignorar la representación específica de la familia g"
       ],
       "parts_count": 1,
-      "statement_source": "Caída desde \\(20 m\\), sin aire.\n\n(a) Calcula: Rapidez.",
+      "statement_source": "Caída desde \\(20 m\\), sin aire. Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Rapidez.",
       "solution_source": "Rapidez \\(19,8 m/s\\); barras inicial/final.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
     },
@@ -270,7 +270,7 @@
         "ignorar la representación específica de la familia g"
       ],
       "parts_count": 1,
-      "statement_source": "Rampa sin rozamiento con desnivel \\(3 m\\).\n\n(a) Calcula: Rapidez final.",
+      "statement_source": "Rampa sin rozamiento con desnivel \\(3 m\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Rapidez final.",
       "solution_source": "Rapidez final \\(7,67 m/s\\), independiente de forma.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
     },
@@ -294,9 +294,9 @@
           "label": "Altura adicional",
           "type": "numeric",
           "required": true,
-          "expected_value": 10.0,
+          "expected_value": 9.99,
           "unit": "m",
-          "tolerance": 0.05,
+          "tolerance": 0.04995,
           "significant_figures": 3,
           "part": "a",
           "rounding": "Tres cifras significativas; conservar precisión intermedia."
@@ -333,8 +333,8 @@
         "ignorar la representación específica de la familia g"
       ],
       "parts_count": 1,
-      "statement_source": "Lanzamiento vertical \\(v_0=14 m/s\\).\n\n(a) Calcula: Altura adicional.",
-      "solution_source": "Altura adicional \\(10 m\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "statement_source": "Lanzamiento vertical \\(v_0=14 m/s\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Altura adicional.",
+      "solution_source": "Altura adicional \\(9,99 m\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
     },
     {
@@ -357,9 +357,9 @@
           "label": "Rapidez",
           "type": "numeric",
           "required": true,
-          "expected_value": 17.1,
+          "expected_value": 17.2,
           "unit": "m/s",
-          "tolerance": 0.0855,
+          "tolerance": 0.086,
           "significant_figures": 3,
           "part": "a",
           "rounding": "Tres cifras significativas; conservar precisión intermedia."
@@ -396,8 +396,8 @@
         "ignorar la representación específica de la familia g"
       ],
       "parts_count": 1,
-      "statement_source": "Montaña rusa: alturas \\(20\\to 5 m\\), parte del reposo.\n\n(a) Calcula: Rapidez.",
-      "solution_source": "\\(v=17,1 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "statement_source": "Montaña rusa: alturas \\(20\\to 5 m\\), parte del reposo. Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Rapidez.",
+      "solution_source": "\\(v=17,2 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
     },
     {
@@ -459,7 +459,7 @@
         "ignorar la representación específica de la familia g"
       ],
       "parts_count": 1,
-      "statement_source": "Velocidad mínima para superar colina de \\(8 m\\).\n\n(a) Calcula: v min.",
+      "statement_source": "Velocidad mínima para superar colina de \\(8 m\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: v min.",
       "solution_source": "\\(v_min=12,5 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
     },

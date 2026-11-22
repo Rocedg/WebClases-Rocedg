@@ -71,7 +71,7 @@
         "ignorar la representación específica de la familia c"
       ],
       "parts_count": 2,
-      "statement_source": "Coche \\(1000 kg\\), curva plana \\(r=50 m\\), \\(v=10 m/s\\).\n\n(a) Calcula: Rozamiento requerido.\n(b) Calcula: μ s,min.",
+      "statement_source": "Coche \\(1000 kg\\), curva plana \\(r=50 m\\), \\(v=10 m/s\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Rozamiento requerido.\n(b) Calcula: μ s,min.",
       "solution_source": "Rozamiento requerido \\(2000 N\\); \\(μ_s,min=0,204\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
     },
@@ -134,7 +134,7 @@
         "ignorar la representación específica de la familia c"
       ],
       "parts_count": 1,
-      "statement_source": "Velocidad máxima en curva plana \\(r=80 m\\), \\(μ_s=0,5\\).\n\n(a) Calcula: v max.",
+      "statement_source": "Velocidad máxima en curva plana \\(r=80 m\\), \\(μ_s=0,5\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: v max.",
       "solution_source": "\\(v_max=19,8 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
     },
@@ -260,7 +260,7 @@
         "ignorar la representación específica de la familia c"
       ],
       "parts_count": 1,
-      "statement_source": "Curva peraltada sin rozamiento \\(r=100 m\\), \\(θ=12°\\).\n\n(a) Calcula: Rapidez.",
+      "statement_source": "Curva peraltada sin rozamiento \\(r=100 m\\), \\(θ=12°\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Rapidez.",
       "solution_source": "\\(v=14,4 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
     },
@@ -323,7 +323,7 @@
         "ignorar la representación específica de la familia c"
       ],
       "parts_count": 1,
-      "statement_source": "Hallar peralte para \\(v=20 m/s\\), \\(r=120 m\\).\n\n(a) Calcula: θ.",
+      "statement_source": "Hallar peralte para \\(v=20 m/s\\), \\(r=120 m\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: θ.",
       "solution_source": "\\(θ=18,8°\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
     },
@@ -532,7 +532,7 @@
         "ignorar la representación específica de la familia c"
       ],
       "parts_count": 1,
-      "statement_source": "Ciclista inclinado en curva plana, \\(v=8\\), \\(r=20\\).\n\n(a) Calcula: φ.",
+      "statement_source": "Ciclista inclinado en curva plana, \\(v=8\\), \\(r=20\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: φ.",
       "solution_source": "\\(tanφ=v²/(rg)\\); \\(φ=18,1°\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
     },

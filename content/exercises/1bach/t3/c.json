@@ -292,7 +292,7 @@
         "ignorar la representación específica de la familia c"
       ],
       "parts_count": 1,
-      "statement_source": "Círculo vertical, punto inferior, \\(m=1\\), \\(r=2\\), \\(v=6\\).\n\n(a) Calcula: Tensión.",
+      "statement_source": "Círculo vertical, punto inferior, \\(m=1\\), \\(r=2\\), \\(v=6\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Tensión.",
       "solution_source": "\\(T=27,8 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
     },
@@ -316,9 +316,9 @@
           "label": "Tensión",
           "type": "numeric",
           "required": true,
-          "expected_value": 8.2,
+          "expected_value": 8.19,
           "unit": "N",
-          "tolerance": 0.040999999999999995,
+          "tolerance": 0.04095,
           "significant_figures": 3,
           "part": "a",
           "rounding": "Tres cifras significativas; conservar precisión intermedia."
@@ -355,8 +355,8 @@
         "ignorar la representación específica de la familia c"
       ],
       "parts_count": 1,
-      "statement_source": "Mismo sistema en punto superior.\n\n(a) Calcula: Tensión.",
-      "solution_source": "\\(T=8,2 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "statement_source": "Mismo sistema en punto superior. Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Tensión.",
+      "solution_source": "\\(T=8,19 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
     },
     {
@@ -379,9 +379,9 @@
           "label": "v min",
           "type": "numeric",
           "required": true,
-          "expected_value": 3.83,
+          "expected_value": 3.84,
           "unit": "m/s",
-          "tolerance": 0.01915,
+          "tolerance": 0.0192,
           "significant_figures": 3,
           "part": "a",
           "rounding": "Tres cifras significativas; conservar precisión intermedia."
@@ -430,8 +430,8 @@
         "ignorar la representación específica de la familia c"
       ],
       "parts_count": 2,
-      "statement_source": "Rapidez mínima para cuerda tensa arriba, \\(r=1,5 m\\).\n\n(a) Calcula: v min.\n(b) Calcula: Tensión.",
-      "solution_source": "\\(v_min=3,83 m/s\\); \\(T=0\\) en el límite.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "statement_source": "Rapidez mínima para cuerda tensa arriba, \\(r=1,5 m\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: v min.\n(b) Calcula: Tensión.",
+      "solution_source": "\\(v_min=3,84 m/s\\); \\(T=0\\) en el límite.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
     },
     {
@@ -454,9 +454,9 @@
           "label": "Normal",
           "type": "numeric",
           "required": true,
-          "expected_value": 1452.0,
+          "expected_value": 1453.0,
           "unit": "N",
-          "tolerance": 7.26,
+          "tolerance": 7.265000000000001,
           "significant_figures": 3,
           "part": "a",
           "rounding": "Tres cifras significativas; conservar precisión intermedia."
@@ -505,8 +505,8 @@
         "ignorar la representación específica de la familia c"
       ],
       "parts_count": 2,
-      "statement_source": "Pasajero en curva vertical inferior, \\(m=60\\), \\(r=10\\), \\(v=12\\).\n\n(a) Calcula: Normal.\n(b) Calcula: Factor aparente.",
-      "solution_source": "\\(N=1452 N\\); factor aparente \\(2,47\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "statement_source": "Pasajero en curva vertical inferior, \\(m=60\\), \\(r=10\\), \\(v=12\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Normal.\n(b) Calcula: Factor aparente.",
+      "solution_source": "\\(N=1453 N\\); factor aparente \\(2,47\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
     },
     {
@@ -592,7 +592,7 @@
         "ignorar la representación específica de la familia c"
       ],
       "parts_count": 3,
-      "statement_source": "Péndulo cónico \\(L=1,2 m\\), \\(θ=30°\\), \\(m=0,5\\).\n\n(a) Calcula: Tensión.\n(b) Calcula: Radio.\n(c) Calcula: Rapidez.",
+      "statement_source": "Péndulo cónico \\(L=1,2 m\\), \\(θ=30°\\), \\(m=0,5\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Tensión.\n(b) Calcula: Radio.\n(c) Calcula: Rapidez.",
       "solution_source": "\\(T=5,66 N\\); radio \\(0,6 m\\); \\(v=1,84 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
     },

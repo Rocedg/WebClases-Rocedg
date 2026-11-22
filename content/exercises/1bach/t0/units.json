@@ -382,8 +382,8 @@
         "tratar $2\\pi$ como dimensional",
         "invertir $L/g$"
       ],
-      "statement_source": "Se propone modelar el periodo \\(T\\) de un péndulo usando su longitud \\(L\\) y la aceleración gravitatoria \\(g\\). Regla: solo se pueden sumar o comparar expresiones con las mismas dimensiones; \\([g]=LT^{-2}\\). No necesitas haber estudiado el péndulo: aquí se practica el análisis dimensional.\n(a) Elige la expresión dimensionalmente posible: A) \\(T=2\\pi L/g\\); B) \\(T=2\\pi\\sqrt{L/g}\\); C) \\(T=2\\pi\\sqrt{g/L}\\); D) \\(T=2\\pi Lg\\).\n(b) Justifica brevemente por qué la opción elegida tiene dimensión de tiempo.\n(c) Calcula el periodo para \\(L=0,900\\) m y \\(g=9,80\\) m·s⁻², con 3 cifras significativas.",
-      "solution_source": "Solo B produce tiempo: \\([\\sqrt{L/g}]=\\sqrt{L/(LT^{-2})}=T\\).\n\n\\(T=2\\pi\\sqrt{0,90/9,8}=1,90\\) s.",
+      "statement_source": "Se propone modelar el periodo \\(T\\) de un péndulo usando su longitud \\(L\\) y la aceleración gravitatoria \\(g\\). Regla: solo se pueden sumar o comparar expresiones con las mismas dimensiones; \\([g]=LT^{-2}\\). No necesitas haber estudiado el péndulo: aquí se practica el análisis dimensional.\n(a) Elige la expresión dimensionalmente posible: A) \\(T=2\\pi L/g\\); B) \\(T=2\\pi\\sqrt{L/g}\\); C) \\(T=2\\pi\\sqrt{g/L}\\); D) \\(T=2\\pi Lg\\).\n(b) Justifica brevemente por qué la opción elegida tiene dimensión de tiempo.\n(c) Calcula el periodo para \\(L=0,900\\) m y \\(g=9,81\\) m·s⁻², con 3 cifras significativas.",
+      "solution_source": "Solo B produce tiempo: \\([\\sqrt{L/g}]=\\sqrt{L/(LT^{-2})}=T\\).\n\n\\(T=2\\pi\\sqrt{0,900/9,81}=1,90\\) s.",
       "solution_reference": "exercise-bank-t0-v4-spec.md"
     },
     {
@@ -962,7 +962,7 @@
           "label": "Contribución de altura",
           "required": true,
           "type": "numeric",
-          "expected_value": 24500.0,
+          "expected_value": 24525.0,
           "tolerance": 30.0,
           "unit": "Pa",
           "part": "b"
@@ -982,7 +982,7 @@
           "label": "C",
           "required": true,
           "type": "numeric",
-          "expected_value": 149000.0,
+          "expected_value": 149025.0,
           "tolerance": 100.0,
           "significant_figures": 3,
           "prompt": "Da el resultado con 3 cifras significativas.",
@@ -1030,8 +1030,8 @@
         "omitir $1/2$",
         "afirmar compatibilidad sin reducir unidades"
       ],
-      "statement_source": "En un punto de una corriente de agua, \\(P=120,0\\) kPa, \\(\\rho=1000\\) kg·m⁻³, \\(h=2,50\\) m y \\(v=3,00\\) m·s⁻¹. La expresión \\(C=P+\\rho gh+\\tfrac12\\rho v^2\\) suma presión, contribución de altura y contribución cinética; no necesitas haber estudiado fluidos, solo calcular y comparar términos. Usa \\(g=9,80\\) m·s⁻².\n(a) Calcula la contribución de presión.\n(b) Calcula la contribución de altura, la contribución cinética y \\(C\\), todas en Pa.\n(c) Indica cuál de las tres contribuciones domina numéricamente.",
-      "solution_source": "\\(P=120000\\) Pa, \\(\\rho gh=24500\\) Pa y \\(\\tfrac12\\rho v^2=4500\\) Pa. Los dos últimos reducen a kg·m⁻¹·s⁻² = Pa.\n\n\\(C=149000\\) \\(Pa = 149\\) kPa.\n\nDomina el término de presión estática.",
+      "statement_source": "En un punto de una corriente de agua, \\(P=120,0\\) kPa, \\(\\rho=1000\\) kg·m⁻³, \\(h=2,50\\) m y \\(v=3,00\\) m·s⁻¹. La expresión \\(C=P+\\rho gh+\\tfrac12\\rho v^2\\) suma presión, contribución de altura y contribución cinética; no necesitas haber estudiado fluidos, solo calcular y comparar términos. Usa \\(g=9,81\\) m·s⁻².\n(a) Calcula la contribución de presión.\n(b) Calcula la contribución de altura, la contribución cinética y \\(C\\), todas en Pa.\n(c) Indica cuál de las tres contribuciones domina numéricamente.",
+      "solution_source": "\\(P=120000\\) Pa, \\(\\rho gh=24525\\approx24500\\) Pa y \\(\\tfrac12\\rho v^2=4500\\) Pa. Los dos últimos reducen a kg·m⁻¹·s⁻² = Pa.\n\n\\(C=149025\\approx149000\\) \\(Pa = 149\\) kPa.\n\nDomina el término de presión estática.",
       "solution_reference": "exercise-bank-t0-v4-spec.md"
     },
     {

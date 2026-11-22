@@ -795,7 +795,7 @@
           "label": "Aceleración",
           "type": "numeric",
           "required": true,
-          "expected_value": 0.7,
+          "expected_value": 0.69,
           "unit": "m/s²",
           "tolerance": 0.01,
           "significant_figures": 3,
@@ -856,8 +856,8 @@
         "ignorar la representación específica de la familia n"
       ],
       "parts_count": 2,
-      "statement_source": "Báscula en ascensor registra \\(735 N\\) para \\(m=70 kg\\).\n\n(a) Calcula: Aceleración.\n(b) Selecciona: Sentido.",
-      "solution_source": "\\(a=0,7 m/s²\\) hacia arriba.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "statement_source": "Báscula en ascensor registra \\(735 N\\) para \\(m=70 kg\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Aceleración.\n(b) Selecciona: Sentido.",
+      "solution_source": "\\(a=0,69 m/s²\\) hacia arriba.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
     },
     {

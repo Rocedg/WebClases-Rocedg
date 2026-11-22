@@ -15,11 +15,11 @@ from services.exercise_presentation import exercise_number, render_exercise_sour
 
 PILOT_IDS = {'t0_v_018', 't0_c_020', 't1_r_004', 't1_g_011', 't2_h_001', 't2_c_001'}
 ANSWERS = {
-    't0_v_018': {'response_1': 'vertical', 'Px': '-24,8', 'normal': '53,3'},
+    't0_v_018': {'response_1': 'vertical', 'Px': '-24,9', 'normal': '53,3'},
     't0_c_020': {'zero_time': '36/7', 'positive_area': '100/7', 'negative_signed': '-9/7', 'displacement': '13', 'distance': '109/7'},
     't1_r_004': {'x0': '18', 'x4': '10', 'x10': '-2', 't0': '9', 'v': '-2'},
     't1_g_011': {'dx_given': '12', 'dx_area': '9', 'correct': 'quadratic'},
-    't2_h_001': {'t': '2', 'range': '12', 'v': '(6; -20)', 'speed': '20,9', 'angle': '73,3'},
+    't2_h_001': {'t': '2,02', 'range': '12,1', 'v': '(6; -19,8)', 'speed': '20,7', 'angle': '73,1'},
     't2_c_001': {'f': '1,5', 'period': '0,667', 'omega': '9,42', 'angle': '37,7', 'turns': '6'},
 }
 
@@ -100,9 +100,9 @@ def test_pilot_submit_corrects_all_fields_and_reveals_solution_only_afterwards(e
 
 
 @pytest.mark.parametrize('value,correct', [
-    ('(6,0; -2e1)', True), ('(6; -40/2)', True), ('(-20; 6)', False),
-    ('(6, -20)', False), ('(6; -20; 0)', False), ('', False),
-    ('(__import__("os"); -20)', False),
+    ('(6,0; -1,98e1)', True), ('(6; -198/10)', True), ('(6; -20,5)', False), ('(-19,8; 6)', False),
+    ('(6, -19,8)', False), ('(6; -19,8; 0)', False), ('', False),
+    ('(__import__("os"); -19,8)', False),
 ])
 def test_vector_grading_checks_order_count_and_numeric_syntax(value, correct):
     exercise = next(e for e in load_exercise_catalogue()['exercises'] if e['id'] == 't2_h_001')

@@ -701,7 +701,7 @@
       "assets": [
         {
           "path": "static/exercises/1bach/t2/assets/t2_v_007.svg",
-          "alt": "Tres puntos de un vuelo de dos segundos"
+          "alt": "Tres puntos de un vuelo de unos dos segundos"
         }
       ],
       "tags": [
@@ -726,8 +726,8 @@
         "Dibujar a siguiendo la curva"
       ],
       "parts_count": 2,
-      "statement_source": "Origen en el lanzamiento, \\(+x\\) derecha,\\(+y\\) arriba. Sin aire, \\(a_y=−g=−10 m/s²\\), \\(v_0=(8,10) m/s\\). La trayectoria pasa por \\((0,0)\\), \\((8,5)\\) y \\((16,0) m\\) a \\(t=0,1,2 s\\). \n(b) Completa: Velocidad inicial, Velocidad en la cima, Velocidad final.",
-      "solution_source": "\\(x=8t,y=10t−5t²\\); \\(v=(8,10−10t) m/s\\) y \\(a=(0,−10) m/s²\\).\n\nEn 0,1,2 s: \\(v=(8,10),(8,0),(8,−10) m/s\\); las flechas son tangentes.\n\nLa gravedad apunta abajo en los tres puntos. La cima es máximo de y, no reposo del proyectil.",
+      "statement_source": "Origen en el lanzamiento, \\(+x\\) derecha,\\(+y\\) arriba. Sin aire, \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\), \\(v_0=(8,10) m/s\\). La trayectoria pasa por \\((0;0)\\), por la cima \\((8{,}15;5{,}10)\\) y por \\((16{,}31;0)\\,\\mathrm{m}\\) en \\(t=0\\), \\(1{,}02\\) y \\(2{,}04\\,\\mathrm{s}\\). \n(b) Completa: Velocidad inicial, Velocidad en la cima, Velocidad final.",
+      "solution_source": "\\(x=8t\\), \\(y=10t-4{,}905t^2\\); \\(\\vec v=(8;10-9{,}81t)\\,\\mathrm{m/s}\\) y \\(\\vec a=(0;-9{,}81)\\,\\mathrm{m/s^2}\\).\n\nEn \\(t=0\\), \\(1{,}02\\) y \\(2{,}04\\,\\mathrm{s}\\): \\(\\vec v=(8;10)\\), \\((8;0)\\) y \\((8;-10)\\,\\mathrm{m/s}\\); las flechas son tangentes.\n\nLa gravedad apunta hacia abajo en los tres puntos. La cima es el máximo de \\(y\\), no un reposo del proyectil.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {

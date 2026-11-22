@@ -47,8 +47,8 @@
           "response_kind": "vector",
           "required": true,
           "accepted_forms": [
-            "(-10; 7.320508075688771)",
-            "-10 i + (7.320508075688771) j"
+            "(-10; 7.510508075688774)",
+            "-10 i + (7.510508075688774) j"
           ],
           "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
           "grading": "pending_review",
@@ -58,10 +58,10 @@
           ],
           "expected_components": [
             -10,
-            7.320508075688771
+            7.510508075688774
           ],
           "unit": "m/s",
-          "tolerance": 0.02,
+          "tolerance": 0.1,
           "rounding": "Tres cifras significativas.",
           "part": "b"
         }
@@ -94,8 +94,8 @@
         "Confundir a_y negativa con v_y negativa"
       ],
       "parts_count": 2,
-      "statement_source": "Origen en el lanzamiento, \\(+x\\) derecha,\\(+y\\) arriba; sin aire, \\(a_y=−g=−10 m/s²\\). Se lanza a 20 m/s formando 120° desde \\(+x\\). \n(a) Completa: Velocidad inicial.\n(b) Obtén v a 1 s e indica si sube y hacia qué lado.",
-      "solution_source": "\\(v_0x=20\\) cos120°=−10 m/s; \\(v_0y=20\\) sen120°=10√3=17,3 m/s.\n\n√(\\(100+300\\))=20 m/s. A 1 s: \\(v_x=−10,v_y=17,3205−10=7,32 m/s\\).\n\nSigue subiendo (\\(v_y\\)>0) mientras avanza a la izquierda (\\(v_x\\)<0); \\(a_y\\) negativa no implica descenso inmediato.",
+      "statement_source": "Origen en el lanzamiento, \\(+x\\) derecha,\\(+y\\) arriba; sin aire, \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). Se lanza a 20 m/s formando 120° desde \\(+x\\). \n(a) Completa: Velocidad inicial.\n(b) Obtén v a 1 s e indica si sube y hacia qué lado.",
+      "solution_source": "\\(v_{0x}=20\\cos120^\\circ=-10\\,\\mathrm{m/s}\\); \\(v_{0y}=20\\sin120^\\circ=10\\sqrt3=17{,}3\\,\\mathrm{m/s}\\).\n\n\\(|\\vec v_0|=\\sqrt{100+300}=20\\,\\mathrm{m/s}\\). A \\(1\\,\\mathrm{s}\\): \\(v_x=-10\\,\\mathrm{m/s}\\) y \\(v_y=17{,}32-9{,}81=7{,}51\\,\\mathrm{m/s}\\).\n\nSigue subiendo (\\(v_y>0\\)) mientras avanza hacia la izquierda (\\(v_x<0\\)); que \\(a_y\\) sea negativa no implica que descienda ya.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -138,7 +138,7 @@
           "response_kind": "function",
           "required": true,
           "accepted_forms": [
-            "2+6*t-5*t**2"
+            "2+6*t-4.905*t**2"
           ],
           "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
           "grading": "pending_review",
@@ -146,7 +146,7 @@
           "variable_unit": "s",
           "unit": "m",
           "domain": "t ≥ 0",
-          "canonical_expression": "2+6*t-5*t**2",
+          "canonical_expression": "2+6*t-4.905*t**2",
           "part": "a"
         },
         {
@@ -156,8 +156,8 @@
           "response_kind": "vector",
           "required": true,
           "accepted_forms": [
-            "(7; 3.75)",
-            "7 i + (3.75) j"
+            "(7; 3.7737499999999997)",
+            "7 i + (3.7737499999999997) j"
           ],
           "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
           "grading": "pending_review",
@@ -167,7 +167,7 @@
           ],
           "expected_components": [
             7,
-            3.75
+            3.7737499999999997
           ],
           "unit": "m",
           "tolerance": 0.02,
@@ -181,8 +181,8 @@
           "response_kind": "vector",
           "required": true,
           "accepted_forms": [
-            "(8; 1)",
-            "8 i + (1) j"
+            "(8; 1.0949999999999998)",
+            "8 i + (1.0949999999999998) j"
           ],
           "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
           "grading": "pending_review",
@@ -192,7 +192,7 @@
           ],
           "expected_components": [
             8,
-            1
+            1.0949999999999998
           ],
           "unit": "m/s",
           "tolerance": 0.02,
@@ -228,8 +228,8 @@
         "Añadir g también a la componente horizontal"
       ],
       "parts_count": 2,
-      "statement_source": "\\(+x\\) derecha,\\(+y\\) arriba y suelo \\(y=0\\); sin aire, \\(a_y=−g=−10 m/s²\\). En \\(t=0\\) una pelota sale de \\((3,2) m\\) con \\(v_0=(8,6) m/s\\). \n(a) Escribe r,v,a.\n(b) Completa: Posición a 0,5 s, Velocidad a 0,5 s.",
-      "solution_source": "\\(x=3+8t,y=2+6t−5t²\\); \\(v=(8,6−10t) m/s\\) y \\(a=(0,−10) m/s²\\).\n\nA 0,5 s: \\(x=7 m\\),\\(y=3,75 m\\); \\(v=(8,1) m/s\\).\n\ny>0 y \\(v_y\\)>0: está sobre el suelo y aún sube. La posición inicial no modifica las derivadas.",
+      "statement_source": "\\(+x\\) derecha,\\(+y\\) arriba y suelo \\(y=0\\); sin aire, \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). En \\(t=0\\) una pelota sale de \\((3,2) m\\) con \\(v_0=(8,6) m/s\\). \n(a) Escribe r,v,a.\n(b) Completa: Posición a 0,5 s, Velocidad a 0,5 s.",
+      "solution_source": "\\(x=3+8t\\), \\(y=2+6t-4{,}905t^2\\); \\(\\vec v=(8;6-9{,}81t)\\,\\mathrm{m/s}\\) y \\(\\vec a=(0;-9{,}81)\\,\\mathrm{m/s^2}\\).\n\nA \\(0{,}5\\,\\mathrm{s}\\): \\(x=7\\,\\mathrm{m}\\), \\(y=3{,}77\\,\\mathrm{m}\\); \\(\\vec v=(8;1{,}095)\\,\\mathrm{m/s}\\).\n\n\\(y>0\\) y \\(v_y>0\\): está sobre el suelo y aún sube. La posición inicial no modifica las derivadas.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -252,7 +252,7 @@
           "label": "Tiempo de vuelo",
           "type": "numeric",
           "required": true,
-          "expected_value": 1.8,
+          "expected_value": 1.8348623853211008,
           "unit": "s",
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
@@ -264,9 +264,9 @@
           "label": "Alcance",
           "type": "numeric",
           "required": true,
-          "expected_value": 28.05922308261581,
+          "expected_value": 28.60267388645852,
           "unit": "m",
-          "tolerance": 0.05,
+          "tolerance": 0.1,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
           "part": "b"
@@ -300,8 +300,8 @@
         "Usar toda v_0 como componente vertical"
       ],
       "parts_count": 2,
-      "statement_source": "Origen en el suelo, \\(+x\\) derecha,\\(+y\\) arriba; sin aire, \\(a_y=−g=−10 m/s²\\). \\(v_0=18 m/s\\), \\(θ=30°\\). \n(a) Deduce el tiempo de vuelo sin usar una fórmula memorizada.\n(b) Completa: Alcance.",
-      "solution_source": "\\(v_0x=9√3 m/s\\),\\(v_0y=9 m/s\\). Horizontal \\(x=9√3t\\); vertical \\(y=9t−5t²\\).\n\n\\(y=0\\) da \\(t(9−5t)=0\\): \\(t=0\\) o 1,8 s. El tiempo de vuelo es 1,8 s.\n\n\\(x_f=9√3·1,8=28,1 m\\). En la llegada \\(v_y=−9 m/s\\), simétrico al valor inicial.",
+      "statement_source": "Origen en el suelo, \\(+x\\) derecha,\\(+y\\) arriba; sin aire, \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). \\(v_0=18 m/s\\), \\(θ=30°\\). \n(a) Deduce el tiempo de vuelo sin usar una fórmula memorizada.\n(b) Completa: Alcance.",
+      "solution_source": "\\(v_{0x}=9\\sqrt3\\,\\mathrm{m/s}\\), \\(v_{0y}=9\\,\\mathrm{m/s}\\). Horizontal \\(x=9\\sqrt3\\,t\\); vertical \\(y=9t-4{,}905t^2\\).\n\n\\(y=0\\) da \\(t(9-4{,}905t)=0\\): \\(t=0\\) o \\(t=1{,}835\\,\\mathrm{s}\\). El tiempo de vuelo es \\(1{,}835\\,\\mathrm{s}\\).\n\n\\(x_f=9\\sqrt3\\cdot1{,}835=28{,}6\\,\\mathrm{m}\\). En la llegada \\(v_y=-9\\,\\mathrm{m/s}\\), simétrico al valor inicial.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -324,7 +324,7 @@
           "label": "Tiempo de vuelo",
           "type": "numeric",
           "required": true,
-          "expected_value": 3,
+          "expected_value": 3.058103975535168,
           "unit": "s",
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
@@ -336,9 +336,9 @@
           "label": "Alcance",
           "type": "numeric",
           "required": true,
-          "expected_value": 60,
+          "expected_value": 61.162079510703364,
           "unit": "m",
-          "tolerance": 0.01,
+          "tolerance": 0.1,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
           "part": "a"
@@ -350,15 +350,15 @@
           "response_kind": "function",
           "required": true,
           "accepted_forms": [
-            "0.75*x-x**2/80"
+            "0.75*x-4.905*x**2/400"
           ],
           "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
           "grading": "pending_review",
           "variable": "x",
           "variable_unit": "m",
           "unit": "m",
-          "domain": "0≤x≤60",
-          "canonical_expression": "0.75*x-x**2/80",
+          "domain": "0≤x≤61,2",
+          "canonical_expression": "0.75*x-4.905*x**2/400",
           "part": "b"
         }
       ],
@@ -390,8 +390,8 @@
         "Usar módulo 25 m/s como v_x"
       ],
       "parts_count": 2,
-      "statement_source": "Origen en el suelo, \\(+x\\) derecha,\\(+y\\) arriba; sin aire, \\(a_y=−g=−10 m/s²\\). Un balón sale a 25 m/s con componentes \\((20,15) m/s\\). \n(a) Obtén vuelo y alcance.\n(b) Completa: Trayectoria.",
-      "solution_source": "Horizontal \\(x=20t\\); vertical \\(y=15t−5t²\\). Raíz de regreso \\(t=3 s\\); \\(R=20·3=60 m\\).\n\n\\(t=x/20\\) da \\(y=0,75x−x²/80\\); en \\(x=60\\): \\(45−45\\)=0.\n\nSi llega a \\(y=−4,\\) cambia la condición final, aumenta el vuelo y no se conserva \\(R=60 m\\).",
+      "statement_source": "Origen en el suelo, \\(+x\\) derecha,\\(+y\\) arriba; sin aire, \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). Un balón sale a 25 m/s con componentes \\((20,15) m/s\\). \n(a) Obtén vuelo y alcance.\n(b) Completa: Trayectoria.",
+      "solution_source": "Horizontal \\(x=20t\\); vertical \\(y=15t-4{,}905t^2\\). Raíz de regreso \\(t=15/4{,}905=3{,}058\\,\\mathrm{s}\\); \\(R=20\\cdot3{,}058=61{,}2\\,\\mathrm{m}\\).\n\n\\(t=x/20\\) da \\(y=0{,}75x-4{,}905x^2/400\\); en \\(x=61{,}2\\) se obtiene \\(y=0\\).\n\nSi llega a \\(y=-4\\), cambia la condición final, aumenta el vuelo y el alcance ya no es \\(61{,}2\\,\\mathrm{m}\\).",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -414,7 +414,7 @@
           "label": "Instante del máximo",
           "type": "numeric",
           "required": true,
-          "expected_value": 1.6,
+          "expected_value": 1.6309887869520896,
           "unit": "s",
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
@@ -428,8 +428,8 @@
           "response_kind": "vector",
           "required": true,
           "accepted_forms": [
-            "(19.2; 12.8)",
-            "19.2 i + (12.8) j"
+            "(19.571865443425075; 13.047910295616717)",
+            "19.571865443425075 i + (13.047910295616717) j"
           ],
           "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
           "grading": "pending_review",
@@ -438,11 +438,11 @@
             "y"
           ],
           "expected_components": [
-            19.2,
-            12.8
+            19.571865443425075,
+            13.047910295616717
           ],
           "unit": "m",
-          "tolerance": 0.02,
+          "tolerance": 0.1,
           "rounding": "Tres cifras significativas.",
           "part": "a"
         },
@@ -490,8 +490,8 @@
           "response_kind": "vector",
           "required": true,
           "accepted_forms": [
-            "(0; -10)",
-            "0 i + (-10) j"
+            "(0; -9.81)",
+            "0 i + (-9.81) j"
           ],
           "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
           "grading": "pending_review",
@@ -501,7 +501,7 @@
           ],
           "expected_components": [
             0,
-            -10
+            -9.81
           ],
           "unit": "m/s²",
           "tolerance": 0.02,
@@ -537,8 +537,8 @@
         "Medir la altura usando el tiempo total"
       ],
       "parts_count": 2,
-      "statement_source": "Origen en el suelo, \\(+x\\) derecha,\\(+y\\) arriba; sin aire, \\(a_y=−g=−10 m/s²\\). \\(v_0=(12,16) m/s\\). \n(a) Halla instante, posición y velocidad en el máximo.\n(b) Compara aceleración allí con la de la salida y calcula rapidez mínima.",
-      "solution_source": "\\(v_y=16−10t=0\\) implica \\(t=1,6 s\\). \\(x=12·1,6=19,2 m\\); \\(y=16·1,6−5·1,6²=12,8 m\\).\n\n\\(v=(12,0) m/s\\) y \\(rapidez=12 m/s\\), mínima porque |v|²=12²+v_y².\n\n\\(a=(0,−10) m/s²\\) tanto en la cima como al salir. La trayectoria no tiene un punto de reposo.",
+      "statement_source": "Origen en el suelo, \\(+x\\) derecha,\\(+y\\) arriba; sin aire, \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). \\(v_0=(12,16) m/s\\). \n(a) Halla instante, posición y velocidad en el máximo.\n(b) Compara aceleración allí con la de la salida y calcula rapidez mínima.",
+      "solution_source": "\\(v_y=16-9{,}81t=0\\) implica \\(t=1{,}631\\,\\mathrm{s}\\). \\(x=12\\cdot1{,}631=19{,}6\\,\\mathrm{m}\\); \\(y=16^2/(2\\cdot9{,}81)=13{,}0\\,\\mathrm{m}\\).\n\n\\(\\vec v=(12;0)\\,\\mathrm{m/s}\\) y la rapidez es \\(12\\,\\mathrm{m/s}\\), mínima porque \\(|\\vec v|^2=12^2+v_y^2\\).\n\n\\(\\vec a=(0;-9{,}81)\\,\\mathrm{m/s^2}\\) tanto en la cima como al salir. La trayectoria no tiene un punto de reposo.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -561,9 +561,9 @@
           "label": "Tiempo de vuelo",
           "type": "numeric",
           "required": true,
-          "expected_value": 1.7041594578792296,
+          "expected_value": 1.7274768214530543,
           "unit": "s",
-          "tolerance": 0.005,
+          "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
           "part": "a"
@@ -575,8 +575,8 @@
           "response_kind": "vector",
           "required": true,
           "accepted_forms": [
-            "(8; -12.041594578792296)",
-            "8 i + (-12.041594578792296) j"
+            "(8; -11.946547618454463)",
+            "8 i + (-11.946547618454463) j"
           ],
           "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
           "grading": "pending_review",
@@ -586,10 +586,10 @@
           ],
           "expected_components": [
             8,
-            -12.041594578792296
+            -11.946547618454463
           ],
           "unit": "m/s",
-          "tolerance": 0.02,
+          "tolerance": 0.1,
           "rounding": "Tres cifras significativas.",
           "part": "b"
         },
@@ -598,9 +598,9 @@
           "label": "Rapidez final",
           "type": "numeric",
           "required": true,
-          "expected_value": 14.45683229480096,
+          "expected_value": 14.377760604489144,
           "unit": "m/s",
-          "tolerance": 0.05,
+          "tolerance": 0.1,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
           "part": "c"
@@ -610,7 +610,7 @@
           "label": "Ángulo bajo +x",
           "type": "numeric",
           "required": true,
-          "expected_value": 56.401374265091164,
+          "expected_value": 56.19177612272934,
           "unit": "°",
           "tolerance": 0.1,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
@@ -646,8 +646,8 @@
         "Confundir rapidez final con |v_y|"
       ],
       "parts_count": 3,
-      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−10 m/s²\\). Sale una pelota desde \\(y=6 m\\) con \\(v_0=(8,5) m/s\\). \n(a) Obtén tiempo de impacto físico.\n(b) Da componentes, módulo y ángulo de impacto desde \\(+x\\), indicando si se mide por debajo o antihorario.\n(c) Completa: Rapidez final.",
-      "solution_source": "Horizontal \\(x=8t,v_x=8\\). Vertical \\(y=6+5t−5t²\\): \\(t=(5±√145)/10\\); solo 1,704 s es positiva.\n\n\\(v_y=5−10t=−√145=−12,04 m/s\\). |v|=√(\\(64+145\\))=√209=14,46 m/s.\n\nÁngulo=56,4° bajo \\(+x\\), equivalente a 303,6° antihorario. Rapidez inicial √89=9,43 m/s; es menor, coherente con terminar más abajo.",
+      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). Sale una pelota desde \\(y=6 m\\) con \\(v_0=(8,5) m/s\\). \n(a) Obtén tiempo de impacto físico.\n(b) Da componentes, módulo y ángulo de impacto desde \\(+x\\), indicando si se mide por debajo o antihorario.\n(c) Completa: Rapidez final.",
+      "solution_source": "Horizontal \\(x=8t\\), \\(v_x=8\\). Vertical \\(y=6+5t-4{,}905t^2\\): \\(t=\\dfrac{5\\pm\\sqrt{142{,}72}}{9{,}81}\\); solo \\(1{,}727\\,\\mathrm{s}\\) es positiva.\n\n\\(v_y=5-9{,}81t=-\\sqrt{142{,}72}=−11{,}95\\,\\mathrm{m/s}\\). \\(|\\vec v|=\\sqrt{64+142{,}72}=14{,}38\\,\\mathrm{m/s}\\).\n\nÁngulo \\(=56{,}2^\\circ\\) bajo \\(+x\\), equivalente a \\(303{,}8^\\circ\\) en sentido antihorario. La rapidez inicial, \\(\\sqrt{89}=9{,}43\\,\\mathrm{m/s}\\), es menor, coherente con terminar más abajo.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -670,7 +670,7 @@
           "label": "Tiempo de impacto",
           "type": "numeric",
           "required": true,
-          "expected_value": 3,
+          "expected_value": 3.043525860770647,
           "unit": "s",
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
@@ -682,9 +682,9 @@
           "label": "Alcance",
           "type": "numeric",
           "required": true,
-          "expected_value": 30,
+          "expected_value": 30.43525860770647,
           "unit": "m",
-          "tolerance": 0.01,
+          "tolerance": 0.1,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
           "part": "a"
@@ -694,9 +694,9 @@
           "label": "Altura máxima sobre el suelo",
           "type": "numeric",
           "required": true,
-          "expected_value": 20,
+          "expected_value": 20.096839959225278,
           "unit": "m",
-          "tolerance": 0.01,
+          "tolerance": 0.1,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
           "part": "a"
@@ -706,7 +706,7 @@
           "label": "Elevación desde salida",
           "type": "numeric",
           "required": true,
-          "expected_value": 5,
+          "expected_value": 5.09683995922528,
           "unit": "m",
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
@@ -720,15 +720,15 @@
           "response_kind": "function",
           "required": true,
           "accepted_forms": [
-            "10*t-5*t**2"
+            "10*t-4.905*t**2"
           ],
           "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
           "grading": "pending_review",
           "variable": "t",
           "variable_unit": "s",
           "unit": "m",
-          "domain": "0≤t≤3",
-          "canonical_expression": "10*t-5*t**2",
+          "domain": "0≤t≤3,04",
+          "canonical_expression": "10*t-4.905*t**2",
           "part": "c"
         }
       ],
@@ -760,8 +760,8 @@
         "Usar el vuelo simétrico de dos segundos"
       ],
       "parts_count": 3,
-      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−10 m/s²\\). Una pelota sale desde 15 m con \\(v_0=(10,10) m/s\\). \n(a) Halla vuelo, alcance y altura máxima sobre el suelo.\n(b) Repite la condición de impacto usando origen vertical en el balcón.\n(c) Compara elevación y altura máxima.",
-      "solution_source": "\\(x=10t,y=15+10t−5t²\\). Impacto: t²−\\(2t−3\\)=0, \\(t=3\\) o −1 s; raíz física 3 s y alcance 30 m.\n\nMáximo en \\(v_y=10−10t=0,\\) \\(t=1 s\\): \\(y=20 m\\); elevación=5 m.\n\nCon y′=y−15=\\(10t−5t²\\), el suelo es y′=−15, no cero. Se recupera \\(t=3 s\\); cambiar origen no cambia el vuelo.",
+      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). Una pelota sale desde 15 m con \\(v_0=(10,10) m/s\\). \n(a) Halla vuelo, alcance y altura máxima sobre el suelo.\n(b) Repite la condición de impacto usando origen vertical en el balcón.\n(c) Compara elevación y altura máxima.",
+      "solution_source": "\\(x=10t\\), \\(y=15+10t-4{,}905t^2\\). Impacto: \\(4{,}905t^2-10t-15=0\\), \\(t=3{,}04\\,\\mathrm{s}\\) o \\(−1{,}00\\,\\mathrm{s}\\); la raíz física es \\(3{,}04\\,\\mathrm{s}\\) y el alcance, \\(30{,}4\\,\\mathrm{m}\\).\n\nMáximo en \\(v_y=10-9{,}81t=0\\), \\(t=1{,}02\\,\\mathrm{s}\\): \\(y=20{,}1\\,\\mathrm{m}\\); elevación \\(=5{,}10\\,\\mathrm{m}\\).\n\nCon \\(y'=y-15=10t-4{,}905t^2\\), el suelo es \\(y'=-15\\), no cero. Se recupera \\(t=3{,}04\\,\\mathrm{s}\\): cambiar el origen no cambia el vuelo.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     }
   ]

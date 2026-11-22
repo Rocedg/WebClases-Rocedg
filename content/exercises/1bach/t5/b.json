@@ -20,9 +20,9 @@
           "label": "K f",
           "type": "numeric",
           "required": true,
-          "expected_value": 48.4,
+          "expected_value": 48.5,
           "unit": "J",
-          "tolerance": 0.242,
+          "tolerance": 0.2425,
           "significant_figures": 3,
           "part": "a",
           "rounding": "Tres cifras significativas; conservar precisión intermedia."
@@ -71,8 +71,8 @@
         "ignorar la representación específica de la familia b"
       ],
       "parts_count": 2,
-      "statement_source": "Bloque baja \\(4 m\\) de altura con rozamiento que hace \\(-30 J\\), \\(m=2\\).\n\n(a) Calcula: K f.\n(b) Calcula: Rapidez.",
-      "solution_source": "\\(K_f=48,4 J\\); \\(v=6,96 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "statement_source": "Bloque baja \\(4 m\\) de altura con rozamiento que hace \\(-30 J\\), \\(m=2\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: K f.\n(b) Calcula: Rapidez.",
+      "solution_source": "\\(K_f=48,5 J\\); \\(v=6,96 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
     },
     {
@@ -144,7 +144,7 @@
         "ignorar la representación específica de la familia b"
       ],
       "parts_count": 1,
-      "statement_source": "Rampa rugosa, hallar \\(μ_k\\) desde rapidez final.\n\n(a) Selecciona: Conclusión física.",
+      "statement_source": "Rampa rugosa, hallar \\(μ_k\\) desde rapidez final. Usa \\(g=9,81 m/s²\\).\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Balance cerrado y \\(μ_k\\) numérico.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
     },
@@ -217,7 +217,7 @@
         "ignorar la representación específica de la familia b"
       ],
       "parts_count": 1,
-      "statement_source": "Muelle impulsa bloque por zona rugosa hasta detenerse.\n\n(a) Selecciona: Conclusión física.",
+      "statement_source": "Muelle impulsa bloque por zona rugosa hasta detenerse. Usa \\(g=9,81 m/s²\\).\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Distancia \\(d=kx²/(2μmg)\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
     },
@@ -290,7 +290,7 @@
         "ignorar la representación específica de la familia b"
       ],
       "parts_count": 1,
-      "statement_source": "Bloque cae sobre muelle vertical: compresión máxima.\n\n(a) Selecciona: Conclusión física.",
+      "statement_source": "Bloque cae sobre muelle vertical: compresión máxima. Usa \\(g=9,81 m/s²\\).\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Ecuación cuadrática y raíz física seleccionada.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
     },
@@ -363,7 +363,7 @@
         "ignorar la representación específica de la familia b"
       ],
       "parts_count": 1,
-      "statement_source": "Montaña rusa con bucle: energía + condición dinámica mínima arriba.\n\n(a) Selecciona: Conclusión física.",
+      "statement_source": "Montaña rusa con bucle: energía + condición dinámica mínima arriba. Usa \\(g=9,81 m/s²\\).\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "\\(v_top=√(gr)\\) y altura inicial \\(2,5r\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
     },
@@ -448,7 +448,7 @@
         "ignorar la representación específica de la familia b"
       ],
       "parts_count": 2,
-      "statement_source": "Péndulo soltado desde ángulo \\(60°\\), longitud \\(1 m\\).\n\n(a) Calcula: Rapidez abajo.\n(b) Selecciona: Sentido.",
+      "statement_source": "Péndulo soltado desde ángulo \\(60°\\), longitud \\(1 m\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Rapidez abajo.\n(b) Selecciona: Sentido.",
       "solution_source": "Rapidez abajo \\(3,13 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
     },
@@ -1012,7 +1012,7 @@
         "ignorar la representación específica de la familia b"
       ],
       "parts_count": 1,
-      "statement_source": "Investigación cerrada de carrito: datos de altura/rapidez estiman pérdida y eficiencia.\n\n(a) Selecciona: Conclusión física.",
+      "statement_source": "Investigación cerrada de carrito: datos de altura/rapidez estiman pérdida y eficiencia. Usa \\(g=9,81 m/s²\\).\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "\\(E_i\\), \\(E_f\\), pérdida y porcentaje.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
     }
