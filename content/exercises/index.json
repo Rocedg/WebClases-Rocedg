@@ -1,7 +1,7 @@
 {
   "version": 1,
   "generated": true,
-  "generated_at": "2026-11-02T21:52:33Z",
+  "generated_at": "2026-11-22T10:36:41Z",
   "source": "content/exercises",
   "exercises": [
     {
@@ -4314,6 +4314,144 @@
       }
     },
     {
+      "id": "t1_g_017",
+      "version": 1,
+      "title": "Velocidad media frente a velocidad en un instante",
+      "course": "1bach",
+      "block": "Funciones y gráficas",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "Funciones y gráficas",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_time_min": 8,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "g",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_a_015",
+      "version": 1,
+      "title": "Lanzar hacia abajo desde un puente",
+      "course": "1bach",
+      "block": "MRUA y movimiento vertical",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "MRUA y movimiento vertical",
+      "subtype": "multi_step",
+      "difficulty": 2,
+      "estimated_time_min": 9,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "a",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_a_016",
+      "version": 1,
+      "title": "Una altura que se alcanza dos veces y otra que nunca",
+      "course": "1bach",
+      "block": "MRUA y movimiento vertical",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "MRUA y movimiento vertical",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 12,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "a",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_g_018",
+      "version": 1,
+      "title": "Leer el vértice de una parábola x(t)",
+      "course": "1bach",
+      "block": "Funciones y gráficas",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "Funciones y gráficas",
+      "subtype": "multi_step",
+      "difficulty": 3,
+      "estimated_time_min": 12,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "g",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_i_011",
+      "version": 1,
+      "title": "El coche patrulla que arranca",
+      "course": "1bach",
+      "block": "Problemas integradores",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "Problemas integradores",
+      "subtype": "written_upload",
+      "difficulty": 3,
+      "estimated_time_min": 12,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "i",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "t1_i_012",
+      "version": 1,
+      "title": "¿Alcanza el autobús?",
+      "course": "1bach",
+      "block": "Problemas integradores",
+      "topic": "t1",
+      "concept": "Movimiento rectilíneo",
+      "exercise_type": "Problemas integradores",
+      "subtype": "written_upload",
+      "difficulty": 4,
+      "estimated_time_min": 14,
+      "statement_pdf": null,
+      "solution_pdf": null,
+      "tags": [
+        "t1",
+        "i",
+        "cinematica"
+      ],
+      "workflow": {
+        "status": "draft"
+      }
+    },
+    {
       "id": "t2_v_001",
       "version": 1,
       "title": "Una posición en el segundo cuadrante",
@@ -8471,7 +8609,7 @@
     {
       "id": "t4_i_002",
       "version": 1,
-      "title": "La recta experimental f_k(μ) tiene pendiente 49 N",
+      "title": "La recta experimental f_k(μ) tiene pendiente 49,05 N",
       "course": "1bach",
       "block": "Experimento, integración y auditoría",
       "topic": "t4",

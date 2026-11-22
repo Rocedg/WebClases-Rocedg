@@ -101,8 +101,11 @@ en una base temporal desechable.
 
 ## Contenido y validación
 
-Cada banco se edita en content/exercises/<curso>/<tema>/exercises_<tema>.json.
-El índice content/exercises/index.json es generado; no se edita a mano.
+Cada tema de 1.º está en content/exercises/1bach/<tema>/: un manifiesto
+_topic.json y un archivo JSON por bloque. Los ejercicios se editan directamente
+en el archivo de su bloque; esos JSON son la única fuente de verdad. El índice
+content/exercises/index.json es generado; no se edita a mano. El formato y los
+pasos están en docs/exercise-bank-format.md y docs/exercise-workflow.md.
 
 ```powershell
 .\.venv\Scripts\python.exe scripts/build_exercise_index.py
@@ -148,6 +151,10 @@ Render.
 ## Documentación
 
 - [Arquitectura y mapa de contenido](docs/context/02-architecture.md).
+- [Formato de los bancos de ejercicios](docs/exercise-bank-format.md).
+- [Alta y cambio de ejercicios](docs/exercise-workflow.md).
+- [Despliegue en Render y Neon](docs/deployment.md).
+- [Checklist antes de subir a producción](docs/release-checklist.md) (esqueleto).
 - [Registro de progreso](docs/context/06-progress-tracker.md).
 - [Persistencia de actividad](docs/context/user-activity-backend.md).
 - [Intentos de ejercicios](docs/exercise-attempts.md).

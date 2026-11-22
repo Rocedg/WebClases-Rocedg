@@ -8,7 +8,7 @@
 - Use clear function names such as `load_topics()` or `load_quizzes()`.
 - Do not introduce blueprints or packages unless a dedicated architecture spec approves it.
 - Keep environment-sensitive values, such as `SECRET_KEY`, configurable through environment variables.
-- Do not add a database connection or ORM without an approved spec.
+- Persistence uses the existing Flask-SQLAlchemy setup (`database.py`, `models.py`). Do not add tables, columns, another ORM or a migration tool without an approved spec; there are no migrations, so schema changes are risky in production.
 
 ## Jinja Templates
 

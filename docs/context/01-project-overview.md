@@ -9,8 +9,7 @@ The app is intentionally lightweight. It uses Flask, Jinja templates, static CSS
 ## Users
 
 - Students who need guided physics practice.
-- The teacher/maintainer who organizes materials and eventually wants progress tracking.
-- Guest/demo users for testing.
+- The teacher/maintainer, who organizes materials, manages student accounts and follows progress from the read-only teacher panel.
 
 ## Core User Flows
 
@@ -20,7 +19,7 @@ The app is intentionally lightweight. It uses Flask, Jinja templates, static CSS
 4. A student practices quizzes and receives immediate results.
 5. A student opens exam and PAU/selectividad resources.
 6. The maintainer adds or updates PDF references through JSON and templates.
-7. A demo user signs in with guest credentials to verify the experience.
+7. The teacher creates student accounts and reviews their attempts from `/teacher`.
 
 ## Current Product Scope
 

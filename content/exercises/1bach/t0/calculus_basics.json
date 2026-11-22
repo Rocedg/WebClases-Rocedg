@@ -92,7 +92,9 @@
         "version_5"
       ],
       "origin": {
-        "kind": "t0_determinant_normal_calculus_extension",
+        "kind": "original_teacher_bank",
+        "batch": "t0_determinant_normal_calculus_extension",
+        "reference": null,
         "source": "Prompt 8: Banco T0, determinantes, vector normal y primeras derivadas e integrales"
       },
       "status": "active",
@@ -185,7 +187,9 @@
         "version_5"
       ],
       "origin": {
-        "kind": "t0_determinant_normal_calculus_extension",
+        "kind": "original_teacher_bank",
+        "batch": "t0_determinant_normal_calculus_extension",
+        "reference": null,
         "source": "Prompt 8: Banco T0, determinantes, vector normal y primeras derivadas e integrales"
       },
       "status": "active",
@@ -405,7 +409,9 @@
         "version_5"
       ],
       "origin": {
-        "kind": "t0_graphs_units_video_extension",
+        "kind": "original_teacher_bank",
+        "batch": "t0_graphs_units_video_extension",
+        "reference": null,
         "source": "Prompt 12: Banco T0, gráficas, velocidad media e instantánea, extremos, unidades, forma polar y fotogramas de vídeo"
       },
       "status": "active",
@@ -552,7 +558,9 @@
         "version_5"
       ],
       "origin": {
-        "kind": "t0_graphs_units_video_extension",
+        "kind": "original_teacher_bank",
+        "batch": "t0_graphs_units_video_extension",
+        "reference": null,
         "source": "Prompt 12: Banco T0, gráficas, velocidad media e instantánea, extremos, unidades, forma polar y fotogramas de vídeo"
       },
       "status": "active",
@@ -716,7 +724,9 @@
         "version_5"
       ],
       "origin": {
-        "kind": "t0_graphs_units_video_extension",
+        "kind": "original_teacher_bank",
+        "batch": "t0_graphs_units_video_extension",
+        "reference": null,
         "source": "Prompt 12: Banco T0, gráficas, velocidad media e instantánea, extremos, unidades, forma polar y fotogramas de vídeo"
       },
       "status": "active",
@@ -792,7 +802,9 @@
         "version_5"
       ],
       "origin": {
-        "kind": "t0_graphs_units_video_extension",
+        "kind": "original_teacher_bank",
+        "batch": "t0_graphs_units_video_extension",
+        "reference": null,
         "source": "Prompt 12: Banco T0, gráficas, velocidad media e instantánea, extremos, unidades, forma polar y fotogramas de vídeo"
       },
       "status": "active",
@@ -860,7 +872,9 @@
         "version_5"
       ],
       "origin": {
-        "kind": "t0_graphs_units_video_extension",
+        "kind": "original_teacher_bank",
+        "batch": "t0_graphs_units_video_extension",
+        "reference": null,
         "source": "Prompt 12: Banco T0, gráficas, velocidad media e instantánea, extremos, unidades, forma polar y fotogramas de vídeo"
       },
       "status": "active",
@@ -970,7 +984,9 @@
         "version_5"
       ],
       "origin": {
-        "kind": "t0_graphs_units_video_extension",
+        "kind": "original_teacher_bank",
+        "batch": "t0_graphs_units_video_extension",
+        "reference": null,
         "source": "Prompt 12: Banco T0, gráficas, velocidad media e instantánea, extremos, unidades, forma polar y fotogramas de vídeo"
       },
       "status": "active",
@@ -1119,7 +1135,9 @@
         "version_5"
       ],
       "origin": {
-        "kind": "t0_graphs_units_video_extension",
+        "kind": "original_teacher_bank",
+        "batch": "t0_graphs_units_video_extension",
+        "reference": null,
         "source": "Prompt 12: Banco T0, gráficas, velocidad media e instantánea, extremos, unidades, forma polar y fotogramas de vídeo"
       },
       "status": "active",
@@ -1227,7 +1245,9 @@
         "version_5"
       ],
       "origin": {
-        "kind": "t0_graphs_units_video_extension",
+        "kind": "original_teacher_bank",
+        "batch": "t0_graphs_units_video_extension",
+        "reference": null,
         "source": "Prompt 12: Banco T0, gráficas, velocidad media e instantánea, extremos, unidades, forma polar y fotogramas de vídeo"
       },
       "status": "active",

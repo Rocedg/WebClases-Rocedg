@@ -40,7 +40,7 @@ def test_all_published_t0_t1_t2_records_use_compact_safe_structured_content():
             assert exercise["response_fields"]
             assert all(field["type"] in ALLOWED_TYPES and field.get("part") for field in exercise["response_fields"])
             assert "Indicaciones de formato" not in source
-    assert counts == {"t0": 125, "t1": 60, "t2": 60}
+    assert counts == {"t0": 125, "t1": 66, "t2": 60}
 
 
 def test_retired_records_keep_order_ids_and_history_titles_but_are_not_published():
