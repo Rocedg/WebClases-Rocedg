@@ -79,7 +79,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -97,7 +97,7 @@
       "parts_count": 3,
       "statement_source": "Piedra \\(0,5 kg\\), radio \\(2 m\\), rapidez \\(4 m/s\\), plano horizontal ideal.\n\n(a) Calcula: a c.\n(b) Calcula: Resultante radial.\n(c) Selecciona: Dirección vectorial.",
       "solution_source": "\\(a_c=8 m/s²\\); resultante radial \\(4 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_c_002",
@@ -154,7 +154,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -172,7 +172,7 @@
       "parts_count": 1,
       "statement_source": "Elegir DCL correcto de coche en curva plana sin rozamiento modelizado aún.\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Selección: peso/normal verticales; falta interacción horizontal para curvar.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_c_003",
@@ -219,7 +219,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -237,7 +237,7 @@
       "parts_count": 1,
       "statement_source": "Masa en cuerda horizontal ideal, \\(m=0,2\\), \\(r=0,8\\), \\(v=6\\).\n\n(a) Calcula: Tensión.",
       "solution_source": "\\(T=9 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_c_004",
@@ -284,7 +284,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -302,7 +302,7 @@
       "parts_count": 1,
       "statement_source": "Círculo vertical, punto inferior, \\(m=1\\), \\(r=2\\), \\(v=6\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Tensión.",
       "solution_source": "\\(T=27,8 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_c_005",
@@ -349,7 +349,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -367,7 +367,7 @@
       "parts_count": 1,
       "statement_source": "Mismo sistema en punto superior. Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Tensión.",
       "solution_source": "\\(T=8,19 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_c_006",
@@ -426,7 +426,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -444,7 +444,7 @@
       "parts_count": 2,
       "statement_source": "Rapidez mínima para cuerda tensa arriba, \\(r=1,5 m\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: v min.\n(b) Calcula: Tensión.",
       "solution_source": "\\(v_min=3,84 m/s\\); \\(T=0\\) en el límite.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_c_007",
@@ -503,7 +503,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -521,7 +521,7 @@
       "parts_count": 2,
       "statement_source": "Pasajero en curva vertical inferior, \\(m=60\\), \\(r=10\\), \\(v=12\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Normal.\n(b) Calcula: Factor aparente.",
       "solution_source": "\\(N=1453 N\\); factor aparente \\(2,47\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_c_008",
@@ -592,7 +592,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -610,7 +610,7 @@
       "parts_count": 3,
       "statement_source": "Péndulo cónico \\(L=1,2 m\\), \\(θ=30°\\), \\(m=0,5\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Tensión.\n(b) Calcula: Radio.\n(c) Calcula: Rapidez.",
       "solution_source": "\\(T=5,66 N\\); radio \\(0,6 m\\); \\(v=1,84 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_c_009",
@@ -657,7 +657,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -675,7 +675,7 @@
       "parts_count": 1,
       "statement_source": "Gráfica de rapidez creciente en círculo de radio fijo.\n\n(a) Calcula: Razón al duplicar.",
       "solution_source": "Selección: \\(a_c∝v²\\); razón al duplicar \\(v\\): \\(4\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t3_c_010",
@@ -732,7 +732,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t3/referencia-ejercicios-t3.md",
+        "source": "Tabla orientativa inicial del T3 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -750,7 +750,7 @@
       "parts_count": 1,
       "statement_source": "Auditar un DCL que añade “fuerza centrípeta” a tensión y peso.\n\n(a) Selecciona: Dirección vectorial.",
       "solution_source": "Flecha a eliminar: centrípeta; ecuación radial correcta seleccionada.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     }
   ]
 }

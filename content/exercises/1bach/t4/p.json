@@ -79,7 +79,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -97,7 +97,7 @@
       "parts_count": 3,
       "statement_source": "Bloque \\(5 kg\\), plano \\(20°\\), \\(μ_s=0,4\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Rozamiento estático.\n(b) Calcula: Máximo.\n(c) Selecciona: Estado.",
       "solution_source": "Reposo; \\(f_s=16,8 N\\); máximo \\(18,4 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_p_002",
@@ -144,7 +144,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -162,7 +162,7 @@
       "parts_count": 1,
       "statement_source": "Aumentar ángulo hasta inicio de deslizamiento, \\(μ_s=0,4\\).\n\n(a) Calcula: θ c.",
       "solution_source": "\\(θ_c=21,8°\\); relación \\(tanθ_c=μ_s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_p_003",
@@ -209,7 +209,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -227,7 +227,7 @@
       "parts_count": 1,
       "statement_source": "Plano \\(30°\\), \\(μ_k=0,2\\), bloque desliza abajo. Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Aceleración.",
       "solution_source": "\\(a=3,21 m/s²\\); \\(N=mg cos30°\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_p_004",
@@ -308,7 +308,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -326,7 +326,7 @@
       "parts_count": 3,
       "statement_source": "Bloque sube inicialmente por plano anterior. Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Aceleración.\n(b) Calcula: Parada desde.\n(c) Selecciona: Sentido.",
       "solution_source": "\\(a=-6,60 m/s²\\) con eje arriba; parada desde \\(v_0=5\\): \\(0,757 s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_p_005",
@@ -383,7 +383,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -401,7 +401,7 @@
       "parts_count": 1,
       "statement_source": "Tras pararse, decidir si vuelve a bajar con \\(μ_s=0,4\\).\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Sí, porque \\(tan30°>0,4\\); selección de régimen posterior.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_p_006",
@@ -448,7 +448,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -466,7 +466,7 @@
       "parts_count": 1,
       "statement_source": "Fuerza paralela mantiene velocidad constante cuesta arriba, \\(m=8\\), \\(θ=25°\\), \\(μ_k=0,15\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: F.",
       "solution_source": "\\(F=43,8 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_p_007",
@@ -559,7 +559,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -577,7 +577,7 @@
       "parts_count": 4,
       "statement_source": "Fuerza horizontal \\(60 N\\) sobre \\(m=10 kg\\), plano \\(30°\\), \\(μ_k=0,2\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Normal.\n(b) Calcula: Componente paralela.\n(c) Calcula: Aceleración.\n(d) Selecciona: Sentido.",
       "solution_source": "\\(N=115,0 N\\); componente paralela \\(52,0 N\\); aceleración \\(-2,01 m/s²\\) si arriba positivo.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_p_008",
@@ -636,7 +636,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -654,7 +654,7 @@
       "parts_count": 2,
       "statement_source": "Bloque en plano unido a masa colgante; incluir rozamiento. \\(m_1=4\\), \\(m_2=3\\), \\(θ=30°\\), \\(μ_k=0,1\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Aceleración.\n(b) Calcula: Tensión.",
       "solution_source": "Sentido hacia \\(m_2\\); \\(a=0,916 m/s²\\); \\(T=26,7 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_p_009",
@@ -701,7 +701,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -719,7 +719,7 @@
       "parts_count": 1,
       "statement_source": "Hallar masa colgante para equilibrio en límite de subir, con \\(m_1=5 kg\\), \\(θ=25°\\), \\(μ_s=0,30\\).\n\n(a) Calcula: m 2.",
       "solution_source": "\\(m_2=m_1(sinθ+μ_s cosθ)=3,47 kg\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_p_010",
@@ -776,7 +776,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -794,7 +794,7 @@
       "parts_count": 1,
       "statement_source": "Rango de masa colgante que permite reposo. Usa \\(g=9,81 m/s²\\).\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Intervalo estructurado \\([m_min;m_max]\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_p_011",
@@ -865,7 +865,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -883,7 +883,7 @@
       "parts_count": 3,
       "statement_source": "Comparar un bloque que baja por \\(θ=30°\\) con \\(μ=0\\) y con \\(μ_k=0,20\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: a 0.\n(b) Calcula: a μ.\n(c) Calcula: Razón.",
       "solution_source": "\\(a_0=4,91 m/s²\\); \\(a_μ=3,21 m/s²\\); razón \\(0,654\\); función \\(a(μ)=g(sinθ-μcosθ)\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_p_012",
@@ -940,7 +940,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -958,7 +958,7 @@
       "parts_count": 1,
       "statement_source": "Diagnóstico de signo: alumno pone rozamiento siempre cuesta arriba.\n\n(a) Selecciona: Sentido.",
       "solution_source": "Seleccionar caso incorrecto: bloque que sube; dirección correcta cuesta abajo.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     }
   ]
 }

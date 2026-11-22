@@ -45,7 +45,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -63,7 +63,7 @@
       "parts_count": 1,
       "statement_source": "Muelle \\(k=200 N/m\\) estirado \\(3 cm\\).\n\n(a) Calcula: Fuerza.",
       "solution_source": "Fuerza \\(6 N\\) hacia el equilibrio.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_m_002",
@@ -134,7 +134,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -152,7 +152,7 @@
       "parts_count": 3,
       "statement_source": "Compresión \\(5 cm\\), eje positivo a la derecha.\n\n(a) Calcula: x.\n(b) Calcula: F.\n(c) Calcula: k.",
       "solution_source": "\\(x=-0,05 m\\); \\(F=+10 N\\) para \\(k=200\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_m_003",
@@ -199,7 +199,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -217,7 +217,7 @@
       "parts_count": 1,
       "statement_source": "Masa colgada \\(0,5 kg\\), \\(k=100 N/m\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Alargamiento de equilibrio.",
       "solution_source": "Alargamiento de equilibrio \\(0,0491 m\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_m_004",
@@ -276,7 +276,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -294,7 +294,7 @@
       "parts_count": 2,
       "statement_source": "Añadir \\(0,2 kg\\) a la masa anterior. Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Incremento de alargamiento.\n(b) Calcula: Total.",
       "solution_source": "Incremento de alargamiento \\(0,0196 m\\); total \\(0,0687 m\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_m_005",
@@ -341,7 +341,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -359,7 +359,7 @@
       "parts_count": 1,
       "statement_source": "Gráfica \\(F-x\\) experimental.\n\n(a) Calcula: k.",
       "solution_source": "Pendiente \\(k=150 N/m\\); función \\(F=-150x\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_m_006",
@@ -430,7 +430,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -448,7 +448,7 @@
       "parts_count": 3,
       "statement_source": "Dos muelles en paralelo \\(k_1=100\\), \\(k_2=150\\).\n\n(a) Calcula: Constante equivalente.\n(b) Calcula: Reparto para 1.\n(c) Calcula: Reparto para 2.",
       "solution_source": "\\(k_eq=250 N/m\\); reparto para \\(x=0,04\\): \\(4 N\\), \\(6 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_m_007",
@@ -519,7 +519,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -537,7 +537,7 @@
       "parts_count": 3,
       "statement_source": "Dos muelles en serie con mismos valores.\n\n(a) Calcula: Constante equivalente.\n(b) Calcula: Alargamientos con 1.\n(c) Calcula: Alargamientos con 2.",
       "solution_source": "\\(k_eq=60 N/m\\); alargamientos con \\(F=6 N\\): \\(0,06\\), \\(0,04 m\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_m_008",
@@ -596,7 +596,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -614,7 +614,7 @@
       "parts_count": 2,
       "statement_source": "Bloque horizontal unido a muelle, posición \\(x=0,08\\), \\(k=75\\), sin rozamiento.\n\n(a) Calcula: Fuerza.\n(b) Calcula: Aceleración para.",
       "solution_source": "Fuerza \\(-6 N\\); aceleración para \\(m=2\\): \\(-3 m/s²\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_m_009",
@@ -671,7 +671,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -689,7 +689,7 @@
       "parts_count": 1,
       "statement_source": "Muelle vertical: rapidez instantánea no determina equilibrio.\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Selección de DCL por encima/debajo del equilibrio; fuerzas numéricas.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_m_010",
@@ -746,7 +746,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -764,7 +764,7 @@
       "parts_count": 1,
       "statement_source": "Calibrar dinamómetro con masas \\(0,1–0,5 kg\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Función \\(x=(g/k)m\\); obtener \\(k\\) desde pendiente.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_m_011",
@@ -821,7 +821,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -839,7 +839,7 @@
       "parts_count": 1,
       "statement_source": "Muelle real deja de ser lineal tras \\(8 cm\\).\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Seleccionar rango de Hooke y punto que debe excluirse del ajuste.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_m_012",
@@ -886,7 +886,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -904,7 +904,7 @@
       "parts_count": 1,
       "statement_source": "Auditar confusión entre longitud \\(L\\) y deformación \\(x=L-L_0\\).\n\n(a) Calcula: Fuerza correctas con.",
       "solution_source": "\\(x\\) y fuerza correctas con \\(L_0=20 cm\\), \\(L=27 cm\\), \\(k=80\\): \\(5,6 N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     }
   ]
 }

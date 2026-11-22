@@ -57,7 +57,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -75,7 +75,7 @@
       "parts_count": 2,
       "statement_source": "Coche \\(1000 kg\\), curva plana \\(r=50 m\\), \\(v=10 m/s\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Rozamiento requerido.\n(b) Calcula: μ s,min.",
       "solution_source": "Rozamiento requerido \\(2000 N\\); \\(μ_s,min=0,204\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_c_002",
@@ -122,7 +122,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -140,7 +140,7 @@
       "parts_count": 1,
       "statement_source": "Velocidad máxima en curva plana \\(r=80 m\\), \\(μ_s=0,5\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: v max.",
       "solution_source": "\\(v_max=19,8 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_c_003",
@@ -187,7 +187,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -205,7 +205,7 @@
       "parts_count": 1,
       "statement_source": "Lluvia reduce \\(μ_s\\) de \\(0,6\\) a \\(0,3\\).\n\n(a) Calcula: √0,5.",
       "solution_source": "Razón de velocidades máximas \\(√0,5=0,707\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_c_004",
@@ -252,7 +252,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -270,7 +270,7 @@
       "parts_count": 1,
       "statement_source": "Curva peraltada sin rozamiento \\(r=100 m\\), \\(θ=12°\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Rapidez.",
       "solution_source": "\\(v=14,4 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_c_005",
@@ -317,7 +317,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -335,7 +335,7 @@
       "parts_count": 1,
       "statement_source": "Hallar peralte para \\(v=20 m/s\\), \\(r=120 m\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: θ.",
       "solution_source": "\\(θ=18,8°\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_c_006",
@@ -392,7 +392,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -410,7 +410,7 @@
       "parts_count": 1,
       "statement_source": "Elegir sentido del rozamiento si velocidad es menor que la de diseño.\n\n(a) Selecciona: Sentido.",
       "solution_source": "Selección: hacia arriba del peralte.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_c_007",
@@ -467,7 +467,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -485,7 +485,7 @@
       "parts_count": 1,
       "statement_source": "Elegir sentido si velocidad es mayor que diseño.\n\n(a) Selecciona: Sentido.",
       "solution_source": "Selección: hacia abajo del peralte.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_c_008",
@@ -532,7 +532,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -550,7 +550,7 @@
       "parts_count": 1,
       "statement_source": "Ciclista inclinado en curva plana, \\(v=8\\), \\(r=20\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: φ.",
       "solution_source": "\\(tanφ=v²/(rg)\\); \\(φ=18,1°\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_c_009",
@@ -597,7 +597,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -615,7 +615,7 @@
       "parts_count": 1,
       "statement_source": "Curva con rapidez variable: comparar fuerza radial en \\(v\\) y \\(2v\\).\n\n(a) Calcula: Razón.",
       "solution_source": "Razón \\(4\\); gráfica cuadrática seleccionada.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t4_c_010",
@@ -672,7 +672,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t4/referencia-ejercicios-t4.md",
+        "source": "Tabla orientativa inicial del T4 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -690,7 +690,7 @@
       "parts_count": 1,
       "statement_source": "Auditar “normal + peso + centrípeta = ma”.\n\n(a) Selecciona: Dirección vectorial.",
       "solution_source": "Eliminar centrípeta; elegir componentes que producen resultante radial.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t4.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     }
   ]
 }

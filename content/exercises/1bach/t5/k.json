@@ -45,7 +45,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t5/referencia-ejercicios-t5.md",
+        "source": "Tabla orientativa inicial del T5 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -63,7 +63,7 @@
       "parts_count": 1,
       "statement_source": "\\(m=2 kg\\), rapidez \\(3 m/s\\).\n\n(a) Calcula: Energía cinética.",
       "solution_source": "\\(K=9 J\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t5_k_002",
@@ -110,7 +110,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t5/referencia-ejercicios-t5.md",
+        "source": "Tabla orientativa inicial del T5 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -128,7 +128,7 @@
       "parts_count": 1,
       "statement_source": "Duplicar rapidez con masa fija.\n\n(a) Calcula: K 2/K 1.",
       "solution_source": "Razón \\(K_2/K_1=4\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t5_k_003",
@@ -175,7 +175,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t5/referencia-ejercicios-t5.md",
+        "source": "Tabla orientativa inicial del T5 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -193,7 +193,7 @@
       "parts_count": 1,
       "statement_source": "Trabajo neto \\(50 J\\) desde reposo, \\(m=4 kg\\).\n\n(a) Calcula: Rapidez.",
       "solution_source": "\\(v=5 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t5_k_004",
@@ -240,7 +240,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t5/referencia-ejercicios-t5.md",
+        "source": "Tabla orientativa inicial del T5 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -258,7 +258,7 @@
       "parts_count": 1,
       "statement_source": "\\(m=1000 kg\\), \\(v_i=20\\), \\(v_f=10 m/s\\).\n\n(a) Calcula: Trabajo neto.",
       "solution_source": "Trabajo neto \\(-150 kJ\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t5_k_005",
@@ -305,7 +305,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t5/referencia-ejercicios-t5.md",
+        "source": "Tabla orientativa inicial del T5 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -323,7 +323,7 @@
       "parts_count": 1,
       "statement_source": "Frenada con fuerza constante \\(6000 N\\) del coche anterior.\n\n(a) Calcula: Distancia.",
       "solution_source": "Distancia \\(25 m\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t5_k_006",
@@ -380,7 +380,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t5/referencia-ejercicios-t5.md",
+        "source": "Tabla orientativa inicial del T5 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -398,7 +398,7 @@
       "parts_count": 1,
       "statement_source": "Fuerza neta variable dada por \\(F-x\\); partir con \\(v_0=2\\).\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Trabajo por área y rapidez final.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t5_k_007",
@@ -445,7 +445,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t5/referencia-ejercicios-t5.md",
+        "source": "Tabla orientativa inicial del T5 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -463,7 +463,7 @@
       "parts_count": 1,
       "statement_source": "Máquina hace \\(12 kJ\\) en \\(8 s\\).\n\n(a) Calcula: Potencia media.",
       "solution_source": "Potencia media \\(1,5 kW\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t5_k_008",
@@ -510,7 +510,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t5/referencia-ejercicios-t5.md",
+        "source": "Tabla orientativa inicial del T5 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -528,7 +528,7 @@
       "parts_count": 1,
       "statement_source": "Elevador \\(500 kg\\) sube a \\(2 m/s\\) constante. Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Potencia.",
       "solution_source": "Potencia \\(9,81 kW\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t5_k_009",
@@ -575,7 +575,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t5/referencia-ejercicios-t5.md",
+        "source": "Tabla orientativa inicial del T5 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -593,7 +593,7 @@
       "parts_count": 1,
       "statement_source": "Vehículo \\(F=800 N\\) a \\(v=15 m/s\\).\n\n(a) Calcula: Potencia instantánea.",
       "solution_source": "Potencia instantánea \\(12 kW\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t5_k_010",
@@ -640,7 +640,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t5/referencia-ejercicios-t5.md",
+        "source": "Tabla orientativa inicial del T5 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -658,7 +658,7 @@
       "parts_count": 1,
       "statement_source": "Fuerza a \\(60°\\) respecto de \\(v\\), \\(F=100\\), \\(v=4\\).\n\n(a) Calcula: P.",
       "solution_source": "\\(P=200 W\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t5_k_011",
@@ -715,7 +715,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t5/referencia-ejercicios-t5.md",
+        "source": "Tabla orientativa inicial del T5 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -733,7 +733,7 @@
       "parts_count": 1,
       "statement_source": "Gráfica \\(P(t)\\) escalonada.\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Energía transferida por áreas; resultado en J.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t5_k_012",
@@ -790,7 +790,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t5/referencia-ejercicios-t5.md",
+        "source": "Tabla orientativa inicial del T5 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -808,7 +808,7 @@
       "parts_count": 1,
       "statement_source": "Elegir gráfica \\(K(v)\\) y \\(P(v)\\) para fuerza constante.\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Opciones correctas: cuadrática y lineal.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     }
   ]
 }

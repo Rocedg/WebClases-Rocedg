@@ -57,7 +57,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
+        "source": "Tabla orientativa inicial del T6 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -75,7 +75,7 @@
       "parts_count": 2,
       "statement_source": "Choque perfectamente inelástico: \\(2 kg·3 m/s\\) alcanza \\(1 kg\\) en reposo.\n\n(a) Calcula: Velocidad conjunta.\n(b) Calcula: Pérdida.",
       "solution_source": "Velocidad conjunta \\(2 m/s\\); pérdida \\(3 J\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t6_c_002",
@@ -134,7 +134,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
+        "source": "Tabla orientativa inicial del T6 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -152,7 +152,7 @@
       "parts_count": 2,
       "statement_source": "Choque frontal: \\(1 kg\\) a \\(4\\), \\(1 kg\\) a \\(-2\\), se pegan.\n\n(a) Calcula: v f.\n(b) Calcula: Pérdida.",
       "solution_source": "\\(v_f=1 m/s\\); pérdida \\(9 J\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t6_c_003",
@@ -199,7 +199,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
+        "source": "Tabla orientativa inicial del T6 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -217,7 +217,7 @@
       "parts_count": 1,
       "statement_source": "Bala-bloque: \\(0,01 kg\\) a \\(300\\), bloque \\(1,49\\) en reposo.\n\n(a) Calcula: Velocidad conjunta.",
       "solution_source": "Velocidad conjunta \\(2 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t6_c_004",
@@ -264,7 +264,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
+        "source": "Tabla orientativa inicial del T6 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -282,7 +282,7 @@
       "parts_count": 1,
       "statement_source": "Masa \\(2 kg\\) choca con otra de \\(3 kg\\) en reposo y quedan juntas a \\(2 m/s\\).\n\n(a) Calcula: Velocidad incidente.",
       "solution_source": "Velocidad incidente \\(5 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t6_c_005",
@@ -339,7 +339,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
+        "source": "Tabla orientativa inicial del T6 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -357,7 +357,7 @@
       "parts_count": 1,
       "statement_source": "Choque elástico de masas iguales, una en reposo.\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Intercambio de velocidades seleccionado y calculado.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t6_c_006",
@@ -416,7 +416,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
+        "source": "Tabla orientativa inicial del T6 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -434,7 +434,7 @@
       "parts_count": 2,
       "statement_source": "Elástico 1D \\(m_1=1\\), \\(m_2=3\\), \\(u_1=4\\), \\(u_2=0\\).\n\n(a) Calcula: Velocidad final 1.\n(b) Calcula: Velocidad final 2.",
       "solution_source": "\\(v_1=-2\\), \\(v_2=2 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t6_c_007",
@@ -493,7 +493,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
+        "source": "Tabla orientativa inicial del T6 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -511,7 +511,7 @@
       "parts_count": 2,
       "statement_source": "Elástico con masas \\(3\\) y \\(1\\), mismo \\(u_1=4\\).\n\n(a) Calcula: Velocidad final 1.\n(b) Calcula: Velocidad final 2.",
       "solution_source": "\\(v_1=2\\), \\(v_2=6 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t6_c_008",
@@ -558,7 +558,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
+        "source": "Tabla orientativa inicial del T6 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -576,7 +576,7 @@
       "parts_count": 1,
       "statement_source": "Comprobar elasticidad desde velocidades medidas.\n\n(a) Calcula: K f/K i.",
       "solution_source": "Momento antes/después y razón \\(K_f/K_i=1\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t6_c_009",
@@ -637,7 +637,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
+        "source": "Tabla orientativa inicial del T6 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -655,7 +655,7 @@
       "parts_count": 1,
       "statement_source": "Choque conserva momento pero pierde \\(40%\\) de \\(K\\).\n\n(a) Selecciona: Tipo de interacción.",
       "solution_source": "Clasificación inelástico; energía perdida numérica.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t6_c_010",
@@ -712,7 +712,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
+        "source": "Tabla orientativa inicial del T6 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -730,7 +730,7 @@
       "parts_count": 1,
       "statement_source": "Coeficiente de restitución con velocidades dadas.\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "\\(e=|v_2-v_1|/|u_1-u_2|\\); valor cerrado.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t6_c_011",
@@ -791,7 +791,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
+        "source": "Tabla orientativa inicial del T6 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -809,7 +809,7 @@
       "parts_count": 1,
       "statement_source": "\\(e=0\\): interpretar y calcular velocidad común.\n\n(a) Selecciona: Tipo de interacción.",
       "solution_source": "Perfectamente inelástico; \\(v_f\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t6_c_012",
@@ -866,7 +866,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
+        "source": "Tabla orientativa inicial del T6 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -884,7 +884,7 @@
       "parts_count": 1,
       "statement_source": "\\(e=1\\): resolver junto con momento.\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Dos velocidades finales.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t6_c_013",
@@ -943,7 +943,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
+        "source": "Tabla orientativa inicial del T6 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -961,7 +961,7 @@
       "parts_count": 2,
       "statement_source": "\\(e=0,5\\), masas iguales, una en reposo, \\(u=6\\).\n\n(a) Calcula: Velocidad final 1.\n(b) Calcula: Velocidad final 2.",
       "solution_source": "\\(v_1=1,5\\), \\(v_2=4,5 m/s\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t6_c_014",
@@ -1020,7 +1020,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
+        "source": "Tabla orientativa inicial del T6 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -1038,7 +1038,7 @@
       "parts_count": 2,
       "statement_source": "Pelota rebota en suelo: \\(u_y=-10\\), \\(e=0,8\\).\n\n(a) Calcula: v y.\n(b) Calcula: Porcentaje de energía vertical.",
       "solution_source": "\\(v_y=+8\\); porcentaje de energía vertical \\(64%\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t6_c_015",
@@ -1099,7 +1099,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
+        "source": "Tabla orientativa inicial del T6 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -1117,7 +1117,7 @@
       "parts_count": 1,
       "statement_source": "Dos cuerpos se mueven juntos: determinar si puede saberse que fue inelástico.\n\n(a) Selecciona: Tipo de interacción.",
       "solution_source": "Selección: estado final común implica perfectamente inelástico en 1D.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t6_c_016",
@@ -1174,7 +1174,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
+        "source": "Tabla orientativa inicial del T6 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -1192,7 +1192,7 @@
       "parts_count": 1,
       "statement_source": "Choque 2D con objeto inicialmente en reposo y vectores finales perpendiculares.\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Vector momento inicial y una velocidad desconocida por componentes.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t6_c_017",
@@ -1249,7 +1249,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
+        "source": "Tabla orientativa inicial del T6 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -1267,7 +1267,7 @@
       "parts_count": 1,
       "statement_source": "Billar ideal, masas iguales, una en reposo; finales perpendiculares.\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Relación pitagórica de velocidades y ángulos.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     },
     {
       "id": "t6_c_018",
@@ -1324,7 +1324,7 @@
       "origin": {
         "kind": "original_teacher_bank",
         "reference": null,
-        "source": "content/exercises/1bach/t6/referencia-ejercicios-t6.md",
+        "source": "Tabla orientativa inicial del T6 (eliminada el 2026-11-22; el JSON es la fuente)",
         "adaptation_note": "Enunciado, datos, solución y diagrama propios."
       },
       "status": "draft",
@@ -1342,7 +1342,7 @@
       "parts_count": 1,
       "statement_source": "Auditar solución que conserva energía cinética en choque pegajoso.\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Paso erróneo seleccionado; velocidad correcta y pérdida.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
-      "solution_reference": "referencia-ejercicios-t6.md; elaboración propia y revisión matemática."
+      "solution_reference": "Elaboración propia y revisión matemática."
     }
   ]
 }

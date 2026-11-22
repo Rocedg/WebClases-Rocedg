@@ -37,9 +37,8 @@ For exercise content work, also read `docs/exercise-bank-format.md` and
   `_topic.json` manifest plus ordered block files. Add new exercises to the
   corresponding block file.
 - The exercise JSON files are the only source of truth for every topic
-  (T0-T6). Edit them directly. The old bank generators live in
-  `scripts/archive/` and must not be run with `--write`; the
-  `referencia-ejercicios-tN.md` tables are a historical overview only.
+  (T0-T6). Edit them directly. The early `referencia-ejercicios-tN.md`
+  overview tables and the bank generators were deleted on 2026-11-22.
 - Keep the project understandable for a non-expert maintainer.
 - Prefer small branches and pull requests.
 
@@ -80,9 +79,9 @@ Full field reference: `docs/exercise-bank-format.md`.
 
 Generators and migration scripts:
 
-- The bank generators (`build_t0_v4_bank.py`, `build_t3_t6_exercise_banks.py`)
-  are archived in `scripts/archive/`. Do not run them with `--write`; edit the
-  block files directly.
+- There are no bank generators: the old T0 v4 and T3-T6 generators were
+  deleted on 2026-11-22 (they remain in Git history). Edit the block files
+  directly.
 - `scripts/migrate_compact_exercises.py` (T0-T2 compact migration) is read-only
   by default and writes only with `--write`.
 - After any exercise change, run `scripts/validate_exercises.py`, the topic
