@@ -12,7 +12,7 @@ movimiento. Las herramientas son las de T0 y T1; ahora tambi\'en cambia la direc
 \indexentry{sec:b2}{2. Lanzar y seguir un proyectil}
 \indexentry{sec:b3}{3. Entender un giro}
 \end{lessonindex}
-Usaremos $g=10\mpss$ en los tiros, sin resistencia del aire y con gravedad uniforme.
+Usaremos $g=9,81\mpss$ en los tiros, sin resistencia del aire y con gravedad uniforme.
 \precisionnote
 
 \block{1}{Componer movimientos}{sec:b1}
@@ -99,28 +99,28 @@ $1,25\units{m}$ a $3,00\mps$. Halla tiempo de ca\'ida, alcance y velocidad de im
 la misma altura debe tardar lo mismo: ambas comparten su movimiento vertical.
 \step{C\'alculo}
 \[
-0=1,25-5t^2\Rightarrow t=0,500\units{s},\qquad
-x=3t=1,50\units{m}.
+0=1,25-4,905t^2\Rightarrow t=0,505\units{s},\qquad
+x=3t=1,51\units{m}.
 \]
-$\vec v_{\mathrm{impacto}}=(3,00\ii-5,00\jj)\mps$ y
-$|\vec v|=\sqrt{34}=5,83\mps$; forma $59,0^\circ$ bajo la horizontal.
+$\vec v_{\mathrm{impacto}}=(3,00\ii-4,95\jj)\mps$ y
+$|\vec v|=\sqrt{33,5}=5,79\mps$; forma $58,8^\circ$ bajo la horizontal.
 \begin{center}
 \begin{tikzpicture}[x=2.2cm,y=2.2cm,font=\small]
 \draw[axis] (0,0)--(2.2,0) node[right] {$x$ (m)};
 \draw[axis] (0,0)--(0,1.65) node[above] {$y$ (m)};
-\draw[BrandBlue,thick,domain=0:1.5,samples=60] plot(\x,{1.25-5*(\x/3)^2});
+\draw[BrandBlue,thick,domain=0:1.5145,samples=60] plot(\x,{1.25-4.905*(\x/3)^2});
 \foreach \t in {0,.25,.5} {
- \fill ({3*\t},{1.25-5*\t*\t}) circle (1.6pt);
- \draw[guide] (0,{1.25-5*\t*\t})--({3*\t},{1.25-5*\t*\t});
+ \fill ({3*\t},{1.25-4.905*\t*\t}) circle (1.6pt);
+ \draw[guide] (0,{1.25-4.905*\t*\t})--({3*\t},{1.25-4.905*\t*\t});
 }
-\draw[vector] (1.5,0)--(1.86,-.6) node[right] {$\vec v$};
-\node[left] at (0,1.25) {$1,25$}; \node[below left] at (1.5,0) {$1,50$};
+\draw[vector] (1.5145,0)--(1.8745,-.594) node[right] {$\vec v$};
+\node[left] at (0,1.25) {$1,25$}; \node[below left] at (1.5145,0) {$1,51$};
 \end{tikzpicture}
 \end{center}
-Trayectoria $y(x)=1,25-5(x/3)^2$. Los puntos corresponden a $0$, $0,25$ y
-$0,50\units{s}$; la flecha de velocidad usa la proporci\'on $3:-5$.
-\step{Interpretaci\'on} Doblar $v_{0x}$ duplica el alcance a $3,00\units{m}$
-y mantiene $t=0,500\units{s}$; cambia la velocidad total de llegada.
+Trayectoria $y(x)=1,25-4,905(x/3)^2$. Los puntos corresponden a $0$, $0,25$ y
+$0,50\units{s}$; la flecha de velocidad usa la proporci\'on $3:-4,95$.
+\step{Interpretaci\'on} Doblar $v_{0x}$ duplica el alcance a $3,03\units{m}$
+y mantiene $t=0,505\units{s}$; cambia la velocidad total de llegada.
 \end{examplebox}
 
 \begin{examplebox}{salto oblicuo y condiciones del alcance}
@@ -133,11 +133,11 @@ La ra\'iz $t=0$ de $y(t)=0$ es la salida; buscamos la otra ra\'iz.
 \step{C\'alculo}
 \[
 v_{0x}=9,83\mps,\quad v_{0y}=6,88\mps,\quad
-t_f=\frac{2v_{0y}}g=1,38\units{s}.
+t_f=\frac{2v_{0y}}g=1,40\units{s}.
 \]
 Con componentes sin redondear:
-$R_h=v_{0x}t_f=13,5\units{m}$ y
-$\Delta h_{\max}=v_{0y}^2/(2g)=2,37\units{m}$.
+$R_h=v_{0x}t_f=13,8\units{m}$ y
+$\Delta h_{\max}=v_{0y}^2/(2g)=2,41\units{m}$.
 \step{Interpretaci\'on} En el m\'aximo queda $\vec v=v_{0x}\ii$:
 solo se anula la componente vertical. $R_h$ es el alcance, no el radio circular $R$.
 \end{examplebox}
@@ -151,21 +151,21 @@ Son consecuencias del modelo, no f\'ormulas universales para cualquier desnivel.
 
 \heading{Mismo alcance, vuelos distintos}
 Con $v_0=20,0\mps$ desde el suelo, $30^\circ$ y $60^\circ$ tienen
-$R_h=34,6\units{m}$. A $30^\circ$ el vuelo dura $2,00\units{s}$ y alcanza
-$5,00\units{m}$; a $60^\circ$, $3,46\units{s}$ y $15,0\units{m}$.
+$R_h=35,3\units{m}$. A $30^\circ$ el vuelo dura $2,04\units{s}$ y alcanza
+$5,10\units{m}$; a $60^\circ$, $3,53\units{s}$ y $15,3\units{m}$.
 \begin{center}
 \begin{tikzpicture}[x=.18cm,y=.18cm,font=\small]
 \draw[axis] (0,0)--(40,0) node[right] {$x$ (m)};
 \draw[axis] (0,0)--(0,19) node[above] {$y$ (m)};
-\draw[BrandBlue,thick,domain=0:34.641016,samples=80]
- plot(\x,{tan(30)*\x-10*\x*\x/(2*400*cos(30)^2)});
-\draw[GreenLine!70!black,dashed,thick,domain=0:34.641016,samples=80]
- plot(\x,{tan(60)*\x-10*\x*\x/(2*400*cos(60)^2)});
-\foreach \h in {5,15} \draw[guide] (0,\h)--(17.320508,\h) node[midway,above] {};
-\node[left] at (0,5) {$5$}; \node[left] at (0,15) {$15$};
+\draw[BrandBlue,thick,domain=0:35.311943,samples=80]
+ plot(\x,{tan(30)*\x-9.81*\x*\x/(2*400*cos(30)^2)});
+\draw[GreenLine!70!black,dashed,thick,domain=0:35.311943,samples=80]
+ plot(\x,{tan(60)*\x-9.81*\x*\x/(2*400*cos(60)^2)});
+\foreach \h in {5.096840,15.290520} \draw[guide] (0,\h)--(17.655971,\h) node[midway,above] {};
+\node[left] at (0,5.1) {$5,10$}; \node[left] at (0,15.29) {$15,3$};
 \node[right] at (22,14.3) {$60^\circ$};
 \node[right] at (23,4.5) {$30^\circ$};
-\node[below] at (34.641016,0) {$34,6$};
+\node[below] at (35.311943,0) {$35,3$};
 \end{tikzpicture}
 \end{center}
 Las curvas comparten escala espacial y punto de llegada, no instante de llegada.
@@ -176,19 +176,19 @@ La complementariedad deja de dar este resultado si cambia la altura final.
 \step{Planteamiento} Una pelota sale desde $8,00\units{m}$ a $10,0\mps$
 y $20^\circ$. Calcula impacto en el suelo y los pasos por $y=8,40\units{m}$.
 \solutionblock
-\step{Modelo} $x=(10\cos20^\circ)t$, $y=8+(10\sin20^\circ)t-5t^2$.
+\step{Modelo} $x=(10\cos20^\circ)t$, $y=8+(10\sin20^\circ)t-4,905t^2$.
 No usamos el tiempo de vuelo de alturas iguales.
 \step{C\'alculo} Para $y=0$:
 \[
-t=\frac{10\sin20^\circ\pm\sqrt{(10\sin20^\circ)^2+160}}{10}.
+t=\frac{10\sin20^\circ\pm\sqrt{(10\sin20^\circ)^2+156,96}}{9,81}.
 \]
-Las ra\'ices son aproximadamente $1,65$ y $-0,968\units{s}$:
-el impacto f\'isico es a $1,65\units{s}$ y $x=15,5\units{m}$.
-La altura m\'axima es $8,58\units{m}$, as\'i que s\'i alcanza $8,40\units{m}$.
+Las ra\'ices son aproximadamente $1,67$ y $-0,975\units{s}$:
+el impacto f\'isico es a $1,67\units{s}$ y $x=15,7\units{m}$.
+La altura m\'axima es $8,60\units{m}$, as\'i que s\'i alcanza $8,40\units{m}$.
 Al imponer esa altura se obtienen
-$t_1=0,150\units{s}$ y $t_2=0,534\units{s}$.
+$t_1=0,149\units{s}$ y $t_2=0,549\units{s}$.
 \step{Interpretaci\'on} Pasa por esa altura subiendo y bajando,
-en $x_1=1,41\units{m}$ y $x_2=5,02\units{m}$.
+en $x_1=1,40\units{m}$ y $x_2=5,16\units{m}$.
 Son dos puntos distintos, no dos choques con el mismo balc\'on.
 Si el origen vertical se coloca en la ventana, el suelo est\'a en $y'=-8$;
 el tiempo de impacto permanece igual.
@@ -196,12 +196,12 @@ el tiempo de impacto permanece igual.
 
 \heading{Trayectoria espacial frente a gr\'aficas temporales}
 Para el bal\'on de $12\mps$ y $35^\circ$, estas gr\'aficas utilizan las
-mismas componentes y el mismo intervalo $0\le t\le1,37658\units{s}$.
+mismas componentes y el mismo intervalo $0\le t\le1,40324\units{s}$.
 \begin{center}
 \begin{tikzpicture}[font=\small]
 \pgfmathsetmacro{\vx}{12*cos(35)}
 \pgfmathsetmacro{\vy}{12*sin(35)}
-\pgfmathsetmacro{\tf}{2*\vy/10}
+\pgfmathsetmacro{\tf}{2*\vy/9.81}
 \begin{scope}[x=3cm,y=.22cm]
 \draw[axis] (0,0)--(1.6,0) node[right] {$t$ (s)};
 \draw[axis] (0,0)--(0,16) node[above] {$x$ (m)};
@@ -212,7 +212,7 @@ mismas componentes y el mismo intervalo $0\le t\le1,37658\units{s}$.
 \begin{scope}[xshift=7.4cm,x=3cm,y=1cm]
 \draw[axis] (0,0)--(1.6,0) node[right] {$t$ (s)};
 \draw[axis] (0,0)--(0,3.4) node[above] {$y$ (m)};
-\draw[BrandBlue,thick,domain=0:\tf,samples=60] plot(\x,{\vy*\x-5*\x*\x});
+\draw[BrandBlue,thick,domain=0:\tf,samples=60] plot(\x,{\vy*\x-4.905*\x*\x});
 \node[left] at (0,2) {$2$}; \node[below] at (1,0) {$1$};
 \end{scope}
 \begin{scope}[yshift=-5.3cm,x=3cm,y=.22cm]
@@ -224,9 +224,9 @@ mismas componentes y el mismo intervalo $0\le t\le1,37658\units{s}$.
 \begin{scope}[xshift=7.4cm,yshift=-5.3cm,x=3cm,y=.22cm]
 \draw[axis] (0,0)--(1.6,0) node[right] {$t$ (s)};
 \draw[axis] (0,-8)--(0,10) node[above] {$v_y$ (m/s)};
-\draw[BrandBlue,thick,domain=0:\tf] plot(\x,{\vy-10*\x});
+\draw[BrandBlue,thick,domain=0:\tf] plot(\x,{\vy-9.81*\x});
 \node[left] at (0,\vy) {$6,88$}; \node[left] at (0,-\vy) {$-6,88$};
-\node[below left] at (.6883,0) {$0,688$}; \node[above] at (1.3766,0) {$1,38$};
+\node[below left] at (.7016,0) {$0,702$}; \node[above] at (1.4032,0) {$1,40$};
 \end{scope}
 \end{tikzpicture}
 \end{center}

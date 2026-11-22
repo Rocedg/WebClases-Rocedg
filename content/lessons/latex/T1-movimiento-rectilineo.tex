@@ -199,7 +199,7 @@ otra al bajar. Comprueba sustituyendo en $x(t)$.
 \begin{examplebox}{la pelota que sube y vuelve a caer}
 \origin{Adaptaci\'on del tiro vertical del original T1 con datos propios.}
 \step{Planteamiento} Una pelota sale hacia arriba a $18,0\mps$ desde la mano, a
-$1,50\units{m}$ del suelo. Sin aire y con $g=10\mpss$, calcula la altura m\'axima, cu\'ando
+$1,50\units{m}$ del suelo. Sin aire y con $g=9,81\mpss$, calcula la altura m\'axima, cu\'ando
 llega al suelo y con qu\'e velocidad.
 \solutionblock
 \step{F\'isicamente} La pelota sube cada vez m\'as despacio, se para un instante arriba y
@@ -207,54 +207,54 @@ baja cada vez m\'as deprisa. Todo ocurre sobre la misma vertical: es unidimensio
 La gravedad tira hacia abajo durante todo el vuelo, tambi\'en arriba: la aceleraci\'on no
 cambia de sentido.
 \step{Matem\'aticamente} Eje $+y$ hacia arriba con origen en el suelo: $y_0=1,5\units{m}$,
-$v_0=+18\mps$ y $a=-10\mpss$. El santo grial y su derivada son
+$v_0=+18\mps$ y $a=-9,81\mpss$. El santo grial y su derivada son
 \[
-y(t)=1,5+18t-5t^2,\qquad v(t)=\frac{dy}{dt}=18-10t.
+y(t)=1,5+18t-4,905t^2,\qquad v(t)=\frac{dy}{dt}=18-9,81t.
 \]
-El coeficiente $-5$ es $a/2$.
-\step{Altura m\'axima ($\bigstar$)} $v=0$ da $18-10t=0$, $t=1,80\units{s}$, y
-$y(1,8)=1,5+32,4-16,2=17,7\units{m}$. Sobre la mano ha subido $16,2\units{m}$.
-\step{Llegada al suelo ($\bigstar$)} $y=0$ da $-5t^2+18t+1,5=0$, con
-$A=-5$, $B=18$ y $C=1,5$:
+El coeficiente $-4,905$ es $a/2$.
+\step{Altura m\'axima ($\bigstar$)} $v=0$ da $18-9,81t=0$, $t=1,83\units{s}$, y
+$y(1,835)=1,5+33,03-16,51=18,0\units{m}$. Sobre la mano ha subido $16,5\units{m}$.
+\step{Llegada al suelo ($\bigstar$)} $y=0$ da $-4,905t^2+18t+1,5=0$, con
+$A=-4,905$, $B=18$ y $C=1,5$:
 \[
-t=\frac{-18\pm\sqrt{18^2-4(-5)(1,5)}}{2(-5)}=\frac{-18\pm\sqrt{354}}{-10}
-\quad\Rightarrow\quad t=3,68\units{s}\ \text{o}\ t=-0,0815\units{s}.
+t=\frac{-18\pm\sqrt{18^2-4(-4,905)(1,5)}}{2(-4,905)}=\frac{-18\pm\sqrt{353,43}}{-9,81}
+\quad\Rightarrow\quad t=3,75\units{s}\ \text{o}\ t=-0,0815\units{s}.
 \]
 La ra\'iz negativa es anterior al lanzamiento y se descarta. Entonces
-$v(3,68)=18-36,8=-18,8\mps$: el signo menos indica que baja.
+$v(3,75)=18-36,8=-18,8\mps$: el signo menos indica que baja.
 \step{Gr\'aficamente} Las tres gr\'aficas comparten reloj. La l\'inea discontinua marca
-$t=1,80\units{s}$: m\'aximo de $y$, cero de $v$, y la aceleraci\'on sigue valiendo $-10\mpss$.
+$t=1,83\units{s}$: m\'aximo de $y$, cero de $v$, y la aceleraci\'on sigue valiendo $-9,81\mpss$.
 \begin{center}
 \begin{tikzpicture}[font=\small]
 \begin{scope}[x=.9cm,y=.1cm]
 \draw[axis] (0,0)--(4.2,0) node[right] {$t$ (s)};
 \draw[axis] (0,0)--(0,21) node[above] {$y$ (m)};
-\draw[BrandBlue,thick,domain=0:3.6815,samples=60] plot(\x,{1.5+18*\x-5*\x*\x});
-\draw[guide] (1.8,0)--(1.8,17.7)--(0,17.7);
-\node[left] at (0,17.7) {$17,7$}; \node[left] at (0,1.5) {$1,5$};
-\node[below] at (1.8,0) {$1,8$}; \node[below] at (3.68,0) {$3,68$};
+\draw[BrandBlue,thick,domain=0:3.7513,samples=60] plot(\x,{1.5+18*\x-4.905*\x*\x});
+\draw[guide] (1.835,0)--(1.835,18.01)--(0,18.01);
+\node[left] at (0,18.01) {$18,0$}; \node[left] at (0,1.5) {$1,5$};
+\node[below] at (1.835,0) {$1,83$}; \node[below] at (3.75,0) {$3,75$};
 \end{scope}
 \begin{scope}[xshift=5.6cm,yshift=1.05cm,x=.9cm,y=.05cm]
 \draw[axis] (0,0)--(4.2,0) node[right] {$t$ (s)};
 \draw[axis] (0,-21)--(0,21) node[above] {$v$ (m/s)};
-\draw[BrandBlue,thick] (0,18)--(3.6815,-18.815);
-\draw[guide] (1.8,-21)--(1.8,21);
-\node[left] at (0,18) {$18$}; \node[right] at (3.68,-18.8) {$-18,8$};
-\node[above right] at (1.8,0) {$1,8$};
+\draw[BrandBlue,thick] (0,18)--(3.7513,-18.80);
+\draw[guide] (1.835,-21)--(1.835,21);
+\node[left] at (0,18) {$18$}; \node[right] at (3.75,-18.8) {$-18,8$};
+\node[above right] at (1.835,0) {$1,83$};
 \end{scope}
 \begin{scope}[xshift=11.1cm,yshift=1.95cm,x=.9cm,y=.13cm]
 \draw[axis] (0,0)--(4.2,0) node[right] {$t$ (s)};
 \draw[axis] (0,-12)--(0,4) node[above] {$a$ (m/s$^2$)};
-\draw[BrandBlue,thick] (0,-10)--(3.6815,-10);
-\draw[guide] (1.8,-12)--(1.8,4);
-\node[left] at (0,-10) {$-10$};
+\draw[BrandBlue,thick] (0,-9.81)--(3.7513,-9.81);
+\draw[guide] (1.835,-12)--(1.835,4);
+\node[left] at (0,-9.81) {$-9,81$};
 \end{scope}
 \end{tikzpicture}
 \end{center}
 $y(t)$ es una par\'abola que abre hacia abajo porque $a<0$; $v(t)$ es una recta de
-pendiente $-10$; $a(t)$ es una recta horizontal.
+pendiente $-9,81$; $a(t)$ es una recta horizontal.
 \step{Interpretaci\'on} En lo m\'as alto $v=0$, pero $a\ne0$: si la aceleraci\'on fuese cero
-all\'i, la pelota se quedar\'ia flotando. A los $3,60\units{s}$ vuelve a la altura de la mano
+all\'i, la pelota se quedar\'ia flotando. A los $3,67\units{s}$ vuelve a la altura de la mano
 con $-18,0\mps$, la misma rapidez con la que sali\'o. Llega al suelo algo despu\'es y m\'as
 r\'apida porque cae $1,50\units{m}$ m\'as.
 \end{examplebox}
