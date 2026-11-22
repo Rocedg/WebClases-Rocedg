@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+{% from "components/_macros.html" import page_header with context %}
+
+{% block title %}Solución · {{ exercise.title }}{% endblock %}
+
+{% block content %}
+<section class="section-shell exercise-detail-page{% if exercise.statement_source is defined %} exercise-pilot{% endif %}"{% if exercise.statement_source is not defined %} data-legacy-math{% endif %}>
+    {{ page_header(
+        topic_label ~ (' · Nº ' ~ exercise_number(exercise) if exercise_number(exercise) is not none else ''),
+        exercise.title,
+        exercise.block or exercise.concept or '',
+        'fa-key'
+    ) }}
+
+    <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-4">
+        <a href="{{ url_for('teacher_exercises', topic=exercise.topic) }}" class="btn btn-outline-primary"><i class="fas fa-list me-1" aria-hidden="true"></i>Lista del tema</a>
+        <div class="d-flex flex-wrap gap-2">
+            {% if previous_exercise %}
+            <a href="{{ url_for('teacher_exercise_solution', exercise_id=previous_exercise.id) }}" class="btn btn-outline-primary"><i class="fas fa-arrow-left me-1" aria-hidden="true"></i>Anterior</a>
+            {% endif %}
+            <a href="{{ url_for('exercise_detail', exercise_id=exercise.id) }}" class="btn btn-outline-primary"><i class="fas fa-eye me-1" aria-hidden="true"></i>Ver como alumno</a>
+            {% if next_exercise %}
+            <a href="{{ url_for('teacher_exercise_solution', exercise_id=next_exercise.id) }}" class="btn btn-outline-primary">Siguiente<i class="fas fa-arrow-right ms-1" aria-hidden="true"></i></a>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="metadata-row mb-4">
+        <span class="badge-soft">{{ exercise.id }}</span>
+        <span class="badge-soft">Versión {{ exercise.version }}</span>
+        <span class="badge-soft">Estado: {{ exercise.status or 'sin estado' }}</span>
+        {% if exercise.difficulty %}<span class="badge-soft badge-difficulty-{{ exercise.difficulty }}">Dificultad {{ exercise.difficulty }}/5</span>{% endif %}
+    </div>
+
+    <section class="panel-card exercise-workspace">
+        <div class="section-heading"><h2>Enunciado</h2></div>
+        {% if exercise.statement_source is defined %}
+        <div class="exercise-statement exercise-source">{{ exercise.statement_source|exercise_source }}</div>
+        {% elif exercise.statement %}
+        <div class="exercise-statement" data-legacy-math>{{ exercise.statement|safe }}</div>
+        {% endif %}
+        {% if exercise.assets %}
+        <div class="exercise-assets">
+            {% for asset in exercise.assets %}
+                {% set path = asset if asset is string else asset.path %}
+                {% if path and public_static_exists(path) %}
+                <figure class="exercise-figure">
+                    <img src="{{ asset_url(path) }}" alt="{{ asset.alt|default('') if asset is not string else '' }}">
+                </figure>
+                {% endif %}
+            {% endfor %}
+        </div>
+        {% endif %}
+    </section>
+
+    <section class="panel-card exercise-workspace mt-4">
+        <div class="section-heading"><h2>Respuestas esperadas</h2></div>
+        {% for field in fields %}
+        <article class="quiz-question exercise-field">
+            <h3 class="resource-card-title fs-5">{% if field.part %}({{ field.part }}) {% endif %}{{ field.label }}</h3>
+            {% if field.type == 'single_choice' and field.options %}
+            <ul class="mb-0">
+                {% for option in field.options %}
+                <li>{% if option.id == field.correct_option_id %}<strong>{{ option.label or option.id }} ✓</strong>{% else %}{{ option.label or option.id }}{% endif %}</li>
+                {% endfor %}
+            </ul>
+            {% else %}
+            <div class="alert alert-light border mb-0"><code>{{ expected_answer_text(field) }}</code></div>
+            {% endif %}
+        </article>
+        {% else %}
+        <p class="resource-card-copy mb-0">Este ejercicio no tiene campos de respuesta.</p>
+        {% endfor %}
+    </section>
+
+    <section class="panel-card exercise-workspace mt-4">
+        <div class="section-heading"><h2>Solución guiada</h2></div>
+        {% if exercise.solution_source is defined %}
+        <div class="exercise-solution exercise-source">{{ exercise.solution_source|exercise_source }}</div>
+        {% elif exercise.solution and exercise.solution.summary_steps %}
+        <ol data-legacy-math>
+            {% for step in exercise.solution.summary_steps %}<li>{{ step }}</li>{% endfor %}
+        </ol>
+        {% else %}
+        <p class="resource-card-copy mb-0">Este ejercicio no tiene solución guiada.</p>
+        {% endif %}
+    </section>
+
+    {% if exercise.learning_objective or exercise.common_mistakes or exercise.difficulty_reason %}
+    <section class="panel-card exercise-workspace mt-4">
+        <div class="section-heading"><h2>Notas para el profesor</h2></div>
+        {% if exercise.learning_objective %}<p><strong>Objetivo:</strong> {{ exercise.learning_objective }}</p>{% endif %}
+        {% if exercise.difficulty_reason %}<p><strong>Por qué esta dificultad:</strong> {{ exercise.difficulty_reason }}</p>{% endif %}
+        {% if exercise.common_mistakes %}
+        <p class="mb-1"><strong>Errores frecuentes:</strong></p>
+        <ul class="mb-0">{% for mistake in exercise.common_mistakes %}<li>{{ mistake }}</li>{% endfor %}</ul>
+        {% endif %}
+    </section>
+    {% endif %}
+</section>
+{% endblock %}

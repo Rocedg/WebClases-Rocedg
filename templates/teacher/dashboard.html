@@ -12,7 +12,10 @@
         'fa-chart-line'
     ) }}
 
-    <div class="d-flex justify-content-end mb-4">
+    <div class="d-flex justify-content-end gap-2 mb-4">
+        <a href="{{ url_for('teacher_exercises') }}" class="btn btn-outline-primary">
+            <i class="fas fa-key me-1" aria-hidden="true"></i>Soluciones de los ejercicios
+        </a>
         <a href="{{ url_for('teacher_accounts') }}" class="btn btn-outline-primary">
             <i class="fas fa-users me-1" aria-hidden="true"></i>Cuentas
         </a>

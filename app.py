@@ -20,7 +20,7 @@ from models import (
     UserStudyState,
     UserTopicProgress,
 )
-from services.exercise_presentation import exercise_number, render_exercise_source, response_format_notes, response_placeholder
+from services.exercise_presentation import exercise_number, expected_answer_text, render_exercise_source, response_format_notes, response_placeholder
 from services.exercise_bank_loader import load_topic_banks
 from services.activity_service import (
     get_user_activity_snapshot,
@@ -70,6 +70,7 @@ app = Flask(__name__)
 app.jinja_env.filters['exercise_source'] = render_exercise_source
 app.jinja_env.globals.update(
     exercise_number=exercise_number,
+    expected_answer_text=expected_answer_text,
     response_format_notes=response_format_notes,
     response_placeholder=response_placeholder,
 )
@@ -892,6 +893,58 @@ def teacher_student_attempt(username, attempt_id):
         exercise=exercise,
         fields=response_fields(exercise),
         responses=response_map(attempt),
+    )
+
+
+TEACHER_TOPIC_LABELS = {
+    't0': 'T0 · Herramientas',
+    't1': 'T1 · Movimiento rectilíneo',
+    't2': 'T2 · Movimiento en el plano',
+    't3': 'T3',
+    't4': 'T4',
+    't5': 'T5',
+    't6': 'T6',
+}
+
+
+def exercises_by_topic():
+    grouped = {}
+    for exercise in load_exercise_catalogue().get('exercises', []):
+        grouped.setdefault(str(exercise.get('topic')), []).append(exercise)
+    return dict(sorted(grouped.items()))
+
+
+@app.route('/teacher/exercises')
+@teacher_required
+def teacher_exercises():
+    grouped = exercises_by_topic()
+    topic = request.args.get('topic') or next(iter(grouped), None)
+    if topic not in grouped:
+        return render_template('errors/404.html'), 404
+    return render_template(
+        'teacher/exercises.html',
+        topics=[(key, TEACHER_TOPIC_LABELS.get(key, key.upper()), len(items)) for key, items in grouped.items()],
+        topic=topic,
+        exercises=grouped[topic],
+    )
+
+
+@app.route('/teacher/exercises/<exercise_id>')
+@teacher_required
+def teacher_exercise_solution(exercise_id):
+    grouped = exercises_by_topic()
+    exercise = find_by_id(load_exercise_catalogue().get('exercises', []), exercise_id)
+    if not exercise:
+        return render_template('errors/404.html'), 404
+    siblings = grouped.get(str(exercise.get('topic')), [])
+    index = next((i for i, item in enumerate(siblings) if item.get('id') == exercise.get('id')), 0)
+    return render_template(
+        'teacher/exercise_solution.html',
+        exercise=exercise,
+        fields=response_fields(exercise),
+        previous_exercise=siblings[index - 1] if index > 0 else None,
+        next_exercise=siblings[index + 1] if index + 1 < len(siblings) else None,
+        topic_label=TEACHER_TOPIC_LABELS.get(str(exercise.get('topic')), str(exercise.get('topic')).upper()),
     )
 
 
