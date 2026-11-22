@@ -7,7 +7,7 @@
 
 ## Current Phase
 
-Repository cleanup on `chore/repository-cleanup`, based on safety checkpoint `5d6ad08`. The user explicitly authorized checkpoint/push and repository reorganization on 2026-09-14. Current content paths are documented in `docs/context/02-architecture.md`; dated entries below retain historical paths.
+Content review and consolidation on `main` (as of 2026-11-22). T0 is active (125 active, 2 retired); T1-T6 are published as `draft` (60 each) and are being reviewed topic by topic, starting with T1. Accounts live in the `users` table, the read-only teacher panel is in place, and `/exams` requires login. The repository cleanup from 2026-09 is merged. Current content paths are documented in `docs/context/02-architecture.md`; dated entries below retain historical paths.
 
 ## Completed
 
@@ -48,13 +48,10 @@ Repository cleanup on `chore/repository-cleanup`, based on safety checkpoint `5d
 
 ## Next Recommended Work
 
-1. Review the repository cleanup branch and the preserved lesson/PDF changes before any separately authorized merge.
-2. Remove generated LaTeX `.aux`/`.out` review artifacts if they appear in the working tree before commit.
-3. Review the T0 v0.3 PDF and embedded lesson viewer if not already approved.
-4. Later: add database migrations before relying on production schema changes.
-5. Later: add migrations if production schema evolution requires them.
-6. Later: build teacher review for submitted exercise responses.
-7. Later: replace rough generated exercise diagrams with a shared SVG diagram system.
+1. Unify g = 9,81 m/s² across lessons and exercise banks.
+2. Continue the teacher review of the T2-T6 draft banks (T1 audit done).
+3. Later: add database migrations before relying on production schema changes.
+4. Later: replace rough generated exercise diagrams with a shared SVG diagram system.
 
 ## Decisions
 
@@ -97,6 +94,8 @@ Repository cleanup on `chore/repository-cleanup`, based on safety checkpoint `5d
 - Letting old design reference locations or placeholder branding leak into review.
 
 ## Update Log
+- 2026-11-22: Ampliada la documentación: `docs/exercise-bank-format.md` (formato real de los bancos JSON, tipos de campo, `status` y `version`), `docs/exercise-workflow.md` (alta y cambio de ejercicios, validación), `docs/deployment.md` (Render y Neon) y el esqueleto de `docs/release-checklist.md`. `02-architecture.md` describe el recorrido de un ejercicio y los servicios; `exercise-attempts.md` describe la corrección actual. Recogidas las decisiones del día: JSON como única fuente, g = 9,81 m/s², `draft` como marcador interno y corrector que solo comprueba el valor. Solo documentación.
+- 2026-11-22: Brought `AGENTS.md` and the context docs up to date with `main`: exercise counts and status rules (`draft` is an internal review marker, students see drafts, only `retired` is hidden), the `origin` provenance field, the state of the exercise generators (`build_t0_v4_bank.py` writes unconditionally and must not be run), g = 9,81 m/s² as the convention, and the value-only numeric grading. Fixed the stale ORM rule in `03-code-standards.md`, the exercise path in `02-architecture.md`, the user list in `01-project-overview.md` and the current phase here. Documentation only.
 - 2026-11-21: Eliminado el sembrado automático de cuentas desde el arranque de producción y `init-db`. Las cuentas de pruebas están confinadas al fixture temporal de pytest; añadido `create-local-account` para SQLite local con contraseña interactiva. `SECRET_KEY` es obligatorio al importar la aplicación fuera de `python app.py`, que usa una clave temporal solo para ejecución directa local.
 - 2026-10-12: Añadido el panel de profesor en modo lectura con resumen de alumnos, seguimiento individual y consulta de respuestas de intentos sin relajar la propiedad de los intentos estudiantiles.
 - 2026-10-12: La lista de seed de `app.py` quedó limitada a las cuentas de prueba `Guest` y `Edgar`.

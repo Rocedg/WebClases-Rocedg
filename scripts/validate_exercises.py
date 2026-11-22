@@ -188,6 +188,33 @@ def is_lightweight_exercise(exercise: dict[str, Any]) -> bool:
     return "response_mode" in exercise and ("statement" in exercise or "statement_source" in exercise)
 
 
+ORIGIN_KINDS = {"original_teacher_bank", "adapted_from_pau", "official_pau"}
+
+
+def validate_lightweight_origin(exercise: dict[str, Any], exercise_id: str, result: ValidationResult) -> None:
+    """Provenance of the compact (1.º Bachillerato) exercises.
+
+    kind: original_teacher_bank | adapted_from_pau | official_pau.
+    reference: external source (PAU), null for own exercises; the key is required.
+    source: the spec, prompt or review that produced the exercise.
+    """
+    origin = exercise.get("origin")
+    if not isinstance(origin, dict):
+        result.errors.append(f"{exercise_id}: origin must be an object.")
+        return
+    kind = origin.get("kind")
+    if kind not in ORIGIN_KINDS:
+        result.errors.append(f"{exercise_id}: origin.kind must be one of {sorted(ORIGIN_KINDS)}.")
+    if "reference" not in origin:
+        result.errors.append(f"{exercise_id}: origin.reference is required (null for own exercises).")
+    elif kind == "original_teacher_bank" and origin["reference"] is not None:
+        result.errors.append(f"{exercise_id}: origin.reference must be null for original_teacher_bank.")
+    elif kind in {"adapted_from_pau", "official_pau"} and not origin["reference"]:
+        result.errors.append(f"{exercise_id}: origin.reference is required for {kind}.")
+    if not is_non_empty_string(origin.get("source")):
+        result.errors.append(f"{exercise_id}: origin.source is required.")
+
+
 def validate_lightweight_exercise(
     exercise: dict[str, Any],
     exercise_id: str,
@@ -214,10 +241,7 @@ def validate_lightweight_exercise(
     if not isinstance(version, int) or isinstance(version, bool) or version < 1:
         result.errors.append(f"{exercise_id}: version must be a positive integer.")
 
-    if not isinstance(exercise.get("origin"), dict):
-        result.errors.append(f"{exercise_id}: origin must be an object.")
-    elif not is_non_empty_string(exercise["origin"].get("kind")):
-        result.errors.append(f"{exercise_id}: origin.kind is required.")
+    validate_lightweight_origin(exercise, exercise_id, result)
 
     if not isinstance(exercise.get("tags"), list):
         result.errors.append(f"{exercise_id}: tags must be a list.")

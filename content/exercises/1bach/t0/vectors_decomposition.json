@@ -84,7 +84,9 @@
         "version_5"
       ],
       "origin": {
-        "kind": "t0_bank_v5_extension",
+        "kind": "original_teacher_bank",
+        "batch": "t0_bank_v5_extension",
+        "reference": null,
         "source": "Revisión T0 v5 (errores y vectores)"
       },
       "status": "active",
@@ -175,7 +177,9 @@
         "version_5"
       ],
       "origin": {
-        "kind": "t0_bank_v5_extension",
+        "kind": "original_teacher_bank",
+        "batch": "t0_bank_v5_extension",
+        "reference": null,
         "source": "Revisión T0 v5 (errores y vectores)"
       },
       "status": "active",
