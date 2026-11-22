@@ -135,7 +135,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Dos funciones y un punto del plano. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Evaluar un vector posición en dos instantes y calcular el desplazamiento y la velocidad media.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Funciones paramétricas"
@@ -283,7 +283,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Derivar una posición vectorial. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Derivar por componentes un vector posición para obtener velocidad, aceleración y rapidez.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Funciones paramétricas"
@@ -420,7 +420,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "De coordenadas a trayectoria. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Escribir r(t), eliminar t para obtener la trayectoria y dar su dominio.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Funciones paramétricas"
@@ -538,7 +538,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Trayectoria recta con rapidez variable. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Ver que una trayectoria recta puede recorrerse con rapidez variable.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Funciones paramétricas"
@@ -643,7 +643,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Eliminar tiempo sin perder el dominio físico. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Obtener la trayectoria de una salida horizontal con su dominio físico y la velocidad a una altura dada.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Funciones paramétricas"
@@ -771,7 +771,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Una parábola espacial y cuatro gráficas. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Pasar de x(t) e y(t) de un proyectil a la trayectoria, el tiempo de vuelo y el máximo.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Funciones paramétricas"
@@ -913,7 +913,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Misma curva, distinto ritmo. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Distinguir trayectoria y movimiento: misma curva recorrida con ritmos distintos.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Funciones paramétricas"
@@ -1061,7 +1061,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Integrar dos componentes de velocidad. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Integrar las componentes de la velocidad para obtener la posición y localizar un mínimo.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Funciones paramétricas"
@@ -1184,7 +1184,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Cruzar una altura no es acertar en un punto. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Calcular los cruces con una altura y decidir cuál corresponde a un punto concreto.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Funciones paramétricas"
@@ -1305,7 +1305,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Auditoría de una parametrización. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Elegir la parametrización compatible con una descripción y calcular con ella.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Funciones paramétricas"

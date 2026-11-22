@@ -109,7 +109,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Rumbo de un dron para llegar exactamente al norte. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Componer velocidades para elegir el rumbo de un dron que compensa el viento.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Problemas integradores"
@@ -244,7 +244,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Pelota desde una grada. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Resolver un tiro oblicuo desde una grada: máximo, vuelo, alcance y velocidad de impacto.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Problemas integradores"
@@ -354,7 +354,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Diana elevada y techo limitante. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Encontrar los dos tiros que llegan a una diana y descartar el que choca con un techo.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Problemas integradores"
@@ -490,7 +490,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Lanzamiento horizontal hacia una rampa descendente. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Calcular el impacto sobre una rampa descendente y el ángulo con la superficie.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Problemas integradores"
@@ -657,7 +657,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Movimiento paramétrico con instante de rapidez mínima. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Encontrar el instante de rapidez mínima de un movimiento paramétrico y los vectores allí.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Problemas integradores"
@@ -767,7 +767,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Reconstruir un tiro desde el impacto. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Reconstruir una salida horizontal a partir de los datos del impacto.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Problemas integradores"
@@ -889,7 +889,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "De una gráfica angular al vector aceleración. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Integrar ω(t) para obtener ángulo y arco, y calcular las aceleraciones tangencial y normal.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Problemas integradores"
@@ -1062,7 +1062,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Simulacro: salida tangente desde una rueda. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Encadenar un movimiento circular y un tiro horizontal a partir de la velocidad de salida.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Problemas integradores"

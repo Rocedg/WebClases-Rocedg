@@ -95,7 +95,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "De revoluciones por minuto a periodo. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Pasar de rpm a frecuencia, periodo y velocidad angular, y contar vueltas.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Movimiento circular"
@@ -205,7 +205,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "La rapidez del borde y el arco recorrido. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Relacionar velocidad angular y rapidez lineal, y distinguir distancia de desplazamiento tras varias vueltas.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Movimiento circular"
@@ -367,7 +367,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Cuatro tangentes de un mismo MCU. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Escribir el vector velocidad tangente en distintos puntos de un MCU.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Movimiento circular"
@@ -529,7 +529,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Aceleración al centro en dos puntos. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Calcular la aceleración centrípeta y ver que es perpendicular a la velocidad.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Movimiento circular"
@@ -685,7 +685,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Parametrizar un giro horario. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Parametrizar un giro horario con θ(t), x(t) e y(t) y obtener la velocidad.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Movimiento circular"
@@ -795,7 +795,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Las componentes oscilan aunque la rapidez sea fija. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Ver que en un MCU las componentes de la velocidad oscilan aunque la rapidez sea constante.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Movimiento circular"
@@ -929,7 +929,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Comparar radios exige decir qué permanece fijo. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Comparar aceleraciones centrípetas a distintos radios según se mantenga fija ω o la rapidez.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Movimiento circular"
@@ -1063,7 +1063,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Rueda frenada: aceleración total variable. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Resolver un MCUA de frenada: tiempo de parada, vueltas y aceleraciones tangencial y normal.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Movimiento circular"

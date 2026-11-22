@@ -95,7 +95,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Tres pendientes, tres velocidades. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Obtener velocidades como pendientes de los tramos rectos de una gráfica x(t).",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Funciones y gráficas"
@@ -193,7 +193,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Rectángulo y triángulo bajo la velocidad. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Calcular desplazamientos como áreas bajo v(t) y la aceleración como pendiente.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Funciones y gráficas"
@@ -277,7 +277,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Tres representaciones compatibles. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Comprobar por derivación si x(t), v(t) y a(t) describen el mismo movimiento.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Funciones y gráficas"
@@ -387,7 +387,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Reposo, retroceso y regreso. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Leer reposo y retroceso en x(t) y distinguir desplazamiento nulo de distancia nula.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Funciones y gráficas"
@@ -500,7 +500,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Áreas que se cancelan parcialmente. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Calcular áreas con signo bajo v(t), separándolas en el punto de giro.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Funciones y gráficas"
@@ -598,7 +598,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "El área de aceleración no da posición. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Obtener variaciones de velocidad como áreas bajo a(t), sin confundirlas con posiciones.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Funciones y gráficas"
@@ -699,7 +699,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Dibujar la velocidad desde la posición. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Dibujar v(t) derivando una posición definida por tramos, incluido uno cuadrático.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Funciones y gráficas"
@@ -797,7 +797,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Dibujar aceleración desde velocidad. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Dibujar a(t) a partir de las pendientes de v(t) y comprobar con áreas con signo.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Funciones y gráficas"

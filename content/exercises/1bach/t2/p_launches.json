@@ -85,7 +85,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Un lanzamiento hacia la izquierda. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Descomponer la velocidad inicial de un lanzamiento hacia la izquierda y leer el estado del proyectil.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro parabólico"
@@ -221,7 +221,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Ecuaciones con origen no situado en la salida. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Escribir las ecuaciones de un proyectil cuyo origen no está en el punto de salida.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro parabólico"
@@ -295,7 +295,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Raíces de regreso al mismo nivel. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Obtener el tiempo de vuelo resolviendo y(t) = 0, sin fórmulas memorizadas.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro parabólico"
@@ -387,7 +387,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Alcance y condición de igual altura. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Calcular tiempo de vuelo, alcance y trayectoria de un tiro oblicuo desde el suelo.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro parabólico"
@@ -536,7 +536,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Altura máxima sin reposo total. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Ver que en la altura máxima solo se anula v_y y que allí la rapidez es mínima.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro parabólico"
@@ -647,7 +647,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Velocidad de impacto con ángulo y sentido. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Calcular la velocidad de impacto de un tiro desde altura y expresar su ángulo sin ambigüedad.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro parabólico"
@@ -763,7 +763,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Vuelo desde un balcón y cambio de origen. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Resolver un tiro desde un balcón y comprobar que cambiar el origen no cambia el vuelo.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro parabólico"

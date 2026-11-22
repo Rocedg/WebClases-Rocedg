@@ -83,7 +83,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Comparación argumentada de dos frenadas. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Comparar dos frenadas hasta parar y modelizar el reposo posterior.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Problemas integradores"
@@ -169,7 +169,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Viaje de tren con horario completo. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Encadenar tres tramos de un viaje y calcular duración, distancia y rapidez media.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Problemas integradores"
@@ -255,7 +255,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Un mensajero alcanza al peatón. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Resolver un alcance con salida retardada desde una posición negativa.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Problemas integradores"
@@ -353,7 +353,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Ascensor con destino fijado por áreas. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Encadenar tres tramos verticales y comprobar el destino con áreas bajo v(t).",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Problemas integradores"
@@ -451,7 +451,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Diseñar una gráfica para comparar recorridos. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Calcular recorridos con áreas bajo v(t) y diseñar una frenada que cumpla una condición.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Problemas integradores"
@@ -561,7 +561,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Simulacro: un reparto de ida y vuelta. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Modelizar un recorrido de ida y vuelta en cuatro tramos y calcular sus medias.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Problemas integradores"
@@ -659,7 +659,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Lanzamiento desde una azotea. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Resolver un lanzamiento vertical desde una azotea: máximo y raíz de impacto con discriminante.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Problemas integradores"
@@ -772,7 +772,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Informe de un sensor con una medida incoherente. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Ajustar un MRUA a datos de un sensor y detectar una medida incoherente con los residuos.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Problemas integradores"
@@ -858,7 +858,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "¿Detención o impacto antes de parar?. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Decidir si un móvil que frena se detiene antes de llegar a un punto o lo alcanza, eligiendo la raíz.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Problemas integradores"
@@ -944,7 +944,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Alcance durante una frenada. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Calcular un alcance entre un MRU y un MRUA que frena, comprobando el tramo de validez.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Problemas integradores"

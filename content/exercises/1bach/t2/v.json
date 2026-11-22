@@ -84,7 +84,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Una posición en el segundo cuadrante. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Escribir un vector posición, calcular su módulo y su ángulo en el segundo cuadrante.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Vectores y composición"
@@ -183,7 +183,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Desplazarse no es medir desde el origen. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Calcular el vector desplazamiento entre dos puntos y no confundirlo con la posición final.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Vectores y composición"
@@ -282,7 +282,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Velocidad media y datos insuficientes para rapidez. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Calcular la velocidad media vectorial y ver que sin trayectoria la rapidez media solo tiene una cota.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Vectores y composición"
@@ -381,7 +381,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Aceleración media de un giro. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Calcular la aceleración media como cambio del vector velocidad, aunque la rapidez cambie poco.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Vectores y composición"
@@ -492,7 +492,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Camino quebrado y cuerda entre extremos. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Distinguir distancia recorrida y desplazamiento, y rapidez media y módulo de la velocidad media.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Vectores y composición"
@@ -604,7 +604,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Componentes de una velocidad oblicua. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Descomponer una velocidad dada por módulo y rumbo y obtener el desplazamiento.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Vectores y composición"
@@ -729,7 +729,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Tangente y aceleración en un vuelo. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Ver que la velocidad es tangente a la trayectoria y que en la cima no se anula.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Vectores y composición"
@@ -852,7 +852,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Barca que apunta a la otra orilla. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Sumar velocidades relativas para una barca que cruza un río y calcular tiempo de cruce y deriva.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Vectores y composición"
@@ -976,7 +976,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Elegir ejes sin cambiar la física. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Comprobar que cambiar de ejes cambia las componentes, pero no el tiempo ni el punto de llegada.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Vectores y composición"
@@ -1100,7 +1100,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Reconstruir el viento. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Restar velocidades relativas para reconstruir el viento a partir de un desplazamiento medido.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Vectores y composición"

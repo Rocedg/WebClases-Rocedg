@@ -83,7 +83,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Dos ángulos para una diana elevada. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Encontrar los dos ángulos que llevan a una diana y comparar sus tiempos.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro parabólico"
@@ -193,7 +193,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Ángulos complementarios: mismo alcance. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Comparar dos tiros con ángulos complementarios: mismo alcance, distinto vuelo.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro parabólico"
@@ -292,7 +292,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Velocidad mínima para una condición de ángulo fijo. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Calcular la rapidez inicial necesaria para pasar por un punto con ángulo fijo.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro parabólico"
@@ -390,7 +390,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Qué cambia al duplicar la componente horizontal. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Ver que duplicar v_x duplica el alcance sin cambiar el tiempo de vuelo ni la altura.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro parabólico"
@@ -526,7 +526,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Proyecto de cuatro gráficas desde una trayectoria. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Calcular los estados clave de un tiro desde altura: cima, impacto y alcance.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro parabólico"
@@ -662,7 +662,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Tiro sobre un plano inclinado. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Calcular el impacto de un proyectil sobre un plano inclinado y el ángulo con la rampa.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro parabólico"
@@ -773,7 +773,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Auditar signos, raíces y unidades. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Auditar una solución errónea de un tiro oblicuo y calcular los valores correctos.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro parabólico"

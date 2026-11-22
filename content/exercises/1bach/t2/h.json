@@ -101,7 +101,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Salida horizontal y dirección de impacto. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Resolver una salida horizontal: tiempo de vuelo, alcance y velocidad de impacto.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro horizontal"
@@ -217,7 +217,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Velocidad necesaria para una marca. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Diseñar la velocidad horizontal necesaria para caer en un punto dado.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro horizontal"
@@ -303,7 +303,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Altura inferida desde el alcance. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Deducir la altura de salida a partir del alcance y la velocidad horizontal.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro horizontal"
@@ -439,7 +439,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Dos velocidades desde la misma plataforma. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Ver que con la misma altura el tiempo de caída es el mismo aunque cambie v_x.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro horizontal"
@@ -549,7 +549,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Cambiar la altura: una ley de raíz cuadrada. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Ver que el alcance de una salida horizontal crece con la raíz de la altura.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro horizontal"
@@ -673,7 +673,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Cuatro gráficas de una salida horizontal. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Calcular posición y velocidad en distintos instantes de una salida horizontal.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro horizontal"
@@ -795,7 +795,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Elegir trayectoria y componentes compatibles. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Elegir el modelo correcto de una salida horizontal comprobando derivadas y aceleraciones.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro horizontal"
@@ -907,7 +907,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Contacto con una rampa ascendente. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Calcular el contacto de una salida horizontal con una rampa ascendente.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro horizontal"
@@ -1043,7 +1043,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Lanzamiento desde una plataforma móvil. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Describir un lanzamiento desde una plataforma móvil en dos sistemas de referencia.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro horizontal"
@@ -1141,7 +1141,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Laboratorio: estimar la velocidad de salida. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Linealizar datos de laboratorio (R² frente a h) para estimar v₀ con su incertidumbre.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro horizontal"
