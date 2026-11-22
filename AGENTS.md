@@ -16,6 +16,9 @@ Before implementing changes, read:
 
 For feature work, also read the relevant spec in `docs/context/feature-specs/`.
 
+For exercise content work, also read `docs/exercise-bank-format.md` and
+`docs/exercise-workflow.md`. For deployment questions, read `docs/deployment.md`.
+
 ## Working Rules
 
 - Work on one feature unit at a time.

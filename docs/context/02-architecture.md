@@ -46,6 +46,45 @@ PDFs are working source copies; legacy static PDFs are the public reference
 library. This is an intentional source/public distinction, not competing content
 roots. No compatibility symlinks or duplicate runtime loaders are used.
 
+## Request flow: practising an exercise
+
+1. `/homework` loads the catalogue with `load_exercise_catalogue()` in
+   `app.py`, which reads every topic through
+   `services/exercise_bank_loader.py` (manifest `_topic.json` plus block
+   files) and drops `retired` exercises and anything that is not `1bach`.
+   `draft` is not filtered. Attempt summaries per exercise come from
+   `exercise_attempt_service.get_catalogue_attempt_summaries()` and are grouped
+   by `services/exercise_taxonomy.py`.
+2. `/exercise/<id>` renders `templates/user/exercise_detail.html`. The statement
+   and solution text pass through the `exercise_source` filter
+   (`services/exercise_presentation.py`), which escapes HTML and turns `(a)`,
+   `(b)`… into a list. MathJax renders the LaTeX in the browser.
+3. `POST …/start` creates or resumes an `ExerciseAttempt`; `…/draft` saves
+   `ExerciseResponse` rows without grading; `…/submit` grades every field
+   server-side against the JSON (`_grade_response()`), stores the score and
+   makes the attempt read-only. `…/timer` syncs active time.
+4. Opening an attempt updates the study state (`mark_exercise_worked()` in
+   `services/activity_service.py`). `/progress` and the teacher panel
+   (`/teacher…`) read those study states, activity events and the stored
+   attempts.
+
+The JSON format and grading rules are documented in
+`docs/exercise-bank-format.md`; the authoring steps in
+`docs/exercise-workflow.md`.
+
+## Services
+
+| Module | Responsibility |
+| --- | --- |
+| `exercise_bank_loader.py` | Load split or legacy topic banks in deterministic order. |
+| `exercise_attempt_service.py` | Attempts, drafts, submission, grading, regrading, history. |
+| `exercise_presentation.py` | Exercise number and safe rendering of statement/solution text. |
+| `exercise_taxonomy.py` | Topic and exercise-type titles and catalogue summaries. |
+| `activity_service.py` | Activity events, study state, progress snapshot. |
+| `account_service.py` | Login, account creation, password changes, activation. |
+
+Deployment on Render with Neon Postgres is documented in `docs/deployment.md`.
+
 ## Templates and frontend
 
 - `templates/base.html`: layout, shared navigation and footer.

@@ -48,12 +48,21 @@ Submissions use `POST /exercise/<exercise_id>/attempt/<attempt_id>/submit`. Subm
 
 ## Grading
 
-Automatic grading is intentionally limited:
+Automatic grading is deterministic and server-side (`_grade_response()` in
+`services/exercise_attempt_service.py`):
 
-- `single_choice` is graded only when `correct_option_id` exists.
-- `numeric` is graded only when `expected_value` and tolerance data support deterministic comparison.
+- `numeric`: value within the absolute `tolerance` of `expected_value`, or one of `accepted_forms`.
+- `vector`: each component of `(x; y)` within `tolerance` of `expected_components`.
+- `single_choice`: matches `correct_option_id`.
+- `function`: numerically equivalent to `canonical_expression` or an accepted form.
+- `unit_expression`: dimensionally equal to the expected unit.
+- `short_text`: matches an accepted form after normalization.
 
-Other response types, and fields without a deterministic grading contract, become `pending_review`.
+Decision (2026-11-22): the grader checks the value only. Units are shown as a
+fixed label and significant figures are not graded.
+
+Fields without the data needed for these checks, or answers that cannot be
+parsed, become `pending_review`. Field details: `docs/exercise-bank-format.md`.
 
 Numeric normalization preserves the original typed value in `raw_value` and stores a conservative normalized value such as `8.66` for input `8,66`.
 
