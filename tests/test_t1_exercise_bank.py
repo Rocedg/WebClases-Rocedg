@@ -14,7 +14,7 @@ from services.exercise_presentation import exercise_number
 
 ROOT = Path(__file__).resolve().parents[1]
 BANK_PATH = ROOT / "content" / "exercises" / "1bach" / "t1"
-BLOCK_ORDER = ["r", "u", "a", "g_slopes", "g_areas", "i"]
+BLOCK_ORDER = ["r", "u", "a", "g_slopes", "g_areas", "i", "ampliacion"]
 
 
 def load_script(relative_path: str, module_name: str):
@@ -30,10 +30,10 @@ def test_t1_math_validator_passes():
     assert module.validate_math() == []
 
 
-def test_t1_numbers_run_from_1_to_60_in_catalogue_order():
+def test_t1_numbers_run_from_1_to_66_in_catalogue_order():
     t1 = [exercise for exercise in load_exercise_catalogue()["exercises"] if exercise["topic"] == "t1"]
-    assert [exercise["number"] for exercise in t1] == list(range(1, 61))
-    assert [exercise_number(exercise) for exercise in t1] == list(range(1, 61))
+    assert [exercise["number"] for exercise in t1] == list(range(1, 67))
+    assert [exercise_number(exercise) for exercise in t1] == list(range(1, 67))
 
 
 def test_t1_blocks_go_from_easy_to_hard_and_start_at_1_or_2():
