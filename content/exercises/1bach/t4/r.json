@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t4_r_001",
+      "number": 1,
       "version": 1,
       "title": "Caja 10 kg, , empuje 20 N",
       "course": "1bach",
@@ -100,6 +101,7 @@
     },
     {
       "id": "t4_r_002",
+      "number": 2,
       "version": 1,
       "title": "Misma caja con empuje 45 N",
       "course": "1bach",
@@ -198,6 +200,7 @@
     },
     {
       "id": "t4_r_003",
+      "number": 3,
       "version": 1,
       "title": "Barrido F de 0 a 60 N en caja anterior",
       "course": "1bach",
@@ -262,6 +265,7 @@
     },
     {
       "id": "t4_r_004",
+      "number": 4,
       "version": 1,
       "title": "Bloque 5 kg, tirón 30 N a 25°",
       "course": "1bach",
@@ -350,6 +354,7 @@
     },
     {
       "id": "t4_r_005",
+      "number": 5,
       "version": 1,
       "title": "Mismos datos empujando 25° hacia abajo",
       "course": "1bach",
@@ -438,6 +443,7 @@
     },
     {
       "id": "t4_r_006",
+      "number": 6,
       "version": 1,
       "title": "Hallar fuerza horizontal mínima para mover",
       "course": "1bach",
@@ -502,6 +508,7 @@
     },
     {
       "id": "t4_r_007",
+      "number": 7,
       "version": 1,
       "title": "Dos superficies con mismo μ, masas 4 y 8 kg",
       "course": "1bach",
@@ -566,6 +573,7 @@
     },
     {
       "id": "t4_r_008",
+      "number": 8,
       "version": 1,
       "title": "Bloque lanzado a 6 m/s",
       "course": "1bach",
@@ -654,6 +662,7 @@
     },
     {
       "id": "t4_r_009",
+      "number": 9,
       "version": 1,
       "title": "Determinar μ_k desde parada",
       "course": "1bach",
@@ -718,6 +727,7 @@
     },
     {
       "id": "t4_r_010",
+      "number": 10,
       "version": 1,
       "title": "Caja sobre camión acelera 2 m/s²",
       "course": "1bach",
@@ -804,6 +814,7 @@
     },
     {
       "id": "t4_r_011",
+      "number": 11,
       "version": 1,
       "title": "Camión frena a 4 m/s²",
       "course": "1bach",
@@ -890,6 +901,7 @@
     },
     {
       "id": "t4_r_012",
+      "number": 12,
       "version": 1,
       "title": "Dos bloques apilados, superior 2 kg, inferior acelerado a 3 m/s²",
       "course": "1bach",
@@ -988,6 +1000,7 @@
     },
     {
       "id": "t4_r_013",
+      "number": 13,
       "version": 1,
       "title": "Empuje horizontal sobre pared mantiene bloque 1 kg",
       "course": "1bach",
@@ -1064,6 +1077,7 @@
     },
     {
       "id": "t4_r_014",
+      "number": 14,
       "version": 1,
       "title": "Comparar área de contacto doble con misma masa/material",
       "course": "1bach",
@@ -1138,6 +1152,7 @@
     },
     {
       "id": "t4_r_015",
+      "number": 15,
       "version": 1,
       "title": "Tabla experimental N-f_k lineal",
       "course": "1bach",
@@ -1202,6 +1217,7 @@
     },
     {
       "id": "t4_r_016",
+      "number": 16,
       "version": 1,
       "title": "Auditar solución que usa μ_sN aunque el cuerpo está en reposo con fuerza peq",
       "course": "1bach",

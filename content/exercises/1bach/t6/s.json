@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t6_s_001",
+      "number": 13,
       "version": 1,
       "title": "Dos patinadores se empujan desde reposo",
       "course": "1bach",
@@ -66,6 +67,7 @@
     },
     {
       "id": "t6_s_002",
+      "number": 14,
       "version": 1,
       "title": "Elegir sistema para choque de dos carros durante 0,05 s",
       "course": "1bach",
@@ -140,6 +142,7 @@
     },
     {
       "id": "t6_s_003",
+      "number": 15,
       "version": 1,
       "title": "Persona camina dentro de barca inicialmente en reposo",
       "course": "1bach",
@@ -214,6 +217,7 @@
     },
     {
       "id": "t6_s_004",
+      "number": 16,
       "version": 1,
       "title": "Dos masas con fuerza interna variable",
       "course": "1bach",
@@ -288,6 +292,7 @@
     },
     {
       "id": "t6_s_005",
+      "number": 17,
       "version": 1,
       "title": "Carro de 2 kg tiene  y recibe",
       "course": "1bach",
@@ -364,6 +369,7 @@
     },
     {
       "id": "t6_s_006",
+      "number": 18,
       "version": 1,
       "title": "Explosión durante caída",
       "course": "1bach",
@@ -438,6 +444,7 @@
     },
     {
       "id": "t6_s_007",
+      "number": 19,
       "version": 1,
       "title": "Comparar intervalo muy corto y largo bajo el mismo peso",
       "course": "1bach",
@@ -512,6 +519,7 @@
     },
     {
       "id": "t6_s_008",
+      "number": 20,
       "version": 1,
       "title": "Carros de 2 y 3 kg llevan velocidades 4 y -1 m/s antes de interactuar",
       "course": "1bach",
@@ -588,6 +596,7 @@
     },
     {
       "id": "t6_s_009",
+      "number": 21,
       "version": 1,
       "title": "Sistema abierto expulsa masa de forma discreta",
       "course": "1bach",
@@ -662,6 +671,7 @@
     },
     {
       "id": "t6_s_010",
+      "number": 22,
       "version": 1,
       "title": "Auditar conservación aplicada a un solo objeto durante choque",
       "course": "1bach",

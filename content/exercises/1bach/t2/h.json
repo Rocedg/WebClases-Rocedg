@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t2_h_001",
+      "number": 21,
       "version": 1,
       "title": "Salida horizontal y dirección de impacto",
       "course": "1bach",
@@ -71,7 +72,7 @@
         },
         {
           "id": "angle",
-          "label": "Ángulo bajo +x",
+          "label": "Ángulo por debajo de \\(+x\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 73.14889773288755,
@@ -100,7 +101,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Salida horizontal y dirección de impacto. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Resolver una salida horizontal: tiempo de vuelo, alcance y velocidad de impacto.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro horizontal"
@@ -111,11 +112,12 @@
         "Usar solo |v_y| como rapidez total"
       ],
       "parts_count": 2,
-      "statement_source": "Una bola sale horizontalmente a \\(6\\,\\mathrm{m/s}\\) desde \\(20\\,\\mathrm{m}\\) de altura. El origen está al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) hacia arriba.\n\nDesprecia el aire y usa \\(a_x=0\\), \\(a_y=-g=-9{,}81\\,\\mathrm{m/s^2}\\).\n\n(a) Halla el tiempo de vuelo y el alcance horizontal.\n\n(b) Calcula el vector velocidad de impacto en el orden \\((v_x;v_y)\\), su módulo y el ángulo positivo bajo \\(+x\\).",
-      "solution_source": "Las componentes cumplen \\(x=6t\\), \\(y=20-4{,}905t^2\\), \\(v_x=6\\) y \\(v_y=-9{,}81t\\), en SI.\n\nAl llegar al suelo, \\(y=0\\) da \\(t=\\sqrt{20/4{,}905}=2{,}02\\,\\mathrm{s}\\) y \\(x=6\\cdot2{,}02=12{,}1\\,\\mathrm{m}\\).\n\n\\[\\vec v=(6;-19{,}8)\\,\\mathrm{m/s},\\qquad |\\vec v|=\\sqrt{36+392{,}4}\\simeq20{,}7\\,\\mathrm{m/s}\\]\n\nEl ángulo bajo \\(+x\\) es \\(\\arctan(19{,}8/6)=73{,}1^\\circ\\)."
+      "statement_source": "Una bola sale horizontalmente a \\(6\\,\\mathrm{m/s}\\) desde \\(20\\,\\mathrm{m}\\) de altura. El origen está al pie del punto de salida, con \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba. Desprecia el aire y usa \\(a_x=0\\), \\(a_y=-g=-9{,}81\\,\\mathrm{m/s^2}\\).\n\n(a) Halla el tiempo de vuelo y el alcance horizontal.\n(b) Calcula el vector velocidad de impacto en el orden \\((v_x;v_y)\\), su módulo y el ángulo que forma por debajo de \\(+x\\).",
+      "solution_source": "(a) \\(x=6t\\) e \\(y=20-4{,}905t^2\\). En el suelo, \\(y=0\\): \\(t=\\sqrt{20/4{,}905}=2{,}02\\,\\mathrm{s}\\) y \\(x=6\\cdot2{,}02=12{,}1\\,\\mathrm{m}\\).\n(b) \\(v_x=6\\) y \\(v_y=-9{,}81t=-19{,}8\\,\\mathrm{m/s}\\): \\(\\vec v=(6;-19{,}8)\\,\\mathrm{m/s}\\), \\(|\\vec v|=\\sqrt{36+392{,}4}\\simeq20{,}7\\,\\mathrm{m/s}\\) y el ángulo bajo \\(+x\\) es \\(\\arctan(19{,}8/6)=73{,}1^\\circ\\)."
     },
     {
       "id": "t2_h_002",
+      "number": 22,
       "version": 1,
       "title": "Velocidad necesaria para una marca",
       "course": "1bach",
@@ -139,7 +141,7 @@
           "tolerance": 0.001,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "b"
+          "part": "a"
         },
         {
           "id": "v0",
@@ -155,7 +157,7 @@
         },
         {
           "id": "vf",
-          "label": "Velocidad final",
+          "label": "Velocidad al llegar al suelo",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -180,12 +182,12 @@
         },
         {
           "id": "path",
-          "label": "Trayectoria",
+          "label": "Trayectoria \\(y(x)\\)",
           "type": "function",
           "response_kind": "function",
           "required": true,
           "accepted_forms": [
-            "1.8-5*x**2/16"
+            "1.8-5*x^2/16"
           ],
           "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
           "grading": "pending_review",
@@ -193,7 +195,7 @@
           "variable_unit": "m",
           "unit": "m",
           "domain": "0≤x≤2,4",
-          "canonical_expression": "1.8-5*x**2/16",
+          "canonical_expression": "1.8-5*x^2/16",
           "part": "b"
         }
       ],
@@ -215,7 +217,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Velocidad necesaria para una marca. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Diseñar la velocidad horizontal necesaria para caer en un punto dado.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro horizontal"
@@ -226,12 +228,13 @@
         "Usar la distancia horizontal como altura"
       ],
       "parts_count": 2,
-      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). Desde una mesa de 1,8 m una bola debe caer en una marca del suelo a 2,4 m de su pie. \n(a) Deduce la velocidad horizontal necesaria.\n(b) Completa: Tiempo de caída, Velocidad final, Trayectoria.",
-      "solution_source": "\\(y=1{,}8-4{,}905t^2=0\\): \\(t=\\sqrt{1{,}8/4{,}905}=0{,}606\\,\\mathrm{s}\\). \\(x=v_0t=2{,}4\\): \\(v_0=3{,}96\\,\\mathrm{m/s}\\).\n\n\\(v_x=3{,}96\\) y \\(v_y=-9{,}81\\cdot0{,}606=−5{,}94\\,\\mathrm{m/s}\\).\n\nEliminando \\(t=x/v_0\\): \\(y=1{,}8-4{,}905x^2/v_0^2=1{,}8-5x^2/16\\). En \\(x=2{,}4\\) da \\(y=0\\), comprobando la diana. La trayectoria no depende de \\(g\\): solo de la altura y del alcance.",
+      "statement_source": "Una bola rueda por una mesa de \\(1{,}8\\,\\mathrm{m}\\) de altura, sale horizontalmente por el borde y debe caer en una marca del suelo situada a \\(2{,}4\\,\\mathrm{m}\\) del pie de la mesa. El origen está al pie del punto de salida, con \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba. Desprecia el aire y usa \\(a_x=0\\), \\(a_y=-g=-9{,}81\\,\\mathrm{m/s^2}\\).\n\n(a) Calcula el tiempo de caída y la velocidad horizontal que necesita la bola.\n(b) Calcula el vector velocidad al llegar al suelo y escribe la trayectoria \\(y(x)\\).",
+      "solution_source": "(a) \\(y=1{,}8-4{,}905t^2=0\\) da \\(t=\\sqrt{1{,}8/4{,}905}=0{,}606\\,\\mathrm{s}\\). \\(x=v_0t=2{,}4\\Rightarrow v_0=3{,}96\\,\\mathrm{m/s}\\).\n(b) \\(v_x=3{,}96\\) y \\(v_y=-9{,}81\\cdot0{,}606=-5{,}94\\,\\mathrm{m/s}\\): \\(\\vec v=(3{,}96;-5{,}94)\\,\\mathrm{m/s}\\). Eliminando \\(t=x/v_0\\): \\(y=1{,}8-\\dfrac{4{,}905x^2}{v_0^2}=1{,}8-\\dfrac{5x^2}{16}\\). En \\(x=2{,}4\\) da \\(y=0\\): llega a la marca.\n\nCon la altura y el alcance fijados, la forma de la trayectoria no depende de \\(g\\).",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t2_h_003",
+      "number": 23,
       "version": 1,
       "title": "Altura inferida desde el alcance",
       "course": "1bach",
@@ -259,7 +262,7 @@
         },
         {
           "id": "h",
-          "label": "Altura inferida",
+          "label": "Altura de salida",
           "type": "numeric",
           "required": true,
           "expected_value": 11.03625,
@@ -271,7 +274,7 @@
         },
         {
           "id": "angle",
-          "label": "Ángulo bajo horizontal",
+          "label": "Ángulo bajo la horizontal en el impacto",
           "type": "numeric",
           "required": true,
           "expected_value": 71.2327871805017,
@@ -300,7 +303,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Altura inferida desde el alcance. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Deducir la altura de salida a partir del alcance y la velocidad horizontal.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro horizontal"
@@ -311,12 +314,13 @@
         "Creer que un alcance fija por sí solo v_0 y h"
       ],
       "parts_count": 2,
-      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). Una fotografía calibrada indica que una bola lanzada horizontalmente a 5 m/s impacta a 7,5 m del pie de la plataforma. \n(a) Deduce tiempo y altura de salida.\n(b) Completa: Ángulo bajo horizontal.",
-      "solution_source": "\\(x=5t=7{,}5\\) da \\(t=1{,}50\\,\\mathrm{s}\\). En vertical \\(0=h-4{,}905t^2\\): \\(h=4{,}905\\cdot1{,}5^2=11{,}04\\,\\mathrm{m}\\).\n\n\\(\\vec v=(5;−14{,}71)\\,\\mathrm{m/s}\\); ángulo bajo la horizontal \\(=\\arctan(14{,}71/5)=71{,}2^\\circ\\).\n\nCon solo el alcance \\(R\\), \\(h=4{,}905\\,(R/v_0)^2\\) admite infinitas parejas \\(h\\), \\(v_0\\).",
+      "statement_source": "Una fotografía calibrada muestra que una bola, lanzada horizontalmente a \\(5\\,\\mathrm{m/s}\\) desde una plataforma, llega al suelo a \\(7{,}5\\,\\mathrm{m}\\) del pie de la plataforma. El origen está al pie del punto de salida, con \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba. Desprecia el aire y usa \\(a_x=0\\), \\(a_y=-g=-9{,}81\\,\\mathrm{m/s^2}\\).\n\n(a) Calcula el tiempo de vuelo y la altura desde la que salió.\n(b) Calcula el ángulo que forma la velocidad con la horizontal al llegar al suelo.",
+      "solution_source": "(a) \\(x=5t=7{,}5\\Rightarrow t=1{,}50\\,\\mathrm{s}\\). En vertical, \\(0=h-4{,}905t^2\\Rightarrow h=4{,}905\\cdot1{,}5^2=11{,}0\\,\\mathrm{m}\\).\n(b) \\(\\vec v=(5;-9{,}81\\cdot1{,}5)=(5;-14{,}7)\\,\\mathrm{m/s}\\); el ángulo bajo la horizontal es \\(\\arctan(14{,}7/5)=71{,}2^\\circ\\).\n\nSin conocer \\(v_0\\), el alcance solo no bastaría: \\(h=4{,}905\\,(R/v_0)^2\\) admite infinitas parejas de \\(h\\) y \\(v_0\\).",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t2_h_004",
+      "number": 24,
       "version": 1,
       "title": "Dos velocidades desde la misma plataforma",
       "course": "1bach",
@@ -332,7 +336,7 @@
       "response_fields": [
         {
           "id": "t",
-          "label": "Tiempo común",
+          "label": "Tiempo de caída (común)",
           "type": "numeric",
           "required": true,
           "expected_value": 1.0096375546923044,
@@ -344,7 +348,7 @@
         },
         {
           "id": "ra",
-          "label": "Alcance A",
+          "label": "Alcance de A",
           "type": "numeric",
           "required": true,
           "expected_value": 3.0289126640769135,
@@ -356,7 +360,7 @@
         },
         {
           "id": "rb",
-          "label": "Alcance B",
+          "label": "Alcance de B",
           "type": "numeric",
           "required": true,
           "expected_value": 6.057825328153827,
@@ -364,11 +368,11 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "b"
+          "part": "a"
         },
         {
           "id": "va",
-          "label": "Velocidad final A",
+          "label": "Velocidad final de A",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -393,7 +397,7 @@
         },
         {
           "id": "vb",
-          "label": "Velocidad final B",
+          "label": "Velocidad final de B",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -435,7 +439,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Dos velocidades desde la misma plataforma. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Ver que con la misma altura el tiempo de caída es el mismo aunque cambie v_x.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro horizontal"
@@ -446,12 +450,13 @@
         "Duplicar también la velocidad vertical de B"
       ],
       "parts_count": 2,
-      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). Dos bolas salen a la vez desde 5 m de altura, horizontalmente a 3 y 6 m/s. \n(a) Predice y calcula tiempos y alcances.\n(b) Completa: Alcance B, Velocidad final A, Velocidad final B.",
-      "solution_source": "Ambas comparten \\(y=5-4{,}905t^2\\): caen a la vez, en \\(t=\\sqrt{5/4{,}905}=1{,}01\\,\\mathrm{s}\\). Horizontalmente \\(x_A=3t\\) y \\(x_B=6t\\): alcances \\(3{,}03\\) y \\(6{,}06\\,\\mathrm{m}\\).\n\n\\(\\vec v_A=(3;−9{,}90)\\) y \\(\\vec v_B=(6;−9{,}90)\\,\\mathrm{m/s}\\); las velocidades verticales coinciden y las totales no.\n\n\\(x(t)\\) son dos rectas de pendiente distinta; \\(y(t)\\) es la misma parábola para ambas. Duplicar \\(v_x\\) duplica el alcance, no el tiempo.",
+      "statement_source": "Dos bolas A y B salen a la vez desde una plataforma de \\(5\\,\\mathrm{m}\\) de altura, horizontalmente: A a \\(3\\,\\mathrm{m/s}\\) y B a \\(6\\,\\mathrm{m/s}\\). El origen está al pie del punto de salida, con \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba. Desprecia el aire y usa \\(a_x=0\\), \\(a_y=-g=-9{,}81\\,\\mathrm{m/s^2}\\).\n\n(a) Calcula el tiempo de caída de cada bola y el alcance de cada una.\n(b) Calcula el vector velocidad de cada bola al llegar al suelo.",
+      "solution_source": "(a) Las dos cumplen \\(y=5-4{,}905t^2\\), así que llegan a la vez, en \\(t=\\sqrt{5/4{,}905}=1{,}01\\,\\mathrm{s}\\). Con \\(x_A=3t\\) y \\(x_B=6t\\), los alcances son \\(3{,}03\\) y \\(6{,}06\\,\\mathrm{m}\\).\n(b) \\(\\vec v_A=(3;-9{,}90)\\) y \\(\\vec v_B=(6;-9{,}90)\\,\\mathrm{m/s}\\): coinciden las componentes verticales, no las velocidades.\n\nDuplicar \\(v_x\\) duplica el alcance, pero no cambia el tiempo de caída.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t2_h_005",
+      "number": 25,
       "version": 1,
       "title": "Cambiar la altura: una ley de raíz cuadrada",
       "course": "1bach",
@@ -467,7 +472,7 @@
       "response_fields": [
         {
           "id": "ta",
-          "label": "Tiempo desde 5 m",
+          "label": "Tiempo de caída en A",
           "type": "numeric",
           "required": true,
           "expected_value": 1.0096375546923044,
@@ -479,7 +484,7 @@
         },
         {
           "id": "tb",
-          "label": "Tiempo desde 20 m",
+          "label": "Tiempo de caída en B",
           "type": "numeric",
           "required": true,
           "expected_value": 2.019275109384609,
@@ -491,7 +496,7 @@
         },
         {
           "id": "ra",
-          "label": "Alcance desde 5 m",
+          "label": "Alcance en A",
           "type": "numeric",
           "required": true,
           "expected_value": 4.038550218769218,
@@ -499,11 +504,11 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "b"
+          "part": "a"
         },
         {
           "id": "rb",
-          "label": "Alcance desde 20 m",
+          "label": "Alcance en B",
           "type": "numeric",
           "required": true,
           "expected_value": 8.077100437538435,
@@ -511,11 +516,11 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "b"
+          "part": "a"
         },
         {
           "id": "ratio",
-          "label": "Razón de módulos verticales B/A",
+          "label": "Cociente \\(|v_{y,B}|/|v_{y,A}|\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 2,
@@ -544,7 +549,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Cambiar la altura: una ley de raíz cuadrada. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Ver que el alcance de una salida horizontal crece con la raíz de la altura.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro horizontal"
@@ -555,12 +560,13 @@
         "Cambiar v_x al cambiar h"
       ],
       "parts_count": 2,
-      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). Se lanza horizontalmente a 4 m/s desde alturas de 5 y 20 m en pruebas independientes. \n(a) Halla tiempos y alcances.\n(b) Completa: Alcance desde 5 m, Alcance desde 20 m, Razón de módulos verticales B/A.",
-      "solution_source": "\\(t=\\sqrt{2h/g}\\): \\(t_A=1{,}01\\,\\mathrm{s}\\) y \\(t_B=2{,}02\\,\\mathrm{s}\\). \\(R=4t\\): \\(4{,}04\\) y \\(8{,}08\\,\\mathrm{m}\\).\n\nCon \\(v_x\\) fijo, \\(R\\propto\\sqrt h\\), no \\(h\\). Cuadruplicar \\(h\\) multiplica \\(R\\) por \\(\\sqrt4=2\\).\n\n\\(v_y=-9{,}81t\\): \\(−9{,}90\\) y \\(−19{,}8\\,\\mathrm{m/s}\\). También su módulo se duplica, mientras \\(v_x\\) permanece igual.",
+      "statement_source": "En dos pruebas independientes se lanza una bola horizontalmente a \\(4\\,\\mathrm{m/s}\\): en la prueba A desde \\(5\\,\\mathrm{m}\\) de altura y en la B desde \\(20\\,\\mathrm{m}\\). El origen está al pie del punto de salida, con \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba. Desprecia el aire y usa \\(a_x=0\\), \\(a_y=-g=-9{,}81\\,\\mathrm{m/s^2}\\).\n\n(a) Calcula el tiempo de caída y el alcance en cada prueba.\n(b) Calcula el cociente entre el módulo de la velocidad vertical al llegar al suelo en B y en A.",
+      "solution_source": "(a) \\(t=\\sqrt{2h/g}\\): \\(t_A=1{,}01\\,\\mathrm{s}\\) y \\(t_B=2{,}02\\,\\mathrm{s}\\). Con \\(R=4t\\): \\(R_A=4{,}04\\,\\mathrm{m}\\) y \\(R_B=8{,}08\\,\\mathrm{m}\\).\n(b) \\(v_y=-9{,}81t\\): \\(-9{,}90\\) y \\(-19{,}8\\,\\mathrm{m/s}\\). El cociente de módulos es \\(2{,}00\\).\n\nCon \\(v_x\\) fijo, el alcance es proporcional a \\(\\sqrt h\\), no a \\(h\\): cuadruplicar la altura solo duplica el alcance.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t2_h_006",
+      "number": 26,
       "version": 1,
       "title": "Cuatro gráficas de una salida horizontal",
       "course": "1bach",
@@ -588,7 +594,7 @@
         },
         {
           "id": "rmid",
-          "label": "Posición a 0,8 s",
+          "label": "Posición en \\(t=0{,}8\\,\\mathrm{s}\\)",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -613,7 +619,7 @@
         },
         {
           "id": "vfinal",
-          "label": "Velocidad final",
+          "label": "Velocidad al llegar al suelo",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -667,7 +673,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Cuatro gráficas de una salida horizontal. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Calcular posición y velocidad en distintos instantes de una salida horizontal.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro horizontal"
@@ -678,13 +684,14 @@
         "Olvidar que la integral de v_y da cambio de altura"
       ],
       "parts_count": 3,
-      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). Una bola sale a 8 m/s desde 12,8 m de altura. \n(a) Completa: Tiempo de vuelo.\n(b) Marca estado a \\(t=0,8 s\\) y en el impacto.\n(c) Completa: Velocidad final, Alcance.",
-      "solution_source": "\\(x=8t\\), \\(y=12{,}8-4{,}905t^2\\), \\(v_x=8\\), \\(v_y=-9{,}81t\\). Suelo: \\(t=\\sqrt{12{,}8/4{,}905}=1{,}615\\,\\mathrm{s}\\); dominio \\(0\\le t\\le1{,}615\\,\\mathrm{s}\\).\n\nEn \\(t=0{,}8\\,\\mathrm{s}\\): \\(\\vec r=(6{,}4;9{,}66)\\,\\mathrm{m}\\) y \\(\\vec v=(8;−7{,}85)\\,\\mathrm{m/s}\\); en el impacto \\(\\vec r=(12{,}9;0)\\,\\mathrm{m}\\) y \\(\\vec v=(8;−15{,}85)\\,\\mathrm{m/s}\\).\n\nÁrea bajo \\(v_x\\): \\(8\\cdot1{,}615=12{,}9\\,\\mathrm{m}\\); área bajo \\(v_y\\): \\(−15{,}85\\cdot1{,}615/2=-12{,}8\\,\\mathrm{m}\\), igual a la caída.",
+      "statement_source": "Una bola sale horizontalmente a \\(8\\,\\mathrm{m/s}\\) desde \\(12{,}8\\,\\mathrm{m}\\) de altura. El origen está al pie del punto de salida, con \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba. Desprecia el aire y usa \\(a_x=0\\), \\(a_y=-g=-9{,}81\\,\\mathrm{m/s^2}\\).\n\n(a) Calcula el tiempo de vuelo.\n(b) Calcula el vector posición de la bola en \\(t=0{,}8\\,\\mathrm{s}\\).\n(c) Calcula el vector velocidad al llegar al suelo y el alcance.",
+      "solution_source": "(a) \\(x=8t\\), \\(y=12{,}8-4{,}905t^2\\). En el suelo: \\(t=\\sqrt{12{,}8/4{,}905}=1{,}62\\,\\mathrm{s}\\).\n(b) \\(\\vec r(0{,}8)=(6{,}40;9{,}66)\\,\\mathrm{m}\\). (En ese instante \\(\\vec v=(8;-7{,}85)\\,\\mathrm{m/s}\\).)\n(c) \\(\\vec v=(8;-9{,}81\\cdot1{,}615)=(8;-15{,}8)\\,\\mathrm{m/s}\\) y el alcance es \\(8\\cdot1{,}615=12{,}9\\,\\mathrm{m}\\).\n\nComprobación con áreas: bajo \\(v_x(t)\\), \\(8\\cdot1{,}615=12{,}9\\,\\mathrm{m}\\); bajo \\(v_y(t)\\), \\(-15{,}85\\cdot1{,}615/2=-12{,}8\\,\\mathrm{m}\\), que es la caída.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t2_h_007",
-      "version": 1,
+      "number": 27,
+      "version": 2,
       "title": "Elegir trayectoria y componentes compatibles",
       "course": "1bach",
       "topic": "t2",
@@ -698,8 +705,30 @@
       "response_prompt": "Responde los apartados en sus campos.",
       "response_fields": [
         {
+          "id": "model",
+          "label": "Modelo correcto",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "A",
+              "label": "A"
+            },
+            {
+              "id": "B",
+              "label": "B"
+            },
+            {
+              "id": "C",
+              "label": "C"
+            }
+          ],
+          "correct_option_id": "A",
+          "part": "a"
+        },
+        {
           "id": "r",
-          "label": "Posición a 0,5 s",
+          "label": "Posición en \\(t=0{,}5\\,\\mathrm{s}\\)",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -724,7 +753,7 @@
         },
         {
           "id": "v",
-          "label": "Velocidad a 0,5 s",
+          "label": "Velocidad en \\(t=0{,}5\\,\\mathrm{s}\\)",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -766,7 +795,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Elegir trayectoria y componentes compatibles. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Elegir el modelo correcto de una salida horizontal comprobando derivadas y aceleraciones.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro horizontal"
@@ -777,12 +806,13 @@
         "Omitir el factor dos en la derivada"
       ],
       "parts_count": 2,
-      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). Desde 5 m se lanza horizontalmente a 2 m/s. Opciones en SI: A: \\(x=2t,y=5−4{,}905t²,v_x=2,v_y=−9{,}81t\\); B: \\(x=2t²,y=5−4{,}905t²,v_x=4t,v_y=−9{,}81t\\); C: \\(x=2t,y=5−4{,}905t²,v_x=2,v_y=−4{,}905t\\). \n(b) Calcula posición y velocidad a 0,5 s.",
-      "solution_source": "A respeta \\(x\\) lineal y \\(v_x\\) inicial de \\(2\\,\\mathrm{m/s}\\); derivar \\(y=5-4{,}905t^2\\) da \\(v_y=-9{,}81t\\).\n\nB tiene \\(x''=4\\,\\mathrm{m/s^2}\\), incompatible con \\(a_x=0\\). C asigna a \\(v_y\\) la mitad de la derivada correcta.\n\nA los \\(0{,}5\\,\\mathrm{s}\\): \\(x=1\\,\\mathrm{m}\\), \\(y=3{,}77\\,\\mathrm{m}\\) y \\(\\vec v=(2;−4{,}91)\\,\\mathrm{m/s}\\). El avance horizontal no altera la caída.",
+      "statement_source": "Desde \\(5\\,\\mathrm{m}\\) de altura se lanza una bola horizontalmente a \\(2\\,\\mathrm{m/s}\\). El origen está al pie del punto de salida, con \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba. Desprecia el aire y usa \\(a_x=0\\), \\(a_y=-g=-9{,}81\\,\\mathrm{m/s^2}\\). Se proponen tres modelos, en SI:\n\nA: \\(x=2t,\\ y=5-4{,}905t^2,\\ v_x=2,\\ v_y=-9{,}81t\\).\nB: \\(x=2t^2,\\ y=5-4{,}905t^2,\\ v_x=4t,\\ v_y=-9{,}81t\\).\nC: \\(x=2t,\\ y=5-4{,}905t^2,\\ v_x=2,\\ v_y=-4{,}905t\\).\n\n(a) Elige el modelo correcto.\n(b) Con ese modelo, calcula el vector posición y el vector velocidad en \\(t=0{,}5\\,\\mathrm{s}\\).",
+      "solution_source": "(a) A: \\(x\\) es lineal con \\(v_x=2\\,\\mathrm{m/s}\\) y, derivando \\(y=5-4{,}905t^2\\), sale \\(v_y=-9{,}81t\\). B tiene \\(a_x=4\\,\\mathrm{m/s^2}\\), incompatible con \\(a_x=0\\). C pone en \\(v_y\\) la mitad de la derivada correcta.\n(b) \\(\\vec r(0{,}5)=(1{,}00;3{,}77)\\,\\mathrm{m}\\) y \\(\\vec v(0{,}5)=(2;-4{,}91)\\,\\mathrm{m/s}\\).",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t2_h_008",
+      "number": 28,
       "version": 1,
       "title": "Contacto con una rampa ascendente",
       "course": "1bach",
@@ -798,7 +828,7 @@
       "response_fields": [
         {
           "id": "t",
-          "label": "Tiempo de contacto",
+          "label": "Instante del contacto",
           "type": "numeric",
           "required": true,
           "expected_value": 1.1544142368578987,
@@ -806,7 +836,7 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "b"
+          "part": "a"
         },
         {
           "id": "r",
@@ -835,7 +865,7 @@
         },
         {
           "id": "v",
-          "label": "Velocidad de contacto",
+          "label": "Velocidad en el contacto",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -877,7 +907,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Contacto con una rampa ascendente. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Calcular el contacto de una salida horizontal con una rampa ascendente.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro horizontal"
@@ -887,13 +917,14 @@
         "Usar el tiempo de caída al suelo horizontal",
         "Aceptar la raíz negativa"
       ],
-      "parts_count": 3,
-      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). Una bola sale horizontalmente a 6 m/s desde \\(y=10 m\\). La superficie receptora es \\(y=x/2\\) para x≥0. \n(b) Halla tiempo, punto y velocidad de impacto.",
-      "solution_source": "Horizontal \\(x=6t\\); vertical \\(y=10-4{,}905t^2\\); trayectoria \\(y=10-4{,}905x^2/36\\).\n\nLa rampa exige \\(10-4{,}905t^2=3t\\): \\(t=\\dfrac{-3\\pm\\sqrt{9+196{,}2}}{9{,}81}\\). Solo la raíz \\(1{,}154\\,\\mathrm{s}\\) es positiva.\n\nPunto \\((6{,}93;3{,}46)\\,\\mathrm{m}\\); \\(\\vec v=(6;−11{,}32)\\,\\mathrm{m/s}\\). La separación \\(y-x/2\\) decrece para \\(t\\ge0\\) y se anula una sola vez: es el primer contacto.",
+      "parts_count": 2,
+      "statement_source": "Una bola sale horizontalmente a \\(6\\,\\mathrm{m/s}\\) desde \\(y=10\\,\\mathrm{m}\\). El origen está al pie del punto de salida, con \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba. Desprecia el aire y usa \\(a_x=0\\), \\(a_y=-g=-9{,}81\\,\\mathrm{m/s^2}\\). Debajo hay una rampa que sube desde el origen: su superficie es \\(y=x/2\\) para \\(x\\ge0\\).\n\nLa bola toca la rampa cuando su coordenada \\(y\\) coincide con la de la rampa en la misma \\(x\\).\n\n(a) Calcula el instante en que la bola toca la rampa.\n(b) Calcula el punto de contacto y el vector velocidad en ese instante.",
+      "solution_source": "(a) \\(x=6t\\) e \\(y=10-4{,}905t^2\\). En la rampa, \\(10-4{,}905t^2=3t\\): \\(t=\\dfrac{-3\\pm\\sqrt{9+196{,}2}}{9{,}81}\\). Solo la raíz positiva tiene sentido: \\(t=1{,}15\\,\\mathrm{s}\\).\n(b) Punto: \\((6{,}93;3{,}46)\\,\\mathrm{m}\\). Velocidad: \\(\\vec v=(6;-9{,}81\\cdot1{,}154)=(6;-11{,}3)\\,\\mathrm{m/s}\\).\n\nLa separación \\(y-x/2\\) disminuye desde \\(t=0\\) y se anula una sola vez: es el primer contacto.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t2_h_009",
+      "number": 29,
       "version": 1,
       "title": "Lanzamiento desde una plataforma móvil",
       "course": "1bach",
@@ -909,7 +940,7 @@
       "response_fields": [
         {
           "id": "t",
-          "label": "Tiempo común",
+          "label": "Tiempo de caída",
           "type": "numeric",
           "required": true,
           "expected_value": 1.0096375546923044,
@@ -921,7 +952,7 @@
         },
         {
           "id": "ground",
-          "label": "Alcance respecto al suelo",
+          "label": "Punto de caída respecto al suelo",
           "type": "numeric",
           "required": true,
           "expected_value": 7.067462882846131,
@@ -933,7 +964,7 @@
         },
         {
           "id": "platform",
-          "label": "Desplazamiento respecto a plataforma",
+          "label": "Distancia al borde de la plataforma",
           "type": "numeric",
           "required": true,
           "expected_value": 3.0289126640769135,
@@ -945,7 +976,7 @@
         },
         {
           "id": "vg",
-          "label": "Velocidad final terrestre",
+          "label": "Velocidad final respecto al suelo",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -970,7 +1001,7 @@
         },
         {
           "id": "vp",
-          "label": "Velocidad final relativa",
+          "label": "Velocidad final respecto a la plataforma",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -1012,7 +1043,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Lanzamiento desde una plataforma móvil. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Describir un lanzamiento desde una plataforma móvil en dos sistemas de referencia.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro horizontal"
@@ -1022,13 +1053,14 @@
         "Tomar 3 m/s como velocidad terrestre",
         "Suponer que la plataforma queda en x=0"
       ],
-      "parts_count": 3,
-      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). Una plataforma avanza a 4 m/s respecto al suelo. A 5 m de altura lanza una bola horizontalmente hacia delante a 3 m/s respecto a sí misma. En \\(t=0\\) su borde está en \\(x=0\\). \n(a) Modela la bola en ambas referencias.\n(b) Halla punto de caída respecto a suelo y plataforma y velocidades de impacto.",
-      "solution_source": "Respecto al suelo, \\(v_x=4+3=7\\,\\mathrm{m/s}\\) y \\(x=7t\\). Respecto a la plataforma, \\(x'=x-4t=3t\\). En ambas referencias \\(y=5-4{,}905t^2\\).\n\nCaída en \\(t=\\sqrt{5/4{,}905}=1{,}01\\,\\mathrm{s}\\): \\(x=7{,}07\\,\\mathrm{m}\\); la plataforma está en \\(4{,}04\\,\\mathrm{m}\\) y \\(x'=3{,}03\\,\\mathrm{m}\\).\n\nVelocidades finales \\((7;−9{,}90)\\) y \\((3;−9{,}90)\\,\\mathrm{m/s}\\). Comparten caída y reloj; solo cambia la componente horizontal.",
+      "parts_count": 2,
+      "statement_source": "Una plataforma avanza a \\(4\\,\\mathrm{m/s}\\) respecto al suelo. Desde su borde, a \\(5\\,\\mathrm{m}\\) de altura, se lanza una bola horizontalmente hacia delante a \\(3\\,\\mathrm{m/s}\\) respecto a la plataforma. En \\(t=0\\) el borde está en \\(x=0\\). El origen está al pie del punto de salida, con \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba. Desprecia el aire y usa \\(a_x=0\\), \\(a_y=-g=-9{,}81\\,\\mathrm{m/s^2}\\).\n\n(a) Calcula el tiempo de caída.\n(b) Calcula dónde cae la bola respecto al suelo y a qué distancia queda del borde de la plataforma, y su velocidad final respecto al suelo y respecto a la plataforma.",
+      "solution_source": "(a) En las dos referencias \\(y=5-4{,}905t^2\\): \\(t=\\sqrt{5/4{,}905}=1{,}01\\,\\mathrm{s}\\).\n(b) Respecto al suelo, \\(v_x=4+3=7\\,\\mathrm{m/s}\\) y \\(x=7t=7{,}07\\,\\mathrm{m}\\). El borde está entonces en \\(4t=4{,}04\\,\\mathrm{m}\\), así que la bola cae \\(3{,}03\\,\\mathrm{m}\\) por delante de él. Velocidades finales: \\((7;-9{,}90)\\,\\mathrm{m/s}\\) respecto al suelo y \\((3;-9{,}90)\\,\\mathrm{m/s}\\) respecto a la plataforma.\n\nLas dos referencias comparten caída y reloj; solo cambia la componente horizontal.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t2_h_010",
+      "number": 30,
       "version": 1,
       "title": "Laboratorio: estimar la velocidad de salida",
       "course": "1bach",
@@ -1044,7 +1076,7 @@
       "response_fields": [
         {
           "id": "slope",
-          "label": "Pendiente de R² frente a h",
+          "label": "Pendiente de \\(R^2\\) frente a \\(h\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 1.8,
@@ -1056,7 +1088,7 @@
         },
         {
           "id": "v0",
-          "label": "Velocidad estimada",
+          "label": "Velocidad de salida \\(v_0\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 2.9713633234594523,
@@ -1064,11 +1096,11 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "b"
+          "part": "a"
         },
         {
           "id": "unc",
-          "label": "Mayor cota de incertidumbre en v 0",
+          "label": "Mayor incertidumbre de \\(v_0\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 0.06603029607687672,
@@ -1080,7 +1112,7 @@
         },
         {
           "id": "pred",
-          "label": "Alcance predicho",
+          "label": "Alcance predicho para \\(h=1{,}80\\,\\mathrm{m}\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 1.8,
@@ -1109,7 +1141,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Laboratorio: estimar la velocidad de salida. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Linealizar datos de laboratorio (R² frente a h) para estimar v₀ con su incertidumbre.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro horizontal"
@@ -1120,8 +1152,8 @@
         "Confundir concordancia de tres puntos con prueba del modelo"
       ],
       "parts_count": 3,
-      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). Desde alturas \\(h=(0,45\\);0,80;1,25) m se obtienen alcances \\(R=(0,90\\);1,20;1,50) m, cada uno con incertidumbre ±0,02 m; alturas y g se tratan exactos para este análisis. \n(a) Linealiza R² frente a h y estima \\(v_0\\).\n(b) Calcula \\(v_0\\) desde cada par y una cota de incertidumbre.\n(c) Evalúa si el ajuste respalda \\(v_0\\) constante y predice R para \\(h=1,80 m\\).",
-      "solution_source": "\\(x=v_0t\\), \\(y=h-4{,}905t^2\\); \\(t=\\sqrt{h/4{,}905}\\). Entonces \\(R^2=\\dfrac{v_0^2}{4{,}905}\\,h\\). Los cuadrados \\((0{,}81;1{,}44;2{,}25)\\,\\mathrm{m^2}\\) dan pendiente \\(1{,}8\\,\\mathrm{m}\\).\n\n\\(v_0=\\sqrt{4{,}905\\cdot1{,}8}=2{,}97\\,\\mathrm{m/s}\\). Tiempos \\(0{,}303;0{,}404;0{,}505\\,\\mathrm{s}\\): \\(R/t=2{,}97\\,\\mathrm{m/s}\\) en cada caso. Cotas \\(\\delta v=\\delta R/t\\): \\(0{,}0660;0{,}0495;0{,}0396\\,\\mathrm{m/s}\\).\n\nLas tres medidas son compatibles con velocidad constante, sin demostrar ausencia de errores sistemáticos. Para \\(1{,}80\\,\\mathrm{m}\\), \\(t=0{,}606\\,\\mathrm{s}\\) y \\(R=\\sqrt{1{,}8\\cdot1{,}8}=1{,}80\\,\\mathrm{m}\\). Una cota conservadora usando \\(0{,}0660\\,\\mathrm{m/s}\\) es \\(\\pm0{,}04\\,\\mathrm{m}\\).",
+      "statement_source": "En el laboratorio se lanza una bola horizontalmente, siempre con la misma velocidad, desde tres alturas \\(h=0{,}45\\), \\(0{,}80\\) y \\(1{,}25\\,\\mathrm{m}\\). Los alcances medidos son \\(R=0{,}90\\), \\(1{,}20\\) y \\(1{,}50\\,\\mathrm{m}\\), cada uno con una incertidumbre de \\(\\pm0{,}02\\,\\mathrm{m}\\); las alturas y \\(g\\) se toman como exactas. El origen está al pie del punto de salida, con \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba. Desprecia el aire y usa \\(a_x=0\\), \\(a_y=-g=-9{,}81\\,\\mathrm{m/s^2}\\).\n\nComo \\(t=\\sqrt{h/4{,}905}\\) y \\(R=v_0t\\), se cumple \\(R^2=\\dfrac{v_0^2}{4{,}905}\\,h\\): \\(R^2\\) frente a \\(h\\) es una recta.\n\n(a) Calcula la pendiente de la recta \\(R^2\\) frente a \\(h\\) y, a partir de ella, \\(v_0\\).\n(b) Calcula la incertidumbre de \\(v_0\\) con cada pareja de datos, \\(\\delta v_0=\\delta R/t\\), y da la mayor.\n(c) Predice el alcance para \\(h=1{,}80\\,\\mathrm{m}\\).",
+      "solution_source": "(a) \\(R^2=0{,}81\\), \\(1{,}44\\) y \\(2{,}25\\,\\mathrm{m^2}\\): \\(R^2/h=1{,}80\\,\\mathrm{m}\\) en los tres casos. \\(v_0=\\sqrt{4{,}905\\cdot1{,}8}=2{,}97\\,\\mathrm{m/s}\\).\n(b) Tiempos: \\(0{,}303\\), \\(0{,}404\\) y \\(0{,}505\\,\\mathrm{s}\\), con \\(R/t=2{,}97\\,\\mathrm{m/s}\\) en cada caso. \\(\\delta v_0=0{,}02/t\\): \\(0{,}0660\\), \\(0{,}0495\\) y \\(0{,}0396\\,\\mathrm{m/s}\\). La mayor es \\(0{,}0660\\,\\mathrm{m/s}\\).\n(c) \\(R=\\sqrt{1{,}8\\cdot1{,}8}=1{,}80\\,\\mathrm{m}\\) (\\(t=0{,}606\\,\\mathrm{s}\\)).\n\nLas tres medidas son compatibles con una velocidad constante, aunque eso no descarta errores sistemáticos.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     }
   ]

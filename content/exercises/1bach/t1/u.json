@@ -74,7 +74,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Paso por una baliza. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Escribir la ecuación de la posición de un MRU y resolverla para un paso por un punto.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "MRU y movimiento relativo"
@@ -175,7 +175,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Pendiente desde dos registros. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Obtener la velocidad de un MRU como pendiente entre dos registros y reconstruir x₀.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "MRU y movimiento relativo"
@@ -291,7 +291,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Encuentro desde dos extremos. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Calcular el encuentro de dos MRU en sentidos opuestos igualando sus ecuaciones de la posición.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "MRU y movimiento relativo"
@@ -380,7 +380,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Datos en kilómetros y minutos. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Resolver un MRU con datos en km y min pasando antes todo a unidades SI.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "MRU y movimiento relativo"
@@ -478,7 +478,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Ciclistas con unidades distintas. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Plantear un encuentro de dos MRU con unidades distintas y velocidades con signo.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "MRU y movimiento relativo"
@@ -569,7 +569,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Lo que observa un pasajero. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Usar la separación con signo entre dos móviles y su derivada para estudiar cómo se acercan.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "MRU y movimiento relativo"
@@ -661,7 +661,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Cuándo sale el último vagón. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Seguir dos puntos de un objeto largo y decidir qué punto marca cada suceso.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "MRU y movimiento relativo"
@@ -747,7 +747,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Paseo, parada y regreso. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Encadenar tres tramos de MRU, con reposo y regreso, usando un reloj desplazado.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "MRU y movimiento relativo"
@@ -843,7 +843,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Una raíz que no anuncia un encuentro. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Interpretar una raíz negativa al igualar dos ecuaciones de la posición: no siempre hay encuentro.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "MRU y movimiento relativo"
@@ -929,7 +929,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Salida retardada y alcance. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Escribir la ecuación de un móvil que sale más tarde usando t − t₀ y distinguir reloj común y tiempo de marcha.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "MRU y movimiento relativo"
@@ -1058,7 +1058,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Programar una llegada. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Trabajar con un reloj que empieza antes de la salida e interpretar instantes negativos.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "MRU y movimiento relativo"
@@ -1149,7 +1149,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Diseñar la velocidad de un alcance. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Diseñar la velocidad necesaria para un alcance planteando la ecuación con la velocidad como incógnita.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "MRU y movimiento relativo"

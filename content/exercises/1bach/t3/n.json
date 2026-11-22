@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t3_n_001",
+      "number": 13,
       "version": 1,
       "title": "Fuerzas horizontales 14 N derecha y 8 N izquierda sobre 2 kg",
       "course": "1bach",
@@ -100,6 +101,7 @@
     },
     {
       "id": "t3_n_002",
+      "number": 14,
       "version": 1,
       "title": "Fuerzas perpendiculares 6 N y 8 N sobre 5 kg",
       "course": "1bach",
@@ -197,6 +199,7 @@
     },
     {
       "id": "t3_n_003",
+      "number": 15,
       "version": 1,
       "title": "Carrito pasa de 2 a 8 m/s en 3 s",
       "course": "1bach",
@@ -273,6 +276,7 @@
     },
     {
       "id": "t3_n_004",
+      "number": 16,
       "version": 1,
       "title": "Resultante constante -12 N",
       "course": "1bach",
@@ -349,6 +353,7 @@
     },
     {
       "id": "t3_n_005",
+      "number": 17,
       "version": 1,
       "title": "Dos cuerpos reciben la misma resultante",
       "course": "1bach",
@@ -413,6 +418,7 @@
     },
     {
       "id": "t3_n_006",
+      "number": 18,
       "version": 1,
       "title": "Experimento F-a",
       "course": "1bach",
@@ -477,6 +483,7 @@
     },
     {
       "id": "t3_n_007",
+      "number": 19,
       "version": 1,
       "title": "Velocidad constante pese a motor de 500 N",
       "course": "1bach",
@@ -553,6 +560,7 @@
     },
     {
       "id": "t3_n_008",
+      "number": 20,
       "version": 1,
       "title": "Trineo 20 kg, fuerza (60",
       "course": "1bach",
@@ -638,6 +646,7 @@
     },
     {
       "id": "t3_n_009",
+      "number": 21,
       "version": 1,
       "title": "Cuerpo con",
       "course": "1bach",
@@ -723,6 +732,7 @@
     },
     {
       "id": "t3_n_010",
+      "number": 22,
       "version": 1,
       "title": "Elegir gráfica de aceleración cuando la fuerza neta cambia de signo",
       "course": "1bach",
@@ -787,6 +797,7 @@
     },
     {
       "id": "t3_n_011",
+      "number": 23,
       "version": 1,
       "title": "Báscula en ascensor registra 735 N para",
       "course": "1bach",
@@ -873,6 +884,7 @@
     },
     {
       "id": "t3_n_012",
+      "number": 24,
       "version": 1,
       "title": "Error",
       "course": "1bach",

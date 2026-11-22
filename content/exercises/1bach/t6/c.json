@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t6_c_001",
+      "number": 31,
       "version": 1,
       "title": "Choque perfectamente inelástico",
       "course": "1bach",
@@ -78,6 +79,7 @@
     },
     {
       "id": "t6_c_002",
+      "number": 32,
       "version": 1,
       "title": "Choque frontal",
       "course": "1bach",
@@ -154,6 +156,7 @@
     },
     {
       "id": "t6_c_003",
+      "number": 33,
       "version": 1,
       "title": "Bala-bloque",
       "course": "1bach",
@@ -218,6 +221,7 @@
     },
     {
       "id": "t6_c_004",
+      "number": 34,
       "version": 1,
       "title": "Masa 2 kg choca con otra de 3 kg en reposo y quedan juntas a 2 m/s",
       "course": "1bach",
@@ -282,6 +286,7 @@
     },
     {
       "id": "t6_c_005",
+      "number": 35,
       "version": 1,
       "title": "Choque elástico de masas iguales, una en reposo",
       "course": "1bach",
@@ -356,6 +361,7 @@
     },
     {
       "id": "t6_c_006",
+      "number": 36,
       "version": 1,
       "title": "Elástico 1D",
       "course": "1bach",
@@ -432,6 +438,7 @@
     },
     {
       "id": "t6_c_007",
+      "number": 37,
       "version": 1,
       "title": "Elástico con masas 3 y 1, mismo",
       "course": "1bach",
@@ -508,6 +515,7 @@
     },
     {
       "id": "t6_c_008",
+      "number": 38,
       "version": 1,
       "title": "Comprobar elasticidad desde velocidades medidas",
       "course": "1bach",
@@ -572,6 +580,7 @@
     },
     {
       "id": "t6_c_009",
+      "number": 39,
       "version": 1,
       "title": "Choque conserva momento pero pierde 40% de K",
       "course": "1bach",
@@ -650,6 +659,7 @@
     },
     {
       "id": "t6_c_010",
+      "number": 40,
       "version": 1,
       "title": "Coeficiente de restitución con velocidades dadas",
       "course": "1bach",
@@ -724,6 +734,7 @@
     },
     {
       "id": "t6_c_011",
+      "number": 41,
       "version": 1,
       "title": "Problema estructurado",
       "course": "1bach",
@@ -802,6 +813,7 @@
     },
     {
       "id": "t6_c_012",
+      "number": 42,
       "version": 1,
       "title": "Problema estructurado",
       "course": "1bach",
@@ -876,6 +888,7 @@
     },
     {
       "id": "t6_c_013",
+      "number": 43,
       "version": 1,
       "title": "Masas iguales, una en reposo",
       "course": "1bach",
@@ -952,6 +965,7 @@
     },
     {
       "id": "t6_c_014",
+      "number": 44,
       "version": 1,
       "title": "Pelota rebota en suelo",
       "course": "1bach",
@@ -1028,6 +1042,7 @@
     },
     {
       "id": "t6_c_015",
+      "number": 45,
       "version": 1,
       "title": "Dos cuerpos se mueven juntos",
       "course": "1bach",
@@ -1106,6 +1121,7 @@
     },
     {
       "id": "t6_c_016",
+      "number": 46,
       "version": 1,
       "title": "Choque 2D con objeto inicialmente en reposo y vectores finales perpendicular",
       "course": "1bach",
@@ -1180,6 +1196,7 @@
     },
     {
       "id": "t6_c_017",
+      "number": 47,
       "version": 1,
       "title": "Billar ideal, masas iguales, una en reposo",
       "course": "1bach",
@@ -1254,6 +1271,7 @@
     },
     {
       "id": "t6_c_018",
+      "number": 48,
       "version": 1,
       "title": "Auditar solución que conserva energía cinética en choque pegajoso",
       "course": "1bach",

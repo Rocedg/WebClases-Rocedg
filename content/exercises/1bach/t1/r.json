@@ -83,7 +83,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "La estación como origen. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Leer posiciones con signo respecto a un origen y distinguir desplazamiento de distancia recorrida.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Referencia y posición"
@@ -181,7 +181,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Ida, vuelta y avance neto. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Calcular el desplazamiento neto y la distancia recorrida en un trayecto de ida y vuelta, y sus medias.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Referencia y posición"
@@ -260,7 +260,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "De la tabla a la ecuación de la posición. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Construir la ecuación de la posición de un MRU a partir de una tabla y usarla para predecir.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Referencia y posición"
@@ -370,7 +370,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Una función también se puede leer al revés. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Usar la ecuación de la posición en los dos sentidos: dar x para un t y hallar t para un x.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Referencia y posición"
@@ -495,7 +495,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Tres signos, tres informaciones. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Interpretar los signos de x, v y a por separado y relacionarlos con el sentido y el cambio de rapidez.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Referencia y posición"
@@ -608,7 +608,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Completar la representación que falta. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Pasar de una descripción con tramos a la gráfica x(t), manteniendo la posición durante el reposo.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Referencia y posición"
@@ -723,7 +723,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Trasladar e invertir un eje. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Cambiar el sistema de referencia (trasladar e invertir el eje) y ver qué magnitudes cambian de signo.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Referencia y posición"
@@ -812,7 +812,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Auditoría de una gráfica. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Revisar una gráfica x(t) ajena y detectar un error de signo en la pendiente.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Referencia y posición"

@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t2_v_001",
+      "number": 1,
       "version": 1,
       "title": "Una posición en el segundo cuadrante",
       "course": "1bach",
@@ -42,7 +43,7 @@
         },
         {
           "id": "norm",
-          "label": "Módulo",
+          "label": "Módulo del vector posición",
           "type": "numeric",
           "required": true,
           "expected_value": 10,
@@ -54,7 +55,7 @@
         },
         {
           "id": "angle",
-          "label": "Ángulo desde +x",
+          "label": "Ángulo desde \\(+x\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 126.86989765,
@@ -83,7 +84,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Una posición en el segundo cuadrante. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Escribir un vector posición, calcular su módulo y su ángulo en el segundo cuadrante.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Vectores y composición"
@@ -94,12 +95,13 @@
         "Aceptar el cuadrante de una arctangente sin comprobarlo"
       ],
       "parts_count": 2,
-      "statement_source": "Plano con origen O, \\(+x\\) este y \\(+y\\) norte. Un dron está en \\(P=(−6,8) m\\). \n(a) Escribe su vector posición y módulo.\n(b) Completa: Ángulo desde +x.",
-      "solution_source": "\\(r=−6\\) i+8 j m; |r|=√(\\(36+64\\))=10 m.\n\natan2(8,−6)=126,87°, es decir 127° a tres cifras.\n\nEstá en el segundo cuadrante; arctan(\\(8/−6\\)) devuelve −53,13° y hay que añadir 180°.",
+      "statement_source": "En un plano con origen \\(O\\), \\(+x\\) hacia el este y \\(+y\\) hacia el norte, un dron está en el punto \\(P=(-6;8)\\,\\mathrm{m}\\).\n\n(a) Escribe su vector posición y calcula su módulo.\n(b) Calcula el ángulo que forma el vector posición con \\(+x\\), medido en sentido antihorario.",
+      "solution_source": "(a) \\(\\vec r=-6\\,\\vec i+8\\,\\vec j\\,\\mathrm{m}\\) y \\(|\\vec r|=\\sqrt{36+64}=10{,}0\\,\\mathrm{m}\\).\n(b) El punto está en el segundo cuadrante: \\(\\arctan(8/(-6))=-53{,}13^\\circ\\) en la calculadora, y hay que sumar \\(180^\\circ\\): \\(126{,}9^\\circ\\).",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t2_v_002",
+      "number": 2,
       "version": 1,
       "title": "Desplazarse no es medir desde el origen",
       "course": "1bach",
@@ -115,7 +117,7 @@
       "response_fields": [
         {
           "id": "dr",
-          "label": "Desplazamiento A→B",
+          "label": "Desplazamiento de A a B",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -140,7 +142,7 @@
         },
         {
           "id": "norm",
-          "label": "Módulo de desplazamiento",
+          "label": "Módulo del desplazamiento",
           "type": "numeric",
           "required": true,
           "expected_value": 10,
@@ -152,7 +154,7 @@
         },
         {
           "id": "angle",
-          "label": "Dirección",
+          "label": "Ángulo desde \\(+x\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 126.86989765,
@@ -181,7 +183,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Desplazarse no es medir desde el origen. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Calcular el vector desplazamiento entre dos puntos y no confundirlo con la posición final.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Vectores y composición"
@@ -192,12 +194,13 @@
         "Restar los módulos de posición"
       ],
       "parts_count": 2,
-      "statement_source": "\\(+x\\) este,\\(+y\\) norte. \\(A=(2,−1) m\\) y \\(B=(−4,7) m\\). \n(a) Completa: Desplazamiento A→B, Módulo de desplazamiento.\n(b) Calcula dirección desde \\(+x\\) y compara Δr con \\(r_B\\).",
-      "solution_source": "\\(Δr=r_B−r_A=(−4−2,7−(−1))=(−6,8) m\\).\n\n|Δr|=10 m y dirección 126,87° desde \\(+x\\).\n\n\\(r_B=(−4,7) m\\) tiene otro origen geométrico; confundirlo con Δr ignora el punto inicial A.",
+      "statement_source": "En un plano con \\(+x\\) hacia el este y \\(+y\\) hacia el norte, un móvil pasa del punto \\(A=(2;-1)\\,\\mathrm{m}\\) al punto \\(B=(-4;7)\\,\\mathrm{m}\\).\n\n(a) Calcula el vector desplazamiento de A a B y su módulo.\n(b) Calcula el ángulo que forma el desplazamiento con \\(+x\\), medido en sentido antihorario.",
+      "solution_source": "(a) \\(\\Delta\\vec r=\\vec r_B-\\vec r_A=(-4-2;7-(-1))=(-6;8)\\,\\mathrm{m}\\) y \\(|\\Delta\\vec r|=10{,}0\\,\\mathrm{m}\\).\n(b) Segundo cuadrante: \\(126{,}9^\\circ\\) desde \\(+x\\).\n\n\\(\\Delta\\vec r\\) no es \\(\\vec r_B=(-4;7)\\,\\mathrm{m}\\): el desplazamiento se mide desde A, no desde el origen.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t2_v_003",
+      "number": 3,
       "version": 1,
       "title": "Velocidad media y datos insuficientes para rapidez",
       "course": "1bach",
@@ -250,7 +253,7 @@
         },
         {
           "id": "min",
-          "label": "Mínima rapidez media",
+          "label": "Menor rapidez media posible",
           "type": "numeric",
           "required": true,
           "expected_value": 3.25,
@@ -279,7 +282,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Velocidad media y datos insuficientes para rapidez. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Calcular la velocidad media vectorial y ver que sin trayectoria la rapidez media solo tiene una cota.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Vectores y composición"
@@ -290,12 +293,13 @@
         "Equiparar rapidez media con módulo de velocidad media"
       ],
       "parts_count": 2,
-      "statement_source": "Plano horizontal, \\(+x\\) este,\\(+y\\) norte. Un robot pasa de \\((−3,2) m\\) en \\(t=1 s\\) a \\((9,7) m\\) en \\(t=5 s\\). \n(a) Halla velocidad media vectorial y su módulo.\n(b) ¿Se puede obtener la rapidez media sin conocer la trayectoria? Da su menor valor posible.",
-      "solution_source": "\\(Δr=(12,5) m\\) y \\(Δt=4 s\\): \\(v_media=(3,1,25) m/s\\).\n\n|Δr|=√169=13 m; |\\(v_media\\)|=13/4=3,25 m/s.\n\nLa longitud del camino es al menos 13 m; solo el trayecto recto sin vueltas alcanza la cota. Los extremos no fijan la rapidez media exacta.",
+      "statement_source": "Un robot se mueve por un plano horizontal con \\(+x\\) hacia el este y \\(+y\\) hacia el norte. Pasa por \\((-3;2)\\,\\mathrm{m}\\) en \\(t=1\\,\\mathrm{s}\\) y por \\((9;7)\\,\\mathrm{m}\\) en \\(t=5\\,\\mathrm{s}\\). No sabemos qué camino sigue entre esos instantes.\n\n(a) Calcula la velocidad media y su módulo.\n(b) ¿Se puede calcular la rapidez media sin conocer el camino? Da el menor valor que puede tener.",
+      "solution_source": "(a) \\(\\Delta\\vec r=(12;5)\\,\\mathrm{m}\\) y \\(\\Delta t=4\\,\\mathrm{s}\\): \\(\\vec v_m=(3;1{,}25)\\,\\mathrm{m/s}\\) y \\(|\\vec v_m|=13/4=3{,}25\\,\\mathrm{m/s}\\).\n(b) No: la distancia recorrida depende del camino. Como mínimo es \\(|\\Delta\\vec r|=13\\,\\mathrm{m}\\) (camino recto sin retrocesos), así que la rapidez media es como mínimo \\(3{,}25\\,\\mathrm{m/s}\\).",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t2_v_004",
+      "number": 4,
       "version": 1,
       "title": "Aceleración media de un giro",
       "course": "1bach",
@@ -336,7 +340,7 @@
         },
         {
           "id": "norm",
-          "label": "Módulo",
+          "label": "Módulo de la aceleración media",
           "type": "numeric",
           "required": true,
           "expected_value": 5,
@@ -348,7 +352,7 @@
         },
         {
           "id": "angle",
-          "label": "Dirección",
+          "label": "Ángulo desde \\(+x\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 126.86989765,
@@ -377,7 +381,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Aceleración media de un giro. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Calcular la aceleración media como cambio del vector velocidad, aunque la rapidez cambie poco.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Vectores y composición"
@@ -387,13 +391,14 @@
         "Restar módulos y obtener una aceleración escalar",
         "Suponer a constante sin dato"
       ],
-      "parts_count": 2,
-      "statement_source": "Ejes \\(+x\\) este,\\(+y\\) norte. La velocidad cambia de \\((6,0)\\) a \\((0,8) m/s\\) en 2 s. \n(a) Completa: Aceleración media, Módulo, Dirección.",
-      "solution_source": "\\(Δv=(0−6,8−0)=(−6,8) m/s\\). Dividiendo por 2 s: \\(a_media=(−3,4) m/s²\\).\n\n|\\(a_media\\)|=√(\\(9+16\\))=5 m/s², ángulo 126,87°.\n\nNo se ha afirmado aceleración constante: la media no permite reconstruir \\(v(t)\\) ni \\(r(t)\\) de forma única.",
+      "parts_count": 1,
+      "statement_source": "En un plano con \\(+x\\) hacia el este y \\(+y\\) hacia el norte, la velocidad de un móvil pasa de \\((6;0)\\,\\mathrm{m/s}\\) a \\((0;8)\\,\\mathrm{m/s}\\) en \\(2\\,\\mathrm{s}\\).\n\n(a) Calcula la aceleración media, su módulo y el ángulo que forma con \\(+x\\).",
+      "solution_source": "(a) \\(\\Delta\\vec v=(0-6;8-0)=(-6;8)\\,\\mathrm{m/s}\\). Dividiendo entre \\(2\\,\\mathrm{s}\\): \\(\\vec a_m=(-3;4)\\,\\mathrm{m/s^2}\\), con módulo \\(\\sqrt{9+16}=5{,}00\\,\\mathrm{m/s^2}\\) y ángulo \\(126{,}9^\\circ\\) desde \\(+x\\).\n\nSolo es la aceleración media: con estos datos no se puede reconstruir \\(\\vec v(t)\\) ni \\(\\vec r(t)\\).",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t2_v_005",
+      "number": 5,
       "version": 1,
       "title": "Camino quebrado y cuerda entre extremos",
       "course": "1bach",
@@ -409,7 +414,7 @@
       "response_fields": [
         {
           "id": "d",
-          "label": "Recorrido",
+          "label": "Distancia recorrida",
           "type": "numeric",
           "required": true,
           "expected_value": 14,
@@ -487,7 +492,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Camino quebrado y cuerda entre extremos. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Distinguir distancia recorrida y desplazamiento, y rapidez media y módulo de la velocidad media.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Vectores y composición"
@@ -498,12 +503,13 @@
         "Sumar componentes para el módulo"
       ],
       "parts_count": 2,
-      "statement_source": "En 10 s un robot va de \\(O=(0,0)\\) a \\(A=(6,0)\\) y luego a \\(B=(6,8),\\) en metros, sin retrocesos. \\(+x\\) este,\\(+y\\) norte. \n(a) Calcula recorrido y desplazamiento.\n(b) Completa: Rapidez media, Módulo de velocidad media.",
-      "solution_source": "\\(Recorrido=6+8=14 m\\); \\(Δr=(6,8) m\\) y |Δr|=10 m.\n\nRapidez \\(media=14/10=1,40 m/s\\); |\\(v_media\\)|=10/10=1,00 m/s.\n\nLa ruta quebrada es más larga que el segmento directo, aunque comparten extremos y tiempo total.",
+      "statement_source": "Un robot va de \\(O=(0;0)\\) a \\(A=(6;0)\\) y luego a \\(B=(6;8)\\), en metros, en línea recta en cada tramo y sin retroceder. Tarda \\(10\\,\\mathrm{s}\\) en total. Los ejes son \\(+x\\) hacia el este y \\(+y\\) hacia el norte.\n\n(a) Calcula la distancia recorrida y el vector desplazamiento.\n(b) Calcula la rapidez media y el módulo de la velocidad media.",
+      "solution_source": "(a) Distancia: \\(6+8=14{,}0\\,\\mathrm{m}\\). Desplazamiento: \\(\\Delta\\vec r=(6;8)\\,\\mathrm{m}\\), de módulo \\(10{,}0\\,\\mathrm{m}\\).\n(b) Rapidez media: \\(14/10=1{,}40\\,\\mathrm{m/s}\\). Módulo de la velocidad media: \\(10/10=1{,}00\\,\\mathrm{m/s}\\).\n\nEl camino quebrado es más largo que el segmento \\(OB\\), aunque los dos unen los mismos extremos en el mismo tiempo.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t2_v_006",
+      "number": 6,
       "version": 1,
       "title": "Componentes de una velocidad oblicua",
       "course": "1bach",
@@ -544,7 +550,7 @@
         },
         {
           "id": "dr",
-          "label": "Desplazamiento",
+          "label": "Desplazamiento en \\(4\\,\\mathrm{s}\\)",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -598,7 +604,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Componentes de una velocidad oblicua. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Descomponer una velocidad dada por módulo y rumbo y obtener el desplazamiento.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Vectores y composición"
@@ -609,12 +615,13 @@
         "Hacer positivas ambas componentes"
       ],
       "parts_count": 2,
-      "statement_source": "\\(+x\\) este,\\(+y\\) norte. Un dron vuela a 10 m/s con rumbo 150° desde \\(+x\\) antihorario. \n(a) Obtén \\(v_x\\),\\(v_y\\) con signo.\n(b) Completa: Desplazamiento, Módulo del desplazamiento.",
-      "solution_source": "\\(v_x=10\\) cos150°=−8,66 m/s; \\(v_y=10\\) sen150°=5,00 m/s.\n\n\\(Δr=4v=(−34,6,20,0) m\\); |Δr|=4·10=40,0 m.\n\nAmbos vectores están en el segundo cuadrante, coherente con rumbo noroeste.",
+      "statement_source": "En un plano con \\(+x\\) hacia el este y \\(+y\\) hacia el norte, un dron vuela a \\(10\\,\\mathrm{m/s}\\) con rumbo \\(150^\\circ\\), medido desde \\(+x\\) en sentido antihorario, y mantiene esa velocidad durante \\(4\\,\\mathrm{s}\\).\n\n(a) Calcula las componentes \\(v_x\\) y \\(v_y\\) de su velocidad, con su signo.\n(b) Calcula el vector desplazamiento en esos \\(4\\,\\mathrm{s}\\) y su módulo.",
+      "solution_source": "(a) \\(v_x=10\\cos150^\\circ=-8{,}66\\,\\mathrm{m/s}\\) y \\(v_y=10\\sin150^\\circ=5{,}00\\,\\mathrm{m/s}\\).\n(b) Con velocidad constante, \\(\\Delta\\vec r=4\\,\\vec v=(-34{,}6;20{,}0)\\,\\mathrm{m}\\), de módulo \\(4\\cdot10=40{,}0\\,\\mathrm{m}\\).\n\nLos dos vectores están en el segundo cuadrante, coherente con un rumbo hacia el noroeste.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t2_v_007",
+      "number": 7,
       "version": 1,
       "title": "Tangente y aceleración en un vuelo",
       "course": "1bach",
@@ -630,7 +637,7 @@
       "response_fields": [
         {
           "id": "v0",
-          "label": "Velocidad inicial",
+          "label": "Velocidad al salir",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -651,7 +658,7 @@
           "unit": "m/s",
           "tolerance": 0.02,
           "rounding": "Tres cifras significativas.",
-          "part": "b"
+          "part": "a"
         },
         {
           "id": "v1",
@@ -676,11 +683,11 @@
           "unit": "m/s",
           "tolerance": 0.02,
           "rounding": "Tres cifras significativas.",
-          "part": "b"
+          "part": "a"
         },
         {
           "id": "v2",
-          "label": "Velocidad final",
+          "label": "Velocidad al volver a \\(y=0\\)",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -701,7 +708,7 @@
           "unit": "m/s",
           "tolerance": 0.02,
           "rounding": "Tres cifras significativas.",
-          "part": "b"
+          "part": "a"
         }
       ],
       "assets": [
@@ -722,7 +729,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Tangente y aceleración en un vuelo. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Ver que la velocidad es tangente a la trayectoria y que en la cima no se anula.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Vectores y composición"
@@ -732,13 +739,14 @@
         "Anular todo el vector v en la cima",
         "Dibujar a siguiendo la curva"
       ],
-      "parts_count": 2,
-      "statement_source": "Origen en el lanzamiento, \\(+x\\) derecha,\\(+y\\) arriba. Sin aire, \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\), \\(v_0=(8,10) m/s\\). La trayectoria pasa por \\((0;0)\\), por la cima \\((8{,}15;5{,}10)\\) y por \\((16{,}31;0)\\,\\mathrm{m}\\) en \\(t=0\\), \\(1{,}02\\) y \\(2{,}04\\,\\mathrm{s}\\). \n(b) Completa: Velocidad inicial, Velocidad en la cima, Velocidad final.",
-      "solution_source": "\\(x=8t\\), \\(y=10t-4{,}905t^2\\); \\(\\vec v=(8;10-9{,}81t)\\,\\mathrm{m/s}\\) y \\(\\vec a=(0;-9{,}81)\\,\\mathrm{m/s^2}\\).\n\nEn \\(t=0\\), \\(1{,}02\\) y \\(2{,}04\\,\\mathrm{s}\\): \\(\\vec v=(8;10)\\), \\((8;0)\\) y \\((8;-10)\\,\\mathrm{m/s}\\); las flechas son tangentes.\n\nLa gravedad apunta hacia abajo en los tres puntos. La cima es el máximo de \\(y\\), no un reposo del proyectil.",
+      "parts_count": 1,
+      "statement_source": "Un proyectil sale del origen con \\(\\vec v_0=(8;10)\\,\\mathrm{m/s}\\), con \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba. Sin aire, \\(a_y=-g=-9{,}81\\,\\mathrm{m/s^2}\\). Su trayectoria pasa por \\((0;0)\\), por la cima \\((8{,}15;5{,}10)\\) y por \\((16{,}31;0)\\,\\mathrm{m}\\) en \\(t=0\\), \\(1{,}02\\) y \\(2{,}04\\,\\mathrm{s}\\).\n\n(a) Calcula el vector velocidad en esos tres instantes: al salir, en la cima y al volver a \\(y=0\\).",
+      "solution_source": "(a) \\(x=8t\\) e \\(y=10t-4{,}905t^2\\), así que \\(\\vec v=(8;10-9{,}81t)\\,\\mathrm{m/s}\\). En \\(t=0\\), \\(1{,}02\\) y \\(2{,}04\\,\\mathrm{s}\\): \\(\\vec v=(8;10)\\), \\((8;0)\\) y \\((8;-10)\\,\\mathrm{m/s}\\). Las tres flechas son tangentes a la trayectoria.\n\nLa aceleración, \\((0;-9{,}81)\\,\\mathrm{m/s^2}\\), es la misma en los tres puntos. En la cima \\(y\\) es máxima, pero el proyectil no está en reposo.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t2_v_008",
+      "number": 8,
       "version": 1,
       "title": "Barca que apunta a la otra orilla",
       "course": "1bach",
@@ -791,7 +799,7 @@
         },
         {
           "id": "angle",
-          "label": "Rumbo desde +x",
+          "label": "Rumbo desde \\(+x\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 56.309932474020215,
@@ -815,7 +823,7 @@
         },
         {
           "id": "drift",
-          "label": "Deriva",
+          "label": "Deriva aguas abajo",
           "type": "numeric",
           "required": true,
           "expected_value": 40,
@@ -844,7 +852,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Barca que apunta a la otra orilla. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Sumar velocidades relativas para una barca que cruza un río y calcular tiempo de cruce y deriva.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Vectores y composición"
@@ -855,12 +863,13 @@
         "Usar la rapidez oblicua para cruzar el ancho"
       ],
       "parts_count": 2,
-      "statement_source": "Vista en planta: \\(+x\\) aguas abajo,\\(+y\\) hacia la otra orilla. Río de 60 m de ancho; agua a \\((2,0) m/s\\) respecto a tierra y barca a \\((0,3) m/s\\) respecto al agua. \n(a) Halla v respecto a tierra, módulo y rumbo.\n(b) Calcula tiempo de cruce y deriva.",
-      "solution_source": "\\(v_B\\)/\\(T=v_B/A+v_A/T=(2,3) m/s\\). Módulo √13=3,61 m/s y rumbo 56,3°.\n\n\\(y=3t=60\\) da \\(t=20 s\\); \\(x=2·20=40 m\\).\n\nLa corriente no cambia la componente transversal de 3 m/s: no se divide el ancho entre √13.",
+      "statement_source": "Una barca cruza un río de \\(60\\,\\mathrm{m}\\) de ancho. En vista en planta, \\(+x\\) apunta aguas abajo y \\(+y\\) hacia la otra orilla. El agua se mueve a \\((2;0)\\,\\mathrm{m/s}\\) respecto a tierra y la barca, que apunta a la otra orilla, va a \\((0;3)\\,\\mathrm{m/s}\\) respecto al agua.\n\n(a) Calcula la velocidad de la barca respecto a tierra, su módulo y su rumbo desde \\(+x\\).\n(b) Calcula el tiempo que tarda en cruzar y cuánto se desplaza aguas abajo (deriva).",
+      "solution_source": "(a) \\(\\vec v_{\\text{tierra}}=\\vec v_{\\text{barca/agua}}+\\vec v_{\\text{agua}}=(2;3)\\,\\mathrm{m/s}\\), de módulo \\(\\sqrt{13}\\simeq3{,}61\\,\\mathrm{m/s}\\) y rumbo \\(56{,}3^\\circ\\) desde \\(+x\\).\n(b) \\(y=3t=60\\Rightarrow t=20{,}0\\,\\mathrm{s}\\); deriva \\(x=2\\cdot20=40{,}0\\,\\mathrm{m}\\).\n\nLa corriente no cambia la componente transversal: no hay que dividir el ancho entre \\(\\sqrt{13}\\).",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t2_v_009",
+      "number": 9,
       "version": 1,
       "title": "Elegir ejes sin cambiar la física",
       "course": "1bach",
@@ -876,7 +885,7 @@
       "response_fields": [
         {
           "id": "va",
-          "label": "Velocidad en A",
+          "label": "Velocidad en la referencia A",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -897,11 +906,11 @@
           "unit": "m/s",
           "tolerance": 0.02,
           "rounding": "Tres cifras significativas.",
-          "part": "b"
+          "part": "a"
         },
         {
           "id": "vb",
-          "label": "Velocidad en B",
+          "label": "Velocidad en la referencia B",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -922,7 +931,7 @@
           "unit": "m/s",
           "tolerance": 0.02,
           "rounding": "Tres cifras significativas.",
-          "part": "b"
+          "part": "a"
         },
         {
           "id": "t",
@@ -938,7 +947,7 @@
         },
         {
           "id": "d",
-          "label": "Deriva",
+          "label": "Deriva aguas abajo",
           "type": "numeric",
           "required": true,
           "expected_value": 24,
@@ -967,7 +976,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Elegir ejes sin cambiar la física. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Comprobar que cambiar de ejes cambia las componentes, pero no el tiempo ni el punto de llegada.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Vectores y composición"
@@ -978,12 +987,13 @@
         "Mantener signos al invertir un eje"
       ],
       "parts_count": 2,
-      "statement_source": "En un río de 40 m de ancho, corriente 1,5 m/s aguas abajo y barca 2,5 m/s respecto al agua apuntando perpendicularmente a las orillas. Compara tres referencias: A: \\(+x\\) corriente,\\(+y\\) transversal; B: \\(+x\\) transversal,\\(+y\\) contracorriente; C: ambos ejes girados 45° respecto a A. \n(b) Da componentes de velocidad terrestre en A y B y calcula cruce y deriva.",
-      "solution_source": "A alinea cada aportación con un eje: \\(v=(1,5,2,5) m/s\\). B también es válida: v′=\\((2,5,−1,5) m/s\\). C exige proyectar ambos vectores.\n\nEn A: \\(t=40/2,5=16 s\\) y \\(deriva=1,5·16=24 m\\). En B: x′=40,y′=−24 m.\n\nLas coordenadas cambian, pero el tiempo y el punto físico de llegada coinciden. Admitir A o B con justificación coherente.",
+      "statement_source": "Una barca cruza un río de \\(40\\,\\mathrm{m}\\) de ancho. La corriente va a \\(1{,}5\\,\\mathrm{m/s}\\) aguas abajo y la barca va a \\(2{,}5\\,\\mathrm{m/s}\\) respecto al agua, apuntando perpendicularmente a las orillas. Comparamos dos referencias:\n\nA: \\(+x\\) en el sentido de la corriente, \\(+y\\) hacia la otra orilla.\nB: \\(+x\\) hacia la otra orilla, \\(+y\\) contra la corriente.\n\n(a) Escribe las componentes de la velocidad de la barca respecto a tierra en la referencia A y en la B.\n(b) Calcula el tiempo que tarda en cruzar y la deriva aguas abajo.",
+      "solution_source": "(a) En A: \\(\\vec v=(1{,}5;2{,}5)\\,\\mathrm{m/s}\\). En B: \\(\\vec v\\,'=(2{,}5;-1{,}5)\\,\\mathrm{m/s}\\).\n(b) \\(t=40/2{,}5=16{,}0\\,\\mathrm{s}\\) y deriva \\(=1{,}5\\cdot16=24{,}0\\,\\mathrm{m}\\). En B el punto de llegada es \\((40;-24)\\,\\mathrm{m}\\): las coordenadas cambian, pero el tiempo y el punto físico de llegada son los mismos.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t2_v_010",
+      "number": 10,
       "version": 1,
       "title": "Reconstruir el viento",
       "course": "1bach",
@@ -1061,7 +1071,7 @@
         },
         {
           "id": "angle",
-          "label": "Ángulo del viento en [0,360)",
+          "label": "Dirección del viento en \\([0^\\circ,360^\\circ)\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 303.6900675,
@@ -1090,7 +1100,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Reconstruir el viento. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Restar velocidades relativas para reconstruir el viento a partir de un desplazamiento medido.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Vectores y composición"
@@ -1101,8 +1111,8 @@
         "Dar dirección de primer cuadrante a un viento hacia el sur"
       ],
       "parts_count": 2,
-      "statement_source": "\\(+x\\) este,\\(+y\\) norte. Un dron tiene \\(v_D\\)/\\(aire=(6,8) m/s\\) y tarda 20 s en desplazarse desde O hasta \\((160,100) m\\) con velocidades constantes. \n(a) Halla \\(v_D\\)/tierra y viento.\n(b) Completa: Velocidad del viento, Rapidez del viento, Ángulo del viento en [0,360).",
-      "solution_source": "\\(v_D\\)/\\(T=(160,100)/20=(8,5) m/s\\).\n\n\\(v_aire\\)/\\(T=v_D/T−v_D/aire=(2,−3) m/s\\); módulo √13=3,61 m/s, dirección 303,69° (o −56,31°).\n\n\\((6,8)\\)+\\((2,−3)\\)=\\((8,5)\\); multiplicando por 20 s recuperamos la posición medida.",
+      "statement_source": "En un plano con \\(+x\\) hacia el este y \\(+y\\) hacia el norte, un dron vuela con velocidad \\((6;8)\\,\\mathrm{m/s}\\) respecto al aire. Con velocidades constantes, tarda \\(20\\,\\mathrm{s}\\) en ir desde \\(O\\) hasta \\((160;100)\\,\\mathrm{m}\\).\n\n(a) Calcula la velocidad del dron respecto a tierra.\n(b) Calcula la velocidad del viento, su rapidez y su dirección como ángulo entre \\(0^\\circ\\) y \\(360^\\circ\\) desde \\(+x\\).",
+      "solution_source": "(a) \\(\\vec v_{\\text{tierra}}=(160;100)/20=(8;5)\\,\\mathrm{m/s}\\).\n(b) \\(\\vec v_{\\text{viento}}=\\vec v_{\\text{tierra}}-\\vec v_{\\text{aire}}=(2;-3)\\,\\mathrm{m/s}\\), de módulo \\(\\sqrt{13}\\simeq3{,}61\\,\\mathrm{m/s}\\) y dirección \\(303{,}7^\\circ\\) (o \\(-56{,}3^\\circ\\)).\n\nComprobación: \\((6;8)+(2;-3)=(8;5)\\), y por \\(20\\,\\mathrm{s}\\) da la posición medida.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     }
   ]

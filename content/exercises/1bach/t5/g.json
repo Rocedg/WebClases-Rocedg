@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t5_g_001",
+      "number": 27,
       "version": 1,
       "title": "Subir 5 m",
       "course": "1bach",
@@ -78,6 +79,7 @@
     },
     {
       "id": "t5_g_002",
+      "number": 28,
       "version": 1,
       "title": "Cambiar referencia de suelo a mesa",
       "course": "1bach",
@@ -152,6 +154,7 @@
     },
     {
       "id": "t5_g_003",
+      "number": 29,
       "version": 1,
       "title": "Caída desde 20 m, sin aire",
       "course": "1bach",
@@ -216,6 +219,7 @@
     },
     {
       "id": "t5_g_004",
+      "number": 30,
       "version": 1,
       "title": "Rampa sin rozamiento con desnivel 3 m",
       "course": "1bach",
@@ -280,6 +284,7 @@
     },
     {
       "id": "t5_g_005",
+      "number": 31,
       "version": 1,
       "title": "Lanzamiento vertical",
       "course": "1bach",
@@ -344,6 +349,7 @@
     },
     {
       "id": "t5_g_006",
+      "number": 32,
       "version": 1,
       "title": "Montaña rusa",
       "course": "1bach",
@@ -408,6 +414,7 @@
     },
     {
       "id": "t5_g_007",
+      "number": 33,
       "version": 1,
       "title": "Velocidad mínima para superar colina de 8 m",
       "course": "1bach",
@@ -472,6 +479,7 @@
     },
     {
       "id": "t5_g_008",
+      "number": 34,
       "version": 1,
       "title": "Elegir gráfico U_g(h) para varios ceros",
       "course": "1bach",
@@ -546,6 +554,7 @@
     },
     {
       "id": "t5_g_009",
+      "number": 35,
       "version": 1,
       "title": "Plano inclinado",
       "course": "1bach",
@@ -620,6 +629,7 @@
     },
     {
       "id": "t5_g_010",
+      "number": 36,
       "version": 1,
       "title": "Auditar afirmación “la energía potencial pertenece al objeto”",
       "course": "1bach",

@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t3_c_001",
+      "number": 39,
       "version": 1,
       "title": "Piedra 0,5 kg, radio 2 m, rapidez 4 m/s, plano horizontal ideal",
       "course": "1bach",
@@ -100,6 +101,7 @@
     },
     {
       "id": "t3_c_002",
+      "number": 40,
       "version": 1,
       "title": "Elegir DCL correcto de coche en curva plana sin rozamiento modelizado aún",
       "course": "1bach",
@@ -174,6 +176,7 @@
     },
     {
       "id": "t3_c_003",
+      "number": 41,
       "version": 1,
       "title": "Masa en cuerda horizontal ideal",
       "course": "1bach",
@@ -238,6 +241,7 @@
     },
     {
       "id": "t3_c_004",
+      "number": 42,
       "version": 1,
       "title": "Círculo vertical, punto inferior",
       "course": "1bach",
@@ -302,6 +306,7 @@
     },
     {
       "id": "t3_c_005",
+      "number": 43,
       "version": 1,
       "title": "Mismo sistema en punto superior",
       "course": "1bach",
@@ -366,6 +371,7 @@
     },
     {
       "id": "t3_c_006",
+      "number": 44,
       "version": 1,
       "title": "Rapidez mínima para cuerda tensa arriba",
       "course": "1bach",
@@ -442,6 +448,7 @@
     },
     {
       "id": "t3_c_007",
+      "number": 45,
       "version": 1,
       "title": "Pasajero en curva vertical inferior",
       "course": "1bach",
@@ -518,6 +525,7 @@
     },
     {
       "id": "t3_c_008",
+      "number": 46,
       "version": 1,
       "title": "Péndulo cónico",
       "course": "1bach",
@@ -606,6 +614,7 @@
     },
     {
       "id": "t3_c_009",
+      "number": 47,
       "version": 1,
       "title": "Gráfica de rapidez creciente en círculo de radio fijo",
       "course": "1bach",
@@ -670,6 +679,7 @@
     },
     {
       "id": "t3_c_010",
+      "number": 48,
       "version": 1,
       "title": "Auditar un DCL que añade “fuerza centrípeta” a tensión y peso",
       "course": "1bach",

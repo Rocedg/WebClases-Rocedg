@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t6_a_001",
+      "number": 49,
       "version": 1,
       "title": "Reconstruir velocidad desde sensor F(t) de impacto y masa conocida",
       "course": "1bach",
@@ -76,6 +77,7 @@
     },
     {
       "id": "t6_a_002",
+      "number": 50,
       "version": 1,
       "title": "Comparar dos cascos con igual impulso y picos distintos",
       "course": "1bach",
@@ -150,6 +152,7 @@
     },
     {
       "id": "t6_a_003",
+      "number": 51,
       "version": 1,
       "title": "Choque pegajoso seguido de frenada por rozamiento",
       "course": "1bach",
@@ -224,6 +227,7 @@
     },
     {
       "id": "t6_a_004",
+      "number": 52,
       "version": 1,
       "title": "Bala-bloque-péndulo",
       "course": "1bach",
@@ -298,6 +302,7 @@
     },
     {
       "id": "t6_a_005",
+      "number": 53,
       "version": 1,
       "title": "Carro 1 kg a 6 m/s se pega a otro de 2 kg",
       "course": "1bach",
@@ -386,6 +391,7 @@
     },
     {
       "id": "t6_a_006",
+      "number": 54,
       "version": 1,
       "title": "Elegir sistema y ley para cinco fases de una interacción",
       "course": "1bach",
@@ -460,6 +466,7 @@
     },
     {
       "id": "t6_a_007",
+      "number": 55,
       "version": 1,
       "title": "Gráficas de fuerzas mutuas durante choque",
       "course": "1bach",
@@ -534,6 +541,7 @@
     },
     {
       "id": "t6_a_008",
+      "number": 56,
       "version": 1,
       "title": "Datos con incertidumbre",
       "course": "1bach",
@@ -608,6 +616,7 @@
     },
     {
       "id": "t6_a_009",
+      "number": 57,
       "version": 1,
       "title": "Hallar masa desconocida desde choque y velocidades medidas",
       "course": "1bach",
@@ -682,6 +691,7 @@
     },
     {
       "id": "t6_a_010",
+      "number": 58,
       "version": 1,
       "title": "Detectar datos físicamente incompatibles (e>1 sin aporte energético declarad",
       "course": "1bach",
@@ -760,6 +770,7 @@
     },
     {
       "id": "t6_a_011",
+      "number": 59,
       "version": 1,
       "title": "Movimiento 2D",
       "course": "1bach",
@@ -834,6 +845,7 @@
     },
     {
       "id": "t6_a_012",
+      "number": 60,
       "version": 1,
       "title": "Miniinvestigación cerrada de choque",
       "course": "1bach",

@@ -82,7 +82,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Los segundos no aportan igual distancia. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Aplicar x = ½at² desde el reposo y ver que en tiempos iguales no se recorren distancias iguales.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "MRUA y movimiento vertical"
@@ -186,7 +186,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "MRUA que empieza hacia atrás. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Escribir la ecuación de la posición de un MRUA con el signo de cada dato y derivarla.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "MRUA y movimiento vertical"
@@ -260,7 +260,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Frenar viajando hacia el oeste. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Obtener la aceleración como pendiente de v(t) y aplicar el MRUA con velocidades negativas.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "MRUA y movimiento vertical"
@@ -361,7 +361,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Caída desde una plataforma. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Modelizar una caída libre desde una altura y calcular la llegada al suelo.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "MRUA y movimiento vertical"
@@ -471,7 +471,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Leer los coeficientes con sus unidades. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Leer x₀, v₀ y a en una ecuación de la posición, sin olvidar el factor ½, y hallar el punto de giro.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "MRUA y movimiento vertical"
@@ -559,7 +559,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Elegir un modelo con condiciones iniciales. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Comprobar qué ecuación de la posición cumple unas condiciones iniciales dadas.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "MRUA y movimiento vertical"
@@ -660,7 +660,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Hasta detenerse, y no más allá. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Calcular la parada con v = 0 y cambiar de modelo una vez que el móvil se detiene.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "MRUA y movimiento vertical"
@@ -770,7 +770,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Desplazamiento tras dar la vuelta. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Hallar el punto de giro con v = 0 y distinguir desplazamiento de distancia con ida y vuelta.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "MRUA y movimiento vertical"
@@ -856,7 +856,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Reconstruir la velocidad inicial. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Despejar la velocidad inicial cuando es la incógnita dentro de la ecuación de la posición.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "MRUA y movimiento vertical"
@@ -966,7 +966,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Subir y regresar al nivel de salida. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Responder las dos preguntas clave de un lanzamiento vertical: altura máxima (v = 0) y regreso (y = 0).",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "MRUA y movimiento vertical"
@@ -1067,7 +1067,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Ascensor que deja de acelerar. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Encadenar un MRUA y un MRU, pasando la velocidad final de un tramo como inicial del siguiente.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "MRUA y movimiento vertical"
@@ -1165,7 +1165,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Reacción y frenada son dos modelos. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Separar el tiempo de reacción (MRU) de la frenada (MRUA), cada uno con su reloj.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "MRUA y movimiento vertical"
@@ -1263,7 +1263,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Dos lanzamientos y un único reloj. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Comparar dos lanzamientos verticales con relojes desfasados en una ecuación común.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "MRUA y movimiento vertical"
@@ -1349,7 +1349,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Velocidad máxima compatible con una parada. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Plantear una parada con la velocidad como incógnita y elegir la raíz con sentido físico.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "MRUA y movimiento vertical"

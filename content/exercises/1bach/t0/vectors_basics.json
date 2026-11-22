@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t0_v_001",
+      "number": 20,
       "title": "Escalar y vector en un trayecto",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -151,6 +152,7 @@
     },
     {
       "id": "t0_v_002",
+      "number": 21,
       "title": "Módulo, unitario y dirección",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -238,6 +240,7 @@
     },
     {
       "id": "t0_v_003",
+      "number": 22,
       "title": "Fuerza con dirección prescrita",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -327,6 +330,7 @@
     },
     {
       "id": "t0_v_004",
+      "number": 23,
       "title": "Tres representaciones del mismo vector",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -424,6 +428,7 @@
     },
     {
       "id": "t0_v_005",
+      "number": 24,
       "title": "Componente desconocida y dos direcciones posibles",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -501,6 +506,7 @@
     },
     {
       "id": "t0_v_006",
+      "number": 25,
       "title": "Relaciones entre pares de vectores",
       "course": "1bach",
       "block": "Vectores y elección de ejes",

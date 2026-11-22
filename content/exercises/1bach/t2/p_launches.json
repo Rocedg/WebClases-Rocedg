@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t2_p_001",
+      "number": 31,
       "version": 1,
       "title": "Un lanzamiento hacia la izquierda",
       "course": "1bach",
@@ -42,7 +43,7 @@
         },
         {
           "id": "v1",
-          "label": "Velocidad a 1 s",
+          "label": "Velocidad en \\(t=1\\,\\mathrm{s}\\)",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -84,7 +85,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Un lanzamiento hacia la izquierda. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Descomponer la velocidad inicial de un lanzamiento hacia la izquierda y leer el estado del proyectil.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro parabólico"
@@ -95,12 +96,13 @@
         "Confundir a_y negativa con v_y negativa"
       ],
       "parts_count": 2,
-      "statement_source": "Origen en el lanzamiento, \\(+x\\) derecha,\\(+y\\) arriba; sin aire, \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). Se lanza a 20 m/s formando 120° desde \\(+x\\). \n(a) Completa: Velocidad inicial.\n(b) Obtén v a 1 s e indica si sube y hacia qué lado.",
-      "solution_source": "\\(v_{0x}=20\\cos120^\\circ=-10\\,\\mathrm{m/s}\\); \\(v_{0y}=20\\sin120^\\circ=10\\sqrt3=17{,}3\\,\\mathrm{m/s}\\).\n\n\\(|\\vec v_0|=\\sqrt{100+300}=20\\,\\mathrm{m/s}\\). A \\(1\\,\\mathrm{s}\\): \\(v_x=-10\\,\\mathrm{m/s}\\) y \\(v_y=17{,}32-9{,}81=7{,}51\\,\\mathrm{m/s}\\).\n\nSigue subiendo (\\(v_y>0\\)) mientras avanza hacia la izquierda (\\(v_x<0\\)); que \\(a_y\\) sea negativa no implica que descienda ya.",
+      "statement_source": "Se lanza una pelota a \\(20\\,\\mathrm{m/s}\\) formando \\(120^\\circ\\) con \\(+x\\), medidos en sentido antihorario. El origen está en el punto de lanzamiento, con \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba. Desprecia el aire y usa \\(a_y=-g=-9{,}81\\,\\mathrm{m/s^2}\\).\n\n(a) Calcula las componentes de la velocidad inicial.\n(b) Calcula el vector velocidad en \\(t=1\\,\\mathrm{s}\\) y di si en ese instante la pelota sube o baja y hacia qué lado avanza.",
+      "solution_source": "(a) \\(v_{0x}=20\\cos120^\\circ=-10{,}0\\,\\mathrm{m/s}\\) y \\(v_{0y}=20\\sin120^\\circ=10\\sqrt3\\simeq17{,}3\\,\\mathrm{m/s}\\).\n(b) \\(v_x=-10\\,\\mathrm{m/s}\\) y \\(v_y=17{,}32-9{,}81=7{,}51\\,\\mathrm{m/s}\\): \\(\\vec v(1)=(-10;7{,}51)\\,\\mathrm{m/s}\\). Sigue subiendo (\\(v_y>0\\)) y avanza hacia la izquierda (\\(v_x<0\\)).\n\nQue \\(a_y\\) sea negativa no significa que ya esté bajando.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t2_p_002",
+      "number": 32,
       "version": 1,
       "title": "Ecuaciones con origen no situado en la salida",
       "course": "1bach",
@@ -116,7 +118,7 @@
       "response_fields": [
         {
           "id": "x",
-          "label": "X(t)",
+          "label": "Coordenada \\(x(t)\\)",
           "type": "function",
           "response_kind": "function",
           "required": true,
@@ -134,12 +136,12 @@
         },
         {
           "id": "y",
-          "label": "Y(t)",
+          "label": "Coordenada \\(y(t)\\)",
           "type": "function",
           "response_kind": "function",
           "required": true,
           "accepted_forms": [
-            "2+6*t-4.905*t**2"
+            "2+6*t-4.905*t^2"
           ],
           "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
           "grading": "pending_review",
@@ -147,12 +149,12 @@
           "variable_unit": "s",
           "unit": "m",
           "domain": "t ≥ 0",
-          "canonical_expression": "2+6*t-4.905*t**2",
+          "canonical_expression": "2+6*t-4.905*t^2",
           "part": "a"
         },
         {
           "id": "r",
-          "label": "Posición a 0,5 s",
+          "label": "Posición en \\(t=0{,}5\\,\\mathrm{s}\\)",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -177,7 +179,7 @@
         },
         {
           "id": "v",
-          "label": "Velocidad a 0,5 s",
+          "label": "Velocidad en \\(t=0{,}5\\,\\mathrm{s}\\)",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -219,7 +221,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Ecuaciones con origen no situado en la salida. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Escribir las ecuaciones de un proyectil cuyo origen no está en el punto de salida.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro parabólico"
@@ -230,12 +232,13 @@
         "Añadir g también a la componente horizontal"
       ],
       "parts_count": 2,
-      "statement_source": "\\(+x\\) derecha,\\(+y\\) arriba y suelo \\(y=0\\); sin aire, \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). En \\(t=0\\) una pelota sale de \\((3,2) m\\) con \\(v_0=(8,6) m/s\\). \n(a) Escribe r,v,a.\n(b) Completa: Posición a 0,5 s, Velocidad a 0,5 s.",
-      "solution_source": "\\(x=3+8t\\), \\(y=2+6t-4{,}905t^2\\); \\(\\vec v=(8;6-9{,}81t)\\,\\mathrm{m/s}\\) y \\(\\vec a=(0;-9{,}81)\\,\\mathrm{m/s^2}\\).\n\nA \\(0{,}5\\,\\mathrm{s}\\): \\(x=7\\,\\mathrm{m}\\), \\(y=3{,}77\\,\\mathrm{m}\\); \\(\\vec v=(8;1{,}095)\\,\\mathrm{m/s}\\).\n\n\\(y>0\\) y \\(v_y>0\\): está sobre el suelo y aún sube. La posición inicial no modifica las derivadas.",
+      "statement_source": "En \\(t=0\\) una pelota sale del punto \\((3;2)\\,\\mathrm{m}\\) con \\(\\vec v_0=(8;6)\\,\\mathrm{m/s}\\). Los ejes son \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba, y el suelo es \\(y=0\\): el origen no está en el punto de salida. Desprecia el aire y usa \\(a_y=-g=-9{,}81\\,\\mathrm{m/s^2}\\).\n\n(a) Escribe las coordenadas \\(x(t)\\) e \\(y(t)\\).\n(b) Calcula el vector posición y el vector velocidad en \\(t=0{,}5\\,\\mathrm{s}\\).",
+      "solution_source": "(a) \\(x=3+8t\\) e \\(y=2+6t-4{,}905t^2\\). Derivando, \\(\\vec v=(8;6-9{,}81t)\\,\\mathrm{m/s}\\) y \\(\\vec a=(0;-9{,}81)\\,\\mathrm{m/s^2}\\).\n(b) \\(\\vec r(0{,}5)=(7{,}00;3{,}77)\\,\\mathrm{m}\\) y \\(\\vec v(0{,}5)=(8;1{,}10)\\,\\mathrm{m/s}\\): está sobre el suelo y aún sube.\n\nLa posición inicial no cambia las derivadas: la velocidad y la aceleración serían las mismas con el origen en la salida.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t2_p_003",
+      "number": 33,
       "version": 1,
       "title": "Raíces de regreso al mismo nivel",
       "course": "1bach",
@@ -292,7 +295,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Raíces de regreso al mismo nivel. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Obtener el tiempo de vuelo resolviendo y(t) = 0, sin fórmulas memorizadas.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro parabólico"
@@ -303,12 +306,13 @@
         "Usar toda v_0 como componente vertical"
       ],
       "parts_count": 2,
-      "statement_source": "Origen en el suelo, \\(+x\\) derecha,\\(+y\\) arriba; sin aire, \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). \\(v_0=18 m/s\\), \\(θ=30°\\). \n(a) Deduce el tiempo de vuelo sin usar una fórmula memorizada.\n(b) Completa: Alcance.",
-      "solution_source": "\\(v_{0x}=9\\sqrt3\\,\\mathrm{m/s}\\), \\(v_{0y}=9\\,\\mathrm{m/s}\\). Horizontal \\(x=9\\sqrt3\\,t\\); vertical \\(y=9t-4{,}905t^2\\).\n\n\\(y=0\\) da \\(t(9-4{,}905t)=0\\): \\(t=0\\) o \\(t=1{,}835\\,\\mathrm{s}\\). El tiempo de vuelo es \\(1{,}835\\,\\mathrm{s}\\).\n\n\\(x_f=9\\sqrt3\\cdot1{,}835=28{,}6\\,\\mathrm{m}\\). En la llegada \\(v_y=-9\\,\\mathrm{m/s}\\), simétrico al valor inicial.",
+      "statement_source": "Se lanza un balón desde el suelo a \\(v_0=18\\,\\mathrm{m/s}\\) con un ángulo \\(\\theta=30^\\circ\\) sobre la horizontal y vuelve al suelo. El origen está en el suelo, en el punto de lanzamiento, con \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba. Desprecia el aire y usa \\(a_y=-g=-9{,}81\\,\\mathrm{m/s^2}\\).\n\n(a) Calcula el tiempo de vuelo resolviendo \\(y(t)=0\\), sin usar una fórmula memorizada.\n(b) Calcula el alcance.",
+      "solution_source": "(a) \\(v_{0x}=9\\sqrt3\\,\\mathrm{m/s}\\) y \\(v_{0y}=9\\,\\mathrm{m/s}\\), así que \\(y=9t-4{,}905t^2\\). \\(y=0\\) da \\(t(9-4{,}905t)=0\\): \\(t=0\\) (salida) o \\(t=1{,}83\\,\\mathrm{s}\\).\n(b) \\(x=9\\sqrt3\\cdot1{,}835=28{,}6\\,\\mathrm{m}\\).\n\nAl llegar, \\(v_y=-9\\,\\mathrm{m/s}\\): simétrico al valor inicial, porque sale y llega al mismo nivel.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t2_p_004",
+      "number": 34,
       "version": 1,
       "title": "Alcance y condición de igual altura",
       "course": "1bach",
@@ -348,12 +352,12 @@
         },
         {
           "id": "path",
-          "label": "Trayectoria",
+          "label": "Trayectoria \\(y(x)\\)",
           "type": "function",
           "response_kind": "function",
           "required": true,
           "accepted_forms": [
-            "0.75*x-4.905*x**2/400"
+            "0.75*x-4.905*x^2/400"
           ],
           "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
           "grading": "pending_review",
@@ -361,7 +365,7 @@
           "variable_unit": "m",
           "unit": "m",
           "domain": "0≤x≤61,2",
-          "canonical_expression": "0.75*x-4.905*x**2/400",
+          "canonical_expression": "0.75*x-4.905*x^2/400",
           "part": "b"
         }
       ],
@@ -383,7 +387,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Alcance y condición de igual altura. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Calcular tiempo de vuelo, alcance y trayectoria de un tiro oblicuo desde el suelo.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro parabólico"
@@ -394,12 +398,13 @@
         "Usar módulo 25 m/s como v_x"
       ],
       "parts_count": 2,
-      "statement_source": "Origen en el suelo, \\(+x\\) derecha,\\(+y\\) arriba; sin aire, \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). Un balón sale a 25 m/s con componentes \\((20,15) m/s\\). \n(a) Obtén vuelo y alcance.\n(b) Completa: Trayectoria.",
-      "solution_source": "Horizontal \\(x=20t\\); vertical \\(y=15t-4{,}905t^2\\). Raíz de regreso \\(t=15/4{,}905=3{,}058\\,\\mathrm{s}\\); \\(R=20\\cdot3{,}058=61{,}2\\,\\mathrm{m}\\).\n\n\\(t=x/20\\) da \\(y=0{,}75x-4{,}905x^2/400\\); en \\(x=61{,}2\\) se obtiene \\(y=0\\).\n\nSi llega a \\(y=-4\\), cambia la condición final, aumenta el vuelo y el alcance ya no es \\(61{,}2\\,\\mathrm{m}\\).",
+      "statement_source": "Un balón sale del suelo a \\(25\\,\\mathrm{m/s}\\) con componentes \\((20;15)\\,\\mathrm{m/s}\\) y vuelve al suelo. El origen está en el suelo, en el punto de lanzamiento, con \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba. Desprecia el aire y usa \\(a_y=-g=-9{,}81\\,\\mathrm{m/s^2}\\).\n\n(a) Calcula el tiempo de vuelo y el alcance.\n(b) Elimina \\(t\\) para obtener la trayectoria \\(y(x)\\).",
+      "solution_source": "(a) \\(x=20t\\) e \\(y=15t-4{,}905t^2\\). La raíz de regreso es \\(t=15/4{,}905=3{,}06\\,\\mathrm{s}\\) y \\(R=20\\cdot3{,}058=61{,}2\\,\\mathrm{m}\\).\n(b) \\(t=x/20\\) da \\(y=0{,}75x-\\dfrac{4{,}905x^2}{400}\\). En \\(x=61{,}2\\,\\mathrm{m}\\) se obtiene \\(y=0\\), como debe ser.\n\nSi el balón cayera a un nivel distinto del de salida, cambiaría la condición final y el alcance ya no sería \\(61{,}2\\,\\mathrm{m}\\).",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t2_p_005",
+      "number": 35,
       "version": 1,
       "title": "Altura máxima sin reposo total",
       "course": "1bach",
@@ -427,7 +432,7 @@
         },
         {
           "id": "r",
-          "label": "Posición máxima",
+          "label": "Posición en el punto más alto",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -452,7 +457,7 @@
         },
         {
           "id": "v",
-          "label": "Velocidad en el máximo",
+          "label": "Velocidad en el punto más alto",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -489,7 +494,7 @@
         },
         {
           "id": "a",
-          "label": "Aceleración en la cima",
+          "label": "Aceleración en el punto más alto",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -531,7 +536,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Altura máxima sin reposo total. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Ver que en la altura máxima solo se anula v_y y que allí la rapidez es mínima.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro parabólico"
@@ -542,12 +547,13 @@
         "Medir la altura usando el tiempo total"
       ],
       "parts_count": 2,
-      "statement_source": "Origen en el suelo, \\(+x\\) derecha,\\(+y\\) arriba; sin aire, \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). \\(v_0=(12,16) m/s\\). \n(a) Halla instante, posición y velocidad en el máximo.\n(b) Compara aceleración allí con la de la salida y calcula rapidez mínima.",
-      "solution_source": "\\(v_y=16-9{,}81t=0\\) implica \\(t=1{,}631\\,\\mathrm{s}\\). \\(x=12\\cdot1{,}631=19{,}6\\,\\mathrm{m}\\); \\(y=16^2/(2\\cdot9{,}81)=13{,}0\\,\\mathrm{m}\\).\n\n\\(\\vec v=(12;0)\\,\\mathrm{m/s}\\) y la rapidez es \\(12\\,\\mathrm{m/s}\\), mínima porque \\(|\\vec v|^2=12^2+v_y^2\\).\n\n\\(\\vec a=(0;-9{,}81)\\,\\mathrm{m/s^2}\\) tanto en la cima como al salir. La trayectoria no tiene un punto de reposo.",
+      "statement_source": "Un proyectil sale del suelo con \\(\\vec v_0=(12;16)\\,\\mathrm{m/s}\\). El origen está en el suelo, en el punto de lanzamiento, con \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba. Desprecia el aire y usa \\(a_y=-g=-9{,}81\\,\\mathrm{m/s^2}\\).\n\n(a) Calcula el instante, la posición y la velocidad en el punto más alto.\n(b) Calcula la aceleración en ese punto y la rapidez mínima durante el vuelo.",
+      "solution_source": "(a) \\(v_y=16-9{,}81t=0\\Rightarrow t=1{,}63\\,\\mathrm{s}\\). \\(x=12\\cdot1{,}631=19{,}6\\,\\mathrm{m}\\) e \\(y=\\dfrac{16^2}{2\\cdot9{,}81}=13{,}0\\,\\mathrm{m}\\). \\(\\vec v=(12;0)\\,\\mathrm{m/s}\\).\n(b) \\(\\vec a=(0;-9{,}81)\\,\\mathrm{m/s^2}\\), igual que en la salida. La rapidez mínima es \\(12{,}0\\,\\mathrm{m/s}\\), justo en la cima, porque \\(|\\vec v|^2=12^2+v_y^2\\).\n\nEn la cima el proyectil no está en reposo: solo se anula \\(v_y\\).",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t2_p_006",
+      "number": 36,
       "version": 1,
       "title": "Velocidad de impacto con ángulo y sentido",
       "course": "1bach",
@@ -563,7 +569,7 @@
       "response_fields": [
         {
           "id": "t",
-          "label": "Tiempo de vuelo",
+          "label": "Instante de impacto",
           "type": "numeric",
           "required": true,
           "expected_value": 1.7274768214530543,
@@ -575,7 +581,7 @@
         },
         {
           "id": "v",
-          "label": "Velocidad final",
+          "label": "Velocidad de impacto",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -608,11 +614,11 @@
           "tolerance": 0.1,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "c"
+          "part": "b"
         },
         {
           "id": "angle",
-          "label": "Ángulo bajo +x",
+          "label": "Ángulo por debajo de \\(+x\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 56.19177612272934,
@@ -641,7 +647,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Velocidad de impacto con ángulo y sentido. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Calcular la velocidad de impacto de un tiro desde altura y expresar su ángulo sin ambigüedad.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro parabólico"
@@ -651,13 +657,14 @@
         "Usar arctan sin sentido angular",
         "Confundir rapidez final con |v_y|"
       ],
-      "parts_count": 3,
-      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). Sale una pelota desde \\(y=6 m\\) con \\(v_0=(8,5) m/s\\). \n(a) Obtén tiempo de impacto físico.\n(b) Da componentes, módulo y ángulo de impacto desde \\(+x\\), indicando si se mide por debajo o antihorario.\n(c) Completa: Rapidez final.",
-      "solution_source": "Horizontal \\(x=8t\\), \\(v_x=8\\). Vertical \\(y=6+5t-4{,}905t^2\\): \\(t=\\dfrac{5\\pm\\sqrt{142{,}72}}{9{,}81}\\); solo \\(1{,}727\\,\\mathrm{s}\\) es positiva.\n\n\\(v_y=5-9{,}81t=-\\sqrt{142{,}72}=−11{,}95\\,\\mathrm{m/s}\\). \\(|\\vec v|=\\sqrt{64+142{,}72}=14{,}38\\,\\mathrm{m/s}\\).\n\nÁngulo \\(=56{,}2^\\circ\\) bajo \\(+x\\), equivalente a \\(303{,}8^\\circ\\) en sentido antihorario. La rapidez inicial, \\(\\sqrt{89}=9{,}43\\,\\mathrm{m/s}\\), es menor, coherente con terminar más abajo.",
+      "parts_count": 2,
+      "statement_source": "Una pelota sale desde \\(y=6\\,\\mathrm{m}\\) con \\(\\vec v_0=(8;5)\\,\\mathrm{m/s}\\). El origen está al pie del punto de salida, con \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba. Desprecia el aire y usa \\(a_x=0\\), \\(a_y=-g=-9{,}81\\,\\mathrm{m/s^2}\\).\n\n(a) Calcula el instante en que llega al suelo.\n(b) Calcula el vector velocidad de impacto, la rapidez final y el ángulo que forma la velocidad por debajo de \\(+x\\).",
+      "solution_source": "(a) \\(y=6+5t-4{,}905t^2=0\\Rightarrow t=\\dfrac{5\\pm\\sqrt{142{,}72}}{9{,}81}\\); solo la raíz positiva tiene sentido: \\(t=1{,}73\\,\\mathrm{s}\\).\n(b) \\(v_y=5-9{,}81t=-11{,}9\\,\\mathrm{m/s}\\): \\(\\vec v=(8;-11{,}9)\\,\\mathrm{m/s}\\), \\(|\\vec v|=\\sqrt{64+142{,}72}=14{,}4\\,\\mathrm{m/s}\\) y ángulo \\(56{,}2^\\circ\\) por debajo de \\(+x\\) (equivale a \\(303{,}8^\\circ\\) medido en sentido antihorario).\n\nLa rapidez inicial, \\(\\sqrt{89}=9{,}43\\,\\mathrm{m/s}\\), es menor: coherente con terminar más abajo.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t2_p_007",
+      "number": 37,
       "version": 1,
       "title": "Vuelo desde un balcón y cambio de origen",
       "course": "1bach",
@@ -673,7 +680,7 @@
       "response_fields": [
         {
           "id": "t",
-          "label": "Tiempo de impacto",
+          "label": "Tiempo de vuelo",
           "type": "numeric",
           "required": true,
           "expected_value": 3.043525860770647,
@@ -681,7 +688,7 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "b"
+          "part": "a"
         },
         {
           "id": "range",
@@ -705,11 +712,11 @@
           "tolerance": 0.1,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "a"
+          "part": "b"
         },
         {
           "id": "rise",
-          "label": "Elevación desde salida",
+          "label": "Altura sobre el balcón",
           "type": "numeric",
           "required": true,
           "expected_value": 5.09683995922528,
@@ -717,16 +724,16 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "c"
+          "part": "b"
         },
         {
           "id": "yp",
-          "label": "Altura respecto al balcón",
+          "label": "Altura \\(y'(t)\\) desde el balcón",
           "type": "function",
           "response_kind": "function",
           "required": true,
           "accepted_forms": [
-            "10*t-4.905*t**2"
+            "10*t-4.905*t^2"
           ],
           "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
           "grading": "pending_review",
@@ -734,7 +741,7 @@
           "variable_unit": "s",
           "unit": "m",
           "domain": "0≤t≤3,04",
-          "canonical_expression": "10*t-4.905*t**2",
+          "canonical_expression": "10*t-4.905*t^2",
           "part": "c"
         }
       ],
@@ -756,7 +763,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Vuelo desde un balcón y cambio de origen. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Resolver un tiro desde un balcón y comprobar que cambiar el origen no cambia el vuelo.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro parabólico"
@@ -767,8 +774,8 @@
         "Usar el vuelo simétrico de dos segundos"
       ],
       "parts_count": 3,
-      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). Una pelota sale desde 15 m con \\(v_0=(10,10) m/s\\). \n(a) Halla vuelo, alcance y altura máxima sobre el suelo.\n(b) Repite la condición de impacto usando origen vertical en el balcón.\n(c) Compara elevación y altura máxima.",
-      "solution_source": "\\(x=10t\\), \\(y=15+10t-4{,}905t^2\\). Impacto: \\(4{,}905t^2-10t-15=0\\), \\(t=3{,}04\\,\\mathrm{s}\\) o \\(−1{,}00\\,\\mathrm{s}\\); la raíz física es \\(3{,}04\\,\\mathrm{s}\\) y el alcance, \\(30{,}4\\,\\mathrm{m}\\).\n\nMáximo en \\(v_y=10-9{,}81t=0\\), \\(t=1{,}02\\,\\mathrm{s}\\): \\(y=20{,}1\\,\\mathrm{m}\\); elevación \\(=5{,}10\\,\\mathrm{m}\\).\n\nCon \\(y'=y-15=10t-4{,}905t^2\\), el suelo es \\(y'=-15\\), no cero. Se recupera \\(t=3{,}04\\,\\mathrm{s}\\): cambiar el origen no cambia el vuelo.",
+      "statement_source": "Desde un balcón a \\(15\\,\\mathrm{m}\\) de altura sale una pelota con \\(\\vec v_0=(10;10)\\,\\mathrm{m/s}\\). El origen está al pie del punto de salida, con \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba. Desprecia el aire y usa \\(a_x=0\\), \\(a_y=-g=-9{,}81\\,\\mathrm{m/s^2}\\).\n\n(a) Calcula el tiempo de vuelo hasta el suelo y el alcance.\n(b) Calcula la altura máxima sobre el suelo y cuánto sube por encima del balcón.\n(c) Toma ahora el origen vertical en el balcón y escribe la altura \\(y'(t)\\) medida desde él.",
+      "solution_source": "(a) \\(y=15+10t-4{,}905t^2=0\\Rightarrow t=3{,}04\\,\\mathrm{s}\\) (la otra raíz, \\(-1{,}00\\,\\mathrm{s}\\), es anterior al lanzamiento). Alcance: \\(10\\cdot3{,}04=30{,}4\\,\\mathrm{m}\\).\n(b) \\(v_y=10-9{,}81t=0\\Rightarrow t=1{,}02\\,\\mathrm{s}\\): \\(y=20{,}1\\,\\mathrm{m}\\) sobre el suelo, \\(5{,}10\\,\\mathrm{m}\\) por encima del balcón.\n(c) \\(y'=y-15=10t-4{,}905t^2\\). Con este origen el suelo es \\(y'=-15\\), no \\(0\\), y se vuelve a obtener \\(t=3{,}04\\,\\mathrm{s}\\): cambiar el origen no cambia el vuelo.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     }
   ]

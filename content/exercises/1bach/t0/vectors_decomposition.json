@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t0_v_044",
+      "number": 57,
       "title": "Descomponer vectores con ángulos no medidos desde +x",
       "course": "1bach",
       "block": "Vectores y elección de ejes",
@@ -102,6 +103,7 @@
     },
     {
       "id": "t0_v_045",
+      "number": 58,
       "title": "La misma fuerza en ejes horizontales y en ejes de la rampa",
       "course": "1bach",
       "block": "Vectores y elección de ejes",

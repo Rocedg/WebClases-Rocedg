@@ -70,3 +70,44 @@ def response_placeholder(field):
     if field['type'] == 'function' or field.get('response_kind') == 'function':
         return 'Ej.: 2*t^2 + 1'
     return {'numeric': 'Ej.: 1,25', 'unit_expression': 'Ej.: kg*m/s^2'}.get(field['type'], 'Escribe tu respuesta')
+
+
+def _format_number(value):
+    """Spanish decimal comma, at most four significant figures, no trailing zeros."""
+    if isinstance(value, bool) or not isinstance(value, (int, float)):
+        return str(value)
+    text = f"{value:.4g}"
+    if "e" in text:
+        mantissa, exponent = text.split("e")
+        text = f"{mantissa}·10^{int(exponent)}"
+    return text.replace(".", ",")
+
+
+def expected_answer_text(field):
+    """Plain-text expected answer of a response field, for the teacher's solution view."""
+    field_type = field.get("type")
+    unit = f" {field['unit']}" if field.get("unit") else ""
+    if field_type == "numeric" and "expected_value" in field:
+        text = _format_number(field["expected_value"]) + unit
+        if field.get("tolerance") is not None:
+            text += f" (tolerancia ±{_format_number(field['tolerance'])})"
+        return text
+    if field_type == "vector" and field.get("expected_components") is not None:
+        components = "; ".join(_format_number(c) for c in field["expected_components"])
+        return f"({components}){unit}"
+    if field_type == "function" and field.get("canonical_expression"):
+        variable = field.get("variable")
+        text = field["canonical_expression"] + unit
+        if variable:
+            text = f"f({variable}) = {text}"
+        if field.get("domain"):
+            text += f", con {field['domain']}"
+        return text
+    if field_type == "single_choice" and field.get("correct_option_id"):
+        for option in field.get("options") or []:
+            if option.get("id") == field["correct_option_id"]:
+                return option.get("label") or option["id"]
+        return str(field["correct_option_id"])
+    if field.get("accepted_forms"):
+        return " · ".join(str(form) for form in field["accepted_forms"])
+    return "Sin respuesta esperada registrada"

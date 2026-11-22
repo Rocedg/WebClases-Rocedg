@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t2_p_008",
+      "number": 38,
       "version": 1,
       "title": "Dos ángulos para una diana elevada",
       "course": "1bach",
@@ -25,7 +26,7 @@
           "tolerance": 0.1,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "b"
+          "part": "a"
         },
         {
           "id": "high",
@@ -37,7 +38,7 @@
           "tolerance": 0.1,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "b"
+          "part": "a"
         },
         {
           "id": "tl",
@@ -82,7 +83,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Dos ángulos para una diana elevada. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Encontrar los dos ángulos que llevan a una diana y comparar sus tiempos.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro parabólico"
@@ -92,13 +93,14 @@
         "Suponer ángulos complementarios con diana elevada",
         "Eliminar una raíz positiva sin criterio físico"
       ],
-      "parts_count": 3,
-      "statement_source": "Origen en el suelo, \\(+x\\) derecha,\\(+y\\) arriba; sin aire, \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). Se lanza a 20 m/s hacia una diana en \\((20,5) m\\). \n(b) Calcula ambos ángulos y sus tiempos de llegada.",
-      "solution_source": "\\(x=20\\cos\\theta\\,t\\), \\(y=20\\sin\\theta\\,t-4{,}905t^2\\). Eliminando \\(t\\), con \\(u=\\tan\\theta\\): \\(y=xu-\\dfrac{9{,}81x^2}{800}(1+u^2)\\).\n\nEn \\((20;5)\\): \\(5=20u-4{,}905(1+u^2)\\), luego \\(4{,}905u^2-20u+9{,}905=0\\); \\(u=0{,}577\\) o \\(u=3{,}501\\). \\(\\theta\\approx29{,}98^\\circ\\) y \\(74{,}06^\\circ\\).\n\n\\(t=20/(20\\cos\\theta)=\\sqrt{1+u^2}\\): \\(1{,}154\\) y \\(3{,}641\\,\\mathrm{s}\\). Sustituir da \\(y=5\\,\\mathrm{m}\\) en ambos; las componentes verticales y los máximos son diferentes, aunque el punto final coincide.",
+      "parts_count": 2,
+      "statement_source": "Se lanza un proyectil desde el suelo a \\(20\\,\\mathrm{m/s}\\) hacia una diana situada en \\((20;5)\\,\\mathrm{m}\\). El origen está en el suelo, en el punto de lanzamiento, con \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba. Desprecia el aire y usa \\(a_y=-g=-9{,}81\\,\\mathrm{m/s^2}\\).\n\nEliminando \\(t\\) y usando \\(u=\\tan\\theta\\), la trayectoria es \\(y=xu-\\dfrac{g x^2}{2v_0^2}(1+u^2)\\).\n\n(a) Calcula los dos ángulos de lanzamiento con los que llega a la diana.\n(b) Calcula el tiempo que tarda en llegar con cada ángulo.",
+      "solution_source": "(a) En \\((20;5)\\): \\(5=20u-4{,}905(1+u^2)\\), así que \\(4{,}905u^2-20u+9{,}905=0\\). \\(u=0{,}577\\) o \\(3{,}501\\): \\(\\theta\\simeq30{,}0^\\circ\\) y \\(74{,}1^\\circ\\).\n(b) \\(t=\\dfrac{20}{20\\cos\\theta}=\\sqrt{1+u^2}\\): \\(1{,}15\\,\\mathrm{s}\\) y \\(3{,}64\\,\\mathrm{s}\\).\n\nLos dos tiros acaban en el mismo punto, pero con alturas máximas y tiempos muy distintos.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t2_p_009",
+      "number": 39,
       "version": 1,
       "title": "Ángulos complementarios: mismo alcance",
       "course": "1bach",
@@ -114,7 +116,7 @@
       "response_fields": [
         {
           "id": "t30",
-          "label": "Tiempo a 30°",
+          "label": "Tiempo de vuelo a \\(30^\\circ\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 1.019367991845056,
@@ -126,11 +128,35 @@
         },
         {
           "id": "t60",
-          "label": "Tiempo a 60°",
+          "label": "Tiempo de vuelo a \\(60^\\circ\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 1.7655971534850938,
           "unit": "s",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "h30",
+          "label": "Altura máxima a \\(30^\\circ\\)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 1.27420998980632,
+          "unit": "m",
+          "tolerance": 0.01,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
+          "id": "h60",
+          "label": "Altura máxima a \\(60^\\circ\\)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 3.8226299694189603,
+          "unit": "m",
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
@@ -147,30 +173,6 @@
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
           "part": "b"
-        },
-        {
-          "id": "h30",
-          "label": "Máximo a 30°",
-          "type": "numeric",
-          "required": true,
-          "expected_value": 1.27420998980632,
-          "unit": "m",
-          "tolerance": 0.01,
-          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
-          "significant_figures": 3,
-          "part": "a"
-        },
-        {
-          "id": "h60",
-          "label": "Máximo a 60°",
-          "type": "numeric",
-          "required": true,
-          "expected_value": 3.8226299694189603,
-          "unit": "m",
-          "tolerance": 0.01,
-          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
-          "significant_figures": 3,
-          "part": "a"
         }
       ],
       "assets": [
@@ -191,7 +193,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Ángulos complementarios: mismo alcance. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Comparar dos tiros con ángulos complementarios: mismo alcance, distinto vuelo.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro parabólico"
@@ -201,13 +203,14 @@
         "Concluir igual tiempo por igual alcance",
         "Aplicar complementariedad a alturas diferentes"
       ],
-      "parts_count": 3,
-      "statement_source": "Origen en el suelo, \\(+x\\) derecha,\\(+y\\) arriba; sin aire, \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). Dos lanzamientos a 10 m/s, uno a 30° y otro a 60°, regresan al nivel de salida. \n(a) Compara tiempos, alcances y máximos.\n(b) Completa: Alcance común.",
-      "solution_source": "30°: \\(v_x=5\\sqrt3\\), \\(v_{y0}=5\\); \\(T=10/9{,}81=1{,}019\\,\\mathrm{s}\\), \\(R=5\\sqrt3\\,T=8{,}83\\,\\mathrm{m}\\), \\(H=25/19{,}62=1{,}274\\,\\mathrm{m}\\).\n\n60°: \\(v_x=5\\), \\(v_{y0}=5\\sqrt3\\); \\(T=10\\sqrt3/9{,}81=1{,}766\\,\\mathrm{s}\\), \\(R=5\\,T=8{,}83\\,\\mathrm{m}\\), \\(H=75/19{,}62=3{,}82\\,\\mathrm{m}\\).\n\n\\(\\sin60^\\circ=\\sin120^\\circ\\) explica \\(R=v_0^2\\sin2\\theta/g\\). Hace falta igual rapidez, gravedad, ausencia de aire y mismo nivel final; no llegan simultáneamente.",
+      "parts_count": 2,
+      "statement_source": "Se hacen dos lanzamientos desde el suelo a \\(10\\,\\mathrm{m/s}\\), uno a \\(30^\\circ\\) y otro a \\(60^\\circ\\) sobre la horizontal, y los dos vuelven al nivel de salida. El origen está en el suelo, en el punto de lanzamiento, con \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba. Desprecia el aire y usa \\(a_y=-g=-9{,}81\\,\\mathrm{m/s^2}\\).\n\n(a) Calcula el tiempo de vuelo y la altura máxima de cada lanzamiento.\n(b) Calcula el alcance, que es el mismo para los dos.",
+      "solution_source": "(a) A \\(30^\\circ\\): \\(v_{0y}=5\\,\\mathrm{m/s}\\), \\(T=10/9{,}81=1{,}02\\,\\mathrm{s}\\) y \\(H=25/19{,}62=1{,}27\\,\\mathrm{m}\\). A \\(60^\\circ\\): \\(v_{0y}=5\\sqrt3\\,\\mathrm{m/s}\\), \\(T=1{,}77\\,\\mathrm{s}\\) y \\(H=75/19{,}62=3{,}82\\,\\mathrm{m}\\).\n(b) \\(R=5\\sqrt3\\cdot1{,}019=5\\cdot1{,}766=8{,}83\\,\\mathrm{m}\\).\n\nComo \\(\\sin60^\\circ=\\sin120^\\circ\\), los ángulos complementarios dan el mismo alcance si la rapidez y el nivel de llegada son iguales; pero no llegan a la vez.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t2_p_010",
+      "number": 40,
       "version": 1,
       "title": "Velocidad mínima para una condición de ángulo fijo",
       "course": "1bach",
@@ -223,7 +226,7 @@
       "response_fields": [
         {
           "id": "v0",
-          "label": "Rapidez inicial",
+          "label": "Rapidez inicial \\(v_0\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 12.52836781069266,
@@ -235,7 +238,7 @@
         },
         {
           "id": "t",
-          "label": "Tiempo hasta diana",
+          "label": "Tiempo hasta el punto",
           "type": "numeric",
           "required": true,
           "expected_value": 1.3545709229571927,
@@ -247,7 +250,7 @@
         },
         {
           "id": "v",
-          "label": "Velocidad en la diana",
+          "label": "Velocidad en el punto",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -289,7 +292,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Velocidad mínima para una condición de ángulo fijo. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Calcular la rapidez inicial necesaria para pasar por un punto con ángulo fijo.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro parabólico"
@@ -300,12 +303,13 @@
         "Llamar mínima global a una solución con ángulo fijo"
       ],
       "parts_count": 2,
-      "statement_source": "Origen en el suelo, \\(+x\\) derecha,\\(+y\\) arriba; sin aire, \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). Un lanzador tiene \\(θ=45°\\) fijo y debe pasar exactamente por \\((12,3) m\\). \n(a) Deduce \\(v_0\\).\n(b) Completa: Tiempo hasta diana, Velocidad en la diana.",
-      "solution_source": "A 45°, \\(v_x=v_{y0}=v_0/\\sqrt2\\). Eliminando \\(t\\): \\(y=x-gx^2/v_0^2\\).\n\n\\(3=12-9{,}81\\cdot144/v_0^2\\) implica \\(v_0^2=156{,}96\\) y \\(v_0=12{,}53\\,\\mathrm{m/s}\\). \\(t=12/8{,}859=1{,}355\\,\\mathrm{s}\\).\n\n\\(\\vec v=(8{,}859;8{,}859-9{,}81t)=(8{,}859;−4{,}429)\\,\\mathrm{m/s}\\); pasa descendiendo. Para ángulo fijo este valor es único, no una optimización entre ángulos.",
+      "statement_source": "Un lanzador situado en el origen, en el suelo, dispara siempre a \\(45^\\circ\\). El proyectil debe pasar exactamente por \\((12;3)\\,\\mathrm{m}\\). El origen está en el suelo, en el punto de lanzamiento, con \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba. Desprecia el aire y usa \\(a_y=-g=-9{,}81\\,\\mathrm{m/s^2}\\).\n\n(a) Calcula la rapidez inicial \\(v_0\\) necesaria.\n(b) Calcula el tiempo que tarda en llegar a ese punto y el vector velocidad allí.",
+      "solution_source": "(a) A \\(45^\\circ\\), \\(v_{0x}=v_{0y}=v_0/\\sqrt2\\). Eliminando \\(t\\): \\(y=x-\\dfrac{g x^2}{v_0^2}\\). \\(3=12-\\dfrac{9{,}81\\cdot144}{v_0^2}\\Rightarrow v_0^2=156{,}96\\) y \\(v_0=12{,}5\\,\\mathrm{m/s}\\).\n(b) \\(v_{0x}=8{,}86\\,\\mathrm{m/s}\\), así que \\(t=12/8{,}859=1{,}35\\,\\mathrm{s}\\). \\(\\vec v=(8{,}86;8{,}86-9{,}81t)=(8{,}86;-4{,}43)\\,\\mathrm{m/s}\\): pasa por el punto bajando.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t2_p_011",
+      "number": 41,
       "version": 1,
       "title": "Qué cambia al duplicar la componente horizontal",
       "course": "1bach",
@@ -321,7 +325,7 @@
       "response_fields": [
         {
           "id": "t",
-          "label": "Vuelo común",
+          "label": "Tiempo de vuelo (común)",
           "type": "numeric",
           "required": true,
           "expected_value": 1.6309887869520896,
@@ -341,11 +345,11 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "b"
+          "part": "a"
         },
         {
           "id": "ra",
-          "label": "Alcance A",
+          "label": "Alcance de A",
           "type": "numeric",
           "required": true,
           "expected_value": 9.785932721712538,
@@ -353,11 +357,11 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "a"
+          "part": "b"
         },
         {
           "id": "rb",
-          "label": "Alcance B",
+          "label": "Alcance de B",
           "type": "numeric",
           "required": true,
           "expected_value": 19.571865443425075,
@@ -365,7 +369,7 @@
           "tolerance": 0.1,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "a"
+          "part": "b"
         }
       ],
       "assets": [
@@ -386,7 +390,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Qué cambia al duplicar la componente horizontal. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Ver que duplicar v_x duplica el alcance sin cambiar el tiempo de vuelo ni la altura.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro parabólico"
@@ -397,12 +401,13 @@
         "Suponer que se conserva el ángulo inicial"
       ],
       "parts_count": 2,
-      "statement_source": "Origen en el suelo, \\(+x\\) derecha,\\(+y\\) arriba; sin aire, \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). A tiene \\(v_0=(6,8),\\) \\(B=(12,8) m/s\\). \n(a) Completa: Vuelo común, Alcance A, Alcance B.\n(b) Calcula vuelo, altura y alcances.",
-      "solution_source": "Para ambas \\(y=8t-4{,}905t^2\\) y \\(v_y=8-9{,}81t\\): \\(T=16/9{,}81=1{,}631\\,\\mathrm{s}\\) y \\(H=8^2/19{,}62=3{,}26\\,\\mathrm{m}\\).\n\n\\(x_A=6t\\), \\(x_B=12t\\): \\(R_A=9{,}79\\,\\mathrm{m}\\) y \\(R_B=19{,}6\\,\\mathrm{m}\\).\n\nII es correcta; se modifica \\(v_x\\) y también el ángulo y el módulo iniciales, no la componente vertical.",
+      "statement_source": "Se lanzan dos pelotas desde el suelo: A con \\(\\vec v_0=(6;8)\\,\\mathrm{m/s}\\) y B con \\(\\vec v_0=(12;8)\\,\\mathrm{m/s}\\). El origen está en el suelo, en el punto de lanzamiento, con \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba. Desprecia el aire y usa \\(a_y=-g=-9{,}81\\,\\mathrm{m/s^2}\\).\n\n(a) Calcula el tiempo de vuelo y la altura máxima, que son iguales para las dos.\n(b) Calcula el alcance de A y el de B.",
+      "solution_source": "(a) Las dos tienen \\(y=8t-4{,}905t^2\\): \\(T=16/9{,}81=1{,}63\\,\\mathrm{s}\\) y \\(H=8^2/19{,}62=3{,}26\\,\\mathrm{m}\\).\n(b) \\(x_A=6t\\) y \\(x_B=12t\\): \\(R_A=9{,}79\\,\\mathrm{m}\\) y \\(R_B=19{,}6\\,\\mathrm{m}\\).\n\nDuplicar \\(v_x\\) duplica el alcance; también cambian el ángulo y el módulo de la velocidad inicial, pero no la componente vertical, que es la que fija el tiempo y la altura.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t2_p_012",
+      "number": 42,
       "version": 1,
       "title": "Proyecto de cuatro gráficas desde una trayectoria",
       "course": "1bach",
@@ -418,7 +423,7 @@
       "response_fields": [
         {
           "id": "t",
-          "label": "Tiempo de impacto",
+          "label": "Instante de impacto",
           "type": "numeric",
           "required": true,
           "expected_value": 2.0322628592356184,
@@ -430,7 +435,7 @@
         },
         {
           "id": "top",
-          "label": "Instante de cima",
+          "label": "Instante de la cima",
           "type": "numeric",
           "required": true,
           "expected_value": 0.8154943934760448,
@@ -467,7 +472,7 @@
         },
         {
           "id": "vf",
-          "label": "Velocidad final",
+          "label": "Velocidad al llegar al suelo",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -521,7 +526,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Proyecto de cuatro gráficas desde una trayectoria. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Calcular los estados clave de un tiro desde altura: cima, impacto y alcance.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro parabólico"
@@ -532,12 +537,13 @@
         "Confundir la parábola espacial con x-t"
       ],
       "parts_count": 3,
-      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). Una pelota sale desde 4 m con \\(v_0=(6,8) m/s\\). \n(a) Completa: Tiempo de impacto.\n(b) Marca salida, cima y suelo con coordenadas y velocidades.\n(c) Completa: Alcance.",
-      "solution_source": "\\(x=6t\\), \\(y=4+8t-4{,}905t^2\\), \\(v_x=6\\), \\(v_y=8-9{,}81t\\). \\(y=0\\) da \\(t=2{,}032\\,\\mathrm{s}\\) o \\(−0{,}401\\,\\mathrm{s}\\).\n\nCima en \\(t=0{,}815\\,\\mathrm{s}\\): \\(\\vec r=(4{,}89;7{,}26)\\,\\mathrm{m}\\), \\(\\vec v=(6;0)\\,\\mathrm{m/s}\\); impacto: \\(\\vec r=(12{,}2;0)\\,\\mathrm{m}\\), \\(\\vec v=(6;−11{,}94)\\,\\mathrm{m/s}\\).\n\nÁrea bajo \\(v_x\\): \\(6\\cdot2{,}032=12{,}2\\,\\mathrm{m}\\). Área bajo \\(v_y\\): \\((8−11{,}94)\\cdot2{,}032/2=-4\\,\\mathrm{m}\\); sumada a \\(y_0=4\\) da el suelo. \\(x\\) es lineal, \\(y\\) parabólica, \\(v_x\\) constante y \\(v_y\\) lineal.",
+      "statement_source": "Una pelota sale desde \\(4\\,\\mathrm{m}\\) de altura con \\(\\vec v_0=(6;8)\\,\\mathrm{m/s}\\). El origen está al pie del punto de salida, con \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba. Desprecia el aire y usa \\(a_x=0\\), \\(a_y=-g=-9{,}81\\,\\mathrm{m/s^2}\\).\n\n(a) Calcula el instante en que llega al suelo.\n(b) Calcula el instante y la posición de la cima, y el vector velocidad al llegar al suelo.\n(c) Calcula el alcance.",
+      "solution_source": "(a) \\(y=4+8t-4{,}905t^2=0\\Rightarrow t=2{,}03\\,\\mathrm{s}\\) (la otra raíz, \\(-0{,}401\\,\\mathrm{s}\\), no pertenece al vuelo).\n(b) Cima: \\(v_y=8-9{,}81t=0\\Rightarrow t=0{,}815\\,\\mathrm{s}\\), con \\(\\vec r=(4{,}89;7{,}26)\\,\\mathrm{m}\\). Impacto: \\(\\vec v=(6;-11{,}9)\\,\\mathrm{m/s}\\).\n(c) \\(R=6\\cdot2{,}032=12{,}2\\,\\mathrm{m}\\).\n\nComprobación con áreas: bajo \\(v_y(t)\\), \\((8-11{,}94)\\cdot2{,}032/2=-4\\,\\mathrm{m}\\), que sumado a \\(y_0=4\\,\\mathrm{m}\\) da el suelo.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t2_p_013",
+      "number": 43,
       "version": 1,
       "title": "Tiro sobre un plano inclinado",
       "course": "1bach",
@@ -656,7 +662,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Tiro sobre un plano inclinado. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Calcular el impacto de un proyectil sobre un plano inclinado y el ángulo con la rampa.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro parabólico"
@@ -667,12 +673,13 @@
         "Elegir t=0 como nuevo contacto"
       ],
       "parts_count": 3,
-      "statement_source": "Origen en el inicio de una rampa \\(y=0,5x\\) para x≥0; \\(+x\\) derecha,\\(+y\\) arriba. Se lanza con \\(v_0=(10,15) m/s\\), sin aire y \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). \n(a) Calcula primer contacto con la rampa tras salir.\n(b) Halla distancia sobre la rampa y velocidad de impacto.\n(c) Obtén el ángulo entre velocidad y rampa.",
-      "solution_source": "\\(x=10t\\), \\(y=15t-4{,}905t^2\\). Rampa: \\(15t-4{,}905t^2=5t\\), es decir, \\(t(10-4{,}905t)=0\\); se excluye \\(t=0\\) y el contacto ocurre a \\(t=10/4{,}905=2{,}039\\,\\mathrm{s}\\).\n\n\\(P=(20{,}39;10{,}19)\\,\\mathrm{m}\\); distancia desde el origen sobre la rampa \\(\\sqrt{20{,}39^2+10{,}19^2}=22{,}79\\,\\mathrm{m}\\). \\(\\vec v=(10;15-9{,}81\\cdot2{,}039)=(10;-5)\\,\\mathrm{m/s}\\).\n\nLa rampa forma \\(+26{,}565^\\circ\\) y \\(\\vec v\\) forma \\(-26{,}565^\\circ\\) con \\(+x\\): entre ambas hay \\(53{,}13^\\circ\\). Antes del contacto, \\(y-0{,}5x=t(10-4{,}905t)>0\\), por lo que no hubo contacto previo.",
+      "statement_source": "Un proyectil sale del inicio de una rampa recta con \\(\\vec v_0=(10;15)\\,\\mathrm{m/s}\\). El origen está en ese punto, con \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba, y la superficie de la rampa es \\(y=0{,}5x\\) para \\(x\\ge0\\). Desprecia el aire y usa \\(a_y=-g=-9{,}81\\,\\mathrm{m/s^2}\\).\n\n(a) Calcula el instante y el punto del primer contacto con la rampa después de salir.\n(b) Calcula la distancia medida sobre la rampa hasta ese punto y el vector velocidad de impacto.\n(c) Calcula el ángulo entre la velocidad de impacto y la rampa.",
+      "solution_source": "(a) \\(x=10t\\), \\(y=15t-4{,}905t^2\\). En la rampa: \\(15t-4{,}905t^2=5t\\Rightarrow t(10-4{,}905t)=0\\). Se descarta \\(t=0\\) (la salida): \\(t=2{,}04\\,\\mathrm{s}\\), en \\((20{,}4;10{,}2)\\,\\mathrm{m}\\).\n(b) Distancia sobre la rampa: \\(\\sqrt{20{,}39^2+10{,}19^2}=22{,}8\\,\\mathrm{m}\\). \\(\\vec v=(10;15-9{,}81\\cdot2{,}039)=(10;-5{,}00)\\,\\mathrm{m/s}\\).\n(c) La rampa forma \\(+26{,}6^\\circ\\) con \\(+x\\) y la velocidad, \\(-26{,}6^\\circ\\): entre ambas hay \\(53{,}1^\\circ\\).",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t2_p_014",
+      "number": 44,
       "version": 1,
       "title": "Auditar signos, raíces y unidades",
       "course": "1bach",
@@ -688,7 +695,7 @@
       "response_fields": [
         {
           "id": "time",
-          "label": "Tiempo de impacto",
+          "label": "Instante de impacto",
           "type": "numeric",
           "required": true,
           "expected_value": 2.454108070968546,
@@ -696,11 +703,11 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "b"
+          "part": "a"
         },
         {
           "id": "v",
-          "label": "Velocidad final",
+          "label": "Velocidad de impacto",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -737,7 +744,7 @@
         },
         {
           "id": "y2",
-          "label": "Altura a 2 s",
+          "label": "Altura en \\(t=2\\,\\mathrm{s}\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 5.379999999999999,
@@ -766,7 +773,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Auditar signos, raíces y unidades. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Auditar una solución errónea de un tiro oblicuo y calcular los valores correctos.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Tiro parabólico"
@@ -777,8 +784,8 @@
         "Confundir velocidad vertical con rapidez total"
       ],
       "parts_count": 3,
-      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). Desde \\(y=5 m\\) se lanza con \\(v_0=(6,10) m/s\\). Una solución ficticia propone «\\(x=6t\\); \\(y=5+10t+4{,}905t²\\); en la cima \\(a=0\\); \\(T=2 s\\); rapidez \\(final=−10 m/s\\)». \n(b) Obtén tiempo y vector de impacto correctos;\n(c) Completa: Altura a 2 s.",
-      "solution_source": "\\(a_y=-9{,}81\\) obliga a \\(y=5+10t-4{,}905t^2\\). En la cima solo se anula \\(v_y\\): \\(\\vec a=(0;-9{,}81)\\,\\mathrm{m/s^2}\\).\n\n\\(y=0\\) da \\(t=\\dfrac{10\\pm\\sqrt{198{,}1}}{9{,}81}\\); raíz positiva \\(2{,}454\\,\\mathrm{s}\\). \\(\\vec v=(6;10-9{,}81t)=(6;−14{,}07)\\,\\mathrm{m/s}\\).\n\nRapidez \\(=\\sqrt{36+198{,}1}=15{,}30\\,\\mathrm{m/s}\\), nunca negativa. A \\(2\\,\\mathrm{s}\\), \\(y=5{,}38\\,\\mathrm{m}\\): aún está por encima de la altura inicial (vuelve a ella en \\(2{,}04\\,\\mathrm{s}\\)), no en el suelo.",
+      "statement_source": "Desde \\(y=5\\,\\mathrm{m}\\) se lanza una pelota con \\(\\vec v_0=(6;10)\\,\\mathrm{m/s}\\). El origen está al pie del punto de salida, con \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba. Desprecia el aire y usa \\(a_x=0\\), \\(a_y=-g=-9{,}81\\,\\mathrm{m/s^2}\\).\n\nUna solución inventada dice: «\\(x=6t\\); \\(y=5+10t+4{,}905t^2\\); en la cima \\(\\vec a=0\\); el tiempo de vuelo es \\(T=2\\,\\mathrm{s}\\); la rapidez final es \\(-10\\,\\mathrm{m/s}\\)». Busca los errores antes de calcular.\n\n(a) Calcula el instante correcto en que la pelota llega al suelo.\n(b) Calcula el vector velocidad de impacto y la rapidez final.\n(c) Calcula la altura en \\(t=2\\,\\mathrm{s}\\) y explica por qué \\(T=2\\,\\mathrm{s}\\) no puede ser el tiempo de vuelo.",
+      "solution_source": "Errores: con \\(a_y=-9{,}81\\), \\(y=5+10t-4{,}905t^2\\) (el signo del término cuadrático es negativo); en la cima solo se anula \\(v_y\\), y \\(\\vec a=(0;-9{,}81)\\,\\mathrm{m/s^2}\\); una rapidez nunca es negativa.\n(a) \\(y=0\\Rightarrow t=\\dfrac{10\\pm\\sqrt{198{,}1}}{9{,}81}\\); la raíz positiva es \\(t=2{,}45\\,\\mathrm{s}\\).\n(b) \\(\\vec v=(6;10-9{,}81t)=(6;-14{,}1)\\,\\mathrm{m/s}\\) y rapidez \\(=\\sqrt{36+198{,}1}=15{,}3\\,\\mathrm{m/s}\\).\n(c) \\(y(2)=5+20-19{,}62=5{,}38\\,\\mathrm{m}\\): en \\(t=2\\,\\mathrm{s}\\) la pelota aún está en el aire, por encima incluso de la altura de salida (vuelve a ella en \\(2{,}04\\,\\mathrm{s}\\)).",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     }
   ]

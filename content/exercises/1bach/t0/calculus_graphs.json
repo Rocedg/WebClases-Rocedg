@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t0_c_001",
+      "number": 108,
       "title": "De posición a velocidad y aceleración",
       "course": "1bach",
       "block": "Funciones, gráficas, derivadas e integrales",
@@ -89,6 +90,7 @@
     },
     {
       "id": "t0_c_002",
+      "number": 109,
       "title": "Potencias negativas y tasa local",
       "course": "1bach",
       "block": "Funciones, gráficas, derivadas e integrales",
@@ -151,6 +153,7 @@
     },
     {
       "id": "t0_c_003",
+      "number": 110,
       "title": "Raíces como potencias",
       "course": "1bach",
       "block": "Funciones, gráficas, derivadas e integrales",
@@ -218,6 +221,7 @@
     },
     {
       "id": "t0_c_004",
+      "number": 111,
       "title": "Parámetros y unidades en una función física",
       "course": "1bach",
       "block": "Funciones, gráficas, derivadas e integrales",
@@ -277,6 +281,7 @@
     },
     {
       "id": "t0_c_005",
+      "number": 112,
       "title": "Cambio medio e instantáneo",
       "course": "1bach",
       "block": "Funciones, gráficas, derivadas e integrales",
@@ -349,6 +354,7 @@
     },
     {
       "id": "t0_c_006",
+      "number": 113,
       "title": "Puntos estacionarios y clasificación",
       "course": "1bach",
       "block": "Funciones, gráficas, derivadas e integrales",
@@ -447,6 +453,7 @@
     },
     {
       "id": "t0_c_008",
+      "number": 114,
       "title": "De aceleración a velocidad con condición inicial",
       "course": "1bach",
       "block": "Funciones, gráficas, derivadas e integrales",
@@ -529,6 +536,7 @@
     },
     {
       "id": "t0_c_009",
+      "number": 115,
       "title": "Cambio de velocidad acumulado",
       "course": "1bach",
       "block": "Funciones, gráficas, derivadas e integrales",
@@ -601,6 +609,7 @@
     },
     {
       "id": "t0_c_010",
+      "number": 116,
       "title": "Área bajo v(t)",
       "course": "1bach",
       "block": "Funciones, gráficas, derivadas e integrales",
@@ -662,6 +671,7 @@
     },
     {
       "id": "t0_c_011",
+      "number": 117,
       "title": "Desplazamiento cero, distancia no nula",
       "course": "1bach",
       "block": "Funciones, gráficas, derivadas e integrales",
@@ -723,6 +733,7 @@
     },
     {
       "id": "t0_c_012",
+      "number": 118,
       "title": "Signo antes de calcular",
       "course": "1bach",
       "block": "Funciones, gráficas, derivadas e integrales",
@@ -794,6 +805,7 @@
     },
     {
       "id": "t0_c_013",
+      "number": 119,
       "title": "Movimiento a velocidad constante por tramos",
       "course": "1bach",
       "block": "Funciones, gráficas, derivadas e integrales",
@@ -886,6 +898,7 @@
     },
     {
       "id": "t0_c_014",
+      "number": 120,
       "title": "Recta experimental por dos puntos",
       "course": "1bach",
       "block": "Funciones, gráficas, derivadas e integrales",
@@ -958,6 +971,7 @@
     },
     {
       "id": "t0_c_015",
+      "number": 121,
       "title": "Recta, cortes e interpretación",
       "course": "1bach",
       "block": "Funciones, gráficas, derivadas e integrales",
@@ -1040,6 +1054,7 @@
     },
     {
       "id": "t0_c_016",
+      "number": 122,
       "title": "Función por tramos y continuidad",
       "course": "1bach",
       "block": "Funciones, gráficas, derivadas e integrales",
@@ -1104,6 +1119,7 @@
     },
     {
       "id": "t0_c_017",
+      "number": 123,
       "title": "Recuperar una función desde su derivada",
       "course": "1bach",
       "block": "Funciones, gráficas, derivadas e integrales",
@@ -1203,6 +1219,7 @@
     },
     {
       "id": "t0_c_019",
+      "number": 124,
       "title": "Leer crecimiento y pendientes de una gráfica",
       "course": "1bach",
       "block": "Funciones, gráficas, derivadas e integrales",
@@ -1258,6 +1275,7 @@
     },
     {
       "id": "t0_c_020",
+      "number": 125,
       "title": "Área con signo y movimiento en una gráfica v–t",
       "course": "1bach",
       "block": "Funciones, gráficas, derivadas e integrales",

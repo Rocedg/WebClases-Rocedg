@@ -93,7 +93,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Aceleración negativa antes y después del giro. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Interpretar una aceleración negativa antes y después del giro: frena y luego acelera hacia atrás.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Funciones y gráficas"
@@ -200,7 +200,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Ajuste lineal con un dato de control. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Ajustar un MRU con dos datos y decidir si un tercero es compatible con la incertidumbre.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Funciones y gráficas"
@@ -298,7 +298,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Intersección frente a cruce del origen. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Obtener dos ecuaciones de la posición desde una gráfica y distinguir encuentro de paso por el origen.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Funciones y gráficas"
@@ -399,7 +399,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Una parábola determinada por condiciones. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Determinar una ecuación de la posición cuadrática resolviendo un sistema con dos condiciones.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Funciones y gráficas"
@@ -495,7 +495,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Dos gráficas que no pueden pertenecer al mismo móvil. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Detectar que dos gráficas no son compatibles comparando el desplazamiento que deduce cada una.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Funciones y gráficas"
@@ -607,7 +607,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Reconstrucción desde velocidad y posición tardía. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Reconstruir la ecuación de la posición a partir de v(t) y de una posición en un instante posterior.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Funciones y gráficas"
@@ -693,7 +693,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Cuatro etapas y tres gráficas. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Encadenar cuatro etapas desde a(t) hasta v(t) y x(t), con un giro dentro de un tramo.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Funciones y gráficas"
@@ -791,7 +791,7 @@
         "adaptation_note": "Enunciado, datos, solución y diagramas propios."
       },
       "status": "draft",
-      "learning_objective": "Traducir velocidad a una historia precisa. Relacionar las condiciones del enunciado con el modelo y comprobar el resultado.",
+      "learning_objective": "Traducir una gráfica v(t) a una descripción precisa del movimiento, con giro incluido.",
       "prerequisites": [
         "T0: unidades, signos y álgebra",
         "Funciones y gráficas"

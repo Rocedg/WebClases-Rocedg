@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t4_c_001",
+      "number": 29,
       "version": 1,
       "title": "Coche 1000 kg, curva plana",
       "course": "1bach",
@@ -78,6 +79,7 @@
     },
     {
       "id": "t4_c_002",
+      "number": 30,
       "version": 1,
       "title": "Velocidad máxima en curva plana",
       "course": "1bach",
@@ -142,6 +144,7 @@
     },
     {
       "id": "t4_c_003",
+      "number": 31,
       "version": 1,
       "title": "Lluvia reduce μ_s de 0,6 a 0,3",
       "course": "1bach",
@@ -206,6 +209,7 @@
     },
     {
       "id": "t4_c_004",
+      "number": 32,
       "version": 1,
       "title": "Curva peraltada sin rozamiento",
       "course": "1bach",
@@ -270,6 +274,7 @@
     },
     {
       "id": "t4_c_005",
+      "number": 33,
       "version": 1,
       "title": "Hallar peralte para",
       "course": "1bach",
@@ -334,6 +339,7 @@
     },
     {
       "id": "t4_c_006",
+      "number": 34,
       "version": 1,
       "title": "Elegir sentido del rozamiento si velocidad es menor que la de diseño",
       "course": "1bach",
@@ -408,6 +414,7 @@
     },
     {
       "id": "t4_c_007",
+      "number": 35,
       "version": 1,
       "title": "Elegir sentido si velocidad es mayor que diseño",
       "course": "1bach",
@@ -482,6 +489,7 @@
     },
     {
       "id": "t4_c_008",
+      "number": 36,
       "version": 1,
       "title": "Ciclista inclinado en curva plana",
       "course": "1bach",
@@ -546,6 +554,7 @@
     },
     {
       "id": "t4_c_009",
+      "number": 37,
       "version": 1,
       "title": "Curva con rapidez variable",
       "course": "1bach",
@@ -610,6 +619,7 @@
     },
     {
       "id": "t4_c_010",
+      "number": 38,
       "version": 1,
       "title": "Auditar “normal + peso + centrípeta = ma”",
       "course": "1bach",

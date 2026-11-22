@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t3_p_001",
+      "number": 25,
       "version": 1,
       "title": "Bloque 4 kg en plano 30° sin rozamiento",
       "course": "1bach",
@@ -100,6 +101,7 @@
     },
     {
       "id": "t3_p_002",
+      "number": 26,
       "version": 1,
       "title": "Fuerza paralela de 30 N sube el bloque anterior",
       "course": "1bach",
@@ -198,6 +200,7 @@
     },
     {
       "id": "t3_p_003",
+      "number": 27,
       "version": 1,
       "title": "Fuerza horizontal 40 N sobre bloque 5 kg en plano 30°",
       "course": "1bach",
@@ -286,6 +289,7 @@
     },
     {
       "id": "t3_p_004",
+      "number": 28,
       "version": 1,
       "title": "Masa colgante 3 kg en equilibrio sostenida por dos cuerdas simétricas a 45°",
       "course": "1bach",
@@ -350,6 +354,7 @@
     },
     {
       "id": "t3_p_005",
+      "number": 29,
       "version": 1,
       "title": "Nudo con cable horizontal y cable a 30°, carga 100 N",
       "course": "1bach",
@@ -426,6 +431,7 @@
     },
     {
       "id": "t3_p_006",
+      "number": 30,
       "version": 1,
       "title": "Dos bloques 2 y 3 kg unidos, tirados con 20 N, mesa ideal",
       "course": "1bach",
@@ -502,6 +508,7 @@
     },
     {
       "id": "t3_p_007",
+      "number": 31,
       "version": 1,
       "title": "Misma cadena tirada desde el bloque de 2 kg",
       "course": "1bach",
@@ -578,6 +585,7 @@
     },
     {
       "id": "t3_p_008",
+      "number": 32,
       "version": 1,
       "title": "Máquina de Atwood ideal",
       "course": "1bach",
@@ -654,6 +662,7 @@
     },
     {
       "id": "t3_p_009",
+      "number": 33,
       "version": 1,
       "title": "Atwood con masas iguales y velocidad inicial no nula",
       "course": "1bach",
@@ -718,6 +727,7 @@
     },
     {
       "id": "t3_p_010",
+      "number": 34,
       "version": 1,
       "title": "Bloque 4 kg en mesa unido a masa colgante 1 kg",
       "course": "1bach",
@@ -794,6 +804,7 @@
     },
     {
       "id": "t3_p_011",
+      "number": 35,
       "version": 1,
       "title": "Bloque 3 kg en plano 30° unido a colgante 2 kg",
       "course": "1bach",
@@ -870,6 +881,7 @@
     },
     {
       "id": "t3_p_012",
+      "number": 36,
       "version": 1,
       "title": "Tres bloques 1,2,3 kg tirados por 24 N",
       "course": "1bach",
@@ -958,6 +970,7 @@
     },
     {
       "id": "t3_p_013",
+      "number": 37,
       "version": 1,
       "title": "Polea móvil ideal que sostiene una carga de 200 N",
       "course": "1bach",
@@ -1034,6 +1047,7 @@
     },
     {
       "id": "t3_p_014",
+      "number": 38,
       "version": 1,
       "title": "Auditar solución que usa una única ecuación para dos cuerpos y obtiene tensi",
       "course": "1bach",

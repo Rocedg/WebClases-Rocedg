@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t5_k_001",
+      "number": 15,
       "version": 1,
       "title": "Rapidez 3 m/s",
       "course": "1bach",
@@ -66,6 +67,7 @@
     },
     {
       "id": "t5_k_002",
+      "number": 16,
       "version": 1,
       "title": "Duplicar rapidez con masa fija",
       "course": "1bach",
@@ -130,6 +132,7 @@
     },
     {
       "id": "t5_k_003",
+      "number": 17,
       "version": 1,
       "title": "Trabajo neto 50 J desde reposo",
       "course": "1bach",
@@ -194,6 +197,7 @@
     },
     {
       "id": "t5_k_004",
+      "number": 18,
       "version": 1,
       "title": "Problema estructurado",
       "course": "1bach",
@@ -258,6 +262,7 @@
     },
     {
       "id": "t5_k_005",
+      "number": 19,
       "version": 1,
       "title": "Frenada con fuerza constante 6000 N del coche anterior",
       "course": "1bach",
@@ -322,6 +327,7 @@
     },
     {
       "id": "t5_k_006",
+      "number": 20,
       "version": 1,
       "title": "Fuerza neta variable dada por F-x",
       "course": "1bach",
@@ -396,6 +402,7 @@
     },
     {
       "id": "t5_k_007",
+      "number": 21,
       "version": 1,
       "title": "Máquina hace 12 kJ en 8 s",
       "course": "1bach",
@@ -460,6 +467,7 @@
     },
     {
       "id": "t5_k_008",
+      "number": 22,
       "version": 1,
       "title": "Elevador 500 kg sube a 2 m/s constante",
       "course": "1bach",
@@ -524,6 +532,7 @@
     },
     {
       "id": "t5_k_009",
+      "number": 23,
       "version": 1,
       "title": "Vehículo  a",
       "course": "1bach",
@@ -588,6 +597,7 @@
     },
     {
       "id": "t5_k_010",
+      "number": 24,
       "version": 1,
       "title": "Fuerza a 60° respecto de v",
       "course": "1bach",
@@ -652,6 +662,7 @@
     },
     {
       "id": "t5_k_011",
+      "number": 25,
       "version": 1,
       "title": "Gráfica P(t) escalonada",
       "course": "1bach",
@@ -726,6 +737,7 @@
     },
     {
       "id": "t5_k_012",
+      "number": 26,
       "version": 1,
       "title": "Elegir gráfica K(v) y P(v) para fuerza constante",
       "course": "1bach",

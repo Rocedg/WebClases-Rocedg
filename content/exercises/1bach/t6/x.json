@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t6_x_001",
+      "number": 23,
       "version": 1,
       "title": "Patinadores 50 y 75 kg",
       "course": "1bach",
@@ -66,6 +67,7 @@
     },
     {
       "id": "t6_x_002",
+      "number": 24,
       "version": 1,
       "title": "Cañón 500 kg, proyectil 5 kg a 100 m/s",
       "course": "1bach",
@@ -130,6 +132,7 @@
     },
     {
       "id": "t6_x_003",
+      "number": 25,
       "version": 1,
       "title": "Carro 6 kg se divide en 2 y 4 kg",
       "course": "1bach",
@@ -194,6 +197,7 @@
     },
     {
       "id": "t6_x_004",
+      "number": 26,
       "version": 1,
       "title": "Objeto en movimiento ,  se separa en 4 y 6 kg",
       "course": "1bach",
@@ -258,6 +262,7 @@
     },
     {
       "id": "t6_x_005",
+      "number": 27,
       "version": 1,
       "title": "Dos fragmentos salen perpendiculares desde reposo imposible sin tercero",
       "course": "1bach",
@@ -332,6 +337,7 @@
     },
     {
       "id": "t6_x_006",
+      "number": 28,
       "version": 1,
       "title": "Explosión 2D",
       "course": "1bach",
@@ -417,6 +423,7 @@
     },
     {
       "id": "t6_x_007",
+      "number": 29,
       "version": 1,
       "title": "Energía aumenta en separación desde reposo",
       "course": "1bach",
@@ -491,6 +498,7 @@
     },
     {
       "id": "t6_x_008",
+      "number": 30,
       "version": 1,
       "title": "Auditar signos de retroceso cuando ambos resultados se dan positivos",
       "course": "1bach",

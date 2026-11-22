@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t0_c_025",
+      "number": 98,
       "title": "Primeras derivadas: la regla de la potencia",
       "course": "1bach",
       "block": "Funciones, gráficas, derivadas e integrales",
@@ -110,6 +111,7 @@
     },
     {
       "id": "t0_c_026",
+      "number": 99,
       "title": "Primeras primitivas e integral definida",
       "course": "1bach",
       "block": "Funciones, gráficas, derivadas e integrales",
@@ -205,6 +207,7 @@
     },
     {
       "id": "t0_c_027",
+      "number": 100,
       "title": "Pendiente positiva, negativa o nula",
       "course": "1bach",
       "block": "Funciones, gráficas, derivadas e integrales",
@@ -427,6 +430,7 @@
     },
     {
       "id": "t0_c_028",
+      "number": 101,
       "title": "Elige la gráfica",
       "course": "1bach",
       "block": "Funciones, gráficas, derivadas e integrales",
@@ -575,6 +579,7 @@
     },
     {
       "id": "t0_c_029",
+      "number": 102,
       "title": "La pendiente en una curva",
       "course": "1bach",
       "block": "Funciones, gráficas, derivadas e integrales",
@@ -741,6 +746,7 @@
     },
     {
       "id": "t0_c_030",
+      "number": 103,
       "title": "Velocidad media entre dos instantes",
       "course": "1bach",
       "block": "Funciones, gráficas, derivadas e integrales",
@@ -819,6 +825,7 @@
     },
     {
       "id": "t0_c_031",
+      "number": 104,
       "title": "Velocidad instantánea en un punto",
       "course": "1bach",
       "block": "Funciones, gráficas, derivadas e integrales",
@@ -889,6 +896,7 @@
     },
     {
       "id": "t0_c_032",
+      "number": 105,
       "title": "Acercarse a la velocidad instantánea",
       "course": "1bach",
       "block": "Funciones, gráficas, derivadas e integrales",
@@ -1001,6 +1009,7 @@
     },
     {
       "id": "t0_c_033",
+      "number": 106,
       "title": "Futbolín: máximos y mínimos",
       "course": "1bach",
       "block": "Funciones, gráficas, derivadas e integrales",
@@ -1152,6 +1161,7 @@
     },
     {
       "id": "t0_c_034",
+      "number": 107,
       "title": "¿Derivada nula es siempre un extremo?",
       "course": "1bach",
       "block": "Funciones, gráficas, derivadas e integrales",

@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t0_m_001",
+      "number": 72,
       "title": "Error absoluto, relativo y signo",
       "course": "1bach",
       "block": "Medida, error, incertidumbre y cifras significativas",
@@ -97,6 +98,7 @@
     },
     {
       "id": "t0_m_002",
+      "number": 73,
       "title": "Mismo porcentaje, distinto error absoluto",
       "course": "1bach",
       "block": "Medida, error, incertidumbre y cifras significativas",
@@ -222,6 +224,7 @@
     },
     {
       "id": "t0_m_003",
+      "number": 74,
       "title": "Multiplicación y cifras significativas",
       "course": "1bach",
       "block": "Medida, error, incertidumbre y cifras significativas",
@@ -292,6 +295,7 @@
     },
     {
       "id": "t0_m_004",
+      "number": 75,
       "title": "Suma y posición decimal",
       "course": "1bach",
       "block": "Medida, error, incertidumbre y cifras significativas",
@@ -352,6 +356,7 @@
     },
     {
       "id": "t0_m_005",
+      "number": 76,
       "title": "Serie de medidas y semidispersión",
       "course": "1bach",
       "block": "Medida, error, incertidumbre y cifras significativas",
@@ -423,6 +428,7 @@
     },
     {
       "id": "t0_m_006",
+      "number": 77,
       "title": "Resolución de dos instrumentos",
       "course": "1bach",
       "block": "Medida, error, incertidumbre y cifras significativas",
@@ -527,6 +533,7 @@
     },
     {
       "id": "t0_m_007",
+      "number": 78,
       "title": "Precisión y exactitud no son sinónimos",
       "course": "1bach",
       "block": "Medida, error, incertidumbre y cifras significativas",
@@ -704,6 +711,7 @@
     },
     {
       "id": "t0_m_008",
+      "number": 79,
       "title": "Corrección de error de cero",
       "course": "1bach",
       "block": "Medida, error, incertidumbre y cifras significativas",
@@ -785,6 +793,7 @@
     },
     {
       "id": "t0_m_009",
+      "number": 80,
       "title": "Diferencia de longitudes con incertidumbre",
       "course": "1bach",
       "block": "Medida, error, incertidumbre y cifras significativas",
@@ -864,6 +873,7 @@
     },
     {
       "id": "t0_m_010",
+      "number": 81,
       "title": "Área e incertidumbre relativa",
       "course": "1bach",
       "block": "Medida, error, incertidumbre y cifras significativas",
@@ -934,6 +944,7 @@
     },
     {
       "id": "t0_m_011",
+      "number": 82,
       "title": "Densidad con incertidumbre",
       "course": "1bach",
       "block": "Medida, error, incertidumbre y cifras significativas",
@@ -1004,6 +1015,7 @@
     },
     {
       "id": "t0_m_012",
+      "number": 83,
       "title": "Elegir el instrumento adecuado",
       "course": "1bach",
       "block": "Medida, error, incertidumbre y cifras significativas",
@@ -1102,6 +1114,7 @@
     },
     {
       "id": "t0_m_013",
+      "number": 84,
       "title": "Dato atípico en una serie",
       "course": "1bach",
       "block": "Medida, error, incertidumbre y cifras significativas",

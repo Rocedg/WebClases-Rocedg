@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t4_p_001",
+      "number": 17,
       "version": 1,
       "title": "Bloque 5 kg, plano 20°",
       "course": "1bach",
@@ -100,6 +101,7 @@
     },
     {
       "id": "t4_p_002",
+      "number": 18,
       "version": 1,
       "title": "Aumentar ángulo hasta inicio de deslizamiento",
       "course": "1bach",
@@ -164,6 +166,7 @@
     },
     {
       "id": "t4_p_003",
+      "number": 19,
       "version": 1,
       "title": "Plano 30°, , bloque desliza abajo",
       "course": "1bach",
@@ -228,6 +231,7 @@
     },
     {
       "id": "t4_p_004",
+      "number": 20,
       "version": 1,
       "title": "Bloque sube inicialmente por plano anterior",
       "course": "1bach",
@@ -326,6 +330,7 @@
     },
     {
       "id": "t4_p_005",
+      "number": 21,
       "version": 1,
       "title": "Tras pararse, decidir si vuelve a bajar con",
       "course": "1bach",
@@ -400,6 +405,7 @@
     },
     {
       "id": "t4_p_006",
+      "number": 22,
       "version": 1,
       "title": "Fuerza paralela mantiene velocidad constante cuesta arriba",
       "course": "1bach",
@@ -464,6 +470,7 @@
     },
     {
       "id": "t4_p_007",
+      "number": 23,
       "version": 1,
       "title": "Fuerza horizontal 60 N sobre , plano 30°",
       "course": "1bach",
@@ -574,6 +581,7 @@
     },
     {
       "id": "t4_p_008",
+      "number": 24,
       "version": 1,
       "title": "Bloque en plano unido a masa colgante",
       "course": "1bach",
@@ -650,6 +658,7 @@
     },
     {
       "id": "t4_p_009",
+      "number": 25,
       "version": 1,
       "title": "Hallar masa colgante para equilibrio en límite de subir, con",
       "course": "1bach",
@@ -714,6 +723,7 @@
     },
     {
       "id": "t4_p_010",
+      "number": 26,
       "version": 1,
       "title": "Rango de masa colgante que permite reposo",
       "course": "1bach",
@@ -788,6 +798,7 @@
     },
     {
       "id": "t4_p_011",
+      "number": 27,
       "version": 1,
       "title": "Comparar un bloque que baja por  con  y con",
       "course": "1bach",
@@ -876,6 +887,7 @@
     },
     {
       "id": "t4_p_012",
+      "number": 28,
       "version": 1,
       "title": "Diagnóstico de signo",
       "course": "1bach",

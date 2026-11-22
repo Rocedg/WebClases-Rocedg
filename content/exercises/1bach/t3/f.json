@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t3_f_001",
+      "number": 1,
       "version": 1,
       "title": "Libro en reposo sobre mesa",
       "course": "1bach",
@@ -66,6 +67,7 @@
     },
     {
       "id": "t3_f_002",
+      "number": 2,
       "version": 1,
       "title": "Lámpara colgada de un cable vertical",
       "course": "1bach",
@@ -130,6 +132,7 @@
     },
     {
       "id": "t3_f_003",
+      "number": 3,
       "version": 1,
       "title": "Caja empujada horizontalmente sin rozamiento con",
       "course": "1bach",
@@ -194,6 +197,7 @@
     },
     {
       "id": "t3_f_004",
+      "number": 4,
       "version": 1,
       "title": "Ascensor que sube a velocidad constante con persona de 60 kg",
       "course": "1bach",
@@ -258,6 +262,7 @@
     },
     {
       "id": "t3_f_005",
+      "number": 5,
       "version": 1,
       "title": "Ascensor acelera hacia arriba a 1,5 m/s², persona 60 kg",
       "course": "1bach",
@@ -343,6 +348,7 @@
     },
     {
       "id": "t3_f_006",
+      "number": 6,
       "version": 1,
       "title": "Misma persona con aceleración descendente 2 m/s²",
       "course": "1bach",
@@ -407,6 +413,7 @@
     },
     {
       "id": "t3_f_007",
+      "number": 7,
       "version": 1,
       "title": "Bloque sobre plano de 30°, sin rozamiento",
       "course": "1bach",
@@ -495,6 +502,7 @@
     },
     {
       "id": "t3_f_008",
+      "number": 8,
       "version": 1,
       "title": "Dos patinadores se empujan con 80 N",
       "course": "1bach",
@@ -559,6 +567,7 @@
     },
     {
       "id": "t3_f_009",
+      "number": 9,
       "version": 1,
       "title": "Caballo tira de carro",
       "course": "1bach",
@@ -633,6 +642,7 @@
     },
     {
       "id": "t3_f_010",
+      "number": 10,
       "version": 1,
       "title": "Pelota ascendiendo tras abandonar la mano, sin aire",
       "course": "1bach",
@@ -706,6 +716,7 @@
     },
     {
       "id": "t3_f_011",
+      "number": 11,
       "version": 1,
       "title": "Satélite ideal en órbita",
       "course": "1bach",
@@ -780,6 +791,7 @@
     },
     {
       "id": "t3_f_012",
+      "number": 12,
       "version": 1,
       "title": "Auditar un DCL con “fuerza del movimiento” y resultante añadida",
       "course": "1bach",

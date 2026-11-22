@@ -2,6 +2,7 @@
   "exercises": [
     {
       "id": "t3_i_001",
+      "number": 49,
       "version": 1,
       "title": "Elegir sistema útil",
       "course": "1bach",
@@ -76,6 +77,7 @@
     },
     {
       "id": "t3_i_002",
+      "number": 50,
       "version": 1,
       "title": "Del vídeo  de un carro 2 kg, inferir fuerza neta",
       "course": "1bach",
@@ -152,6 +154,7 @@
     },
     {
       "id": "t3_i_003",
+      "number": 51,
       "version": 1,
       "title": "Datos de F y a con una medida atípica",
       "course": "1bach",
@@ -216,6 +219,7 @@
     },
     {
       "id": "t3_i_004",
+      "number": 52,
       "version": 1,
       "title": "Caja en camión que acelera",
       "course": "1bach",
@@ -290,6 +294,7 @@
     },
     {
       "id": "t3_i_005",
+      "number": 53,
       "version": 1,
       "title": "Globo en coche acelerado como diagnóstico conceptual",
       "course": "1bach",
@@ -364,6 +369,7 @@
     },
     {
       "id": "t3_i_006",
+      "number": 54,
       "version": 1,
       "title": "Persona de 60 kg sobre una báscula tira de una cuerda que pasa por una polea",
       "course": "1bach",
@@ -428,6 +434,7 @@
     },
     {
       "id": "t3_i_007",
+      "number": 55,
       "version": 1,
       "title": "Comparar bajar y subir el mismo plano con igual rapidez instantánea",
       "course": "1bach",
@@ -502,6 +509,7 @@
     },
     {
       "id": "t3_i_008",
+      "number": 56,
       "version": 1,
       "title": "Para , a(t) vale 1 m/s² entre 0–2 s, -0,5 m/s² entre 2–4 s y 0 después",
       "course": "1bach",
@@ -590,6 +598,7 @@
     },
     {
       "id": "t3_i_009",
+      "number": 57,
       "version": 1,
       "title": "Diseñar fuerza para que un bloque recorra 8 m desde reposo en 4 s",
       "course": "1bach",
@@ -666,6 +675,7 @@
     },
     {
       "id": "t3_i_010",
+      "number": 58,
       "version": 1,
       "title": "Diagrama de interacción de libro-mesa-Tierra y selección de pares de tercera",
       "course": "1bach",
@@ -740,6 +750,7 @@
     },
     {
       "id": "t3_i_011",
+      "number": 59,
       "version": 1,
       "title": "Caso mixto plano-polea",
       "course": "1bach",
@@ -814,6 +825,7 @@
     },
     {
       "id": "t3_i_012",
+      "number": 60,
       "version": 1,
       "title": "Miniinvestigación cerrada",
       "course": "1bach",
