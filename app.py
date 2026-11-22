@@ -1410,6 +1410,7 @@ def miscellaneous():
 
 
 @app.route('/exams')
+@login_required
 def exams():
     exams_data = load_exams()
     y1_exams = [e for e in exams_data['exams'] if e.get('year') == 'y1']

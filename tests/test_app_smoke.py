@@ -50,8 +50,22 @@ def test_homework_requires_login():
         assert "/login" in response.headers["Location"]
 
 
-def test_exams_currently_public():
+def test_exams_requires_login():
     client = flask_app.test_client()
+    response = client.get("/exams")
+
+    assert response.status_code == 302
+    assert "/login" in response.headers["Location"]
+
+
+def test_exams_returns_200_after_login():
+    client = flask_app.test_client()
+    client.post(
+        "/login",
+        data={"username": "Guest", "password": "studentpass"},
+        follow_redirects=False,
+    )
+
     response = client.get("/exams")
 
     assert response.status_code == 200
@@ -74,7 +88,7 @@ def test_json_files_load_successfully():
 def test_main_template_rendering_does_not_crash():
     client = flask_app.test_client()
 
-    public_paths = ["/", "/login", "/exams"]
+    public_paths = ["/", "/login"]
     for path in public_paths:
         response = client.get(path)
         assert response.status_code < 500
@@ -85,7 +99,7 @@ def test_main_template_rendering_does_not_crash():
         follow_redirects=False,
     )
 
-    protected_paths = ["/topics", "/lesson/T0-introduccion", "/homework", "/miscellaneous"]
+    protected_paths = ["/topics", "/lesson/T0-introduccion", "/homework", "/miscellaneous", "/exams"]
     for path in protected_paths:
         response = client.get(path)
         assert response.status_code < 500
