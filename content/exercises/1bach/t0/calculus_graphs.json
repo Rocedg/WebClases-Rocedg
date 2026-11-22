@@ -70,8 +70,10 @@
         "version_5"
       ],
       "origin": {
-        "kind": "exercise_bank_t0_v4_spec",
-        "source": "exercise-bank-t0-v4-spec.md"
+        "kind": "original_teacher_bank",
+        "batch": "exercise_bank_t0_v4_spec",
+        "reference": null,
+        "source": "content/exercises/1bach/t0/exercise-bank-t0-v4-spec.md"
       },
       "status": "active",
       "version": 5,
@@ -130,8 +132,10 @@
         "version_5"
       ],
       "origin": {
-        "kind": "exercise_bank_t0_v4_spec",
-        "source": "exercise-bank-t0-v4-spec.md"
+        "kind": "original_teacher_bank",
+        "batch": "exercise_bank_t0_v4_spec",
+        "reference": null,
+        "source": "content/exercises/1bach/t0/exercise-bank-t0-v4-spec.md"
       },
       "status": "active",
       "version": 5,
@@ -195,8 +199,10 @@
         "version_5"
       ],
       "origin": {
-        "kind": "exercise_bank_t0_v4_spec",
-        "source": "exercise-bank-t0-v4-spec.md"
+        "kind": "original_teacher_bank",
+        "batch": "exercise_bank_t0_v4_spec",
+        "reference": null,
+        "source": "content/exercises/1bach/t0/exercise-bank-t0-v4-spec.md"
       },
       "status": "active",
       "version": 5,
@@ -252,8 +258,10 @@
         "version_4"
       ],
       "origin": {
-        "kind": "exercise_bank_t0_v4_spec",
-        "source": "exercise-bank-t0-v4-spec.md"
+        "kind": "original_teacher_bank",
+        "batch": "exercise_bank_t0_v4_spec",
+        "reference": null,
+        "source": "content/exercises/1bach/t0/exercise-bank-t0-v4-spec.md"
       },
       "status": "active",
       "version": 4,
@@ -322,8 +330,10 @@
         "version_4"
       ],
       "origin": {
-        "kind": "exercise_bank_t0_v4_spec",
-        "source": "exercise-bank-t0-v4-spec.md"
+        "kind": "original_teacher_bank",
+        "batch": "exercise_bank_t0_v4_spec",
+        "reference": null,
+        "source": "content/exercises/1bach/t0/exercise-bank-t0-v4-spec.md"
       },
       "status": "active",
       "version": 4,
@@ -379,8 +389,10 @@
         "version_4"
       ],
       "origin": {
-        "kind": "exercise_bank_t0_v4_spec",
-        "source": "exercise-bank-t0-v4-spec.md"
+        "kind": "original_teacher_bank",
+        "batch": "exercise_bank_t0_v4_spec",
+        "reference": null,
+        "source": "content/exercises/1bach/t0/exercise-bank-t0-v4-spec.md"
       },
       "status": "active",
       "version": 4,
@@ -415,8 +427,10 @@
         "version_4"
       ],
       "origin": {
-        "kind": "exercise_bank_t0_v4_spec",
-        "source": "exercise-bank-t0-v4-spec.md"
+        "kind": "original_teacher_bank",
+        "batch": "exercise_bank_t0_v4_spec",
+        "reference": null,
+        "source": "content/exercises/1bach/t0/exercise-bank-t0-v4-spec.md"
       },
       "status": "retired",
       "version": 4,
@@ -496,8 +510,10 @@
         "version_5"
       ],
       "origin": {
-        "kind": "exercise_bank_t0_v4_spec",
-        "source": "exercise-bank-t0-v4-spec.md"
+        "kind": "original_teacher_bank",
+        "batch": "exercise_bank_t0_v4_spec",
+        "reference": null,
+        "source": "content/exercises/1bach/t0/exercise-bank-t0-v4-spec.md"
       },
       "status": "active",
       "version": 5,
@@ -566,8 +582,10 @@
         "version_5"
       ],
       "origin": {
-        "kind": "exercise_bank_t0_v4_spec",
-        "source": "exercise-bank-t0-v4-spec.md"
+        "kind": "original_teacher_bank",
+        "batch": "exercise_bank_t0_v4_spec",
+        "reference": null,
+        "source": "content/exercises/1bach/t0/exercise-bank-t0-v4-spec.md"
       },
       "status": "active",
       "version": 5,
@@ -625,8 +643,10 @@
         "version_4"
       ],
       "origin": {
-        "kind": "exercise_bank_t0_v4_spec",
-        "source": "exercise-bank-t0-v4-spec.md"
+        "kind": "original_teacher_bank",
+        "batch": "exercise_bank_t0_v4_spec",
+        "reference": null,
+        "source": "content/exercises/1bach/t0/exercise-bank-t0-v4-spec.md"
       },
       "status": "active",
       "version": 4,
@@ -684,8 +704,10 @@
         "version_4"
       ],
       "origin": {
-        "kind": "exercise_bank_t0_v4_spec",
-        "source": "exercise-bank-t0-v4-spec.md"
+        "kind": "original_teacher_bank",
+        "batch": "exercise_bank_t0_v4_spec",
+        "reference": null,
+        "source": "content/exercises/1bach/t0/exercise-bank-t0-v4-spec.md"
       },
       "status": "active",
       "version": 4,
@@ -753,8 +775,10 @@
         "version_4"
       ],
       "origin": {
-        "kind": "exercise_bank_t0_v4_spec",
-        "source": "exercise-bank-t0-v4-spec.md"
+        "kind": "original_teacher_bank",
+        "batch": "exercise_bank_t0_v4_spec",
+        "reference": null,
+        "source": "content/exercises/1bach/t0/exercise-bank-t0-v4-spec.md"
       },
       "status": "active",
       "version": 4,
@@ -843,8 +867,10 @@
         "version_4"
       ],
       "origin": {
-        "kind": "exercise_bank_t0_v4_spec",
-        "source": "exercise-bank-t0-v4-spec.md"
+        "kind": "original_teacher_bank",
+        "batch": "exercise_bank_t0_v4_spec",
+        "reference": null,
+        "source": "content/exercises/1bach/t0/exercise-bank-t0-v4-spec.md"
       },
       "status": "active",
       "version": 4,
@@ -913,8 +939,10 @@
         "version_4"
       ],
       "origin": {
-        "kind": "exercise_bank_t0_v4_spec",
-        "source": "exercise-bank-t0-v4-spec.md"
+        "kind": "original_teacher_bank",
+        "batch": "exercise_bank_t0_v4_spec",
+        "reference": null,
+        "source": "content/exercises/1bach/t0/exercise-bank-t0-v4-spec.md"
       },
       "status": "active",
       "version": 4,
@@ -993,8 +1021,10 @@
         "version_4"
       ],
       "origin": {
-        "kind": "exercise_bank_t0_v4_spec",
-        "source": "exercise-bank-t0-v4-spec.md"
+        "kind": "original_teacher_bank",
+        "batch": "exercise_bank_t0_v4_spec",
+        "reference": null,
+        "source": "content/exercises/1bach/t0/exercise-bank-t0-v4-spec.md"
       },
       "status": "active",
       "version": 4,
@@ -1055,8 +1085,10 @@
         "version_4"
       ],
       "origin": {
-        "kind": "exercise_bank_t0_v4_spec",
-        "source": "exercise-bank-t0-v4-spec.md"
+        "kind": "original_teacher_bank",
+        "batch": "exercise_bank_t0_v4_spec",
+        "reference": null,
+        "source": "content/exercises/1bach/t0/exercise-bank-t0-v4-spec.md"
       },
       "status": "active",
       "version": 4,
@@ -1113,8 +1145,10 @@
         "version_5"
       ],
       "origin": {
-        "kind": "exercise_bank_t0_v4_spec",
-        "source": "exercise-bank-t0-v4-spec.md"
+        "kind": "original_teacher_bank",
+        "batch": "exercise_bank_t0_v4_spec",
+        "reference": null,
+        "source": "content/exercises/1bach/t0/exercise-bank-t0-v4-spec.md"
       },
       "status": "active",
       "version": 5,
@@ -1149,8 +1183,10 @@
         "version_4"
       ],
       "origin": {
-        "kind": "exercise_bank_t0_v4_spec",
-        "source": "exercise-bank-t0-v4-spec.md"
+        "kind": "original_teacher_bank",
+        "batch": "exercise_bank_t0_v4_spec",
+        "reference": null,
+        "source": "content/exercises/1bach/t0/exercise-bank-t0-v4-spec.md"
       },
       "status": "retired",
       "version": 4,
@@ -1203,8 +1239,10 @@
         "version_4"
       ],
       "origin": {
-        "kind": "exercise_bank_t0_v4_spec",
-        "source": "exercise-bank-t0-v4-spec.md"
+        "kind": "original_teacher_bank",
+        "batch": "exercise_bank_t0_v4_spec",
+        "reference": null,
+        "source": "content/exercises/1bach/t0/exercise-bank-t0-v4-spec.md"
       },
       "status": "active",
       "version": 4,
@@ -1310,8 +1348,10 @@
         "version_4"
       ],
       "origin": {
-        "kind": "exercise_bank_t0_v4_spec",
-        "source": "exercise-bank-t0-v4-spec.md"
+        "kind": "original_teacher_bank",
+        "batch": "exercise_bank_t0_v4_spec",
+        "reference": null,
+        "source": "content/exercises/1bach/t0/exercise-bank-t0-v4-spec.md"
       },
       "status": "active",
       "version": 4,
