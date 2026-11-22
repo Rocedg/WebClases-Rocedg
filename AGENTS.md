@@ -16,6 +16,9 @@ Before implementing changes, read:
 
 For feature work, also read the relevant spec in `docs/context/feature-specs/`.
 
+For exercise content work, also read `docs/exercise-bank-format.md` and
+`docs/exercise-workflow.md`. For deployment questions, read `docs/deployment.md`.
+
 ## Working Rules
 
 - Work on one feature unit at a time.
@@ -63,34 +66,33 @@ Status rules (decided 2026-11-22):
 - Retire an exercise by setting `status: retired`; never delete it or reuse its
   ID, because attempts are keyed by exercise ID and version.
 
-Provenance: every exercise has an `origin` object. `origin.kind` records where
-it came from, for example `exercise_bank_t0_v4_spec`, the T0 extensions
-(`t0_bank_v5_extension`, `t0_graphs_units_video_extension`,
-`t0_determinant_normal_calculus_extension`, ...) or `original_teacher_bank`
-(T1-T6). New exercises must set `origin` with a `kind` and a `source` or
-`adaptation_note` that says which spec, prompt or review produced them.
+Provenance: every exercise has an `origin` object (validated by
+`scripts/validate_exercises.py`):
+
+- `kind`: `original_teacher_bank`, `adapted_from_pau` or `official_pau`.
+  Every 1.º exercise is currently `original_teacher_bank`.
+- `reference`: always present; `null` for own exercises, required for PAU kinds.
+- `source`: required; the spec, prompt or review that produced the exercise.
+- Optional: `batch` (T0 work batch, e.g. `exercise_bank_t0_v4_spec`) and
+  `adaptation_note`.
+
+Full field reference: `docs/exercise-bank-format.md`.
 
 Generators and migration scripts:
 
-- `scripts/build_t3_t6_exercise_banks.py` builds T3-T6 from the
-  `referencia-ejercicios-tN.md` tables. It is read-only by default and writes
-  only with `--write`; a check on `main` reports 0 differences.
-- `scripts/build_t0_v4_bank.py` is historical. It writes immediately, with no
-  `--write` flag, and regenerates only the 80 v4 exercises, so running it
-  overwrites the T0 block files and drops later T0 extensions. Do not run it.
-  T0 is now edited directly in its block files.
+- The bank generators (`build_t0_v4_bank.py`, `build_t3_t6_exercise_banks.py`)
+  are archived in `scripts/archive/`. Do not run them with `--write`; edit the
+  block files directly.
 - `scripts/migrate_compact_exercises.py` (T0-T2 compact migration) is read-only
   by default and writes only with `--write`.
-- T1 and T2 have no generator; edit their block files directly.
 - After any exercise change, run `scripts/validate_exercises.py`, the topic
   validators that exist (`validate_t0_v4_bank.py`, `validate_t0_v4_math.py`,
   `validate_t1_math.py`), `scripts/build_exercise_index.py`, and pytest.
 
 Physics and grading conventions (decided 2026-11-22):
 
-- Use g = 9,81 m/s² in all statements, solutions and expected values. Some
-  older lessons and banks still use 10 or 9,8; that is being unified
-  separately, so do not mix values in new content.
+- Use g = 9,81 m/s² in all statements, solutions and expected values. Lessons
+  and banks T0-T6 were unified to 9,81 (PR #6); do not reintroduce 10 or 9,8.
 - The numeric grader compares only the value against `tolerance` (or
   `accepted_forms`). It does not check units or significant figures, and that
   is intentional. `significant_figures` and `unit` in a numeric field are

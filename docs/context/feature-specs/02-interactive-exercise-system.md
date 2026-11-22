@@ -218,6 +218,8 @@ Importante: esta rama no implementa el panel ni la solucion. Solo documenta el c
 
 ## 3. Modelo de datos de ejercicios
 
+> **Obsoleto para 1.º Bachillerato.** Este modelo solo lo conserva el piloto de 2.º. El formato vigente está en `docs/exercise-bank-format.md`.
+
 Cada ejercicio debe poder describirse con metadatos suficientes para filtrar, renderizar, comprobar interacciones y escalar despues hacia seguimiento.
 
 Campos previstos:
