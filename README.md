@@ -151,7 +151,7 @@ Render.
 - [Registro de progreso](docs/context/06-progress-tracker.md).
 - [Persistencia de actividad](docs/context/user-activity-backend.md).
 - [Intentos de ejercicios](docs/exercise-attempts.md).
-- [Informe de reorganización](docs/repository-cleanup.md).
+- [Informe de reorganización](docs/archive/repository-cleanup.md).
 - [Instrucciones para agentes](AGENTS.md).
 
 Las especificaciones originales y el registro cronológico se conservan en

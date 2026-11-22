@@ -17,12 +17,12 @@ from collections import Counter
 from pathlib import Path
 from typing import Any
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
 from services.exercise_bank_loader import serialize_topic_bank
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 COURSE_ROOT = ROOT / "content" / "exercises" / "1bach"
 ASSET_ROOT = ROOT / "static" / "exercises" / "1bach"
 TOPICS = ("t3", "t4", "t5", "t6")
