@@ -92,7 +92,7 @@
         },
         {
           "id": "vm",
-          "label": "Velocidad media",
+          "label": "Velocidad media entre \\(1\\) y \\(2\\,\\mathrm{s}\\)",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -144,8 +144,8 @@
         "Confundir la cuerda con la trayectoria"
       ],
       "parts_count": 2,
-      "statement_source": "\\(+x\\) derecha,\\(+y\\) arriba; \\(r(t)=(1+2t)i+(4−t²)j m\\), t en s, \\(0≤t≤3\\). \n(a) Calcula posiciones en 1 y 2 s y el desplazamiento entre ellas.\n(b) Sitúa ambos puntos y calcula velocidad media.",
-      "solution_source": "\\(r(1)=(3,3) m\\) y \\(r(2)=(5,0) m\\), evaluando ambas componentes con el mismo reloj.\n\n\\(Δr=(5−3,0−3)=(2,−3) m\\). \\(Δt=1 s\\): \\(v_media=(2,−3) m/s\\).\n\nLa recta que une los dos puntos representa desplazamiento, no toda la curva recorrida.",
+      "statement_source": "Un móvil se mueve en el plano con \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba. Su vector posición, con \\(t\\) en segundos y \\(0\\le t\\le3\\,\\mathrm{s}\\), es\n\\[\\vec r(t)=(1+2t)\\,\\vec i+(4-t^2)\\,\\vec j\\ \\ \\mathrm{m}.\\]\n\n(a) Calcula los vectores posición en \\(t=1\\,\\mathrm{s}\\) y \\(t=2\\,\\mathrm{s}\\) y el desplazamiento entre esos instantes.\n(b) Calcula la velocidad media entre \\(t=1\\,\\mathrm{s}\\) y \\(t=2\\,\\mathrm{s}\\).",
+      "solution_source": "(a) Evaluando las dos componentes en el mismo instante: \\(\\vec r(1)=(3;3)\\,\\mathrm{m}\\) y \\(\\vec r(2)=(5;0)\\,\\mathrm{m}\\). \\(\\Delta\\vec r=(5-3;0-3)=(2;-3)\\,\\mathrm{m}\\).\n(b) \\(\\vec v_m=\\dfrac{\\Delta\\vec r}{\\Delta t}=\\dfrac{(2;-3)}{1}=(2;-3)\\,\\mathrm{m/s}\\).\n\nEl segmento que une los dos puntos representa el desplazamiento, no el camino curvo recorrido.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -165,7 +165,7 @@
       "response_fields": [
         {
           "id": "vx",
-          "label": "V x(t)",
+          "label": "Componente \\(v_x(t)\\)",
           "type": "function",
           "response_kind": "function",
           "required": true,
@@ -183,7 +183,7 @@
         },
         {
           "id": "vy",
-          "label": "V y(t)",
+          "label": "Componente \\(v_y(t)\\)",
           "type": "function",
           "response_kind": "function",
           "required": true,
@@ -226,7 +226,7 @@
         },
         {
           "id": "v2",
-          "label": "Velocidad a 2 s",
+          "label": "Velocidad en \\(t=2\\,\\mathrm{s}\\)",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -251,7 +251,7 @@
         },
         {
           "id": "speed",
-          "label": "Rapidez a 2 s",
+          "label": "Rapidez en \\(t=2\\,\\mathrm{s}\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 7.615773105863909,
@@ -290,8 +290,8 @@
         "Llamar MRU al movimiento total porque una componente lo es"
       ],
       "parts_count": 2,
-      "statement_source": "Ejes cartesianos \\(+x\\) derecha,\\(+y\\) arriba. \\(r(t)=(2t²−t)i+(3t+1)j m\\), t en s, \\(0≤t≤3\\). \n(a) Obtén \\(v(t)\\),\\(a(t)\\).\n(b) Completa: Aceleración, Velocidad a 2 s, Rapidez a 2 s.",
-      "solution_source": "Derivando por componentes: \\(v=(4t−1,3) m/s\\); \\(a=(4,0) m/s²\\).\n\n\\(v(2)=(7,3) m/s\\) y |v|=√58=7,62 m/s.\n\ny es MRU porque \\(v_y=3\\) constante; x es MRUA. El movimiento completo no es rectilíneo uniforme.",
+      "statement_source": "Un móvil se mueve en el plano con \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba. Su vector posición, con \\(t\\) en segundos y \\(0\\le t\\le3\\,\\mathrm{s}\\), es\n\\[\\vec r(t)=(2t^2-t)\\,\\vec i+(3t+1)\\,\\vec j\\ \\ \\mathrm{m}.\\]\n\nDeriva cada componente por separado.\n\n(a) Obtén las componentes de la velocidad \\(v_x(t)\\) y \\(v_y(t)\\).\n(b) Calcula el vector aceleración, el vector velocidad en \\(t=2\\,\\mathrm{s}\\) y la rapidez en ese instante.",
+      "solution_source": "(a) \\(v_x=4t-1\\) y \\(v_y=3\\), en \\(\\mathrm{m/s}\\).\n(b) Derivando otra vez, \\(\\vec a=(4;0)\\,\\mathrm{m/s^2}\\). \\(\\vec v(2)=(7;3)\\,\\mathrm{m/s}\\) y \\(|\\vec v(2)|=\\sqrt{58}\\simeq7{,}62\\,\\mathrm{m/s}\\).\n\nEn \\(y\\) el movimiento es uniforme (\\(v_y\\) constante) y en \\(x\\) es uniformemente acelerado: el movimiento completo no es rectilíneo.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -311,7 +311,7 @@
       "response_fields": [
         {
           "id": "r",
-          "label": "Función vectorial",
+          "label": "Vector posición \\(\\vec r(t)\\)",
           "type": "function",
           "response_kind": "function",
           "required": true,
@@ -329,7 +329,7 @@
         },
         {
           "id": "v",
-          "label": "Velocidad",
+          "label": "Vector velocidad",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -354,7 +354,7 @@
         },
         {
           "id": "path",
-          "label": "Y(x)",
+          "label": "Trayectoria \\(y(x)\\)",
           "type": "function",
           "response_kind": "function",
           "required": true,
@@ -373,7 +373,7 @@
         },
         {
           "id": "end",
-          "label": "Posición final",
+          "label": "Posición en \\(t=4\\,\\mathrm{s}\\)",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -425,8 +425,8 @@
         "Tratar y(x) como función de tiempo"
       ],
       "parts_count": 3,
-      "statement_source": "\\(+x\\) este,\\(+y\\) norte. \\(x=−2+3t,\\) \\(y=5−2t\\) en SI para \\(0≤t≤4\\). \n(a) Escribe \\(r(t)\\) y v.\n(b) Elimina t y da dominio de la trayectoria.\n(c) Completa: Posición final.",
-      "solution_source": "\\(r=(−2+3t)i+(5−2t)j\\); \\(v=(3,−2) m/s\\).\n\n\\(t=(x+2)/3\\): \\(y=5−2(x+2)/3=(11−2x)/3,\\) con −\\(2≤x≤10\\).\n\n\\(r(4)=(10,−3) m\\) satisface la recta. Es un segmento recorrido hacia \\(+x\\) y \\(−y\\), no la recta infinita.",
+      "statement_source": "Un móvil se mueve en el plano con \\(+x\\) hacia el este y \\(+y\\) hacia el norte. Sus coordenadas, en SI y para \\(0\\le t\\le4\\,\\mathrm{s}\\), son\n\\[x=-2+3t,\\qquad y=5-2t.\\]\n\n(a) Escribe el vector posición \\(\\vec r(t)\\) y el vector velocidad.\n(b) Elimina \\(t\\) para obtener la trayectoria \\(y(x)\\) e indica entre qué valores de \\(x\\) se recorre.\n(c) Calcula la posición final, en \\(t=4\\,\\mathrm{s}\\).",
+      "solution_source": "(a) \\(\\vec r(t)=(-2+3t)\\,\\vec i+(5-2t)\\,\\vec j\\,\\mathrm{m}\\) y, derivando, \\(\\vec v=(3;-2)\\,\\mathrm{m/s}\\), constante.\n(b) \\(t=(x+2)/3\\), así que \\(y=5-\\tfrac23(x+2)=\\dfrac{11-2x}{3}\\), con \\(-2\\le x\\le10\\,\\mathrm{m}\\).\n(c) \\(\\vec r(4)=(10;-3)\\,\\mathrm{m}\\), que cumple la ecuación de la trayectoria.\n\nEs un segmento recorrido hacia \\(+x\\) y \\(-y\\), no la recta entera.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -446,7 +446,7 @@
       "response_fields": [
         {
           "id": "path",
-          "label": "Trayectoria",
+          "label": "Trayectoria \\(y(x)\\)",
           "type": "function",
           "response_kind": "function",
           "required": true,
@@ -464,7 +464,7 @@
         },
         {
           "id": "v1",
-          "label": "Velocidad a 1 s",
+          "label": "Velocidad en \\(t=1\\,\\mathrm{s}\\)",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -489,7 +489,7 @@
         },
         {
           "id": "v2",
-          "label": "Velocidad a 2 s",
+          "label": "Velocidad en \\(t=2\\,\\mathrm{s}\\)",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -541,8 +541,8 @@
         "Confundir aceleración con cambio de dirección exclusivamente"
       ],
       "parts_count": 2,
-      "statement_source": "\\(+x\\) derecha,\\(+y\\) arriba. \\(x=t²,\\) \\(y=2t²+1\\) en SI, \\(0≤t≤3\\). \n(a) Completa: Trayectoria.\n(b) Completa: Velocidad a 1 s, Velocidad a 2 s.",
-      "solution_source": "Al sustituir t²=x, \\(y=2x+1\\) para x entre 0 y 9 m.\n\n\\(v=(2t,4t) m/s\\), así que \\(v(1)=(2,4)\\) y \\(v(2)=(4,8)\\).\n\nAmbas velocidades tienen la misma dirección, pero la segunda duplica el módulo; trayectoria recta no implica rapidez constante.",
+      "statement_source": "Un móvil se mueve en el plano con \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba. Sus coordenadas, en SI y para \\(0\\le t\\le3\\,\\mathrm{s}\\), son\n\\[x=t^2,\\qquad y=2t^2+1.\\]\n\n(a) Elimina \\(t\\) para obtener la trayectoria \\(y(x)\\).\n(b) Calcula el vector velocidad en \\(t=1\\,\\mathrm{s}\\) y en \\(t=2\\,\\mathrm{s}\\).",
+      "solution_source": "(a) Como \\(t^2=x\\), \\(y=2x+1\\), para \\(0\\le x\\le9\\,\\mathrm{m}\\): la trayectoria es un segmento de recta.\n(b) \\(\\vec v=(2t;4t)\\,\\mathrm{m/s}\\), así que \\(\\vec v(1)=(2;4)\\) y \\(\\vec v(2)=(4;8)\\,\\mathrm{m/s}\\).\n\nLas dos velocidades tienen la misma dirección, pero la segunda tiene el doble de módulo: una trayectoria recta no implica rapidez constante.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -562,12 +562,12 @@
       "response_fields": [
         {
           "id": "path",
-          "label": "Trayectoria",
+          "label": "Trayectoria \\(y(x)\\)",
           "type": "function",
           "response_kind": "function",
           "required": true,
           "accepted_forms": [
-            "20-4.905*x**2/16"
+            "20-4.905*x^2/16"
           ],
           "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
           "grading": "pending_review",
@@ -575,12 +575,12 @@
           "variable_unit": "m",
           "unit": "m",
           "domain": "0≤x≤8,08",
-          "canonical_expression": "20-4.905*x**2/16",
+          "canonical_expression": "20-4.905*x^2/16",
           "part": "a"
         },
         {
           "id": "x15",
-          "label": "Coordenada a 15 m de altura",
+          "label": "Coordenada \\(x\\) a \\(15\\,\\mathrm{m}\\) de altura",
           "type": "numeric",
           "required": true,
           "expected_value": 4.038550218769218,
@@ -592,7 +592,7 @@
         },
         {
           "id": "v",
-          "label": "Velocidad allí",
+          "label": "Velocidad a \\(15\\,\\mathrm{m}\\) de altura",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -644,8 +644,8 @@
         "Extender la curva después del primer impacto"
       ],
       "parts_count": 2,
-      "statement_source": "Origen al pie de una plataforma, \\(+x\\) derecha,\\(+y\\) arriba. Sin aire y \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\), \\(x=4t,\\) \\(y=20−4{,}905t²\\) en SI hasta el suelo. \n(a) Obtén \\(y(x)\\) y dominio físico.\n(b) Halla dónde alcanza \\(y=15 m\\) y su velocidad en ese punto.",
-      "solution_source": "\\(t=x/4\\), luego \\(y=20-4{,}905x^2/16\\). Suelo: \\(t=\\sqrt{20/4{,}905}=2{,}02\\,\\mathrm{s}\\) y \\(x=8{,}08\\,\\mathrm{m}\\); dominio \\(0\\le x\\le8{,}08\\,\\mathrm{m}\\).\n\n\\(15=20-4{,}905t^2\\) da \\(t=1{,}01\\,\\mathrm{s}\\) (la raíz negativa no pertenece al vuelo); \\(x=4{,}04\\,\\mathrm{m}\\).\n\n\\(\\vec v=(4;-9{,}81t)=(4;−9{,}90)\\,\\mathrm{m/s}\\). La pendiente \\(dy/dx=-9{,}81x/16\\) en \\(x=4{,}04\\) vale \\(−2{,}48\\), igual a \\(v_y/v_x\\).",
+      "statement_source": "Una bola sale horizontalmente desde lo alto de una plataforma. El origen está al pie de la plataforma, con \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba. Sin rozamiento con el aire y con \\(a_y=-g=-9{,}81\\,\\mathrm{m/s^2}\\), su movimiento hasta llegar al suelo es, en SI,\n\\[x=4t,\\qquad y=20-4{,}905t^2.\\]\n\n(a) Elimina \\(t\\) para obtener la trayectoria \\(y(x)\\) e indica su dominio físico.\n(b) Calcula la coordenada \\(x\\) cuando la bola está a \\(15\\,\\mathrm{m}\\) de altura y su vector velocidad en ese instante.",
+      "solution_source": "(a) \\(t=x/4\\), luego \\(y=20-\\dfrac{4{,}905x^2}{16}\\). Llega al suelo cuando \\(t=\\sqrt{20/4{,}905}=2{,}02\\,\\mathrm{s}\\), en \\(x=8{,}08\\,\\mathrm{m}\\): el dominio es \\(0\\le x\\le8{,}08\\,\\mathrm{m}\\).\n(b) \\(15=20-4{,}905t^2\\) da \\(t=1{,}01\\,\\mathrm{s}\\) (la raíz negativa no pertenece al vuelo), así que \\(x=4{,}04\\,\\mathrm{m}\\). \\(\\vec v=(4;-9{,}81t)=(4;-9{,}90)\\,\\mathrm{m/s}\\).\n\nComprobación: la pendiente \\(dy/dx=-9{,}81x/16\\) en \\(x=4{,}04\\) vale \\(-2{,}48\\), igual que \\(v_y/v_x\\).",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -664,26 +664,8 @@
       "response_prompt": "Responde los apartados en sus campos.",
       "response_fields": [
         {
-          "id": "path",
-          "label": "Trayectoria",
-          "type": "function",
-          "response_kind": "function",
-          "required": true,
-          "accepted_forms": [
-            "12*x/5-4.905*x**2/25"
-          ],
-          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
-          "grading": "pending_review",
-          "variable": "x",
-          "variable_unit": "m",
-          "unit": "m",
-          "domain": "0≤x≤12,2",
-          "canonical_expression": "12*x/5-4.905*x**2/25",
-          "part": "b"
-        },
-        {
           "id": "vx",
-          "label": "V x",
+          "label": "Componente \\(v_x\\)",
           "type": "function",
           "response_kind": "function",
           "required": true,
@@ -701,7 +683,7 @@
         },
         {
           "id": "vy",
-          "label": "V y",
+          "label": "Componente \\(v_y(t)\\)",
           "type": "function",
           "response_kind": "function",
           "required": true,
@@ -719,7 +701,7 @@
         },
         {
           "id": "flight",
-          "label": "Duración",
+          "label": "Tiempo hasta volver a \\(y=0\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 2.4464831804281344,
@@ -730,8 +712,26 @@
           "part": "a"
         },
         {
+          "id": "path",
+          "label": "Trayectoria \\(y(x)\\)",
+          "type": "function",
+          "response_kind": "function",
+          "required": true,
+          "accepted_forms": [
+            "12*x/5-4.905*x^2/25"
+          ],
+          "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
+          "grading": "pending_review",
+          "variable": "x",
+          "variable_unit": "m",
+          "unit": "m",
+          "domain": "0≤x≤12,2",
+          "canonical_expression": "12*x/5-4.905*x^2/25",
+          "part": "b"
+        },
+        {
           "id": "top",
-          "label": "Instante del máximo",
+          "label": "Instante de la altura máxima",
           "type": "numeric",
           "required": true,
           "expected_value": 1.2232415902140672,
@@ -770,8 +770,8 @@
         "Anular v_x en el máximo"
       ],
       "parts_count": 2,
-      "statement_source": "En SI, \\(+x\\) derecha,\\(+y\\) arriba, \\(x=5t,y=12t−4{,}905t²\\); sin aire, \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). \n(a) Da \\(y(x)\\),\\(v_x\\),\\(v_y\\) y duración hasta regresar a \\(y=0\\).\n(b) Completa: Trayectoria, Instante del máximo.",
-      "solution_source": "\\(t=x/5\\) da \\(y=(12/5)x-4{,}905x^2/25\\). \\(v_x=5\\) y \\(v_y=12-9{,}81t\\).\n\n\\(y=t(12-4{,}905t)=0\\) da el regreso en \\(2{,}45\\,\\mathrm{s}\\); el máximo, con \\(v_y=0\\), en \\(1{,}22\\,\\mathrm{s}\\), con \\(x=6{,}12\\,\\mathrm{m}\\) e \\(y=7{,}34\\,\\mathrm{m}\\).\n\n\\(x(t)\\) es una recta creciente, \\(y(t)\\) una parábola, \\(v_x\\) una recta horizontal y \\(v_y\\) una recta decreciente; todas comparten el intervalo \\(0\\le t\\le2{,}45\\,\\mathrm{s}\\).",
+      "statement_source": "Un proyectil se mueve con \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba. Sin rozamiento con el aire y con \\(a_y=-g=-9{,}81\\,\\mathrm{m/s^2}\\), sus coordenadas en SI son\n\\[x=5t,\\qquad y=12t-4{,}905t^2.\\]\n\n(a) Calcula las componentes \\(v_x\\) y \\(v_y\\) de la velocidad y el tiempo que tarda en volver a \\(y=0\\).\n(b) Elimina \\(t\\) para obtener la trayectoria \\(y(x)\\) y calcula el instante en que alcanza la altura máxima.",
+      "solution_source": "(a) Derivando: \\(v_x=5\\,\\mathrm{m/s}\\) y \\(v_y=12-9{,}81t\\). \\(y=t(12-4{,}905t)=0\\) da el regreso en \\(t=2{,}45\\,\\mathrm{s}\\).\n(b) \\(t=x/5\\) da \\(y=\\dfrac{12}{5}x-\\dfrac{4{,}905x^2}{25}\\). La altura máxima se alcanza cuando \\(v_y=0\\): \\(t=1{,}22\\,\\mathrm{s}\\), en \\(x=6{,}12\\,\\mathrm{m}\\) e \\(y=7{,}34\\,\\mathrm{m}\\).\n\nLas gráficas: \\(x(t)\\) es una recta creciente, \\(y(t)\\) una parábola, \\(v_x\\) una recta horizontal y \\(v_y\\) una recta decreciente, todas en \\(0\\le t\\le2{,}45\\,\\mathrm{s}\\).",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -791,12 +791,12 @@
       "response_fields": [
         {
           "id": "path",
-          "label": "Trayectoria común",
+          "label": "Trayectoria común \\(y(x)\\)",
           "type": "function",
           "response_kind": "function",
           "required": true,
           "accepted_forms": [
-            "x**2"
+            "x^2"
           ],
           "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
           "grading": "pending_review",
@@ -804,12 +804,12 @@
           "variable_unit": "m",
           "unit": "m",
           "domain": "0≤x≤2",
-          "canonical_expression": "x**2",
-          "part": "c"
+          "canonical_expression": "x^2",
+          "part": "a"
         },
         {
           "id": "ta",
-          "label": "Instante A en (1,1)",
+          "label": "Instante en que A pasa por \\((1;1)\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 1,
@@ -817,11 +817,11 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "c"
+          "part": "b"
         },
         {
           "id": "tb",
-          "label": "Instante B en (1,1)",
+          "label": "Instante en que B pasa por \\((1;1)\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 0.5,
@@ -829,11 +829,11 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "c"
+          "part": "b"
         },
         {
           "id": "va",
-          "label": "Velocidad A en ese punto",
+          "label": "Velocidad de A en \\((1;1)\\)",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -854,11 +854,11 @@
           "unit": "m/s",
           "tolerance": 0.02,
           "rounding": "Tres cifras significativas.",
-          "part": "b"
+          "part": "c"
         },
         {
           "id": "vb",
-          "label": "Velocidad B en ese punto",
+          "label": "Velocidad de B en \\((1;1)\\)",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -910,8 +910,8 @@
         "Identificar curva y ley temporal"
       ],
       "parts_count": 3,
-      "statement_source": "Ejes \\(+x\\) derecha,\\(+y\\) arriba. A: \\(r_A(t)=(t,t²) m\\) para \\(0≤t≤2\\) s; B: \\(r_B(t)=(2t,4t²) m\\) para \\(0≤t≤1\\) s. \n(b) Compara sus velocidades al pasar por \\((1,1) m\\).\n(c) Completa: Trayectoria común, Instante A en (1,1), Instante B en (1,1), Velocidad B en ese punto.",
-      "solution_source": "Ambas cumplen \\(y=x²\\) con \\(0≤x≤2\\) m. A tarda 2 s y B 1 s en recorrer el arco.\n\nEn \\((1,1)\\), \\(t_A=1\\) y \\(t_B=0,5 s\\). \\(v_A=(1,2t)=(1,2)\\); \\(v_B=(2,8t)=(2,4) m/s\\).\n\nLa velocidad de B duplica la de A en el mismo punto. En \\(t=0,5\\) están en posiciones distintas: \\((0,5;0,25)\\) y \\((1;1)\\).",
+      "statement_source": "Dos móviles A y B se mueven en el plano, con \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba. En SI:\n\\[\\vec r_A(t)=(t;\\,t^2)\\ \\text{para}\\ 0\\le t\\le2\\,\\mathrm{s},\\qquad \\vec r_B(t)=(2t;\\,4t^2)\\ \\text{para}\\ 0\\le t\\le1\\,\\mathrm{s}.\\]\n\n(a) Elimina \\(t\\) y comprueba que A y B recorren la misma trayectoria \\(y(x)\\).\n(b) Calcula en qué instante pasa cada uno por el punto \\((1;1)\\,\\mathrm{m}\\).\n(c) Calcula la velocidad de cada uno al pasar por \\((1;1)\\,\\mathrm{m}\\).",
+      "solution_source": "(a) A: \\(x=t\\), \\(y=t^2=x^2\\). B: \\(t=x/2\\), \\(y=4(x/2)^2=x^2\\). Los dos recorren \\(y=x^2\\) entre \\(x=0\\) y \\(x=2\\,\\mathrm{m}\\); A tarda \\(2\\,\\mathrm{s}\\) y B, \\(1\\,\\mathrm{s}\\).\n(b) A pasa por \\((1;1)\\) en \\(t_A=1{,}00\\,\\mathrm{s}\\) y B en \\(t_B=0{,}500\\,\\mathrm{s}\\).\n(c) \\(\\vec v_A=(1;2t)=(1;2)\\,\\mathrm{m/s}\\) y \\(\\vec v_B=(2;8t)=(2;4)\\,\\mathrm{m/s}\\).\n\nEn el mismo punto, la velocidad de B es el doble que la de A: misma trayectoria no significa mismo movimiento.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -956,7 +956,7 @@
         },
         {
           "id": "x",
-          "label": "X(t)",
+          "label": "Coordenada \\(x(t)\\)",
           "type": "function",
           "response_kind": "function",
           "required": true,
@@ -974,12 +974,12 @@
         },
         {
           "id": "y",
-          "label": "Y(t)",
+          "label": "Coordenada \\(y(t)\\)",
           "type": "function",
           "response_kind": "function",
           "required": true,
           "accepted_forms": [
-            "-2-2*t+t**2"
+            "-2-2*t+t^2"
           ],
           "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
           "grading": "pending_review",
@@ -987,12 +987,12 @@
           "variable_unit": "s",
           "unit": "m",
           "domain": "0≤t≤4",
-          "canonical_expression": "-2-2*t+t**2",
+          "canonical_expression": "-2-2*t+t^2",
           "part": "a"
         },
         {
           "id": "r4",
-          "label": "Posición final",
+          "label": "Posición en \\(t=4\\,\\mathrm{s}\\)",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -1017,7 +1017,7 @@
         },
         {
           "id": "min",
-          "label": "Instante de y mínima",
+          "label": "Instante de \\(y\\) mínima",
           "type": "numeric",
           "required": true,
           "expected_value": 1,
@@ -1056,8 +1056,8 @@
         "Confundir mínimo de y con reposo total"
       ],
       "parts_count": 2,
-      "statement_source": "Ejes \\(+x\\) este,\\(+y\\) norte, \\(r_0=(1,−2) m\\). En \\(0≤t≤4\\) s, \\(v_x=3 m/s\\) y \\(v_y\\) pasa linealmente de \\(−2 a +6 m/s\\). \n(a) Obtén a y \\(r(t)\\).\n(b) Calcula posición final y cuándo y alcanza su mínimo.",
-      "solution_source": "\\(v_y=−2+2t,\\) \\(a=(0,2) m/s²\\). Integrando: \\(x=1+3t,y=−2−2t+t²\\).\n\n\\(r(4)=(13,6) m\\); área \\(v_y\\)-\\(t=(−2+6)·4/2=8 m\\), que sumada a −2 da 6 m.\n\n\\(v_y=0\\) en \\(t=1 s\\) y cambia de negativo a positivo: y mínima=−3 m. \\(v_x\\) sigue siendo 3 m/s.",
+      "statement_source": "Un móvil se mueve en el plano con \\(+x\\) hacia el este y \\(+y\\) hacia el norte. En \\(t=0\\) está en \\(\\vec r_0=(1;-2)\\,\\mathrm{m}\\). Entre \\(0\\) y \\(4\\,\\mathrm{s}\\), \\(v_x=3\\,\\mathrm{m/s}\\) es constante y \\(v_y\\) pasa de \\(-2\\) a \\(+6\\,\\mathrm{m/s}\\) de forma lineal.\n\n(a) Calcula el vector aceleración y escribe las coordenadas \\(x(t)\\) e \\(y(t)\\).\n(b) Calcula la posición final, en \\(t=4\\,\\mathrm{s}\\), y el instante en que \\(y\\) es mínima.",
+      "solution_source": "(a) \\(a_y=\\dfrac{6-(-2)}{4}=2\\,\\mathrm{m/s^2}\\), así que \\(\\vec a=(0;2)\\,\\mathrm{m/s^2}\\) y \\(v_y=-2+2t\\). Integrando con \\(\\vec r_0\\): \\(x=1+3t\\) e \\(y=-2-2t+t^2\\).\n(b) \\(\\vec r(4)=(13;6)\\,\\mathrm{m}\\). Comprobación con el área bajo \\(v_y(t)\\): \\(\\tfrac12(-2+6)\\cdot4=8\\,\\mathrm{m}\\), y \\(-2+8=6\\,\\mathrm{m}\\). \\(y\\) es mínima cuando \\(v_y=0\\): \\(t=1{,}00\\,\\mathrm{s}\\), con \\(y=-3\\,\\mathrm{m}\\).",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -1077,7 +1077,7 @@
       "response_fields": [
         {
           "id": "t1",
-          "label": "Primer cruce",
+          "label": "Instante del primer cruce",
           "type": "numeric",
           "required": true,
           "expected_value": 1,
@@ -1085,11 +1085,11 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "b"
+          "part": "a"
         },
         {
           "id": "t2",
-          "label": "Segundo cruce",
+          "label": "Instante del segundo cruce",
           "type": "numeric",
           "required": true,
           "expected_value": 3,
@@ -1097,11 +1097,11 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "b"
+          "part": "a"
         },
         {
           "id": "x1",
-          "label": "Primera coordenada horizontal",
+          "label": "Coordenada \\(x\\) del primer cruce",
           "type": "numeric",
           "required": true,
           "expected_value": 3,
@@ -1113,7 +1113,7 @@
         },
         {
           "id": "x2",
-          "label": "Segunda coordenada horizontal",
+          "label": "Coordenada \\(x\\) del segundo cruce",
           "type": "numeric",
           "required": true,
           "expected_value": 9,
@@ -1121,7 +1121,7 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "b"
+          "part": "a"
         },
         {
           "id": "v",
@@ -1177,13 +1177,13 @@
         "Comprobar solo la coordenada y"
       ],
       "parts_count": 2,
-      "statement_source": "\\(+x\\) derecha,\\(+y\\) arriba. \\(x=3t,y=8t−2t²\\) en SI, \\(0≤t≤4\\). Una cámara registra los cruces de \\(y=6 m\\). \n(a) Calcula los dos instantes y posiciones.\n(b) Una diana está en \\((9,6) m\\): determina qué cruce corresponde a ella y la velocidad allí.",
-      "solution_source": "\\(8t−2t²\\)=6 equivale a t²−\\(4t+3\\)=0: \\(t=1\\) y 3 s.\n\n\\(x=3t\\) da \\((3,6)\\) y \\((9,6) m\\). Solo el segundo coincide con la diana.\n\n\\(v=(3,8−4t)\\): en 3 s es \\((3,−4) m/s\\); cruza la diana descendiendo.",
+      "statement_source": "Un móvil se mueve en el plano con \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba. Sus coordenadas, en SI y para \\(0\\le t\\le4\\,\\mathrm{s}\\), son\n\\[x=3t,\\qquad y=8t-2t^2.\\]\n\nUna cámara registra cada vez que cruza la altura \\(y=6\\,\\mathrm{m}\\).\n\n(a) Calcula los dos instantes en que cruza \\(y=6\\,\\mathrm{m}\\) y la coordenada \\(x\\) en cada cruce.\n(b) Una diana está en \\((9;6)\\,\\mathrm{m}\\). Calcula la velocidad del móvil al pasar por ella.",
+      "solution_source": "(a) \\(8t-2t^2=6\\) equivale a \\(t^2-4t+3=0\\): \\(t=1{,}00\\,\\mathrm{s}\\) y \\(t=3{,}00\\,\\mathrm{s}\\). Con \\(x=3t\\), los cruces están en \\(x=3{,}00\\) y \\(x=9{,}00\\,\\mathrm{m}\\).\n(b) Solo el segundo cruce, en \\(t=3\\,\\mathrm{s}\\), coincide con la diana. \\(\\vec v=(3;8-4t)\\), así que \\(\\vec v(3)=(3;-4)\\,\\mathrm{m/s}\\): pasa por la diana bajando.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
       "id": "t2_f_010",
-      "version": 1,
+      "version": 2,
       "title": "Auditoría de una parametrización",
       "course": "1bach",
       "topic": "t2",
@@ -1197,8 +1197,30 @@
       "response_prompt": "Responde los apartados en sus campos.",
       "response_fields": [
         {
+          "id": "model",
+          "label": "Modelo compatible",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            {
+              "id": "A",
+              "label": "A: \\(x=2t,\\ y=4-t^2\\)"
+            },
+            {
+              "id": "B",
+              "label": "B: \\(x=-2t,\\ y=4-t^2\\)"
+            },
+            {
+              "id": "C",
+              "label": "C: \\(x=2t,\\ y=4+t^2\\)"
+            }
+          ],
+          "correct_option_id": "A",
+          "part": "a"
+        },
+        {
           "id": "t",
-          "label": "Tiempo hasta suelo",
+          "label": "Tiempo hasta el suelo",
           "type": "numeric",
           "required": true,
           "expected_value": 2,
@@ -1206,7 +1228,7 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "a"
+          "part": "b"
         },
         {
           "id": "range",
@@ -1218,7 +1240,7 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "b"
+          "part": "c"
         },
         {
           "id": "a",
@@ -1243,7 +1265,7 @@
           "unit": "m/s²",
           "tolerance": 0.02,
           "rounding": "Tres cifras significativas.",
-          "part": "b"
+          "part": "c"
         }
       ],
       "assets": [
@@ -1273,9 +1295,9 @@
         "Introducir g=9,81 cuando la función prescribe otra aceleración",
         "Elegir solo por la posición inicial"
       ],
-      "parts_count": 2,
-      "statement_source": "\\(+x\\) derecha,\\(+y\\) arriba. El dibujo declarado parte de \\((0,4) m\\), avanza a la derecha y desciende hasta el suelo con \\(v_y\\) inicial nula. Se proponen A: \\(x=2t,y=4−t²\\); B: \\(x=−2t,y=4−t²\\); C: \\(x=2t,y=4+t²,\\) en SI para t≥0. \n(a) Completa: Tiempo hasta suelo.\n(b) Da duración, alcance y aceleración del modelo compatible.",
-      "solution_source": "A satisface \\(x(0)=0,y(0)=4,v_x=2>0,v_y=−2t\\) y \\(v_y(0)=0\\).\n\n4−t²=0 da \\(t=2 s\\); \\(x=4 m\\). \\(a=(0,−2) m/s²\\).\n\nNo se ha fijado gravedad terrestre: este modelo tiene aceleración vertical −2 m/s², no debe sustituirse por −9,81 sin autorización.",
+      "parts_count": 3,
+      "statement_source": "Un dibujo animado muestra un objeto que parte de \\((0;4)\\,\\mathrm{m}\\), avanza hacia la derecha y desciende hasta el suelo \\(y=0\\), con velocidad vertical inicial nula. Los ejes son \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba. Se proponen tres modelos, en SI y para \\(t\\ge0\\):\n\nA: \\(x=2t,\\ y=4-t^2\\); B: \\(x=-2t,\\ y=4-t^2\\); C: \\(x=2t,\\ y=4+t^2\\).\n\nEn el dibujo no actúa la gravedad terrestre: el modelo tiene su propia aceleración.\n\n(a) Elige el modelo compatible con la descripción.\n(b) Con ese modelo, calcula el tiempo que tarda en llegar al suelo.\n(c) Calcula el alcance y el vector aceleración del modelo.",
+      "solution_source": "(a) A: \\(x(0)=0\\), \\(y(0)=4\\), \\(v_x=2>0\\) y \\(v_y=-2t\\), que es nula al principio y luego negativa. B avanza hacia la izquierda y C sube.\n(b) \\(4-t^2=0\\Rightarrow t=2{,}00\\,\\mathrm{s}\\).\n(c) Alcance: \\(x(2)=4{,}00\\,\\mathrm{m}\\). \\(\\vec a=(0;-2)\\,\\mathrm{m/s^2}\\): es la aceleración del modelo, no \\(-9{,}81\\,\\mathrm{m/s^2}\\).",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     }
   ]

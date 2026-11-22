@@ -41,8 +41,20 @@
           "part": "a"
         },
         {
+          "id": "angle",
+          "label": "Rumbo propio desde \\(+x\\)",
+          "type": "numeric",
+          "required": true,
+          "expected_value": 126.86989765,
+          "unit": "°",
+          "tolerance": 0.2,
+          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
+          "significant_figures": 3,
+          "part": "a"
+        },
+        {
           "id": "ground",
-          "label": "Velocidad terrestre",
+          "label": "Velocidad respecto a tierra",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -64,18 +76,6 @@
           "tolerance": 0.02,
           "rounding": "Tres cifras significativas.",
           "part": "b"
-        },
-        {
-          "id": "angle",
-          "label": "Rumbo propio desde +x",
-          "type": "numeric",
-          "required": true,
-          "expected_value": 126.86989765,
-          "unit": "°",
-          "tolerance": 0.2,
-          "rounding": "Tres cifras significativas; conservar precisión intermedia.",
-          "significant_figures": 3,
-          "part": "a"
         },
         {
           "id": "t",
@@ -117,9 +117,9 @@
         "Orientar el dron al norte ignorando viento",
         "Aceptar la raíz negativa de v_y para llegar al norte"
       ],
-      "parts_count": 3,
-      "statement_source": "Vista horizontal: \\(+x\\) este,\\(+y\\) norte, origen en salida. Un dron puede mantener rapidez de 10 m/s respecto al aire. Viento constante de \\((6,0) m/s\\). Debe llegar a \\((0,240) m\\). \n(a) Halla rumbo propio que elimina deriva.\n(b) Da velocidad terrestre, trayectoria y tiempo.",
-      "solution_source": "Para \\(x=0\\) se exige \\(v_x\\),\\(propia=−6 m/s\\). Con módulo 10: \\(v_y=+√(100−36)=8 m/s\\), el signo + permite ir al norte.\n\n\\(v_tierra=(−6,8)+(6,0)=(0,8) m/s\\); \\(r=(0,8t),\\) \\(t=240/8=30 s\\). Rumbo 126,87° desde \\(+x\\).\n\nCon viento 12, v_y²=\\(100−144\\)<0: no existe rumbo real que lo cancele. La condición de posibilidad es |viento|<10 para avance norte no nulo.",
+      "parts_count": 2,
+      "statement_source": "Un dron vuela a \\(10\\,\\mathrm{m/s}\\) respecto al aire. Sopla un viento constante de \\((6;0)\\,\\mathrm{m/s}\\). En vista horizontal, \\(+x\\) apunta al este, \\(+y\\) al norte y el origen es el punto de salida. El dron debe llegar a \\((0;240)\\,\\mathrm{m}\\), justo al norte.\n\nSu velocidad respecto a tierra es la suma de su velocidad propia y la del viento, y debe apuntar hacia \\(+y\\).\n\n(a) Calcula la velocidad propia (respecto al aire) que necesita y su rumbo medido desde \\(+x\\).\n(b) Calcula su velocidad respecto a tierra y el tiempo que tarda en llegar.",
+      "solution_source": "(a) Para no derivar hacia el este, la componente \\(x\\) de la velocidad propia debe compensar el viento: \\(-6\\,\\mathrm{m/s}\\). Con módulo \\(10\\): \\(v_y=+\\sqrt{100-36}=8\\,\\mathrm{m/s}\\). \\(\\vec v_{\\text{propia}}=(-6;8)\\,\\mathrm{m/s}\\), con rumbo \\(126{,}9^\\circ\\) desde \\(+x\\).\n(b) \\(\\vec v_{\\text{tierra}}=(-6;8)+(6;0)=(0;8)\\,\\mathrm{m/s}\\) y \\(t=240/8=30{,}0\\,\\mathrm{s}\\).\n\nSi el viento superara los \\(10\\,\\mathrm{m/s}\\), no existiría ningún rumbo que lo compensara.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -139,7 +139,7 @@
       "response_fields": [
         {
           "id": "max",
-          "label": "Altura máxima",
+          "label": "Altura máxima sobre el suelo",
           "type": "numeric",
           "required": true,
           "expected_value": 11.328440366972476,
@@ -212,7 +212,7 @@
         },
         {
           "id": "angle",
-          "label": "Ángulo bajo +x",
+          "label": "Ángulo por debajo de \\(+x\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 51.16910538897958,
@@ -251,8 +251,8 @@
         "Dar ángulo de primer cuadrante a la velocidad final"
       ],
       "parts_count": 3,
-      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). Desde \\(y=7,2 m\\) sale una pelota a 15 m/s con componentes \\((12,9) m/s\\). \n(a) Completa: Altura máxima, Tiempo de vuelo.\n(b) Halla máximo, vuelo y alcance.\n(c) Completa: Velocidad de impacto, Rapidez final, Ángulo bajo +x.",
-      "solution_source": "\\(x=12t\\), \\(y=7{,}2+9t-4{,}905t^2\\); \\(\\vec v=(12;9-9{,}81t)\\). Máximo en \\(t=9/9{,}81=0{,}917\\,\\mathrm{s}\\), con \\(y=7{,}2+81/19{,}62=11{,}33\\,\\mathrm{m}\\).\n\n\\(y=0\\) da \\(t=\\dfrac{9\\pm\\sqrt{222{,}26}}{9{,}81}\\): \\(2{,}437\\,\\mathrm{s}\\) o \\(−0{,}602\\,\\mathrm{s}\\). Alcance \\(=12\\cdot2{,}437=29{,}2\\,\\mathrm{m}\\).\n\n\\(\\vec v_f=(12;−14{,}91)\\,\\mathrm{m/s}\\), \\(|\\vec v_f|=\\sqrt{144+222{,}26}=19{,}14\\,\\mathrm{m/s}\\) y ángulo de \\(51{,}2^\\circ\\) bajo \\(+x\\). Supera la rapidez inicial de \\(15\\,\\mathrm{m/s}\\) porque termina más abajo.",
+      "statement_source": "Desde lo alto de una grada, a \\(y=7{,}2\\,\\mathrm{m}\\), sale una pelota a \\(15\\,\\mathrm{m/s}\\) con componentes \\((12;9)\\,\\mathrm{m/s}\\). El origen está al pie del punto de salida, con \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba. Desprecia el aire y usa \\(a_x=0\\), \\(a_y=-g=-9{,}81\\,\\mathrm{m/s^2}\\).\n\n(a) Calcula la altura máxima sobre el suelo y el tiempo de vuelo hasta el suelo.\n(b) Calcula el alcance.\n(c) Calcula el vector velocidad de impacto, la rapidez final y el ángulo por debajo de \\(+x\\).",
+      "solution_source": "(a) \\(x=12t\\), \\(y=7{,}2+9t-4{,}905t^2\\), \\(\\vec v=(12;9-9{,}81t)\\). Máximo en \\(t=9/9{,}81=0{,}917\\,\\mathrm{s}\\): \\(y=7{,}2+81/19{,}62=11{,}3\\,\\mathrm{m}\\). En el suelo, \\(t=\\dfrac{9\\pm\\sqrt{222{,}26}}{9{,}81}\\): \\(2{,}44\\,\\mathrm{s}\\) (la otra raíz es negativa).\n(b) Alcance: \\(12\\cdot2{,}437=29{,}2\\,\\mathrm{m}\\).\n(c) \\(\\vec v_f=(12;-14{,}9)\\,\\mathrm{m/s}\\), \\(|\\vec v_f|=\\sqrt{144+222{,}26}=19{,}1\\,\\mathrm{m/s}\\) y \\(51{,}2^\\circ\\) por debajo de \\(+x\\). Es mayor que la rapidez inicial porque termina más abajo.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -296,7 +296,7 @@
         },
         {
           "id": "hlo",
-          "label": "Máximo bajo",
+          "label": "Altura máxima del tiro bajo",
           "type": "numeric",
           "required": true,
           "expected_value": 1.2725925866281287,
@@ -308,7 +308,7 @@
         },
         {
           "id": "hhi",
-          "label": "Máximo alto",
+          "label": "Altura máxima del tiro alto",
           "type": "numeric",
           "required": true,
           "expected_value": 4.712296781963344,
@@ -320,7 +320,7 @@
         },
         {
           "id": "time",
-          "label": "Tiempo del tiro viable",
+          "label": "Tiempo hasta la diana del tiro viable",
           "type": "numeric",
           "required": true,
           "expected_value": 0.5772281658284999,
@@ -359,8 +359,8 @@
         "Comparar altura de la diana y techo en vez del máximo"
       ],
       "parts_count": 3,
-      "statement_source": "Origen en el suelo, \\(+x\\) derecha,\\(+y\\) arriba; sin aire, \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). Lanzador de 10 m/s; diana en \\((5;1,25) m\\) y techo horizontal a \\(y=4 m\\). \n(a) Determina dos ángulos posibles para la diana.\n(b) Calcula máximos de ambos vuelos y decide cuál evita el techo antes de alcanzar la diana.\n(c) Completa: Tiempo del tiro viable.",
-      "solution_source": "Con \\(u=\\tan\\theta\\), \\(y=xu-\\dfrac{9{,}81x^2}{200}(1+u^2)\\). En la diana: \\(1{,}25=5u-1{,}22625(1+u^2)\\), es decir, \\(1{,}22625u^2-5u+2{,}47625=0\\); \\(u=0{,}577\\) o \\(3{,}501\\), y \\(\\theta\\approx29{,}98^\\circ\\) o \\(74{,}06^\\circ\\).\n\n\\(H=v_{0y}^2/(2g)=\\dfrac{100}{19{,}62}\\cdot\\dfrac{u^2}{1+u^2}\\): \\(H_{\\text{baja}}\\approx1{,}273\\,\\mathrm{m}\\) y \\(H_{\\text{alta}}\\approx4{,}712\\,\\mathrm{m}\\). Ambos máximos ocurren antes de \\(x=5\\,\\mathrm{m}\\) (en \\(4{,}41\\) y \\(2{,}69\\,\\mathrm{m}\\)); el tiro alto toca el techo antes de llegar.\n\nPara el tiro bajo, \\(t=0{,}5\\sqrt{1+u^2}\\approx0{,}5772\\,\\mathrm{s}\\) y \\(v_y\\approx−0{,}666\\,\\mathrm{m/s}\\): llega bajando, sin superar \\(y=4\\). Sustituir \\(x=5\\) da \\(y=1{,}25\\).",
+      "statement_source": "Un lanzador situado en el origen, en el suelo, dispara proyectiles a \\(10\\,\\mathrm{m/s}\\). Hay una diana en \\((5;1{,}25)\\,\\mathrm{m}\\) y un techo horizontal a \\(y=4\\,\\mathrm{m}\\). Los ejes son \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba. Desprecia el aire y usa \\(a_y=-g=-9{,}81\\,\\mathrm{m/s^2}\\).\n\nEliminando \\(t\\) y usando \\(u=\\tan\\theta\\), la trayectoria es \\(y=xu-\\dfrac{g x^2}{2v_0^2}(1+u^2)\\).\n\n(a) Calcula los dos ángulos de lanzamiento con los que el proyectil pasa por la diana.\n(b) Calcula la altura máxima de cada tiro y decide cuál llega a la diana sin tocar el techo.\n(c) Calcula el tiempo que tarda en llegar a la diana el tiro viable.",
+      "solution_source": "(a) En la diana: \\(1{,}25=5u-1{,}22625(1+u^2)\\), es decir, \\(1{,}22625u^2-5u+2{,}47625=0\\). \\(u=0{,}577\\) o \\(3{,}501\\): \\(\\theta\\simeq30{,}0^\\circ\\) o \\(74{,}1^\\circ\\).\n(b) \\(H=\\dfrac{v_{0y}^2}{2g}\\): \\(1{,}27\\,\\mathrm{m}\\) para el tiro bajo y \\(4{,}71\\,\\mathrm{m}\\) para el alto. Los dos máximos se alcanzan antes de \\(x=5\\,\\mathrm{m}\\), así que el tiro alto toca el techo antes de llegar. Solo es viable el tiro bajo.\n(c) \\(t=\\dfrac{5}{10\\cos\\theta}=0{,}5\\sqrt{1+u^2}\\simeq0{,}577\\,\\mathrm{s}\\). Llega bajando ligeramente (\\(v_y\\simeq-0{,}67\\,\\mathrm{m/s}\\)).",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -380,7 +380,7 @@
       "response_fields": [
         {
           "id": "t",
-          "label": "Tiempo de contacto",
+          "label": "Instante del contacto",
           "type": "numeric",
           "required": true,
           "expected_value": 1.4971458941613625,
@@ -417,7 +417,7 @@
         },
         {
           "id": "v",
-          "label": "Velocidad final",
+          "label": "Velocidad de impacto",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -438,11 +438,11 @@
           "unit": "m/s",
           "tolerance": 0.1,
           "rounding": "Tres cifras significativas.",
-          "part": "a"
+          "part": "b"
         },
         {
           "id": "speed",
-          "label": "Rapidez final",
+          "label": "Rapidez de impacto",
           "type": "numeric",
           "required": true,
           "expected_value": 15.514767316556568,
@@ -493,8 +493,8 @@
         "Sumar ángulos que bajan en el mismo sentido"
       ],
       "parts_count": 3,
-      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). Una bola sale horizontalmente a 5 m/s desde \\(y=8 m\\). Debajo hay una rampa \\(y=−0,4x,\\) x≥0. \n(a) Obtén tiempo y punto de primer contacto.\n(b) Calcula vector, rapidez y ángulo de impacto respecto a la horizontal.\n(c) Completa: Ángulo agudo con la rampa.",
-      "solution_source": "\\(x=5t\\), \\(y=8-4{,}905t^2\\). Sobre la rampa: \\(8-4{,}905t^2=-2t\\), luego \\(t=\\dfrac{2\\pm\\sqrt{160{,}96}}{9{,}81}\\); raíz física \\(1{,}497\\,\\mathrm{s}\\).\n\n\\(P=(7{,}486;−2{,}994)\\,\\mathrm{m}\\) y \\(\\vec v=(5;−14{,}69)\\,\\mathrm{m/s}\\). Rapidez \\(\\approx15{,}5\\,\\mathrm{m/s}\\); dirección \\(\\approx71{,}2^\\circ\\) bajo \\(+x\\).\n\nLa rampa baja \\(\\arctan0{,}4\\approx21{,}8^\\circ\\): ángulo relativo \\(\\approx49{,}4^\\circ\\). La separación \\(y+0{,}4x=8+2t-4{,}905t^2\\) es positiva entre \\(0\\) y la raíz positiva; no hubo contacto previo.",
+      "statement_source": "Una bola sale horizontalmente a \\(5\\,\\mathrm{m/s}\\) desde \\(y=8\\,\\mathrm{m}\\). El origen está al pie del punto de salida, con \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba. Desprecia el aire y usa \\(a_x=0\\), \\(a_y=-g=-9{,}81\\,\\mathrm{m/s^2}\\). Debajo hay una rampa que baja desde el origen: su superficie es \\(y=-0{,}4x\\) para \\(x\\ge0\\).\n\n(a) Calcula el instante y el punto del primer contacto con la rampa.\n(b) Calcula el vector velocidad y la rapidez en el impacto.\n(c) Calcula el ángulo agudo que forma la velocidad de impacto con la rampa.",
+      "solution_source": "(a) \\(x=5t\\), \\(y=8-4{,}905t^2\\). Sobre la rampa: \\(8-4{,}905t^2=-2t\\), luego \\(t=\\dfrac{2\\pm\\sqrt{160{,}96}}{9{,}81}\\); la raíz física es \\(1{,}50\\,\\mathrm{s}\\). Punto: \\((7{,}49;-2{,}99)\\,\\mathrm{m}\\).\n(b) \\(\\vec v=(5;-14{,}7)\\,\\mathrm{m/s}\\) y rapidez \\(\\simeq15{,}5\\,\\mathrm{m/s}\\); su dirección está \\(71{,}2^\\circ\\) por debajo de \\(+x\\).\n(c) La rampa baja \\(\\arctan0{,}4\\simeq21{,}8^\\circ\\): el ángulo entre ambas es \\(71{,}2-21{,}8\\simeq49{,}4^\\circ\\).\n\nLa separación \\(y+0{,}4x=8+2t-4{,}905t^2\\) es positiva hasta esa raíz: no hubo contacto antes.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -514,12 +514,12 @@
       "response_fields": [
         {
           "id": "path",
-          "label": "X(y)",
+          "label": "Trayectoria \\(x(y)\\)",
           "type": "function",
           "response_kind": "function",
           "required": true,
           "accepted_forms": [
-            "(y-2)**2/9-4*(y-2)/3"
+            "(y-2)^2/9-4*(y-2)/3"
           ],
           "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
           "grading": "pending_review",
@@ -527,7 +527,7 @@
           "variable_unit": "m",
           "unit": "m",
           "domain": "2≤y≤14",
-          "canonical_expression": "(y-2)**2/9-4*(y-2)/3",
+          "canonical_expression": "(y-2)^2/9-4*(y-2)/3",
           "part": "a"
         },
         {
@@ -540,7 +540,7 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "c"
+          "part": "b"
         },
         {
           "id": "speed",
@@ -552,11 +552,11 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "c"
+          "part": "b"
         },
         {
           "id": "r",
-          "label": "Posición de rapidez mínima",
+          "label": "Posición en el instante de rapidez mínima",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -581,7 +581,7 @@
         },
         {
           "id": "v",
-          "label": "Velocidad allí",
+          "label": "Velocidad en ese instante",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -657,9 +657,9 @@
         "Identificar v_x=0 con reposo",
         "Afirmar retorno solo porque x vuelve a cero"
       ],
-      "parts_count": 4,
-      "statement_source": "\\(+x\\) derecha,\\(+y\\) arriba. Un robot sigue \\(r(t)=(t²−4t)i+(3t+2)j m\\), t en s, \\(0≤t≤4\\). \n(a) Completa: X(y).\n(c) Halla rapidez mínima, punto y vectores allí.",
-      "solution_source": "\\(v=(2t−4,3) m/s\\),\\(a=(2,0) m/s²\\). Como \\(y=3t+2,t=(y−2)/3\\): \\(x=(y−2)²/9−4(y−2)/3,2≤y≤14\\).\n\n|v|²=(\\(2t−4\\))²+9 es mínimo en \\(t=2 s\\): |v|=3 m/s,\\(r=(−4,8),v=(0,3)\\). a es horizontal, perpendicular a v en ese instante.\n\n\\(x=0\\) en \\(t=0\\) y 4, pero \\(r(0)=(0,2)\\) y \\(r(4)=(0,14) m\\). No regresa al mismo punto: igual x no implica igual vector posición.",
+      "parts_count": 3,
+      "statement_source": "Un robot se mueve en el plano con \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba. Su vector posición, con \\(t\\) en segundos y \\(0\\le t\\le4\\,\\mathrm{s}\\), es\n\\[\\vec r(t)=(t^2-4t)\\,\\vec i+(3t+2)\\,\\vec j\\ \\ \\mathrm{m}.\\]\n\n(a) Elimina \\(t\\) para obtener la trayectoria en la forma \\(x(y)\\).\n(b) Calcula el instante en que la rapidez es mínima y el valor de esa rapidez.\n(c) En ese instante, calcula los vectores posición, velocidad y aceleración.",
+      "solution_source": "(a) \\(y=3t+2\\Rightarrow t=(y-2)/3\\), así que \\(x=\\dfrac{(y-2)^2}{9}-\\dfrac{4(y-2)}{3}\\), con \\(2\\le y\\le14\\,\\mathrm{m}\\).\n(b) \\(\\vec v=(2t-4;3)\\,\\mathrm{m/s}\\) y \\(|\\vec v|^2=(2t-4)^2+9\\), mínimo en \\(t=2{,}00\\,\\mathrm{s}\\): \\(|\\vec v|=3{,}00\\,\\mathrm{m/s}\\).\n(c) \\(\\vec r(2)=(-4;8)\\,\\mathrm{m}\\), \\(\\vec v(2)=(0;3)\\,\\mathrm{m/s}\\) y \\(\\vec a=(2;0)\\,\\mathrm{m/s^2}\\), perpendicular a la velocidad en ese instante.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -727,7 +727,7 @@
         },
         {
           "id": "angle",
-          "label": "Ángulo bajo horizontal",
+          "label": "Ángulo bajo la horizontal",
           "type": "numeric",
           "required": true,
           "expected_value": 67.38013505195958,
@@ -735,7 +735,7 @@
           "tolerance": 0.1,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "c"
+          "part": "b"
         }
       ],
       "assets": [
@@ -765,9 +765,9 @@
         "Tomar raíz positiva de v_y por defecto",
         "Usar rapidez 13 como velocidad horizontal"
       ],
-      "parts_count": 3,
-      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). Una bola sale horizontalmente desde altura desconocida. Al impactar, su rapidez es 13 m/s y su componente horizontal es +5 m/s; el impacto ocurre descendiendo. \n(a) Reconstruye \\(v_y\\) final, tiempo, altura y alcance.\n(c) Completa: Ángulo bajo horizontal.",
-      "solution_source": "\\(v_y^2=13^2-5^2=144\\) y, como desciende, \\(v_y=-12\\,\\mathrm{m/s}\\). \\(v_y=-9{,}81t\\) da \\(t=12/9{,}81=1{,}223\\,\\mathrm{s}\\).\n\n\\(h=4{,}905t^2=7{,}34\\,\\mathrm{m}\\); alcance \\(=5t=6{,}12\\,\\mathrm{m}\\). Horizontal \\(x=5t\\); vertical \\(y=7{,}34-4{,}905t^2\\); \\(\\vec v=(5;-9{,}81t)\\).\n\nEn \\(t=1{,}223\\,\\mathrm{s}\\), \\(y=0\\) y \\(|\\vec v|=\\sqrt{25+144}=13\\,\\mathrm{m/s}\\). El ángulo final es \\(\\arctan(12/5)=67{,}4^\\circ\\) bajo \\(+x\\); \\(\\vec a\\) es vertical y constante.",
+      "parts_count": 2,
+      "statement_source": "Una bola sale horizontalmente desde una altura desconocida. Al llegar al suelo, bajando, su rapidez es \\(13\\,\\mathrm{m/s}\\) y su componente horizontal es \\(+5\\,\\mathrm{m/s}\\). El origen está al pie del punto de salida, con \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba. Desprecia el aire y usa \\(a_x=0\\), \\(a_y=-g=-9{,}81\\,\\mathrm{m/s^2}\\).\n\n(a) Calcula la componente vertical de la velocidad final, el tiempo de caída, la altura inicial y el alcance.\n(b) Calcula el ángulo que forma la velocidad final con la horizontal.",
+      "solution_source": "(a) \\(v_y^2=13^2-5^2=144\\) y, como baja, \\(v_y=-12{,}0\\,\\mathrm{m/s}\\). \\(v_y=-9{,}81t\\Rightarrow t=1{,}22\\,\\mathrm{s}\\). \\(h=4{,}905t^2=7{,}34\\,\\mathrm{m}\\) y alcance \\(=5t=6{,}12\\,\\mathrm{m}\\).\n(b) \\(\\arctan(12/5)=67{,}4^\\circ\\) por debajo de la horizontal.\n\nComprobación: en \\(t=1{,}22\\,\\mathrm{s}\\), \\(y=0\\) y \\(|\\vec v|=\\sqrt{25+144}=13\\,\\mathrm{m/s}\\).",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -787,7 +787,7 @@
       "response_fields": [
         {
           "id": "theta",
-          "label": "Ángulo a 3 s",
+          "label": "Ángulo girado en \\(3\\,\\mathrm{s}\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 15,
@@ -799,7 +799,7 @@
         },
         {
           "id": "arc",
-          "label": "Arco en 3 s",
+          "label": "Arco recorrido en \\(3\\,\\mathrm{s}\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 7.5,
@@ -811,7 +811,7 @@
         },
         {
           "id": "speed",
-          "label": "Rapidez a 1 s",
+          "label": "Rapidez en \\(t=1\\,\\mathrm{s}\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 2,
@@ -823,7 +823,7 @@
         },
         {
           "id": "at",
-          "label": "Tangencial a 1 s",
+          "label": "Aceleración tangencial en \\(t=1\\,\\mathrm{s}\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 1,
@@ -835,7 +835,7 @@
         },
         {
           "id": "an",
-          "label": "Normal a 1 s",
+          "label": "Aceleración normal en \\(t=1\\,\\mathrm{s}\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 8,
@@ -847,7 +847,7 @@
         },
         {
           "id": "total",
-          "label": "Módulo total a 1 s",
+          "label": "Módulo de la aceleración total en \\(t=1\\,\\mathrm{s}\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 8.06225774829855,
@@ -885,9 +885,9 @@
         "Suponer a total constante por α constante",
         "Confundir arco Rθ con desplazamiento vectorial"
       ],
-      "parts_count": 4,
-      "statement_source": "Disco de radio 0,5 m centrado en O. \\(+x\\) derecha,\\(+y\\) arriba, giro antihorario positivo. \\(ω(t)=2+2t rad/s\\) entre 0 y 3 s y \\(θ(0)=0\\). \n(a) Halla ángulo y arco en 3 s.\n(b) Calcula rapidez, \\(a_t\\),\\(a_n\\) y módulo total en 1 s.",
-      "solution_source": "\\(α=dω/dt=2 rad/s²\\); \\(θ=∫(2+2t)dt=2t+t²\\). En 3 s \\(θ=15 rad\\) y \\(arco=Rθ=7,5 m\\).\n\nEn \\(t=1\\): \\(θ=3 rad\\),\\(ω=4 rad/s\\); \\(rapidez=2 m/s\\),\\(a_t=Rα=1 m/s²\\),\\(a_n=Rω²=8 m/s²\\); |a|=√65=8,06 m/s².\n\n\\(r=0,5(cosθ,sinθ)\\). En \\(t=1\\): \\(e_r=(cos3,sin3),e_t=(−sin3,cos3)\\); \\(v=2e_t m/s\\),\\(a=−8e_r+e_t m/s²\\). \\(a_n\\) crece y las bases giran: a total varía aunque α sea constante.",
+      "parts_count": 2,
+      "statement_source": "Un disco de radio \\(0{,}5\\,\\mathrm{m}\\) gira alrededor de su centro \\(O\\), con el giro antihorario como positivo. Entre \\(0\\) y \\(3\\,\\mathrm{s}\\) su velocidad angular es \\(\\omega(t)=2+2t\\) (en \\(\\mathrm{rad/s}\\)) y \\(\\theta(0)=0\\). Seguimos un punto del borde.\n\n(a) Calcula el ángulo girado y el arco recorrido por el punto en los \\(3\\,\\mathrm{s}\\).\n(b) En \\(t=1\\,\\mathrm{s}\\), calcula la rapidez del punto, la aceleración tangencial \\(a_t\\), la aceleración normal \\(a_n\\) y el módulo de la aceleración total.",
+      "solution_source": "(a) \\(\\alpha=d\\omega/dt=2\\,\\mathrm{rad/s^2}\\) y \\(\\theta=\\int(2+2t)\\,dt=2t+t^2\\). En \\(3\\,\\mathrm{s}\\): \\(\\theta=15{,}0\\,\\mathrm{rad}\\) y arco \\(=R\\theta=7{,}50\\,\\mathrm{m}\\).\n(b) En \\(t=1\\,\\mathrm{s}\\), \\(\\omega=4\\,\\mathrm{rad/s}\\): rapidez \\(=R\\omega=2{,}00\\,\\mathrm{m/s}\\), \\(a_t=R\\alpha=1{,}00\\,\\mathrm{m/s^2}\\), \\(a_n=R\\omega^2=8{,}00\\,\\mathrm{m/s^2}\\) y \\(|\\vec a|=\\sqrt{65}\\simeq8{,}06\\,\\mathrm{m/s^2}\\).\n\nAunque \\(\\alpha\\) es constante, \\(a_n\\) crece con \\(\\omega\\): la aceleración total no es constante.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -907,7 +907,7 @@
       "response_fields": [
         {
           "id": "r0",
-          "label": "Posición de liberación",
+          "label": "Posición al soltarse",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -932,7 +932,7 @@
         },
         {
           "id": "v0",
-          "label": "Velocidad de liberación",
+          "label": "Velocidad al soltarse",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -957,7 +957,7 @@
         },
         {
           "id": "an",
-          "label": "Centrípeta antes de salir",
+          "label": "Aceleración normal justo antes de soltarse",
           "type": "numeric",
           "required": true,
           "expected_value": 16,
@@ -981,7 +981,7 @@
         },
         {
           "id": "range",
-          "label": "Alcance",
+          "label": "Coordenada \\(x\\) del impacto",
           "type": "numeric",
           "required": true,
           "expected_value": 4.424010108874648,
@@ -989,11 +989,11 @@
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "c"
+          "part": "b"
         },
         {
           "id": "vf",
-          "label": "Velocidad de impacto",
+          "label": "Velocidad al llegar al suelo",
           "type": "vector",
           "response_kind": "vector",
           "required": true,
@@ -1014,11 +1014,11 @@
           "unit": "m/s",
           "tolerance": 0.1,
           "rounding": "Tres cifras significativas.",
-          "part": "a"
+          "part": "c"
         },
         {
           "id": "angle",
-          "label": "Ángulo de impacto bajo +x",
+          "label": "Ángulo por debajo de \\(+x\\)",
           "type": "numeric",
           "required": true,
           "expected_value": 69.76270827046426,
@@ -1026,7 +1026,7 @@
           "tolerance": 0.1,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
-          "part": "d"
+          "part": "c"
         }
       ],
       "assets": [
@@ -1056,9 +1056,9 @@
         "Usar la altura del centro como altura de suelta",
         "Mantener aceleración centrípeta después de salir de la guía"
       ],
-      "parts_count": 4,
-      "statement_source": "En el plano vertical, centro \\(O=(0,5) m\\), suelo \\(y=0,\\) \\(+x\\) derecha,\\(+y\\) arriba. Una pequeña bola recorre una guía circular de radio 1 m a rapidez 4 m/s en sentido horario. Se libera en el punto más alto en \\(t=0\\). Después no hay aire y \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). \n(a) Calcula posición y velocidad de liberación y \\(a_n\\) justo antes.\n(b) Modela el vuelo y halla impacto.\n(c) Da velocidad y ángulo final.\n(d) Completa: Ángulo de impacto bajo +x.",
-      "solution_source": "La parte alta está en \\(\\vec r_0=(0;6)\\,\\mathrm{m}\\). La tangente horaria allí apunta a \\(+x\\): \\(\\vec v_0=(4;0)\\,\\mathrm{m/s}\\); \\(a_n=4^2/1=16\\,\\mathrm{m/s^2}\\) hacia el centro, vertical hacia abajo.\n\nEn vuelo: \\(x=4t\\), \\(y=6-4{,}905t^2\\); llega al suelo en \\(t=\\sqrt{6/4{,}905}=1{,}106\\,\\mathrm{s}\\), con \\(x=4{,}42\\,\\mathrm{m}\\).\n\n\\(\\vec v_f=(4;-9{,}81\\cdot1{,}106)=(4;−10{,}85)\\,\\mathrm{m/s}\\); ángulo \\(\\approx69{,}8^\\circ\\) bajo \\(+x\\). Antes, la aceleración normal era \\(16\\,\\mathrm{m/s^2}\\); después es \\((0;-9{,}81)\\,\\mathrm{m/s^2}\\). La velocidad es continua al soltarse; la aceleración no.",
+      "parts_count": 3,
+      "statement_source": "En un plano vertical, una pequeña bola recorre una guía circular de radio \\(1\\,\\mathrm{m}\\) y centro \\(O=(0;5)\\,\\mathrm{m}\\), a \\(4\\,\\mathrm{m/s}\\) y en sentido horario. El suelo es \\(y=0\\), con \\(+x\\) hacia la derecha y \\(+y\\) hacia arriba. En \\(t=0\\) la bola se suelta en el punto más alto de la guía. A partir de ahí desprecia el aire y usa \\(a_y=-g=-9{,}81\\,\\mathrm{m/s^2}\\).\n\n(a) Calcula la posición y la velocidad de la bola al soltarse y su aceleración normal justo antes.\n(b) Calcula el tiempo de vuelo y la coordenada \\(x\\) del punto donde llega al suelo.\n(c) Calcula el vector velocidad al llegar al suelo y el ángulo que forma por debajo de \\(+x\\).",
+      "solution_source": "(a) El punto más alto es \\(\\vec r_0=(0;6)\\,\\mathrm{m}\\). Allí la tangente horaria apunta a \\(+x\\): \\(\\vec v_0=(4;0)\\,\\mathrm{m/s}\\). Justo antes, \\(a_n=v^2/R=16{,}0\\,\\mathrm{m/s^2}\\), vertical hacia abajo (hacia el centro).\n(b) En vuelo, \\(x=4t\\) e \\(y=6-4{,}905t^2\\): llega al suelo en \\(t=\\sqrt{6/4{,}905}=1{,}11\\,\\mathrm{s}\\), en \\(x=4{,}42\\,\\mathrm{m}\\).\n(c) \\(\\vec v_f=(4;-9{,}81\\cdot1{,}106)=(4;-10{,}8)\\,\\mathrm{m/s}\\), a \\(69{,}8^\\circ\\) por debajo de \\(+x\\).\n\nAl soltarse, la velocidad es continua; la aceleración no: pasa de \\(16\\,\\mathrm{m/s^2}\\) a \\(9{,}81\\,\\mathrm{m/s^2}\\).",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     }
   ]
