@@ -8,7 +8,7 @@ remain at Flask's conventional locations. There are no new blueprints, frontend
 build tools or application packages.
 
 `database.py` configures the existing Flask-SQLAlchemy extension. `models.py`
-defines activity, quiz attempt, exercise attempt, response and latest-study-state tables. `services/`
+defines user account, activity, quiz attempt, exercise attempt, response and latest-study-state tables. `services/`
 contains activity and exercise logic. Local persistence remains
 `instance/web_clases_rocedg.sqlite`; production can use `DATABASE_URL`.
 
@@ -20,7 +20,7 @@ contains activity and exercise logic. Local persistence remains
 | Lesson preparation | `content/lessons/intake/` (processing/unchecked stages) | Sources are not served |
 | Reference topics | `content/lessons/topics.json` | Existing `static/pdfs/topics_y1/`, `topics_y2/` |
 | Summaries and formula sheet | `content/lessons/summaries.json` | Existing `static/pdfs/resumenes/`, `formulario.pdf` |
-| Guided exercises | `content/exercises/<course>/<topic>/exercises_<topic>.json` | `static/exercises/<course>/<topic>/` |
+| Guided exercises | `content/exercises/1bach/<topic>/_topic.json` + ordered block JSON files | `static/exercises/<course>/<topic>/` |
 | Exercise LaTeX templates | `content/exercises/latex/` | Generated PDFs under `static/exercises/` |
 | Exercise summary index | `content/exercises/index.json` (generated) | Loaded by Flask, not served statically |
 | Quizzes | `content/exercises/quizzes.json` | Existing `static/pdfs/quizzes/` |
