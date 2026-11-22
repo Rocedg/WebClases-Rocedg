@@ -8,6 +8,12 @@ from services.account_service import ensure_seed_users
 from werkzeug.security import generate_password_hash
 
 
+TEST_ACCOUNTS = {
+    "Guest": ["studentpass", "student"],
+    "Edgar": [" ", "teacher"],
+}
+
+
 def login(client, username="Sandro", password="fisica2027"):
     return client.post(
         "/login",
@@ -39,12 +45,12 @@ def test_seeded_users_have_hashed_passwords_and_roles():
         assert edgar.role == app_module.ROLE_TEACHER
 
 
-def test_app_seed_only_creates_test_accounts_and_preserves_existing_users():
+def test_explicit_test_seed_creates_test_accounts_and_preserves_existing_users():
     with flask_app.app_context():
         db.session.query(User).delete()
         db.session.commit()
 
-        ensure_seed_users(app_module.USERS)
+        ensure_seed_users(TEST_ACCOUNTS)
         assert {
             user.username for user in db.session.scalars(db.select(User))
         } == {"Guest", "Edgar"}
@@ -60,7 +66,7 @@ def test_app_seed_only_creates_test_accounts_and_preserves_existing_users():
         )
         db.session.commit()
 
-        ensure_seed_users(app_module.USERS)
+        ensure_seed_users(TEST_ACCOUNTS)
         preserved_user = db.session.scalar(
             db.select(User).where(User.username == "Sandro")
         )
@@ -143,7 +149,7 @@ def test_password_change_replaces_old_password_and_survives_seeding():
         user = db.session.scalar(db.select(User).where(User.username == "Sandro"))
         assert user.password_hash != "new-secure-password"
         assert isinstance(user.password_changed_at, datetime)
-        ensure_seed_users(app_module.USERS)
+        ensure_seed_users(TEST_ACCOUNTS)
 
     client.get("/logout")
     assert login(client, password="fisica2027").status_code == 200

@@ -7,13 +7,16 @@ import pytest
 # Flask-SQLAlchemy reads the URI when app.py initializes the extension.
 TEST_DATABASE_DIR = Path(tempfile.mkdtemp(prefix="web-clases-test-db-"))
 os.environ["DATABASE_URL"] = f"sqlite:///{(TEST_DATABASE_DIR / 'test.sqlite').as_posix()}"
+os.environ["SECRET_KEY"] = "test-only-secret-key"
 
-from app import USERS, app as flask_app
+from app import app as flask_app
 from database import db
 from services.account_service import ensure_seed_users
 
 
 TEST_USERS = {
+    "Guest": ["studentpass", "student"],
+    "Edgar": [" ", "teacher"],
     "Paul": ["fisica2026", "student"],
     "Sandro": ["fisica2027", "student"],
 }
@@ -31,7 +34,6 @@ def reset_activity_database():
         db.session.remove()
         db.drop_all()
         db.create_all()
-        ensure_seed_users(USERS)
         ensure_seed_users(TEST_USERS)
 
     yield

@@ -44,8 +44,8 @@ Todas las tablas se agrupan por `username`:
 ## Out of scope
 
 - Editar o borrar datos de alumnos desde el panel.
-- Cambiar el sistema de login (sigue usando la tabla `users`; `USERS` solo
-  contiene las cuentas de prueba que se siembran al iniciar).
+- Cambiar el sistema de login (sigue usando la tabla `users`; el arranque normal
+  no siembra cuentas).
 - Nuevas tablas o migraciones, salvo que una spec posterior lo apruebe.
 
 ## Implementation notes
@@ -54,10 +54,9 @@ Todas las tablas se agrupan por `username`:
   datos se borran en cada deploy o reinicio, así que el panel mostraría poco. Hay
   que configurar antes una Postgres con `DATABASE_URL`.
 - Excluir de las estadísticas las cuentas de prueba (`Guest`) y al propio profesor.
-- **Antes de publicar el panel, cambiar la contraseña de `Edgar`.** Hoy está
-  escrita en `app.py` (un espacio) y el repositorio es público, así que
-  cualquiera podría entrar como profesor y ver los datos de los alumnos. Lo
-  mínimo es leerla de una variable de entorno (por ejemplo `EDGAR_PASSWORD`).
+- **Las cuentas de prueba no existen en producción.** No hay una contraseña
+  pública de profesor en el código; cada cuenta real debe crearse en la base
+  configurada con una contraseña propia.
 
 ## Validation checklist
 

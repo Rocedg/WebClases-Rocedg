@@ -78,10 +78,26 @@ Usa python.exe -m pip y python.exe -m pytest: así los comandos no dependen de
 lanzadores del entorno virtual creados antes del cambio de nombre de carpeta.
 La base local sigue en instance/web_clases_rocedg.sqlite, fuera de Git.
 
-La cuenta de demostración existente es Guest con contraseña studentpass.
-El código solo siembra las cuentas de prueba Guest y Edgar; los alumnos reales
-se crean desde la página Cuentas del profesor. La autenticación consulta la
-tabla de usuarios.
+El arranque normal no crea cuentas. Los alumnos reales se crean desde la página
+Cuentas del profesor. La autenticación consulta la tabla de usuarios.
+
+Para crear una cuenta local en SQLite sin guardar su contraseña en el código:
+
+```text
+.\.venv\Scripts\python.exe -m flask --app app create-local-account
+```
+
+When invoking a Flask CLI command, set `SECRET_KEY` in the current PowerShell
+session if you do not already have it configured:
+
+```text
+$env:SECRET_KEY = [guid]::NewGuid().ToString("N")
+.\.venv\Scripts\python.exe -m flask --app app create-local-account
+```
+
+El comando pregunta el nombre de usuario y la contraseña de forma interactiva.
+Las cuentas usadas por pytest viven únicamente en tests/conftest.py y se crean
+en una base temporal desechable.
 
 ## Contenido y validación
 
@@ -123,10 +139,11 @@ Instala requirements.txt y conserva este comando:
 gunicorn app:app
 ```
 
-En producción se usa Neon Postgres mediante DATABASE_URL y debes configurar SECRET_KEY.
-Se conserva
-el diseño actual de SQLAlchemy; esta limpieza no añade migraciones ni cambia
-tablas. LaTeX y las herramientas de revisión no son necesarios en Render.
+En producción se usa Neon Postgres mediante DATABASE_URL y es obligatorio
+configurar SECRET_KEY. Sin esta variable, Flask no puede iniciar.
+Se conserva el diseño actual de SQLAlchemy; esta limpieza no añade migraciones
+ni cambia tablas. LaTeX y las herramientas de revisión no son necesarios en
+Render.
 
 ## Documentación
 

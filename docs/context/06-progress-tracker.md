@@ -52,7 +52,7 @@ Repository cleanup on `chore/repository-cleanup`, based on safety checkpoint `5d
 2. Remove generated LaTeX `.aux`/`.out` review artifacts if they appear in the working tree before commit.
 3. Review the T0 v0.3 PDF and embedded lesson viewer if not already approved.
 4. Later: add database migrations before relying on production schema changes.
-5. Later: replace hardcoded users with a real user table.
+5. Later: add migrations if production schema evolution requires them.
 6. Later: build teacher review for submitted exercise responses.
 7. Later: replace rough generated exercise diagrams with a shared SVG diagram system.
 
@@ -83,7 +83,7 @@ Repository cleanup on `chore/repository-cleanup`, based on safety checkpoint `5d
 - Exact PDF page tracking requires a controlled PDF viewer later.
 - Direct static file downloads are not trackable unless users enter through a Flask route.
 - The current tracked resource route records open/download clicks before serving or redirecting resources.
-- Current hardcoded users are associated by username only.
+- Authentication uses the `users` table; normal startup no longer seeds accounts.
 - Tracked PDF routes now serve local PDFs directly with explicit `Content-Disposition` and no-store cache headers.
 - The T0 lesson viewer records `lesson_viewed` on `/lesson/T0-introduccion`, embeds the static PDF to avoid double-counting, and tracks downloads through `/resource/lesson_pdf/.../download`.
 
@@ -97,12 +97,13 @@ Repository cleanup on `chore/repository-cleanup`, based on safety checkpoint `5d
 - Letting old design reference locations or placeholder branding leak into review.
 
 ## Update Log
+- 2026-11-21: Eliminado el sembrado automático de cuentas desde el arranque de producción y `init-db`. Las cuentas de pruebas están confinadas al fixture temporal de pytest; añadido `create-local-account` para SQLite local con contraseña interactiva. `SECRET_KEY` es obligatorio al importar la aplicación fuera de `python app.py`, que usa una clave temporal solo para ejecución directa local.
 - 2026-10-12: Añadido el panel de profesor en modo lectura con resumen de alumnos, seguimiento individual y consulta de respuestas de intentos sin relajar la propiedad de los intentos estudiantiles.
-- 2026-10-12: La lista de seed de `app.py` queda limitada a las cuentas de prueba `Guest` y `Edgar`. Los alumnos reales se conservan en `users` y se crean desde `/teacher/accounts`; los tests aíslan sus cuentas auxiliares sin cambiar el comportamiento aditivo del seed ni la autenticación basada en la base de datos.
+- 2026-10-12: La lista de seed de `app.py` quedó limitada a las cuentas de prueba `Guest` y `Edgar`.
 
 - 2026-10-12: Añadida la gestión de cuentas de alumnos para el profesor: creación con contraseña inicial, restablecimiento, desactivación/reactivación, validación de usuarios y navegación protegida por `teacher_required`.
 
-- 2026-10-12: Añadida la tabla `users` como fuente única de autenticación, con contraseñas hash, sembrado inicial idempotente por `USERS` y cambio de contraseña en `/account/password`. La navegación enlaza la cuenta y se añadieron pruebas de roles, validación de contraseñas y persistencia del cambio.
+- 2026-10-12: Añadida la tabla `users` como fuente única de autenticación, con contraseñas hash y cambio de contraseña en `/account/password`. La navegación enlaza la cuenta y se añadieron pruebas de roles, validación de contraseñas y persistencia del cambio.
 
 
 - 2026-10-12: Fijado SQLAlchemy en `2.0.52` y normalizadas las URLs `postgres://` y `postgresql://` a `postgresql+psycopg2://`, manteniendo intactas las URLs con driver explícito y SQLite. Añadida cobertura unitaria para las cuatro formas de URL.

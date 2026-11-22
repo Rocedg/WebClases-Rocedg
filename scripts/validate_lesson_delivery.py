@@ -48,10 +48,14 @@ for lesson in lessons:
 
 with tempfile.TemporaryDirectory(prefix='rocedg-lesson-smoke-') as folder:
     os.environ['DATABASE_URL']='sqlite:///'+(Path(folder)/'test.sqlite').as_posix()
+    os.environ['SECRET_KEY']='lesson-validation-test-secret'
     from app import app
     from database import db
+    from services.account_service import ensure_seed_users
     app.config.update(TESTING=True)
-    with app.app_context(): db.create_all()
+    with app.app_context():
+        db.create_all()
+        ensure_seed_users({'Guest': ['studentpass', 'student']})
     client=app.test_client()
     assert client.get('/').status_code==200
     assert client.get('/lesson/'+lessons[0]['id']).status_code==302

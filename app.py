@@ -2,11 +2,13 @@ from datetime import datetime
 from functools import wraps
 import json
 import os
+import secrets
 from pathlib import Path
 
 import click
-from sqlalchemy import inspect, text
+from sqlalchemy import func, inspect, text
 from flask import Flask, flash, jsonify, redirect, render_template, request, send_file, session, url_for
+from werkzeug.security import generate_password_hash
 
 from database import db, init_app as init_database
 from models import (
@@ -58,7 +60,6 @@ from services.account_service import (
     USER_NOT_FOUND,
     authenticate_user,
     create_student,
-    ensure_seed_users,
     reset_student_password,
     set_user_active,
     update_password,
@@ -72,7 +73,12 @@ app.jinja_env.globals.update(
     response_format_notes=response_format_notes,
     response_placeholder=response_placeholder,
 )
-app.secret_key = os.environ.get('SECRET_KEY', 'dev-secret-key')
+secret_key = os.environ.get("SECRET_KEY")
+if not secret_key and __name__ == "__main__":
+    secret_key = secrets.token_hex(32)
+if not secret_key:
+    raise RuntimeError("SECRET_KEY must be configured before importing the application")
+app.secret_key = secret_key
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.config["SESSION_COOKIE_SAMESITE"] = "Lax"
 init_database(app)
@@ -92,12 +98,6 @@ ACCOUNT_ERROR_MESSAGES = {
     USERNAME_INVALID: 'El usuario debe tener entre 3 y 30 caracteres y solo puede usar letras, números, punto, guion y guion bajo.',
     USERNAME_TAKEN: 'Ese usuario ya existe, aunque cambie mayúsculas o minúsculas.',
     USER_NOT_FOUND: 'No se ha encontrado esa cuenta.',
-}
-
-# Test accounts only; real students are created from /teacher/accounts.
-USERS = {
-    'Guest': ['studentpass', ROLE_STUDENT],
-    'Edgar': [' ', ROLE_TEACHER],
 }
 
 NAV_ITEMS = [
@@ -598,7 +598,6 @@ with app.app_context():
     try:
         db.create_all()
         ensure_database_schema()
-        ensure_seed_users(USERS)
     except Exception:
         db.session.rollback()
         app.logger.exception('Database schema setup failed at startup')
@@ -696,13 +695,52 @@ def init_db_command():
     with app.app_context():
         db.create_all()
         ensure_database_schema()
-        ensure_seed_users(USERS)
     database_uri = app.config['SQLALCHEMY_DATABASE_URI']
     if database_uri.startswith('sqlite:///') and database_uri.endswith('web_clases_rocedg.sqlite'):
         database_location = 'instance/web_clases_rocedg.sqlite'
     else:
         database_location = 'configured DATABASE_URL'
     click.echo(f"Database tables created at {database_location}")
+
+
+@app.cli.command('create-local-account')
+@click.option('--username', prompt=True)
+@click.password_option(confirmation_prompt=True)
+@click.option(
+    '--role',
+    type=click.Choice([ROLE_STUDENT, ROLE_TEACHER], case_sensitive=False),
+    default=ROLE_STUDENT,
+    show_default=True,
+)
+def create_local_account_command(username, password, role):
+    """Create or update an account in the local SQLite database."""
+    database_uri = app.config['SQLALCHEMY_DATABASE_URI']
+    if not database_uri.startswith('sqlite:///'):
+        raise click.ClickException("This command is only available for a local SQLite database.")
+
+    error_code = validate_student_credentials(username, password, password)
+    if error_code:
+        raise click.ClickException(ACCOUNT_ERROR_MESSAGES[error_code])
+
+    with app.app_context():
+        user = db.session.scalar(
+            db.select(User).where(func.lower(User.username) == username.lower())
+        )
+        if user is None:
+            user = User(
+                username=username,
+                password_hash=generate_password_hash(password),
+                role=role.lower(),
+            )
+            db.session.add(user)
+        else:
+            user.username = username
+            user.password_hash = generate_password_hash(password)
+            user.role = role.lower()
+            user.is_active = True
+        db.session.commit()
+
+    click.echo(f"{role.lower()} account '{username}' created or updated locally.")
 
 
 @app.cli.command('regrade-exercise-attempts')
