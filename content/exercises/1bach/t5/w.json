@@ -272,9 +272,9 @@
           "label": "W P",
           "type": "numeric",
           "required": true,
-          "expected_value": -58.8,
+          "expected_value": -58.9,
           "unit": "J",
-          "tolerance": 0.294,
+          "tolerance": 0.2945,
           "significant_figures": 3,
           "part": "a",
           "rounding": "Tres cifras significativas; conservar precisión intermedia."
@@ -284,9 +284,9 @@
           "label": "W ap",
           "type": "numeric",
           "required": true,
-          "expected_value": 58.8,
+          "expected_value": 58.9,
           "unit": "J",
-          "tolerance": 0.294,
+          "tolerance": 0.2945,
           "significant_figures": 3,
           "part": "b",
           "rounding": "Tres cifras significativas; conservar precisión intermedia."
@@ -335,8 +335,8 @@
         "ignorar la representación específica de la familia w"
       ],
       "parts_count": 3,
-      "statement_source": "Elevar \\(3 kg\\) verticalmente \\(2 m\\) a velocidad constante.\n\n(a) Calcula: W P.\n(b) Calcula: W ap.\n(c) Calcula: Neto.",
-      "solution_source": "\\(W_P=-58,8 J\\); \\(W_ap=+58,8 J\\); neto \\(0\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "statement_source": "Elevar \\(3 kg\\) verticalmente \\(2 m\\) a velocidad constante. Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: W P.\n(b) Calcula: W ap.\n(c) Calcula: Neto.",
+      "solution_source": "\\(W_P=-58,9 J\\); \\(W_ap=+58,9 J\\); neto \\(0\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
     },
     {
@@ -832,7 +832,7 @@
         "ignorar la representación específica de la familia w"
       ],
       "parts_count": 1,
-      "statement_source": "Comparar dos caminos bajo fuerza uniforme gravitatoria entre mismas alturas.\n\n(a) Selecciona: Conclusión física.",
+      "statement_source": "Comparar dos caminos bajo fuerza uniforme gravitatoria entre mismas alturas. Usa \\(g=9,81 m/s²\\).\n\n(a) Selecciona: Conclusión física.",
       "solution_source": "Selección: mismo trabajo; valor \\(-mg\\Delta h\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
     },

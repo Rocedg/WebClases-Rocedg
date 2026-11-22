@@ -122,7 +122,7 @@
         "ignorar la representación específica de la familia f"
       ],
       "parts_count": 1,
-      "statement_source": "Lámpara colgada de un cable vertical, \\(m=3 kg\\), \\(g=9,8\\).\n\n(a) Calcula: Tensión.",
+      "statement_source": "Lámpara colgada de un cable vertical, \\(m=3 kg\\), \\(g=9,81 m/s²\\).\n\n(a) Calcula: Tensión.",
       "solution_source": "\\(T=29,4 N\\); par de reacción de la tensión: lámpara sobre cable.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
     },
@@ -209,9 +209,9 @@
           "label": "Normal",
           "type": "numeric",
           "required": true,
-          "expected_value": 588.0,
+          "expected_value": 589.0,
           "unit": "N",
-          "tolerance": 2.94,
+          "tolerance": 2.945,
           "significant_figures": 3,
           "part": "a",
           "rounding": "Tres cifras significativas; conservar precisión intermedia."
@@ -248,8 +248,8 @@
         "ignorar la representación específica de la familia f"
       ],
       "parts_count": 1,
-      "statement_source": "Ascensor que sube a velocidad constante con persona de \\(60 kg\\).\n\n(a) Calcula: Normal.",
-      "solution_source": "\\(N=588 N\\); selección: aceleración nula aunque se mueve.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "statement_source": "Ascensor que sube a velocidad constante con persona de \\(60 kg\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Normal.",
+      "solution_source": "\\(N=589 N\\); selección: aceleración nula aunque se mueve.\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
     },
     {
@@ -272,9 +272,9 @@
           "label": "Normal",
           "type": "numeric",
           "required": true,
-          "expected_value": 678.0,
+          "expected_value": 679.0,
           "unit": "N",
-          "tolerance": 3.39,
+          "tolerance": 3.395,
           "significant_figures": 3,
           "part": "a",
           "rounding": "Tres cifras significativas; conservar precisión intermedia."
@@ -332,8 +332,8 @@
         "ignorar la representación específica de la familia f"
       ],
       "parts_count": 2,
-      "statement_source": "Ascensor acelera hacia arriba a \\(1,5 m/s²\\), persona \\(60 kg\\).\n\n(a) Calcula: Normal.\n(b) Calcula: Vector.",
-      "solution_source": "\\(N=678 N\\); vector resultante \\((0;90) N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "statement_source": "Ascensor acelera hacia arriba a \\(1,5 m/s²\\), persona \\(60 kg\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Normal.\n(b) Calcula: Vector.",
+      "solution_source": "\\(N=679 N\\); vector resultante \\((0;90) N\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
     },
     {
@@ -356,9 +356,9 @@
           "label": "Normal",
           "type": "numeric",
           "required": true,
-          "expected_value": 468.0,
+          "expected_value": 469.0,
           "unit": "N",
-          "tolerance": 2.34,
+          "tolerance": 2.345,
           "significant_figures": 3,
           "part": "a",
           "rounding": "Tres cifras significativas; conservar precisión intermedia."
@@ -395,8 +395,8 @@
         "ignorar la representación específica de la familia f"
       ],
       "parts_count": 1,
-      "statement_source": "Misma persona con aceleración descendente \\(2 m/s²\\).\n\n(a) Calcula: Normal.",
-      "solution_source": "\\(N=468 N\\); selección \\(N<P\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "statement_source": "Misma persona con aceleración descendente \\(2 m/s²\\). Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Normal.",
+      "solution_source": "\\(N=469 N\\); selección \\(N<P\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
     },
     {
@@ -431,9 +431,9 @@
           "label": "Peso: paralela , normal",
           "type": "numeric",
           "required": true,
-          "expected_value": 42.4,
+          "expected_value": 42.5,
           "unit": "N",
-          "tolerance": 0.212,
+          "tolerance": 0.2125,
           "significant_figures": 3,
           "part": "b",
           "rounding": "Tres cifras significativas; conservar precisión intermedia."
@@ -482,8 +482,8 @@
         "ignorar la representación específica de la familia f"
       ],
       "parts_count": 3,
-      "statement_source": "Bloque sobre plano de \\(30°\\), sin rozamiento.\n\n(a) Calcula: Componentes del peso: paralela.\n(b) Calcula: Peso: paralela , normal.\n(c) Calcula: m.",
-      "solution_source": "Componentes del peso: paralela \\(24,5 N\\), normal \\(42,4 N\\) para \\(m=5 kg\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "statement_source": "Bloque sobre plano de \\(30°\\), sin rozamiento. Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Componentes del peso: paralela.\n(b) Calcula: Peso: paralela , normal.\n(c) Calcula: m.",
+      "solution_source": "Componentes del peso: paralela \\(24,5 N\\), normal \\(42,5 N\\) para \\(m=5 kg\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
     },
     {
@@ -645,10 +645,10 @@
           "required": true,
           "expected_components": [
             0.0,
-            -9.8
+            -9.81
           ],
           "accepted_forms": [
-            "(0; -9,8)"
+            "(0; -9,81)"
           ],
           "component_order": [
             "x",
@@ -690,8 +690,8 @@
         "ignorar la representación específica de la familia f"
       ],
       "parts_count": 1,
-      "statement_source": "Pelota ascendiendo tras abandonar la mano, sin aire.\n\n(a) Calcula: Vector.",
-      "solution_source": "Selección: solo peso; aceleración \\((0;-9,8) m/s²\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "statement_source": "Pelota ascendiendo tras abandonar la mano, sin aire. Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Vector.",
+      "solution_source": "Selección: solo peso; aceleración \\((0;-9,81) m/s²\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t3.md; elaboración propia y revisión matemática."
     },
     {

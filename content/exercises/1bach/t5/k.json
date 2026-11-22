@@ -471,9 +471,9 @@
           "label": "Potencia",
           "type": "numeric",
           "required": true,
-          "expected_value": 9.8,
+          "expected_value": 9.81,
           "unit": "kW",
-          "tolerance": 0.049,
+          "tolerance": 0.04905,
           "significant_figures": 3,
           "part": "a",
           "rounding": "Tres cifras significativas; conservar precisión intermedia."
@@ -510,8 +510,8 @@
         "ignorar la representación específica de la familia k"
       ],
       "parts_count": 1,
-      "statement_source": "Elevador \\(500 kg\\) sube a \\(2 m/s\\) constante.\n\n(a) Calcula: Potencia.",
-      "solution_source": "Potencia \\(9,8 kW\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
+      "statement_source": "Elevador \\(500 kg\\) sube a \\(2 m/s\\) constante. Usa \\(g=9,81 m/s²\\).\n\n(a) Calcula: Potencia.",
+      "solution_source": "Potencia \\(9,81 kW\\).\n\nLa comprobación debe respetar signos, unidades, sistema elegido y coherencia con el diagrama.",
       "solution_reference": "referencia-ejercicios-t5.md; elaboración propia y revisión matemática."
     },
     {

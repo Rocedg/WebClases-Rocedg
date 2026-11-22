@@ -103,7 +103,7 @@
           "label": "Componente \\(P_x\\)",
           "required": true,
           "type": "numeric",
-          "expected_value": -24.8,
+          "expected_value": -24.9,
           "tolerance": 0.1,
           "significant_figures": 3,
           "prompt": "Da el resultado con 3 cifras significativas.",
@@ -145,8 +145,8 @@
         "intercambiar seno/coseno",
         "dibujar el peso perpendicular a la rampa"
       ],
-      "statement_source": "Un bloque de \\(6,00\\,\\mathrm{kg}\\) reposa sobre un plano inclinado \\(25,0^\\circ\\). Toma \\(+x\\) hacia arriba por la rampa y \\(+y\\) normal hacia fuera. Usa \\(g=9,80\\,\\mathrm{m/s^2}\\).\n\n(a) Selecciona la dirección del peso en estos ejes.\n\n(b) Calcula la componente \\(P_x\\) del peso.\n\n(c) Calcula el módulo de la normal si no hay otras fuerzas perpendiculares al plano.",
-      "solution_source": "El peso es vertical hacia abajo, con ambas componentes negativas en los ejes locales.\n\n\\[P_x=-mg\\sin25^\\circ=-24,8\\,\\mathrm{N}\\]\n\nComo \\(P_y=-mg\\cos25^\\circ\\), el equilibrio perpendicular da \\(N=-P_y=53,3\\,\\mathrm{N}\\)."
+      "statement_source": "Un bloque de \\(6,00\\,\\mathrm{kg}\\) reposa sobre un plano inclinado \\(25,0^\\circ\\). Toma \\(+x\\) hacia arriba por la rampa y \\(+y\\) normal hacia fuera. Usa \\(g=9,81\\,\\mathrm{m/s^2}\\).\n\n(a) Selecciona la dirección del peso en estos ejes.\n\n(b) Calcula la componente \\(P_x\\) del peso.\n\n(c) Calcula el módulo de la normal si no hay otras fuerzas perpendiculares al plano.",
+      "solution_source": "El peso es vertical hacia abajo, con ambas componentes negativas en los ejes locales.\n\n\\[P_x=-mg\\sin25^\\circ=-24,9\\,\\mathrm{N}\\]\n\nComo \\(P_y=-mg\\cos25^\\circ\\), el equilibrio perpendicular da \\(N=-P_y=53,3\\,\\mathrm{N}\\)."
     },
     {
       "id": "t0_v_019",

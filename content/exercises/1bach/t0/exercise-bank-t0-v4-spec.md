@@ -103,11 +103,11 @@ Reglas comunes:
 - **ID:** `t0_u_005`
 - **Dificultad / tiempo:** 3 / 8 min
 - **Tipo:** `single_choice_plus_text`
-- **Enunciado:** «Se propone modelar el periodo $T$ de un péndulo usando su longitud $L$ y la aceleración gravitatoria $g$. ¿Cuál de estas expresiones puede ser correcta por dimensiones? A) $T=2\pi L/g$; B) $T=2\pi\sqrt{L/g}$; C) $T=2\pi\sqrt{g/L}$; D) $T=2\pi Lg$. Justifica dimensionalmente y calcula $T$ para $L=0,900$ m y $g=9,80$ m·s⁻².»
+- **Enunciado:** «Se propone modelar el periodo $T$ de un péndulo usando su longitud $L$ y la aceleración gravitatoria $g$. ¿Cuál de estas expresiones puede ser correcta por dimensiones? A) $T=2\pi L/g$; B) $T=2\pi\sqrt{L/g}$; C) $T=2\pi\sqrt{g/L}$; D) $T=2\pi Lg$. Justifica dimensionalmente y calcula $T$ para $L=0,900$ m y $g=9,81$ m·s⁻².»
 - **Campos:** `choice = B`; `justification` texto corto obligatorio; `period = 1.90` s (tol. 0,01; 3 cifras).
 - **Pista 1:** $[g]=LT^{-2}$; calcula la dimensión de $L/g$.
 - **Pista 2:** $L/g$ tiene dimensión $T^2$.
-- **Solución:** Solo B produce tiempo: $[\sqrt{L/g}]=\sqrt{L/(LT^{-2})}=T$. $T=2\pi\sqrt{0,90/9,8}=1,90$ s.
+- **Solución:** Solo B produce tiempo: $[\sqrt{L/g}]=\sqrt{L/(LT^{-2})}=T$. $T=2\pi\sqrt{0,900/9,81}=1,90$ s.
 - **Errores a detectar:** elegir por recordar la fórmula sin justificar; tratar $2\pi$ como dimensional; invertir $L/g$.
 
 ## T0-U-006 — Parámetros de un decaimiento exponencial
@@ -211,11 +211,11 @@ Reglas comunes:
 - **ID:** `t0_u_014`
 - **Dificultad / tiempo:** 4 / 12 min
 - **Tipo:** `numeric_multi`
-- **Enunciado:** «En un punto de una corriente de agua, $P=120,0$ kPa, $\rho=1000$ kg·m⁻³, $h=2,50$ m y $v=3,00$ m·s⁻¹. Con $g=9,80$ m·s⁻², usa $C=P+\rho gh+\tfrac12\rho v^2$. a) Demuestra que los tres términos tienen unidades de presión. b) Calcula cada contribución y $C$. c) Indica cuál domina numéricamente.»
-- **Campos:** `pressure_term = 120000` Pa (tol. 50); `height_term = 24500` Pa (tol. 30); `kinetic_term = 4500` Pa (tol. 10); `C = 149000` Pa (tol. 100; 3 cifras); `dominant = pressure`.
+- **Enunciado:** «En un punto de una corriente de agua, $P=120,0$ kPa, $\rho=1000$ kg·m⁻³, $h=2,50$ m y $v=3,00$ m·s⁻¹. Con $g=9,81$ m·s⁻², usa $C=P+\rho gh+\tfrac12\rho v^2$. a) Demuestra que los tres términos tienen unidades de presión. b) Calcula cada contribución y $C$. c) Indica cuál domina numéricamente.»
+- **Campos:** `pressure_term = 120000` Pa (tol. 50); `height_term = 24525` Pa (tol. 30); `kinetic_term = 4500` Pa (tol. 10); `C = 149025` Pa (tol. 100; 3 cifras); `dominant = pressure`.
 - **Pista 1:** Convierte kPa a Pa y reduce $\rho gh$ a unidades básicas.
 - **Pista 2:** Compara los tres números antes de sumarlos.
-- **Solución:** $P=120000$ Pa, $\rho gh=24500$ Pa y $\tfrac12\rho v^2=4500$ Pa. Los dos últimos reducen a kg·m⁻¹·s⁻² = Pa. $C=149000$ Pa = 149 kPa. Domina el término de presión estática.
+- **Solución:** $P=120000$ Pa, $\rho gh=24525\approx24500$ Pa y $\tfrac12\rho v^2=4500$ Pa. Los dos últimos reducen a kg·m⁻¹·s⁻² = Pa. $C=149025$ Pa $\approx$ 149 kPa. Domina el término de presión estática.
 - **Errores a detectar:** sumar 120 como si fueran Pa; omitir $1/2$; afirmar compatibilidad sin reducir unidades.
 
 ## T0-U-015 — Oscilación amortiguada y tiempo característico
@@ -403,10 +403,10 @@ Reglas comunes:
 ## T0-V-018 — Peso en un plano inclinado
 
 - **ID:** `t0_v_018`; **dificultad / tiempo:** 4 / 12 min; **tipo:** `written_upload_plus_numeric`.
-- **Enunciado:** «Un bloque de 6,00 kg reposa sobre un plano de $25,0^\circ$. Toma $+x$ hacia arriba por la rampa y $+y$ normal hacia fuera. a) Dibuja el peso y los ejes. b) Calcula sus componentes con $g=9,80$ m·s⁻². c) Indica qué componente equilibra la normal si no hay otras fuerzas perpendiculares.»
-- **Campos:** dibujo; `Px=-24.8 N`, `Py=-53.3 N` (tol. 0,1; 3 cifras); `normal=53.3 N`.
+- **Enunciado:** «Un bloque de 6,00 kg reposa sobre un plano de $25,0^\circ$. Toma $+x$ hacia arriba por la rampa y $+y$ normal hacia fuera. a) Dibuja el peso y los ejes. b) Calcula sus componentes con $g=9,81$ m·s⁻². c) Indica qué componente equilibra la normal si no hay otras fuerzas perpendiculares.»
+- **Campos:** dibujo; `Px=-24.9 N`, `Py=-53.3 N` (tol. 0,1; 3 cifras); `normal=53.3 N`.
 - **Pistas:** el peso total es $mg=58,8$ N vertical; ambos componentes son negativos con los ejes elegidos.
-- **Solución:** $P_x=-mg\sin25^\circ=-24,8$ N y $P_y=-mg\cos25^\circ=-53,3$ N. En equilibrio perpendicular, $N=53,3$ N hacia $+y$.
+- **Solución:** $P_x=-mg\sin25^\circ=-24,9$ N y $P_y=-mg\cos25^\circ=-53,3$ N. En equilibrio perpendicular, $N=53,3$ N hacia $+y$.
 - **Activo SVG obligatorio:** plano compacto, bloque, ejes locales y peso vertical; sin decorar con texturas; ángulo marcado una sola vez.
 - **Errores:** poner una componente positiva; intercambiar seno/coseno; dibujar el peso perpendicular a la rampa.
 

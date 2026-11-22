@@ -142,9 +142,9 @@
           "label": "Altura máxima",
           "type": "numeric",
           "required": true,
-          "expected_value": 11.25,
+          "expected_value": 11.328440366972476,
           "unit": "m",
-          "tolerance": 0.05,
+          "tolerance": 0.1,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
           "part": "a"
@@ -154,7 +154,7 @@
           "label": "Tiempo de vuelo",
           "type": "numeric",
           "required": true,
-          "expected_value": 2.4,
+          "expected_value": 2.4371581094200847,
           "unit": "s",
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
@@ -166,9 +166,9 @@
           "label": "Alcance",
           "type": "numeric",
           "required": true,
-          "expected_value": 28.8,
+          "expected_value": 29.245897313041016,
           "unit": "m",
-          "tolerance": 0.01,
+          "tolerance": 0.1,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
           "part": "b"
@@ -180,8 +180,8 @@
           "response_kind": "vector",
           "required": true,
           "accepted_forms": [
-            "(12; -15)",
-            "12 i + (-15) j"
+            "(12; -14.908521053411032)",
+            "12 i + (-14.908521053411032) j"
           ],
           "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
           "grading": "pending_review",
@@ -191,10 +191,10 @@
           ],
           "expected_components": [
             12,
-            -15
+            -14.908521053411032
           ],
           "unit": "m/s",
-          "tolerance": 0.02,
+          "tolerance": 0.1,
           "rounding": "Tres cifras significativas.",
           "part": "c"
         },
@@ -203,9 +203,9 @@
           "label": "Rapidez final",
           "type": "numeric",
           "required": true,
-          "expected_value": 19.209372712298546,
+          "expected_value": 19.138024976470273,
           "unit": "m/s",
-          "tolerance": 0.05,
+          "tolerance": 0.1,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
           "part": "c"
@@ -215,7 +215,7 @@
           "label": "Ángulo bajo +x",
           "type": "numeric",
           "required": true,
-          "expected_value": 51.34019174590991,
+          "expected_value": 51.16910538897958,
           "unit": "°",
           "tolerance": 0.1,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
@@ -251,8 +251,8 @@
         "Dar ángulo de primer cuadrante a la velocidad final"
       ],
       "parts_count": 3,
-      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−10 m/s²\\). Desde \\(y=7,2 m\\) sale una pelota a 15 m/s con componentes \\((12,9) m/s\\). \n(a) Completa: Altura máxima, Tiempo de vuelo.\n(b) Halla máximo, vuelo y alcance.\n(c) Completa: Velocidad de impacto, Rapidez final, Ángulo bajo +x.",
-      "solution_source": "\\(x=12t,y=7,2+9t−5t²\\); \\(v=(12,9−10t)\\). Máximo \\(t=0,9 s\\),\\(y=7,2+81/20=11,25 m\\).\n\n\\(y=0\\) da \\(t=(9±√225)/10\\): 2,4 s o −0,6 s. \\(Alcance=12·2,4=28,8 m\\).\n\n\\(v_f=(12,−15) m/s\\), |\\(v_f\\)|=√369=19,2 m/s y ángulo 51,3° bajo \\(+x\\). Supera la rapidez inicial de 15 m/s porque termina más abajo.",
+      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). Desde \\(y=7,2 m\\) sale una pelota a 15 m/s con componentes \\((12,9) m/s\\). \n(a) Completa: Altura máxima, Tiempo de vuelo.\n(b) Halla máximo, vuelo y alcance.\n(c) Completa: Velocidad de impacto, Rapidez final, Ángulo bajo +x.",
+      "solution_source": "\\(x=12t\\), \\(y=7{,}2+9t-4{,}905t^2\\); \\(\\vec v=(12;9-9{,}81t)\\). Máximo en \\(t=9/9{,}81=0{,}917\\,\\mathrm{s}\\), con \\(y=7{,}2+81/19{,}62=11{,}33\\,\\mathrm{m}\\).\n\n\\(y=0\\) da \\(t=\\dfrac{9\\pm\\sqrt{222{,}26}}{9{,}81}\\): \\(2{,}437\\,\\mathrm{s}\\) o \\(−0{,}602\\,\\mathrm{s}\\). Alcance \\(=12\\cdot2{,}437=29{,}2\\,\\mathrm{m}\\).\n\n\\(\\vec v_f=(12;−14{,}91)\\,\\mathrm{m/s}\\), \\(|\\vec v_f|=\\sqrt{144+222{,}26}=19{,}14\\,\\mathrm{m/s}\\) y ángulo de \\(51{,}2^\\circ\\) bajo \\(+x\\). Supera la rapidez inicial de \\(15\\,\\mathrm{m/s}\\) porque termina más abajo.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -275,7 +275,7 @@
           "label": "Ángulo bajo",
           "type": "numeric",
           "required": true,
-          "expected_value": 30.36119340482171,
+          "expected_value": 29.979000872921407,
           "unit": "°",
           "tolerance": 0.1,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
@@ -287,7 +287,7 @@
           "label": "Ángulo alto",
           "type": "numeric",
           "required": true,
-          "expected_value": 73.67505006310476,
+          "expected_value": 74.05724259500508,
           "unit": "°",
           "tolerance": 0.1,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
@@ -299,7 +299,7 @@
           "label": "Máximo bajo",
           "type": "numeric",
           "required": true,
-          "expected_value": 1.277395808972829,
+          "expected_value": 1.2725925866281287,
           "unit": "m",
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
@@ -311,7 +311,7 @@
           "label": "Máximo alto",
           "type": "numeric",
           "required": true,
-          "expected_value": 4.604957132203642,
+          "expected_value": 4.712296781963344,
           "unit": "m",
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
@@ -323,7 +323,7 @@
           "label": "Tiempo del tiro viable",
           "type": "numeric",
           "required": true,
-          "expected_value": 0.5794708255183387,
+          "expected_value": 0.5772281658284999,
           "unit": "s",
           "tolerance": 0.005,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
@@ -359,8 +359,8 @@
         "Comparar altura de la diana y techo en vez del máximo"
       ],
       "parts_count": 3,
-      "statement_source": "Origen en el suelo, \\(+x\\) derecha,\\(+y\\) arriba; sin aire,\\(a_y=−g=−10 m/s²\\). Lanzador de 10 m/s; diana en \\((5;1,25) m\\) y techo horizontal a \\(y=4 m\\). \n(a) Determina dos ángulos posibles para la diana.\n(b) Calcula máximos de ambos vuelos y decide cuál evita el techo antes de alcanzar la diana.\n(c) Completa: Tiempo del tiro viable.",
-      "solution_source": "Con \\(u=tanθ,\\) \\(y=xu−x²(1+u²)/20\\). En la diana: 1,25=\\(5u−1,25\\)(1+u²), u²−\\(4u+2\\)=0; θ≈30,36° o 73,68°.\n\n\\(H=v_0y²/(2g)=5u²/(1+u²)\\): \\(H_baja\\)≈1,277 m y \\(H_alta\\)≈4,605 m. Ambos máximos ocurren antes de \\(x=5 m\\); el tiro alto toca el techo antes de llegar.\n\nPara el tiro bajo \\(t=0,5√(1+u²)≈0,5795 s\\) y \\(v_y\\)≈−0,740 m/s: llega bajando, sin superar \\(y=4\\). Sustituir \\(x=5\\) da \\(y=1,25\\).",
+      "statement_source": "Origen en el suelo, \\(+x\\) derecha,\\(+y\\) arriba; sin aire, \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). Lanzador de 10 m/s; diana en \\((5;1,25) m\\) y techo horizontal a \\(y=4 m\\). \n(a) Determina dos ángulos posibles para la diana.\n(b) Calcula máximos de ambos vuelos y decide cuál evita el techo antes de alcanzar la diana.\n(c) Completa: Tiempo del tiro viable.",
+      "solution_source": "Con \\(u=\\tan\\theta\\), \\(y=xu-\\dfrac{9{,}81x^2}{200}(1+u^2)\\). En la diana: \\(1{,}25=5u-1{,}22625(1+u^2)\\), es decir, \\(1{,}22625u^2-5u+2{,}47625=0\\); \\(u=0{,}577\\) o \\(3{,}501\\), y \\(\\theta\\approx29{,}98^\\circ\\) o \\(74{,}06^\\circ\\).\n\n\\(H=v_{0y}^2/(2g)=\\dfrac{100}{19{,}62}\\cdot\\dfrac{u^2}{1+u^2}\\): \\(H_{\\text{baja}}\\approx1{,}273\\,\\mathrm{m}\\) y \\(H_{\\text{alta}}\\approx4{,}712\\,\\mathrm{m}\\). Ambos máximos ocurren antes de \\(x=5\\,\\mathrm{m}\\) (en \\(4{,}41\\) y \\(2{,}69\\,\\mathrm{m}\\)); el tiro alto toca el techo antes de llegar.\n\nPara el tiro bajo, \\(t=0{,}5\\sqrt{1+u^2}\\approx0{,}5772\\,\\mathrm{s}\\) y \\(v_y\\approx−0{,}666\\,\\mathrm{m/s}\\): llega bajando, sin superar \\(y=4\\). Sustituir \\(x=5\\) da \\(y=1{,}25\\).",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -383,9 +383,9 @@
           "label": "Tiempo de contacto",
           "type": "numeric",
           "required": true,
-          "expected_value": 1.4806248474865698,
+          "expected_value": 1.4971458941613625,
           "unit": "s",
-          "tolerance": 0.005,
+          "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
           "part": "a"
@@ -397,8 +397,8 @@
           "response_kind": "vector",
           "required": true,
           "accepted_forms": [
-            "(7.4031242374328485; -2.9612496949731395)",
-            "7.4031242374328485 i + (-2.9612496949731395) j"
+            "(7.485729470806812; -2.994291788322725)",
+            "7.485729470806812 i + (-2.994291788322725) j"
           ],
           "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
           "grading": "pending_review",
@@ -407,8 +407,8 @@
             "y"
           ],
           "expected_components": [
-            7.4031242374328485,
-            -2.9612496949731395
+            7.485729470806812,
+            -2.994291788322725
           ],
           "unit": "m",
           "tolerance": 0.02,
@@ -422,8 +422,8 @@
           "response_kind": "vector",
           "required": true,
           "accepted_forms": [
-            "(5; -14.806248474865697)",
-            "5 i + (-14.806248474865697) j"
+            "(5; -14.687001221722966)",
+            "5 i + (-14.687001221722966) j"
           ],
           "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
           "grading": "pending_review",
@@ -433,10 +433,10 @@
           ],
           "expected_components": [
             5,
-            -14.806248474865697
+            -14.687001221722966
           ],
           "unit": "m/s",
-          "tolerance": 0.02,
+          "tolerance": 0.1,
           "rounding": "Tres cifras significativas.",
           "part": "a"
         },
@@ -445,9 +445,9 @@
           "label": "Rapidez final",
           "type": "numeric",
           "required": true,
-          "expected_value": 15.627699571576835,
+          "expected_value": 15.514767316556568,
           "unit": "m/s",
-          "tolerance": 0.05,
+          "tolerance": 0.1,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
           "part": "b"
@@ -457,7 +457,7 @@
           "label": "Ángulo agudo con la rampa",
           "type": "numeric",
           "required": true,
-          "expected_value": 49.539008554243594,
+          "expected_value": 49.39811175154425,
           "unit": "°",
           "tolerance": 0.1,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
@@ -493,8 +493,8 @@
         "Sumar ángulos que bajan en el mismo sentido"
       ],
       "parts_count": 3,
-      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−10 m/s²\\). Una bola sale horizontalmente a 5 m/s desde \\(y=8 m\\). Debajo hay una rampa \\(y=−0,4x,\\) x≥0. \n(a) Obtén tiempo y punto de primer contacto.\n(b) Calcula vector, rapidez y ángulo de impacto respecto a la horizontal.\n(c) Completa: Ángulo agudo con la rampa.",
-      "solution_source": "\\(x=5t,y=8−5t²\\). Sobre rampa: \\(8−5t²\\)=−2t, luego \\(t=(2±√164)/10\\); raíz física 1,481 s.\n\n\\(P=(7,403\\);−2,961) m y \\(v=(5\\);−14,806) m/s. Rapidez≈15,6 m/s; dirección≈71,3° bajo \\(+x\\).\n\nLa rampa baja arctan0,4≈21,8°: ángulo relativo≈49,5°. Separación y+0,4x=\\(8+2t−5t²\\) es positiva entre 0 y la raíz positiva; no hubo contacto previo.",
+      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). Una bola sale horizontalmente a 5 m/s desde \\(y=8 m\\). Debajo hay una rampa \\(y=−0,4x,\\) x≥0. \n(a) Obtén tiempo y punto de primer contacto.\n(b) Calcula vector, rapidez y ángulo de impacto respecto a la horizontal.\n(c) Completa: Ángulo agudo con la rampa.",
+      "solution_source": "\\(x=5t\\), \\(y=8-4{,}905t^2\\). Sobre la rampa: \\(8-4{,}905t^2=-2t\\), luego \\(t=\\dfrac{2\\pm\\sqrt{160{,}96}}{9{,}81}\\); raíz física \\(1{,}497\\,\\mathrm{s}\\).\n\n\\(P=(7{,}486;−2{,}994)\\,\\mathrm{m}\\) y \\(\\vec v=(5;−14{,}69)\\,\\mathrm{m/s}\\). Rapidez \\(\\approx15{,}5\\,\\mathrm{m/s}\\); dirección \\(\\approx71{,}2^\\circ\\) bajo \\(+x\\).\n\nLa rampa baja \\(\\arctan0{,}4\\approx21{,}8^\\circ\\): ángulo relativo \\(\\approx49{,}4^\\circ\\). La separación \\(y+0{,}4x=8+2t-4{,}905t^2\\) es positiva entre \\(0\\) y la raíz positiva; no hubo contacto previo.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -694,7 +694,7 @@
           "label": "Tiempo de caída",
           "type": "numeric",
           "required": true,
-          "expected_value": 1.2,
+          "expected_value": 1.2232415902140672,
           "unit": "s",
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
@@ -706,7 +706,7 @@
           "label": "Altura inicial",
           "type": "numeric",
           "required": true,
-          "expected_value": 7.2,
+          "expected_value": 7.339449541284403,
           "unit": "m",
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
@@ -718,7 +718,7 @@
           "label": "Alcance",
           "type": "numeric",
           "required": true,
-          "expected_value": 6,
+          "expected_value": 6.116207951070336,
           "unit": "m",
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
@@ -766,8 +766,8 @@
         "Usar rapidez 13 como velocidad horizontal"
       ],
       "parts_count": 3,
-      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−10 m/s²\\). Una bola sale horizontalmente desde altura desconocida. Al impactar, su rapidez es 13 m/s y su componente horizontal es +5 m/s; el impacto ocurre descendiendo. \n(a) Reconstruye \\(v_y\\) final, tiempo, altura y alcance.\n(c) Completa: Ángulo bajo horizontal.",
-      "solution_source": "v_y²=\\(13²−5²\\)=144, y por descenso \\(v_y=−12 m/s\\). \\(v_y=−10t\\) da \\(t=1,2 s\\).\n\n\\(h=5t²=7,2 m\\); \\(alcance=5t=6 m\\). Horizontal \\(x=5t\\); vertical \\(y=7,2−5t²\\); \\(v=(5,−10t)\\).\n\nEn \\(t=1,2,\\) \\(y=0\\) y |v|=√(\\(25+144\\))=13 m/s. El ángulo final es \\(arctan(12/5)=67,4°\\) bajo \\(+x\\); a es vertical y constante.",
+      "statement_source": "Origen al pie de la salida, \\(+x\\) a la derecha y \\(+y\\) arriba; sin aire, \\(a_x=0\\) y \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). Una bola sale horizontalmente desde altura desconocida. Al impactar, su rapidez es 13 m/s y su componente horizontal es +5 m/s; el impacto ocurre descendiendo. \n(a) Reconstruye \\(v_y\\) final, tiempo, altura y alcance.\n(c) Completa: Ángulo bajo horizontal.",
+      "solution_source": "\\(v_y^2=13^2-5^2=144\\) y, como desciende, \\(v_y=-12\\,\\mathrm{m/s}\\). \\(v_y=-9{,}81t\\) da \\(t=12/9{,}81=1{,}223\\,\\mathrm{s}\\).\n\n\\(h=4{,}905t^2=7{,}34\\,\\mathrm{m}\\); alcance \\(=5t=6{,}12\\,\\mathrm{m}\\). Horizontal \\(x=5t\\); vertical \\(y=7{,}34-4{,}905t^2\\); \\(\\vec v=(5;-9{,}81t)\\).\n\nEn \\(t=1{,}223\\,\\mathrm{s}\\), \\(y=0\\) y \\(|\\vec v|=\\sqrt{25+144}=13\\,\\mathrm{m/s}\\). El ángulo final es \\(\\arctan(12/5)=67{,}4^\\circ\\) bajo \\(+x\\); \\(\\vec a\\) es vertical y constante.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -972,9 +972,9 @@
           "label": "Tiempo de vuelo",
           "type": "numeric",
           "required": true,
-          "expected_value": 1.0954451150103321,
+          "expected_value": 1.106002527218662,
           "unit": "s",
-          "tolerance": 0.005,
+          "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
           "part": "b"
@@ -984,7 +984,7 @@
           "label": "Alcance",
           "type": "numeric",
           "required": true,
-          "expected_value": 4.381780460041329,
+          "expected_value": 4.424010108874648,
           "unit": "m",
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
@@ -998,8 +998,8 @@
           "response_kind": "vector",
           "required": true,
           "accepted_forms": [
-            "(4; -10.95445115010332)",
-            "4 i + (-10.95445115010332) j"
+            "(4; -10.849884792015075)",
+            "4 i + (-10.849884792015075) j"
           ],
           "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
           "grading": "pending_review",
@@ -1009,10 +1009,10 @@
           ],
           "expected_components": [
             4,
-            -10.95445115010332
+            -10.849884792015075
           ],
           "unit": "m/s",
-          "tolerance": 0.02,
+          "tolerance": 0.1,
           "rounding": "Tres cifras significativas.",
           "part": "a"
         },
@@ -1021,7 +1021,7 @@
           "label": "Ángulo de impacto bajo +x",
           "type": "numeric",
           "required": true,
-          "expected_value": 69.94041655079744,
+          "expected_value": 69.76270827046426,
           "unit": "°",
           "tolerance": 0.1,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
@@ -1057,8 +1057,8 @@
         "Mantener aceleración centrípeta después de salir de la guía"
       ],
       "parts_count": 4,
-      "statement_source": "En el plano vertical, centro \\(O=(0,5) m\\), suelo \\(y=0,\\) \\(+x\\) derecha,\\(+y\\) arriba. Una pequeña bola recorre una guía circular de radio 1 m a rapidez 4 m/s en sentido horario. Se libera en el punto más alto en \\(t=0\\). Después no hay aire y \\(a_y=−g=−10 m/s²\\). \n(a) Calcula posición y velocidad de liberación y \\(a_n\\) justo antes.\n(b) Modela el vuelo y halla impacto.\n(c) Da velocidad y ángulo final.\n(d) Completa: Ángulo de impacto bajo +x.",
-      "solution_source": "La parte alta está en \\(r_0=(0,6) m\\). La tangente horaria allí apunta a \\(+x\\): \\(v_0=(4,0) m/s\\); \\(a_n=4²/1=16 m/s²\\) hacia el centro, vertical abajo.\n\nEn vuelo: \\(x=4t,y=6−5t²\\); suelo a \\(t=√1,2=1,095 s\\) y \\(x=4,382 m\\).\n\n\\(v_f=(4,−10√1,2)=(4,−10,954) m/s\\); ángulo≈69,9° bajo \\(+x\\). Antes la aceleración cinemática normal era 16 m/s²; después es \\((0,−10) m/s²\\). La velocidad inicial es continua, no la aceleración.",
+      "statement_source": "En el plano vertical, centro \\(O=(0,5) m\\), suelo \\(y=0,\\) \\(+x\\) derecha,\\(+y\\) arriba. Una pequeña bola recorre una guía circular de radio 1 m a rapidez 4 m/s en sentido horario. Se libera en el punto más alto en \\(t=0\\). Después no hay aire y \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). \n(a) Calcula posición y velocidad de liberación y \\(a_n\\) justo antes.\n(b) Modela el vuelo y halla impacto.\n(c) Da velocidad y ángulo final.\n(d) Completa: Ángulo de impacto bajo +x.",
+      "solution_source": "La parte alta está en \\(\\vec r_0=(0;6)\\,\\mathrm{m}\\). La tangente horaria allí apunta a \\(+x\\): \\(\\vec v_0=(4;0)\\,\\mathrm{m/s}\\); \\(a_n=4^2/1=16\\,\\mathrm{m/s^2}\\) hacia el centro, vertical hacia abajo.\n\nEn vuelo: \\(x=4t\\), \\(y=6-4{,}905t^2\\); llega al suelo en \\(t=\\sqrt{6/4{,}905}=1{,}106\\,\\mathrm{s}\\), con \\(x=4{,}42\\,\\mathrm{m}\\).\n\n\\(\\vec v_f=(4;-9{,}81\\cdot1{,}106)=(4;−10{,}85)\\,\\mathrm{m/s}\\); ángulo \\(\\approx69{,}8^\\circ\\) bajo \\(+x\\). Antes, la aceleración normal era \\(16\\,\\mathrm{m/s^2}\\); después es \\((0;-9{,}81)\\,\\mathrm{m/s^2}\\). La velocidad es continua al soltarse; la aceleración no.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     }
   ]

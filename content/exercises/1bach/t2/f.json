@@ -567,15 +567,15 @@
           "response_kind": "function",
           "required": true,
           "accepted_forms": [
-            "20-5*x**2/16"
+            "20-4.905*x**2/16"
           ],
           "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
           "grading": "pending_review",
           "variable": "x",
           "variable_unit": "m",
           "unit": "m",
-          "domain": "0≤x≤8",
-          "canonical_expression": "20-5*x**2/16",
+          "domain": "0≤x≤8,08",
+          "canonical_expression": "20-4.905*x**2/16",
           "part": "a"
         },
         {
@@ -583,7 +583,7 @@
           "label": "Coordenada a 15 m de altura",
           "type": "numeric",
           "required": true,
-          "expected_value": 4,
+          "expected_value": 4.038550218769218,
           "unit": "m",
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
@@ -597,8 +597,8 @@
           "response_kind": "vector",
           "required": true,
           "accepted_forms": [
-            "(4; -10)",
-            "4 i + (-10) j"
+            "(4; -9.904544411531507)",
+            "4 i + (-9.904544411531507) j"
           ],
           "correction_criteria": "Comprobar por separado ambas componentes, signos, orden x; y y unidad. Aceptar pareja ordenada o notación con i y j.",
           "grading": "pending_review",
@@ -608,7 +608,7 @@
           ],
           "expected_components": [
             4,
-            -10
+            -9.904544411531507
           ],
           "unit": "m/s",
           "tolerance": 0.02,
@@ -644,8 +644,8 @@
         "Extender la curva después del primer impacto"
       ],
       "parts_count": 2,
-      "statement_source": "Origen al pie de una plataforma, \\(+x\\) derecha,\\(+y\\) arriba. Sin aire y \\(a_y=−g=−10 m/s²\\), \\(x=4t,\\) \\(y=20−5t²\\) en SI hasta el suelo. \n(a) Obtén \\(y(x)\\) y dominio físico.\n(b) Halla dónde alcanza \\(y=15 m\\) y su velocidad en ese punto.",
-      "solution_source": "\\(t=x/4,\\) luego \\(y=20−5x²/16\\). Suelo: \\(t=2 s\\),\\(x=8 m\\), dominio \\(0≤x≤8\\).\n\n15=\\(20−5t²\\) da \\(t=1 s\\) (la raíz −1 no pertenece al vuelo); \\(x=4 m\\).\n\n\\(v=(4,−10t)=(4,−10) m/s\\). La pendiente dy/\\(dx=−10x/16\\) en \\(x=4\\) es −2,5, igual a \\(v_y\\)/\\(v_x\\).",
+      "statement_source": "Origen al pie de una plataforma, \\(+x\\) derecha,\\(+y\\) arriba. Sin aire y \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\), \\(x=4t,\\) \\(y=20−4{,}905t²\\) en SI hasta el suelo. \n(a) Obtén \\(y(x)\\) y dominio físico.\n(b) Halla dónde alcanza \\(y=15 m\\) y su velocidad en ese punto.",
+      "solution_source": "\\(t=x/4\\), luego \\(y=20-4{,}905x^2/16\\). Suelo: \\(t=\\sqrt{20/4{,}905}=2{,}02\\,\\mathrm{s}\\) y \\(x=8{,}08\\,\\mathrm{m}\\); dominio \\(0\\le x\\le8{,}08\\,\\mathrm{m}\\).\n\n\\(15=20-4{,}905t^2\\) da \\(t=1{,}01\\,\\mathrm{s}\\) (la raíz negativa no pertenece al vuelo); \\(x=4{,}04\\,\\mathrm{m}\\).\n\n\\(\\vec v=(4;-9{,}81t)=(4;−9{,}90)\\,\\mathrm{m/s}\\). La pendiente \\(dy/dx=-9{,}81x/16\\) en \\(x=4{,}04\\) vale \\(−2{,}48\\), igual a \\(v_y/v_x\\).",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -670,15 +670,15 @@
           "response_kind": "function",
           "required": true,
           "accepted_forms": [
-            "12*x/5-x**2/5"
+            "12*x/5-4.905*x**2/25"
           ],
           "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
           "grading": "pending_review",
           "variable": "x",
           "variable_unit": "m",
           "unit": "m",
-          "domain": "0≤x≤12",
-          "canonical_expression": "12*x/5-x**2/5",
+          "domain": "0≤x≤12,2",
+          "canonical_expression": "12*x/5-4.905*x**2/25",
           "part": "b"
         },
         {
@@ -695,7 +695,7 @@
           "variable": "t",
           "variable_unit": "s",
           "unit": "m/s",
-          "domain": "0≤t≤2,4",
+          "domain": "0≤t≤2,45",
           "canonical_expression": "5",
           "part": "a"
         },
@@ -706,15 +706,15 @@
           "response_kind": "function",
           "required": true,
           "accepted_forms": [
-            "12-10*t"
+            "12-9.81*t"
           ],
           "correction_criteria": "Aceptar cualquier expresión algebraicamente equivalente en el dominio indicado, con unidades y condiciones de tramo correctas. Revisión docente; no comparar cadenas literalmente.",
           "grading": "pending_review",
           "variable": "t",
           "variable_unit": "s",
           "unit": "m/s",
-          "domain": "0≤t≤2,4",
-          "canonical_expression": "12-10*t",
+          "domain": "0≤t≤2,45",
+          "canonical_expression": "12-9.81*t",
           "part": "a"
         },
         {
@@ -722,7 +722,7 @@
           "label": "Duración",
           "type": "numeric",
           "required": true,
-          "expected_value": 2.4,
+          "expected_value": 2.4464831804281344,
           "unit": "s",
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
@@ -734,7 +734,7 @@
           "label": "Instante del máximo",
           "type": "numeric",
           "required": true,
-          "expected_value": 1.2,
+          "expected_value": 1.2232415902140672,
           "unit": "s",
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
@@ -770,8 +770,8 @@
         "Anular v_x en el máximo"
       ],
       "parts_count": 2,
-      "statement_source": "En SI, \\(+x\\) derecha,\\(+y\\) arriba, \\(x=5t,y=12t−5t²\\); sin aire, \\(a_y=−g=−10 m/s²\\). \n(a) Da \\(y(x)\\),\\(v_x\\),\\(v_y\\) y duración hasta regresar a \\(y=0\\).\n(b) Completa: Trayectoria, Instante del máximo.",
-      "solution_source": "\\(t=x/5\\) da \\(y=(12/5)x−x²/5\\). \\(v_x=5\\) y \\(v_y=12−10t\\).\n\n\\(y=t(12−5t)=0\\) da regreso en 2,4 s; máximo a \\(v_y=0\\) en 1,2 s, \\(x=6 m\\),\\(y=7,2 m\\).\n\n\\(x(t)\\) es recta creciente, \\(y(t)\\) parábola, \\(v_x\\) horizontal y \\(v_y\\) recta decreciente; todos comparten 0–2,4 s.",
+      "statement_source": "En SI, \\(+x\\) derecha,\\(+y\\) arriba, \\(x=5t,y=12t−4{,}905t²\\); sin aire, \\(a_y=−g=−9{,}81\\,\\mathrm{m/s^2}\\). \n(a) Da \\(y(x)\\),\\(v_x\\),\\(v_y\\) y duración hasta regresar a \\(y=0\\).\n(b) Completa: Trayectoria, Instante del máximo.",
+      "solution_source": "\\(t=x/5\\) da \\(y=(12/5)x-4{,}905x^2/25\\). \\(v_x=5\\) y \\(v_y=12-9{,}81t\\).\n\n\\(y=t(12-4{,}905t)=0\\) da el regreso en \\(2{,}45\\,\\mathrm{s}\\); el máximo, con \\(v_y=0\\), en \\(1{,}22\\,\\mathrm{s}\\), con \\(x=6{,}12\\,\\mathrm{m}\\) e \\(y=7{,}34\\,\\mathrm{m}\\).\n\n\\(x(t)\\) es una recta creciente, \\(y(t)\\) una parábola, \\(v_x\\) una recta horizontal y \\(v_y\\) una recta decreciente; todas comparten el intervalo \\(0\\le t\\le2{,}45\\,\\mathrm{s}\\).",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
@@ -1268,14 +1268,14 @@
         "T0: unidades, signos y álgebra",
         "Funciones paramétricas"
       ],
-      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar introducir g=10 cuando la función prescribe otra aceleración.",
+      "difficulty_reason": "Conecta el modelo con la representación y exige comprobar introducir g=9,81 cuando la función prescribe otra aceleración.",
       "common_mistakes": [
-        "Introducir g=10 cuando la función prescribe otra aceleración",
+        "Introducir g=9,81 cuando la función prescribe otra aceleración",
         "Elegir solo por la posición inicial"
       ],
       "parts_count": 2,
       "statement_source": "\\(+x\\) derecha,\\(+y\\) arriba. El dibujo declarado parte de \\((0,4) m\\), avanza a la derecha y desciende hasta el suelo con \\(v_y\\) inicial nula. Se proponen A: \\(x=2t,y=4−t²\\); B: \\(x=−2t,y=4−t²\\); C: \\(x=2t,y=4+t²,\\) en SI para t≥0. \n(a) Completa: Tiempo hasta suelo.\n(b) Da duración, alcance y aceleración del modelo compatible.",
-      "solution_source": "A satisface \\(x(0)=0,y(0)=4,v_x=2>0,v_y=−2t\\) y \\(v_y(0)=0\\).\n\n4−t²=0 da \\(t=2 s\\); \\(x=4 m\\). \\(a=(0,−2) m/s²\\).\n\nNo se ha fijado gravedad terrestre: este modelo tiene aceleración vertical −2 m/s², no debe sustituirse por −10 sin autorización.",
+      "solution_source": "A satisface \\(x(0)=0,y(0)=4,v_x=2>0,v_y=−2t\\) y \\(v_y(0)=0\\).\n\n4−t²=0 da \\(t=2 s\\); \\(x=4 m\\). \\(a=(0,−2) m/s²\\).\n\nNo se ha fijado gravedad terrestre: este modelo tiene aceleración vertical −2 m/s², no debe sustituirse por −9,81 sin autorización.",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     }
   ]

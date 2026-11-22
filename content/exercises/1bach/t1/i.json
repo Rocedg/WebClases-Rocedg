@@ -591,9 +591,9 @@
           "label": "Altura máxima",
           "type": "numeric",
           "required": true,
-          "expected_value": 36.25,
+          "expected_value": 36.46788990825688,
           "unit": "m",
-          "tolerance": 0.05,
+          "tolerance": 0.1,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
           "part": "a"
@@ -603,7 +603,7 @@
           "label": "Instante de llegada al suelo",
           "type": "numeric",
           "required": true,
-          "expected_value": 4.192582403567252,
+          "expected_value": 4.255742278306882,
           "unit": "s",
           "tolerance": 0.01,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
@@ -615,9 +615,9 @@
           "label": "Velocidad al llegar al suelo",
           "type": "numeric",
           "required": true,
-          "expected_value": -26.92582403567252,
+          "expected_value": -26.74883175019052,
           "unit": "m/s",
-          "tolerance": 0.05,
+          "tolerance": 0.1,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
           "part": "b"
@@ -627,9 +627,9 @@
           "label": "Distancia total recorrida",
           "type": "numeric",
           "required": true,
-          "expected_value": 47.5,
+          "expected_value": 47.93577981651376,
           "unit": "m",
-          "tolerance": 0.05,
+          "tolerance": 0.1,
           "rounding": "Tres cifras significativas; conservar precisión intermedia.",
           "significant_figures": 3,
           "part": "c"
@@ -663,8 +663,8 @@
         "Confundir altura máxima y elevación"
       ],
       "parts_count": 3,
-      "statement_source": "Suelo \\(y=0\\) y \\(+y\\) hacia arriba. Desde una azotea, en \\(y_0=25\\,\\mathrm{m}\\), se lanza una bola hacia arriba a \\(15\\,\\mathrm{m/s}\\) en \\(t=0\\), sin aire y con \\(a=-g=-10\\,\\mathrm{m/s^2}\\).\n\n(a) Calcula la altura máxima.\n(b) Calcula el instante en que llega al suelo y su velocidad en ese momento.\n(c) Calcula la distancia total recorrida por la bola.",
-      "solution_source": "(a) \\(y(t)=25+15t-5t^2\\) y, derivando, \\(v(t)=15-10t\\). \\(v=0\\Rightarrow t=1{,}50\\,\\mathrm{s}\\), e \\(y(1{,}5)=25+22{,}5-11{,}25=36{,}25\\,\\mathrm{m}\\approx36{,}3\\,\\mathrm{m}\\).\n(b) \\(y=0\\Rightarrow -5t^2+15t+25=0\\), con discriminante \\(225+500=725\\):\n\\[t=\\frac{-15\\pm\\sqrt{725}}{-10}\\ \\Rightarrow\\ t=4{,}19\\,\\mathrm{s}\\ \\text{o}\\ t=-1{,}19\\,\\mathrm{s}.\\]\nLa raíz negativa es anterior al lanzamiento. \\(v(4{,}193)=15-41{,}93=-26{,}9\\,\\mathrm{m/s}\\).\n(c) Sube \\(36{,}25-25=11{,}25\\,\\mathrm{m}\\) y baja \\(36{,}25\\,\\mathrm{m}\\): \\(d=47{,}5\\,\\mathrm{m}\\), aunque \\(\\Delta y=-25\\,\\mathrm{m}\\).",
+      "statement_source": "Suelo \\(y=0\\) y \\(+y\\) hacia arriba. Desde una azotea, en \\(y_0=25\\,\\mathrm{m}\\), se lanza una bola hacia arriba a \\(15\\,\\mathrm{m/s}\\) en \\(t=0\\), sin aire y con \\(a=-g=-9{,}81\\,\\mathrm{m/s^2}\\).\n\n(a) Calcula la altura máxima.\n(b) Calcula el instante en que llega al suelo y su velocidad en ese momento.\n(c) Calcula la distancia total recorrida por la bola.",
+      "solution_source": "(a) \\(y(t)=25+15t-4{,}905t^2\\) y, derivando, \\(v(t)=15-9{,}81t\\). \\(v=0\\Rightarrow t=1{,}53\\,\\mathrm{s}\\), e \\(y(1{,}529)=25+22{,}94-11{,}47=36{,}47\\,\\mathrm{m}\\approx36{,}5\\,\\mathrm{m}\\).\n(b) \\(y=0\\Rightarrow -4{,}905t^2+15t+25=0\\), con discriminante \\(225+490{,}5=715{,}5\\):\n\\[t=\\frac{-15\\pm\\sqrt{715{,}5}}{-9{,}81}\\ \\Rightarrow\\ t=4{,}26\\,\\mathrm{s}\\ \\text{o}\\ t=-1{,}20\\,\\mathrm{s}.\\]\nLa raíz negativa es anterior al lanzamiento. \\(v(4{,}256)=15-41{,}75=-26{,}7\\,\\mathrm{m/s}\\).\n(c) Sube \\(36{,}47-25=11{,}47\\,\\mathrm{m}\\) y baja \\(36{,}47\\,\\mathrm{m}\\): \\(d=47{,}9\\,\\mathrm{m}\\), aunque \\(\\Delta y=-25\\,\\mathrm{m}\\).",
       "solution_reference": "Elaboración propia; revisión matemática documentada."
     },
     {
